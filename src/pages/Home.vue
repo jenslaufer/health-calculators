@@ -14,7 +14,7 @@ const calculators = [
   { name: 'Ideal Weight Calculator', description: 'Find your healthy weight range.', path: '/ideal-weight', ready: false },
   { name: 'Heart Rate Zones', description: 'Discover your training heart rate zones.', path: '/heart-rate', ready: false },
   { name: 'Water Intake Calculator', description: 'How much water should you drink daily?', path: '/water', ready: false },
-  { name: 'Sleep Cycle Calculator', description: 'Find your optimal bedtime or wake time.', path: '/sleep', ready: false },
+  { name: 'Sleep Cycle Calculator', description: 'Find your optimal bedtime or wake time.', path: '/sleep', ready: true },
 ]
 </script>
 
