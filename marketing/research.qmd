@@ -1,0 +1,81 @@
+---
+format:
+    html:
+        embed-resources: true
+editor:
+    render-on-save: true
+execute:
+    echo: false
+    warning: false
+---
+
+```{r}
+library(tidyverse)
+library(glue)
+library(gt)
+library(kableExtra)
+```
+
+```{r}
+prospects <- "prospects.csv" |>
+    read_csv()
+
+channels <- "channels.csv" |>
+    read_csv()
+
+benefits <- "benefits.csv" |>
+    read_csv()
+
+copyelements <- "copyelements.csv" |>
+    read_csv()
+```
+
+# Research
+
+
+### Where and when do you meet the target prospect?
+
+
+```{r}
+channels |>
+    gt() |>
+    tab_options(table.align = "left")
+```
+
+### Who is the target prospect?
+
+```{r}
+prospects |>
+    gt() |>
+    tab_options(table.align = "left")
+```
+
+### What is product?
+
+```{r}
+benefits |>
+    select(-benefit) |>
+    gt() |>
+    tab_options(table.align = "left")
+```
+
+### Why is the target prospect benefit from the product?
+
+
+```{r}
+benefits |>
+    gt() |>
+    tab_options(table.align = "left")
+
+```
+
+
+## Copy
+
+
+```{r}
+copyelements |>
+    select(-author) |>
+    gt()|>
+    tab_options(table.align = "left")
+```
