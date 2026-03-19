@@ -4,9 +4,7 @@ import { useHead } from '../composables/useHead.js'
 
 useHead({
   title: 'TDEE Calculator — Free Daily Calorie Needs Calculator',
-  meta: [
-    { name: 'description', content: 'Calculate your Total Daily Energy Expenditure. Science-backed Mifflin-St Jeor formula, personalized to your activity level.' },
-  ],
+  description: 'Calculate your Total Daily Energy Expenditure. Science-backed Mifflin-St Jeor formula, personalized to your activity level.',
 })
 
 const unit = ref('metric')
@@ -50,118 +48,112 @@ const formatNumber = (n) => Math.round(n).toLocaleString()
 </script>
 
 <template>
-  <div class="min-h-screen bg-stone-50">
-    <div class="bg-gradient-to-b from-stone-900 to-stone-800 text-white">
-      <div class="max-w-2xl mx-auto px-4 py-12">
-        <router-link to="/" class="text-stone-400 hover:text-white text-sm mb-4 inline-block">&larr; All Calculators</router-link>
-        <h1 class="text-3xl font-bold tracking-tight">TDEE Calculator</h1>
-        <p class="text-stone-400 mt-2">Calculate your Total Daily Energy Expenditure based on the Mifflin-St Jeor equation.</p>
+  <div class="mb-10">
+    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
+    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">TDEE Calculator</h1>
+    <p class="text-base text-stone-500 font-normal">Calculate your Total Daily Energy Expenditure based on the Mifflin-St Jeor equation.</p>
+  </div>
+
+  <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8">
+    <!-- Gender Toggle -->
+    <div class="flex gap-2 mb-6">
+      <button
+        v-for="g in ['male', 'female']"
+        :key="g"
+        @click="gender = g"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+        :class="gender === g ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+      >
+        {{ g === 'male' ? 'Male' : 'Female' }}
+      </button>
+    </div>
+
+    <!-- Unit Toggle -->
+    <div class="flex gap-2 mb-6">
+      <button
+        v-for="u in ['metric', 'imperial']"
+        :key="u"
+        @click="unit = u"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+        :class="unit === u ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+      >
+        {{ u === 'metric' ? 'Metric' : 'Imperial' }}
+      </button>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 mb-6">
+      <div>
+        <label for="age" class="text-xs font-semibold text-stone-500 uppercase tracking-widest block mb-2">Age</label>
+        <input
+          id="age"
+          v-model="age"
+          type="number"
+          placeholder="30"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <label for="height" class="text-xs font-semibold text-stone-500 uppercase tracking-widest block mb-2">
+          Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
+        </label>
+        <input
+          id="height"
+          v-model="height"
+          type="number"
+          :placeholder="unit === 'metric' ? '175' : '69'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <label for="weight" class="text-xs font-semibold text-stone-500 uppercase tracking-widest block mb-2">
+          Weight ({{ unit === 'metric' ? 'kg' : 'lbs' }})
+        </label>
+        <input
+          id="weight"
+          v-model="weight"
+          type="number"
+          :placeholder="unit === 'metric' ? '70' : '154'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
       </div>
     </div>
 
-    <div class="max-w-2xl mx-auto px-4 -mt-6">
-      <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-6">
-        <!-- Gender Toggle -->
-        <div class="flex gap-2 mb-6">
-          <button
-            v-for="g in ['male', 'female']"
-            :key="g"
-            @click="gender = g"
-            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-            :class="gender === g ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
-          >
-            {{ g === 'male' ? 'Male' : 'Female' }}
-          </button>
+    <!-- Activity Level -->
+    <div class="mb-6">
+      <label for="activity" class="text-xs font-semibold text-stone-500 uppercase tracking-widest block mb-2">Activity Level</label>
+      <select
+        id="activity"
+        v-model="activityLevel"
+        class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+      >
+        <option v-for="opt in activityOptions" :key="opt.value" :value="opt.value">
+          {{ opt.label }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Results -->
+    <div v-if="tdee" class="text-center py-6 border-t border-stone-100">
+      <div class="text-5xl font-bold text-stone-900 tabular-nums" data-testid="tdee-result">{{ formatNumber(tdee) }}</div>
+      <div class="text-sm text-stone-500 mt-1">kcal / day</div>
+      <div class="text-sm text-stone-400 mt-3" data-testid="bmr-result">BMR: {{ formatNumber(bmr) }} kcal</div>
+
+      <!-- Calorie Targets -->
+      <div class="grid grid-cols-3 gap-4 mt-6">
+        <div class="bg-stone-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase">Weight Loss</div>
+          <div class="text-lg font-bold text-stone-900 tabular-nums mt-1">{{ formatNumber(tdee - 500) }}</div>
+          <div class="text-xs text-stone-400">kcal / day</div>
         </div>
-
-        <!-- Unit Toggle -->
-        <div class="flex gap-2 mb-6">
-          <button
-            v-for="u in ['metric', 'imperial']"
-            :key="u"
-            @click="unit = u"
-            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-            :class="unit === u ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
-          >
-            {{ u === 'metric' ? 'Metric' : 'Imperial' }}
-          </button>
+        <div class="bg-stone-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase">Maintenance</div>
+          <div class="text-lg font-bold text-stone-900 tabular-nums mt-1">{{ formatNumber(tdee) }}</div>
+          <div class="text-xs text-stone-400">kcal / day</div>
         </div>
-
-        <div class="grid grid-cols-3 gap-4 mb-6">
-          <div>
-            <label for="age" class="text-xs font-semibold text-stone-500 tracking-wide uppercase block mb-1">Age</label>
-            <input
-              id="age"
-              v-model="age"
-              type="number"
-              placeholder="30"
-              class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:border-stone-600"
-            />
-          </div>
-          <div>
-            <label for="height" class="text-xs font-semibold text-stone-500 tracking-wide uppercase block mb-1">
-              Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
-            </label>
-            <input
-              id="height"
-              v-model="height"
-              type="number"
-              :placeholder="unit === 'metric' ? '175' : '69'"
-              class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:border-stone-600"
-            />
-          </div>
-          <div>
-            <label for="weight" class="text-xs font-semibold text-stone-500 tracking-wide uppercase block mb-1">
-              Weight ({{ unit === 'metric' ? 'kg' : 'lbs' }})
-            </label>
-            <input
-              id="weight"
-              v-model="weight"
-              type="number"
-              :placeholder="unit === 'metric' ? '70' : '154'"
-              class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:border-stone-600"
-            />
-          </div>
-        </div>
-
-        <!-- Activity Level -->
-        <div class="mb-6">
-          <label for="activity" class="text-xs font-semibold text-stone-500 tracking-wide uppercase block mb-1">Activity Level</label>
-          <select
-            id="activity"
-            v-model="activityLevel"
-            class="w-full border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:border-stone-600"
-          >
-            <option v-for="opt in activityOptions" :key="opt.value" :value="opt.value">
-              {{ opt.label }}
-            </option>
-          </select>
-        </div>
-
-        <!-- Results -->
-        <div v-if="tdee" class="text-center py-6 border-t border-stone-100">
-          <div class="text-5xl font-bold text-stone-900 tabular-nums" data-testid="tdee-result">{{ formatNumber(tdee) }}</div>
-          <div class="text-sm text-stone-500 mt-1">kcal / day</div>
-          <div class="text-sm text-stone-400 mt-3" data-testid="bmr-result">BMR: {{ formatNumber(bmr) }} kcal</div>
-
-          <!-- Calorie Targets -->
-          <div class="grid grid-cols-3 gap-4 mt-6">
-            <div class="bg-stone-50 rounded-lg p-4">
-              <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase">Weight Loss</div>
-              <div class="text-lg font-bold text-stone-900 tabular-nums mt-1">{{ formatNumber(tdee - 500) }}</div>
-              <div class="text-xs text-stone-400">kcal / day</div>
-            </div>
-            <div class="bg-stone-50 rounded-lg p-4">
-              <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase">Maintenance</div>
-              <div class="text-lg font-bold text-stone-900 tabular-nums mt-1">{{ formatNumber(tdee) }}</div>
-              <div class="text-xs text-stone-400">kcal / day</div>
-            </div>
-            <div class="bg-stone-50 rounded-lg p-4">
-              <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase">Weight Gain</div>
-              <div class="text-lg font-bold text-stone-900 tabular-nums mt-1">{{ formatNumber(tdee + 500) }}</div>
-              <div class="text-xs text-stone-400">kcal / day</div>
-            </div>
-          </div>
+        <div class="bg-stone-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase">Weight Gain</div>
+          <div class="text-lg font-bold text-stone-900 tabular-nums mt-1">{{ formatNumber(tdee + 500) }}</div>
+          <div class="text-xs text-stone-400">kcal / day</div>
         </div>
       </div>
     </div>

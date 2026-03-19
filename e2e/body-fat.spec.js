@@ -95,6 +95,6 @@ test('switching units recalculates correctly', async ({ page }) => {
 })
 
 test('back link navigates to home page', async ({ page }) => {
-  await page.getByText('All Calculators').click()
+  await page.locator('a', { hasText: '← All Calculators' }).click()
   await expect(page).toHaveURL('/')
 })

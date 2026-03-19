@@ -81,163 +81,157 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
 </script>
 
 <template>
-  <div class="min-h-screen bg-stone-50">
-    <div class="bg-gradient-to-br from-[#131836] to-[#1a2248] py-8 px-4">
-      <div class="max-w-3xl mx-auto">
-        <router-link to="/" class="text-sm text-stone-400 hover:text-white transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
-        <h1 class="text-4xl font-bold text-white tracking-tight leading-tight mb-2">Body Fat Calculator</h1>
-        <p class="text-stone-400">Estimate your body fat percentage using the U.S. Navy method.</p>
+  <div class="mb-10">
+    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
+    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">Body Fat Calculator</h1>
+    <p class="text-base text-stone-500 font-normal">Estimate your body fat percentage using the U.S. Navy method.</p>
+  </div>
+
+  <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="flex gap-2 mb-6">
+      <button
+        @click="gender = 'male'"
+        :class="gender === 'male' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+      >Male</button>
+      <button
+        @click="gender = 'female'"
+        :class="gender === 'female' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+      >Female</button>
+    </div>
+
+    <div class="flex gap-2 mb-6">
+      <button
+        @click="unit = 'metric'"
+        :class="unit === 'metric' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+      >Metric</button>
+      <button
+        @click="unit = 'imperial'"
+        :class="unit === 'imperial' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+      >Imperial</button>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <div>
+        <label for="height" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
+          Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
+        </label>
+        <input
+          id="height"
+          v-model.number="height"
+          type="number"
+          :placeholder="unit === 'metric' ? '170' : '67'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <label for="neck" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
+          Neck ({{ unit === 'metric' ? 'cm' : 'inches' }})
+        </label>
+        <input
+          id="neck"
+          v-model.number="neck"
+          type="number"
+          :placeholder="unit === 'metric' ? '38' : '15'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <label for="waist" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
+          Waist ({{ unit === 'metric' ? 'cm' : 'inches' }})
+        </label>
+        <input
+          id="waist"
+          v-model.number="waist"
+          type="number"
+          :placeholder="unit === 'metric' ? '85' : '33'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div v-if="gender === 'female'">
+        <label for="hip" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
+          Hip ({{ unit === 'metric' ? 'cm' : 'inches' }})
+        </label>
+        <input
+          id="hip"
+          v-model.number="hip"
+          type="number"
+          :placeholder="unit === 'metric' ? '100' : '39'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <label for="weight" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
+          Weight ({{ unit === 'metric' ? 'kg' : 'lbs' }}) <span class="normal-case font-normal text-stone-400">— optional</span>
+        </label>
+        <input
+          id="weight"
+          v-model.number="weight"
+          type="number"
+          :placeholder="unit === 'metric' ? '80' : '176'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
       </div>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-8">
-      <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-6 mb-6">
-        <div class="flex gap-2 mb-6">
-          <button
-            @click="gender = 'male'"
-            :class="gender === 'male' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
-            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-          >Male</button>
-          <button
-            @click="gender = 'female'"
-            :class="gender === 'female' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
-            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-          >Female</button>
-        </div>
-
-        <div class="flex gap-2 mb-6">
-          <button
-            @click="unit = 'metric'"
-            :class="unit === 'metric' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
-            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-          >Metric</button>
-          <button
-            @click="unit = 'imperial'"
-            :class="unit === 'imperial' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
-            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-          >Imperial</button>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4 mb-6">
-          <div>
-            <label for="height" class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">
-              Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
-            </label>
-            <input
-              id="height"
-              v-model.number="height"
-              type="number"
-              :placeholder="unit === 'metric' ? '170' : '67'"
-              class="w-full px-3 py-2.5 border border-stone-300 rounded-lg focus:border-stone-600 focus:outline-none transition-colors text-stone-900"
-            />
-          </div>
-          <div>
-            <label for="neck" class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">
-              Neck ({{ unit === 'metric' ? 'cm' : 'inches' }})
-            </label>
-            <input
-              id="neck"
-              v-model.number="neck"
-              type="number"
-              :placeholder="unit === 'metric' ? '38' : '15'"
-              class="w-full px-3 py-2.5 border border-stone-300 rounded-lg focus:border-stone-600 focus:outline-none transition-colors text-stone-900"
-            />
-          </div>
-          <div>
-            <label for="waist" class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">
-              Waist ({{ unit === 'metric' ? 'cm' : 'inches' }})
-            </label>
-            <input
-              id="waist"
-              v-model.number="waist"
-              type="number"
-              :placeholder="unit === 'metric' ? '85' : '33'"
-              class="w-full px-3 py-2.5 border border-stone-300 rounded-lg focus:border-stone-600 focus:outline-none transition-colors text-stone-900"
-            />
-          </div>
-          <div v-if="gender === 'female'">
-            <label for="hip" class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">
-              Hip ({{ unit === 'metric' ? 'cm' : 'inches' }})
-            </label>
-            <input
-              id="hip"
-              v-model.number="hip"
-              type="number"
-              :placeholder="unit === 'metric' ? '100' : '39'"
-              class="w-full px-3 py-2.5 border border-stone-300 rounded-lg focus:border-stone-600 focus:outline-none transition-colors text-stone-900"
-            />
-          </div>
-          <div>
-            <label for="weight" class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">
-              Weight ({{ unit === 'metric' ? 'kg' : 'lbs' }}) <span class="normal-case font-normal text-stone-400">— optional</span>
-            </label>
-            <input
-              id="weight"
-              v-model.number="weight"
-              type="number"
-              :placeholder="unit === 'metric' ? '80' : '176'"
-              class="w-full px-3 py-2.5 border border-stone-300 rounded-lg focus:border-stone-600 focus:outline-none transition-colors text-stone-900"
-            />
-          </div>
-        </div>
-
-        <div v-if="bodyFat" class="pt-5 border-t border-stone-100">
-          <div class="flex items-baseline gap-3 mb-4">
-            <span data-testid="body-fat-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ bodyFatFormatted }}</span>
-            <span class="text-2xl text-stone-400">%</span>
-            <span v-if="category" :class="category.color" data-testid="body-fat-category" class="text-lg font-semibold">{{ category.label }}</span>
-          </div>
-
-          <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
-            <div class="absolute inset-0 flex">
-              <div class="flex-1 bg-blue-500"></div>
-              <div class="flex-1 bg-green-600"></div>
-              <div class="flex-1 bg-green-500"></div>
-              <div class="flex-1 bg-yellow-500"></div>
-              <div class="flex-1 bg-red-500"></div>
-            </div>
-            <div
-              class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform"
-              :style="{ left: barPosition + '%' }"
-            ></div>
-          </div>
-          <div class="flex text-[10px] text-stone-400 tabular-nums">
-            <div class="flex-1">5%</div>
-            <div class="flex-1 text-center">15%</div>
-            <div class="flex-1 text-center">25%</div>
-            <div class="flex-1 text-center">35%</div>
-            <div class="flex-1 text-right">50%</div>
-          </div>
-
-          <div v-if="fatMass !== null" class="grid grid-cols-2 gap-4 mt-5">
-            <div class="bg-stone-50 rounded-lg p-4">
-              <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">Fat Mass</div>
-              <div data-testid="fat-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ fatMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
-            </div>
-            <div class="bg-stone-50 rounded-lg p-4">
-              <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">Lean Mass</div>
-              <div data-testid="lean-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ leanMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
-            </div>
-          </div>
-        </div>
+    <div v-if="bodyFat" class="pt-5 border-t border-stone-100">
+      <div class="flex items-baseline gap-3 mb-4">
+        <span data-testid="body-fat-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ bodyFatFormatted }}</span>
+        <span class="text-2xl text-stone-400">%</span>
+        <span v-if="category" :class="category.color" data-testid="body-fat-category" class="text-lg font-semibold">{{ category.label }}</span>
       </div>
 
-      <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-6">
-        <h2 class="text-lg font-semibold text-stone-900 mb-3">Body Fat Categories ({{ gender === 'male' ? 'Male' : 'Female' }})</h2>
-        <div class="space-y-3.5">
-          <div
-            v-for="(cat, i) in categories"
-            :key="cat.label"
-            :class="i < categories.length - 1 ? 'border-b border-stone-100 pb-3.5' : ''"
-            class="flex items-center justify-between"
-          >
-            <div class="flex items-center gap-3">
-              <div class="w-2.5 h-2.5 rounded-full" :class="cat.bg"></div>
-              <span class="text-sm text-stone-600">{{ cat.label }}</span>
-            </div>
-            <span class="text-sm font-medium text-stone-900 tabular-nums">{{ cat.range }}</span>
-          </div>
+      <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
+        <div class="absolute inset-0 flex">
+          <div class="flex-1 bg-blue-500"></div>
+          <div class="flex-1 bg-green-600"></div>
+          <div class="flex-1 bg-green-500"></div>
+          <div class="flex-1 bg-yellow-500"></div>
+          <div class="flex-1 bg-red-500"></div>
         </div>
+        <div
+          class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform"
+          :style="{ left: barPosition + '%' }"
+        ></div>
+      </div>
+      <div class="flex text-[10px] text-stone-400 tabular-nums">
+        <div class="flex-1">5%</div>
+        <div class="flex-1 text-center">15%</div>
+        <div class="flex-1 text-center">25%</div>
+        <div class="flex-1 text-center">35%</div>
+        <div class="flex-1 text-right">50%</div>
+      </div>
+
+      <div v-if="fatMass !== null" class="grid grid-cols-2 gap-4 mt-5">
+        <div class="bg-stone-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">Fat Mass</div>
+          <div data-testid="fat-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ fatMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
+        </div>
+        <div class="bg-stone-50 rounded-lg p-4">
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">Lean Mass</div>
+          <div data-testid="lean-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ leanMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8">
+    <h2 class="text-lg font-semibold text-stone-900 mb-3">Body Fat Categories ({{ gender === 'male' ? 'Male' : 'Female' }})</h2>
+    <div class="space-y-3.5">
+      <div
+        v-for="(cat, i) in categories"
+        :key="cat.label"
+        :class="i < categories.length - 1 ? 'border-b border-stone-100 pb-3.5' : ''"
+        class="flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div class="w-2.5 h-2.5 rounded-full" :class="cat.bg"></div>
+          <span class="text-sm text-stone-600">{{ cat.label }}</span>
+        </div>
+        <span class="text-sm font-medium text-stone-900 tabular-nums">{{ cat.range }}</span>
       </div>
     </div>
   </div>

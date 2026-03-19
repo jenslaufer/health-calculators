@@ -48,80 +48,83 @@ const zones = computed(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <div class="mx-auto max-w-2xl px-4 py-12">
-      <router-link to="/" class="text-sm text-blue-600 hover:text-blue-800">&larr; Back</router-link>
+  <div class="mb-10">
+    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
+    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">Heart Rate Zone Calculator</h1>
+    <p class="text-base text-stone-500 font-normal">Find your five training heart rate zones.</p>
+  </div>
 
-      <h1 class="mt-4 text-3xl font-bold text-gray-900">Heart Rate Zone Calculator</h1>
-      <p class="mt-2 text-gray-600">Find your five training heart rate zones.</p>
-
-      <div class="mt-8 rounded-lg bg-white p-6 shadow-sm">
-        <div class="space-y-4">
-          <div>
-            <label for="age" class="block text-sm font-medium text-gray-700">Age</label>
-            <input
-              id="age"
-              v-model.number="age"
-              type="number"
-              min="1"
-              max="120"
-              placeholder="30"
-              class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-            />
-          </div>
-          <div>
-            <label for="resting-hr" class="block text-sm font-medium text-gray-700">Resting Heart Rate (optional)</label>
-            <input
-              id="resting-hr"
-              v-model.number="restingHr"
-              type="number"
-              min="30"
-              max="120"
-              placeholder="60"
-              class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-            />
-          </div>
-          <div>
-            <span class="block text-sm font-medium text-gray-700">Method</span>
-            <div class="mt-2 flex gap-4">
-              <label class="flex items-center gap-2 text-sm text-gray-700">
-                <input v-model="method" type="radio" value="standard" class="text-blue-600" />
-                Standard
-              </label>
-              <label class="flex items-center gap-2 text-sm text-gray-700" :class="{ 'opacity-50': !karvonenAvailable }">
-                <input v-model="method" type="radio" value="karvonen" :disabled="!karvonenAvailable" class="text-blue-600" />
-                Karvonen
-              </label>
-            </div>
-          </div>
+  <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="space-y-6">
+      <div>
+        <label for="age" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">Age</label>
+        <input
+          id="age"
+          v-model.number="age"
+          type="number"
+          min="1"
+          max="120"
+          placeholder="30"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <label for="resting-hr" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">Resting Heart Rate (optional)</label>
+        <input
+          id="resting-hr"
+          v-model.number="restingHr"
+          type="number"
+          min="30"
+          max="120"
+          placeholder="60"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
+        />
+      </div>
+      <div>
+        <span class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">Method</span>
+        <div class="flex gap-2">
+          <button
+            @click="method = 'standard'"
+            :class="method === 'standard' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+          >Standard</button>
+          <button
+            @click="method = 'karvonen'"
+            :disabled="!karvonenAvailable"
+            :class="[
+              method === 'karvonen' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200',
+              !karvonenAvailable ? 'opacity-50 cursor-not-allowed' : ''
+            ]"
+            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+          >Karvonen</button>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div v-if="hrMax" class="mt-6 rounded-lg bg-white p-6 shadow-sm">
-        <p class="text-sm text-gray-500">Max Heart Rate</p>
-        <p class="text-5xl font-bold text-gray-900">{{ hrMax }}</p>
-        <p class="mt-1 text-sm text-gray-500">bpm</p>
+  <div v-if="hrMax" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8">
+    <p class="text-xs font-semibold text-stone-500 uppercase tracking-widest mb-1">Max Heart Rate</p>
+    <p class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ hrMax }}</p>
+    <p class="mt-1 text-sm text-stone-500">bpm</p>
 
-        <div class="mt-6 flex h-3 overflow-hidden rounded-full">
-          <div v-for="zone in zones" :key="zone.number" class="flex-1" :class="zone.color"></div>
-        </div>
+    <div class="mt-6 flex h-3 overflow-hidden rounded-full">
+      <div v-for="zone in zones" :key="zone.number" class="flex-1" :class="zone.color"></div>
+    </div>
 
-        <div class="mt-6 space-y-3">
-          <div
-            v-for="zone in zones"
-            :key="zone.number"
-            data-testid="zone-card"
-            class="flex items-start gap-3 rounded-lg border border-gray-100 p-4"
-          >
-            <div class="mt-1 h-3 w-3 shrink-0 rounded-full" :class="zone.dot"></div>
-            <div class="min-w-0 flex-1">
-              <div class="flex items-baseline justify-between">
-                <h3 class="text-sm font-semibold text-gray-900">Zone {{ zone.number }} — {{ zone.name }}</h3>
-                <span data-testid="zone-range" class="text-sm font-medium text-gray-700">{{ zone.bpmLow }}–{{ zone.bpmHigh }} bpm</span>
-              </div>
-              <p class="mt-1 text-xs text-gray-500">{{ zone.description }}</p>
-            </div>
+    <div class="mt-6 space-y-3">
+      <div
+        v-for="zone in zones"
+        :key="zone.number"
+        data-testid="zone-card"
+        class="flex items-start gap-3 rounded-lg border border-stone-100 p-4"
+      >
+        <div class="mt-1 h-3 w-3 shrink-0 rounded-full" :class="zone.dot"></div>
+        <div class="min-w-0 flex-1">
+          <div class="flex items-baseline justify-between">
+            <h3 class="text-sm font-semibold text-stone-900">Zone {{ zone.number }} — {{ zone.name }}</h3>
+            <span data-testid="zone-range" class="text-sm font-medium text-stone-700">{{ zone.bpmLow }}–{{ zone.bpmHigh }} bpm</span>
           </div>
+          <p class="mt-1 text-xs text-stone-500">{{ zone.description }}</p>
         </div>
       </div>
     </div>

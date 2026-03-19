@@ -114,7 +114,7 @@ test.describe('Ideal Weight Calculator', () => {
   // 8. Back link navigates to home
   // ---------------------------------------------------------------------------
   test('back link navigates to home', async ({ page }) => {
-    await page.getByRole('link', { name: /All Calculators/i }).click()
+    await page.locator('a', { hasText: '← All Calculators' }).click()
     await expect(page).toHaveURL('/')
   })
 })

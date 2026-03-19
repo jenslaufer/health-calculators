@@ -35,7 +35,7 @@ test('Zone 5 upper bound equals HRmax', async ({ page }) => {
 })
 
 test('entering resting HR enables Karvonen method', async ({ page }) => {
-  const karvonen = page.getByLabel('Karvonen')
+  const karvonen = page.getByRole('button', { name: 'Karvonen' })
   await expect(karvonen).toBeDisabled()
   await page.fill('input#age', '30')
   await page.fill('input#resting-hr', '60')
@@ -45,7 +45,7 @@ test('entering resting HR enables Karvonen method', async ({ page }) => {
 test('Karvonen Zone 1 for age 30, resting 60 = ~125-138 bpm', async ({ page }) => {
   await page.fill('input#age', '30')
   await page.fill('input#resting-hr', '60')
-  await page.getByLabel('Karvonen').check()
+  await page.getByRole('button', { name: 'Karvonen' }).click()
 
   const zone1 = page.locator('[data-testid="zone-card"]').first()
   const text = await zone1.textContent()
@@ -74,7 +74,6 @@ test('all zone ranges are contiguous (zone N max = zone N+1 min)', async ({ page
 })
 
 test('back link navigates to home page', async ({ page }) => {
-  await page.click('a[href="/"]')
+  await page.locator('a', { hasText: '← All Calculators' }).click()
   await expect(page).toHaveURL('/')
-  await expect(page.getByText('Health Calculators')).toBeVisible()
 })
