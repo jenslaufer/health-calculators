@@ -10,7 +10,7 @@ const calculators = [
   { name: 'BMI Calculator', description: 'Check if your weight is in a healthy range.', path: '/bmi', ready: true },
   { name: 'TDEE Calculator', description: 'Find your daily calorie needs.', path: '/tdee', ready: false },
   { name: 'Macro Calculator', description: 'Get your ideal protein, carb, and fat split.', path: '/macros', ready: false },
-  { name: 'Body Fat Calculator', description: 'Estimate your body fat percentage.', path: '/body-fat', ready: false },
+  { name: 'Body Fat Calculator', description: 'Estimate your body fat percentage.', path: '/body-fat', ready: true },
   { name: 'Ideal Weight Calculator', description: 'Find your healthy weight range.', path: '/ideal-weight', ready: false },
   { name: 'Heart Rate Zones', description: 'Discover your training heart rate zones.', path: '/heart-rate', ready: false },
   { name: 'Water Intake Calculator', description: 'How much water should you drink daily?', path: '/water', ready: true },
