@@ -6,6 +6,7 @@ import BodyFatCalculator from './pages/BodyFatCalculator.vue'
 import HeartRateZones from './pages/HeartRateZones.vue'
 import IdealWeightCalculator from './pages/IdealWeightCalculator.vue'
 import MacroCalculator from './pages/MacroCalculator.vue'
+import SleepCycleCalculator from './pages/SleepCycleCalculator.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -15,6 +16,7 @@ const routes = [
   { path: '/heart-rate', component: HeartRateZones },
   { path: '/ideal-weight', component: IdealWeightCalculator },
   { path: '/macros', component: MacroCalculator },
+  { path: '/sleep', component: SleepCycleCalculator },
 ]
 
 export default createRouter({
