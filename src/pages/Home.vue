@@ -8,7 +8,7 @@ useHead({
 
 const calculators = [
   { name: 'BMI Calculator', description: 'Check if your weight is in a healthy range.', path: '/bmi', ready: true },
-  { name: 'TDEE Calculator', description: 'Find your daily calorie needs.', path: '/tdee', ready: false },
+  { name: 'TDEE Calculator', description: 'Find your daily calorie needs.', path: '/tdee', ready: true },
   { name: 'Macro Calculator', description: 'Get your ideal protein, carb, and fat split.', path: '/macros', ready: true },
   { name: 'Body Fat Calculator', description: 'Estimate your body fat percentage.', path: '/body-fat', ready: true },
   { name: 'Ideal Weight Calculator', description: 'Find your healthy weight range.', path: '/ideal-weight', ready: true },
