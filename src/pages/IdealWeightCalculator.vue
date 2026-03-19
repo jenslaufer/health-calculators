@@ -1,0 +1,146 @@
+<script setup>
+import { ref, computed } from 'vue'
+import { useHead } from '../composables/useHead.js'
+
+useHead({
+  title: 'Ideal Weight Calculator — Find Your Healthy Weight Range',
+  description: 'Calculate your ideal weight using four science-backed formulas. Personalized results based on height and gender.',
+})
+
+const height = ref(null)
+const gender = ref('male')
+const unit = ref('metric')
+
+const heightInches = computed(() => {
+  if (!height.value) return null
+  return unit.value === 'metric' ? height.value / 2.54 : height.value
+})
+
+const formulas = computed(() => {
+  const h = heightInches.value
+  if (!h || h <= 0) return null
+  const isMale = gender.value === 'male'
+  const results = [
+    { name: 'Devine', year: 1974, kg: isMale ? 50 + 2.3 * (h - 60) : 45.5 + 2.3 * (h - 60) },
+    { name: 'Robinson', year: 1983, kg: isMale ? 52 + 1.9 * (h - 60) : 49 + 1.7 * (h - 60) },
+    { name: 'Miller', year: 1983, kg: isMale ? 56.2 + 1.41 * (h - 60) : 53.1 + 1.36 * (h - 60) },
+    { name: 'Hamwi', year: 1964, kg: isMale ? 48 + 2.7 * (h - 60) : 45.5 + 2.2 * (h - 60) },
+  ]
+  return results.map(r => ({
+    ...r,
+    value: unit.value === 'metric' ? r.kg : r.kg * 2.205,
+  }))
+})
+
+const average = computed(() => {
+  if (!formulas.value) return null
+  const sum = formulas.value.reduce((s, f) => s + f.value, 0)
+  return sum / formulas.value.length
+})
+
+const range = computed(() => {
+  if (!formulas.value) return null
+  const values = formulas.value.map(f => f.value)
+  return { min: Math.min(...values), max: Math.max(...values) }
+})
+
+const bmiRange = computed(() => {
+  if (!heightInches.value) return null
+  const hMeters = heightInches.value * 0.0254
+  const min = 18.5 * hMeters * hMeters
+  const max = 24.9 * hMeters * hMeters
+  if (unit.value === 'imperial') return { min: min * 2.205, max: max * 2.205 }
+  return { min, max }
+})
+
+const weightUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
+
+const fmt = (v) => v?.toFixed(1)
+</script>
+
+<template>
+  <div class="min-h-screen bg-stone-50">
+    <div class="bg-gradient-to-br from-[#131836] to-[#1a2248] py-8 px-4">
+      <div class="max-w-3xl mx-auto">
+        <router-link to="/" class="text-sm text-stone-400 hover:text-white transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
+        <h1 class="text-4xl font-bold text-white tracking-tight leading-tight mb-2">Ideal Weight Calculator</h1>
+        <p class="text-stone-400">Find your healthy weight range based on four science-backed formulas.</p>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-6 mb-6">
+        <div class="flex gap-2 mb-6">
+          <button
+            @click="unit = 'metric'"
+            :class="unit === 'metric' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+          >Metric</button>
+          <button
+            @click="unit = 'imperial'"
+            :class="unit === 'imperial' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+            class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
+          >Imperial</button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div>
+            <label class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">Gender</label>
+            <div class="flex gap-2">
+              <button
+                @click="gender = 'male'"
+                :class="gender === 'male' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+                class="flex-1 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150"
+              >Male</button>
+              <button
+                @click="gender = 'female'"
+                :class="gender === 'female' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
+                class="flex-1 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150"
+              >Female</button>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1.5">
+              Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
+            </label>
+            <input
+              v-model.number="height"
+              type="number"
+              :placeholder="unit === 'metric' ? '170' : '67'"
+              class="w-full px-3 py-2.5 border border-stone-300 rounded-lg focus:border-stone-600 focus:outline-none transition-colors text-stone-900"
+            />
+          </div>
+        </div>
+
+        <div v-if="formulas" data-testid="results" class="pt-5 border-t border-stone-100">
+          <div class="mb-4">
+            <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ fmt(average) }}</span>
+            <span class="text-lg text-stone-500 ml-2">{{ weightUnit }}</span>
+          </div>
+          <p class="text-sm text-stone-500 mb-6">{{ fmt(range.min) }} – {{ fmt(range.max) }} {{ weightUnit }}</p>
+        </div>
+      </div>
+
+      <div v-if="formulas" class="bg-white rounded-xl shadow-sm border border-stone-200 p-6 mb-6">
+        <h2 class="text-lg font-semibold text-stone-900 mb-3">Formula Comparison</h2>
+        <div class="space-y-3.5">
+          <div v-for="f in formulas" :key="f.name" class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
+            <div>
+              <span class="text-sm text-stone-900 font-medium">{{ f.name }}</span>
+              <span class="text-xs text-stone-400 ml-1">({{ f.year }})</span>
+            </div>
+            <span class="text-sm font-medium text-stone-900 tabular-nums">{{ fmt(f.value) }} {{ weightUnit }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="bmiRange" class="bg-white rounded-xl shadow-sm border border-stone-200 p-6">
+        <h2 class="text-lg font-semibold text-stone-900 mb-3">Healthy BMI Range</h2>
+        <p class="text-sm text-stone-600">
+          Based on a BMI of 18.5 – 24.9, your healthy weight range is
+          <span class="font-semibold text-stone-900 tabular-nums">{{ fmt(bmiRange.min) }} – {{ fmt(bmiRange.max) }} {{ weightUnit }}</span>.
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
