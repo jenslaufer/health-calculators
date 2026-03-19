@@ -1,12 +1,10 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
-import { useHead } from '@unhead/vue'
+import { useHead } from '../composables/useHead.js'
 
 useHead({
   title: 'Heart Rate Zone Calculator — Find Your Training Zones',
-  meta: [
-    { name: 'description', content: 'Calculate your five heart rate training zones. Standard and Karvonen methods for optimized fat burn, endurance, and peak performance.' },
-  ],
+  description: 'Calculate your five heart rate training zones. Standard and Karvonen methods for optimized fat burn, endurance, and peak performance.',
 })
 
 const age = ref(null)
