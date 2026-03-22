@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'BMI Calculator — Free Body Mass Index Calculator',
   description: 'Calculate your Body Mass Index instantly. Science-backed BMI formula, no sign-up required.',
+  path: '/bmi',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'BMI Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/bmi',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const height = ref(null)

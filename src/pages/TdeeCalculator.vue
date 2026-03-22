@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'TDEE Calculator — Free Daily Calorie Needs Calculator',
   description: 'Calculate your Total Daily Energy Expenditure. Science-backed Mifflin-St Jeor formula, personalized to your activity level.',
+  path: '/tdee',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'TDEE Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/tdee',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const unit = ref('metric')

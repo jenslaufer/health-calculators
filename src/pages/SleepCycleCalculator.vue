@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'Sleep Cycle Calculator — Optimal Bedtime & Wake Time',
   description: 'Find your optimal bedtime or wake time based on 90-minute sleep cycles. Wake up refreshed, not groggy.',
+  path: '/sleep',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Sleep Cycle Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/sleep',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const mode = ref('wake') // 'wake' = I want to wake up at, 'sleep' = I want to go to sleep at

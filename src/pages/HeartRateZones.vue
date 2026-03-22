@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'Heart Rate Zone Calculator — Find Your Training Zones',
   description: 'Calculate your five heart rate training zones. Standard and Karvonen methods for optimized fat burn, endurance, and peak performance.',
+  path: '/heart-rate',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Heart Rate Zone Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/heart-rate',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const age = ref(null)

@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'Macro Calculator — Free Protein, Carb & Fat Calculator',
   description: 'Calculate your ideal macronutrient split. Personalized protein, carb, and fat targets based on your goals and activity level.',
+  path: '/macros',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Macro Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/macros',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const age = ref(null)

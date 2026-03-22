@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'Body Fat Calculator — U.S. Navy Method',
   description: 'Estimate your body fat percentage using the U.S. Navy method. Simple tape measurements, instant science-backed results.',
+  path: '/body-fat',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Body Fat Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/body-fat',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const gender = ref('male')

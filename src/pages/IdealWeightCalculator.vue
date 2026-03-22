@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'Ideal Weight Calculator — Find Your Healthy Weight Range',
   description: 'Calculate your ideal weight using four science-backed formulas. Personalized results based on height and gender.',
+  path: '/ideal-weight',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Ideal Weight Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/ideal-weight',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const height = ref(null)

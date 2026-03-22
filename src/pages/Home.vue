@@ -2,8 +2,16 @@
 import { useHead } from '../composables/useHead.js'
 
 useHead({
-  title: 'Health Calculators — Free, Science-Backed Health Tools',
-  description: 'Free health calculators: BMI, TDEE, macros, body fat, and more. Science-backed formulas, instant results, no sign-up.',
+  title: 'Health Calculators — Free BMI, TDEE, Body Fat & More',
+  description: 'Free online health calculators: BMI, TDEE, body fat, macros, ideal weight, water intake, heart rate zones, and sleep cycles. Science-backed formulas, instant results, no sign-up.',
+  path: '/',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Health Calculators',
+    url: 'https://jenslaufer.github.io/health-calculators/',
+    description: 'Free online health calculators with science-backed formulas.',
+  },
 })
 
 const groups = [

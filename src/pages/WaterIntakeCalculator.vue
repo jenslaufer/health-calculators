@@ -5,6 +5,16 @@ import { useHead } from '../composables/useHead.js'
 useHead({
   title: 'Water Intake Calculator — Daily Hydration Needs',
   description: 'Calculate how much water you should drink daily. Personalized to your weight, activity level, and climate.',
+  path: '/water',
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Water Intake Calculator',
+    url: 'https://jenslaufer.github.io/health-calculators/water',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
 })
 
 const unit = ref('metric')
