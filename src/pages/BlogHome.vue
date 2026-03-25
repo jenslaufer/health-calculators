@@ -15,6 +15,13 @@ const articles = [
     date: '2026-03-25',
     readTime: '8 min',
   },
+  {
+    slug: 'herzfrequenz-zonen',
+    title: 'Herzfrequenz-Zonen: Richtig trainieren nach Puls',
+    description: 'Die 5 Herzfrequenz-Zonen erklärt: Karvonen-Formel, Fettverbrennungszone & optimales Zonentraining für Ausdauer, Abnehmen und Leistung.',
+    date: '2026-03-25',
+    readTime: '10 min',
+  },
 ]
 </script>
 
