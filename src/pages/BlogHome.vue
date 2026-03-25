@@ -15,6 +15,13 @@ const articles = [
     date: '2026-03-25',
     readTime: '8 min',
   },
+  {
+    slug: 'tdee-berechnen',
+    title: 'TDEE berechnen: So bestimmst du deinen Kalorienbedarf',
+    description: 'TDEE berechnen mit Harris-Benedict & Mifflin-St Jeor Formel. Aktivitätsfaktoren, praktische Tipps und kostenloser TDEE-Rechner.',
+    date: '2026-03-25',
+    readTime: '10 min',
+  },
 ]
 </script>
 
