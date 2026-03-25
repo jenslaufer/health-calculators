@@ -22,6 +22,13 @@ const articles = [
     date: '2026-03-25',
     readTime: '10 min',
   },
+  {
+    slug: 'schlafzyklen-berechnen',
+    title: 'Schlafzyklen berechnen: Wann du aufstehen solltest',
+    description: 'Schlafzyklen verstehen und zur optimalen Zeit aufwachen. Alles über 90-Minuten-Zyklen, REM-Schlaf, Tiefschlaf und Schlafhygiene.',
+    date: '2026-03-25',
+    readTime: '10 min',
+  },
 ]
 </script>
 

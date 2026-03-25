@@ -11,6 +11,7 @@ import TdeeCalculator from './pages/TdeeCalculator.vue'
 import BlogHome from './pages/BlogHome.vue'
 import BmiBerechnen from './pages/blog/BmiBerechnen.vue'
 import TdeeBerechnen from './pages/blog/TdeeBerechnen.vue'
+import SchlafzyklenBerechnen from './pages/blog/SchlafzyklenBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -25,6 +26,7 @@ const routes = [
   { path: '/blog', component: BlogHome },
   { path: '/blog/bmi-berechnen', component: BmiBerechnen },
   { path: '/blog/tdee-berechnen', component: TdeeBerechnen },
+  { path: '/blog/schlafzyklen-berechnen', component: SchlafzyklenBerechnen },
 ]
 
 export default createRouter({
