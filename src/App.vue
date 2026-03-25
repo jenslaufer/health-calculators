@@ -23,6 +23,10 @@ router.afterEach(() => { menuOpen.value = false })
               to="/"
               class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
             >All Calculators</router-link>
+            <router-link
+              to="/blog"
+              class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
+            >Blog</router-link>
           </div>
 
           <div class="md:hidden">
@@ -52,6 +56,9 @@ router.afterEach(() => { menuOpen.value = false })
             <router-link to="/heart-rate" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Heart Rate Zones</router-link>
             <router-link to="/water" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Water Intake Calculator</router-link>
             <router-link to="/sleep" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Sleep Cycle Calculator</router-link>
+            <div class="border-t border-stone-100 mt-2 pt-2">
+              <router-link to="/blog" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Blog</router-link>
+            </div>
           </div>
         </div>
       </nav>
