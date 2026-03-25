@@ -12,6 +12,7 @@ import BlogHome from './pages/BlogHome.vue'
 import BmiBerechnen from './pages/blog/BmiBerechnen.vue'
 import TdeeBerechnen from './pages/blog/TdeeBerechnen.vue'
 import SchlafzyklenBerechnen from './pages/blog/SchlafzyklenBerechnen.vue'
+import HerzfrequenzZonen from './pages/blog/HerzfrequenzZonen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -27,6 +28,7 @@ const routes = [
   { path: '/blog/bmi-berechnen', component: BmiBerechnen },
   { path: '/blog/tdee-berechnen', component: TdeeBerechnen },
   { path: '/blog/schlafzyklen-berechnen', component: SchlafzyklenBerechnen },
+  { path: '/blog/herzfrequenz-zonen', component: HerzfrequenzZonen },
 ]
 
 export default createRouter({
