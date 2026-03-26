@@ -15,6 +15,7 @@ import SchlafzyklenBerechnen from './pages/blog/SchlafzyklenBerechnen.vue'
 import HerzfrequenzZonen from './pages/blog/HerzfrequenzZonen.vue'
 import KoerperfettBerechnen from './pages/blog/KoerperfettBerechnen.vue'
 import MakronaehrstoffeBerechnen from './pages/blog/MakronaehrstoffeBerechnen.vue'
+import WasserbedarfBerechnen from './pages/blog/WasserbedarfBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -33,6 +34,7 @@ const routes = [
   { path: '/blog/herzfrequenz-zonen', component: HerzfrequenzZonen },
   { path: '/blog/koerperfett-berechnen', component: KoerperfettBerechnen },
   { path: '/blog/makronaehrstoffe-berechnen', component: MakronaehrstoffeBerechnen },
+  { path: '/blog/wasserbedarf-berechnen', component: WasserbedarfBerechnen },
 ]
 
 export default createRouter({
