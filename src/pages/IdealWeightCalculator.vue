@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'Ideal Weight Calculator — Find Your Healthy Weight Range',
@@ -147,4 +148,6 @@ const fmt = (v) => v?.toFixed(1)
       <span class="font-semibold text-stone-900 tabular-nums">{{ fmt(bmiRange.min) }} – {{ fmt(bmiRange.max) }} {{ weightUnit }}</span>.
     </p>
   </div>
+
+  <BlogBanner calculator-path="/ideal-weight" />
 </template>

@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'Heart Rate Zone Calculator — Find Your Training Zones',
@@ -139,4 +140,6 @@ const zones = computed(() => {
       </div>
     </div>
   </div>
+
+  <BlogBanner calculator-path="/heart-rate" />
 </template>

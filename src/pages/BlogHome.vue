@@ -1,70 +1,12 @@
 <script setup>
 import { useHead } from '../composables/useHead.js'
+import { articles } from '../data/articles.js'
 
 useHead({
   title: 'Health Blog — Articles & Guides | Health Calculators',
   description: 'Evidence-based health articles, BMI guides, nutrition tips, and fitness insights. Learn how to use health metrics effectively.',
   path: '/blog',
 })
-
-const articles = [
-  {
-    slug: 'bmi-berechnen',
-    title: 'BMI berechnen: Was der Body Mass Index wirklich aussagt',
-    description: 'Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner.',
-    date: '2026-03-25',
-    readTime: '8 min',
-  },
-  {
-    slug: 'tdee-berechnen',
-    title: 'TDEE berechnen: So bestimmst du deinen Kalorienbedarf',
-    description: 'TDEE berechnen mit Harris-Benedict & Mifflin-St Jeor Formel. Aktivitätsfaktoren, praktische Tipps und kostenloser TDEE-Rechner.',
-    date: '2026-03-25',
-    readTime: '10 min',
-  },
-  {
-    slug: 'schlafzyklen-berechnen',
-    title: 'Schlafzyklen berechnen: Wann du aufstehen solltest',
-    description: 'Schlafzyklen verstehen und zur optimalen Zeit aufwachen. Alles über 90-Minuten-Zyklen, REM-Schlaf, Tiefschlaf und Schlafhygiene.',
-    date: '2026-03-25',
-    readTime: '10 min',
-  },
-  {
-    slug: 'herzfrequenz-zonen',
-    title: 'Herzfrequenz-Zonen: Richtig trainieren nach Puls',
-    description: 'Die 5 Herzfrequenz-Zonen erklärt: Karvonen-Formel, Fettverbrennungszone & optimales Zonentraining für Ausdauer, Abnehmen und Leistung.',
-    date: '2026-03-25',
-    readTime: '10 min',
-  },
-  {
-    slug: 'koerperfett-berechnen',
-    title: 'Körperfettanteil berechnen: Methoden, Tabellen & Tipps',
-    description: 'Körperfettanteil berechnen mit Navy-Methode, Caliper & BIA. Gesunde Werte nach Alter und Geschlecht plus Tipps zur Reduktion.',
-    date: '2026-03-26',
-    readTime: '10 min',
-  },
-  {
-    slug: 'makronaehrstoffe-berechnen',
-    title: 'Makronährstoffe berechnen: Eiweiß, Fett & Kohlenhydrate richtig verteilen',
-    description: 'Lerne, wie du Protein, Fett und Kohlenhydrate optimal berechnest — mit Formeln, Verteilungen und praktischen Tipps.',
-    date: '2026-03-26',
-    readTime: '10 min',
-  },
-  {
-    slug: 'wasserbedarf-berechnen',
-    title: 'Wasserbedarf berechnen: So viel Wasser brauchst du wirklich',
-    description: 'Wasserbedarf berechnen mit Formel, Tabelle nach Gewicht & Aktivität. Erfahre, wie viel Wasser du täglich trinken solltest.',
-    date: '2026-03-26',
-    readTime: '10 min',
-  },
-  {
-    slug: 'idealgewicht-berechnen',
-    title: 'Idealgewicht berechnen: Formeln, Tabellen & was wirklich zählt',
-    description: 'Idealgewicht berechnen mit Broca, Creff & Hamwi. Tabelle nach Größe und Geschlecht plus warum dein Idealgewicht individuell ist.',
-    date: '2026-03-26',
-    readTime: '10 min',
-  },
-]
 </script>
 
 <template>

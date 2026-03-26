@@ -1,5 +1,6 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
+import RelatedArticles from '../../components/RelatedArticles.vue'
 
 useHead({
   title: 'BMI berechnen: Was der Body Mass Index wirklich aussagt | Health Calculators',
@@ -243,6 +244,7 @@ useHead({
         </p>
       </div>
 
+      <RelatedArticles slug="bmi-berechnen" />
     </div>
   </article>
 </template>

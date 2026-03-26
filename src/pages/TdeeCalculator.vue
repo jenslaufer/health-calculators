@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'TDEE Calculator — Free Daily Calorie Needs Calculator',
@@ -168,4 +169,6 @@ const formatNumber = (n) => Math.round(n).toLocaleString()
       </div>
     </div>
   </div>
+
+  <BlogBanner calculator-path="/tdee" />
 </template>

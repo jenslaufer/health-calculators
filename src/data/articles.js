@@ -1,0 +1,88 @@
+export const articles = [
+  {
+    slug: 'bmi-berechnen',
+    title: 'BMI berechnen: Was der Body Mass Index wirklich aussagt',
+    description: 'Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner.',
+    date: '2026-03-25',
+    readTime: '8 min',
+    calculator: '/bmi',
+    related: ['idealgewicht-berechnen', 'koerperfett-berechnen'],
+  },
+  {
+    slug: 'idealgewicht-berechnen',
+    title: 'Idealgewicht berechnen: Was ist das perfekte Gewicht?',
+    description: 'Idealgewicht mit vier Formeln berechnen. Devine, Robinson, Miller & Hamwi im Vergleich — plus gesunder BMI-Bereich.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/ideal-weight',
+    related: ['bmi-berechnen', 'koerperfett-berechnen'],
+  },
+  {
+    slug: 'koerperfett-berechnen',
+    title: 'Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte',
+    description: 'Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/body-fat',
+    related: ['bmi-berechnen', 'idealgewicht-berechnen'],
+  },
+  {
+    slug: 'tdee-berechnen',
+    title: 'TDEE berechnen: So ermittelst du deinen täglichen Kalorienverbrauch',
+    description: 'TDEE berechnen mit der Mifflin-St Jeor-Formel. Grundumsatz, Aktivitätsfaktor und Kalorienziele für Ab- und Zunehmen.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/tdee',
+    related: ['makronaehrstoffe-berechnen', 'bmi-berechnen'],
+  },
+  {
+    slug: 'makronaehrstoffe-berechnen',
+    title: 'Makronährstoffe berechnen: Protein, Kohlenhydrate & Fett richtig aufteilen',
+    description: 'Makronährstoffe berechnen basierend auf deinem Kalorienbedarf und Ziel. Optimale Verteilung für Abnehmen, Halten und Muskelaufbau.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/macros',
+    related: ['tdee-berechnen', 'wasserbedarf-berechnen'],
+  },
+  {
+    slug: 'wasserbedarf-berechnen',
+    title: 'Wasserbedarf berechnen: So viel Wasser brauchst du täglich',
+    description: 'Täglichen Wasserbedarf berechnen — angepasst an Gewicht, Aktivität und Klima. Mit Gläser-Umrechnung und Tipps.',
+    date: '2026-03-25',
+    readTime: '6 min',
+    calculator: '/water',
+    related: ['tdee-berechnen', 'makronaehrstoffe-berechnen'],
+  },
+  {
+    slug: 'schlafzyklen-berechnen',
+    title: 'Schlafzyklen berechnen: Zur richtigen Zeit aufwachen',
+    description: 'Schlafzyklen berechnen für erholsamen Schlaf. 90-Minuten-Zyklen verstehen und die optimale Schlaf- oder Aufwachzeit finden.',
+    date: '2026-03-25',
+    readTime: '6 min',
+    calculator: '/sleep',
+    related: ['wasserbedarf-berechnen'],
+  },
+  {
+    slug: 'herzfrequenz-zonen-berechnen',
+    title: 'Herzfrequenz-Zonen berechnen: Trainiere im richtigen Bereich',
+    description: 'Die fünf Herzfrequenz-Zonen berechnen. Standard- und Karvonen-Methode für gezieltes Training von Fettverbrennung bis VO2max.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/heart-rate',
+    related: ['tdee-berechnen'],
+  },
+]
+
+export function getArticleBySlug(slug) {
+  return articles.find(a => a.slug === slug)
+}
+
+export function getRelatedArticles(slug) {
+  const article = getArticleBySlug(slug)
+  if (!article) return []
+  return article.related.map(getArticleBySlug).filter(Boolean)
+}
+
+export function getArticleByCalculator(calculatorPath) {
+  return articles.find(a => a.calculator === calculatorPath)
+}
