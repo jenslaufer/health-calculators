@@ -15,6 +15,13 @@ const articles = [
     date: '2026-03-25',
     readTime: '8 min',
   },
+  {
+    slug: 'makronaehrstoffe-berechnen',
+    title: 'Makronährstoffe berechnen: Eiweiß, Fett & Kohlenhydrate richtig verteilen',
+    description: 'Lerne, wie du Protein, Fett und Kohlenhydrate optimal berechnest — mit Formeln, Verteilungen und praktischen Tipps.',
+    date: '2026-03-26',
+    readTime: '10 min',
+  },
 ]
 </script>
 
