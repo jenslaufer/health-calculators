@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'Sleep Cycle Calculator — Optimal Bedtime & Wake Time',
@@ -123,4 +124,6 @@ const options = computed(() => {
       This calculator factors in ~15 minutes to fall asleep and recommends times aligned with complete cycles.
     </p>
   </div>
+
+  <BlogBanner calculator-path="/sleep" />
 </template>

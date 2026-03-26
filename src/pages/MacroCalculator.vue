@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'Macro Calculator — Free Protein, Carb & Fat Calculator',
@@ -231,4 +232,6 @@ const macros = computed(() => {
       </div>
     </div>
   </div>
+
+  <BlogBanner calculator-path="/macros" />
 </template>

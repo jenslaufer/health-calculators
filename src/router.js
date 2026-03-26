@@ -10,6 +10,13 @@ import SleepCycleCalculator from './pages/SleepCycleCalculator.vue'
 import TdeeCalculator from './pages/TdeeCalculator.vue'
 import BlogHome from './pages/BlogHome.vue'
 import BmiBerechnen from './pages/blog/BmiBerechnen.vue'
+import IdealgewichtBerechnen from './pages/blog/IdealgewichtBerechnen.vue'
+import KoerperfettBerechnen from './pages/blog/KoerperfettBerechnen.vue'
+import TdeeBerechnen from './pages/blog/TdeeBerechnen.vue'
+import MakronaehrstoffeBerechnen from './pages/blog/MakronaehrstoffeBerechnen.vue'
+import WasserbedarfBerechnen from './pages/blog/WasserbedarfBerechnen.vue'
+import SchlafzyklenBerechnen from './pages/blog/SchlafzyklenBerechnen.vue'
+import HerzfrequenzZonenBerechnen from './pages/blog/HerzfrequenzZonenBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -23,6 +30,13 @@ const routes = [
   { path: '/tdee', component: TdeeCalculator },
   { path: '/blog', component: BlogHome },
   { path: '/blog/bmi-berechnen', component: BmiBerechnen },
+  { path: '/blog/idealgewicht-berechnen', component: IdealgewichtBerechnen },
+  { path: '/blog/koerperfett-berechnen', component: KoerperfettBerechnen },
+  { path: '/blog/tdee-berechnen', component: TdeeBerechnen },
+  { path: '/blog/makronaehrstoffe-berechnen', component: MakronaehrstoffeBerechnen },
+  { path: '/blog/wasserbedarf-berechnen', component: WasserbedarfBerechnen },
+  { path: '/blog/schlafzyklen-berechnen', component: SchlafzyklenBerechnen },
+  { path: '/blog/herzfrequenz-zonen-berechnen', component: HerzfrequenzZonenBerechnen },
 ]
 
 export default createRouter({

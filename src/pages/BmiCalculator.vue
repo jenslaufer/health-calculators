@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'BMI Calculator — Free Body Mass Index Calculator',
@@ -154,5 +155,7 @@ const barPosition = computed(() => {
         </div>
       </div>
     </div>
+
+    <BlogBanner calculator-path="/bmi" />
   </div>
 </template>

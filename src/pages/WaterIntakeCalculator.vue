@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'Water Intake Calculator — Daily Hydration Needs',
@@ -144,4 +145,6 @@ const glassRatio = computed(() => {
       <p class="text-sm text-stone-400">Spread your intake throughout the day for best hydration.</p>
     </div>
   </div>
+
+  <BlogBanner calculator-path="/water" />
 </template>

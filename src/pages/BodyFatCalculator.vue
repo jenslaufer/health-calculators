@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useHead } from '../composables/useHead.js'
+import BlogBanner from '../components/BlogBanner.vue'
 
 useHead({
   title: 'Body Fat Calculator — U.S. Navy Method',
@@ -245,4 +246,6 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
       </div>
     </div>
   </div>
+
+  <BlogBanner calculator-path="/body-fat" />
 </template>

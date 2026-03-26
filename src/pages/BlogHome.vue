@@ -1,21 +1,12 @@
 <script setup>
 import { useHead } from '../composables/useHead.js'
+import { articles } from '../data/articles.js'
 
 useHead({
   title: 'Health Blog — Articles & Guides | Health Calculators',
   description: 'Evidence-based health articles, BMI guides, nutrition tips, and fitness insights. Learn how to use health metrics effectively.',
   path: '/blog',
 })
-
-const articles = [
-  {
-    slug: 'bmi-berechnen',
-    title: 'BMI berechnen: Was der Body Mass Index wirklich aussagt',
-    description: 'Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner.',
-    date: '2026-03-25',
-    readTime: '8 min',
-  },
-]
 </script>
 
 <template>
