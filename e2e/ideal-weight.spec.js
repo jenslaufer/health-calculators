@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe('Ideal Weight Calculator', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/ideal-weight')
+    await page.goto('ideal-weight')
   })
 
   // ---------------------------------------------------------------------------
@@ -20,7 +20,7 @@ test.describe('Ideal Weight Calculator', () => {
     await page.getByPlaceholder('170').fill('180')
 
     for (const formula of ['Devine', 'Robinson', 'Miller', 'Hamwi']) {
-      await expect(page.getByText(formula)).toBeVisible()
+      await expect(page.getByText(formula, { exact: true })).toBeVisible()
     }
   })
 
@@ -60,7 +60,7 @@ test.describe('Ideal Weight Calculator', () => {
     await page.getByPlaceholder('170').fill('180')
 
     // Find the row containing "Devine" and extract the weight value.
-    const devineRow = page.getByText('Devine').locator('..').locator('..')
+    const devineRow = page.getByText('Devine', { exact: true }).locator('..').locator('..')
     const devineValueText = await devineRow.textContent()
 
     // Match the number right before "kg" to avoid picking up the year.
@@ -115,6 +115,6 @@ test.describe('Ideal Weight Calculator', () => {
   // ---------------------------------------------------------------------------
   test('back link navigates to home', async ({ page }) => {
     await page.locator('a', { hasText: '← All Calculators' }).click()
-    await expect(page).toHaveURL('/')
+    await expect(page).toHaveURL(/\/health-calculators\/$/)
   })
 })

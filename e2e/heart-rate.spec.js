@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/heart-rate')
+  await page.goto('heart-rate')
 })
 
 test('page loads with correct title', async ({ page }) => {
@@ -75,5 +75,5 @@ test('all zone ranges are contiguous (zone N max = zone N+1 min)', async ({ page
 
 test('back link navigates to home page', async ({ page }) => {
   await page.locator('a', { hasText: '← All Calculators' }).click()
-  await expect(page).toHaveURL('/')
+  await expect(page).toHaveURL(/\/health-calculators\/$/)
 })

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/water')
+  await page.goto('water')
 })
 
 test('page loads with correct title', async ({ page }) => {
@@ -81,5 +81,5 @@ test('changing climate updates result', async ({ page }) => {
 
 test('back link navigates to home page', async ({ page }) => {
   await page.getByRole('link', { name: '← All Calculators' }).click()
-  await expect(page).toHaveURL('/')
+  await expect(page).toHaveURL(/\/health-calculators\/$/)
 })

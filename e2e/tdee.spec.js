@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe('TDEE Calculator', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/tdee')
+    await page.goto('tdee')
   })
 
   test('page loads with correct title', async ({ page }) => {
@@ -86,6 +86,6 @@ test.describe('TDEE Calculator', () => {
 
   test('back link navigates to home page', async ({ page }) => {
     await page.getByText('← All Calculators').click()
-    await expect(page).toHaveURL('/')
+    await expect(page).toHaveURL(/\/health-calculators\/$/)
   })
 })

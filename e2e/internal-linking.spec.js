@@ -1,6 +1,4 @@
-import { test, expect } from 'playwright/test'
-
-const BASE = '/health-calculators'
+import { test, expect } from '@playwright/test'
 
 const blogArticles = [
   { slug: 'bmi-berechnen', title: 'BMI berechnen' },
@@ -27,7 +25,7 @@ const calculatorPages = [
 test.describe('Blog articles have Related Articles section', () => {
   for (const article of blogArticles) {
     test(`${article.slug} has related articles`, async ({ page }) => {
-      await page.goto(`${BASE}/blog/${article.slug}`)
+      await page.goto(`blog/${article.slug}`)
       const section = page.getByTestId('related-articles')
       await expect(section).toBeVisible()
       const links = section.locator('a')
@@ -41,7 +39,7 @@ test.describe('Blog articles have Related Articles section', () => {
 test.describe('Calculator pages link to their blog article', () => {
   for (const calc of calculatorPages) {
     test(`${calc.path} has blog banner`, async ({ page }) => {
-      await page.goto(`${BASE}${calc.path}`)
+      await page.goto(calc.path.slice(1))
       const banner = page.getByTestId('blog-banner')
       await expect(banner).toBeVisible()
       const link = banner.locator('a')
@@ -51,7 +49,7 @@ test.describe('Calculator pages link to their blog article', () => {
 })
 
 test('BlogHome lists all 8 articles', async ({ page }) => {
-  await page.goto(`${BASE}/blog`)
+  await page.goto('blog')
   const articleCards = page.locator('.space-y-4 > a')
   await expect(articleCards).toHaveCount(8)
 })
