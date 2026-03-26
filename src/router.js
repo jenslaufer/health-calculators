@@ -13,6 +13,7 @@ import BmiBerechnen from './pages/blog/BmiBerechnen.vue'
 import TdeeBerechnen from './pages/blog/TdeeBerechnen.vue'
 import SchlafzyklenBerechnen from './pages/blog/SchlafzyklenBerechnen.vue'
 import HerzfrequenzZonen from './pages/blog/HerzfrequenzZonen.vue'
+import KoerperfettBerechnen from './pages/blog/KoerperfettBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -29,6 +30,7 @@ const routes = [
   { path: '/blog/tdee-berechnen', component: TdeeBerechnen },
   { path: '/blog/schlafzyklen-berechnen', component: SchlafzyklenBerechnen },
   { path: '/blog/herzfrequenz-zonen', component: HerzfrequenzZonen },
+  { path: '/blog/koerperfett-berechnen', component: KoerperfettBerechnen },
 ]
 
 export default createRouter({
