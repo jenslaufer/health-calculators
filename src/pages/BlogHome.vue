@@ -57,6 +57,13 @@ const articles = [
     date: '2026-03-26',
     readTime: '10 min',
   },
+  {
+    slug: 'idealgewicht-berechnen',
+    title: 'Idealgewicht berechnen: Formeln, Tabellen & was wirklich zählt',
+    description: 'Idealgewicht berechnen mit Broca, Creff & Hamwi. Tabelle nach Größe und Geschlecht plus warum dein Idealgewicht individuell ist.',
+    date: '2026-03-26',
+    readTime: '10 min',
+  },
 ]
 </script>
 

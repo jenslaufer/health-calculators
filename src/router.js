@@ -16,6 +16,7 @@ import HerzfrequenzZonen from './pages/blog/HerzfrequenzZonen.vue'
 import KoerperfettBerechnen from './pages/blog/KoerperfettBerechnen.vue'
 import MakronaehrstoffeBerechnen from './pages/blog/MakronaehrstoffeBerechnen.vue'
 import WasserbedarfBerechnen from './pages/blog/WasserbedarfBerechnen.vue'
+import IdealgewichtBerechnen from './pages/blog/IdealgewichtBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -35,6 +36,7 @@ const routes = [
   { path: '/blog/koerperfett-berechnen', component: KoerperfettBerechnen },
   { path: '/blog/makronaehrstoffe-berechnen', component: MakronaehrstoffeBerechnen },
   { path: '/blog/wasserbedarf-berechnen', component: WasserbedarfBerechnen },
+  { path: '/blog/idealgewicht-berechnen', component: IdealgewichtBerechnen },
 ]
 
 export default createRouter({
