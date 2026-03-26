@@ -15,6 +15,13 @@ const articles = [
     date: '2026-03-25',
     readTime: '8 min',
   },
+  {
+    slug: 'koerperfett-berechnen',
+    title: 'Körperfettanteil berechnen: Methoden, Tabellen & Tipps',
+    description: 'Körperfettanteil berechnen mit Navy-Methode, Caliper & BIA. Gesunde Werte nach Alter und Geschlecht plus Tipps zur Reduktion.',
+    date: '2026-03-26',
+    readTime: '10 min',
+  },
 ]
 </script>
 
