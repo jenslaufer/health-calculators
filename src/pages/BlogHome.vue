@@ -15,6 +15,13 @@ const articles = [
     date: '2026-03-25',
     readTime: '8 min',
   },
+  {
+    slug: 'wasserbedarf-berechnen',
+    title: 'Wasserbedarf berechnen: So viel Wasser brauchst du wirklich',
+    description: 'Wasserbedarf berechnen mit Formel, Tabelle nach Gewicht & Aktivität. Erfahre, wie viel Wasser du täglich trinken solltest.',
+    date: '2026-03-26',
+    readTime: '10 min',
+  },
 ]
 </script>
 
