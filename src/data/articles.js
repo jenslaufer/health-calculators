@@ -63,6 +63,15 @@ export const articles = [
     related: ['wasserbedarf-berechnen'],
   },
   {
+    slug: 'geburtstermin-berechnen',
+    title: 'Geburtstermin berechnen: Wann kommt mein Baby?',
+    description: 'Geburtstermin berechnen mit der Naegele-Regel. Schwangerschaftswoche, Trimester, Meilensteine und was das errechnete Datum bedeutet.',
+    date: '2026-03-26',
+    readTime: '7 min',
+    calculator: '/pregnancy',
+    related: ['bmi-berechnen'],
+  },
+  {
     slug: 'herzfrequenz-zonen-berechnen',
     title: 'Herzfrequenz-Zonen berechnen: Trainiere im richtigen Bereich',
     description: 'Die fünf Herzfrequenz-Zonen berechnen. Standard- und Karvonen-Methode für gezieltes Training von Fettverbrennung bis VO2max.',
