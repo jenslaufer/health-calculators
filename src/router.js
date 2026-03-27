@@ -8,6 +8,7 @@ import IdealWeightCalculator from './pages/IdealWeightCalculator.vue'
 import MacroCalculator from './pages/MacroCalculator.vue'
 import SleepCycleCalculator from './pages/SleepCycleCalculator.vue'
 import TdeeCalculator from './pages/TdeeCalculator.vue'
+import PregnancyCalculator from './pages/PregnancyCalculator.vue'
 import BlogHome from './pages/BlogHome.vue'
 import BmiBerechnen from './pages/blog/BmiBerechnen.vue'
 import TdeeBerechnen from './pages/blog/TdeeBerechnen.vue'
@@ -28,6 +29,7 @@ const routes = [
   { path: '/macros', component: MacroCalculator },
   { path: '/sleep', component: SleepCycleCalculator },
   { path: '/tdee', component: TdeeCalculator },
+  { path: '/pregnancy', component: PregnancyCalculator },
   { path: '/blog', component: BlogHome },
   { path: '/blog/bmi-berechnen', component: BmiBerechnen },
   { path: '/blog/tdee-berechnen', component: TdeeBerechnen },

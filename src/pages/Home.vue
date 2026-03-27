@@ -38,6 +38,12 @@ const groups = [
       { name: 'Sleep Cycle Calculator', description: 'Find your optimal bedtime or wake time.', path: '/sleep' },
     ],
   },
+  {
+    label: 'Pregnancy',
+    items: [
+      { name: 'Pregnancy Due Date Calculator', description: 'Estimate your due date and track milestones.', path: '/pregnancy' },
+    ],
+  },
 ]
 </script>
 
