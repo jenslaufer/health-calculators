@@ -21,6 +21,8 @@ import IdealgewichtBerechnen from './pages/blog/IdealgewichtBerechnen.vue'
 import GeburtsterminBerechnen from './pages/blog/GeburtsterminBerechnen.vue'
 import BloodPressureCalculator from './pages/BloodPressureCalculator.vue'
 import BlutdruckRichtigMessen from './pages/blog/BlutdruckRichtigMessen.vue'
+import CalorieDeficitCalculator from './pages/CalorieDeficitCalculator.vue'
+import KaloriendefizitBerechnen from './pages/blog/KaloriendefizitBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -45,6 +47,8 @@ const routes = [
   { path: '/blog/geburtstermin-berechnen', component: GeburtsterminBerechnen },
   { path: '/blutdruck-rechner', component: BloodPressureCalculator },
   { path: '/blog/blutdruck-richtig-messen', component: BlutdruckRichtigMessen },
+  { path: '/kaloriendefizit-rechner', component: CalorieDeficitCalculator },
+  { path: '/blog/kaloriendefizit-berechnen', component: KaloriendefizitBerechnen },
 ]
 
 export default createRouter({

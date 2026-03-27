@@ -10,6 +10,7 @@ const blogArticles = [
   { slug: 'schlafzyklen-berechnen', title: 'Schlafzyklen berechnen' },
   { slug: 'herzfrequenz-zonen-berechnen', title: 'Herzfrequenz-Zonen berechnen' },
   { slug: 'blutdruck-richtig-messen', title: 'Blutdruck richtig messen' },
+  { slug: 'kaloriendefizit-berechnen', title: 'Kaloriendefizit berechnen' },
 ]
 
 const calculatorPages = [
@@ -22,6 +23,7 @@ const calculatorPages = [
   { path: '/sleep', name: 'Sleep Cycle Calculator' },
   { path: '/heart-rate', name: 'Heart Rate Zone Calculator' },
   { path: '/blutdruck-rechner', name: 'Blood Pressure Calculator' },
+  { path: '/kaloriendefizit-rechner', name: 'Calorie Deficit Calculator' },
 ]
 
 test.describe('Blog articles have Related Articles section', () => {
