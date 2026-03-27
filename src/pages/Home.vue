@@ -36,6 +36,7 @@ const groups = [
     items: [
       { name: 'Heart Rate Zones', description: 'Discover your training heart rate zones.', path: '/heart-rate' },
       { name: 'Sleep Cycle Calculator', description: 'Find your optimal bedtime or wake time.', path: '/sleep' },
+      { name: 'Blood Pressure Calculator', description: 'Check your blood pressure category instantly.', path: '/blutdruck-rechner' },
     ],
   },
   {

@@ -9,6 +9,7 @@ const blogArticles = [
   { slug: 'wasserbedarf-berechnen', title: 'Wasserbedarf berechnen' },
   { slug: 'schlafzyklen-berechnen', title: 'Schlafzyklen berechnen' },
   { slug: 'herzfrequenz-zonen-berechnen', title: 'Herzfrequenz-Zonen berechnen' },
+  { slug: 'blutdruck-richtig-messen', title: 'Blutdruck richtig messen' },
 ]
 
 const calculatorPages = [
@@ -20,6 +21,7 @@ const calculatorPages = [
   { path: '/water', name: 'Water Intake Calculator' },
   { path: '/sleep', name: 'Sleep Cycle Calculator' },
   { path: '/heart-rate', name: 'Heart Rate Zone Calculator' },
+  { path: '/blutdruck-rechner', name: 'Blood Pressure Calculator' },
 ]
 
 test.describe('Blog articles have Related Articles section', () => {
