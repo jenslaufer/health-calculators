@@ -18,6 +18,7 @@ import KoerperfettBerechnen from './pages/blog/KoerperfettBerechnen.vue'
 import MakronaehrstoffeBerechnen from './pages/blog/MakronaehrstoffeBerechnen.vue'
 import WasserbedarfBerechnen from './pages/blog/WasserbedarfBerechnen.vue'
 import IdealgewichtBerechnen from './pages/blog/IdealgewichtBerechnen.vue'
+import GeburtsterminBerechnen from './pages/blog/GeburtsterminBerechnen.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -39,6 +40,7 @@ const routes = [
   { path: '/blog/makronaehrstoffe-berechnen', component: MakronaehrstoffeBerechnen },
   { path: '/blog/wasserbedarf-berechnen', component: WasserbedarfBerechnen },
   { path: '/blog/idealgewicht-berechnen', component: IdealgewichtBerechnen },
+  { path: '/blog/geburtstermin-berechnen', component: GeburtsterminBerechnen },
 ]
 
 export default createRouter({
