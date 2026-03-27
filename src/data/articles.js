@@ -72,6 +72,15 @@ export const articles = [
     related: ['bmi-berechnen'],
   },
   {
+    slug: 'kaloriendefizit-berechnen',
+    title: 'Kaloriendefizit berechnen: So nimmst du gesund ab',
+    description: 'Kaloriendefizit berechnen mit der Mifflin-St Jeor-Formel. TDEE, sicheres Defizit und 7.700-kcal-Regel einfach erklärt.',
+    date: '2026-03-27',
+    readTime: '7 min',
+    calculator: '/kaloriendefizit-rechner',
+    related: ['tdee-berechnen', 'makronaehrstoffe-berechnen'],
+  },
+  {
     slug: 'herzfrequenz-zonen-berechnen',
     title: 'Herzfrequenz-Zonen berechnen: Trainiere im richtigen Bereich',
     description: 'Die fünf Herzfrequenz-Zonen berechnen. Standard- und Karvonen-Methode für gezieltes Training von Fettverbrennung bis VO2max.',

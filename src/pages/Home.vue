@@ -29,6 +29,7 @@ const groups = [
       { name: 'TDEE Calculator', description: 'Find your daily calorie needs.', path: '/tdee' },
       { name: 'Macro Calculator', description: 'Get your ideal protein, carb, and fat split.', path: '/macros' },
       { name: 'Water Intake Calculator', description: 'How much water should you drink daily?', path: '/water' },
+      { name: 'Calorie Deficit Calculator', description: 'Calculate your daily calorie target for weight loss.', path: '/kaloriendefizit-rechner' },
     ],
   },
   {
