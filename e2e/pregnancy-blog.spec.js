@@ -11,8 +11,8 @@ test.describe('Pregnancy Due Date Blog Article', () => {
 
   test('article content is visible', async ({ page }) => {
     await expect(page.getByRole('heading', { level: 1, name: /Geburtstermin berechnen/i })).toBeVisible()
-    await expect(page.getByText('Naegele-Regel')).toBeVisible()
-    await expect(page.getByText('Trimester')).toBeVisible()
+    await expect(page.getByText('Naegele-Regel').first()).toBeVisible()
+    await expect(page.getByText('Trimester').first()).toBeVisible()
   })
 
   test('link to pregnancy calculator works', async ({ page }) => {
