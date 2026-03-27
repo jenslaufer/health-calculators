@@ -80,6 +80,15 @@ export const articles = [
     calculator: '/heart-rate',
     related: ['tdee-berechnen'],
   },
+  {
+    slug: 'blutdruck-richtig-messen',
+    title: 'Blutdruck richtig messen: Werte verstehen & einordnen',
+    description: 'Blutdruck richtig messen und Werte einordnen. Kategorien nach AHA, Messtipps, Risikofaktoren und wann zum Arzt.',
+    date: '2026-03-27',
+    readTime: '7 min',
+    calculator: '/blutdruck-rechner',
+    related: ['bmi-berechnen', 'wasserbedarf-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
