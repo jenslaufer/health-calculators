@@ -21,6 +21,7 @@ const groups = [
       { name: 'BMI Calculator', description: 'Check if your weight is in a healthy range.', path: '/bmi' },
       { name: 'Body Fat Calculator', description: 'Estimate your body fat percentage.', path: '/body-fat' },
       { name: 'Ideal Weight Calculator', description: 'Find your healthy weight range.', path: '/ideal-weight' },
+      { name: 'Waist-to-Hip Ratio', description: 'Assess your health risk with WHO guidelines.', path: '/waist-hip-ratio' },
     ],
   },
   {

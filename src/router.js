@@ -23,6 +23,8 @@ import BloodPressureCalculator from './pages/BloodPressureCalculator.vue'
 import BlutdruckRichtigMessen from './pages/blog/BlutdruckRichtigMessen.vue'
 import CalorieDeficitCalculator from './pages/CalorieDeficitCalculator.vue'
 import KaloriendefizitBerechnen from './pages/blog/KaloriendefizitBerechnen.vue'
+import WaistHipRatioCalculator from './pages/WaistHipRatioCalculator.vue'
+import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -49,6 +51,8 @@ const routes = [
   { path: '/blog/blutdruck-richtig-messen', component: BlutdruckRichtigMessen },
   { path: '/kaloriendefizit-rechner', component: CalorieDeficitCalculator },
   { path: '/blog/kaloriendefizit-berechnen', component: KaloriendefizitBerechnen },
+  { path: '/waist-hip-ratio', component: WaistHipRatioCalculator },
+  { path: '/blog/taille-hueft-verhaeltnis-berechnen', component: TaillenHueftVerhaeltnis },
 ]
 
 export default createRouter({
