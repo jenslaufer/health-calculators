@@ -11,6 +11,7 @@ const blogArticles = [
   { slug: 'herzfrequenz-zonen-berechnen', title: 'Herzfrequenz-Zonen berechnen' },
   { slug: 'blutdruck-richtig-messen', title: 'Blutdruck richtig messen' },
   { slug: 'kaloriendefizit-berechnen', title: 'Kaloriendefizit berechnen' },
+  { slug: 'taille-hueft-verhaeltnis-berechnen', title: 'Taille-Hüft-Verhältnis berechnen' },
 ]
 
 const calculatorPages = [
@@ -24,6 +25,7 @@ const calculatorPages = [
   { path: '/heart-rate', name: 'Heart Rate Zone Calculator' },
   { path: '/blutdruck-rechner', name: 'Blood Pressure Calculator' },
   { path: '/kaloriendefizit-rechner', name: 'Calorie Deficit Calculator' },
+  { path: '/waist-hip-ratio', name: 'Waist-to-Hip Ratio Calculator' },
 ]
 
 test.describe('Blog articles have Related Articles section', () => {
@@ -55,5 +57,5 @@ test.describe('Calculator pages link to their blog article', () => {
 test('BlogHome lists all 11 articles', async ({ page }) => {
   await page.goto('blog')
   const articleCards = page.locator('.space-y-4 > a')
-  await expect(articleCards).toHaveCount(11)
+  await expect(articleCards).toHaveCount(12)
 })

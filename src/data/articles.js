@@ -90,6 +90,15 @@ export const articles = [
     related: ['tdee-berechnen'],
   },
   {
+    slug: 'taille-hueft-verhaeltnis-berechnen',
+    title: 'Taille-Hüft-Verhältnis berechnen: WHR, WHO-Grenzwerte & Risiko',
+    description: 'Taille-Hüft-Verhältnis (WHR) berechnen und Gesundheitsrisiko einschätzen. WHO-Grenzwerte, Messanleitung und warum WHR aussagekräftiger als der BMI ist.',
+    date: '2026-03-27',
+    readTime: '7 min',
+    calculator: '/waist-hip-ratio',
+    related: ['bmi-berechnen', 'koerperfett-berechnen'],
+  },
+  {
     slug: 'blutdruck-richtig-messen',
     title: 'Blutdruck richtig messen: Werte verstehen & einordnen',
     description: 'Blutdruck richtig messen und Werte einordnen. Kategorien nach AHA, Messtipps, Risikofaktoren und wann zum Arzt.',
