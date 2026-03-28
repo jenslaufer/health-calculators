@@ -25,6 +25,19 @@ import CalorieDeficitCalculator from './pages/CalorieDeficitCalculator.vue'
 import KaloriendefizitBerechnen from './pages/blog/KaloriendefizitBerechnen.vue'
 import WaistHipRatioCalculator from './pages/WaistHipRatioCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
+import BlogHomeEn from './pages/BlogHomeEn.vue'
+import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
+import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
+import CalculateSleepCycles from './pages/blog/en/CalculateSleepCycles.vue'
+import CalculateHeartRateZones from './pages/blog/en/CalculateHeartRateZones.vue'
+import CalculateBodyFat from './pages/blog/en/CalculateBodyFat.vue'
+import CalculateMacros from './pages/blog/en/CalculateMacros.vue'
+import CalculateWaterIntake from './pages/blog/en/CalculateWaterIntake.vue'
+import CalculateIdealWeight from './pages/blog/en/CalculateIdealWeight.vue'
+import CalculateDueDate from './pages/blog/en/CalculateDueDate.vue'
+import MeasureBloodPressure from './pages/blog/en/MeasureBloodPressure.vue'
+import CalculateCalorieDeficit from './pages/blog/en/CalculateCalorieDeficit.vue'
+import CalculateWaistHipRatio from './pages/blog/en/CalculateWaistHipRatio.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -53,6 +66,19 @@ const routes = [
   { path: '/blog/kaloriendefizit-berechnen', component: KaloriendefizitBerechnen },
   { path: '/waist-hip-ratio', component: WaistHipRatioCalculator },
   { path: '/blog/taille-hueft-verhaeltnis-berechnen', component: TaillenHueftVerhaeltnis },
+  { path: '/en/blog', component: BlogHomeEn },
+  { path: '/en/blog/calculate-bmi', component: CalculateBmi },
+  { path: '/en/blog/calculate-tdee', component: CalculateTdee },
+  { path: '/en/blog/calculate-sleep-cycles', component: CalculateSleepCycles },
+  { path: '/en/blog/calculate-heart-rate-zones', component: CalculateHeartRateZones },
+  { path: '/en/blog/calculate-body-fat', component: CalculateBodyFat },
+  { path: '/en/blog/calculate-macros', component: CalculateMacros },
+  { path: '/en/blog/calculate-water-intake', component: CalculateWaterIntake },
+  { path: '/en/blog/calculate-ideal-weight', component: CalculateIdealWeight },
+  { path: '/en/blog/calculate-due-date', component: CalculateDueDate },
+  { path: '/en/blog/measure-blood-pressure', component: MeasureBloodPressure },
+  { path: '/en/blog/calculate-calorie-deficit', component: CalculateCalorieDeficit },
+  { path: '/en/blog/calculate-waist-hip-ratio', component: CalculateWaistHipRatio },
 ]
 
 export default createRouter({
