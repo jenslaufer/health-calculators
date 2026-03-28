@@ -1,0 +1,124 @@
+export const articlesEn = [
+  {
+    slug: 'calculate-bmi',
+    title: 'Calculate BMI: What the Body Mass Index Really Tells You',
+    description: 'Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist.',
+    date: '2026-03-25',
+    readTime: '8 min',
+    calculator: '/bmi',
+    related: ['calculate-ideal-weight', 'calculate-body-fat'],
+  },
+  {
+    slug: 'calculate-ideal-weight',
+    title: 'Calculate Ideal Weight: What Is the Perfect Weight?',
+    description: 'Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/ideal-weight',
+    related: ['calculate-bmi', 'calculate-body-fat'],
+  },
+  {
+    slug: 'calculate-body-fat',
+    title: 'Calculate Body Fat Percentage: Methods, Table & Guidelines',
+    description: 'Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/body-fat',
+    related: ['calculate-bmi', 'calculate-ideal-weight'],
+  },
+  {
+    slug: 'calculate-tdee',
+    title: 'Calculate TDEE: How to Determine Your Daily Calorie Burn',
+    description: 'Calculate TDEE using the Mifflin-St Jeor formula. Basal metabolic rate, activity factors and calorie goals for losing or gaining weight.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/tdee',
+    related: ['calculate-macros', 'calculate-bmi'],
+  },
+  {
+    slug: 'calculate-macros',
+    title: 'Calculate Macronutrients: How to Split Protein, Carbs & Fat',
+    description: 'Calculate macronutrients based on your calorie needs and goals. Optimal distribution for weight loss, maintenance and muscle building.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/macros',
+    related: ['calculate-tdee', 'calculate-water-intake'],
+  },
+  {
+    slug: 'calculate-water-intake',
+    title: 'Calculate Water Intake: How Much Water You Need Daily',
+    description: 'Calculate daily water intake — adjusted for weight, activity and climate. With glass conversion and practical tips.',
+    date: '2026-03-25',
+    readTime: '6 min',
+    calculator: '/water',
+    related: ['calculate-tdee', 'calculate-macros'],
+  },
+  {
+    slug: 'calculate-sleep-cycles',
+    title: 'Calculate Sleep Cycles: Wake Up at the Right Time',
+    description: 'Calculate sleep cycles for restful sleep. Understand 90-minute cycles and find your optimal bedtime or wake-up time.',
+    date: '2026-03-25',
+    readTime: '6 min',
+    calculator: '/sleep',
+    related: ['calculate-water-intake'],
+  },
+  {
+    slug: 'calculate-due-date',
+    title: "Calculate Due Date: When Is My Baby Coming?",
+    description: "Calculate your due date using Naegele's rule. Pregnancy weeks, trimesters, milestones and why only 4% of babies arrive on the estimated date.",
+    date: '2026-03-26',
+    readTime: '7 min',
+    calculator: '/pregnancy',
+    related: ['calculate-bmi'],
+  },
+  {
+    slug: 'calculate-calorie-deficit',
+    title: 'Calculate Calorie Deficit: How to Lose Weight Safely',
+    description: 'Calculate your calorie deficit using the Mifflin-St Jeor formula. TDEE, safe deficit and the 7,700 kcal rule explained simply.',
+    date: '2026-03-27',
+    readTime: '7 min',
+    calculator: '/kaloriendefizit-rechner',
+    related: ['calculate-tdee', 'calculate-macros'],
+  },
+  {
+    slug: 'calculate-heart-rate-zones',
+    title: 'Calculate Heart Rate Zones: Train in the Right Range',
+    description: 'Calculate the five heart rate zones. Standard and Karvonen methods for targeted training from fat burn to VO2max.',
+    date: '2026-03-25',
+    readTime: '7 min',
+    calculator: '/heart-rate',
+    related: ['calculate-tdee'],
+  },
+  {
+    slug: 'calculate-waist-hip-ratio',
+    title: 'Calculate Waist-to-Hip Ratio: WHR, WHO Thresholds & Risk',
+    description: 'Calculate your waist-to-hip ratio (WHR) and assess health risk. WHO thresholds, measurement guide and why WHR is more meaningful than BMI.',
+    date: '2026-03-27',
+    readTime: '7 min',
+    calculator: '/waist-hip-ratio',
+    related: ['calculate-bmi', 'calculate-body-fat'],
+  },
+  {
+    slug: 'measure-blood-pressure',
+    title: 'Measure Blood Pressure: Understand & Interpret Your Values',
+    description: 'Measure blood pressure correctly and interpret your values. AHA categories, measurement tips, risk factors and when to see a doctor.',
+    date: '2026-03-27',
+    readTime: '7 min',
+    calculator: '/blutdruck-rechner',
+    related: ['calculate-bmi', 'calculate-water-intake'],
+  },
+]
+
+export function getEnArticleBySlug(slug) {
+  return articlesEn.find(a => a.slug === slug)
+}
+
+export function getEnRelatedArticles(slug) {
+  const article = getEnArticleBySlug(slug)
+  if (!article) return []
+  return article.related.map(getEnArticleBySlug).filter(Boolean)
+}
+
+export function getEnArticleByCalculator(calculatorPath) {
+  return articlesEn.find(a => a.calculator === calculatorPath)
+}
