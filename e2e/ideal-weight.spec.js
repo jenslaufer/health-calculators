@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe('Ideal Weight Calculator', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('ideal-weight')
+    await page.goto('de/idealgewicht-rechner')
   })
 
   test('page has title containing "Idealgewicht"', async ({ page }) => {
@@ -83,6 +83,6 @@ test.describe('Ideal Weight Calculator', () => {
 
   test('back link navigates to home', async ({ page }) => {
     await page.getByRole('link', { name: '← Alle Rechner' }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/$/)
+    await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
   })
 })

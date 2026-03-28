@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Idealgewicht berechnen: Was ist das perfekte Gewicht? | Health Calculators',
   description: 'Idealgewicht mit vier Formeln berechnen. Devine, Robinson, Miller & Hamwi im Vergleich — plus gesunder BMI-Bereich.',
-  path: '/blog/idealgewicht-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Idealgewicht berechnen: Was ist das perfekte Gewicht?</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -94,7 +97,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt dein Idealgewicht berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Vier Formeln im Vergleich — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/ideal-weight"
+          :to="localePath('idealWeight')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -102,17 +105,17 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Idealgewicht vs. BMI</h2>
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Der <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und das Idealgewicht messen unterschiedliche Dinge. Der BMI klassifiziert dein aktuelles Gewicht, das Idealgewicht zeigt dir einen Zielwert. Beide zusammen ergeben ein vollständigeres Bild.
+          Der <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und das Idealgewicht messen unterschiedliche Dinge. Der BMI klassifiziert dein aktuelles Gewicht, das Idealgewicht zeigt dir einen Zielwert. Beide zusammen ergeben ein vollständigeres Bild.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Noch genauer wird es, wenn du zusätzlich deinen <router-link to="/blog/koerperfett-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link> kennst — denn Muskeln wiegen mehr als Fett.
+          Noch genauer wird es, wenn du zusätzlich deinen <router-link :to="localeBlogPath('koerperfett-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link> kennst — denn Muskeln wiegen mehr als Fett.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Das Idealgewicht ist keine feste Zahl, sondern ein Bereich. Nutze unseren <router-link to="/ideal-weight" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Idealgewicht-Rechner</router-link> als Orientierung und kombiniere das Ergebnis mit dem <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und dem <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link>.
+          Das Idealgewicht ist keine feste Zahl, sondern ein Bereich. Nutze unseren <router-link :to="localePath('idealWeight')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Idealgewicht-Rechner</router-link> als Orientierung und kombiniere das Ergebnis mit dem <router-link :to="localePath('bmi')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und dem <router-link :to="localePath('bodyFat')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link>.
         </p>
       </div>
 

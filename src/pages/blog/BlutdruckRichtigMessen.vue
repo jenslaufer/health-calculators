@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Blutdruck richtig messen: Werte verstehen & einordnen | Health Calculators',
   description: 'Blutdruck richtig messen und Werte einordnen. Kategorien nach AHA, Messtipps, Risikofaktoren und wann zum Arzt.',
-  path: '/blog/blutdruck-richtig-messen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Blutdruck richtig messen: Werte verstehen & einordnen</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">27. März 2026</span>
@@ -105,7 +108,7 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Risikofaktoren für Bluthochdruck</h2>
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Übergewicht, Bewegungsmangel, hoher Salzkonsum, Stress und Alkohol erhöhen das Risiko. Auch genetische Veranlagung spielt eine Rolle. Ein gesunder <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und ausreichend <router-link to="/blog/wasserbedarf-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Flüssigkeit</router-link> helfen, den Blutdruck im Normalbereich zu halten.
+          Übergewicht, Bewegungsmangel, hoher Salzkonsum, Stress und Alkohol erhöhen das Risiko. Auch genetische Veranlagung spielt eine Rolle. Ein gesunder <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und ausreichend <router-link :to="localeBlogPath('wasserbedarf-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Flüssigkeit</router-link> helfen, den Blutdruck im Normalbereich zu halten.
         </p>
       </div>
 
@@ -113,7 +116,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt Blutdruckwerte einordnen</h3>
         <p class="text-stone-300 text-sm mb-5">Kategorie sofort erfahren — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/blutdruck-rechner"
+          :to="localePath('bloodPressure')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -121,7 +124,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Regelmäßiges Blutdruckmessen ist einfach und kann Leben retten. Nutze unseren <router-link to="/blutdruck-rechner" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Blutdruck-Rechner</router-link>, um deine Werte einzuordnen, und sprich bei auffälligen Ergebnissen mit deinem Arzt.
+          Regelmäßiges Blutdruckmessen ist einfach und kann Leben retten. Nutze unseren <router-link :to="localePath('bloodPressure')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Blutdruck-Rechner</router-link>, um deine Werte einzuordnen, und sprich bei auffälligen Ergebnissen mit deinem Arzt.
         </p>
       </div>
 

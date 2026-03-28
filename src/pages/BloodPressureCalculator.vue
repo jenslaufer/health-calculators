@@ -3,13 +3,15 @@ import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
+import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
+const { localePath } = useLocaleRouter()
 
 useHead(() => ({
   title: t('bloodPressure.meta.title'),
   description: t('bloodPressure.meta.description'),
-  path: '/blutdruck-rechner',
+  routeKey: 'bloodPressure',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -56,7 +58,7 @@ const recommendationKeys = {
 <template>
   <div>
     <div class="mb-10">
-      <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+      <router-link :to="localePath('home')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('bloodPressure.title') }}</h1>
       <p class="text-base text-stone-500 font-normal">{{ t('bloodPressure.description') }}</p>
     </div>
@@ -152,6 +154,6 @@ const recommendationKeys = {
       </div>
     </div>
 
-    <BlogBanner calculator-path="/blutdruck-rechner" />
+    <BlogBanner calculator-key="bloodPressure" />
   </div>
 </template>

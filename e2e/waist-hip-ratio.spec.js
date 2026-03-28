@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('waist-hip-ratio')
+  await page.goto('de/taille-hueft-verhaeltnis')
 })
 
 test('page loads with correct title', async ({ page }) => {
@@ -89,5 +89,5 @@ test('risk category uses color coding', async ({ page }) => {
 
 test('back link navigates to home page', async ({ page }) => {
   await page.getByRole('link', { name: '← Alle Rechner' }).click()
-  await expect(page).toHaveURL(/\/health-calculators\/$/)
+  await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
 })

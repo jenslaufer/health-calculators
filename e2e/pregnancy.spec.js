@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe('Pregnancy Due Date Calculator', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('pregnancy')
+    await page.goto('de/schwangerschafts-rechner')
   })
 
   test('page loads with correct title', async ({ page }) => {
@@ -77,6 +77,6 @@ test.describe('Pregnancy Due Date Calculator', () => {
 
   test('back link navigates to home page', async ({ page }) => {
     await page.getByRole('link', { name: '← Alle Rechner' }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/$/)
+    await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
   })
 })

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('blutdruck-rechner')
+  await page.goto('de/blutdruck-rechner')
 })
 
 test('page loads with correct title', async ({ page }) => {
@@ -72,5 +72,5 @@ test('shows systolic and diastolic values in result', async ({ page }) => {
 
 test('back link navigates to home page', async ({ page }) => {
   await page.getByRole('link', { name: '← Alle Rechner' }).click()
-  await expect(page).toHaveURL(/\/health-calculators\/$/)
+  await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
 })

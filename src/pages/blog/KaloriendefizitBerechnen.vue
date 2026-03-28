@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Kaloriendefizit berechnen: So nimmst du gesund ab | Health Calculators',
   description: 'Kaloriendefizit berechnen mit der Mifflin-St Jeor-Formel. TDEE, sicheres Defizit und 7.700-kcal-Regel einfach erklärt.',
-  path: '/blog/kaloriendefizit-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Kaloriendefizit berechnen: So nimmst du gesund ab</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">27. März 2026</span>
@@ -73,7 +76,7 @@ useHead({
           </div>
         </div>
         <p class="text-base text-stone-600 leading-relaxed">
-          Mehr dazu in unserem <router-link to="/blog/tdee-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE-Ratgeber</router-link>.
+          Mehr dazu in unserem <router-link :to="localeBlogPath('tdee-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE-Ratgeber</router-link>.
         </p>
       </div>
 
@@ -98,7 +101,7 @@ useHead({
           <li>Ein moderates Defizit von <strong>300–500 kcal/Tag</strong> ist für die meisten Menschen ideal.</li>
         </ul>
         <p class="text-base text-stone-600 leading-relaxed">
-          Wie du deine Kalorien optimal auf <router-link to="/blog/makronaehrstoffe-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makronährstoffe</router-link> aufteilst, erfährst du in unserem Makro-Ratgeber.
+          Wie du deine Kalorien optimal auf <router-link :to="localeBlogPath('makronaehrstoffe-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makronährstoffe</router-link> aufteilst, erfährst du in unserem Makro-Ratgeber.
         </p>
       </div>
 
@@ -107,7 +110,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt dein Kaloriendefizit berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Mifflin-St Jeor-Formel mit persönlichem Kalorienziel — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/kaloriendefizit-rechner"
+          :to="localePath('calorieDeficit')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -115,7 +118,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Ein Kaloriendefizit ist der Schlüssel zum Abnehmen. Berechne deinen <router-link to="/blog/tdee-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Kalorienverbrauch (TDEE)</router-link>, lege ein realistisches Ziel fest und nutze unseren <router-link to="/kaloriendefizit-rechner" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Kaloriendefizit-Rechner</router-link> für dein persönliches Tagesziel.
+          Ein Kaloriendefizit ist der Schlüssel zum Abnehmen. Berechne deinen <router-link :to="localeBlogPath('tdee-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Kalorienverbrauch (TDEE)</router-link>, lege ein realistisches Ziel fest und nutze unseren <router-link :to="localePath('calorieDeficit')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Kaloriendefizit-Rechner</router-link> für dein persönliches Tagesziel.
         </p>
       </div>
 

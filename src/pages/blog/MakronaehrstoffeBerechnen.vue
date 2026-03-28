@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Makronährstoffe berechnen: Protein, Kohlenhydrate & Fett richtig aufteilen | Health Calculators',
   description: 'Makronährstoffe berechnen basierend auf deinem Kalorienbedarf und Ziel. Optimale Verteilung für Abnehmen, Halten und Muskelaufbau.',
-  path: '/blog/makronaehrstoffe-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Makronährstoffe berechnen: Protein, Kohlenhydrate & Fett richtig aufteilen</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -120,7 +123,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt deine Makronährstoffe berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Personalisierte Makro-Verteilung — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/macros"
+          :to="localePath('macro')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -128,17 +131,17 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">TDEE als Grundlage</h2>
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Bevor du Makros verteilen kannst, brauchst du dein Kalorienziel. Berechne zuerst deinen <router-link to="/blog/tdee-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE (täglichen Kalorienverbrauch)</router-link> — das ist die Basis für alles Weitere.
+          Bevor du Makros verteilen kannst, brauchst du dein Kalorienziel. Berechne zuerst deinen <router-link :to="localeBlogPath('tdee-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE (täglichen Kalorienverbrauch)</router-link> — das ist die Basis für alles Weitere.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Vergiss auch nicht, genug zu trinken. Dein <router-link to="/blog/wasserbedarf-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Wasserbedarf</router-link> steigt mit der Proteinzufuhr.
+          Vergiss auch nicht, genug zu trinken. Dein <router-link :to="localeBlogPath('wasserbedarf-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Wasserbedarf</router-link> steigt mit der Proteinzufuhr.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Die richtige Makro-Verteilung ist der Schlüssel zu deinem Ziel. Berechne deinen <router-link to="/tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE</router-link>, nutze unseren <router-link to="/macros" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makro-Rechner</router-link> und passe die Verteilung an dein Ziel an.
+          Die richtige Makro-Verteilung ist der Schlüssel zu deinem Ziel. Berechne deinen <router-link :to="localePath('tdee')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE</router-link>, nutze unseren <router-link :to="localePath('macro')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makro-Rechner</router-link> und passe die Verteilung an dein Ziel an.
         </p>
       </div>
 

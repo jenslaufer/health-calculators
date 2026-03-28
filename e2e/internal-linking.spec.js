@@ -15,23 +15,23 @@ const blogArticles = [
 ]
 
 const calculatorPages = [
-  { path: '/bmi', name: 'BMI Calculator' },
-  { path: '/body-fat', name: 'Body Fat Calculator' },
-  { path: '/tdee', name: 'TDEE Calculator' },
-  { path: '/ideal-weight', name: 'Ideal Weight Calculator' },
-  { path: '/macros', name: 'Macro Calculator' },
-  { path: '/water', name: 'Water Intake Calculator' },
-  { path: '/sleep', name: 'Sleep Cycle Calculator' },
-  { path: '/heart-rate', name: 'Heart Rate Zone Calculator' },
-  { path: '/blutdruck-rechner', name: 'Blood Pressure Calculator' },
-  { path: '/kaloriendefizit-rechner', name: 'Calorie Deficit Calculator' },
-  { path: '/waist-hip-ratio', name: 'Waist-to-Hip Ratio Calculator' },
+  { path: '/de/bmi-rechner', name: 'BMI Calculator' },
+  { path: '/de/koerperfett-rechner', name: 'Body Fat Calculator' },
+  { path: '/de/tdee-rechner', name: 'TDEE Calculator' },
+  { path: '/de/idealgewicht-rechner', name: 'Ideal Weight Calculator' },
+  { path: '/de/makro-rechner', name: 'Macro Calculator' },
+  { path: '/de/wasser-rechner', name: 'Water Intake Calculator' },
+  { path: '/de/schlafzyklen-rechner', name: 'Sleep Cycle Calculator' },
+  { path: '/de/herzfrequenz-zonen', name: 'Heart Rate Zone Calculator' },
+  { path: '/de/blutdruck-rechner', name: 'Blood Pressure Calculator' },
+  { path: '/de/kaloriendefizit-rechner', name: 'Calorie Deficit Calculator' },
+  { path: '/de/taille-hueft-verhaeltnis', name: 'Waist-to-Hip Ratio Calculator' },
 ]
 
 test.describe('Blog articles have Related Articles section', () => {
   for (const article of blogArticles) {
     test(`${article.slug} has related articles`, async ({ page }) => {
-      await page.goto(`blog/${article.slug}`)
+      await page.goto(`de/blog/${article.slug}`)
       const section = page.getByTestId('related-articles')
       await expect(section).toBeVisible()
       const links = section.locator('a')
@@ -45,7 +45,7 @@ test.describe('Blog articles have Related Articles section', () => {
 test.describe('Calculator pages link to their blog article', () => {
   for (const calc of calculatorPages) {
     test(`${calc.path} has blog banner`, async ({ page }) => {
-      await page.goto(calc.path.slice(1))
+      await page.goto(calc.path.slice(1))  // removes leading slash
       const banner = page.getByTestId('blog-banner')
       await expect(banner).toBeVisible()
       const link = banner.locator('a')
@@ -55,7 +55,7 @@ test.describe('Calculator pages link to their blog article', () => {
 })
 
 test('BlogHome lists all 11 articles', async ({ page }) => {
-  await page.goto('blog')
+  await page.goto('de/blog')
   const articleCards = page.locator('.space-y-4 > a')
   await expect(articleCards).toHaveCount(12)
 })

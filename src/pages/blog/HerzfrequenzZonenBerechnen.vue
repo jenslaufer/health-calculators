@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Herzfrequenz-Zonen berechnen: Trainiere im richtigen Bereich | Health Calculators',
   description: 'Die fünf Herzfrequenz-Zonen berechnen. Standard- und Karvonen-Methode für gezieltes Training von Fettverbrennung bis VO2max.',
-  path: '/blog/herzfrequenz-zonen-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Herzfrequenz-Zonen berechnen: Trainiere im richtigen Bereich</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -122,7 +125,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt deine Herzfrequenz-Zonen berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Standard- und Karvonen-Methode — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/heart-rate"
+          :to="localePath('heartRate')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -130,14 +133,14 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Training und Ernährung</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Effektives Training braucht die richtige Energieversorgung. Berechne deinen <router-link to="/blog/tdee-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE (täglichen Kalorienverbrauch)</router-link>, um sicherzustellen, dass dein Körper genug Energie für dein Trainingspensum hat.
+          Effektives Training braucht die richtige Energieversorgung. Berechne deinen <router-link :to="localeBlogPath('tdee-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">TDEE (täglichen Kalorienverbrauch)</router-link>, um sicherzustellen, dass dein Körper genug Energie für dein Trainingspensum hat.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Herzfrequenz-Zonen machen dein Training messbar und zielgerichtet. Nutze unseren <router-link to="/heart-rate" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Herzfrequenz-Zonen-Rechner</router-link> und trainiere gezielt in der Zone, die zu deinem Ziel passt.
+          Herzfrequenz-Zonen machen dein Training messbar und zielgerichtet. Nutze unseren <router-link :to="localePath('heartRate')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Herzfrequenz-Zonen-Rechner</router-link> und trainiere gezielt in der Zone, die zu deinem Ziel passt.
         </p>
       </div>
 

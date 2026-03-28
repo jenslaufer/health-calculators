@@ -2,17 +2,14 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { useLocaleRouter } from './composables/useLocaleRouter.js'
 
 const router = useRouter()
 const menuOpen = ref(false)
-const { t, locale } = useI18n()
+const { t } = useI18n()
+const { localePath, switchLocale, locale } = useLocaleRouter()
 
 router.afterEach(() => { menuOpen.value = false })
-
-function setLocale(lang) {
-  locale.value = lang
-  localStorage.setItem('locale', lang)
-}
 </script>
 
 <template>
@@ -21,28 +18,28 @@ function setLocale(lang) {
       <nav class="bg-white border-b border-stone-200 shadow-sm">
         <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
           <router-link
-            to="/"
+            :to="localePath('home')"
             class="text-sm font-bold tracking-widest text-stone-900 uppercase shrink-0"
           >{{ t('nav.brand') }}</router-link>
 
           <div class="hidden md:flex items-center gap-6">
             <router-link
-              to="/"
+              :to="localePath('home')"
               class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
             >{{ t('nav.allCalculators') }}</router-link>
             <router-link
-              to="/blog"
+              :to="localePath('blog')"
               class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
             >{{ t('nav.blog') }}</router-link>
             <div class="flex items-center gap-1 text-sm">
               <button
-                @click="setLocale('de')"
+                @click="switchLocale('de')"
                 :class="locale === 'de' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
               >DE</button>
               <span class="text-stone-300">|</span>
               <button
-                @click="setLocale('en')"
+                @click="switchLocale('en')"
                 :class="locale === 'en' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
               >EN</button>
@@ -52,13 +49,13 @@ function setLocale(lang) {
           <div class="md:hidden flex items-center gap-3">
             <div class="flex items-center gap-1 text-sm">
               <button
-                @click="setLocale('de')"
+                @click="switchLocale('de')"
                 :class="locale === 'de' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
               >DE</button>
               <span class="text-stone-300">|</span>
               <button
-                @click="setLocale('en')"
+                @click="switchLocale('en')"
                 :class="locale === 'en' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
               >EN</button>
@@ -81,16 +78,16 @@ function setLocale(lang) {
 
         <div v-if="menuOpen" class="border-t border-stone-100 bg-white md:hidden">
           <div class="max-w-3xl mx-auto px-6 py-4 flex flex-col gap-2">
-            <router-link to="/bmi" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.bmi.name') }}</router-link>
-            <router-link to="/tdee" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.tdee.name') }}</router-link>
-            <router-link to="/macros" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.macro.name') }}</router-link>
-            <router-link to="/body-fat" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.bodyFat.name') }}</router-link>
-            <router-link to="/ideal-weight" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.idealWeight.name') }}</router-link>
-            <router-link to="/heart-rate" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.heartRate.name') }}</router-link>
-            <router-link to="/water" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.water.name') }}</router-link>
-            <router-link to="/sleep" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.sleep.name') }}</router-link>
+            <router-link :to="localePath('bmi')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.bmi.name') }}</router-link>
+            <router-link :to="localePath('tdee')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.tdee.name') }}</router-link>
+            <router-link :to="localePath('macro')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.macro.name') }}</router-link>
+            <router-link :to="localePath('bodyFat')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.bodyFat.name') }}</router-link>
+            <router-link :to="localePath('idealWeight')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.idealWeight.name') }}</router-link>
+            <router-link :to="localePath('heartRate')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.heartRate.name') }}</router-link>
+            <router-link :to="localePath('water')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.water.name') }}</router-link>
+            <router-link :to="localePath('sleep')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.sleep.name') }}</router-link>
             <div class="border-t border-stone-100 mt-2 pt-2">
-              <router-link to="/blog" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('nav.blog') }}</router-link>
+              <router-link :to="localePath('blog')" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('nav.blog') }}</router-link>
             </div>
           </div>
         </div>

@@ -3,13 +3,15 @@ import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
+import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
+const { localePath } = useLocaleRouter()
 
 useHead(() => ({
   title: t('heartRate.meta.title'),
   description: t('heartRate.meta.description'),
-  path: '/heart-rate',
+  routeKey: 'heartRate',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -63,7 +65,7 @@ const zones = computed(() => {
 
 <template>
   <div class="mb-10">
-    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+    <router-link :to="localePath('home')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
     <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('heartRate.title') }}</h1>
     <p class="text-base text-stone-500 font-normal">{{ t('heartRate.description') }}</p>
   </div>
@@ -130,5 +132,5 @@ const zones = computed(() => {
     </div>
   </div>
 
-  <BlogBanner calculator-path="/heart-rate" />
+  <BlogBanner calculator-key="heartRate" />
 </template>

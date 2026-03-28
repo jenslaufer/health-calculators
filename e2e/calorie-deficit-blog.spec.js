@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe('Blog: Kaloriendefizit berechnen', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('blog/kaloriendefizit-berechnen')
+    await page.goto('de/blog/kaloriendefizit-berechnen')
   })
 
   test('page loads with correct title', async ({ page }) => {
@@ -21,7 +21,7 @@ test.describe('Blog: Kaloriendefizit berechnen', () => {
   })
 
   test('links to calculator', async ({ page }) => {
-    const ctaLink = page.locator('a[href="/health-calculators/kaloriendefizit-rechner"]')
+    const ctaLink = page.locator('a[href="/health-calculators/de/kaloriendefizit-rechner"]')
     await expect(ctaLink.first()).toBeVisible()
   })
 
@@ -32,6 +32,6 @@ test.describe('Blog: Kaloriendefizit berechnen', () => {
 
   test('back link navigates to blog home', async ({ page }) => {
     await page.getByText('← Blog').click()
-    await expect(page).toHaveURL(/\/health-calculators\/blog$/)
+    await expect(page).toHaveURL(/\/health-calculators\/de\/blog$/)
   })
 })

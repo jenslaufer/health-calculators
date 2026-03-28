@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'TDEE berechnen: So ermittelst du deinen täglichen Kalorienverbrauch | Health Calculators',
   description: 'TDEE berechnen mit der Mifflin-St Jeor-Formel. Grundumsatz, Aktivitätsfaktor und Kalorienziele für Ab- und Zunehmen.',
-  path: '/blog/tdee-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">TDEE berechnen: So ermittelst du deinen täglichen Kalorienverbrauch</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -97,7 +100,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt deinen TDEE berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Mifflin-St Jeor-Formel mit Kalorienziel — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/tdee"
+          :to="localePath('tdee')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -105,17 +108,17 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">TDEE und Ernährung</h2>
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Dein TDEE bestimmt dein Kalorienziel. Für <strong>Gewichtsverlust</strong> isst du 500 kcal weniger, für <strong>Muskelaufbau</strong> 500 kcal mehr. Wie du diese Kalorien aufteilst, zeigt dir unser <router-link to="/blog/makronaehrstoffe-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makronährstoff-Ratgeber</router-link>.
+          Dein TDEE bestimmt dein Kalorienziel. Für <strong>Gewichtsverlust</strong> isst du 500 kcal weniger, für <strong>Muskelaufbau</strong> 500 kcal mehr. Wie du diese Kalorien aufteilst, zeigt dir unser <router-link :to="localeBlogPath('makronaehrstoffe-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makronährstoff-Ratgeber</router-link>.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Auch dein <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> hilft dir einzuordnen, ob Ab- oder Zunehmen sinnvoll ist.
+          Auch dein <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> hilft dir einzuordnen, ob Ab- oder Zunehmen sinnvoll ist.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Der TDEE ist die Grundlage jeder Ernährungsplanung. Berechne deinen <router-link to="/tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Kalorienverbrauch</router-link> und nutze das Ergebnis als Basis für deine <router-link to="/macros" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makronährstoff-Verteilung</router-link>.
+          Der TDEE ist die Grundlage jeder Ernährungsplanung. Berechne deinen <router-link :to="localePath('tdee')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Kalorienverbrauch</router-link> und nutze das Ergebnis als Basis für deine <router-link :to="localePath('macro')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Makronährstoff-Verteilung</router-link>.
         </p>
       </div>
 

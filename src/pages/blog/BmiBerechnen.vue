@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'BMI berechnen: Was der Body Mass Index wirklich aussagt | Health Calculators',
   description: 'BMI berechnen mit Formel, WHO-Tabelle & Interpretation. Erfahre die Grenzen des BMI und welche Alternativen es gibt.',
-  path: '/blog/bmi-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">BMI berechnen: Was der Body Mass Index wirklich aussagt</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -163,7 +166,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt kostenlos deinen BMI berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Sofortergebnis mit Kategorie-Einordnung — ohne Anmeldung.</p>
         <router-link
-          to="/bmi"
+          :to="localePath('bmi')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -203,7 +206,7 @@ useHead({
           Für eine genauere Einschätzung deiner Körperzusammensetzung und Gesundheit gibt es bessere Kennzahlen:
         </p>
         <div class="space-y-4">
-          <router-link to="/body-fat" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
+          <router-link :to="localePath('bodyFat')" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
             <h3 class="text-base font-semibold text-stone-900 mb-1">Körperfettanteil berechnen</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
               Der Körperfettanteil unterscheidet zwischen Fett- und Muskelmasse. Ein Mann mit 15 % und eine Frau mit 25 % Körperfett gelten als gesund — unabhängig vom BMI.
@@ -216,14 +219,14 @@ useHead({
               Das Taille-Hüft-Verhältnis berücksichtigt die Fettverteilung. Ein WHR über 0,90 bei Männern und über 0,85 bei Frauen deutet auf ein erhöhtes Gesundheitsrisiko hin.
             </p>
           </div>
-          <router-link to="/tdee" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
+          <router-link :to="localePath('tdee')" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
             <h3 class="text-base font-semibold text-stone-900 mb-1">TDEE — Täglicher Energieverbrauch</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
               Der TDEE zeigt dir, wie viele Kalorien dein Körper täglich verbrennt. In Kombination mit dem BMI hilft er, ein realistisches Bild deiner Gesundheit zu zeichnen.
             </p>
             <span class="text-sm font-medium text-stone-900 mt-2 inline-block">TDEE Calculator &rarr;</span>
           </router-link>
-          <router-link to="/ideal-weight" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
+          <router-link :to="localePath('idealWeight')" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
             <h3 class="text-base font-semibold text-stone-900 mb-1">Idealgewicht berechnen</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
               Statt nur den BMI zu betrachten, berechnet der Idealgewicht-Rechner basierend auf mehreren Formeln einen gesunden Gewichtsbereich für deine Größe.
@@ -240,7 +243,7 @@ useHead({
           Der BMI ist ein nützlicher erster Anhaltspunkt, aber kein vollständiges Bild deiner Gesundheit. Er eignet sich gut für eine schnelle Einordnung, sollte aber immer zusammen mit anderen Kennzahlen betrachtet werden.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Nutze unseren <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI-Rechner</router-link> als Ausgangspunkt und ergänze das Ergebnis mit dem <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link> und deinem <router-link to="/tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Energieverbrauch</router-link> für ein umfassendes Bild.
+          Nutze unseren <router-link :to="localePath('bmi')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI-Rechner</router-link> als Ausgangspunkt und ergänze das Ergebnis mit dem <router-link :to="localePath('bodyFat')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link> und deinem <router-link :to="localePath('tdee')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Energieverbrauch</router-link> für ein umfassendes Bild.
         </p>
       </div>
 

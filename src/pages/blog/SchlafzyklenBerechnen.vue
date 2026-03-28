@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Schlafzyklen berechnen: Zur richtigen Zeit aufwachen | Health Calculators',
   description: 'Schlafzyklen berechnen für erholsamen Schlaf. 90-Minuten-Zyklen verstehen und die optimale Schlaf- oder Aufwachzeit finden.',
-  path: '/blog/schlafzyklen-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Schlafzyklen berechnen: Zur richtigen Zeit aufwachen</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -119,7 +122,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt deine Schlafzyklen berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Optimale Schlaf- oder Aufwachzeit — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/sleep"
+          :to="localePath('sleep')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -127,14 +130,14 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Schlaf und Regeneration</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Guter Schlaf ist die Grundlage für Regeneration. Dein Körper braucht Schlaf und ausreichend Flüssigkeit. Berechne deinen <router-link to="/blog/wasserbedarf-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Wasserbedarf</router-link>, um die Regeneration optimal zu unterstützen.
+          Guter Schlaf ist die Grundlage für Regeneration. Dein Körper braucht Schlaf und ausreichend Flüssigkeit. Berechne deinen <router-link :to="localeBlogPath('wasserbedarf-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">täglichen Wasserbedarf</router-link>, um die Regeneration optimal zu unterstützen.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Schlafqualität ist wichtiger als Schlafquantität. Nutze unseren <router-link to="/sleep" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Schlafzyklen-Rechner</router-link>, um zur richtigen Zeit aufzuwachen und erholt in den Tag zu starten.
+          Schlafqualität ist wichtiger als Schlafquantität. Nutze unseren <router-link :to="localePath('sleep')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Schlafzyklen-Rechner</router-link>, um zur richtigen Zeit aufzuwachen und erholt in den Tag zu starten.
         </p>
       </div>
 
