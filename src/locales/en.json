@@ -1,0 +1,308 @@
+{
+  "common": {
+    "metric": "Metric",
+    "imperial": "Imperial",
+    "male": "Male",
+    "female": "Female",
+    "age": "Age",
+    "gender": "Gender",
+    "height": "Height ({unit})",
+    "weight": "Weight ({unit})",
+    "weightOptional": "Weight ({unit}) — optional",
+    "backToAll": "All Calculators",
+    "cm": "cm",
+    "inches": "inches",
+    "kg": "kg",
+    "lbs": "lbs",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal / day",
+    "activityLevel": "Activity Level",
+    "method": "Method"
+  },
+  "nav": {
+    "brand": "Health Calculators",
+    "allCalculators": "All Calculators",
+    "blog": "Blog"
+  },
+  "footer": {
+    "disclaimer": "For informational purposes only — not medical advice"
+  },
+  "home": {
+    "meta": {
+      "title": "Health Calculators — Free BMI, TDEE, Body Fat & More",
+      "description": "Free online health calculators: BMI, TDEE, body fat, macros, ideal weight, water intake, heart rate zones, and sleep cycles. Science-backed formulas, instant results, no sign-up."
+    },
+    "heading": "Your health, calculated.",
+    "subtitle": "Science-backed health calculators. No sign-up. Instant results.",
+    "groups": {
+      "bodyComposition": "Body Composition",
+      "nutritionEnergy": "Nutrition & Energy",
+      "fitnessRecovery": "Fitness & Recovery",
+      "pregnancy": "Pregnancy"
+    },
+    "calculators": {
+      "bmi": { "name": "BMI Calculator", "description": "Check if your weight is in a healthy range." },
+      "bodyFat": { "name": "Body Fat Calculator", "description": "Estimate your body fat percentage." },
+      "idealWeight": { "name": "Ideal Weight Calculator", "description": "Find your healthy weight range." },
+      "waistHipRatio": { "name": "Waist-to-Hip Ratio", "description": "Assess your health risk with WHO guidelines." },
+      "tdee": { "name": "TDEE Calculator", "description": "Find your daily calorie needs." },
+      "macro": { "name": "Macro Calculator", "description": "Get your ideal protein, carb, and fat split." },
+      "water": { "name": "Water Intake Calculator", "description": "How much water should you drink daily?" },
+      "calorieDeficit": { "name": "Calorie Deficit Calculator", "description": "Calculate your daily calorie target for weight loss." },
+      "heartRate": { "name": "Heart Rate Zones", "description": "Discover your training heart rate zones." },
+      "sleep": { "name": "Sleep Cycle Calculator", "description": "Find your optimal bedtime or wake time." },
+      "bloodPressure": { "name": "Blood Pressure Calculator", "description": "Check your blood pressure category instantly." },
+      "pregnancy": { "name": "Pregnancy Due Date Calculator", "description": "Estimate your due date and track milestones." }
+    }
+  },
+  "blogHome": {
+    "meta": {
+      "title": "Health Blog — Articles & Guides | Health Calculators",
+      "description": "Evidence-based health articles, BMI guides, nutrition tips, and fitness insights. Learn how to use health metrics effectively."
+    },
+    "heading": "Blog",
+    "subtitle": "Evidence-based articles on health metrics, nutrition, and fitness."
+  },
+  "blogBanner": {
+    "label": "Read more"
+  },
+  "bmi": {
+    "meta": {
+      "title": "BMI Calculator — Free Body Mass Index Calculator",
+      "description": "Calculate your Body Mass Index instantly. Science-backed BMI formula, no sign-up required."
+    },
+    "title": "BMI Calculator",
+    "description": "Calculate your Body Mass Index to check if your weight is in a healthy range.",
+    "categories": "BMI Categories",
+    "underweight": "Underweight",
+    "normal": "Normal weight",
+    "overweight": "Overweight",
+    "obese": "Obese"
+  },
+  "bodyFat": {
+    "meta": {
+      "title": "Body Fat Calculator — U.S. Navy Method",
+      "description": "Estimate your body fat percentage using the U.S. Navy method. Simple tape measurements, instant science-backed results."
+    },
+    "title": "Body Fat Calculator",
+    "description": "Estimate your body fat percentage using the U.S. Navy method.",
+    "neck": "Neck ({unit})",
+    "waist": "Waist ({unit})",
+    "hip": "Hip ({unit})",
+    "essentialFat": "Essential fat",
+    "athletes": "Athletes",
+    "fitness": "Fitness",
+    "average": "Average",
+    "obese": "Obese",
+    "fatMass": "Fat Mass",
+    "leanMass": "Lean Mass",
+    "categoriesTitle": "Body Fat Categories ({gender})"
+  },
+  "water": {
+    "meta": {
+      "title": "Water Intake Calculator — Daily Hydration Needs",
+      "description": "Calculate how much water you should drink daily. Personalized to your weight, activity level, and climate."
+    },
+    "title": "Water Intake Calculator",
+    "description": "Calculate how much water you should drink daily based on your weight, activity, and climate.",
+    "climate": "Climate",
+    "sedentary": "Sedentary",
+    "lightlyActive": "Lightly active",
+    "moderatelyActive": "Moderately active",
+    "veryActive": "Very active",
+    "extremelyActive": "Extremely active",
+    "temperate": "Temperate",
+    "hotHumid": "Hot / Humid",
+    "cold": "Cold",
+    "litersPerDay": "liters / day",
+    "glasses": "glasses",
+    "oz": "oz",
+    "tip": "Spread your intake throughout the day for best hydration."
+  },
+  "heartRate": {
+    "meta": {
+      "title": "Heart Rate Zone Calculator — Find Your Training Zones",
+      "description": "Calculate your five heart rate training zones. Standard and Karvonen methods for optimized fat burn, endurance, and peak performance."
+    },
+    "title": "Heart Rate Zone Calculator",
+    "description": "Find your five training heart rate zones.",
+    "restingHr": "Resting Heart Rate (optional)",
+    "standard": "Standard",
+    "karvonen": "Karvonen",
+    "maxHr": "Max Heart Rate",
+    "bpm": "bpm",
+    "zone": "Zone {n} — {name}",
+    "recovery": "Recovery",
+    "fatBurn": "Fat Burn",
+    "aerobic": "Aerobic",
+    "anaerobic": "Anaerobic",
+    "vo2max": "VO2 Max",
+    "recoveryDesc": "Light activity, active recovery. Improves overall health and aids recovery.",
+    "fatBurnDesc": "Easy endurance training. Builds aerobic base and burns fat efficiently.",
+    "aerobicDesc": "Moderate effort. Improves cardiovascular fitness and endurance.",
+    "anaerobicDesc": "Hard effort. Increases speed, power, and lactate threshold.",
+    "vo2maxDesc": "Maximum effort. Develops peak performance and speed."
+  },
+  "idealWeight": {
+    "meta": {
+      "title": "Ideal Weight Calculator — Find Your Healthy Weight Range",
+      "description": "Calculate your ideal weight using four science-backed formulas. Personalized results based on height and gender."
+    },
+    "title": "Ideal Weight Calculator",
+    "description": "Find your healthy weight range based on four science-backed formulas.",
+    "formulaComparison": "Formula Comparison",
+    "healthyBmiRange": "Healthy BMI Range",
+    "bmiRangeText": "Based on a BMI of 18.5 – 24.9, your healthy weight range is"
+  },
+  "macro": {
+    "meta": {
+      "title": "Macro Calculator — Free Protein, Carb & Fat Calculator",
+      "description": "Calculate your ideal macronutrient split. Personalized protein, carb, and fat targets based on your goals and activity level."
+    },
+    "title": "Macro Calculator",
+    "description": "Calculate your ideal protein, carb, and fat targets based on your goals.",
+    "sedentary": "Sedentary",
+    "lightlyActive": "Lightly active",
+    "moderatelyActive": "Moderately active",
+    "veryActive": "Very active",
+    "extremelyActive": "Extremely active",
+    "goal": "Goal",
+    "loseWeight": "Lose weight",
+    "maintain": "Maintain",
+    "buildMuscle": "Build muscle",
+    "targetCalories": "Target Calories",
+    "protein": "Protein (g)",
+    "carbs": "Carbs (g)",
+    "fat": "Fat (g)"
+  },
+  "sleep": {
+    "meta": {
+      "title": "Sleep Cycle Calculator — Optimal Bedtime & Wake Time",
+      "description": "Find your optimal bedtime or wake time based on 90-minute sleep cycles. Wake up refreshed, not groggy."
+    },
+    "title": "Sleep Cycle Calculator",
+    "description": "Find your optimal bedtime or wake time based on sleep cycles.",
+    "wakeUpAt": "Wake up at",
+    "goToSleepAt": "Go to sleep at",
+    "iWantTo": "I want to {mode} at",
+    "wakeUp": "wake up",
+    "goToSleep": "go to sleep",
+    "recommended": "Recommended",
+    "cycles": "{n} cycles",
+    "howItWorks": "How it works",
+    "howItWorksText": "A full sleep cycle lasts ~90 minutes. Waking between cycles helps you feel refreshed. This calculator factors in ~15 minutes to fall asleep and recommends times aligned with complete cycles."
+  },
+  "tdee": {
+    "meta": {
+      "title": "TDEE Calculator — Free Daily Calorie Needs Calculator",
+      "description": "Calculate your Total Daily Energy Expenditure. Science-backed Mifflin-St Jeor formula, personalized to your activity level."
+    },
+    "title": "TDEE Calculator",
+    "description": "Calculate your Total Daily Energy Expenditure based on the Mifflin-St Jeor equation.",
+    "sedentary": "Sedentary (office job, little exercise)",
+    "lightlyActive": "Lightly active (1-3 days/week)",
+    "moderatelyActive": "Moderately active (3-5 days/week)",
+    "veryActive": "Very active (6-7 days/week)",
+    "extremelyActive": "Extremely active (athlete/physical job)",
+    "bmr": "BMR: {value} kcal",
+    "weightLoss": "Weight Loss",
+    "maintenance": "Maintenance",
+    "weightGain": "Weight Gain"
+  },
+  "pregnancy": {
+    "meta": {
+      "title": "Pregnancy Due Date Calculator — Free Naegele's Rule Calculator",
+      "description": "Calculate your pregnancy due date using Naegele's rule. Gestational age, trimester, conception date, progress bar, and milestone timeline. Free, instant, no sign-up."
+    },
+    "title": "Pregnancy Due Date Calculator",
+    "description": "Estimate your due date, gestational age, and pregnancy milestones.",
+    "lmp": "Last Menstrual Period",
+    "cycleLength": "Cycle Length (days)",
+    "dueDate": "Due Date",
+    "gestationalAge": "Gestational Age",
+    "weeksAndDays": "{weeks} weeks, {days} days",
+    "trimester": "Trimester",
+    "conceptionDate": "Conception Date",
+    "complete": "{pct}% complete",
+    "daysLeft": "{n} days left",
+    "milestones": "Milestones",
+    "week": "Week {n}",
+    "milestone6": "Heartbeat detectable",
+    "milestone12": "End of 1st trimester",
+    "milestone16": "Gender may be visible",
+    "milestone20": "Anatomy scan",
+    "milestone24": "Viability milestone",
+    "milestone28": "Start of 3rd trimester",
+    "milestone37": "Early term",
+    "milestone40": "Due date",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses Naegele's rule: add 280 days to the first day of your last menstrual period (LMP). If your cycle is longer or shorter than 28 days, the due date is adjusted accordingly. Gestational age counts from LMP, not from conception."
+  },
+  "bloodPressure": {
+    "meta": {
+      "title": "Blood Pressure Calculator — Check Your Values | Health Calculators",
+      "description": "Enter your blood pressure values and instantly find out your category: Normal, Elevated, Stage 1, Stage 2 or Crisis. Free and no sign-up."
+    },
+    "title": "Blood Pressure Calculator",
+    "description": "Enter your blood pressure values and instantly find out your category.",
+    "systolic": "Systolic (mmHg)",
+    "diastolic": "Diastolic (mmHg)",
+    "normal": "Normal",
+    "elevated": "Elevated",
+    "stage1": "Hypertension Stage 1",
+    "stage2": "Hypertension Stage 2",
+    "crisis": "Hypertensive Crisis",
+    "scaleNormal": "Normal",
+    "scaleElevated": "Elevated",
+    "scaleStage1": "Stage 1",
+    "scaleStage2": "Stage 2",
+    "scaleCrisis": "Crisis",
+    "recNormal": "Your blood pressure values are optimal. Maintain your healthy lifestyle: balanced diet, regular exercise, and sufficient sleep.",
+    "recElevated": "Your values are slightly elevated. Reduce salt intake, exercise regularly, and monitor your blood pressure regularly.",
+    "recStage1": "Talk to your doctor about lifestyle changes and possible treatment. Regular monitoring is important.",
+    "recStage2": "See your doctor soon. Stage 2 hypertension usually requires medication.",
+    "recCrisis": "Call emergency services (911) immediately. Hypertensive crises require immediate medical treatment.",
+    "categoriesTitle": "Blood Pressure Categories"
+  },
+  "calorieDeficit": {
+    "meta": {
+      "title": "Calorie Deficit Calculator — Calculate Daily Calorie Goal",
+      "description": "Calculate your daily calorie goal for weight loss. Mifflin-St Jeor formula, individual deficit, and safety warnings."
+    },
+    "title": "Calorie Deficit Calculator",
+    "description": "Calculate your daily calorie goal for weight loss — based on the Mifflin-St Jeor formula.",
+    "heightCm": "Height (cm)",
+    "weightKg": "Weight (kg)",
+    "targetWeight": "Target weight (kg)",
+    "weeks": "Timeframe (weeks)",
+    "sedentary": "Sedentary (office job, little exercise)",
+    "lightlyActive": "Lightly active (1–3 days/week)",
+    "moderatelyActive": "Moderately active (3–5 days/week)",
+    "veryActive": "Very active (6–7 days/week)",
+    "extremelyActive": "Extremely active (athlete/physical job)",
+    "resultLabel": "kcal / day — your goal",
+    "tdee": "TDEE",
+    "dailyDeficit": "Daily Deficit",
+    "weeklyLoss": "Loss / Week",
+    "perWeek": "per week",
+    "warningUnsafe": "Your calorie goal is below 1,200 kcal/day. This is a health concern — please consult a doctor.",
+    "warningAggressive": "You are planning to lose more than 1 kg per week. A slower pace is more sustainable and healthier."
+  },
+  "waistHipRatio": {
+    "meta": {
+      "title": "Waist-to-Hip Ratio Calculator — WHO Risk Assessment",
+      "description": "Calculate your waist-to-hip ratio and assess health risk based on WHO guidelines. Free, instant results for men and women."
+    },
+    "title": "Waist-to-Hip Ratio Calculator",
+    "description": "Assess your health risk based on WHO waist-to-hip ratio guidelines.",
+    "waist": "Waist circumference (cm)",
+    "hip": "Hip circumference (cm)",
+    "lowRisk": "Low Risk",
+    "moderateRisk": "Moderate Risk",
+    "highRisk": "High Risk",
+    "recLow": "Your WHR indicates a {start}low health risk{end}. Keep up your healthy lifestyle with regular exercise and a balanced diet.",
+    "recModerate": "Your WHR indicates a {start}moderate health risk{end}. Consider increasing physical activity and monitoring your waist circumference.",
+    "recHigh": "Your WHR indicates a {start}high health risk{end} according to WHO guidelines. Central obesity is associated with increased cardiovascular and metabolic risk. Consult a healthcare professional.",
+    "thresholdsTitle": "WHO Risk Thresholds ({gender})"
+  }
+}

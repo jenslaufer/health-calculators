@@ -1,60 +1,64 @@
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 
-useHead({
-  title: 'Health Calculators — Free BMI, TDEE, Body Fat & More',
-  description: 'Free online health calculators: BMI, TDEE, body fat, macros, ideal weight, water intake, heart rate zones, and sleep cycles. Science-backed formulas, instant results, no sign-up.',
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('home.meta.title'),
+  description: t('home.meta.description'),
   path: '/',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Health Calculators',
     url: 'https://jenslaufer.github.io/health-calculators/',
-    description: 'Free online health calculators with science-backed formulas.',
+    description: t('home.meta.description'),
   },
-})
+}))
 
-const groups = [
+const groups = computed(() => [
   {
-    label: 'Body Composition',
+    label: t('home.groups.bodyComposition'),
     items: [
-      { name: 'BMI Calculator', description: 'Check if your weight is in a healthy range.', path: '/bmi' },
-      { name: 'Body Fat Calculator', description: 'Estimate your body fat percentage.', path: '/body-fat' },
-      { name: 'Ideal Weight Calculator', description: 'Find your healthy weight range.', path: '/ideal-weight' },
-      { name: 'Waist-to-Hip Ratio', description: 'Assess your health risk with WHO guidelines.', path: '/waist-hip-ratio' },
+      { name: t('home.calculators.bmi.name'), description: t('home.calculators.bmi.description'), path: '/bmi' },
+      { name: t('home.calculators.bodyFat.name'), description: t('home.calculators.bodyFat.description'), path: '/body-fat' },
+      { name: t('home.calculators.idealWeight.name'), description: t('home.calculators.idealWeight.description'), path: '/ideal-weight' },
+      { name: t('home.calculators.waistHipRatio.name'), description: t('home.calculators.waistHipRatio.description'), path: '/waist-hip-ratio' },
     ],
   },
   {
-    label: 'Nutrition & Energy',
+    label: t('home.groups.nutritionEnergy'),
     items: [
-      { name: 'TDEE Calculator', description: 'Find your daily calorie needs.', path: '/tdee' },
-      { name: 'Macro Calculator', description: 'Get your ideal protein, carb, and fat split.', path: '/macros' },
-      { name: 'Water Intake Calculator', description: 'How much water should you drink daily?', path: '/water' },
-      { name: 'Calorie Deficit Calculator', description: 'Calculate your daily calorie target for weight loss.', path: '/kaloriendefizit-rechner' },
+      { name: t('home.calculators.tdee.name'), description: t('home.calculators.tdee.description'), path: '/tdee' },
+      { name: t('home.calculators.macro.name'), description: t('home.calculators.macro.description'), path: '/macros' },
+      { name: t('home.calculators.water.name'), description: t('home.calculators.water.description'), path: '/water' },
+      { name: t('home.calculators.calorieDeficit.name'), description: t('home.calculators.calorieDeficit.description'), path: '/kaloriendefizit-rechner' },
     ],
   },
   {
-    label: 'Fitness & Recovery',
+    label: t('home.groups.fitnessRecovery'),
     items: [
-      { name: 'Heart Rate Zones', description: 'Discover your training heart rate zones.', path: '/heart-rate' },
-      { name: 'Sleep Cycle Calculator', description: 'Find your optimal bedtime or wake time.', path: '/sleep' },
-      { name: 'Blood Pressure Calculator', description: 'Check your blood pressure category instantly.', path: '/blutdruck-rechner' },
+      { name: t('home.calculators.heartRate.name'), description: t('home.calculators.heartRate.description'), path: '/heart-rate' },
+      { name: t('home.calculators.sleep.name'), description: t('home.calculators.sleep.description'), path: '/sleep' },
+      { name: t('home.calculators.bloodPressure.name'), description: t('home.calculators.bloodPressure.description'), path: '/blutdruck-rechner' },
     ],
   },
   {
-    label: 'Pregnancy',
+    label: t('home.groups.pregnancy'),
     items: [
-      { name: 'Pregnancy Due Date Calculator', description: 'Estimate your due date and track milestones.', path: '/pregnancy' },
+      { name: t('home.calculators.pregnancy.name'), description: t('home.calculators.pregnancy.description'), path: '/pregnancy' },
     ],
   },
-]
+])
 </script>
 
 <template>
   <div>
     <div class="mb-12">
-      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Your health, calculated.</h1>
-      <p class="text-base text-stone-500 font-normal leading-relaxed">Science-backed health calculators. No sign-up. Instant results.</p>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">{{ t('home.heading') }}</h1>
+      <p class="text-base text-stone-500 font-normal leading-relaxed">{{ t('home.subtitle') }}</p>
     </div>
 
     <div>

@@ -1,0 +1,308 @@
+{
+  "common": {
+    "metric": "Metrisch",
+    "imperial": "Imperial",
+    "male": "Mann",
+    "female": "Frau",
+    "age": "Alter",
+    "gender": "Geschlecht",
+    "height": "Größe ({unit})",
+    "weight": "Gewicht ({unit})",
+    "weightOptional": "Gewicht ({unit}) — optional",
+    "backToAll": "Alle Rechner",
+    "cm": "cm",
+    "inches": "Zoll",
+    "kg": "kg",
+    "lbs": "lbs",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal / Tag",
+    "activityLevel": "Aktivitätslevel",
+    "method": "Methode"
+  },
+  "nav": {
+    "brand": "Health Calculators",
+    "allCalculators": "Alle Rechner",
+    "blog": "Blog"
+  },
+  "footer": {
+    "disclaimer": "Nur zu Informationszwecken — kein medizinischer Rat"
+  },
+  "home": {
+    "meta": {
+      "title": "Gesundheitsrechner — Kostenlos BMI, TDEE, Körperfett & mehr",
+      "description": "Kostenlose Online-Gesundheitsrechner: BMI, TDEE, Körperfett, Makros, Idealgewicht, Wasserbedarf, Herzfrequenz-Zonen und Schlafzyklen. Wissenschaftlich fundiert, sofortige Ergebnisse, ohne Anmeldung."
+    },
+    "heading": "Deine Gesundheit, berechnet.",
+    "subtitle": "Wissenschaftlich fundierte Gesundheitsrechner. Ohne Anmeldung. Sofortige Ergebnisse.",
+    "groups": {
+      "bodyComposition": "Körperzusammensetzung",
+      "nutritionEnergy": "Ernährung & Energie",
+      "fitnessRecovery": "Fitness & Erholung",
+      "pregnancy": "Schwangerschaft"
+    },
+    "calculators": {
+      "bmi": { "name": "BMI-Rechner", "description": "Prüfe, ob dein Gewicht im gesunden Bereich liegt." },
+      "bodyFat": { "name": "Körperfett-Rechner", "description": "Schätze deinen Körperfettanteil." },
+      "idealWeight": { "name": "Idealgewicht-Rechner", "description": "Finde deinen gesunden Gewichtsbereich." },
+      "waistHipRatio": { "name": "Taille-Hüft-Verhältnis", "description": "Beurteile dein Gesundheitsrisiko nach WHO-Richtlinien." },
+      "tdee": { "name": "TDEE-Rechner", "description": "Berechne deinen täglichen Kalorienbedarf." },
+      "macro": { "name": "Makro-Rechner", "description": "Berechne deine ideale Protein-, Kohlenhydrat- und Fettverteilung." },
+      "water": { "name": "Wasserbedarf-Rechner", "description": "Wie viel Wasser solltest du täglich trinken?" },
+      "calorieDeficit": { "name": "Kaloriendefizit-Rechner", "description": "Berechne dein tägliches Kalorienziel zum Abnehmen." },
+      "heartRate": { "name": "Herzfrequenz-Zonen", "description": "Entdecke deine Trainings-Herzfrequenz-Zonen." },
+      "sleep": { "name": "Schlafzyklen-Rechner", "description": "Finde deine optimale Schlaf- oder Aufwachzeit." },
+      "bloodPressure": { "name": "Blutdruck-Rechner", "description": "Ordne deine Blutdruckwerte sofort ein." },
+      "pregnancy": { "name": "Geburtstermin-Rechner", "description": "Berechne deinen Geburtstermin und verfolge Meilensteine." }
+    }
+  },
+  "blogHome": {
+    "meta": {
+      "title": "Gesundheitsblog — Artikel & Ratgeber | Health Calculators",
+      "description": "Evidenzbasierte Gesundheitsartikel, BMI-Ratgeber, Ernährungstipps und Fitness-Einblicke. Lerne, Gesundheitskennzahlen effektiv zu nutzen."
+    },
+    "heading": "Blog",
+    "subtitle": "Evidenzbasierte Artikel zu Gesundheitskennzahlen, Ernährung und Fitness."
+  },
+  "blogBanner": {
+    "label": "Zum Nachlesen"
+  },
+  "bmi": {
+    "meta": {
+      "title": "BMI-Rechner — Kostenloser Body-Mass-Index-Rechner",
+      "description": "Berechne deinen Body-Mass-Index sofort. Wissenschaftlich fundierte BMI-Formel, ohne Anmeldung."
+    },
+    "title": "BMI-Rechner",
+    "description": "Berechne deinen Body-Mass-Index und prüfe, ob dein Gewicht im gesunden Bereich liegt.",
+    "categories": "BMI-Kategorien",
+    "underweight": "Untergewicht",
+    "normal": "Normalgewicht",
+    "overweight": "Übergewicht",
+    "obese": "Adipositas"
+  },
+  "bodyFat": {
+    "meta": {
+      "title": "Körperfett-Rechner — U.S. Navy-Methode",
+      "description": "Schätze deinen Körperfettanteil mit der U.S. Navy-Methode. Einfache Maßbandmessungen, sofortige wissenschaftlich fundierte Ergebnisse."
+    },
+    "title": "Körperfett-Rechner",
+    "description": "Schätze deinen Körperfettanteil mit der U.S. Navy-Methode.",
+    "neck": "Hals ({unit})",
+    "waist": "Taille ({unit})",
+    "hip": "Hüfte ({unit})",
+    "essentialFat": "Essentielles Fett",
+    "athletes": "Sportler",
+    "fitness": "Fitness",
+    "average": "Durchschnitt",
+    "obese": "Adipositas",
+    "fatMass": "Fettmasse",
+    "leanMass": "Magermasse",
+    "categoriesTitle": "Körperfett-Kategorien ({gender})"
+  },
+  "water": {
+    "meta": {
+      "title": "Wasserbedarf-Rechner — Täglicher Flüssigkeitsbedarf",
+      "description": "Berechne, wie viel Wasser du täglich trinken solltest. Individuell angepasst an Gewicht, Aktivität und Klima."
+    },
+    "title": "Wasserbedarf-Rechner",
+    "description": "Berechne deinen täglichen Wasserbedarf basierend auf Gewicht, Aktivität und Klima.",
+    "climate": "Klima",
+    "sedentary": "Sitzend",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Moderat aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "temperate": "Gemäßigt",
+    "hotHumid": "Heiß / Feucht",
+    "cold": "Kalt",
+    "litersPerDay": "Liter / Tag",
+    "glasses": "Gläser",
+    "oz": "oz",
+    "tip": "Verteile die Flüssigkeitsaufnahme über den ganzen Tag für optimale Hydration."
+  },
+  "heartRate": {
+    "meta": {
+      "title": "Herzfrequenz-Zonen-Rechner — Trainingszonen berechnen",
+      "description": "Berechne deine fünf Herzfrequenz-Trainingszonen. Standard- und Karvonen-Methode für optimierte Fettverbrennung, Ausdauer und Spitzenleistung."
+    },
+    "title": "Herzfrequenz-Zonen-Rechner",
+    "description": "Berechne deine fünf Trainings-Herzfrequenz-Zonen.",
+    "restingHr": "Ruhepuls (optional)",
+    "standard": "Standard",
+    "karvonen": "Karvonen",
+    "maxHr": "Maximale Herzfrequenz",
+    "bpm": "bpm",
+    "zone": "Zone {n} — {name}",
+    "recovery": "Erholung",
+    "fatBurn": "Fettverbrennung",
+    "aerobic": "Aerob",
+    "anaerobic": "Anaerob",
+    "vo2max": "VO2 Max",
+    "recoveryDesc": "Leichte Aktivität, aktive Erholung. Verbessert die allgemeine Gesundheit und fördert die Regeneration.",
+    "fatBurnDesc": "Leichtes Ausdauertraining. Baut aerobe Grundlage auf und verbrennt Fett effizient.",
+    "aerobicDesc": "Mittlere Anstrengung. Verbessert Herz-Kreislauf-Fitness und Ausdauer.",
+    "anaerobicDesc": "Hohe Anstrengung. Steigert Geschwindigkeit, Kraft und Laktatschwelle.",
+    "vo2maxDesc": "Maximale Anstrengung. Entwickelt Spitzenleistung und Geschwindigkeit."
+  },
+  "idealWeight": {
+    "meta": {
+      "title": "Idealgewicht-Rechner — Gesunden Gewichtsbereich berechnen",
+      "description": "Berechne dein Idealgewicht mit vier wissenschaftlich fundierten Formeln. Individuelle Ergebnisse basierend auf Größe und Geschlecht."
+    },
+    "title": "Idealgewicht-Rechner",
+    "description": "Finde deinen gesunden Gewichtsbereich basierend auf vier wissenschaftlich fundierten Formeln.",
+    "formulaComparison": "Formelvergleich",
+    "healthyBmiRange": "Gesunder BMI-Bereich",
+    "bmiRangeText": "Basierend auf einem BMI von 18,5 – 24,9 liegt dein gesunder Gewichtsbereich bei"
+  },
+  "macro": {
+    "meta": {
+      "title": "Makro-Rechner — Kostenloser Protein-, Kohlenhydrat- & Fett-Rechner",
+      "description": "Berechne deine ideale Makronährstoffverteilung. Individuelle Protein-, Kohlenhydrat- und Fettziele basierend auf deinen Zielen und deinem Aktivitätslevel."
+    },
+    "title": "Makro-Rechner",
+    "description": "Berechne deine idealen Protein-, Kohlenhydrat- und Fettziele basierend auf deinen Zielen.",
+    "sedentary": "Sitzend",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Moderat aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "goal": "Ziel",
+    "loseWeight": "Abnehmen",
+    "maintain": "Halten",
+    "buildMuscle": "Muskelaufbau",
+    "targetCalories": "Zielkalorien",
+    "protein": "Protein (g)",
+    "carbs": "Kohlenhydrate (g)",
+    "fat": "Fett (g)"
+  },
+  "sleep": {
+    "meta": {
+      "title": "Schlafzyklen-Rechner — Optimale Schlaf- & Aufwachzeit",
+      "description": "Finde deine optimale Schlaf- oder Aufwachzeit basierend auf 90-Minuten-Schlafzyklen. Wache erfrischt auf, nicht benommen."
+    },
+    "title": "Schlafzyklen-Rechner",
+    "description": "Finde deine optimale Schlaf- oder Aufwachzeit basierend auf Schlafzyklen.",
+    "wakeUpAt": "Aufwachen um",
+    "goToSleepAt": "Einschlafen um",
+    "iWantTo": "Ich möchte um … {mode}",
+    "wakeUp": "aufwachen",
+    "goToSleep": "einschlafen",
+    "recommended": "Empfohlen",
+    "cycles": "{n} Zyklen",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Ein vollständiger Schlafzyklus dauert ca. 90 Minuten. Das Aufwachen zwischen Zyklen hilft dir, erfrischt aufzustehen. Dieser Rechner berücksichtigt ca. 15 Minuten Einschlafzeit und empfiehlt Zeiten, die auf vollständige Zyklen abgestimmt sind."
+  },
+  "tdee": {
+    "meta": {
+      "title": "TDEE-Rechner — Kostenloser Kalorienbedarfs-Rechner",
+      "description": "Berechne deinen Gesamtenergieumsatz (TDEE). Wissenschaftlich fundierte Mifflin-St Jeor-Formel, individuell angepasst an dein Aktivitätslevel."
+    },
+    "title": "TDEE-Rechner",
+    "description": "Berechne deinen Gesamtenergieumsatz (TDEE) basierend auf der Mifflin-St Jeor-Gleichung.",
+    "sedentary": "Sitzend (Bürojob, wenig Bewegung)",
+    "lightlyActive": "Leicht aktiv (1–3 Tage/Woche)",
+    "moderatelyActive": "Moderat aktiv (3–5 Tage/Woche)",
+    "veryActive": "Sehr aktiv (6–7 Tage/Woche)",
+    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)",
+    "bmr": "BMR: {value} kcal",
+    "weightLoss": "Abnehmen",
+    "maintenance": "Halten",
+    "weightGain": "Zunehmen"
+  },
+  "pregnancy": {
+    "meta": {
+      "title": "Geburtstermin-Rechner — Kostenloser Naegele-Regel-Rechner",
+      "description": "Berechne deinen Geburtstermin mit der Naegele-Regel. Schwangerschaftswoche, Trimester, Empfängnisdatum, Fortschrittsbalken und Meilenstein-Zeitplan. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Geburtstermin-Rechner",
+    "description": "Berechne deinen Geburtstermin, Schwangerschaftsalter und Meilensteine.",
+    "lmp": "Letzte Monatsblutung",
+    "cycleLength": "Zykluslänge (Tage)",
+    "dueDate": "Geburtstermin",
+    "gestationalAge": "Schwangerschaftsalter",
+    "weeksAndDays": "{weeks} Wochen, {days} Tage",
+    "trimester": "Trimester",
+    "conceptionDate": "Empfängnisdatum",
+    "complete": "{pct}% abgeschlossen",
+    "daysLeft": "{n} Tage verbleibend",
+    "milestones": "Meilensteine",
+    "week": "Woche {n}",
+    "milestone6": "Herzschlag erkennbar",
+    "milestone12": "Ende des 1. Trimesters",
+    "milestone16": "Geschlecht möglicherweise sichtbar",
+    "milestone20": "Feindiagnostik-Ultraschall",
+    "milestone24": "Lebensfähigkeits-Meilenstein",
+    "milestone28": "Beginn des 3. Trimesters",
+    "milestone37": "Frühes Termin",
+    "milestone40": "Geburtstermin",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner verwendet die Naegele-Regel: 280 Tage zum ersten Tag deiner letzten Monatsblutung addieren. Wenn dein Zyklus länger oder kürzer als 28 Tage ist, wird der Termin entsprechend angepasst. Das Schwangerschaftsalter zählt ab der letzten Monatsblutung, nicht ab der Empfängnis."
+  },
+  "bloodPressure": {
+    "meta": {
+      "title": "Blutdruck-Rechner — Blutdruckwerte einordnen | Health Calculators",
+      "description": "Blutdruckwerte eingeben und sofort die Kategorie erfahren: Normal, Erhöht, Grad 1, Grad 2 oder Krise. Kostenlos und ohne Anmeldung."
+    },
+    "title": "Blutdruck-Rechner",
+    "description": "Geben Sie Ihre Blutdruckwerte ein und erfahren Sie sofort Ihre Kategorie.",
+    "systolic": "Systolisch (mmHg)",
+    "diastolic": "Diastolisch (mmHg)",
+    "normal": "Normal",
+    "elevated": "Erhöht",
+    "stage1": "Bluthochdruck Grad 1",
+    "stage2": "Bluthochdruck Grad 2",
+    "crisis": "Hypertensive Krise",
+    "scaleNormal": "Normal",
+    "scaleElevated": "Erhöht",
+    "scaleStage1": "Grad 1",
+    "scaleStage2": "Grad 2",
+    "scaleCrisis": "Krise",
+    "recNormal": "Ihre Blutdruckwerte sind optimal. Halten Sie Ihren gesunden Lebensstil bei: ausgewogene Ernährung, regelmäßige Bewegung und ausreichend Schlaf.",
+    "recElevated": "Ihre Werte sind leicht erhöht. Reduzieren Sie Salzkonsum, bewegen Sie sich regelmäßig und kontrollieren Sie Ihren Blutdruck regelmäßig.",
+    "recStage1": "Sprechen Sie mit Ihrem Arzt über Lebensstiländerungen und mögliche Behandlung. Regelmäßige Kontrolle ist wichtig.",
+    "recStage2": "Suchen Sie zeitnah Ihren Arzt auf. Bluthochdruck Grad 2 erfordert in der Regel eine medikamentöse Behandlung.",
+    "recCrisis": "Rufen Sie sofort den Notruf (112). Hypertensive Krisen erfordern eine sofortige medizinische Behandlung.",
+    "categoriesTitle": "Blutdruck-Kategorien"
+  },
+  "calorieDeficit": {
+    "meta": {
+      "title": "Kaloriendefizit-Rechner — Tägliches Kalorienziel berechnen",
+      "description": "Berechne dein tägliches Kalorienziel zum Abnehmen. Mifflin-St Jeor-Formel, individuelles Defizit und Sicherheitswarnungen."
+    },
+    "title": "Kaloriendefizit-Rechner",
+    "description": "Berechne dein tägliches Kalorienziel zum Abnehmen — basierend auf der Mifflin-St Jeor-Formel.",
+    "heightCm": "Größe (cm)",
+    "weightKg": "Gewicht (kg)",
+    "targetWeight": "Zielgewicht (kg)",
+    "weeks": "Zeitraum (Wochen)",
+    "sedentary": "Sitzend (Bürojob, wenig Bewegung)",
+    "lightlyActive": "Leicht aktiv (1–3 Tage/Woche)",
+    "moderatelyActive": "Moderat aktiv (3–5 Tage/Woche)",
+    "veryActive": "Sehr aktiv (6–7 Tage/Woche)",
+    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)",
+    "resultLabel": "kcal / Tag — dein Ziel",
+    "tdee": "TDEE",
+    "dailyDeficit": "Tägliches Defizit",
+    "weeklyLoss": "Abnahme / Woche",
+    "perWeek": "pro Woche",
+    "warningUnsafe": "Dein Kalorienziel liegt unter 1.200 kcal/Tag. Das ist gesundheitlich bedenklich — bitte sprich mit einem Arzt.",
+    "warningAggressive": "Du planst mehr als 1 kg pro Woche abzunehmen. Ein langsameres Tempo ist nachhaltiger und gesünder."
+  },
+  "waistHipRatio": {
+    "meta": {
+      "title": "Taille-Hüft-Verhältnis-Rechner — WHO-Risikobewertung",
+      "description": "Berechne dein Taille-Hüft-Verhältnis und beurteile dein Gesundheitsrisiko nach WHO-Richtlinien. Kostenlos, sofortige Ergebnisse für Männer und Frauen."
+    },
+    "title": "Taille-Hüft-Verhältnis-Rechner",
+    "description": "Beurteile dein Gesundheitsrisiko basierend auf den WHO-Richtlinien zum Taille-Hüft-Verhältnis.",
+    "waist": "Taillenumfang (cm)",
+    "hip": "Hüftumfang (cm)",
+    "lowRisk": "Niedriges Risiko",
+    "moderateRisk": "Mittleres Risiko",
+    "highRisk": "Hohes Risiko",
+    "recLow": "Dein THV zeigt ein {start}niedriges Gesundheitsrisiko{end}. Behalte deinen gesunden Lebensstil mit regelmäßiger Bewegung und ausgewogener Ernährung bei.",
+    "recModerate": "Dein THV zeigt ein {start}mittleres Gesundheitsrisiko{end}. Erwäge, deine körperliche Aktivität zu erhöhen und deinen Taillenumfang zu überwachen.",
+    "recHigh": "Dein THV zeigt ein {start}hohes Gesundheitsrisiko{end} gemäß WHO-Richtlinien. Bauchfettleibigkeit ist mit erhöhtem kardiovaskulärem und metabolischem Risiko verbunden. Konsultiere einen Arzt.",
+    "thresholdsTitle": "WHO-Risikoschwellen ({gender})"
+  }
+}

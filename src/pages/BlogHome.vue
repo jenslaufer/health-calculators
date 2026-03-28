@@ -1,20 +1,23 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import { articles } from '../data/articles.js'
 
-useHead({
-  title: 'Health Blog — Articles & Guides | Health Calculators',
-  description: 'Evidence-based health articles, BMI guides, nutrition tips, and fitness insights. Learn how to use health metrics effectively.',
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('blogHome.meta.title'),
+  description: t('blogHome.meta.description'),
   path: '/blog',
-})
+}))
 </script>
 
 <template>
   <div>
     <div class="mb-10">
-      <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
-      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">Blog</h1>
-      <p class="text-base text-stone-500 font-normal">Evidence-based articles on health metrics, nutrition, and fitness.</p>
+      <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('blogHome.heading') }}</h1>
+      <p class="text-base text-stone-500 font-normal">{{ t('blogHome.subtitle') }}</p>
     </div>
 
     <div class="space-y-4">

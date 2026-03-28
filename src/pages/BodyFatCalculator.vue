@@ -1,11 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 
-useHead({
-  title: 'Body Fat Calculator — U.S. Navy Method',
-  description: 'Estimate your body fat percentage using the U.S. Navy method. Simple tape measurements, instant science-backed results.',
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('bodyFat.meta.title'),
+  description: t('bodyFat.meta.description'),
   path: '/body-fat',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -16,7 +19,7 @@ useHead({
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   },
-})
+}))
 
 const gender = ref('male')
 const unit = ref('metric')
@@ -50,19 +53,19 @@ const bodyFatFormatted = computed(() => bodyFat.value?.toFixed(1))
 const categories = computed(() => {
   if (gender.value === 'male') {
     return [
-      { label: 'Essential fat', range: '2 – 5%', min: 2, max: 5, color: 'text-blue-500', bg: 'bg-blue-500' },
-      { label: 'Athletes', range: '6 – 13%', min: 6, max: 13, color: 'text-green-600', bg: 'bg-green-600' },
-      { label: 'Fitness', range: '14 – 17%', min: 14, max: 17, color: 'text-green-500', bg: 'bg-green-500' },
-      { label: 'Average', range: '18 – 24%', min: 18, max: 24, color: 'text-yellow-500', bg: 'bg-yellow-500' },
-      { label: 'Obese', range: '> 25%', min: 25, max: 100, color: 'text-red-500', bg: 'bg-red-500' },
+      { label: 'bodyFat.essentialFat', range: '2 – 5%', min: 2, max: 5, color: 'text-blue-500', bg: 'bg-blue-500' },
+      { label: 'bodyFat.athletes', range: '6 – 13%', min: 6, max: 13, color: 'text-green-600', bg: 'bg-green-600' },
+      { label: 'bodyFat.fitness', range: '14 – 17%', min: 14, max: 17, color: 'text-green-500', bg: 'bg-green-500' },
+      { label: 'bodyFat.average', range: '18 – 24%', min: 18, max: 24, color: 'text-yellow-500', bg: 'bg-yellow-500' },
+      { label: 'bodyFat.obese', range: '> 25%', min: 25, max: 100, color: 'text-red-500', bg: 'bg-red-500' },
     ]
   }
   return [
-    { label: 'Essential fat', range: '10 – 13%', min: 10, max: 13, color: 'text-blue-500', bg: 'bg-blue-500' },
-    { label: 'Athletes', range: '14 – 20%', min: 14, max: 20, color: 'text-green-600', bg: 'bg-green-600' },
-    { label: 'Fitness', range: '21 – 24%', min: 21, max: 24, color: 'text-green-500', bg: 'bg-green-500' },
-    { label: 'Average', range: '25 – 31%', min: 25, max: 31, color: 'text-yellow-500', bg: 'bg-yellow-500' },
-    { label: 'Obese', range: '> 32%', min: 32, max: 100, color: 'text-red-500', bg: 'bg-red-500' },
+    { label: 'bodyFat.essentialFat', range: '10 – 13%', min: 10, max: 13, color: 'text-blue-500', bg: 'bg-blue-500' },
+    { label: 'bodyFat.athletes', range: '14 – 20%', min: 14, max: 20, color: 'text-green-600', bg: 'bg-green-600' },
+    { label: 'bodyFat.fitness', range: '21 – 24%', min: 21, max: 24, color: 'text-green-500', bg: 'bg-green-500' },
+    { label: 'bodyFat.average', range: '25 – 31%', min: 25, max: 31, color: 'text-yellow-500', bg: 'bg-yellow-500' },
+    { label: 'bodyFat.obese', range: '> 32%', min: 32, max: 100, color: 'text-red-500', bg: 'bg-red-500' },
   ]
 })
 
@@ -89,13 +92,14 @@ const leanMass = computed(() => {
 })
 
 const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
+const unitLabel = computed(() => t('common.' + (unit.value === 'metric' ? 'cm' : 'inches')))
 </script>
 
 <template>
   <div class="mb-10">
-    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
-    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">Body Fat Calculator</h1>
-    <p class="text-base text-stone-500 font-normal">Estimate your body fat percentage using the U.S. Navy method.</p>
+    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('bodyFat.title') }}</h1>
+    <p class="text-base text-stone-500 font-normal">{{ t('bodyFat.description') }}</p>
   </div>
 
   <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
@@ -104,12 +108,12 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
         @click="gender = 'male'"
         :class="gender === 'male' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-      >Male</button>
+      >{{ t('common.male') }}</button>
       <button
         @click="gender = 'female'"
         :class="gender === 'female' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-      >Female</button>
+      >{{ t('common.female') }}</button>
     </div>
 
     <div class="flex gap-2 mb-6">
@@ -117,74 +121,49 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
         @click="unit = 'metric'"
         :class="unit === 'metric' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-      >Metric</button>
+      >{{ t('common.metric') }}</button>
       <button
         @click="unit = 'imperial'"
         :class="unit === 'imperial' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-      >Imperial</button>
+      >{{ t('common.imperial') }}</button>
     </div>
 
     <div class="grid grid-cols-2 gap-4 mb-6">
       <div>
         <label for="height" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-          Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
+          {{ t('common.height', { unit: unitLabel }) }}
         </label>
-        <input
-          id="height"
-          v-model.number="height"
-          type="number"
-          :placeholder="unit === 'metric' ? '170' : '67'"
-          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
-        />
+        <input id="height" v-model.number="height" type="number" :placeholder="unit === 'metric' ? '170' : '67'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
       </div>
       <div>
         <label for="neck" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-          Neck ({{ unit === 'metric' ? 'cm' : 'inches' }})
+          {{ t('bodyFat.neck', { unit: unitLabel }) }}
         </label>
-        <input
-          id="neck"
-          v-model.number="neck"
-          type="number"
-          :placeholder="unit === 'metric' ? '38' : '15'"
-          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
-        />
+        <input id="neck" v-model.number="neck" type="number" :placeholder="unit === 'metric' ? '38' : '15'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
       </div>
       <div>
         <label for="waist" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-          Waist ({{ unit === 'metric' ? 'cm' : 'inches' }})
+          {{ t('bodyFat.waist', { unit: unitLabel }) }}
         </label>
-        <input
-          id="waist"
-          v-model.number="waist"
-          type="number"
-          :placeholder="unit === 'metric' ? '85' : '33'"
-          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
-        />
+        <input id="waist" v-model.number="waist" type="number" :placeholder="unit === 'metric' ? '85' : '33'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
       </div>
       <div v-if="gender === 'female'">
         <label for="hip" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-          Hip ({{ unit === 'metric' ? 'cm' : 'inches' }})
+          {{ t('bodyFat.hip', { unit: unitLabel }) }}
         </label>
-        <input
-          id="hip"
-          v-model.number="hip"
-          type="number"
-          :placeholder="unit === 'metric' ? '100' : '39'"
-          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
-        />
+        <input id="hip" v-model.number="hip" type="number" :placeholder="unit === 'metric' ? '100' : '39'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
       </div>
       <div>
         <label for="weight" class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-          Weight ({{ unit === 'metric' ? 'kg' : 'lbs' }}) <span class="normal-case font-normal text-stone-400">— optional</span>
+          {{ t('common.weightOptional', { unit: t('common.' + (unit === 'metric' ? 'kg' : 'lbs')) }) }}
         </label>
-        <input
-          id="weight"
-          v-model.number="weight"
-          type="number"
-          :placeholder="unit === 'metric' ? '80' : '176'"
-          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
-        />
+        <input id="weight" v-model.number="weight" type="number" :placeholder="unit === 'metric' ? '80' : '176'"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
       </div>
     </div>
 
@@ -192,7 +171,7 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
       <div class="flex items-baseline gap-3 mb-4">
         <span data-testid="body-fat-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ bodyFatFormatted }}</span>
         <span class="text-2xl text-stone-400">%</span>
-        <span v-if="category" :class="category.color" data-testid="body-fat-category" class="text-lg font-semibold">{{ category.label }}</span>
+        <span v-if="category" :class="category.color" data-testid="body-fat-category" class="text-lg font-semibold">{{ t(category.label) }}</span>
       </div>
 
       <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
@@ -203,10 +182,7 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
           <div class="flex-1 bg-yellow-500"></div>
           <div class="flex-1 bg-red-500"></div>
         </div>
-        <div
-          class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform"
-          :style="{ left: barPosition + '%' }"
-        ></div>
+        <div class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform" :style="{ left: barPosition + '%' }"></div>
       </div>
       <div class="flex text-[10px] text-stone-400 tabular-nums">
         <div class="flex-1">5%</div>
@@ -218,11 +194,11 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
 
       <div v-if="fatMass !== null" class="grid grid-cols-2 gap-4 mt-5">
         <div class="bg-stone-50 rounded-lg p-4">
-          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">Fat Mass</div>
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('bodyFat.fatMass') }}</div>
           <div data-testid="fat-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ fatMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
         </div>
         <div class="bg-stone-50 rounded-lg p-4">
-          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">Lean Mass</div>
+          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('bodyFat.leanMass') }}</div>
           <div data-testid="lean-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ leanMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
         </div>
       </div>
@@ -230,7 +206,7 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
   </div>
 
   <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8">
-    <h2 class="text-lg font-semibold text-stone-900 mb-3">Body Fat Categories ({{ gender === 'male' ? 'Male' : 'Female' }})</h2>
+    <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('bodyFat.categoriesTitle', { gender: t('common.' + gender) }) }}</h2>
     <div class="space-y-3.5">
       <div
         v-for="(cat, i) in categories"
@@ -240,7 +216,7 @@ const massUnit = computed(() => unit.value === 'metric' ? 'kg' : 'lbs')
       >
         <div class="flex items-center gap-3">
           <div class="w-2.5 h-2.5 rounded-full" :class="cat.bg"></div>
-          <span class="text-sm text-stone-600">{{ cat.label }}</span>
+          <span class="text-sm text-stone-600">{{ t(cat.label) }}</span>
         </div>
         <span class="text-sm font-medium text-stone-900 tabular-nums">{{ cat.range }}</span>
       </div>

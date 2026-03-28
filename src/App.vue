@@ -1,11 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 const router = useRouter()
 const menuOpen = ref(false)
+const { t, locale } = useI18n()
 
 router.afterEach(() => { menuOpen.value = false })
+
+function setLocale(lang) {
+  locale.value = lang
+  localStorage.setItem('locale', lang)
+}
 </script>
 
 <template>
@@ -16,20 +23,46 @@ router.afterEach(() => { menuOpen.value = false })
           <router-link
             to="/"
             class="text-sm font-bold tracking-widest text-stone-900 uppercase shrink-0"
-          >Health Calculators</router-link>
+          >{{ t('nav.brand') }}</router-link>
 
           <div class="hidden md:flex items-center gap-6">
             <router-link
               to="/"
               class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
-            >All Calculators</router-link>
+            >{{ t('nav.allCalculators') }}</router-link>
             <router-link
               to="/blog"
               class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
-            >Blog</router-link>
+            >{{ t('nav.blog') }}</router-link>
+            <div class="flex items-center gap-1 text-sm">
+              <button
+                @click="setLocale('de')"
+                :class="locale === 'de' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
+                class="transition-colors duration-150"
+              >DE</button>
+              <span class="text-stone-300">|</span>
+              <button
+                @click="setLocale('en')"
+                :class="locale === 'en' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
+                class="transition-colors duration-150"
+              >EN</button>
+            </div>
           </div>
 
-          <div class="md:hidden">
+          <div class="md:hidden flex items-center gap-3">
+            <div class="flex items-center gap-1 text-sm">
+              <button
+                @click="setLocale('de')"
+                :class="locale === 'de' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
+                class="transition-colors duration-150"
+              >DE</button>
+              <span class="text-stone-300">|</span>
+              <button
+                @click="setLocale('en')"
+                :class="locale === 'en' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
+                class="transition-colors duration-150"
+              >EN</button>
+            </div>
             <button
               @click="menuOpen = !menuOpen"
               class="p-2 -mr-2 text-stone-500 hover:text-stone-800 transition-colors"
@@ -48,16 +81,16 @@ router.afterEach(() => { menuOpen.value = false })
 
         <div v-if="menuOpen" class="border-t border-stone-100 bg-white md:hidden">
           <div class="max-w-3xl mx-auto px-6 py-4 flex flex-col gap-2">
-            <router-link to="/bmi" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">BMI Calculator</router-link>
-            <router-link to="/tdee" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">TDEE Calculator</router-link>
-            <router-link to="/macros" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Macro Calculator</router-link>
-            <router-link to="/body-fat" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Body Fat Calculator</router-link>
-            <router-link to="/ideal-weight" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Ideal Weight Calculator</router-link>
-            <router-link to="/heart-rate" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Heart Rate Zones</router-link>
-            <router-link to="/water" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Water Intake Calculator</router-link>
-            <router-link to="/sleep" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Sleep Cycle Calculator</router-link>
+            <router-link to="/bmi" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.bmi.name') }}</router-link>
+            <router-link to="/tdee" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.tdee.name') }}</router-link>
+            <router-link to="/macros" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.macro.name') }}</router-link>
+            <router-link to="/body-fat" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.bodyFat.name') }}</router-link>
+            <router-link to="/ideal-weight" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.idealWeight.name') }}</router-link>
+            <router-link to="/heart-rate" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.heartRate.name') }}</router-link>
+            <router-link to="/water" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.water.name') }}</router-link>
+            <router-link to="/sleep" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('home.calculators.sleep.name') }}</router-link>
             <div class="border-t border-stone-100 mt-2 pt-2">
-              <router-link to="/blog" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">Blog</router-link>
+              <router-link to="/blog" class="text-sm text-stone-600 hover:text-stone-900 transition-colors py-1">{{ t('nav.blog') }}</router-link>
             </div>
           </div>
         </div>
@@ -69,7 +102,7 @@ router.afterEach(() => { menuOpen.value = false })
     </main>
 
     <footer class="border-t border-stone-200 py-8 text-center">
-      <p class="text-xs font-medium tracking-widest text-stone-400 uppercase">For informational purposes only — not medical advice</p>
+      <p class="text-xs font-medium tracking-widest text-stone-400 uppercase">{{ t('footer.disclaimer') }}</p>
     </footer>
   </div>
 </template>

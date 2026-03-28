@@ -1,4 +1,4 @@
-import { onMounted, onUnmounted } from 'vue'
+import { watchEffect, onUnmounted } from 'vue'
 
 const BASE_URL = 'https://jenslaufer.github.io/health-calculators'
 
@@ -38,14 +38,15 @@ function removeJsonLd() {
   if (el) el.remove()
 }
 
-export function useHead({ title, description, path = '/', jsonLd }) {
-  let prevTitle
-  const url = `${BASE_URL}${path}`
+export function useHead(getConfig) {
+  const resolve = typeof getConfig === 'function' ? getConfig : () => getConfig
+  const prevTitle = document.title
 
-  onMounted(() => {
-    prevTitle = document.title
+  watchEffect(() => {
+    const { title, description, path = '/', jsonLd } = resolve()
+    const url = `${BASE_URL}${path}`
+
     document.title = title
-
     setMeta('name', 'description', description)
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)

@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('page loads with correct title', async ({ page }) => {
-  await expect(page).toHaveTitle('Heart Rate Zone Calculator — Find Your Training Zones')
+  await expect(page).toHaveTitle(/Herzfrequenz-Zonen/)
 })
 
 test('entering age 30 shows HRmax of 190', async ({ page }) => {
@@ -74,6 +74,6 @@ test('all zone ranges are contiguous (zone N max = zone N+1 min)', async ({ page
 })
 
 test('back link navigates to home page', async ({ page }) => {
-  await page.locator('a', { hasText: '← All Calculators' }).click()
+  await page.getByRole('link', { name: '← Alle Rechner' }).click()
   await expect(page).toHaveURL(/\/health-calculators\/$/)
 })

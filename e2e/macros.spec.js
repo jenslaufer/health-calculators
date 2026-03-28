@@ -16,7 +16,7 @@ test.describe('Macro Calculator', () => {
   })
 
   test('page loads with correct title', async ({ page }) => {
-    await expect(page).toHaveTitle(/Macro Calculator/)
+    await expect(page).toHaveTitle(/Makro-Rechner/)
   })
 
   test('entering valid data shows macro results', async ({ page }) => {
