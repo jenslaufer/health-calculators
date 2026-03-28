@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Taille-Hüft-Verhältnis berechnen: WHR, WHO-Grenzwerte & Risiko | Health Calculators',
   description: 'Taille-Hüft-Verhältnis (WHR) berechnen und Gesundheitsrisiko einschätzen. WHO-Grenzwerte, Messanleitung und warum WHR aussagekräftiger als der BMI ist.',
-  path: '/blog/taille-hueft-verhaeltnis-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Taille-Hüft-Verhältnis berechnen: WHR, WHO-Grenzwerte & Risiko</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">27. März 2026</span>
@@ -39,7 +42,7 @@ useHead({
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-8">
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Das <strong>Taille-Hüft-Verhältnis</strong> (Waist-to-Hip Ratio, WHR) ist ein einfacher Indikator für die Fettverteilung im Körper. Anders als der <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> zeigt es, <em>wo</em> sich das Fett befindet — und genau das bestimmt das Gesundheitsrisiko.
+          Das <strong>Taille-Hüft-Verhältnis</strong> (Waist-to-Hip Ratio, WHR) ist ein einfacher Indikator für die Fettverteilung im Körper. Anders als der <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> zeigt es, <em>wo</em> sich das Fett befindet — und genau das bestimmt das Gesundheitsrisiko.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
           In diesem Artikel erfährst du, was das WHR ist, wie du es korrekt misst, welche WHO-Grenzwerte gelten und warum das Taille-Hüft-Verhältnis aussagekräftiger als der BMI sein kann.
@@ -69,7 +72,7 @@ useHead({
           </div>
           <div class="flex gap-4">
             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-stone-900 text-white text-sm font-bold flex items-center justify-center">3</div>
-            <p class="text-base text-stone-600 leading-relaxed"><strong>Berechnen</strong> — Teile den Taillenumfang durch den Hüftumfang. Oder nutze unseren <router-link to="/waist-hip-ratio" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR-Rechner</router-link>.</p>
+            <p class="text-base text-stone-600 leading-relaxed"><strong>Berechnen</strong> — Teile den Taillenumfang durch den Hüftumfang. Oder nutze unseren <router-link :to="localePath('waistHipRatio')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR-Rechner</router-link>.</p>
           </div>
         </div>
       </div>
@@ -114,7 +117,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt dein Taille-Hüft-Verhältnis berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">WHO-basierte Risikoeinschätzung — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/waist-hip-ratio"
+          :to="localePath('waistHipRatio')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -122,20 +125,20 @@ useHead({
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">WHR vs. BMI: Warum die Fettverteilung zählt</h2>
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Der <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> misst nur das Verhältnis von Gewicht zu Größe — er kann nicht zwischen Muskel- und Fettmasse unterscheiden und sagt nichts über die Fettverteilung aus.
+          Der <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> misst nur das Verhältnis von Gewicht zu Größe — er kann nicht zwischen Muskel- und Fettmasse unterscheiden und sagt nichts über die Fettverteilung aus.
         </p>
         <p class="text-base text-stone-600 leading-relaxed mb-4">
           Das WHR erfasst gezielt die <strong>abdominale Adipositas</strong>. Studien zeigen, dass Bauchfett (viszerales Fett) metabolisch aktiver ist und stärker mit Herzerkrankungen, Schlaganfall und Diabetes korreliert als subkutanes Fett.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Ergänze dein WHR mit dem <router-link to="/blog/koerperfett-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link> für ein vollständiges Bild deiner Körperzusammensetzung.
+          Ergänze dein WHR mit dem <router-link :to="localeBlogPath('koerperfett-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link> für ein vollständiges Bild deiner Körperzusammensetzung.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Das Taille-Hüft-Verhältnis ist ein schneller, kostenloser Test für dein Gesundheitsrisiko. Nutze unseren <router-link to="/waist-hip-ratio" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR-Rechner</router-link> und ergänze das Ergebnis mit dem <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und dem <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link>.
+          Das Taille-Hüft-Verhältnis ist ein schneller, kostenloser Test für dein Gesundheitsrisiko. Nutze unseren <router-link :to="localePath('waistHipRatio')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR-Rechner</router-link> und ergänze das Ergebnis mit dem <router-link :to="localePath('bmi')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und dem <router-link :to="localePath('bodyFat')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Körperfettanteil</router-link>.
         </p>
       </div>
 

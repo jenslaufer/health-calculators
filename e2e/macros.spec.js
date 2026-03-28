@@ -12,7 +12,7 @@ async function fillForm(page, { age = 30, gender = 'male', height = 175, weight 
 
 test.describe('Macro Calculator', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('macros')
+    await page.goto('de/makro-rechner')
   })
 
   test('page loads with correct title', async ({ page }) => {
@@ -75,7 +75,7 @@ test.describe('Macro Calculator', () => {
   })
 
   test('back link navigates to home page', async ({ page }) => {
-    await page.click('a[href="/health-calculators/"]')
-    await expect(page).toHaveURL(/\/health-calculators\/$/)
+    await page.click('a[href="/health-calculators/de/"]')
+    await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
   })
 })

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('blog/taille-hueft-verhaeltnis-berechnen')
+  await page.goto('de/blog/taille-hueft-verhaeltnis-berechnen')
 })
 
 test('blog article loads with correct title', async ({ page }) => {
@@ -14,15 +14,15 @@ test('article has back link to blog', async ({ page }) => {
 })
 
 test('article links to WHR calculator', async ({ page }) => {
-  const calcLink = page.locator('a[href="/health-calculators/waist-hip-ratio"]')
+  const calcLink = page.locator('a[href="/health-calculators/de/taille-hueft-verhaeltnis"]')
   await expect(calcLink.first()).toBeVisible()
 })
 
 test('article links to related calculators (BMI, Body Fat)', async ({ page }) => {
-  const bmiLink = page.locator('a[href="/health-calculators/blog/bmi-berechnen"]')
+  const bmiLink = page.locator('a[href="/health-calculators/de/blog/bmi-berechnen"]')
   await expect(bmiLink.first()).toBeVisible()
 
-  const bodyFatLink = page.locator('a[href="/health-calculators/blog/koerperfett-berechnen"]')
+  const bodyFatLink = page.locator('a[href="/health-calculators/de/blog/koerperfett-berechnen"]')
   await expect(bodyFatLink.first()).toBeVisible()
 })
 

@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Geburtstermin berechnen: Naegele-Regel, SSW & Trimester erklärt | Health Calculators',
   description: 'Geburtstermin berechnen mit der Naegele-Regel. Schwangerschaftswochen, Trimester, Zykluslänge und warum der errechnete Termin nur ein Schätzwert ist.',
-  path: '/blog/geburtstermin-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Geburtstermin berechnen: Naegele-Regel, SSW &amp; Trimester erklärt</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">27. März 2026</span>
@@ -74,7 +77,7 @@ useHead({
           <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-6">
             <h3 class="text-base font-semibold text-stone-900 mb-2">Nach der letzten Periode (Naegele-Regel)</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
-              Die gängigste Methode. Du brauchst nur den ersten Tag deiner letzten Menstruation. Unser <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Geburtstermin-Rechner</router-link> nutzt genau diese Berechnung.
+              Die gängigste Methode. Du brauchst nur den ersten Tag deiner letzten Menstruation. Unser <router-link :to="localePath('pregnancy')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Geburtstermin-Rechner</router-link> nutzt genau diese Berechnung.
             </p>
           </div>
           <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-6">
@@ -107,7 +110,7 @@ useHead({
           </p>
         </div>
         <p class="text-base text-stone-600 leading-relaxed">
-          Beispiel: Bei einem 32-Tage-Zyklus verschiebt sich der Termin um 4 Tage nach hinten. Bei einem 25-Tage-Zyklus rückt er 3 Tage nach vorne. Unser <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Geburtstermin-Rechner</router-link> passt den Termin automatisch an deine Zykluslänge an.
+          Beispiel: Bei einem 32-Tage-Zyklus verschiebt sich der Termin um 4 Tage nach hinten. Bei einem 25-Tage-Zyklus rückt er 3 Tage nach vorne. Unser <router-link :to="localePath('pregnancy')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Geburtstermin-Rechner</router-link> passt den Termin automatisch an deine Zykluslänge an.
         </p>
       </div>
 
@@ -116,7 +119,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt deinen Geburtstermin berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">Basierend auf der Naegele-Regel — angepasst an deine Zykluslänge.</p>
         <router-link
-          to="/pregnancy"
+          :to="localePath('pregnancy')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -130,7 +133,7 @@ useHead({
           Die Angabe <strong>SSW 12+3</strong> bedeutet: 12 vollendete Wochen und 3 Tage — du bist also in der 13. Schwangerschaftswoche. Diese Zählweise ist international Standard und wird im Mutterpass dokumentiert.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Jede Woche bringt neue Entwicklungsschritte. Der <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Schwangerschaftsrechner</router-link> zeigt dir, in welcher SSW du dich befindest und welche Meilensteine anstehen.
+          Jede Woche bringt neue Entwicklungsschritte. Der <router-link :to="localePath('pregnancy')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Schwangerschaftsrechner</router-link> zeigt dir, in welcher SSW du dich befindest und welche Meilensteine anstehen.
         </p>
       </div>
 
@@ -206,16 +209,16 @@ useHead({
           Eine gesunde Schwangerschaft erfordert Aufmerksamkeit für Ernährung, Bewegung und Erholung. Einige unserer Rechner können dich dabei unterstützen:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-base text-stone-600">
-          <li>Dein <router-link to="/blog/wasserbedarf-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Wasserbedarf</router-link> steigt in der Schwangerschaft — berechne ihn mit unserem Rechner</li>
-          <li>Achte auf die richtige <router-link to="/blog/makronaehrstoffe-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Verteilung der Makronährstoffe</router-link> für dich und dein Baby</li>
-          <li>Ein gesunder <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> vor der Schwangerschaft ist ein guter Ausgangspunkt</li>
+          <li>Dein <router-link :to="localeBlogPath('wasserbedarf-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Wasserbedarf</router-link> steigt in der Schwangerschaft — berechne ihn mit unserem Rechner</li>
+          <li>Achte auf die richtige <router-link :to="localeBlogPath('makronaehrstoffe-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Verteilung der Makronährstoffe</router-link> für dich und dein Baby</li>
+          <li>Ein gesunder <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> vor der Schwangerschaft ist ein guter Ausgangspunkt</li>
         </ul>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Der Geburtstermin gibt dir einen wichtigen Anhaltspunkt, ist aber kein exaktes Datum. Die Naegele-Regel liefert eine bewährte Schätzung, die du mit unserem <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Geburtstermin-Rechner</router-link> sekundenschnell ermitteln kannst. Denk daran: Jede Schwangerschaft ist einzigartig — vertraue auf deinen Körper und dein ärztliches Team.
+          Der Geburtstermin gibt dir einen wichtigen Anhaltspunkt, ist aber kein exaktes Datum. Die Naegele-Regel liefert eine bewährte Schätzung, die du mit unserem <router-link :to="localePath('pregnancy')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Geburtstermin-Rechner</router-link> sekundenschnell ermitteln kannst. Denk daran: Jede Schwangerschaft ist einzigartig — vertraue auf deinen Körper und dein ärztliches Team.
         </p>
       </div>
 

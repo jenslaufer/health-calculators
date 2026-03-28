@@ -1,6 +1,9 @@
 <script setup>
 import { computed } from 'vue'
+import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { getRelatedArticles } from '../data/articles.js'
+
+const { localeBlogPath } = useLocaleRouter()
 
 const props = defineProps({
   slug: { type: String, required: true },
@@ -16,7 +19,7 @@ const related = computed(() => getRelatedArticles(props.slug))
       <router-link
         v-for="article in related"
         :key="article.slug"
-        :to="`/blog/${article.slug}`"
+        :to="localeBlogPath(article.slug)"
         class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150"
       >
         <h3 class="text-base font-semibold text-stone-900 mb-1">{{ article.title }}</h3>

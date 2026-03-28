@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { routeMap } from './composables/useLocaleRouter.js'
 import Home from './pages/Home.vue'
 import BmiCalculator from './pages/BmiCalculator.vue'
 import WaterIntakeCalculator from './pages/WaterIntakeCalculator.vue'
@@ -39,46 +40,101 @@ import MeasureBloodPressure from './pages/blog/en/MeasureBloodPressure.vue'
 import CalculateCalorieDeficit from './pages/blog/en/CalculateCalorieDeficit.vue'
 import CalculateWaistHipRatio from './pages/blog/en/CalculateWaistHipRatio.vue'
 
+const calculatorComponents = {
+  bmi: BmiCalculator,
+  water: WaterIntakeCalculator,
+  bodyFat: BodyFatCalculator,
+  heartRate: HeartRateZones,
+  idealWeight: IdealWeightCalculator,
+  macro: MacroCalculator,
+  sleep: SleepCycleCalculator,
+  tdee: TdeeCalculator,
+  pregnancy: PregnancyCalculator,
+  bloodPressure: BloodPressureCalculator,
+  calorieDeficit: CalorieDeficitCalculator,
+  waistHipRatio: WaistHipRatioCalculator,
+}
+
+const blogComponents = {
+  'bmi-berechnen': BmiBerechnen,
+  'tdee-berechnen': TdeeBerechnen,
+  'schlafzyklen-berechnen': SchlafzyklenBerechnen,
+  'herzfrequenz-zonen-berechnen': HerzfrequenzZonenBerechnen,
+  'koerperfett-berechnen': KoerperfettBerechnen,
+  'makronaehrstoffe-berechnen': MakronaehrstoffeBerechnen,
+  'wasserbedarf-berechnen': WasserbedarfBerechnen,
+  'idealgewicht-berechnen': IdealgewichtBerechnen,
+  'geburtstermin-berechnen': GeburtsterminBerechnen,
+  'blutdruck-richtig-messen': BlutdruckRichtigMessen,
+  'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
+  'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
+}
+
+function createLocaleRoutes(locale) {
+  const prefix = `/${locale}`
+  const routes = [
+    {
+      path: `${prefix}/`,
+      component: Home,
+      meta: { routeKey: 'home', locale },
+    },
+  ]
+
+  for (const [key, component] of Object.entries(calculatorComponents)) {
+    routes.push({
+      path: `${prefix}/${routeMap[key][locale]}`,
+      component,
+      meta: { routeKey: key, locale },
+    })
+  }
+
+  routes.push({
+    path: `${prefix}/blog`,
+    component: BlogHome,
+    meta: { routeKey: 'blog', locale },
+  })
+
+  for (const [slug, component] of Object.entries(blogComponents)) {
+    routes.push({
+      path: `${prefix}/blog/${slug}`,
+      component,
+      meta: { routeKey: 'blogArticle', locale, slug },
+    })
+  }
+
+  return routes
+}
+
+// Old route paths for redirects to /de/ equivalents
+const oldRouteRedirects = [
+  { path: '/bmi', redirect: `/de/${routeMap.bmi.de}` },
+  { path: '/water', redirect: `/de/${routeMap.water.de}` },
+  { path: '/body-fat', redirect: `/de/${routeMap.bodyFat.de}` },
+  { path: '/heart-rate', redirect: `/de/${routeMap.heartRate.de}` },
+  { path: '/ideal-weight', redirect: `/de/${routeMap.idealWeight.de}` },
+  { path: '/macros', redirect: `/de/${routeMap.macro.de}` },
+  { path: '/sleep', redirect: `/de/${routeMap.sleep.de}` },
+  { path: '/tdee', redirect: `/de/${routeMap.tdee.de}` },
+  { path: '/pregnancy', redirect: `/de/${routeMap.pregnancy.de}` },
+  { path: '/blutdruck-rechner', redirect: `/de/${routeMap.bloodPressure.de}` },
+  { path: '/kaloriendefizit-rechner', redirect: `/de/${routeMap.calorieDeficit.de}` },
+  { path: '/waist-hip-ratio', redirect: `/de/${routeMap.waistHipRatio.de}` },
+  { path: '/blog', redirect: '/de/blog' },
+]
+
+// Redirect old blog article paths
+const blogSlugs = Object.keys(blogComponents)
+const oldBlogRedirects = blogSlugs.map(slug => ({
+  path: `/blog/${slug}`,
+  redirect: `/de/blog/${slug}`,
+}))
+
 const routes = [
-  { path: '/', component: Home },
-  { path: '/bmi', component: BmiCalculator },
-  { path: '/water', component: WaterIntakeCalculator },
-  { path: '/body-fat', component: BodyFatCalculator },
-  { path: '/heart-rate', component: HeartRateZones },
-  { path: '/ideal-weight', component: IdealWeightCalculator },
-  { path: '/macros', component: MacroCalculator },
-  { path: '/sleep', component: SleepCycleCalculator },
-  { path: '/tdee', component: TdeeCalculator },
-  { path: '/pregnancy', component: PregnancyCalculator },
-  { path: '/blog', component: BlogHome },
-  { path: '/blog/bmi-berechnen', component: BmiBerechnen },
-  { path: '/blog/tdee-berechnen', component: TdeeBerechnen },
-  { path: '/blog/schlafzyklen-berechnen', component: SchlafzyklenBerechnen },
-  { path: '/blog/herzfrequenz-zonen-berechnen', component: HerzfrequenzZonenBerechnen },
-  { path: '/blog/koerperfett-berechnen', component: KoerperfettBerechnen },
-  { path: '/blog/makronaehrstoffe-berechnen', component: MakronaehrstoffeBerechnen },
-  { path: '/blog/wasserbedarf-berechnen', component: WasserbedarfBerechnen },
-  { path: '/blog/idealgewicht-berechnen', component: IdealgewichtBerechnen },
-  { path: '/blog/geburtstermin-berechnen', component: GeburtsterminBerechnen },
-  { path: '/blutdruck-rechner', component: BloodPressureCalculator },
-  { path: '/blog/blutdruck-richtig-messen', component: BlutdruckRichtigMessen },
-  { path: '/kaloriendefizit-rechner', component: CalorieDeficitCalculator },
-  { path: '/blog/kaloriendefizit-berechnen', component: KaloriendefizitBerechnen },
-  { path: '/waist-hip-ratio', component: WaistHipRatioCalculator },
-  { path: '/blog/taille-hueft-verhaeltnis-berechnen', component: TaillenHueftVerhaeltnis },
-  { path: '/en/blog', component: BlogHomeEn },
-  { path: '/en/blog/calculate-bmi', component: CalculateBmi },
-  { path: '/en/blog/calculate-tdee', component: CalculateTdee },
-  { path: '/en/blog/calculate-sleep-cycles', component: CalculateSleepCycles },
-  { path: '/en/blog/calculate-heart-rate-zones', component: CalculateHeartRateZones },
-  { path: '/en/blog/calculate-body-fat', component: CalculateBodyFat },
-  { path: '/en/blog/calculate-macros', component: CalculateMacros },
-  { path: '/en/blog/calculate-water-intake', component: CalculateWaterIntake },
-  { path: '/en/blog/calculate-ideal-weight', component: CalculateIdealWeight },
-  { path: '/en/blog/calculate-due-date', component: CalculateDueDate },
-  { path: '/en/blog/measure-blood-pressure', component: MeasureBloodPressure },
-  { path: '/en/blog/calculate-calorie-deficit', component: CalculateCalorieDeficit },
-  { path: '/en/blog/calculate-waist-hip-ratio', component: CalculateWaistHipRatio },
+  { path: '/', redirect: '/de/' },
+  ...createLocaleRoutes('de'),
+  ...createLocaleRoutes('en'),
+  ...oldRouteRedirects,
+  ...oldBlogRedirects,
 ]
 
 export default createRouter({

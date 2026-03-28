@@ -5,7 +5,7 @@ export const articles = [
     description: 'Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner.',
     date: '2026-03-25',
     readTime: '8 min',
-    calculator: '/bmi',
+    calculatorKey: 'bmi',
     related: ['idealgewicht-berechnen', 'koerperfett-berechnen'],
   },
   {
@@ -14,7 +14,7 @@ export const articles = [
     description: 'Idealgewicht mit vier Formeln berechnen. Devine, Robinson, Miller & Hamwi im Vergleich — plus gesunder BMI-Bereich.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/ideal-weight',
+    calculatorKey: 'idealWeight',
     related: ['bmi-berechnen', 'koerperfett-berechnen'],
   },
   {
@@ -23,7 +23,7 @@ export const articles = [
     description: 'Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/body-fat',
+    calculatorKey: 'bodyFat',
     related: ['bmi-berechnen', 'idealgewicht-berechnen'],
   },
   {
@@ -32,7 +32,7 @@ export const articles = [
     description: 'TDEE berechnen mit der Mifflin-St Jeor-Formel. Grundumsatz, Aktivitätsfaktor und Kalorienziele für Ab- und Zunehmen.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/tdee',
+    calculatorKey: 'tdee',
     related: ['makronaehrstoffe-berechnen', 'bmi-berechnen'],
   },
   {
@@ -41,7 +41,7 @@ export const articles = [
     description: 'Makronährstoffe berechnen basierend auf deinem Kalorienbedarf und Ziel. Optimale Verteilung für Abnehmen, Halten und Muskelaufbau.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/macros',
+    calculatorKey: 'macro',
     related: ['tdee-berechnen', 'wasserbedarf-berechnen'],
   },
   {
@@ -50,7 +50,7 @@ export const articles = [
     description: 'Täglichen Wasserbedarf berechnen — angepasst an Gewicht, Aktivität und Klima. Mit Gläser-Umrechnung und Tipps.',
     date: '2026-03-25',
     readTime: '6 min',
-    calculator: '/water',
+    calculatorKey: 'water',
     related: ['tdee-berechnen', 'makronaehrstoffe-berechnen'],
   },
   {
@@ -59,7 +59,7 @@ export const articles = [
     description: 'Schlafzyklen berechnen für erholsamen Schlaf. 90-Minuten-Zyklen verstehen und die optimale Schlaf- oder Aufwachzeit finden.',
     date: '2026-03-25',
     readTime: '6 min',
-    calculator: '/sleep',
+    calculatorKey: 'sleep',
     related: ['wasserbedarf-berechnen'],
   },
   {
@@ -68,7 +68,7 @@ export const articles = [
     description: 'Geburtstermin berechnen mit der Naegele-Regel. Schwangerschaftswoche, Trimester, Meilensteine und was das errechnete Datum bedeutet.',
     date: '2026-03-26',
     readTime: '7 min',
-    calculator: '/pregnancy',
+    calculatorKey: 'pregnancy',
     related: ['bmi-berechnen'],
   },
   {
@@ -77,7 +77,7 @@ export const articles = [
     description: 'Kaloriendefizit berechnen mit der Mifflin-St Jeor-Formel. TDEE, sicheres Defizit und 7.700-kcal-Regel einfach erklärt.',
     date: '2026-03-27',
     readTime: '7 min',
-    calculator: '/kaloriendefizit-rechner',
+    calculatorKey: 'calorieDeficit',
     related: ['tdee-berechnen', 'makronaehrstoffe-berechnen'],
   },
   {
@@ -86,7 +86,7 @@ export const articles = [
     description: 'Die fünf Herzfrequenz-Zonen berechnen. Standard- und Karvonen-Methode für gezieltes Training von Fettverbrennung bis VO2max.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/heart-rate',
+    calculatorKey: 'heartRate',
     related: ['tdee-berechnen'],
   },
   {
@@ -95,7 +95,7 @@ export const articles = [
     description: 'Taille-Hüft-Verhältnis (WHR) berechnen und Gesundheitsrisiko einschätzen. WHO-Grenzwerte, Messanleitung und warum WHR aussagekräftiger als der BMI ist.',
     date: '2026-03-27',
     readTime: '7 min',
-    calculator: '/waist-hip-ratio',
+    calculatorKey: 'waistHipRatio',
     related: ['bmi-berechnen', 'koerperfett-berechnen'],
   },
   {
@@ -104,7 +104,7 @@ export const articles = [
     description: 'Blutdruck richtig messen und Werte einordnen. Kategorien nach AHA, Messtipps, Risikofaktoren und wann zum Arzt.',
     date: '2026-03-27',
     readTime: '7 min',
-    calculator: '/blutdruck-rechner',
+    calculatorKey: 'bloodPressure',
     related: ['bmi-berechnen', 'wasserbedarf-berechnen'],
   },
 ]
@@ -119,6 +119,6 @@ export function getRelatedArticles(slug) {
   return article.related.map(getArticleBySlug).filter(Boolean)
 }
 
-export function getArticleByCalculator(calculatorPath) {
-  return articles.find(a => a.calculator === calculatorPath)
+export function getArticleByCalculatorKey(key) {
+  return articles.find(a => a.calculatorKey === key)
 }

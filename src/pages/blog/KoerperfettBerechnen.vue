@@ -1,11 +1,14 @@
 <script setup>
 import { useHead } from '../../composables/useHead.js'
 import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
   title: 'Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte | Health Calculators',
   description: 'Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.',
-  path: '/blog/koerperfett-berechnen',
+  routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -26,7 +29,7 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
@@ -39,7 +42,7 @@ useHead({
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-8">
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          Der <strong>Körperfettanteil</strong> ist eine der aussagekräftigsten Kennzahlen für deine Gesundheit. Anders als der <router-link to="/blog/bmi-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> unterscheidet er zwischen Fett- und Muskelmasse.
+          Der <strong>Körperfettanteil</strong> ist eine der aussagekräftigsten Kennzahlen für deine Gesundheit. Anders als der <router-link :to="localeBlogPath('bmi-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> unterscheidet er zwischen Fett- und Muskelmasse.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
           In diesem Artikel erfährst du, wie die U.S. Navy-Methode funktioniert, welche Richtwerte für Männer und Frauen gelten, und warum der Körperfettanteil dem BMI überlegen ist.
@@ -118,7 +121,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Jetzt deinen Körperfettanteil berechnen</h3>
         <p class="text-stone-300 text-sm mb-5">U.S. Navy-Methode — kostenlos und ohne Anmeldung.</p>
         <router-link
-          to="/body-fat"
+          :to="localePath('bodyFat')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Jetzt kostenlos berechnen &rarr;</router-link>
       </div>
@@ -129,14 +132,14 @@ useHead({
           Der BMI kann nicht zwischen Fett und Muskeln unterscheiden. Ein muskulöser Sportler wird oft als „übergewichtig" eingestuft, obwohl sein Körperfettanteil sehr niedrig ist. Der Körperfettanteil löst dieses Problem.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Ergänze dein Ergebnis mit deinem <router-link to="/blog/idealgewicht-berechnen" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Idealgewicht</router-link>, um ein umfassendes Bild deiner Körperzusammensetzung zu erhalten.
+          Ergänze dein Ergebnis mit deinem <router-link :to="localeBlogPath('idealgewicht-berechnen')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Idealgewicht</router-link>, um ein umfassendes Bild deiner Körperzusammensetzung zu erhalten.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Fazit</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Der Körperfettanteil ist aussagekräftiger als der BMI. Nutze unseren <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Body Fat Calculator</router-link> und ergänze das Ergebnis mit dem <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und dem <router-link to="/ideal-weight" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Idealgewicht</router-link>.
+          Der Körperfettanteil ist aussagekräftiger als der BMI. Nutze unseren <router-link :to="localePath('bodyFat')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Body Fat Calculator</router-link> und ergänze das Ergebnis mit dem <router-link :to="localePath('bmi')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> und dem <router-link :to="localePath('idealWeight')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Idealgewicht</router-link>.
         </p>
       </div>
 
