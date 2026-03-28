@@ -1,11 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 
-useHead({
-  title: 'BMI Calculator — Free Body Mass Index Calculator',
-  description: 'Calculate your Body Mass Index instantly. Science-backed BMI formula, no sign-up required.',
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('bmi.meta.title'),
+  description: t('bmi.meta.description'),
   path: '/bmi',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -16,7 +19,7 @@ useHead({
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   },
-})
+}))
 
 const height = ref(null)
 const weight = ref(null)
@@ -33,10 +36,10 @@ const bmi = computed(() => {
 
 const category = computed(() => {
   if (!bmi.value) return null
-  if (bmi.value < 18.5) return { label: 'Underweight', color: 'text-blue-500', bg: 'bg-blue-500' }
-  if (bmi.value < 25) return { label: 'Normal weight', color: 'text-green-600', bg: 'bg-green-600' }
-  if (bmi.value < 30) return { label: 'Overweight', color: 'text-yellow-500', bg: 'bg-yellow-500' }
-  return { label: 'Obese', color: 'text-red-500', bg: 'bg-red-500' }
+  if (bmi.value < 18.5) return { label: 'bmi.underweight', color: 'text-blue-500', bg: 'bg-blue-500' }
+  if (bmi.value < 25) return { label: 'bmi.normal', color: 'text-green-600', bg: 'bg-green-600' }
+  if (bmi.value < 30) return { label: 'bmi.overweight', color: 'text-yellow-500', bg: 'bg-yellow-500' }
+  return { label: 'bmi.obese', color: 'text-red-500', bg: 'bg-red-500' }
 })
 
 const bmiFormatted = computed(() => bmi.value?.toFixed(1))
@@ -51,9 +54,9 @@ const barPosition = computed(() => {
 <template>
   <div>
     <div class="mb-10">
-      <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
-      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">BMI Calculator</h1>
-      <p class="text-base text-stone-500 font-normal">Calculate your Body Mass Index to check if your weight is in a healthy range.</p>
+      <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('bmi.title') }}</h1>
+      <p class="text-base text-stone-500 font-normal">{{ t('bmi.description') }}</p>
     </div>
 
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
@@ -62,18 +65,18 @@ const barPosition = computed(() => {
           @click="unit = 'metric'"
           :class="unit === 'metric' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
           class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-        >Metric</button>
+        >{{ t('common.metric') }}</button>
         <button
           @click="unit = 'imperial'"
           :class="unit === 'imperial' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
           class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-        >Imperial</button>
+        >{{ t('common.imperial') }}</button>
       </div>
 
       <div class="grid grid-cols-2 gap-4 mb-6">
         <div>
           <label class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-            Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
+            {{ t('common.height', { unit: t('common.' + (unit === 'metric' ? 'cm' : 'inches')) }) }}
           </label>
           <input
             v-model.number="height"
@@ -84,7 +87,7 @@ const barPosition = computed(() => {
         </div>
         <div>
           <label class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-            Weight ({{ unit === 'metric' ? 'kg' : 'lbs' }})
+            {{ t('common.weight', { unit: t('common.' + (unit === 'metric' ? 'kg' : 'lbs')) }) }}
           </label>
           <input
             v-model.number="weight"
@@ -98,7 +101,7 @@ const barPosition = computed(() => {
       <div v-if="bmi" class="pt-5 border-t border-stone-100">
         <div class="flex items-baseline gap-3 mb-4">
           <span class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ bmiFormatted }}</span>
-          <span :class="category.color" class="text-lg font-semibold">{{ category.label }}</span>
+          <span :class="category.color" class="text-lg font-semibold">{{ t(category.label) }}</span>
         </div>
 
         <div class="relative h-3 bg-stone-200 rounded-full overflow-hidden mb-1.5">
@@ -123,33 +126,33 @@ const barPosition = computed(() => {
     </div>
 
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
-      <h2 class="text-lg font-semibold text-stone-900 mb-3">BMI Categories</h2>
+      <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('bmi.categories') }}</h2>
       <div class="space-y-3.5">
         <div class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
           <div class="flex items-center gap-3">
             <div class="w-2.5 h-2.5 rounded-full bg-blue-400/8 border border-stone-300"></div>
-            <span class="text-sm text-stone-600">Underweight</span>
+            <span class="text-sm text-stone-600">{{ t('bmi.underweight') }}</span>
           </div>
           <span class="text-sm font-medium text-stone-900 tabular-nums">&lt; 18.5</span>
         </div>
         <div class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
           <div class="flex items-center gap-3">
             <div class="w-2.5 h-2.5 rounded-full bg-green-600"></div>
-            <span class="text-sm text-stone-600">Normal weight</span>
+            <span class="text-sm text-stone-600">{{ t('bmi.normal') }}</span>
           </div>
           <span class="text-sm font-medium text-stone-900 tabular-nums">18.5 – 24.9</span>
         </div>
         <div class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
           <div class="flex items-center gap-3">
             <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-            <span class="text-sm text-stone-600">Overweight</span>
+            <span class="text-sm text-stone-600">{{ t('bmi.overweight') }}</span>
           </div>
           <span class="text-sm font-medium text-stone-900 tabular-nums">25.0 – 29.9</span>
         </div>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">
             <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-            <span class="text-sm text-stone-600">Obese</span>
+            <span class="text-sm text-stone-600">{{ t('bmi.obese') }}</span>
           </div>
           <span class="text-sm font-medium text-stone-900 tabular-nums">&ge; 30.0</span>
         </div>

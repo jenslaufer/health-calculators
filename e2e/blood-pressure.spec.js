@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('page loads with correct title', async ({ page }) => {
-  await expect(page).toHaveTitle('Blutdruck-Rechner — Blutdruckwerte einordnen | Health Calculators')
+  await expect(page).toHaveTitle(/Blutdruck-Rechner/)
 })
 
 test('normal blood pressure: 115/75', async ({ page }) => {
@@ -71,6 +71,6 @@ test('shows systolic and diastolic values in result', async ({ page }) => {
 })
 
 test('back link navigates to home page', async ({ page }) => {
-  await page.getByRole('link', { name: '← All Calculators' }).click()
+  await page.getByRole('link', { name: '← Alle Rechner' }).click()
   await expect(page).toHaveURL(/\/health-calculators\/$/)
 })

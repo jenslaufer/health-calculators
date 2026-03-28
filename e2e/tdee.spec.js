@@ -6,29 +6,26 @@ test.describe('TDEE Calculator', () => {
   })
 
   test('page loads with correct title', async ({ page }) => {
-    await expect(page).toHaveTitle('TDEE Calculator — Free Daily Calorie Needs Calculator')
+    await expect(page).toHaveTitle(/TDEE-Rechner/)
   })
 
   test('metric inputs show cm/kg', async ({ page }) => {
-    await expect(page.getByText('Height (cm)')).toBeVisible()
-    await expect(page.getByText('Weight (kg)')).toBeVisible()
+    await expect(page.getByText('Größe (cm)')).toBeVisible()
+    await expect(page.getByText('Gewicht (kg)')).toBeVisible()
   })
 
   test('imperial inputs show inches/lbs', async ({ page }) => {
     await page.getByRole('button', { name: 'Imperial' }).click()
-    await expect(page.getByText('Height (inches)')).toBeVisible()
-    await expect(page.getByText('Weight (lbs)')).toBeVisible()
+    await expect(page.getByText(/Größe \(Zoll\)/)).toBeVisible()
+    await expect(page.getByText(/Gewicht \(lbs\)/)).toBeVisible()
   })
 
   test('entering valid data shows TDEE result approximately 2759 kcal', async ({ page }) => {
-    // Male, 30 years, 180cm, 80kg, moderately active
-    // BMR = 10*80 + 6.25*180 - 5*30 + 5 = 1780
-    // TDEE = 1780 * 1.55 = 2759
-    await page.getByRole('button', { name: 'Male', exact: true }).click()
-    await page.getByLabel(/age/i).fill('30')
-    await page.getByLabel(/height/i).fill('180')
-    await page.getByLabel(/weight/i).fill('80')
-    await page.getByLabel(/activity/i).selectOption({ label: 'Moderately active (3-5 days/week)' })
+    await page.getByRole('button', { name: 'Mann', exact: true }).click()
+    await page.getByLabel(/Alter/i).fill('30')
+    await page.getByLabel(/Größe/i).fill('180')
+    await page.getByLabel(/Gewicht/i).fill('80')
+    await page.getByLabel(/Aktivität/i).selectOption({ value: '1.55' })
 
     const tdeeResult = page.getByTestId('tdee-result')
     await expect(tdeeResult).toBeVisible()
@@ -40,52 +37,49 @@ test.describe('TDEE Calculator', () => {
   })
 
   test('BMR is shown below TDEE', async ({ page }) => {
-    await page.getByRole('button', { name: 'Male', exact: true }).click()
-    await page.getByLabel(/age/i).fill('30')
-    await page.getByLabel(/height/i).fill('180')
-    await page.getByLabel(/weight/i).fill('80')
-    await page.getByLabel(/activity/i).selectOption({ label: 'Moderately active (3-5 days/week)' })
+    await page.getByRole('button', { name: 'Mann', exact: true }).click()
+    await page.getByLabel(/Alter/i).fill('30')
+    await page.getByLabel(/Größe/i).fill('180')
+    await page.getByLabel(/Gewicht/i).fill('80')
+    await page.getByLabel(/Aktivität/i).selectOption({ value: '1.55' })
 
     await expect(page.getByTestId('bmr-result')).toBeVisible()
   })
 
   test('deficit/maintenance/surplus targets are displayed', async ({ page }) => {
-    await page.getByRole('button', { name: 'Male', exact: true }).click()
-    await page.getByLabel(/age/i).fill('30')
-    await page.getByLabel(/height/i).fill('180')
-    await page.getByLabel(/weight/i).fill('80')
-    await page.getByLabel(/activity/i).selectOption({ label: 'Moderately active (3-5 days/week)' })
+    await page.getByRole('button', { name: 'Mann', exact: true }).click()
+    await page.getByLabel(/Alter/i).fill('30')
+    await page.getByLabel(/Größe/i).fill('180')
+    await page.getByLabel(/Gewicht/i).fill('80')
+    await page.getByLabel(/Aktivität/i).selectOption({ value: '1.55' })
 
-    await expect(page.getByText('Weight Loss')).toBeVisible()
-    await expect(page.getByText('Maintenance')).toBeVisible()
-    await expect(page.getByText('Weight Gain')).toBeVisible()
+    await expect(page.getByText('Abnehmen', { exact: true })).toBeVisible()
+    await expect(page.getByText('Halten', { exact: true })).toBeVisible()
+    await expect(page.getByText('Zunehmen', { exact: true })).toBeVisible()
   })
 
   test('switching units recalculates correctly', async ({ page }) => {
-    // Enter metric values first
-    await page.getByRole('button', { name: 'Male', exact: true }).click()
-    await page.getByLabel(/age/i).fill('30')
-    await page.getByLabel(/height/i).fill('180')
-    await page.getByLabel(/weight/i).fill('80')
-    await page.getByLabel(/activity/i).selectOption({ label: 'Moderately active (3-5 days/week)' })
+    await page.getByRole('button', { name: 'Mann', exact: true }).click()
+    await page.getByLabel(/Alter/i).fill('30')
+    await page.getByLabel(/Größe/i).fill('180')
+    await page.getByLabel(/Gewicht/i).fill('80')
+    await page.getByLabel(/Aktivität/i).selectOption({ value: '1.55' })
 
     const metricResult = await page.getByTestId('tdee-result').textContent()
 
-    // Switch to imperial and enter equivalent values (70.87 inches, 176.37 lbs)
     await page.getByRole('button', { name: 'Imperial' }).click()
-    await page.getByLabel(/height/i).fill('70.87')
-    await page.getByLabel(/weight/i).fill('176.37')
+    await page.getByLabel(/Größe/i).fill('70.87')
+    await page.getByLabel(/Gewicht/i).fill('176.37')
 
     const imperialResult = await page.getByTestId('tdee-result').textContent()
     const metricVal = parseInt(metricResult.replace(/,/g, ''))
     const imperialVal = parseInt(imperialResult.replace(/,/g, ''))
 
-    // Should be approximately equal (within 10 kcal due to rounding)
     expect(Math.abs(metricVal - imperialVal)).toBeLessThanOrEqual(10)
   })
 
   test('back link navigates to home page', async ({ page }) => {
-    await page.getByText('← All Calculators').click()
+    await page.getByRole('link', { name: '← Alle Rechner' }).click()
     await expect(page).toHaveURL(/\/health-calculators\/$/)
   })
 })

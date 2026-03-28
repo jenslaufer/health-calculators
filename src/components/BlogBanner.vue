@@ -1,6 +1,9 @@
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { getArticleByCalculator } from '../data/articles.js'
+
+const { t } = useI18n()
 
 const props = defineProps({
   calculatorPath: { type: String, required: true },
@@ -11,7 +14,7 @@ const article = computed(() => getArticleByCalculator(props.calculatorPath))
 
 <template>
   <div v-if="article" class="mt-6 bg-stone-50 border border-stone-200 rounded-xl p-6" data-testid="blog-banner">
-    <p class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-2">Zum Nachlesen</p>
+    <p class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-2">{{ t('blogBanner.label') }}</p>
     <router-link
       :to="`/blog/${article.slug}`"
       class="text-base font-semibold text-stone-900 hover:text-stone-600 transition-colors"

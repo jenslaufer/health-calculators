@@ -1,11 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 
-useHead({
-  title: 'Ideal Weight Calculator — Find Your Healthy Weight Range',
-  description: 'Calculate your ideal weight using four science-backed formulas. Personalized results based on height and gender.',
+const { t } = useI18n()
+
+useHead(() => ({
+  title: t('idealWeight.meta.title'),
+  description: t('idealWeight.meta.description'),
   path: '/ideal-weight',
   jsonLd: {
     '@context': 'https://schema.org',
@@ -16,7 +19,7 @@ useHead({
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   },
-})
+}))
 
 const height = ref(null)
 const gender = ref('male')
@@ -71,9 +74,9 @@ const fmt = (v) => v?.toFixed(1)
 
 <template>
   <div class="mb-10">
-    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; All Calculators</router-link>
-    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">Ideal Weight Calculator</h1>
-    <p class="text-base text-stone-500 font-normal">Find your healthy weight range based on four science-backed formulas.</p>
+    <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+    <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('idealWeight.title') }}</h1>
+    <p class="text-base text-stone-500 font-normal">{{ t('idealWeight.description') }}</p>
   </div>
 
   <div class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
@@ -82,33 +85,33 @@ const fmt = (v) => v?.toFixed(1)
         @click="unit = 'metric'"
         :class="unit === 'metric' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-      >Metric</button>
+      >{{ t('common.metric') }}</button>
       <button
         @click="unit = 'imperial'"
         :class="unit === 'imperial' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-150"
-      >Imperial</button>
+      >{{ t('common.imperial') }}</button>
     </div>
 
     <div class="grid grid-cols-2 gap-4 mb-6">
       <div>
-        <label class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">Gender</label>
+        <label class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">{{ t('common.gender') }}</label>
         <div class="flex gap-2">
           <button
             @click="gender = 'male'"
             :class="gender === 'male' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
             class="flex-1 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150"
-          >Male</button>
+          >{{ t('common.male') }}</button>
           <button
             @click="gender = 'female'"
             :class="gender === 'female' ? 'bg-stone-900 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'"
             class="flex-1 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150"
-          >Female</button>
+          >{{ t('common.female') }}</button>
         </div>
       </div>
       <div>
         <label class="block text-xs font-semibold text-stone-500 uppercase tracking-widest mb-2">
-          Height ({{ unit === 'metric' ? 'cm' : 'inches' }})
+          {{ t('common.height', { unit: t('common.' + (unit === 'metric' ? 'cm' : 'inches')) }) }}
         </label>
         <input
           v-model.number="height"
@@ -129,7 +132,7 @@ const fmt = (v) => v?.toFixed(1)
   </div>
 
   <div v-if="formulas" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
-    <h2 class="text-lg font-semibold text-stone-900 mb-3">Formula Comparison</h2>
+    <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('idealWeight.formulaComparison') }}</h2>
     <div class="space-y-3.5">
       <div v-for="f in formulas" :key="f.name" class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
         <div>
@@ -142,9 +145,9 @@ const fmt = (v) => v?.toFixed(1)
   </div>
 
   <div v-if="bmiRange" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8">
-    <h2 class="text-lg font-semibold text-stone-900 mb-3">Healthy BMI Range</h2>
+    <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('idealWeight.healthyBmiRange') }}</h2>
     <p class="text-sm text-stone-600">
-      Based on a BMI of 18.5 – 24.9, your healthy weight range is
+      {{ t('idealWeight.bmiRangeText') }}
       <span class="font-semibold text-stone-900 tabular-nums">{{ fmt(bmiRange.min) }} – {{ fmt(bmiRange.max) }} {{ weightUnit }}</span>.
     </p>
   </div>
