@@ -75,9 +75,9 @@ test.describe('Locale-prefixed route resolution', () => {
     await expect(page.locator('h1')).toContainText('BMI berechnen')
   })
 
-  test('/en/blog/bmi-berechnen loads blog article', async ({ page }) => {
-    await page.goto('en/blog/bmi-berechnen')
-    await expect(page.locator('h1')).toContainText('BMI berechnen')
+  test('/en/blog/calculate-bmi loads English blog article', async ({ page }) => {
+    await page.goto('en/blog/calculate-bmi')
+    await expect(page.locator('h1')).toContainText('Calculate BMI')
   })
 })
 
@@ -130,7 +130,7 @@ test.describe('Locale switching', () => {
   test('switch from DE blog article to EN blog article', async ({ page }) => {
     await page.goto('de/blog/bmi-berechnen')
     await page.getByRole('button', { name: 'EN' }).first().click()
-    await expect(page).toHaveURL(/\/en\/blog\/bmi-berechnen/)
+    await expect(page).toHaveURL(/\/en\/blog\/calculate-bmi/)
   })
 })
 

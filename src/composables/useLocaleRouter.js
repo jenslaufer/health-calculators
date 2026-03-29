@@ -28,10 +28,38 @@ export function localeBlogPath(slug, locale) {
   return `/${locale}/blog/${slug}`
 }
 
+const blogSlugMap = {
+  'bmi-berechnen': 'calculate-bmi',
+  'tdee-berechnen': 'calculate-tdee',
+  'schlafzyklen-berechnen': 'calculate-sleep-cycles',
+  'herzfrequenz-zonen-berechnen': 'calculate-heart-rate-zones',
+  'koerperfett-berechnen': 'calculate-body-fat',
+  'makronaehrstoffe-berechnen': 'calculate-macros',
+  'wasserbedarf-berechnen': 'calculate-water-intake',
+  'idealgewicht-berechnen': 'calculate-ideal-weight',
+  'geburtstermin-berechnen': 'calculate-due-date',
+  'blutdruck-richtig-messen': 'measure-blood-pressure',
+  'kaloriendefizit-berechnen': 'calculate-calorie-deficit',
+  'taille-hueft-verhaeltnis-berechnen': 'calculate-waist-hip-ratio',
+  'calculate-bmi': 'bmi-berechnen',
+  'calculate-tdee': 'tdee-berechnen',
+  'calculate-sleep-cycles': 'schlafzyklen-berechnen',
+  'calculate-heart-rate-zones': 'herzfrequenz-zonen-berechnen',
+  'calculate-body-fat': 'koerperfett-berechnen',
+  'calculate-macros': 'makronaehrstoffe-berechnen',
+  'calculate-water-intake': 'wasserbedarf-berechnen',
+  'calculate-ideal-weight': 'idealgewicht-berechnen',
+  'calculate-due-date': 'geburtstermin-berechnen',
+  'measure-blood-pressure': 'blutdruck-richtig-messen',
+  'calculate-calorie-deficit': 'kaloriendefizit-berechnen',
+  'calculate-waist-hip-ratio': 'taille-hueft-verhaeltnis-berechnen',
+}
+
 export function switchLocalePath(route, targetLocale) {
   const routeKey = route.meta.routeKey
   if (routeKey === 'blogArticle') {
-    return `/${targetLocale}/blog/${route.meta.slug}`
+    const translatedSlug = blogSlugMap[route.meta.slug] || route.meta.slug
+    return `/${targetLocale}/blog/${translatedSlug}`
   }
   return localePath(routeKey, targetLocale)
 }

@@ -5,7 +5,7 @@ export const articlesEn = [
     description: 'Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist.',
     date: '2026-03-25',
     readTime: '8 min',
-    calculator: '/bmi',
+    calculatorKey: 'bmi',
     related: ['calculate-ideal-weight', 'calculate-body-fat'],
   },
   {
@@ -14,7 +14,7 @@ export const articlesEn = [
     description: 'Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/ideal-weight',
+    calculatorKey: 'idealWeight',
     related: ['calculate-bmi', 'calculate-body-fat'],
   },
   {
@@ -23,7 +23,7 @@ export const articlesEn = [
     description: 'Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/body-fat',
+    calculatorKey: 'bodyFat',
     related: ['calculate-bmi', 'calculate-ideal-weight'],
   },
   {
@@ -32,7 +32,7 @@ export const articlesEn = [
     description: 'Calculate TDEE using the Mifflin-St Jeor formula. Basal metabolic rate, activity factors and calorie goals for losing or gaining weight.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/tdee',
+    calculatorKey: 'tdee',
     related: ['calculate-macros', 'calculate-bmi'],
   },
   {
@@ -41,7 +41,7 @@ export const articlesEn = [
     description: 'Calculate macronutrients based on your calorie needs and goals. Optimal distribution for weight loss, maintenance and muscle building.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/macros',
+    calculatorKey: 'macro',
     related: ['calculate-tdee', 'calculate-water-intake'],
   },
   {
@@ -50,7 +50,7 @@ export const articlesEn = [
     description: 'Calculate daily water intake — adjusted for weight, activity and climate. With glass conversion and practical tips.',
     date: '2026-03-25',
     readTime: '6 min',
-    calculator: '/water',
+    calculatorKey: 'water',
     related: ['calculate-tdee', 'calculate-macros'],
   },
   {
@@ -59,7 +59,7 @@ export const articlesEn = [
     description: 'Calculate sleep cycles for restful sleep. Understand 90-minute cycles and find your optimal bedtime or wake-up time.',
     date: '2026-03-25',
     readTime: '6 min',
-    calculator: '/sleep',
+    calculatorKey: 'sleep',
     related: ['calculate-water-intake'],
   },
   {
@@ -68,7 +68,7 @@ export const articlesEn = [
     description: "Calculate your due date using Naegele's rule. Pregnancy weeks, trimesters, milestones and why only 4% of babies arrive on the estimated date.",
     date: '2026-03-26',
     readTime: '7 min',
-    calculator: '/pregnancy',
+    calculatorKey: 'pregnancy',
     related: ['calculate-bmi'],
   },
   {
@@ -77,7 +77,7 @@ export const articlesEn = [
     description: 'Calculate your calorie deficit using the Mifflin-St Jeor formula. TDEE, safe deficit and the 7,700 kcal rule explained simply.',
     date: '2026-03-27',
     readTime: '7 min',
-    calculator: '/kaloriendefizit-rechner',
+    calculatorKey: 'calorieDeficit',
     related: ['calculate-tdee', 'calculate-macros'],
   },
   {
@@ -86,7 +86,7 @@ export const articlesEn = [
     description: 'Calculate the five heart rate zones. Standard and Karvonen methods for targeted training from fat burn to VO2max.',
     date: '2026-03-25',
     readTime: '7 min',
-    calculator: '/heart-rate',
+    calculatorKey: 'heartRate',
     related: ['calculate-tdee'],
   },
   {
@@ -95,7 +95,7 @@ export const articlesEn = [
     description: 'Calculate your waist-to-hip ratio (WHR) and assess health risk. WHO thresholds, measurement guide and why WHR is more meaningful than BMI.',
     date: '2026-03-27',
     readTime: '7 min',
-    calculator: '/waist-hip-ratio',
+    calculatorKey: 'waistHipRatio',
     related: ['calculate-bmi', 'calculate-body-fat'],
   },
   {
@@ -104,7 +104,7 @@ export const articlesEn = [
     description: 'Measure blood pressure correctly and interpret your values. AHA categories, measurement tips, risk factors and when to see a doctor.',
     date: '2026-03-27',
     readTime: '7 min',
-    calculator: '/blutdruck-rechner',
+    calculatorKey: 'bloodPressure',
     related: ['calculate-bmi', 'calculate-water-intake'],
   },
 ]
@@ -119,6 +119,6 @@ export function getEnRelatedArticles(slug) {
   return article.related.map(getEnArticleBySlug).filter(Boolean)
 }
 
-export function getEnArticleByCalculator(calculatorPath) {
-  return articlesEn.find(a => a.calculator === calculatorPath)
+export function getEnArticleByCalculatorKey(key) {
+  return articlesEn.find(a => a.calculatorKey === key)
 }

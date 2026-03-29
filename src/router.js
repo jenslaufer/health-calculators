@@ -56,18 +56,39 @@ const calculatorComponents = {
 }
 
 const blogComponents = {
-  'bmi-berechnen': BmiBerechnen,
-  'tdee-berechnen': TdeeBerechnen,
-  'schlafzyklen-berechnen': SchlafzyklenBerechnen,
-  'herzfrequenz-zonen-berechnen': HerzfrequenzZonenBerechnen,
-  'koerperfett-berechnen': KoerperfettBerechnen,
-  'makronaehrstoffe-berechnen': MakronaehrstoffeBerechnen,
-  'wasserbedarf-berechnen': WasserbedarfBerechnen,
-  'idealgewicht-berechnen': IdealgewichtBerechnen,
-  'geburtstermin-berechnen': GeburtsterminBerechnen,
-  'blutdruck-richtig-messen': BlutdruckRichtigMessen,
-  'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
-  'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
+  de: {
+    'bmi-berechnen': BmiBerechnen,
+    'tdee-berechnen': TdeeBerechnen,
+    'schlafzyklen-berechnen': SchlafzyklenBerechnen,
+    'herzfrequenz-zonen-berechnen': HerzfrequenzZonenBerechnen,
+    'koerperfett-berechnen': KoerperfettBerechnen,
+    'makronaehrstoffe-berechnen': MakronaehrstoffeBerechnen,
+    'wasserbedarf-berechnen': WasserbedarfBerechnen,
+    'idealgewicht-berechnen': IdealgewichtBerechnen,
+    'geburtstermin-berechnen': GeburtsterminBerechnen,
+    'blutdruck-richtig-messen': BlutdruckRichtigMessen,
+    'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
+    'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
+  },
+  en: {
+    'calculate-bmi': CalculateBmi,
+    'calculate-tdee': CalculateTdee,
+    'calculate-sleep-cycles': CalculateSleepCycles,
+    'calculate-heart-rate-zones': CalculateHeartRateZones,
+    'calculate-body-fat': CalculateBodyFat,
+    'calculate-macros': CalculateMacros,
+    'calculate-water-intake': CalculateWaterIntake,
+    'calculate-ideal-weight': CalculateIdealWeight,
+    'calculate-due-date': CalculateDueDate,
+    'measure-blood-pressure': MeasureBloodPressure,
+    'calculate-calorie-deficit': CalculateCalorieDeficit,
+    'calculate-waist-hip-ratio': CalculateWaistHipRatio,
+  },
+}
+
+const blogHomeComponents = {
+  de: BlogHome,
+  en: BlogHomeEn,
 }
 
 function createLocaleRoutes(locale) {
@@ -90,11 +111,11 @@ function createLocaleRoutes(locale) {
 
   routes.push({
     path: `${prefix}/blog`,
-    component: BlogHome,
+    component: blogHomeComponents[locale],
     meta: { routeKey: 'blog', locale },
   })
 
-  for (const [slug, component] of Object.entries(blogComponents)) {
+  for (const [slug, component] of Object.entries(blogComponents[locale])) {
     routes.push({
       path: `${prefix}/blog/${slug}`,
       component,
@@ -123,7 +144,7 @@ const oldRouteRedirects = [
 ]
 
 // Redirect old blog article paths
-const blogSlugs = Object.keys(blogComponents)
+const blogSlugs = Object.keys(blogComponents.de)
 const oldBlogRedirects = blogSlugs.map(slug => ({
   path: `/blog/${slug}`,
   redirect: `/de/blog/${slug}`,
