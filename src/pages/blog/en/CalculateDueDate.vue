@@ -74,7 +74,7 @@ useHead({
           <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-6">
             <h3 class="text-base font-semibold text-stone-900 mb-2">By Last Period (Naegele's Rule)</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
-              The most common method. You only need the first day of your last menstrual period. Our <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Due Date Calculator</router-link> uses exactly this calculation.
+              The most common method. You only need the first day of your last menstrual period. Our <router-link to="/en/pregnancy-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Due Date Calculator</router-link> uses exactly this calculation.
             </p>
           </div>
           <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-6">
@@ -107,7 +107,7 @@ useHead({
           </p>
         </div>
         <p class="text-base text-stone-600 leading-relaxed">
-          Example: With a 32-day cycle, the date shifts 4 days later. With a 25-day cycle, it moves 3 days earlier. Our <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Due Date Calculator</router-link> automatically adjusts for your cycle length.
+          Example: With a 32-day cycle, the date shifts 4 days later. With a 25-day cycle, it moves 3 days earlier. Our <router-link to="/en/pregnancy-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Due Date Calculator</router-link> automatically adjusts for your cycle length.
         </p>
       </div>
 
@@ -116,7 +116,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your due date now</h3>
         <p class="text-stone-300 text-sm mb-5">Based on Naegele's rule — adjusted for your cycle length.</p>
         <router-link
-          to="/pregnancy"
+          to="/en/pregnancy-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -130,7 +130,7 @@ useHead({
           The notation <strong>12+3</strong> means: 12 completed weeks and 3 days — so you're in your 13th week of pregnancy. This counting method is the international standard.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Each week brings new developmental milestones. The <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Pregnancy Calculator</router-link> shows you which week you're in and what milestones are coming up.
+          Each week brings new developmental milestones. The <router-link to="/en/pregnancy-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Pregnancy Calculator</router-link> shows you which week you're in and what milestones are coming up.
         </p>
       </div>
 
@@ -212,7 +212,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          The due date gives you an important reference point but is not an exact date. Naegele's rule provides a proven estimate that you can determine in seconds with our <router-link to="/pregnancy" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Due Date Calculator</router-link>. Remember: Every pregnancy is unique — trust your body and your medical team.
+          The due date gives you an important reference point but is not an exact date. Naegele's rule provides a proven estimate that you can determine in seconds with our <router-link to="/en/pregnancy-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Due Date Calculator</router-link>. Remember: Every pregnancy is unique — trust your body and your medical team.
         </p>
       </div>
 

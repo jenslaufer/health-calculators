@@ -163,7 +163,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your BMI for free now</h3>
         <p class="text-stone-300 text-sm mb-5">Instant result with category classification — no sign-up required.</p>
         <router-link
-          to="/bmi"
+          to="/en/bmi-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -203,7 +203,7 @@ useHead({
           For a more accurate assessment of your body composition and health, there are better metrics:
         </p>
         <div class="space-y-4">
-          <router-link to="/body-fat" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
+          <router-link to="/en/body-fat-calculator" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
             <h3 class="text-base font-semibold text-stone-900 mb-1">Calculate Body Fat Percentage</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
               Body fat percentage distinguishes between fat and muscle mass. A man with 15% and a woman with 25% body fat are considered healthy — regardless of BMI.
@@ -216,14 +216,14 @@ useHead({
               The waist-to-hip ratio accounts for fat distribution. A WHR above 0.90 in men and above 0.85 in women indicates increased health risk.
             </p>
           </div>
-          <router-link to="/tdee" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
+          <router-link to="/en/tdee-calculator" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
             <h3 class="text-base font-semibold text-stone-900 mb-1">TDEE — Total Daily Energy Expenditure</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
               TDEE shows you how many calories your body burns daily. Combined with BMI, it helps paint a realistic picture of your health.
             </p>
             <span class="text-sm font-medium text-stone-900 mt-2 inline-block">TDEE Calculator &rarr;</span>
           </router-link>
-          <router-link to="/ideal-weight" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
+          <router-link to="/en/ideal-weight-calculator" class="block bg-white border border-stone-200 rounded-xl shadow-sm p-6 hover:border-stone-300 hover:shadow transition-all duration-150">
             <h3 class="text-base font-semibold text-stone-900 mb-1">Calculate Ideal Weight</h3>
             <p class="text-sm text-stone-500 leading-relaxed">
               Instead of just looking at BMI, the ideal weight calculator uses multiple formulas to determine a healthy weight range for your height.
@@ -240,7 +240,7 @@ useHead({
           BMI is a useful starting point but not a complete picture of your health. It works well for a quick assessment but should always be considered alongside other metrics.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Use our <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI Calculator</router-link> as a starting point and complement your result with your <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">body fat percentage</router-link> and your <router-link to="/tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">daily energy expenditure</router-link> for a comprehensive picture.
+          Use our <router-link to="/en/bmi-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI Calculator</router-link> as a starting point and complement your result with your <router-link to="/en/body-fat-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">body fat percentage</router-link> and your <router-link to="/en/tdee-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">daily energy expenditure</router-link> for a comprehensive picture.
         </p>
       </div>
 

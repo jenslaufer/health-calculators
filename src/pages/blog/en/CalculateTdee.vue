@@ -97,7 +97,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your TDEE now</h3>
         <p class="text-stone-300 text-sm mb-5">Mifflin-St Jeor formula with calorie goals — free and no sign-up required.</p>
         <router-link
-          to="/tdee"
+          to="/en/tdee-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -115,7 +115,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          TDEE is the foundation of any nutrition plan. Calculate your <router-link to="/tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">daily calorie burn</router-link> and use the result as a basis for your <router-link to="/macros" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">macronutrient distribution</router-link>.
+          TDEE is the foundation of any nutrition plan. Calculate your <router-link to="/en/tdee-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">daily calorie burn</router-link> and use the result as a basis for your <router-link to="/en/macro-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">macronutrient distribution</router-link>.
         </p>
       </div>
 

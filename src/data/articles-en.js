@@ -6,7 +6,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '8 min',
     calculatorKey: 'bmi',
-    calculator: '/bmi',
     related: ['calculate-ideal-weight', 'calculate-body-fat'],
   },
   {
@@ -16,7 +15,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '7 min',
     calculatorKey: 'idealWeight',
-    calculator: '/ideal-weight',
     related: ['calculate-bmi', 'calculate-body-fat'],
   },
   {
@@ -26,7 +24,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '7 min',
     calculatorKey: 'bodyFat',
-    calculator: '/body-fat',
     related: ['calculate-bmi', 'calculate-ideal-weight'],
   },
   {
@@ -36,7 +33,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '7 min',
     calculatorKey: 'tdee',
-    calculator: '/tdee',
     related: ['calculate-macros', 'calculate-bmi'],
   },
   {
@@ -46,7 +42,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '7 min',
     calculatorKey: 'macro',
-    calculator: '/macros',
     related: ['calculate-tdee', 'calculate-water-intake'],
   },
   {
@@ -56,7 +51,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '6 min',
     calculatorKey: 'water',
-    calculator: '/water',
     related: ['calculate-tdee', 'calculate-macros'],
   },
   {
@@ -66,7 +60,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '6 min',
     calculatorKey: 'sleep',
-    calculator: '/sleep',
     related: ['calculate-water-intake'],
   },
   {
@@ -76,7 +69,6 @@ export const articlesEn = [
     date: '2026-03-26',
     readTime: '7 min',
     calculatorKey: 'pregnancy',
-    calculator: '/pregnancy',
     related: ['calculate-bmi'],
   },
   {
@@ -86,7 +78,6 @@ export const articlesEn = [
     date: '2026-03-27',
     readTime: '7 min',
     calculatorKey: 'calorieDeficit',
-    calculator: '/kaloriendefizit-rechner',
     related: ['calculate-tdee', 'calculate-macros'],
   },
   {
@@ -96,7 +87,6 @@ export const articlesEn = [
     date: '2026-03-25',
     readTime: '7 min',
     calculatorKey: 'heartRate',
-    calculator: '/heart-rate',
     related: ['calculate-tdee'],
   },
   {
@@ -106,7 +96,6 @@ export const articlesEn = [
     date: '2026-03-27',
     readTime: '7 min',
     calculatorKey: 'waistHipRatio',
-    calculator: '/waist-hip-ratio',
     related: ['calculate-bmi', 'calculate-body-fat'],
   },
   {
@@ -116,7 +105,6 @@ export const articlesEn = [
     date: '2026-03-27',
     readTime: '7 min',
     calculatorKey: 'bloodPressure',
-    calculator: '/blutdruck-rechner',
     related: ['calculate-bmi', 'calculate-water-intake'],
   },
 ]
@@ -131,6 +119,6 @@ export function getEnRelatedArticles(slug) {
   return article.related.map(getEnArticleBySlug).filter(Boolean)
 }
 
-export function getEnArticleByCalculator(calculatorPath) {
-  return articlesEn.find(a => a.calculator === calculatorPath)
+export function getEnArticleByCalculatorKey(key) {
+  return articlesEn.find(a => a.calculatorKey === key)
 }
