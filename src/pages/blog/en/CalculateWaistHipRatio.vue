@@ -69,7 +69,7 @@ useHead({
           </div>
           <div class="flex gap-4">
             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-stone-900 text-white text-sm font-bold flex items-center justify-center">3</div>
-            <p class="text-base text-stone-600 leading-relaxed"><strong>Calculate</strong> — Divide waist circumference by hip circumference. Or use our <router-link to="/waist-hip-ratio" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR Calculator</router-link>.</p>
+            <p class="text-base text-stone-600 leading-relaxed"><strong>Calculate</strong> — Divide waist circumference by hip circumference. Or use our <router-link to="/en/waist-hip-ratio-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR Calculator</router-link>.</p>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your waist-to-hip ratio now</h3>
         <p class="text-stone-300 text-sm mb-5">WHO-based risk assessment — free and no sign-up required.</p>
         <router-link
-          to="/waist-hip-ratio"
+          to="/en/waist-hip-ratio-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -135,7 +135,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          The waist-to-hip ratio is a quick, free test for your health risk. Use our <router-link to="/waist-hip-ratio" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR Calculator</router-link> and complement the result with your <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> and <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">body fat percentage</router-link>.
+          The waist-to-hip ratio is a quick, free test for your health risk. Use our <router-link to="/en/waist-hip-ratio-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">WHR Calculator</router-link> and complement the result with your <router-link to="/en/bmi-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> and <router-link to="/en/body-fat-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">body fat percentage</router-link>.
         </p>
       </div>
 

@@ -119,7 +119,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your sleep cycles now</h3>
         <p class="text-stone-300 text-sm mb-5">Optimal bedtime or wake-up time — free and no sign-up required.</p>
         <router-link
-          to="/sleep"
+          to="/en/sleep-cycle-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -134,7 +134,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Sleep quality matters more than sleep quantity. Use our <router-link to="/sleep" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Sleep Cycle Calculator</router-link> to wake up at the right time and start your day feeling refreshed.
+          Sleep quality matters more than sleep quantity. Use our <router-link to="/en/sleep-cycle-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Sleep Cycle Calculator</router-link> to wake up at the right time and start your day feeling refreshed.
         </p>
       </div>
 
