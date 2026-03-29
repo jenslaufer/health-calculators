@@ -27,6 +27,7 @@ export const routeMap = {
   bloodPressure: { de: 'blutdruck-rechner', en: 'blood-pressure-calculator' },
   calorieDeficit: { de: 'kaloriendefizit-rechner', en: 'calorie-deficit-calculator' },
   waistHipRatio: { de: 'taille-hueft-verhaeltnis', en: 'waist-hip-ratio-calculator' },
+  ovulation: { de: 'eisprung-rechner', en: 'ovulation-calculator' },
   blog: { de: 'blog', en: 'blog' },
 }
 

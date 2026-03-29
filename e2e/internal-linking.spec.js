@@ -54,8 +54,8 @@ test.describe('Calculator pages link to their blog article', () => {
   }
 })
 
-test('BlogHome lists all 11 articles', async ({ page }) => {
+test('BlogHome lists all 13 articles', async ({ page }) => {
   await page.goto('de/blog')
   const articleCards = page.locator('.space-y-4 > a')
-  await expect(articleCards).toHaveCount(12)
+  await expect(articleCards).toHaveCount(13)
 })
