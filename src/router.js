@@ -55,7 +55,7 @@ const calculatorComponents = {
   waistHipRatio: WaistHipRatioCalculator,
 }
 
-const blogComponents = {
+const blogComponentsDe = {
   'bmi-berechnen': BmiBerechnen,
   'tdee-berechnen': TdeeBerechnen,
   'schlafzyklen-berechnen': SchlafzyklenBerechnen,
@@ -68,6 +68,31 @@ const blogComponents = {
   'blutdruck-richtig-messen': BlutdruckRichtigMessen,
   'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
   'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
+}
+
+const blogComponentsEn = {
+  'calculate-bmi': CalculateBmi,
+  'calculate-tdee': CalculateTdee,
+  'calculate-sleep-cycles': CalculateSleepCycles,
+  'calculate-heart-rate-zones': CalculateHeartRateZones,
+  'calculate-body-fat': CalculateBodyFat,
+  'calculate-macros': CalculateMacros,
+  'calculate-water-intake': CalculateWaterIntake,
+  'calculate-ideal-weight': CalculateIdealWeight,
+  'calculate-due-date': CalculateDueDate,
+  'measure-blood-pressure': MeasureBloodPressure,
+  'calculate-calorie-deficit': CalculateCalorieDeficit,
+  'calculate-waist-hip-ratio': CalculateWaistHipRatio,
+}
+
+const blogComponentsByLocale = {
+  de: blogComponentsDe,
+  en: blogComponentsEn,
+}
+
+const blogHomeByLocale = {
+  de: BlogHome,
+  en: BlogHomeEn,
 }
 
 function createLocaleRoutes(locale) {
@@ -90,11 +115,11 @@ function createLocaleRoutes(locale) {
 
   routes.push({
     path: `${prefix}/blog`,
-    component: BlogHome,
+    component: blogHomeByLocale[locale],
     meta: { routeKey: 'blog', locale },
   })
 
-  for (const [slug, component] of Object.entries(blogComponents)) {
+  for (const [slug, component] of Object.entries(blogComponentsByLocale[locale])) {
     routes.push({
       path: `${prefix}/blog/${slug}`,
       component,
@@ -123,7 +148,7 @@ const oldRouteRedirects = [
 ]
 
 // Redirect old blog article paths
-const blogSlugs = Object.keys(blogComponents)
+const blogSlugs = Object.keys(blogComponentsDe)
 const oldBlogRedirects = blogSlugs.map(slug => ({
   path: `/blog/${slug}`,
   redirect: `/de/blog/${slug}`,

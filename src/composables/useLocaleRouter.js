@@ -1,5 +1,17 @@
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { articles } from '../data/articles.js'
+import { articlesEn } from '../data/articles-en.js'
+
+// Build blog slug map from article data using calculatorKey
+const blogSlugMap = {}
+for (const deArticle of articles) {
+  const enArticle = articlesEn.find(a => a.calculatorKey === deArticle.calculatorKey)
+  if (enArticle) {
+    blogSlugMap[deArticle.slug] = enArticle.slug
+    blogSlugMap[enArticle.slug] = deArticle.slug
+  }
+}
 
 export const routeMap = {
   home: { de: '', en: '' },
@@ -31,7 +43,9 @@ export function localeBlogPath(slug, locale) {
 export function switchLocalePath(route, targetLocale) {
   const routeKey = route.meta.routeKey
   if (routeKey === 'blogArticle') {
-    return `/${targetLocale}/blog/${route.meta.slug}`
+    const currentSlug = route.meta.slug
+    const targetSlug = blogSlugMap[currentSlug] || currentSlug
+    return `/${targetLocale}/blog/${targetSlug}`
   }
   return localePath(routeKey, targetLocale)
 }
