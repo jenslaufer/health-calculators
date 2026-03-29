@@ -52,7 +52,8 @@
       "heartRate": { "name": "Herzfrequenz-Zonen", "description": "Entdecke deine Trainings-Herzfrequenz-Zonen." },
       "sleep": { "name": "Schlafzyklen-Rechner", "description": "Finde deine optimale Schlaf- oder Aufwachzeit." },
       "bloodPressure": { "name": "Blutdruck-Rechner", "description": "Ordne deine Blutdruckwerte sofort ein." },
-      "pregnancy": { "name": "Geburtstermin-Rechner", "description": "Berechne deinen Geburtstermin und verfolge Meilensteine." }
+      "pregnancy": { "name": "Geburtstermin-Rechner", "description": "Berechne deinen Geburtstermin und verfolge Meilensteine." },
+      "ovulation": { "name": "Eisprung-Rechner", "description": "Berechne deinen Eisprung und deine fruchtbaren Tage." }
     }
   },
   "blogHome": {
@@ -287,6 +288,36 @@
     "perWeek": "pro Woche",
     "warningUnsafe": "Dein Kalorienziel liegt unter 1.200 kcal/Tag. Das ist gesundheitlich bedenklich — bitte sprich mit einem Arzt.",
     "warningAggressive": "Du planst mehr als 1 kg pro Woche abzunehmen. Ein langsameres Tempo ist nachhaltiger und gesünder."
+  },
+  "ovulation": {
+    "meta": {
+      "title": "Eisprung-Rechner — Fruchtbare Tage berechnen | Health Calculators",
+      "description": "Eisprung und fruchtbare Tage berechnen. Zykluslänge eingeben, Eisprungdatum, fruchtbares Fenster und nächste Zyklen erhalten. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Eisprung-Rechner",
+    "description": "Berechne deinen Eisprung und deine fruchtbaren Tage basierend auf deiner Zykluslänge.",
+    "lmp": "Erster Tag der letzten Periode",
+    "cycleLength": "Zykluslänge (Tage)",
+    "ovulationDate": "Eisprung",
+    "fertileWindow": "Fruchtbares Fenster",
+    "cycleDay": "Zyklustag",
+    "dayN": "Tag {n}",
+    "currentCycle": "Aktueller Zyklus",
+    "phaseMenstruation": "Menstruation",
+    "phaseFollicular": "Follikelphase",
+    "phaseFertile": "Fruchtbar",
+    "phaseLuteal": "Lutealphase",
+    "currentPhaseLabel": "Aktuelle Phase",
+    "phase_menstruation": "Menstruation",
+    "phase_follicular": "Follikelphase",
+    "phase_fertile": "Fruchtbare Tage",
+    "phase_luteal": "Lutealphase",
+    "nextCycles": "Nächste 3 Zyklen",
+    "cycleN": "Zyklus {n}",
+    "periodLabel": "Periode",
+    "ovulationLabel": "Eisprung",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Bei einem 28-Tage-Zyklus ist das Tag 14, bei einem 32-Tage-Zyklus Tag 18. Das fruchtbare Fenster umfasst 5 Tage vor dem Eisprung, den Eisprungtag und 1 Tag danach."
   },
   "waistHipRatio": {
     "meta": {

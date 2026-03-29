@@ -69,7 +69,7 @@ export const articles = [
     date: '2026-03-26',
     readTime: '7 min',
     calculatorKey: 'pregnancy',
-    related: ['bmi-berechnen'],
+    related: ['bmi-berechnen', 'eisprung-berechnen'],
   },
   {
     slug: 'kaloriendefizit-berechnen',
@@ -106,6 +106,15 @@ export const articles = [
     readTime: '7 min',
     calculatorKey: 'bloodPressure',
     related: ['bmi-berechnen', 'wasserbedarf-berechnen'],
+  },
+  {
+    slug: 'eisprung-berechnen',
+    title: 'Eisprung berechnen: So bestimmst du deine fruchtbaren Tage',
+    description: 'Eisprung berechnen mit der Kalendermethode. Fruchtbare Tage, Zykluslänge, Lutealphase und Tipps zur natürlichen Familienplanung.',
+    date: '2026-03-29',
+    readTime: '7 min',
+    calculatorKey: 'ovulation',
+    related: ['geburtstermin-berechnen'],
   },
 ]
 

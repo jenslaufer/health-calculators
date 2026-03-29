@@ -69,7 +69,7 @@ export const articlesEn = [
     date: '2026-03-26',
     readTime: '7 min',
     calculatorKey: 'pregnancy',
-    related: ['calculate-bmi'],
+    related: ['calculate-bmi', 'calculate-ovulation'],
   },
   {
     slug: 'calculate-calorie-deficit',
@@ -106,6 +106,15 @@ export const articlesEn = [
     readTime: '7 min',
     calculatorKey: 'bloodPressure',
     related: ['calculate-bmi', 'calculate-water-intake'],
+  },
+  {
+    slug: 'calculate-ovulation',
+    title: 'Calculate Ovulation: How to Determine Your Fertile Days',
+    description: 'Calculate your ovulation with the calendar method. Fertile window, cycle length, luteal phase and tips for natural family planning.',
+    date: '2026-03-29',
+    readTime: '7 min',
+    calculatorKey: 'ovulation',
+    related: ['calculate-due-date'],
   },
 ]
 

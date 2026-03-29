@@ -25,7 +25,9 @@ import BlutdruckRichtigMessen from './pages/blog/BlutdruckRichtigMessen.vue'
 import CalorieDeficitCalculator from './pages/CalorieDeficitCalculator.vue'
 import KaloriendefizitBerechnen from './pages/blog/KaloriendefizitBerechnen.vue'
 import WaistHipRatioCalculator from './pages/WaistHipRatioCalculator.vue'
+import OvulationCalculator from './pages/OvulationCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
+import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -39,6 +41,7 @@ import CalculateDueDate from './pages/blog/en/CalculateDueDate.vue'
 import MeasureBloodPressure from './pages/blog/en/MeasureBloodPressure.vue'
 import CalculateCalorieDeficit from './pages/blog/en/CalculateCalorieDeficit.vue'
 import CalculateWaistHipRatio from './pages/blog/en/CalculateWaistHipRatio.vue'
+import CalculateOvulation from './pages/blog/en/CalculateOvulation.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -53,6 +56,7 @@ const calculatorComponents = {
   bloodPressure: BloodPressureCalculator,
   calorieDeficit: CalorieDeficitCalculator,
   waistHipRatio: WaistHipRatioCalculator,
+  ovulation: OvulationCalculator,
 }
 
 const blogComponentsDe = {
@@ -68,6 +72,7 @@ const blogComponentsDe = {
   'blutdruck-richtig-messen': BlutdruckRichtigMessen,
   'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
   'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
+  'eisprung-berechnen': EisprungBerechnen,
 }
 
 const blogComponentsEn = {
@@ -83,6 +88,7 @@ const blogComponentsEn = {
   'measure-blood-pressure': MeasureBloodPressure,
   'calculate-calorie-deficit': CalculateCalorieDeficit,
   'calculate-waist-hip-ratio': CalculateWaistHipRatio,
+  'calculate-ovulation': CalculateOvulation,
 }
 
 const blogComponentsByLocale = {
@@ -144,6 +150,7 @@ const oldRouteRedirects = [
   { path: '/blutdruck-rechner', redirect: `/de/${routeMap.bloodPressure.de}` },
   { path: '/kaloriendefizit-rechner', redirect: `/de/${routeMap.calorieDeficit.de}` },
   { path: '/waist-hip-ratio', redirect: `/de/${routeMap.waistHipRatio.de}` },
+  { path: '/ovulation', redirect: `/de/${routeMap.ovulation.de}` },
   { path: '/blog', redirect: '/de/blog' },
 ]
 
