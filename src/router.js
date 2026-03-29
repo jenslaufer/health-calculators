@@ -55,38 +55,42 @@ const calculatorComponents = {
   waistHipRatio: WaistHipRatioCalculator,
 }
 
-const blogComponents = {
-  de: {
-    'bmi-berechnen': BmiBerechnen,
-    'tdee-berechnen': TdeeBerechnen,
-    'schlafzyklen-berechnen': SchlafzyklenBerechnen,
-    'herzfrequenz-zonen-berechnen': HerzfrequenzZonenBerechnen,
-    'koerperfett-berechnen': KoerperfettBerechnen,
-    'makronaehrstoffe-berechnen': MakronaehrstoffeBerechnen,
-    'wasserbedarf-berechnen': WasserbedarfBerechnen,
-    'idealgewicht-berechnen': IdealgewichtBerechnen,
-    'geburtstermin-berechnen': GeburtsterminBerechnen,
-    'blutdruck-richtig-messen': BlutdruckRichtigMessen,
-    'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
-    'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
-  },
-  en: {
-    'calculate-bmi': CalculateBmi,
-    'calculate-tdee': CalculateTdee,
-    'calculate-sleep-cycles': CalculateSleepCycles,
-    'calculate-heart-rate-zones': CalculateHeartRateZones,
-    'calculate-body-fat': CalculateBodyFat,
-    'calculate-macros': CalculateMacros,
-    'calculate-water-intake': CalculateWaterIntake,
-    'calculate-ideal-weight': CalculateIdealWeight,
-    'calculate-due-date': CalculateDueDate,
-    'measure-blood-pressure': MeasureBloodPressure,
-    'calculate-calorie-deficit': CalculateCalorieDeficit,
-    'calculate-waist-hip-ratio': CalculateWaistHipRatio,
-  },
+const blogComponentsDe = {
+  'bmi-berechnen': BmiBerechnen,
+  'tdee-berechnen': TdeeBerechnen,
+  'schlafzyklen-berechnen': SchlafzyklenBerechnen,
+  'herzfrequenz-zonen-berechnen': HerzfrequenzZonenBerechnen,
+  'koerperfett-berechnen': KoerperfettBerechnen,
+  'makronaehrstoffe-berechnen': MakronaehrstoffeBerechnen,
+  'wasserbedarf-berechnen': WasserbedarfBerechnen,
+  'idealgewicht-berechnen': IdealgewichtBerechnen,
+  'geburtstermin-berechnen': GeburtsterminBerechnen,
+  'blutdruck-richtig-messen': BlutdruckRichtigMessen,
+  'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
+  'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
 }
 
-const blogHomeComponents = {
+const blogComponentsEn = {
+  'calculate-bmi': CalculateBmi,
+  'calculate-tdee': CalculateTdee,
+  'calculate-sleep-cycles': CalculateSleepCycles,
+  'calculate-heart-rate-zones': CalculateHeartRateZones,
+  'calculate-body-fat': CalculateBodyFat,
+  'calculate-macros': CalculateMacros,
+  'calculate-water-intake': CalculateWaterIntake,
+  'calculate-ideal-weight': CalculateIdealWeight,
+  'calculate-due-date': CalculateDueDate,
+  'measure-blood-pressure': MeasureBloodPressure,
+  'calculate-calorie-deficit': CalculateCalorieDeficit,
+  'calculate-waist-hip-ratio': CalculateWaistHipRatio,
+}
+
+const blogComponentsByLocale = {
+  de: blogComponentsDe,
+  en: blogComponentsEn,
+}
+
+const blogHomeByLocale = {
   de: BlogHome,
   en: BlogHomeEn,
 }
@@ -111,11 +115,11 @@ function createLocaleRoutes(locale) {
 
   routes.push({
     path: `${prefix}/blog`,
-    component: blogHomeComponents[locale],
+    component: blogHomeByLocale[locale],
     meta: { routeKey: 'blog', locale },
   })
 
-  for (const [slug, component] of Object.entries(blogComponents[locale])) {
+  for (const [slug, component] of Object.entries(blogComponentsByLocale[locale])) {
     routes.push({
       path: `${prefix}/blog/${slug}`,
       component,
@@ -144,7 +148,7 @@ const oldRouteRedirects = [
 ]
 
 // Redirect old blog article paths
-const blogSlugs = Object.keys(blogComponents.de)
+const blogSlugs = Object.keys(blogComponentsDe)
 const oldBlogRedirects = blogSlugs.map(slug => ({
   path: `/blog/${slug}`,
   redirect: `/de/blog/${slug}`,

@@ -132,6 +132,12 @@ test.describe('Locale switching', () => {
     await page.getByRole('button', { name: 'EN' }).first().click()
     await expect(page).toHaveURL(/\/en\/blog\/calculate-bmi/)
   })
+
+  test('switch from EN blog article to DE blog article', async ({ page }) => {
+    await page.goto('en/blog/calculate-bmi')
+    await page.getByRole('button', { name: 'DE' }).first().click()
+    await expect(page).toHaveURL(/\/de\/blog\/bmi-berechnen/)
+  })
 })
 
 test.describe('Brand localization', () => {

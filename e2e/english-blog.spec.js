@@ -123,7 +123,7 @@ test.describe('English blog articles use English internal links', () => {
   for (const article of englishBlogArticles) {
     test(`${article.slug} back link goes to English blog home`, async ({ page }) => {
       await page.goto(`en/blog/${article.slug}`)
-      const backLink = page.locator('a[href="/health-calculators/en/blog"]')
+      const backLink = page.locator('a[href="/health-calculators/en/blog"]').first()
       await expect(backLink).toBeVisible()
     })
   }
