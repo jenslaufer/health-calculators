@@ -113,7 +113,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Interpret your blood pressure values now</h3>
         <p class="text-stone-300 text-sm mb-5">Instant category result — free and no sign-up required.</p>
         <router-link
-          to="/blutdruck-rechner"
+          to="/en/blood-pressure-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -121,7 +121,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Regular blood pressure monitoring is simple and can save lives. Use our <router-link to="/blutdruck-rechner" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Blood Pressure Calculator</router-link> to classify your values, and consult your doctor if results are concerning.
+          Regular blood pressure monitoring is simple and can save lives. Use our <router-link to="/en/blood-pressure-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Blood Pressure Calculator</router-link> to classify your values, and consult your doctor if results are concerning.
         </p>
       </div>
 

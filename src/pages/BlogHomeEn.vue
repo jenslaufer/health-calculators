@@ -15,7 +15,7 @@ useHead(() => ({
 <template>
   <div>
     <div class="mb-10">
-      <router-link to="/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
+      <router-link to="/en/" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
       <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('blogHome.heading') }}</h1>
       <p class="text-base text-stone-500 font-normal">{{ t('blogHome.subtitle') }}</p>
     </div>

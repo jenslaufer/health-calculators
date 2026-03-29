@@ -118,7 +118,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your body fat percentage now</h3>
         <p class="text-stone-300 text-sm mb-5">U.S. Navy method — free and no sign-up required.</p>
         <router-link
-          to="/body-fat"
+          to="/en/body-fat-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -136,7 +136,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Body fat percentage is more meaningful than BMI. Use our <router-link to="/body-fat" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Body Fat Calculator</router-link> and complement the result with your <router-link to="/bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> and <router-link to="/ideal-weight" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">ideal weight</router-link>.
+          Body fat percentage is more meaningful than BMI. Use our <router-link to="/en/body-fat-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Body Fat Calculator</router-link> and complement the result with your <router-link to="/en/bmi-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> and <router-link to="/en/ideal-weight-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">ideal weight</router-link>.
         </p>
       </div>
 

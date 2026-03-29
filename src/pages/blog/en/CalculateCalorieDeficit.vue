@@ -107,7 +107,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your calorie deficit now</h3>
         <p class="text-stone-300 text-sm mb-5">Mifflin-St Jeor formula with personal calorie goal — free and no sign-up required.</p>
         <router-link
-          to="/kaloriendefizit-rechner"
+          to="/en/calorie-deficit-calculator"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -115,7 +115,7 @@ useHead({
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          A calorie deficit is the key to weight loss. Calculate your <router-link to="/en/blog/calculate-tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">daily calorie burn (TDEE)</router-link>, set a realistic goal, and use our <router-link to="/kaloriendefizit-rechner" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Calorie Deficit Calculator</router-link> for your personal daily target.
+          A calorie deficit is the key to weight loss. Calculate your <router-link to="/en/blog/calculate-tdee" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">daily calorie burn (TDEE)</router-link>, set a realistic goal, and use our <router-link to="/en/calorie-deficit-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Calorie Deficit Calculator</router-link> for your personal daily target.
         </p>
       </div>
 

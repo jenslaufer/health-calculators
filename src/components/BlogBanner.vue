@@ -3,15 +3,20 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { getArticleByCalculatorKey } from '../data/articles.js'
+import { getEnArticleByCalculatorKey } from '../data/articles-en.js'
 
 const { t } = useI18n()
-const { localeBlogPath } = useLocaleRouter()
+const { localeBlogPath, locale } = useLocaleRouter()
 
 const props = defineProps({
   calculatorKey: { type: String, required: true },
 })
 
-const article = computed(() => getArticleByCalculatorKey(props.calculatorKey))
+const article = computed(() =>
+  locale.value === 'en'
+    ? getEnArticleByCalculatorKey(props.calculatorKey)
+    : getArticleByCalculatorKey(props.calculatorKey)
+)
 </script>
 
 <template>
