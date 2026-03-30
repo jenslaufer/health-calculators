@@ -73,6 +73,12 @@ const englishBlogArticles = [
     headings: ['What Is the Waist-to-Hip Ratio?', 'WHO Thresholds'],
     calculatorLink: '/en/waist-hip-ratio-calculator',
   },
+  {
+    slug: 'protein-intake-guide',
+    title: 'Protein Intake',
+    headings: ['How Much Protein Do You Need?', 'Protein by Goal'],
+    calculatorLink: '/en/protein-calculator',
+  },
 ]
 
 test.describe('English blog articles render correctly', () => {

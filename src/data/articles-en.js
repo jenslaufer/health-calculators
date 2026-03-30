@@ -116,6 +116,15 @@ export const articlesEn = [
     calculatorKey: 'ovulation',
     related: ['calculate-due-date'],
   },
+  {
+    slug: 'protein-intake-guide',
+    title: 'Calculate Protein Intake: How Much Protein You Really Need',
+    description: 'Calculate your daily protein intake based on weight, activity and goal. Recommendations for muscle building, fat loss and maintenance — with food sources table.',
+    date: '2026-03-30',
+    readTime: '7 min',
+    calculatorKey: 'protein',
+    related: ['calculate-macros', 'calculate-water-intake'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
