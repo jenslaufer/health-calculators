@@ -74,6 +74,12 @@ const englishBlogArticles = [
     calculatorLink: '/en/waist-hip-ratio-calculator',
   },
   {
+    slug: 'protein-intake-guide',
+    title: 'Protein Intake',
+    headings: ['How Much Protein Do You Need?', 'Protein by Goal'],
+    calculatorLink: '/en/protein-calculator',
+  },
+  {
     slug: 'calculate-bmr',
     title: 'Calculate BMR',
     headings: ['Mifflin-St Jeor', 'Harris-Benedict'],

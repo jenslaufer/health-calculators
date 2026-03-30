@@ -54,6 +54,7 @@
       "bloodPressure": { "name": "Blutdruck-Rechner", "description": "Ordne deine Blutdruckwerte sofort ein." },
       "pregnancy": { "name": "Geburtstermin-Rechner", "description": "Berechne deinen Geburtstermin und verfolge Meilensteine." },
       "ovulation": { "name": "Eisprung-Rechner", "description": "Berechne deinen Eisprung und deine fruchtbaren Tage." },
+      "protein": { "name": "Protein-Rechner", "description": "Berechne deinen optimalen täglichen Proteinbedarf." },
       "bmr": { "name": "Grundumsatz-Rechner (BMR)", "description": "Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt." }
     }
   },
@@ -319,6 +320,37 @@
     "ovulationLabel": "Eisprung",
     "howItWorks": "So funktioniert's",
     "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Bei einem 28-Tage-Zyklus ist das Tag 14, bei einem 32-Tage-Zyklus Tag 18. Das fruchtbare Fenster umfasst 5 Tage vor dem Eisprung, den Eisprungtag und 1 Tag danach."
+  },
+  "protein": {
+    "meta": {
+      "title": "Protein-Rechner — Täglichen Proteinbedarf berechnen",
+      "description": "Berechne deinen täglichen Proteinbedarf basierend auf Gewicht, Aktivität, Ziel und Ernährungsform. Individuelle Empfehlungen mit Lebensmittelquellen."
+    },
+    "title": "Protein-Rechner",
+    "description": "Berechne dein tägliches Proteinziel basierend auf Gewicht, Aktivität, Ziel und Ernährung.",
+    "sedentary": "Sitzend",
+    "light": "Leicht aktiv",
+    "moderate": "Moderat aktiv",
+    "active": "Aktiv",
+    "athlete": "Athlet",
+    "goal": "Ziel",
+    "maintain": "Halten",
+    "loseFat": "Fett abbauen",
+    "buildMuscle": "Muskelaufbau",
+    "diet": "Ernährungsform",
+    "omnivore": "Mischkost",
+    "vegetarian": "Vegetarisch",
+    "vegan": "Vegan",
+    "meals": "Mahlzeiten pro Tag",
+    "dailyProtein": "Tägliches Protein",
+    "perKg": "g / kg Körpergewicht",
+    "perMeal": "pro Mahlzeit",
+    "grams": "g",
+    "gramsPerDay": "g / Tag",
+    "foodSources": "Top-Proteinquellen",
+    "food": "Lebensmittel",
+    "proteinPer100g": "Protein / 100 g",
+    "goalComparison": "Protein nach Ziel"
   },
   "bmr": {
     "meta": {

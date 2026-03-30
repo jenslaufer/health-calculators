@@ -117,6 +117,15 @@ export const articles = [
     related: ['geburtstermin-berechnen'],
   },
   {
+    slug: 'proteinbedarf-berechnen',
+    title: 'Proteinbedarf berechnen: So viel Protein brauchst du wirklich',
+    description: 'Proteinbedarf berechnen basierend auf Gewicht, Aktivität und Ziel. Empfehlungen für Muskelaufbau, Abnehmen und Erhalt — mit Lebensmitteltabelle.',
+    date: '2026-03-30',
+    readTime: '7 min',
+    calculatorKey: 'protein',
+    related: ['makronaehrstoffe-berechnen', 'wasserbedarf-berechnen'],
+  },
+  {
     slug: 'grundumsatz-berechnen',
     title: 'Grundumsatz berechnen: BMR mit zwei Formeln ermitteln',
     description: 'Grundumsatz (BMR) berechnen mit der Mifflin-St Jeor- und Harris-Benedict-Formel. Aktivitätsfaktoren, Einflussfaktoren und praktische Tipps.',
