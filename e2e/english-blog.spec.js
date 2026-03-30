@@ -79,6 +79,12 @@ const englishBlogArticles = [
     headings: ['How Much Protein Do You Need?', 'Protein by Goal'],
     calculatorLink: '/en/protein-calculator',
   },
+  {
+    slug: 'calculate-bmr',
+    title: 'Calculate BMR',
+    headings: ['Mifflin-St Jeor', 'Harris-Benedict'],
+    calculatorLink: '/en/bmr-calculator',
+  },
 ]
 
 test.describe('English blog articles render correctly', () => {

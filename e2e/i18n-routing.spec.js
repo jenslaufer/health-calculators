@@ -29,6 +29,7 @@ test.describe('Locale-prefixed route resolution', () => {
     { slug: 'blutdruck-rechner', titlePattern: /Blutdruck-Rechner/ },
     { slug: 'kaloriendefizit-rechner', titlePattern: /Kaloriendefizit-Rechner/ },
     { slug: 'taille-hueft-verhaeltnis', titlePattern: /Taille-Hüft-Verhältnis/ },
+    { slug: 'bmr-rechner', titlePattern: /Grundumsatz-Rechner/ },
   ]
 
   for (const { slug, titlePattern } of deCalculators) {
@@ -51,6 +52,7 @@ test.describe('Locale-prefixed route resolution', () => {
     { slug: 'blood-pressure-calculator', titlePattern: /Blood Pressure Calculator/ },
     { slug: 'calorie-deficit-calculator', titlePattern: /Calorie Deficit Calculator/ },
     { slug: 'waist-hip-ratio-calculator', titlePattern: /Waist-to-Hip Ratio Calculator/ },
+    { slug: 'bmr-calculator', titlePattern: /BMR Calculator/ },
   ]
 
   for (const { slug, titlePattern } of enCalculators) {

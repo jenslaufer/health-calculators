@@ -125,6 +125,15 @@ export const articles = [
     calculatorKey: 'protein',
     related: ['makronaehrstoffe-berechnen', 'wasserbedarf-berechnen'],
   },
+  {
+    slug: 'grundumsatz-berechnen',
+    title: 'Grundumsatz berechnen: BMR mit zwei Formeln ermitteln',
+    description: 'Grundumsatz (BMR) berechnen mit der Mifflin-St Jeor- und Harris-Benedict-Formel. Aktivitätsfaktoren, Einflussfaktoren und praktische Tipps.',
+    date: '2026-03-30',
+    readTime: '7 min',
+    calculatorKey: 'bmr',
+    related: ['tdee-berechnen', 'kaloriendefizit-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

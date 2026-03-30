@@ -54,7 +54,8 @@
       "bloodPressure": { "name": "Blood Pressure Calculator", "description": "Check your blood pressure category instantly." },
       "pregnancy": { "name": "Pregnancy Due Date Calculator", "description": "Estimate your due date and track milestones." },
       "ovulation": { "name": "Ovulation Calculator", "description": "Calculate your ovulation date and fertile days." },
-      "protein": { "name": "Protein Calculator", "description": "Find your optimal daily protein intake." }
+      "protein": { "name": "Protein Calculator", "description": "Find your optimal daily protein intake." },
+      "bmr": { "name": "BMR Calculator", "description": "Calculate the calories your body burns at rest." }
     }
   },
   "blogHome": {
@@ -350,6 +351,24 @@
     "food": "Food",
     "proteinPer100g": "Protein / 100 g",
     "goalComparison": "Protein by Goal"
+  },
+  "bmr": {
+    "meta": {
+      "title": "BMR Calculator — Free Basal Metabolic Rate Calculator",
+      "description": "Calculate your Basal Metabolic Rate (BMR) with Mifflin-St Jeor or Harris-Benedict formula. Activity level estimates, instant results."
+    },
+    "title": "BMR Calculator",
+    "description": "Calculate your Basal Metabolic Rate — the calories your body burns at rest.",
+    "formula": "Formula",
+    "mifflinStJeor": "Mifflin-St Jeor",
+    "harrisBenedict": "Harris-Benedict",
+    "bmrResult": "Basal Metabolic Rate (BMR)",
+    "activityEstimates": "Estimated daily burn by activity level",
+    "sedentary": "Sedentary (office job)",
+    "lightlyActive": "Lightly active (1–3 days/week)",
+    "moderatelyActive": "Moderately active (3–5 days/week)",
+    "veryActive": "Very active (6–7 days/week)",
+    "extremelyActive": "Extremely active (athlete/physical job)"
   },
   "waistHipRatio": {
     "meta": {
