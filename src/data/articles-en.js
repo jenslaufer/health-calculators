@@ -116,6 +116,15 @@ export const articlesEn = [
     calculatorKey: 'ovulation',
     related: ['calculate-due-date'],
   },
+  {
+    slug: 'calculate-bmr',
+    title: 'Calculate BMR: Basal Metabolic Rate With Two Formulas',
+    description: 'Calculate your Basal Metabolic Rate (BMR) using Mifflin-St Jeor and Harris-Benedict formulas. Activity factors, influencing factors and practical tips.',
+    date: '2026-03-30',
+    readTime: '7 min',
+    calculatorKey: 'bmr',
+    related: ['calculate-tdee', 'calculate-calorie-deficit'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

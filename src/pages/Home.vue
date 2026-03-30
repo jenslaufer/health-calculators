@@ -33,6 +33,7 @@ const groups = computed(() => [
   {
     label: t('home.groups.nutritionEnergy'),
     items: [
+      { name: t('home.calculators.bmr.name'), description: t('home.calculators.bmr.description'), path: localePath('bmr') },
       { name: t('home.calculators.tdee.name'), description: t('home.calculators.tdee.description'), path: localePath('tdee') },
       { name: t('home.calculators.macro.name'), description: t('home.calculators.macro.description'), path: localePath('macro') },
       { name: t('home.calculators.water.name'), description: t('home.calculators.water.description'), path: localePath('water') },
