@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { routeMap } from './composables/useLocaleRouter.js'
 import Home from './pages/Home.vue'
 import BmiCalculator from './pages/BmiCalculator.vue'
@@ -184,6 +184,6 @@ const routes = [
 ]
 
 export default createRouter({
-  history: createWebHistory('/health-calculators/'),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 })
