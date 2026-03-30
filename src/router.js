@@ -26,8 +26,10 @@ import CalorieDeficitCalculator from './pages/CalorieDeficitCalculator.vue'
 import KaloriendefizitBerechnen from './pages/blog/KaloriendefizitBerechnen.vue'
 import WaistHipRatioCalculator from './pages/WaistHipRatioCalculator.vue'
 import OvulationCalculator from './pages/OvulationCalculator.vue'
+import BmrCalculator from './pages/BmrCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
+import GrundumsatzBerechnen from './pages/blog/GrundumsatzBerechnen.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -42,6 +44,7 @@ import MeasureBloodPressure from './pages/blog/en/MeasureBloodPressure.vue'
 import CalculateCalorieDeficit from './pages/blog/en/CalculateCalorieDeficit.vue'
 import CalculateWaistHipRatio from './pages/blog/en/CalculateWaistHipRatio.vue'
 import CalculateOvulation from './pages/blog/en/CalculateOvulation.vue'
+import CalculateBmr from './pages/blog/en/CalculateBmr.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -57,6 +60,7 @@ const calculatorComponents = {
   calorieDeficit: CalorieDeficitCalculator,
   waistHipRatio: WaistHipRatioCalculator,
   ovulation: OvulationCalculator,
+  bmr: BmrCalculator,
 }
 
 const blogComponentsDe = {
@@ -73,6 +77,7 @@ const blogComponentsDe = {
   'kaloriendefizit-berechnen': KaloriendefizitBerechnen,
   'taille-hueft-verhaeltnis-berechnen': TaillenHueftVerhaeltnis,
   'eisprung-berechnen': EisprungBerechnen,
+  'grundumsatz-berechnen': GrundumsatzBerechnen,
 }
 
 const blogComponentsEn = {
@@ -89,6 +94,7 @@ const blogComponentsEn = {
   'calculate-calorie-deficit': CalculateCalorieDeficit,
   'calculate-waist-hip-ratio': CalculateWaistHipRatio,
   'calculate-ovulation': CalculateOvulation,
+  'calculate-bmr': CalculateBmr,
 }
 
 const blogComponentsByLocale = {
@@ -151,6 +157,7 @@ const oldRouteRedirects = [
   { path: '/kaloriendefizit-rechner', redirect: `/de/${routeMap.calorieDeficit.de}` },
   { path: '/waist-hip-ratio', redirect: `/de/${routeMap.waistHipRatio.de}` },
   { path: '/ovulation', redirect: `/de/${routeMap.ovulation.de}` },
+  { path: '/bmr', redirect: `/de/${routeMap.bmr.de}` },
   { path: '/blog', redirect: '/de/blog' },
 ]
 

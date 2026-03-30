@@ -73,6 +73,12 @@ const englishBlogArticles = [
     headings: ['What Is the Waist-to-Hip Ratio?', 'WHO Thresholds'],
     calculatorLink: '/en/waist-hip-ratio-calculator',
   },
+  {
+    slug: 'calculate-bmr',
+    title: 'Calculate BMR',
+    headings: ['Mifflin-St Jeor', 'Harris-Benedict'],
+    calculatorLink: '/en/bmr-calculator',
+  },
 ]
 
 test.describe('English blog articles render correctly', () => {

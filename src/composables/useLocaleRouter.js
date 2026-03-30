@@ -28,6 +28,7 @@ export const routeMap = {
   calorieDeficit: { de: 'kaloriendefizit-rechner', en: 'calorie-deficit-calculator' },
   waistHipRatio: { de: 'taille-hueft-verhaeltnis', en: 'waist-hip-ratio-calculator' },
   ovulation: { de: 'eisprung-rechner', en: 'ovulation-calculator' },
+  bmr: { de: 'bmr-rechner', en: 'bmr-calculator' },
   blog: { de: 'blog', en: 'blog' },
 }
 
