@@ -40,6 +40,8 @@ describe('sitemap.xml', () => {
     'schlafzyklen-rechner', 'tdee-rechner', 'schwangerschafts-rechner',
     'blutdruck-rechner', 'kaloriendefizit-rechner', 'taille-hueft-verhaeltnis',
     'eisprung-rechner',
+    'protein-rechner',
+    'bmr-rechner',
   ]
 
   const enCalculatorSlugs = [
@@ -48,6 +50,7 @@ describe('sitemap.xml', () => {
     'sleep-cycle-calculator', 'tdee-calculator', 'pregnancy-calculator',
     'blood-pressure-calculator', 'calorie-deficit-calculator',
     'waist-hip-ratio-calculator', 'ovulation-calculator',
+    'protein-calculator', 'bmr-calculator',
   ]
 
   it('contains all German calculator routes', () => {
@@ -74,6 +77,7 @@ describe('sitemap.xml', () => {
     'schlafzyklen-berechnen', 'geburtstermin-berechnen', 'kaloriendefizit-berechnen',
     'herzfrequenz-zonen-berechnen', 'taille-hueft-verhaeltnis-berechnen',
     'blutdruck-richtig-messen', 'eisprung-berechnen',
+    'proteinbedarf-berechnen', 'grundumsatz-berechnen',
   ]
 
   const enBlogSlugs = [
@@ -82,6 +86,7 @@ describe('sitemap.xml', () => {
     'calculate-sleep-cycles', 'calculate-due-date', 'calculate-calorie-deficit',
     'calculate-heart-rate-zones', 'calculate-waist-hip-ratio',
     'measure-blood-pressure', 'calculate-ovulation',
+    'protein-intake-guide', 'calculate-bmr',
   ]
 
   it('contains all German blog article URLs', () => {
@@ -96,8 +101,8 @@ describe('sitemap.xml', () => {
     }
   })
 
-  // 1 home + 13 de calcs + 13 en calcs + 2 blog indexes + 13 de articles + 13 en articles = 55
-  it('contains exactly 55 URLs', () => {
-    expect(urls).toHaveLength(55)
+  // 1 home + 15 de calcs + 15 en calcs + 2 blog indexes + 15 de articles + 15 en articles = 63
+  it('contains exactly 63 URLs', () => {
+    expect(urls).toHaveLength(63)
   })
 })

@@ -72,6 +72,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/de/protein-rechner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/de/bmr-rechner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- English calculator routes -->
   <url>
@@ -136,6 +146,16 @@
   </url>
   <url>
     <loc>https://jenslaufer.github.io/health-calculators/en/ovulation-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/en/protein-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/en/bmr-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -218,6 +238,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/de/blog/proteinbedarf-berechnen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/de/blog/grundumsatz-berechnen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
   <!-- English blog articles -->
   <url>
@@ -282,6 +312,16 @@
   </url>
   <url>
     <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-ovulation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/en/blog/protein-intake-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-bmr</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
