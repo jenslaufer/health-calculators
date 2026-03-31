@@ -6,6 +6,7 @@ import { localePath as resolveLocalePath, routeMap } from './useLocaleRouter.js'
 const BASE_URL = 'https://jenslaufer.github.io/health-calculators'
 
 function setMeta(attr, key, content) {
+  if (import.meta.env.SSR) return
   let el = document.querySelector(`meta[${attr}="${key}"]`)
   if (!el) {
     el = document.createElement('meta')
@@ -16,6 +17,7 @@ function setMeta(attr, key, content) {
 }
 
 function setCanonical(url) {
+  if (import.meta.env.SSR) return
   let el = document.querySelector('link[rel="canonical"]')
   if (!el) {
     el = document.createElement('link')
@@ -26,6 +28,7 @@ function setCanonical(url) {
 }
 
 function setHreflang(lang, url) {
+  if (import.meta.env.SSR) return
   let el = document.querySelector(`link[hreflang="${lang}"]`)
   if (!el) {
     el = document.createElement('link')
@@ -37,10 +40,12 @@ function setHreflang(lang, url) {
 }
 
 function removeHreflang() {
+  if (import.meta.env.SSR) return
   document.querySelectorAll('link[hreflang]').forEach(el => el.remove())
 }
 
 function setJsonLd(data) {
+  if (import.meta.env.SSR) return
   let el = document.querySelector('script[data-head="jsonld"]')
   if (!el) {
     el = document.createElement('script')
@@ -52,13 +57,14 @@ function setJsonLd(data) {
 }
 
 function removeJsonLd() {
+  if (import.meta.env.SSR) return
   const el = document.querySelector('script[data-head="jsonld"]')
   if (el) el.remove()
 }
 
 export function useHead(getConfig) {
   const resolve = typeof getConfig === 'function' ? getConfig : () => getConfig
-  const prevTitle = document.title
+  const prevTitle = import.meta.env.SSR ? '' : document.title
   const route = useRoute()
   const { locale } = useI18n()
 
@@ -82,7 +88,9 @@ export function useHead(getConfig) {
 
     const url = `${BASE_URL}${currentPath}`
 
-    document.title = title
+    if (!import.meta.env.SSR) {
+      document.title = title
+    }
     setMeta('name', 'description', description)
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
@@ -100,7 +108,9 @@ export function useHead(getConfig) {
   })
 
   onUnmounted(() => {
-    document.title = prevTitle
+    if (!import.meta.env.SSR) {
+      document.title = prevTitle
+    }
     removeJsonLd()
     removeHreflang()
   })

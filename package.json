@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "@vitejs/plugin-vue": "^6.0.5",
     "tailwindcss": "^4.2.1",
     "vite": "^8.0.0",
+    "vite-ssg": "^28.3.0",
     "vitest": "^4.1.2"
   }
 }
