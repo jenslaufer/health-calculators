@@ -1,0 +1,99 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gesundheitsrechner" [ref=e7] [cursor=pointer]:
+          - /url: /de/
+        - generic [ref=e8]:
+          - link "Alle Rechner" [ref=e9] [cursor=pointer]:
+            - /url: /de/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /de/blog
+          - generic [ref=e11]:
+            - button "DE" [active] [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Deine Gesundheit, berechnet." [level=1] [ref=e18]
+        - paragraph [ref=e19]: Wissenschaftlich fundierte Gesundheitsrechner. Ohne Anmeldung. Sofortige Ergebnisse.
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - heading "Körperzusammensetzung" [level=2] [ref=e22]
+          - generic [ref=e23]:
+            - link "BMI-Rechner Prüfe, ob dein Gewicht im gesunden Bereich liegt." [ref=e24] [cursor=pointer]:
+              - /url: /de/bmi-rechner
+              - heading "BMI-Rechner" [level=2] [ref=e25]
+              - paragraph [ref=e26]: Prüfe, ob dein Gewicht im gesunden Bereich liegt.
+            - link "Körperfett-Rechner Schätze deinen Körperfettanteil." [ref=e27] [cursor=pointer]:
+              - /url: /de/koerperfett-rechner
+              - heading "Körperfett-Rechner" [level=2] [ref=e28]
+              - paragraph [ref=e29]: Schätze deinen Körperfettanteil.
+            - link "Idealgewicht-Rechner Finde deinen gesunden Gewichtsbereich." [ref=e30] [cursor=pointer]:
+              - /url: /de/idealgewicht-rechner
+              - heading "Idealgewicht-Rechner" [level=2] [ref=e31]
+              - paragraph [ref=e32]: Finde deinen gesunden Gewichtsbereich.
+            - link "Taille-Hüft-Verhältnis Beurteile dein Gesundheitsrisiko nach WHO-Richtlinien." [ref=e33] [cursor=pointer]:
+              - /url: /de/taille-hueft-verhaeltnis
+              - heading "Taille-Hüft-Verhältnis" [level=2] [ref=e34]
+              - paragraph [ref=e35]: Beurteile dein Gesundheitsrisiko nach WHO-Richtlinien.
+        - generic [ref=e36]:
+          - heading "Ernährung & Energie" [level=2] [ref=e37]
+          - generic [ref=e38]:
+            - link "Grundumsatz-Rechner (BMR) Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt." [ref=e39] [cursor=pointer]:
+              - /url: /de/bmr-rechner
+              - heading "Grundumsatz-Rechner (BMR)" [level=2] [ref=e40]
+              - paragraph [ref=e41]: Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt.
+            - link "TDEE-Rechner Berechne deinen täglichen Kalorienbedarf." [ref=e42] [cursor=pointer]:
+              - /url: /de/tdee-rechner
+              - heading "TDEE-Rechner" [level=2] [ref=e43]
+              - paragraph [ref=e44]: Berechne deinen täglichen Kalorienbedarf.
+            - link "Makro-Rechner Berechne deine ideale Protein-, Kohlenhydrat- und Fettverteilung." [ref=e45] [cursor=pointer]:
+              - /url: /de/makro-rechner
+              - heading "Makro-Rechner" [level=2] [ref=e46]
+              - paragraph [ref=e47]: Berechne deine ideale Protein-, Kohlenhydrat- und Fettverteilung.
+            - link "Wasserbedarf-Rechner Wie viel Wasser solltest du täglich trinken?" [ref=e48] [cursor=pointer]:
+              - /url: /de/wasser-rechner
+              - heading "Wasserbedarf-Rechner" [level=2] [ref=e49]
+              - paragraph [ref=e50]: Wie viel Wasser solltest du täglich trinken?
+            - link "Kaloriendefizit-Rechner Berechne dein tägliches Kalorienziel zum Abnehmen." [ref=e51] [cursor=pointer]:
+              - /url: /de/kaloriendefizit-rechner
+              - heading "Kaloriendefizit-Rechner" [level=2] [ref=e52]
+              - paragraph [ref=e53]: Berechne dein tägliches Kalorienziel zum Abnehmen.
+            - link "Protein-Rechner Berechne deinen optimalen täglichen Proteinbedarf." [ref=e54] [cursor=pointer]:
+              - /url: /de/protein-rechner
+              - heading "Protein-Rechner" [level=2] [ref=e55]
+              - paragraph [ref=e56]: Berechne deinen optimalen täglichen Proteinbedarf.
+        - generic [ref=e57]:
+          - heading "Fitness & Erholung" [level=2] [ref=e58]
+          - generic [ref=e59]:
+            - link "Herzfrequenz-Zonen Entdecke deine Trainings-Herzfrequenz-Zonen." [ref=e60] [cursor=pointer]:
+              - /url: /de/herzfrequenz-zonen
+              - heading "Herzfrequenz-Zonen" [level=2] [ref=e61]
+              - paragraph [ref=e62]: Entdecke deine Trainings-Herzfrequenz-Zonen.
+            - link "Schlafzyklen-Rechner Finde deine optimale Schlaf- oder Aufwachzeit." [ref=e63] [cursor=pointer]:
+              - /url: /de/schlafzyklen-rechner
+              - heading "Schlafzyklen-Rechner" [level=2] [ref=e64]
+              - paragraph [ref=e65]: Finde deine optimale Schlaf- oder Aufwachzeit.
+            - link "Blutdruck-Rechner Ordne deine Blutdruckwerte sofort ein." [ref=e66] [cursor=pointer]:
+              - /url: /de/blutdruck-rechner
+              - heading "Blutdruck-Rechner" [level=2] [ref=e67]
+              - paragraph [ref=e68]: Ordne deine Blutdruckwerte sofort ein.
+        - generic [ref=e69]:
+          - heading "Schwangerschaft" [level=2] [ref=e70]
+          - generic [ref=e71]:
+            - link "Geburtstermin-Rechner Berechne deinen Geburtstermin und verfolge Meilensteine." [ref=e72] [cursor=pointer]:
+              - /url: /de/schwangerschafts-rechner
+              - heading "Geburtstermin-Rechner" [level=2] [ref=e73]
+              - paragraph [ref=e74]: Berechne deinen Geburtstermin und verfolge Meilensteine.
+            - link "Eisprung-Rechner Berechne deinen Eisprung und deine fruchtbaren Tage." [ref=e75] [cursor=pointer]:
+              - /url: /de/eisprung-rechner
+              - heading "Eisprung-Rechner" [level=2] [ref=e76]
+              - paragraph [ref=e77]: Berechne deinen Eisprung und deine fruchtbaren Tage.
+  - contentinfo [ref=e78]:
+    - paragraph [ref=e79]: Nur zu Informationszwecken — kein medizinischer Rat
+```

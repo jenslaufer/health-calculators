@@ -1,0 +1,99 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [active] [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Your health, calculated." [level=1] [ref=e18]
+        - paragraph [ref=e19]: Science-backed health calculators. No sign-up. Instant results.
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - heading "Body Composition" [level=2] [ref=e22]
+          - generic [ref=e23]:
+            - link "BMI Calculator Check if your weight is in a healthy range." [ref=e24] [cursor=pointer]:
+              - /url: /en/bmi-calculator
+              - heading "BMI Calculator" [level=2] [ref=e25]
+              - paragraph [ref=e26]: Check if your weight is in a healthy range.
+            - link "Body Fat Calculator Estimate your body fat percentage." [ref=e27] [cursor=pointer]:
+              - /url: /en/body-fat-calculator
+              - heading "Body Fat Calculator" [level=2] [ref=e28]
+              - paragraph [ref=e29]: Estimate your body fat percentage.
+            - link "Ideal Weight Calculator Find your healthy weight range." [ref=e30] [cursor=pointer]:
+              - /url: /en/ideal-weight-calculator
+              - heading "Ideal Weight Calculator" [level=2] [ref=e31]
+              - paragraph [ref=e32]: Find your healthy weight range.
+            - link "Waist-to-Hip Ratio Assess your health risk with WHO guidelines." [ref=e33] [cursor=pointer]:
+              - /url: /en/waist-hip-ratio-calculator
+              - heading "Waist-to-Hip Ratio" [level=2] [ref=e34]
+              - paragraph [ref=e35]: Assess your health risk with WHO guidelines.
+        - generic [ref=e36]:
+          - heading "Nutrition & Energy" [level=2] [ref=e37]
+          - generic [ref=e38]:
+            - link "BMR Calculator Calculate the calories your body burns at rest." [ref=e39] [cursor=pointer]:
+              - /url: /en/bmr-calculator
+              - heading "BMR Calculator" [level=2] [ref=e40]
+              - paragraph [ref=e41]: Calculate the calories your body burns at rest.
+            - link "TDEE Calculator Find your daily calorie needs." [ref=e42] [cursor=pointer]:
+              - /url: /en/tdee-calculator
+              - heading "TDEE Calculator" [level=2] [ref=e43]
+              - paragraph [ref=e44]: Find your daily calorie needs.
+            - link "Macro Calculator Get your ideal protein, carb, and fat split." [ref=e45] [cursor=pointer]:
+              - /url: /en/macro-calculator
+              - heading "Macro Calculator" [level=2] [ref=e46]
+              - paragraph [ref=e47]: Get your ideal protein, carb, and fat split.
+            - link "Water Intake Calculator How much water should you drink daily?" [ref=e48] [cursor=pointer]:
+              - /url: /en/water-intake-calculator
+              - heading "Water Intake Calculator" [level=2] [ref=e49]
+              - paragraph [ref=e50]: How much water should you drink daily?
+            - link "Calorie Deficit Calculator Calculate your daily calorie target for weight loss." [ref=e51] [cursor=pointer]:
+              - /url: /en/calorie-deficit-calculator
+              - heading "Calorie Deficit Calculator" [level=2] [ref=e52]
+              - paragraph [ref=e53]: Calculate your daily calorie target for weight loss.
+            - link "Protein Calculator Find your optimal daily protein intake." [ref=e54] [cursor=pointer]:
+              - /url: /en/protein-calculator
+              - heading "Protein Calculator" [level=2] [ref=e55]
+              - paragraph [ref=e56]: Find your optimal daily protein intake.
+        - generic [ref=e57]:
+          - heading "Fitness & Recovery" [level=2] [ref=e58]
+          - generic [ref=e59]:
+            - link "Heart Rate Zones Discover your training heart rate zones." [ref=e60] [cursor=pointer]:
+              - /url: /en/heart-rate-zones
+              - heading "Heart Rate Zones" [level=2] [ref=e61]
+              - paragraph [ref=e62]: Discover your training heart rate zones.
+            - link "Sleep Cycle Calculator Find your optimal bedtime or wake time." [ref=e63] [cursor=pointer]:
+              - /url: /en/sleep-cycle-calculator
+              - heading "Sleep Cycle Calculator" [level=2] [ref=e64]
+              - paragraph [ref=e65]: Find your optimal bedtime or wake time.
+            - link "Blood Pressure Calculator Check your blood pressure category instantly." [ref=e66] [cursor=pointer]:
+              - /url: /en/blood-pressure-calculator
+              - heading "Blood Pressure Calculator" [level=2] [ref=e67]
+              - paragraph [ref=e68]: Check your blood pressure category instantly.
+        - generic [ref=e69]:
+          - heading "Pregnancy" [level=2] [ref=e70]
+          - generic [ref=e71]:
+            - link "Pregnancy Due Date Calculator Estimate your due date and track milestones." [ref=e72] [cursor=pointer]:
+              - /url: /en/pregnancy-calculator
+              - heading "Pregnancy Due Date Calculator" [level=2] [ref=e73]
+              - paragraph [ref=e74]: Estimate your due date and track milestones.
+            - link "Ovulation Calculator Calculate your ovulation date and fertile days." [ref=e75] [cursor=pointer]:
+              - /url: /en/ovulation-calculator
+              - heading "Ovulation Calculator" [level=2] [ref=e76]
+              - paragraph [ref=e77]: Calculate your ovulation date and fertile days.
+  - contentinfo [ref=e78]:
+    - paragraph [ref=e79]: For informational purposes only — not medical advice
+```
