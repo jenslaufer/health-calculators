@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(quality-gate)",
+      "Bash(lsof -ti:5179)",
+      "Bash(xargs kill:*)",
+      "Bash(git checkout:*)",
+      "Bash(npx playwright:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr:*)",
+      "Bash(git rebase:*)",
+      "Bash(git stash:*)",
+      "Bash(git merge:*)",
+      "Bash(git add:*)",
+      "Bash(for f:*)",
+      "Bash(do git:*)",
+      "Bash(done)",
+      "Bash(npx vite:*)",
+      "Bash(git commit:*)",
+      "Bash(gh issue:*)",
+      "Bash(git pull:*)",
+      "Bash(git rm:*)",
+      "Bash(npm ci:*)",
+      "Bash(npx vitest:*)",
+      "Bash(grep -v \"^\\\\* main$\")"
+    ]
+  }
+}
