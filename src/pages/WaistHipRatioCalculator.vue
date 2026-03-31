@@ -16,7 +16,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Waist-to-Hip Ratio Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/waist-hip-ratio',
+    url: 'https://healthcalculator.app/waist-hip-ratio',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

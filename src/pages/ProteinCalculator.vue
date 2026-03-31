@@ -16,7 +16,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Protein Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/protein',
+    url: 'https://healthcalculator.app/protein',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

@@ -16,7 +16,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Blutdruck-Rechner',
-    url: 'https://jenslaufer.github.io/health-calculators/blutdruck-rechner',
+    url: 'https://healthcalculator.app/blutdruck-rechner',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

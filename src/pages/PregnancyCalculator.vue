@@ -16,7 +16,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
     name: 'Pregnancy Due Date Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/pregnancy',
+    url: 'https://healthcalculator.app/pregnancy',
     about: { '@type': 'MedicalCondition', name: 'Pregnancy' },
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   },

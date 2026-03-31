@@ -17,7 +17,7 @@ useHead({
     dateModified: '2026-03-27',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://jenslaufer.github.io/health-calculators/en/blog/calculate-waist-hip-ratio',
+      '@id': 'https://healthcalculator.app/en/blog/calculate-waist-hip-ratio',
     },
   },
 })

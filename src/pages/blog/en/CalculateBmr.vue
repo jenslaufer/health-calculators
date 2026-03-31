@@ -17,7 +17,7 @@ useHead({
     dateModified: '2026-03-30',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://jenslaufer.github.io/health-calculators/en/blog/calculate-bmr',
+      '@id': 'https://healthcalculator.app/en/blog/calculate-bmr',
     },
   },
 })

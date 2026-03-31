@@ -16,7 +16,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Sleep Cycle Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/sleep',
+    url: 'https://healthcalculator.app/sleep',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

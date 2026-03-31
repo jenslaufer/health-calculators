@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 
-const BASE_URL = 'https://jenslaufer.github.io/health-calculators'
+const BASE_URL = 'https://healthcalculator.app'
 const publicDir = resolve(import.meta.dirname, '..', 'public')
 
 describe('404.html', () => {

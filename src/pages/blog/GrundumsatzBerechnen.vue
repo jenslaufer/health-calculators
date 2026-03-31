@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-30',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://jenslaufer.github.io/health-calculators/blog/grundumsatz-berechnen',
+      '@id': 'https://healthcalculator.app/blog/grundumsatz-berechnen',
     },
   },
 })

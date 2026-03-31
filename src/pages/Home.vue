@@ -15,7 +15,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: t('nav.brand'),
-    url: 'https://jenslaufer.github.io/health-calculators/',
+    url: 'https://healthcalculator.app/',
     description: t('home.meta.description'),
   },
 }))

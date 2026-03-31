@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-29',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://jenslaufer.github.io/health-calculators/blog/eisprung-berechnen',
+      '@id': 'https://healthcalculator.app/blog/eisprung-berechnen',
     },
   },
 })

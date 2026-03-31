@@ -1,6 +1,6 @@
 # Health Calculators
 
-Live: https://jenslaufer.github.io/health-calculators/
+Live: https://healthcalculator.app/
 
 Vue 3 + Vite health calculator collection. Uses `<script setup>` SFCs with Tailwind CSS.
 

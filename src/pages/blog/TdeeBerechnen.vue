@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-25',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://jenslaufer.github.io/health-calculators/blog/tdee-berechnen',
+      '@id': 'https://healthcalculator.app/blog/tdee-berechnen',
     },
   },
 })

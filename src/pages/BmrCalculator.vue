@@ -16,7 +16,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'BMR Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/bmr',
+    url: 'https://healthcalculator.app/bmr',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
