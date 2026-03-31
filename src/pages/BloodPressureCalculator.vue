@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
+import AffiliateBanner from '../components/AffiliateBanner.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
@@ -155,5 +156,6 @@ const recommendationKeys = {
     </div>
 
     <BlogBanner calculator-key="bloodPressure" />
+    <AffiliateBanner />
   </div>
 </template>
