@@ -3,7 +3,14 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // Serve from the domain root (custom domain).
   base: '/',
   plugins: [vue(), tailwindcss()],
+  ssgOptions: {
+    dirStyle: 'nested',
+    script: 'async',
+    formatting: 'minify',
+  },
+  ssr: {
+    noExternal: [/vue-i18n/],
+  },
 })
