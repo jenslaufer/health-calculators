@@ -17,7 +17,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Macro Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/macros',
+    url: 'https://healthcalculator.app/macros',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

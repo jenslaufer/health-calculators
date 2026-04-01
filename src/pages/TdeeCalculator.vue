@@ -17,7 +17,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'TDEE Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/tdee',
+    url: 'https://healthcalculator.app/tdee',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

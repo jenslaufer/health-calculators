@@ -17,7 +17,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
     name: 'Ovulation Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/ovulation',
+    url: 'https://healthcalculator.app/ovulation',
     about: { '@type': 'MedicalCondition', name: 'Ovulation' },
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   },

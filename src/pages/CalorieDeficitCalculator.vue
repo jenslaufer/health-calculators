@@ -17,7 +17,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Kaloriendefizit-Rechner',
-    url: 'https://jenslaufer.github.io/health-calculators/kaloriendefizit-rechner',
+    url: 'https://healthcalculator.app/kaloriendefizit-rechner',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

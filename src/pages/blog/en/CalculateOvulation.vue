@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-29',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://jenslaufer.github.io/health-calculators/en/blog/calculate-ovulation',
+      '@id': 'https://healthcalculator.app/en/blog/calculate-ovulation',
     },
   },
 })

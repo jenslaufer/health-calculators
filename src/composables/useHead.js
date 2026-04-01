@@ -3,7 +3,7 @@ import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { localePath as resolveLocalePath, routeMap } from './useLocaleRouter.js'
 
-const BASE_URL = 'https://jenslaufer.github.io/health-calculators'
+const BASE_URL = 'https://healthcalculator.app'
 
 function setMeta(attr, key, content) {
   if (import.meta.env.SSR) return

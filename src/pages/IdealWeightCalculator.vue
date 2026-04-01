@@ -17,7 +17,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Ideal Weight Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/ideal-weight',
+    url: 'https://healthcalculator.app/ideal-weight',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

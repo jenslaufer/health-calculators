@@ -1,327 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/</loc>
+    <loc>https://healthcalculator.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- German calculator routes -->
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/bmi-rechner</loc>
+    <loc>https://healthcalculator.app/de/bmi-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/wasser-rechner</loc>
+    <loc>https://healthcalculator.app/de/wasser-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/koerperfett-rechner</loc>
+    <loc>https://healthcalculator.app/de/koerperfett-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/herzfrequenz-zonen</loc>
+    <loc>https://healthcalculator.app/de/herzfrequenz-zonen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/idealgewicht-rechner</loc>
+    <loc>https://healthcalculator.app/de/idealgewicht-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/makro-rechner</loc>
+    <loc>https://healthcalculator.app/de/makro-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/schlafzyklen-rechner</loc>
+    <loc>https://healthcalculator.app/de/schlafzyklen-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/tdee-rechner</loc>
+    <loc>https://healthcalculator.app/de/tdee-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/schwangerschafts-rechner</loc>
+    <loc>https://healthcalculator.app/de/schwangerschafts-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blutdruck-rechner</loc>
+    <loc>https://healthcalculator.app/de/blutdruck-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/kaloriendefizit-rechner</loc>
+    <loc>https://healthcalculator.app/de/kaloriendefizit-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/taille-hueft-verhaeltnis</loc>
+    <loc>https://healthcalculator.app/de/taille-hueft-verhaeltnis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/eisprung-rechner</loc>
+    <loc>https://healthcalculator.app/de/eisprung-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/protein-rechner</loc>
+    <loc>https://healthcalculator.app/de/protein-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/bmr-rechner</loc>
+    <loc>https://healthcalculator.app/de/bmr-rechner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- English calculator routes -->
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/bmi-calculator</loc>
+    <loc>https://healthcalculator.app/en/bmi-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/water-intake-calculator</loc>
+    <loc>https://healthcalculator.app/en/water-intake-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/body-fat-calculator</loc>
+    <loc>https://healthcalculator.app/en/body-fat-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/heart-rate-zones</loc>
+    <loc>https://healthcalculator.app/en/heart-rate-zones</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/ideal-weight-calculator</loc>
+    <loc>https://healthcalculator.app/en/ideal-weight-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/macro-calculator</loc>
+    <loc>https://healthcalculator.app/en/macro-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/sleep-cycle-calculator</loc>
+    <loc>https://healthcalculator.app/en/sleep-cycle-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/tdee-calculator</loc>
+    <loc>https://healthcalculator.app/en/tdee-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/pregnancy-calculator</loc>
+    <loc>https://healthcalculator.app/en/pregnancy-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blood-pressure-calculator</loc>
+    <loc>https://healthcalculator.app/en/blood-pressure-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/calorie-deficit-calculator</loc>
+    <loc>https://healthcalculator.app/en/calorie-deficit-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/waist-hip-ratio-calculator</loc>
+    <loc>https://healthcalculator.app/en/waist-hip-ratio-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/ovulation-calculator</loc>
+    <loc>https://healthcalculator.app/en/ovulation-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/protein-calculator</loc>
+    <loc>https://healthcalculator.app/en/protein-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/bmr-calculator</loc>
+    <loc>https://healthcalculator.app/en/bmr-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Blog index pages -->
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog</loc>
+    <loc>https://healthcalculator.app/de/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog</loc>
+    <loc>https://healthcalculator.app/en/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- German blog articles -->
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/bmi-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/bmi-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/idealgewicht-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/idealgewicht-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/koerperfett-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/koerperfett-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/tdee-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/tdee-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/makronaehrstoffe-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/makronaehrstoffe-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/wasserbedarf-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/wasserbedarf-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/schlafzyklen-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/schlafzyklen-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/geburtstermin-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/geburtstermin-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/kaloriendefizit-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/kaloriendefizit-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/herzfrequenz-zonen-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/herzfrequenz-zonen-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/taille-hueft-verhaeltnis-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/taille-hueft-verhaeltnis-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/blutdruck-richtig-messen</loc>
+    <loc>https://healthcalculator.app/de/blog/blutdruck-richtig-messen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/eisprung-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/eisprung-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/proteinbedarf-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/proteinbedarf-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/de/blog/grundumsatz-berechnen</loc>
+    <loc>https://healthcalculator.app/de/blog/grundumsatz-berechnen</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- English blog articles -->
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-bmi</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-bmi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-ideal-weight</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-ideal-weight</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-body-fat</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-body-fat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-tdee</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-tdee</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-macros</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-macros</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-water-intake</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-water-intake</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-sleep-cycles</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-sleep-cycles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-due-date</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-due-date</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-calorie-deficit</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-calorie-deficit</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-heart-rate-zones</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-heart-rate-zones</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-waist-hip-ratio</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-waist-hip-ratio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/measure-blood-pressure</loc>
+    <loc>https://healthcalculator.app/en/blog/measure-blood-pressure</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-ovulation</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-ovulation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/protein-intake-guide</loc>
+    <loc>https://healthcalculator.app/en/blog/protein-intake-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://jenslaufer.github.io/health-calculators/en/blog/calculate-bmr</loc>
+    <loc>https://healthcalculator.app/en/blog/calculate-bmr</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

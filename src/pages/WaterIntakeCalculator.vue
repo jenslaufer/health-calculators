@@ -17,7 +17,7 @@ useHead(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Water Intake Calculator',
-    url: 'https://jenslaufer.github.io/health-calculators/water',
+    url: 'https://healthcalculator.app/water',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
