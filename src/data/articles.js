@@ -19,7 +19,7 @@ export const articles = [
   },
   {
     slug: 'koerperfett-berechnen',
-    title: 'Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte',
+    title: 'Körperfettanteil berechnen: Methoden, Tabelle & Rechner',
     description: 'Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.',
     date: '2026-03-25',
     readTime: '7 min',

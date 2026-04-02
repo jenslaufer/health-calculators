@@ -1,16 +1,19 @@
 <script setup>
 import { useHead } from '../../../composables/useHead.js'
 import RelatedArticlesEn from '../../../components/RelatedArticlesEn.vue'
+import { useLocaleRouter } from '../../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
-  title: 'Calculate Body Fat Percentage: Methods, Table & Guidelines | Health Calculators',
-  description: 'Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.',
+  title: 'Body Fat Percentage Calculator: Navy Method, Charts & Tips | Health Calculators',
+  description: 'Calculate body fat percentage using the U.S. Navy method. Categories, charts and why body fat is more meaningful than BMI.',
   path: '/en/blog/calculate-body-fat',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Calculate Body Fat Percentage: Methods, Table & Guidelines',
-    description: 'Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.',
+    headline: 'Body Fat Percentage Calculator: Navy Method, Charts & Tips',
+    description: 'Calculate body fat percentage using the U.S. Navy method. Categories, charts and why body fat is more meaningful than BMI.',
     author: { '@type': 'Organization', name: 'Health Calculators' },
     publisher: { '@type': 'Organization', name: 'Health Calculators' },
     datePublished: '2026-03-25',
@@ -26,8 +29,8 @@ useHead({
 <template>
   <article>
     <div class="mb-10">
-      <router-link to="/en/blog" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
-      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Calculate Body Fat Percentage: Methods, Table &amp; Guidelines</h1>
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Body Fat Percentage Calculator: Navy Method, Charts &amp; Tips</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">March 25, 2026</span>
         <span class="text-sm text-stone-300">&middot;</span>
@@ -39,7 +42,7 @@ useHead({
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-8">
         <p class="text-base text-stone-600 leading-relaxed mb-4">
-          <strong>Body fat percentage</strong> is one of the most meaningful metrics for your health. Unlike <router-link to="/en/blog/calculate-bmi" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link>, it distinguishes between fat and muscle mass.
+          <strong>Body fat percentage</strong> is one of the most meaningful metrics for your health. Unlike <router-link :to="localeBlogPath('calculate-bmi')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link>, it distinguishes between fat and muscle mass.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
           In this article, you'll learn how the U.S. Navy method works, what the guidelines are for men and women, and why body fat percentage is superior to BMI.
@@ -118,7 +121,7 @@ useHead({
         <h3 class="text-xl font-bold text-white mb-2">Calculate your body fat percentage now</h3>
         <p class="text-stone-300 text-sm mb-5">U.S. Navy method — free and no sign-up required.</p>
         <router-link
-          to="/en/body-fat-calculator"
+          :to="localePath('bodyFat')"
           class="inline-block bg-white text-stone-900 font-semibold text-sm px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors duration-150"
         >Calculate for free now &rarr;</router-link>
       </div>
@@ -129,14 +132,14 @@ useHead({
           BMI cannot differentiate between fat and muscle. A muscular athlete is often classified as "overweight" even though their body fat percentage is very low. Body fat percentage solves this problem.
         </p>
         <p class="text-base text-stone-600 leading-relaxed">
-          Complement your result with your <router-link to="/en/blog/calculate-ideal-weight" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">ideal weight</router-link> for a comprehensive picture of your body composition.
+          Complement your result with your <router-link :to="localeBlogPath('calculate-ideal-weight')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">ideal weight</router-link> for a comprehensive picture of your body composition.
         </p>
       </div>
 
       <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">Conclusion</h2>
         <p class="text-base text-stone-600 leading-relaxed">
-          Body fat percentage is more meaningful than BMI. Use our <router-link to="/en/body-fat-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Body Fat Calculator</router-link> and complement the result with your <router-link to="/en/bmi-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> and <router-link to="/en/ideal-weight-calculator" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">ideal weight</router-link>.
+          Body fat percentage is more meaningful than BMI. Use our <router-link :to="localePath('bodyFat')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">Body Fat Calculator</router-link> and complement the result with your <router-link :to="localePath('bmi')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">BMI</router-link> and <router-link :to="localePath('idealWeight')" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition-colors">ideal weight</router-link>.
         </p>
       </div>
 
