@@ -30,6 +30,7 @@ export const routeMap = {
   ovulation: { de: 'eisprung-rechner', en: 'ovulation-calculator' },
   protein: { de: 'protein-rechner', en: 'protein-calculator' },
   bmr: { de: 'bmr-rechner', en: 'bmr-calculator' },
+  caloriesBurned: { de: 'kalorienverbrauch', en: 'calories-burned' },
   blog: { de: 'blog', en: 'blog' },
 }
 

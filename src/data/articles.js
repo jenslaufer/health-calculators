@@ -134,6 +134,15 @@ export const articles = [
     calculatorKey: 'bmr',
     related: ['tdee-berechnen', 'kaloriendefizit-berechnen'],
   },
+  {
+    slug: 'kalorienverbrauch-berechnen',
+    title: 'Kalorienverbrauch berechnen: So viele Kalorien verbrennst du wirklich',
+    description: 'Kalorienverbrauch berechnen mit MET-Werten. Formel, Aktivitätstabelle, Einflussfaktoren und Tipps zur Steigerung.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'caloriesBurned',
+    related: ['tdee-berechnen', 'kaloriendefizit-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
