@@ -1,0 +1,181 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /en/blog
+        - 'heading "Calculate BMI: What the Body Mass Index Really Tells You" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: March 25, 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 8 min read
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - text: The
+            - strong [ref=e27]: Body Mass Index (BMI)
+            - text: is the most widely used metric for assessing body weight worldwide. Whether at the doctor's office, in nutritional counseling, or at the gym — BMI is referenced everywhere. But what does it actually tell you? And where are its limits?
+          - paragraph [ref=e28]:
+            - text: In this article, you'll learn how to
+            - strong [ref=e29]: calculate your BMI
+            - text: ", what the WHO classification means, and why BMI alone isn't enough to assess your health."
+        - generic [ref=e30]:
+          - heading "What Is BMI?" [level=2] [ref=e31]
+          - paragraph [ref=e32]:
+            - text: The Body Mass Index was developed in 1832 by the Belgian mathematician
+            - strong [ref=e33]: Adolphe Quetelet
+            - text: . Originally intended as a statistical tool for population studies, it was adopted by nutritional scientists in the 1970s as a simple method for weight classification.
+          - paragraph [ref=e34]: "The BMI formula is:"
+          - paragraph [ref=e36]: BMI = Body weight (kg) ÷ Height (m)²
+          - paragraph [ref=e37]:
+            - strong [ref=e38]: "Example:"
+            - text: A person weighing 75 kg and standing 1.75 m tall has a BMI of 75 ÷ (1.75 × 1.75) =
+            - strong [ref=e39]: "24.5"
+            - text: .
+        - generic [ref=e40]:
+          - 'heading "BMI Table: WHO Classification" [level=2] [ref=e41]'
+          - paragraph [ref=e42]: "The World Health Organization (WHO) classifies BMI into the following categories:"
+          - table [ref=e44]:
+            - rowgroup [ref=e45]:
+              - row "Category BMI Health Risk" [ref=e46]:
+                - columnheader "Category" [ref=e47]
+                - columnheader "BMI" [ref=e48]
+                - columnheader "Health Risk" [ref=e49]
+            - rowgroup [ref=e50]:
+              - row "Underweight < 18.5 Increased" [ref=e51]:
+                - cell "Underweight" [ref=e52]: Underweight
+                - cell "< 18.5" [ref=e54]
+                - cell "Increased" [ref=e55]
+              - row "Normal weight 18.5 – 24.9 Low" [ref=e56]:
+                - cell "Normal weight" [ref=e57]: Normal weight
+                - cell "18.5 – 24.9" [ref=e59]
+                - cell "Low" [ref=e60]
+              - row "Overweight (Pre-obesity) 25.0 – 29.9 Slightly increased" [ref=e61]:
+                - cell "Overweight (Pre-obesity)" [ref=e62]: Overweight (Pre-obesity)
+                - cell "25.0 – 29.9" [ref=e64]
+                - cell "Slightly increased" [ref=e65]
+              - row "Obesity Class I 30.0 – 34.9 Increased" [ref=e66]:
+                - cell "Obesity Class I" [ref=e67]: Obesity Class I
+                - cell "30.0 – 34.9" [ref=e69]
+                - cell "Increased" [ref=e70]
+              - row "Obesity Class II 35.0 – 39.9 High" [ref=e71]:
+                - cell "Obesity Class II" [ref=e72]: Obesity Class II
+                - cell "35.0 – 39.9" [ref=e74]
+                - cell "High" [ref=e75]
+              - row "Obesity Class III ≥ 40.0 Very high" [ref=e76]:
+                - cell "Obesity Class III" [ref=e77]: Obesity Class III
+                - cell "≥ 40.0" [ref=e79]
+                - cell "Very high" [ref=e80]
+        - generic [ref=e81]:
+          - 'heading "Calculate BMI: Step by Step" [level=2] [ref=e82]'
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e85]: "1"
+              - paragraph [ref=e87]:
+                - strong [ref=e88]: Note your weight in kilograms.
+                - text: Weigh yourself in the morning on an empty stomach for the most accurate result.
+            - generic [ref=e89]:
+              - generic [ref=e90]: "2"
+              - paragraph [ref=e92]:
+                - strong [ref=e93]: Measure your height in meters.
+                - text: "Example: 175 cm = 1.75 m."
+            - generic [ref=e94]:
+              - generic [ref=e95]: "3"
+              - paragraph [ref=e97]:
+                - strong [ref=e98]: Square your height.
+                - text: 1.75 × 1.75 = 3.0625.
+            - generic [ref=e99]:
+              - generic [ref=e100]: "4"
+              - paragraph [ref=e102]:
+                - strong [ref=e103]: Divide your weight by the result.
+                - text: 75 ÷ 3.0625 = 24.5.
+        - generic [ref=e104]:
+          - heading "Calculate your BMI for free now" [level=3] [ref=e105]
+          - paragraph [ref=e106]: Instant result with category classification — no sign-up required.
+          - link "Calculate for free now →" [ref=e107] [cursor=pointer]:
+            - /url: /en/bmi-calculator
+        - generic [ref=e108]:
+          - heading "Limitations of BMI" [level=2] [ref=e109]
+          - paragraph [ref=e110]: "Despite its widespread use, BMI has significant limitations:"
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - heading "Muscle mass is not considered" [level=3] [ref=e113]
+              - paragraph [ref=e114]: Muscular athletes often have a BMI in the "overweight" range, even though their body fat percentage is very low. A bodybuilder weighing 100 kg at 1.80 m has a BMI of 30.9 — classified as "obese" by the table.
+            - generic [ref=e115]:
+              - heading "Age and sex are missing" [level=3] [ref=e116]
+              - paragraph [ref=e117]: BMI doesn't differentiate between men and women, even though women naturally have a higher body fat percentage. Age also plays no role — older adults typically have a higher fat percentage at the same BMI.
+            - generic [ref=e118]:
+              - heading "Fat distribution remains invisible" [level=3] [ref=e119]
+              - paragraph [ref=e120]:
+                - text: Belly fat (visceral fat) is significantly more dangerous than fat on hips and thighs. BMI says nothing about
+                - emphasis [ref=e121]: where
+                - text: the fat is located — a crucial factor for health risk.
+        - generic [ref=e122]:
+          - heading "Better Alternatives to BMI" [level=2] [ref=e123]
+          - paragraph [ref=e124]: "For a more accurate assessment of your body composition and health, there are better metrics:"
+          - generic [ref=e125]:
+            - link "Calculate Body Fat Percentage Body fat percentage distinguishes between fat and muscle mass. A man with 15% and a woman with 25% body fat are considered healthy — regardless of BMI. Body Fat Calculator →" [ref=e126] [cursor=pointer]:
+              - /url: /en/body-fat-calculator
+              - heading "Calculate Body Fat Percentage" [level=3] [ref=e127]
+              - paragraph [ref=e128]: Body fat percentage distinguishes between fat and muscle mass. A man with 15% and a woman with 25% body fat are considered healthy — regardless of BMI.
+              - generic [ref=e129]: Body Fat Calculator →
+            - generic [ref=e130]:
+              - heading "Waist-to-Hip Ratio (WHR)" [level=3] [ref=e131]
+              - paragraph [ref=e132]: The waist-to-hip ratio accounts for fat distribution. A WHR above 0.90 in men and above 0.85 in women indicates increased health risk.
+            - link "TDEE — Total Daily Energy Expenditure TDEE shows you how many calories your body burns daily. Combined with BMI, it helps paint a realistic picture of your health. TDEE Calculator →" [ref=e133] [cursor=pointer]:
+              - /url: /en/tdee-calculator
+              - heading "TDEE — Total Daily Energy Expenditure" [level=3] [ref=e134]
+              - paragraph [ref=e135]: TDEE shows you how many calories your body burns daily. Combined with BMI, it helps paint a realistic picture of your health.
+              - generic [ref=e136]: TDEE Calculator →
+            - link "Calculate Ideal Weight Instead of just looking at BMI, the ideal weight calculator uses multiple formulas to determine a healthy weight range for your height. Ideal Weight Calculator →" [ref=e137] [cursor=pointer]:
+              - /url: /en/ideal-weight-calculator
+              - heading "Calculate Ideal Weight" [level=3] [ref=e138]
+              - paragraph [ref=e139]: Instead of just looking at BMI, the ideal weight calculator uses multiple formulas to determine a healthy weight range for your height.
+              - generic [ref=e140]: Ideal Weight Calculator →
+        - generic [ref=e141]:
+          - heading "Conclusion" [level=2] [ref=e142]
+          - paragraph [ref=e143]: BMI is a useful starting point but not a complete picture of your health. It works well for a quick assessment but should always be considered alongside other metrics.
+          - paragraph [ref=e144]:
+            - text: Use our
+            - link "BMI Calculator" [ref=e145] [cursor=pointer]:
+              - /url: /en/bmi-calculator
+            - text: as a starting point and complement your result with your
+            - link "body fat percentage" [ref=e146] [cursor=pointer]:
+              - /url: /en/body-fat-calculator
+            - text: and your
+            - link "daily energy expenditure" [ref=e147] [cursor=pointer]:
+              - /url: /en/tdee-calculator
+            - text: for a comprehensive picture.
+        - generic [ref=e148]:
+          - heading "Related Articles" [level=2] [ref=e149]
+          - generic [ref=e150]:
+            - 'link "Calculate Ideal Weight: What Is the Perfect Weight? Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range. Read more →" [ref=e151] [cursor=pointer]':
+              - /url: /en/blog/calculate-ideal-weight
+              - 'heading "Calculate Ideal Weight: What Is the Perfect Weight?" [level=3] [ref=e152]'
+              - paragraph [ref=e153]: Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range.
+              - generic [ref=e154]: Read more →
+            - 'link "Calculate Body Fat Percentage: Methods, Table & Guidelines Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI. Read more →" [ref=e155] [cursor=pointer]':
+              - /url: /en/blog/calculate-body-fat
+              - 'heading "Calculate Body Fat Percentage: Methods, Table & Guidelines" [level=3] [ref=e156]'
+              - paragraph [ref=e157]: Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.
+              - generic [ref=e158]: Read more →
+  - contentinfo [ref=e159]:
+    - paragraph [ref=e160]: For informational purposes only — not medical advice
+```
