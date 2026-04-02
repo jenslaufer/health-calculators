@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
+import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
@@ -114,6 +115,8 @@ const recommendationKeys = {
       </div>
     </div>
 
+    <AffiliateBanner class="my-6" />
+
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
       <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('bloodPressure.categoriesTitle') }}</h2>
       <div class="space-y-3.5">
@@ -156,6 +159,7 @@ const recommendationKeys = {
     </div>
 
     <BlogBanner calculator-key="bloodPressure" />
-    <AffiliateBanner />
+
+    <AdSlot class="mt-8" />
   </div>
 </template>

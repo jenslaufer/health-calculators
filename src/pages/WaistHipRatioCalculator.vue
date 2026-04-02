@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
+import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
@@ -155,6 +156,7 @@ const recColors = { low: 'text-green-600', moderate: 'text-yellow-600', high: 't
     </div>
   </div>
 
+
+    <AdSlot class="mt-8" />
   <BlogBanner calculator-key="waistHipRatio" />
-  <AffiliateBanner />
 </template>
