@@ -19,7 +19,7 @@ export const articlesEn = [
   },
   {
     slug: 'calculate-body-fat',
-    title: 'Calculate Body Fat Percentage: Methods, Table & Guidelines',
+    title: 'Body Fat Percentage Calculator: Navy Method, Charts & Tips',
     description: 'Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.',
     date: '2026-03-25',
     readTime: '7 min',

@@ -6,13 +6,13 @@ import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
 const { localePath, localeBlogPath } = useLocaleRouter()
 
 useHead({
-  title: 'Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte | Health Calculators',
+  title: 'Körperfettanteil berechnen: Methoden, Tabelle & Rechner | Health Calculators',
   description: 'Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.',
   routeKey: 'blogArticle',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte',
+    headline: 'Körperfettanteil berechnen: Methoden, Tabelle & Rechner',
     description: 'Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.',
     author: { '@type': 'Organization', name: 'Health Calculators' },
     publisher: { '@type': 'Organization', name: 'Health Calculators' },
@@ -30,7 +30,7 @@ useHead({
   <article>
     <div class="mb-10">
       <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
-      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Körperfettanteil berechnen: Methoden, Tabelle & Richtwerte</h1>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Körperfettanteil berechnen: Methoden, Tabelle & Rechner</h1>
       <div class="flex items-center gap-3">
         <span class="text-sm text-stone-400 tabular-nums">25. März 2026</span>
         <span class="text-sm text-stone-300">&middot;</span>
