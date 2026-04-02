@@ -28,11 +28,13 @@ import OvulationCalculator from './pages/OvulationCalculator.vue'
 import ProteinCalculator from './pages/ProteinCalculator.vue'
 import BmrCalculator from './pages/BmrCalculator.vue'
 import CaloriesBurnedCalculator from './pages/CaloriesBurnedCalculator.vue'
+import IntermittentFastingCalculator from './pages/IntermittentFastingCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
 import ProteinbedarfBerechnen from './pages/blog/ProteinbedarfBerechnen.vue'
 import GrundumsatzBerechnen from './pages/blog/GrundumsatzBerechnen.vue'
 import KalorienverbrauchBerechnen from './pages/blog/KalorienverbrauchBerechnen.vue'
+import IntervallfastenRechner from './pages/blog/IntervallfastenRechner.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -50,6 +52,7 @@ import CalculateOvulation from './pages/blog/en/CalculateOvulation.vue'
 import CalculateProteinIntake from './pages/blog/en/CalculateProteinIntake.vue'
 import CalculateBmr from './pages/blog/en/CalculateBmr.vue'
 import CalculateCaloriesBurned from './pages/blog/en/CalculateCaloriesBurned.vue'
+import IntermittentFastingGuide from './pages/blog/en/IntermittentFastingGuide.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -68,6 +71,7 @@ const calculatorComponents = {
   protein: ProteinCalculator,
   bmr: BmrCalculator,
   caloriesBurned: CaloriesBurnedCalculator,
+  intermittentFasting: IntermittentFastingCalculator,
 }
 
 const blogComponentsDe = {
@@ -87,6 +91,7 @@ const blogComponentsDe = {
   'proteinbedarf-berechnen': ProteinbedarfBerechnen,
   'grundumsatz-berechnen': GrundumsatzBerechnen,
   'kalorienverbrauch-berechnen': KalorienverbrauchBerechnen,
+  'intervallfasten-rechner': IntervallfastenRechner,
 }
 
 const blogComponentsEn = {
@@ -106,6 +111,7 @@ const blogComponentsEn = {
   'protein-intake-guide': CalculateProteinIntake,
   'calculate-bmr': CalculateBmr,
   'calculate-calories-burned': CalculateCaloriesBurned,
+  'intermittent-fasting-calculator': IntermittentFastingGuide,
 }
 
 const blogComponentsByLocale = {
@@ -170,6 +176,7 @@ const oldRouteRedirects = [
   { path: '/protein', redirect: `/de/${routeMap.protein.de}` },
   { path: '/bmr', redirect: `/de/${routeMap.bmr.de}` },
   { path: '/calories-burned', redirect: `/de/${routeMap.caloriesBurned.de}` },
+  { path: '/intermittent-fasting', redirect: `/de/${routeMap.intermittentFasting.de}` },
   { path: '/blog', redirect: '/de/blog' },
 ]
 

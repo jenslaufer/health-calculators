@@ -133,4 +133,7 @@ export const routeContextMap = {
   'sleep-cycle-calculator': 'wellness',
   'wasser-rechner': 'wellness',
   'water-intake-calculator': 'wellness',
+  // nutrition: Intermittent Fasting
+  'intervallfasten-rechner': 'nutrition',
+  'intermittent-fasting-calculator': 'nutrition',
 }

@@ -143,6 +143,15 @@ export const articlesEn = [
     calculatorKey: 'caloriesBurned',
     related: ['calculate-tdee', 'calculate-calorie-deficit'],
   },
+  {
+    slug: 'intermittent-fasting-calculator',
+    title: 'Intermittent Fasting Guide with Calculator',
+    description: 'Intermittent fasting explained: protocols (16:8, 18:6, 20:4, OMAD), benefits, beginner tips, and free intermittent fasting calculator.',
+    date: '2026-04-02',
+    readTime: '8 min',
+    calculatorKey: 'intermittentFasting',
+    related: ['calculate-calorie-deficit', 'calculate-tdee'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
