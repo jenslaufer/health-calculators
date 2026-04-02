@@ -42,7 +42,9 @@ describe('sitemap.xml', () => {
     'eisprung-rechner',
     'protein-rechner',
     'bmr-rechner',
+    'kalorienverbrauch',
     'intervallfasten-rechner',
+    'vo2max-rechner',
   ]
 
   const enCalculatorSlugs = [
@@ -52,7 +54,9 @@ describe('sitemap.xml', () => {
     'blood-pressure-calculator', 'calorie-deficit-calculator',
     'waist-hip-ratio-calculator', 'ovulation-calculator',
     'protein-calculator', 'bmr-calculator',
+    'calories-burned',
     'intermittent-fasting-calculator',
+    'vo2max-calculator',
   ]
 
   it('contains all German calculator routes', () => {
@@ -80,7 +84,9 @@ describe('sitemap.xml', () => {
     'herzfrequenz-zonen-berechnen', 'taille-hueft-verhaeltnis-berechnen',
     'blutdruck-richtig-messen', 'eisprung-berechnen',
     'proteinbedarf-berechnen', 'grundumsatz-berechnen',
+    'kalorienverbrauch-berechnen',
     'intervallfasten-rechner',
+    'vo2max-berechnen',
   ]
 
   const enBlogSlugs = [
@@ -90,7 +96,9 @@ describe('sitemap.xml', () => {
     'calculate-heart-rate-zones', 'calculate-waist-hip-ratio',
     'measure-blood-pressure', 'calculate-ovulation',
     'protein-intake-guide', 'calculate-bmr',
+    'calculate-calories-burned',
     'intermittent-fasting-calculator',
+    'calculate-vo2max',
   ]
 
   it('contains all German blog article URLs', () => {
@@ -105,8 +113,8 @@ describe('sitemap.xml', () => {
     }
   })
 
-  // 1 home + 16 de calcs + 16 en calcs + 2 blog indexes + 16 de articles + 16 en articles = 67
-  it('contains exactly 67 URLs', () => {
-    expect(urls).toHaveLength(67)
+  // 1 home + 18 de calcs + 18 en calcs + 2 blog indexes + 18 de articles + 18 en articles = 75
+  it('contains exactly 75 URLs', () => {
+    expect(urls).toHaveLength(75)
   })
 })

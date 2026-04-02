@@ -57,7 +57,8 @@
       "protein": { "name": "Protein-Rechner", "description": "Berechne deinen optimalen täglichen Proteinbedarf." },
       "bmr": { "name": "Grundumsatz-Rechner (BMR)", "description": "Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt." },
       "caloriesBurned": { "name": "Kalorienverbrauch-Rechner", "description": "Berechne, wie viele Kalorien du bei verschiedenen Aktivitäten verbrennst." },
-      "intermittentFasting": { "name": "Intervallfasten-Rechner", "description": "Berechne dein Essens- und Fastenfenster für dein Protokoll." }
+      "intermittentFasting": { "name": "Intervallfasten-Rechner", "description": "Berechne dein Essens- und Fastenfenster für dein Protokoll." },
+      "vo2Max": { "name": "VO2 Max Rechner", "description": "Berechne deine maximale Sauerstoffaufnahme und Fitnesskategorie." }
     }
   },
   "blogHome": {
@@ -475,5 +476,37 @@
     "recModerate": "Dein THV zeigt ein {start}mittleres Gesundheitsrisiko{end}. Erwäge, deine körperliche Aktivität zu erhöhen und deinen Taillenumfang zu überwachen.",
     "recHigh": "Dein THV zeigt ein {start}hohes Gesundheitsrisiko{end} gemäß WHO-Richtlinien. Bauchfettleibigkeit ist mit erhöhtem kardiovaskulärem und metabolischem Risiko verbunden. Konsultiere einen Arzt.",
     "thresholdsTitle": "WHO-Risikoschwellen ({gender})"
+  },
+  "vo2Max": {
+    "meta": {
+      "title": "VO2 Max Rechner — Maximale Sauerstoffaufnahme berechnen",
+      "description": "Berechne deinen VO2 Max mit dem Cooper-Test, Rockport-Walktest oder Direkteingabe. Fitnesskategorie, Altersvergleich und Perzentile. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "VO2 Max Rechner",
+    "description": "Berechne deine maximale Sauerstoffaufnahme und erfahre, wie fit du wirklich bist.",
+    "testType": "Testmethode",
+    "cooperTest": "Cooper-Test",
+    "rockportTest": "Rockport-Walktest",
+    "stepTest": "Step-Test",
+    "directEntry": "Direkteingabe",
+    "distance": "Distanz in 12 Minuten (Meter)",
+    "walkTime": "Gehzeit für 1 Meile (Minuten)",
+    "heartRate": "Herzfrequenz nach Test (bpm)",
+    "vo2maxDirect": "VO2 Max (ml/kg/min)",
+    "vo2maxResult": "VO2 Max",
+    "unit": "ml/kg/min",
+    "fitnessCategory": "Fitnesskategorie",
+    "superior": "Hervorragend",
+    "excellent": "Ausgezeichnet",
+    "good": "Gut",
+    "fair": "Durchschnittlich",
+    "poor": "Unterdurchschnittlich",
+    "ageComparison": "Altersvergleich",
+    "yourVo2max": "Dein VO2 Max",
+    "ageGroup": "Altersgruppe",
+    "cooperInfo": "Laufe 12 Minuten so weit wie möglich und gib die Distanz in Metern ein.",
+    "rockportInfo": "Gehe 1 Meile (1.609 m) so schnell wie möglich und miss deine Herzfrequenz am Ende.",
+    "directInfo": "Gib deinen bekannten VO2 Max Wert direkt ein.",
+    "weightUnit": "Einheit"
   }
 }

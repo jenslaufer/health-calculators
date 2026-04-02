@@ -152,6 +152,15 @@ export const articles = [
     calculatorKey: 'intermittentFasting',
     related: ['kaloriendefizit-berechnen', 'tdee-berechnen'],
   },
+  {
+    slug: 'vo2max-berechnen',
+    title: 'VO2 Max berechnen: Wie fit bist du wirklich?',
+    description: 'VO2 Max berechnen mit dem Cooper-Test, Rockport-Walktest oder Direkteingabe. Fitnesskategorien, Altersvergleich und was dein VO2 Max über deine Gesundheit aussagt.',
+    date: '2026-04-02',
+    readTime: '8 min',
+    calculatorKey: 'vo2Max',
+    related: ['herzfrequenz-zonen-berechnen', 'kalorienverbrauch-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
