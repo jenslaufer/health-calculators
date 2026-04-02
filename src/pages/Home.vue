@@ -39,6 +39,7 @@ const groups = computed(() => [
       { name: t('home.calculators.water.name'), description: t('home.calculators.water.description'), path: localePath('water') },
       { name: t('home.calculators.calorieDeficit.name'), description: t('home.calculators.calorieDeficit.description'), path: localePath('calorieDeficit') },
       { name: t('home.calculators.protein.name'), description: t('home.calculators.protein.description'), path: localePath('protein') },
+      { name: t('home.calculators.caloriesBurned.name'), description: t('home.calculators.caloriesBurned.description'), path: localePath('caloriesBurned') },
     ],
   },
   {

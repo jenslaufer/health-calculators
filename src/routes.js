@@ -27,10 +27,12 @@ import WaistHipRatioCalculator from './pages/WaistHipRatioCalculator.vue'
 import OvulationCalculator from './pages/OvulationCalculator.vue'
 import ProteinCalculator from './pages/ProteinCalculator.vue'
 import BmrCalculator from './pages/BmrCalculator.vue'
+import CaloriesBurnedCalculator from './pages/CaloriesBurnedCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
 import ProteinbedarfBerechnen from './pages/blog/ProteinbedarfBerechnen.vue'
 import GrundumsatzBerechnen from './pages/blog/GrundumsatzBerechnen.vue'
+import KalorienverbrauchBerechnen from './pages/blog/KalorienverbrauchBerechnen.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -47,6 +49,7 @@ import CalculateWaistHipRatio from './pages/blog/en/CalculateWaistHipRatio.vue'
 import CalculateOvulation from './pages/blog/en/CalculateOvulation.vue'
 import CalculateProteinIntake from './pages/blog/en/CalculateProteinIntake.vue'
 import CalculateBmr from './pages/blog/en/CalculateBmr.vue'
+import CalculateCaloriesBurned from './pages/blog/en/CalculateCaloriesBurned.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -64,6 +67,7 @@ const calculatorComponents = {
   ovulation: OvulationCalculator,
   protein: ProteinCalculator,
   bmr: BmrCalculator,
+  caloriesBurned: CaloriesBurnedCalculator,
 }
 
 const blogComponentsDe = {
@@ -82,6 +86,7 @@ const blogComponentsDe = {
   'eisprung-berechnen': EisprungBerechnen,
   'proteinbedarf-berechnen': ProteinbedarfBerechnen,
   'grundumsatz-berechnen': GrundumsatzBerechnen,
+  'kalorienverbrauch-berechnen': KalorienverbrauchBerechnen,
 }
 
 const blogComponentsEn = {
@@ -100,6 +105,7 @@ const blogComponentsEn = {
   'calculate-ovulation': CalculateOvulation,
   'protein-intake-guide': CalculateProteinIntake,
   'calculate-bmr': CalculateBmr,
+  'calculate-calories-burned': CalculateCaloriesBurned,
 }
 
 const blogComponentsByLocale = {
@@ -163,6 +169,7 @@ const oldRouteRedirects = [
   { path: '/ovulation', redirect: `/de/${routeMap.ovulation.de}` },
   { path: '/protein', redirect: `/de/${routeMap.protein.de}` },
   { path: '/bmr', redirect: `/de/${routeMap.bmr.de}` },
+  { path: '/calories-burned', redirect: `/de/${routeMap.caloriesBurned.de}` },
   { path: '/blog', redirect: '/de/blog' },
 ]
 

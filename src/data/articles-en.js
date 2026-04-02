@@ -134,6 +134,15 @@ export const articlesEn = [
     calculatorKey: 'bmr',
     related: ['calculate-tdee', 'calculate-calorie-deficit'],
   },
+  {
+    slug: 'calculate-calories-burned',
+    title: 'Calculate Calories Burned: How Many Calories You Really Burn',
+    description: 'Calculate calories burned with MET values. Formula, activity table, influencing factors and tips to boost your burn.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'caloriesBurned',
+    related: ['calculate-tdee', 'calculate-calorie-deficit'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
