@@ -57,7 +57,8 @@
       "protein": { "name": "Protein Calculator", "description": "Find your optimal daily protein intake." },
       "bmr": { "name": "BMR Calculator", "description": "Calculate the calories your body burns at rest." },
       "caloriesBurned": { "name": "Calories Burned Calculator", "description": "Calculate how many calories you burn during different activities." },
-      "intermittentFasting": { "name": "Intermittent Fasting Calculator", "description": "Calculate your eating and fasting windows for your protocol." }
+      "intermittentFasting": { "name": "Intermittent Fasting Calculator", "description": "Calculate your eating and fasting windows for your protocol." },
+      "vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." }
     }
   },
   "blogHome": {
@@ -475,5 +476,37 @@
     "recModerate": "Your WHR indicates a {start}moderate health risk{end}. Consider increasing physical activity and monitoring your waist circumference.",
     "recHigh": "Your WHR indicates a {start}high health risk{end} according to WHO guidelines. Central obesity is associated with increased cardiovascular and metabolic risk. Consult a healthcare professional.",
     "thresholdsTitle": "WHO Risk Thresholds ({gender})"
+  },
+  "vo2Max": {
+    "meta": {
+      "title": "VO2 Max Calculator — Calculate Maximum Oxygen Uptake",
+      "description": "Calculate your VO2 Max with the Cooper Test, Rockport Walk Test or direct entry. Fitness category, age comparison and percentiles. Free, instant, no sign-up."
+    },
+    "title": "VO2 Max Calculator",
+    "description": "Calculate your maximum oxygen uptake and find out how fit you really are.",
+    "testType": "Test Method",
+    "cooperTest": "Cooper Test",
+    "rockportTest": "Rockport Walk Test",
+    "stepTest": "Step Test",
+    "directEntry": "Direct Entry",
+    "distance": "Distance in 12 minutes (meters)",
+    "walkTime": "Walk time for 1 mile (minutes)",
+    "heartRate": "Heart rate after test (bpm)",
+    "vo2maxDirect": "VO2 Max (ml/kg/min)",
+    "vo2maxResult": "VO2 Max",
+    "unit": "ml/kg/min",
+    "fitnessCategory": "Fitness Category",
+    "superior": "Superior",
+    "excellent": "Excellent",
+    "good": "Good",
+    "fair": "Fair",
+    "poor": "Poor",
+    "ageComparison": "Age Comparison",
+    "yourVo2max": "Your VO2 Max",
+    "ageGroup": "Age Group",
+    "cooperInfo": "Run for 12 minutes as far as you can and enter the distance in meters.",
+    "rockportInfo": "Walk 1 mile (1,609 m) as fast as you can and measure your heart rate at the end.",
+    "directInfo": "Enter your known VO2 Max value directly.",
+    "weightUnit": "Unit"
   }
 }

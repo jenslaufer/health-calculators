@@ -136,4 +136,7 @@ export const routeContextMap = {
   // nutrition: Intermittent Fasting
   'intervallfasten-rechner': 'nutrition',
   'intermittent-fasting-calculator': 'nutrition',
+  // fitness: VO2 Max
+  'vo2max-rechner': 'fitness',
+  'vo2max-calculator': 'fitness',
 }
