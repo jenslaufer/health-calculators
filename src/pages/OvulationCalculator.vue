@@ -98,60 +98,63 @@ const hasResults = computed(() => !!lmpDate.value)
       </div>
     </div>
 
-    <div v-if="hasResults">
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
-        <div class="rounded-xl border border-stone-200 p-5 text-center">
-          <div class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-1">{{ t('ovulation.ovulationDate') }}</div>
-          <div class="text-xl font-bold text-stone-900" data-testid="ovulation-date">{{ formatDate(ovulationDate) }}</div>
+  </div>
+
+  <AffiliateBanner class="my-6" />
+
+  <div v-if="hasResults" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
+      <div class="rounded-xl border border-stone-200 p-5 text-center">
+        <div class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-1">{{ t('ovulation.ovulationDate') }}</div>
+        <div class="text-xl font-bold text-stone-900" data-testid="ovulation-date">{{ formatDate(ovulationDate) }}</div>
+      </div>
+      <div class="rounded-xl border border-stone-200 p-5 text-center">
+        <div class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-1">{{ t('ovulation.fertileWindow') }}</div>
+        <div class="text-base font-bold text-stone-900" data-testid="fertile-window">{{ formatDate(fertileStart) }} – {{ formatDate(fertileEnd) }}</div>
+      </div>
+      <div class="rounded-xl border border-stone-200 p-5 text-center">
+        <div class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-1">{{ t('ovulation.cycleDay') }}</div>
+        <div class="text-xl font-bold text-stone-900" data-testid="cycle-day">{{ t('ovulation.dayN', { n: cycleDay }) }}</div>
+      </div>
+    </div>
+
+    <!-- Cycle timeline -->
+    <div class="mb-6" data-testid="cycle-timeline">
+      <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('ovulation.currentCycle') }}</h2>
+      <div class="flex rounded-lg overflow-hidden h-8">
+        <div class="bg-stone-400 flex items-center justify-center text-xs text-white font-medium" :style="{ width: (5 / cycleLength * 100) + '%' }">
+          {{ t('ovulation.phaseMenstruation') }}
         </div>
-        <div class="rounded-xl border border-stone-200 p-5 text-center">
-          <div class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-1">{{ t('ovulation.fertileWindow') }}</div>
-          <div class="text-base font-bold text-stone-900" data-testid="fertile-window">{{ formatDate(fertileStart) }} – {{ formatDate(fertileEnd) }}</div>
+        <div class="bg-stone-200 flex items-center justify-center text-xs text-stone-600 font-medium" :style="{ width: ((cycleLength - 14 - 5 - 5) / cycleLength * 100) + '%' }">
+          {{ t('ovulation.phaseFollicular') }}
         </div>
-        <div class="rounded-xl border border-stone-200 p-5 text-center">
-          <div class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-1">{{ t('ovulation.cycleDay') }}</div>
-          <div class="text-xl font-bold text-stone-900" data-testid="cycle-day">{{ t('ovulation.dayN', { n: cycleDay }) }}</div>
+        <div class="bg-stone-700 flex items-center justify-center text-xs text-white font-medium" :style="{ width: (7 / cycleLength * 100) + '%' }">
+          {{ t('ovulation.phaseFertile') }}
+        </div>
+        <div class="bg-stone-300 flex items-center justify-center text-xs text-stone-700 font-medium" :style="{ width: ((cycleLength - (cycleLength - 14) - 1) / cycleLength * 100) + '%' }">
+          {{ t('ovulation.phaseLuteal') }}
         </div>
       </div>
-
-      <!-- Cycle timeline -->
-      <div class="mb-6" data-testid="cycle-timeline">
-        <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('ovulation.currentCycle') }}</h2>
-        <div class="flex rounded-lg overflow-hidden h-8">
-          <div class="bg-stone-400 flex items-center justify-center text-xs text-white font-medium" :style="{ width: (5 / cycleLength * 100) + '%' }">
-            {{ t('ovulation.phaseMenstruation') }}
-          </div>
-          <div class="bg-stone-200 flex items-center justify-center text-xs text-stone-600 font-medium" :style="{ width: ((cycleLength - 14 - 5 - 5) / cycleLength * 100) + '%' }">
-            {{ t('ovulation.phaseFollicular') }}
-          </div>
-          <div class="bg-stone-700 flex items-center justify-center text-xs text-white font-medium" :style="{ width: (7 / cycleLength * 100) + '%' }">
-            {{ t('ovulation.phaseFertile') }}
-          </div>
-          <div class="bg-stone-300 flex items-center justify-center text-xs text-stone-700 font-medium" :style="{ width: ((cycleLength - (cycleLength - 14) - 1) / cycleLength * 100) + '%' }">
-            {{ t('ovulation.phaseLuteal') }}
-          </div>
-        </div>
-        <div class="mt-2 text-sm text-stone-500">
-          {{ t('ovulation.currentPhaseLabel') }}:
-          <span class="font-semibold text-stone-700">{{ t('ovulation.phase_' + currentPhase) }}</span>
-        </div>
+      <div class="mt-2 text-sm text-stone-500">
+        {{ t('ovulation.currentPhaseLabel') }}:
+        <span class="font-semibold text-stone-700">{{ t('ovulation.phase_' + currentPhase) }}</span>
       </div>
+    </div>
 
-      <!-- Next 3 predicted cycles -->
-      <div>
-        <h2 class="text-lg font-semibold text-stone-900 mb-4">{{ t('ovulation.nextCycles') }}</h2>
-        <div class="space-y-3">
-          <div
-            v-for="(cycle, i) in nextCycles"
-            :key="i"
-            data-testid="next-cycle"
-            class="flex items-center gap-4 rounded-lg border border-stone-200 px-4 py-3"
-          >
-            <span class="w-3 h-3 rounded-full shrink-0 bg-stone-300"></span>
-            <span class="text-sm font-semibold text-stone-700 w-20">{{ t('ovulation.cycleN', { n: i + 2 }) }}</span>
-            <span class="text-sm text-stone-600 flex-1">{{ t('ovulation.periodLabel') }}: {{ formatDate(cycle.periodStart) }}</span>
-            <span class="text-sm text-stone-600">{{ t('ovulation.ovulationLabel') }}: {{ formatDate(cycle.ovulationDate) }}</span>
-          </div>
+    <!-- Next 3 predicted cycles -->
+    <div>
+      <h2 class="text-lg font-semibold text-stone-900 mb-4">{{ t('ovulation.nextCycles') }}</h2>
+      <div class="space-y-3">
+        <div
+          v-for="(cycle, i) in nextCycles"
+          :key="i"
+          data-testid="next-cycle"
+          class="flex items-center gap-4 rounded-lg border border-stone-200 px-4 py-3"
+        >
+          <span class="w-3 h-3 rounded-full shrink-0 bg-stone-300"></span>
+          <span class="text-sm font-semibold text-stone-700 w-20">{{ t('ovulation.cycleN', { n: i + 2 }) }}</span>
+          <span class="text-sm text-stone-600 flex-1">{{ t('ovulation.periodLabel') }}: {{ formatDate(cycle.periodStart) }}</span>
+          <span class="text-sm text-stone-600">{{ t('ovulation.ovulationLabel') }}: {{ formatDate(cycle.ovulationDate) }}</span>
         </div>
       </div>
     </div>

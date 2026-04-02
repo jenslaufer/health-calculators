@@ -112,29 +112,32 @@ const recColors = { low: 'text-green-600', moderate: 'text-yellow-600', high: 't
       </div>
     </div>
 
-    <div v-if="whr" class="pt-5 border-t border-stone-100">
-      <div class="flex items-baseline gap-3 mb-4">
-        <span data-testid="whr-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ whrFormatted }}</span>
-        <span v-if="category" :class="category.color" data-testid="whr-category" class="text-lg font-semibold">{{ t(categoryLabels[category.key]) }}</span>
-      </div>
+  </div>
 
-      <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
-        <div class="absolute inset-0 flex">
-          <div class="flex-1 bg-green-600"></div>
-          <div class="flex-1 bg-yellow-500"></div>
-          <div class="flex-1 bg-red-500"></div>
-        </div>
-        <div class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform" :style="{ left: barPosition + '%' }"></div>
-      </div>
-      <div class="flex text-[10px] text-stone-400 tabular-nums">
-        <div class="flex-1">0.50</div>
-        <div class="flex-1 text-center">0.80</div>
-        <div class="flex-1 text-right">1.20</div>
-      </div>
+  <AffiliateBanner class="my-6" />
 
-      <div class="bg-stone-50 rounded-lg p-4 mt-5">
-        <p v-if="category" class="text-sm text-stone-600 leading-relaxed" v-html="t(recKeys[category.key], { start: `<strong class='${recColors[category.key]}'>`, end: '</strong>' })"></p>
+  <div v-if="whr" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="flex items-baseline gap-3 mb-4">
+      <span data-testid="whr-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ whrFormatted }}</span>
+      <span v-if="category" :class="category.color" data-testid="whr-category" class="text-lg font-semibold">{{ t(categoryLabels[category.key]) }}</span>
+    </div>
+
+    <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
+      <div class="absolute inset-0 flex">
+        <div class="flex-1 bg-green-600"></div>
+        <div class="flex-1 bg-yellow-500"></div>
+        <div class="flex-1 bg-red-500"></div>
       </div>
+      <div class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform" :style="{ left: barPosition + '%' }"></div>
+    </div>
+    <div class="flex text-[10px] text-stone-400 tabular-nums">
+      <div class="flex-1">0.50</div>
+      <div class="flex-1 text-center">0.80</div>
+      <div class="flex-1 text-right">1.20</div>
+    </div>
+
+    <div class="bg-stone-50 rounded-lg p-4 mt-5">
+      <p v-if="category" class="text-sm text-stone-600 leading-relaxed" v-html="t(recKeys[category.key], { start: `<strong class='${recColors[category.key]}'>`, end: '</strong>' })"></p>
     </div>
   </div>
 

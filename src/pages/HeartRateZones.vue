@@ -106,6 +106,8 @@ const zones = computed(() => {
     </div>
   </div>
 
+  <AffiliateBanner class="my-6" />
+
   <div v-if="hrMax" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8">
     <p class="text-xs font-semibold text-stone-500 uppercase tracking-widest mb-1">{{ t('heartRate.maxHr') }}</p>
     <p class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ hrMax }}</p>

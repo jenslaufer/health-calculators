@@ -102,25 +102,28 @@ const options = computed(() => {
       />
     </div>
 
-    <div v-if="options.length" class="grid gap-4 sm:grid-cols-3">
-      <div
-        v-for="opt in options"
-        :key="opt.cycles"
-        data-testid="cycle-option"
-        :class="[
-          'rounded-xl border p-5 text-center',
-          opt.recommended
-            ? 'border-green-600 bg-green-50'
-            : 'border-stone-200'
-        ]"
-      >
-        <span
-          v-if="opt.recommended"
-          class="inline-block text-xs font-semibold text-green-700 bg-green-100 rounded-full px-2.5 py-0.5 mb-2"
-        >{{ t('sleep.recommended') }}</span>
-        <div class="text-3xl font-bold text-stone-900 tabular-nums mb-1">{{ opt.time }}</div>
-        <div class="text-sm text-stone-500">{{ t('sleep.cycles', { n: opt.cycles }) }} &middot; {{ opt.duration }}</div>
-      </div>
+  </div>
+
+  <AffiliateBanner class="my-6" />
+
+  <div v-if="options.length" class="grid gap-4 sm:grid-cols-3 mb-6">
+    <div
+      v-for="opt in options"
+      :key="opt.cycles"
+      data-testid="cycle-option"
+      :class="[
+        'rounded-xl border p-5 text-center bg-white shadow-sm',
+        opt.recommended
+          ? 'border-green-600 bg-green-50'
+          : 'border-stone-200'
+      ]"
+    >
+      <span
+        v-if="opt.recommended"
+        class="inline-block text-xs font-semibold text-green-700 bg-green-100 rounded-full px-2.5 py-0.5 mb-2"
+      >{{ t('sleep.recommended') }}</span>
+      <div class="text-3xl font-bold text-stone-900 tabular-nums mb-1">{{ opt.time }}</div>
+      <div class="text-sm text-stone-500">{{ t('sleep.cycles', { n: opt.cycles }) }} &middot; {{ opt.duration }}</div>
     </div>
   </div>
 

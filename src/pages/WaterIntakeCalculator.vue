@@ -119,27 +119,30 @@ const glassRatio = computed(() => {
       </div>
     </div>
 
-    <div v-if="liters" class="pt-5 border-t border-stone-100">
-      <div class="flex items-baseline gap-3 mb-1">
-        <span data-testid="liters" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ litersFormatted }}</span>
-        <span class="text-lg text-stone-500">{{ t('water.litersPerDay') }}</span>
-      </div>
-      <div class="flex items-baseline gap-4 mb-5">
-        <span class="text-lg text-stone-500"><span data-testid="glasses">{{ glasses }}</span> {{ t('water.glasses') }}</span>
-        <span v-if="unit === 'imperial'" class="text-lg text-stone-500"><span data-testid="oz">{{ oz }}</span> {{ t('water.oz') }}</span>
-      </div>
+  </div>
 
-      <div class="flex gap-2 mb-5">
-        <div
-          v-for="i in 8"
-          :key="i"
-          class="w-8 h-10 rounded-md transition-colors duration-300"
-          :class="i <= filledCount ? 'bg-blue-400' : 'bg-stone-200'"
-        ></div>
-      </div>
+  <AffiliateBanner class="my-6" />
 
-      <p class="text-sm text-stone-400">{{ t('water.tip') }}</p>
+  <div v-if="liters" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="flex items-baseline gap-3 mb-1">
+      <span data-testid="liters" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ litersFormatted }}</span>
+      <span class="text-lg text-stone-500">{{ t('water.litersPerDay') }}</span>
     </div>
+    <div class="flex items-baseline gap-4 mb-5">
+      <span class="text-lg text-stone-500"><span data-testid="glasses">{{ glasses }}</span> {{ t('water.glasses') }}</span>
+      <span v-if="unit === 'imperial'" class="text-lg text-stone-500"><span data-testid="oz">{{ oz }}</span> {{ t('water.oz') }}</span>
+    </div>
+
+    <div class="flex gap-2 mb-5">
+      <div
+        v-for="i in 8"
+        :key="i"
+        class="w-8 h-10 rounded-md transition-colors duration-300"
+        :class="i <= filledCount ? 'bg-blue-400' : 'bg-stone-200'"
+      ></div>
+    </div>
+
+    <p class="text-sm text-stone-400">{{ t('water.tip') }}</p>
   </div>
 
 

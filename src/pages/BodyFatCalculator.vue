@@ -170,41 +170,43 @@ const unitLabel = computed(() => t('common.' + (unit.value === 'metric' ? 'cm' :
           class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
       </div>
     </div>
+  </div>
 
-    <div v-if="bodyFat" class="pt-5 border-t border-stone-100">
-      <div class="flex items-baseline gap-3 mb-4">
-        <span data-testid="body-fat-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ bodyFatFormatted }}</span>
-        <span class="text-2xl text-stone-400">%</span>
-        <span v-if="category" :class="category.color" data-testid="body-fat-category" class="text-lg font-semibold">{{ t(category.label) }}</span>
-      </div>
+  <AffiliateBanner class="my-6" />
 
-      <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
-        <div class="absolute inset-0 flex">
-          <div class="flex-1 bg-blue-500"></div>
-          <div class="flex-1 bg-green-600"></div>
-          <div class="flex-1 bg-green-500"></div>
-          <div class="flex-1 bg-yellow-500"></div>
-          <div class="flex-1 bg-red-500"></div>
-        </div>
-        <div class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform" :style="{ left: barPosition + '%' }"></div>
-      </div>
-      <div class="flex text-[10px] text-stone-400 tabular-nums">
-        <div class="flex-1">5%</div>
-        <div class="flex-1 text-center">15%</div>
-        <div class="flex-1 text-center">25%</div>
-        <div class="flex-1 text-center">35%</div>
-        <div class="flex-1 text-right">50%</div>
-      </div>
+  <div v-if="bodyFat" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="flex items-baseline gap-3 mb-4">
+      <span data-testid="body-fat-result" class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ bodyFatFormatted }}</span>
+      <span class="text-2xl text-stone-400">%</span>
+      <span v-if="category" :class="category.color" data-testid="body-fat-category" class="text-lg font-semibold">{{ t(category.label) }}</span>
+    </div>
 
-      <div v-if="fatMass !== null" class="grid grid-cols-2 gap-4 mt-5">
-        <div class="bg-stone-50 rounded-lg p-4">
-          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('bodyFat.fatMass') }}</div>
-          <div data-testid="fat-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ fatMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
-        </div>
-        <div class="bg-stone-50 rounded-lg p-4">
-          <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('bodyFat.leanMass') }}</div>
-          <div data-testid="lean-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ leanMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
-        </div>
+    <div class="relative h-2.5 bg-stone-200 rounded-full overflow-hidden mb-1.5">
+      <div class="absolute inset-0 flex">
+        <div class="flex-1 bg-blue-500"></div>
+        <div class="flex-1 bg-green-600"></div>
+        <div class="flex-1 bg-green-500"></div>
+        <div class="flex-1 bg-yellow-500"></div>
+        <div class="flex-1 bg-red-500"></div>
+      </div>
+      <div class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform" :style="{ left: barPosition + '%' }"></div>
+    </div>
+    <div class="flex text-[10px] text-stone-400 tabular-nums">
+      <div class="flex-1">5%</div>
+      <div class="flex-1 text-center">15%</div>
+      <div class="flex-1 text-center">25%</div>
+      <div class="flex-1 text-center">35%</div>
+      <div class="flex-1 text-right">50%</div>
+    </div>
+
+    <div v-if="fatMass !== null" class="grid grid-cols-2 gap-4 mt-5">
+      <div class="bg-stone-50 rounded-lg p-4">
+        <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('bodyFat.fatMass') }}</div>
+        <div data-testid="fat-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ fatMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
+      </div>
+      <div class="bg-stone-50 rounded-lg p-4">
+        <div class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('bodyFat.leanMass') }}</div>
+        <div data-testid="lean-mass" class="text-2xl font-bold text-stone-900 tabular-nums">{{ leanMass.toFixed(1) }} <span class="text-sm text-stone-400">{{ massUnit }}</span></div>
       </div>
     </div>
   </div>

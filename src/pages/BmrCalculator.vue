@@ -130,7 +130,12 @@ const formatNumber = (n) => Math.round(n).toLocaleString()
       </select>
     </div>
 
-    <div v-if="bmr" class="text-center py-6 border-t border-stone-100">
+  </div>
+
+  <AffiliateBanner class="my-6" />
+
+  <div v-if="bmr" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="text-center py-6">
       <div class="text-5xl font-bold text-stone-900 tabular-nums" data-testid="bmr-result">{{ formatNumber(bmr) }}</div>
       <div class="text-sm text-stone-500 mt-1">{{ t('common.kcalPerDay') }}</div>
 
