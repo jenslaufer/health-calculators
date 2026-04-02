@@ -177,39 +177,42 @@ const macros = computed(() => {
       </div>
     </div>
 
-    <div v-if="targetCalories" class="pt-5 border-t border-stone-100">
-      <div class="mb-6">
-        <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('macro.targetCalories') }}</p>
-        <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none" data-testid="target-calories">{{ targetCalories }}</span>
-        <span class="text-lg text-stone-400 ml-1">{{ t('common.kcal') }}</span>
-      </div>
+  </div>
 
-      <div class="grid grid-cols-3 gap-4 mb-6">
-        <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
-          <div class="w-2.5 h-2.5 rounded-full bg-blue-500 mx-auto mb-2"></div>
-          <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="protein-grams">{{ macros.protein.grams }}</p>
-          <p class="text-xs text-stone-500 font-medium">{{ t('macro.protein') }}</p>
-          <p class="text-xs text-stone-400 mt-1" data-testid="protein-pct">{{ macros.protein.pct }}%</p>
-        </div>
-        <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
-          <div class="w-2.5 h-2.5 rounded-full bg-amber-500 mx-auto mb-2"></div>
-          <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="carbs-grams">{{ macros.carbs.grams }}</p>
-          <p class="text-xs text-stone-500 font-medium">{{ t('macro.carbs') }}</p>
-          <p class="text-xs text-stone-400 mt-1" data-testid="carbs-pct">{{ macros.carbs.pct }}%</p>
-        </div>
-        <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
-          <div class="w-2.5 h-2.5 rounded-full bg-rose-500 mx-auto mb-2"></div>
-          <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="fat-grams">{{ macros.fat.grams }}</p>
-          <p class="text-xs text-stone-500 font-medium">{{ t('macro.fat') }}</p>
-          <p class="text-xs text-stone-400 mt-1" data-testid="fat-pct">{{ macros.fat.pct }}%</p>
-        </div>
-      </div>
+  <AffiliateBanner class="my-6" />
 
-      <div class="rounded-full overflow-hidden flex" style="height: 12px" role="img" aria-label="Macro ratio" data-testid="macro-bar">
-        <div class="bg-blue-500" :style="{ width: macros.protein.pct + '%', height: '100%' }"></div>
-        <div class="bg-amber-500" :style="{ width: macros.carbs.pct + '%', height: '100%' }"></div>
-        <div class="bg-rose-500" :style="{ width: macros.fat.pct + '%', height: '100%' }"></div>
+  <div v-if="targetCalories" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="mb-6">
+      <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('macro.targetCalories') }}</p>
+      <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none" data-testid="target-calories">{{ targetCalories }}</span>
+      <span class="text-lg text-stone-400 ml-1">{{ t('common.kcal') }}</span>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 mb-6">
+      <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
+        <div class="w-2.5 h-2.5 rounded-full bg-blue-500 mx-auto mb-2"></div>
+        <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="protein-grams">{{ macros.protein.grams }}</p>
+        <p class="text-xs text-stone-500 font-medium">{{ t('macro.protein') }}</p>
+        <p class="text-xs text-stone-400 mt-1" data-testid="protein-pct">{{ macros.protein.pct }}%</p>
       </div>
+      <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
+        <div class="w-2.5 h-2.5 rounded-full bg-amber-500 mx-auto mb-2"></div>
+        <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="carbs-grams">{{ macros.carbs.grams }}</p>
+        <p class="text-xs text-stone-500 font-medium">{{ t('macro.carbs') }}</p>
+        <p class="text-xs text-stone-400 mt-1" data-testid="carbs-pct">{{ macros.carbs.pct }}%</p>
+      </div>
+      <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
+        <div class="w-2.5 h-2.5 rounded-full bg-rose-500 mx-auto mb-2"></div>
+        <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="fat-grams">{{ macros.fat.grams }}</p>
+        <p class="text-xs text-stone-500 font-medium">{{ t('macro.fat') }}</p>
+        <p class="text-xs text-stone-400 mt-1" data-testid="fat-pct">{{ macros.fat.pct }}%</p>
+      </div>
+    </div>
+
+    <div class="rounded-full overflow-hidden flex" style="height: 12px" role="img" aria-label="Macro ratio" data-testid="macro-bar">
+      <div class="bg-blue-500" :style="{ width: macros.protein.pct + '%', height: '100%' }"></div>
+      <div class="bg-amber-500" :style="{ width: macros.carbs.pct + '%', height: '100%' }"></div>
+      <div class="bg-rose-500" :style="{ width: macros.fat.pct + '%', height: '100%' }"></div>
     </div>
   </div>
 

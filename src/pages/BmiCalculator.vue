@@ -101,35 +101,35 @@ const barPosition = computed(() => {
           />
         </div>
       </div>
-
-      <div v-if="bmi" class="pt-5 border-t border-stone-100">
-        <div class="flex items-baseline gap-3 mb-4">
-          <span class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ bmiFormatted }}</span>
-          <span :class="category.color" class="text-lg font-semibold">{{ t(category.label) }}</span>
-        </div>
-
-        <div class="relative h-3 bg-stone-200 rounded-full overflow-hidden mb-1.5">
-          <div class="absolute inset-0 flex">
-            <div class="flex-1 bg-blue-400/8"></div>
-            <div class="flex-1 bg-green-600"></div>
-            <div class="flex-1 bg-yellow-500"></div>
-            <div class="flex-1 bg-red-500"></div>
-          </div>
-          <div
-            class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform"
-            :style="{ left: barPosition + '%' }"
-          ></div>
-        </div>
-        <div class="flex text-[10px] text-stone-400 tabular-nums">
-          <div class="flex-1">18.5</div>
-          <div class="flex-1 text-center">25</div>
-          <div class="flex-1 text-center">30</div>
-          <div class="flex-1 text-right">40</div>
-        </div>
-      </div>
     </div>
 
     <AffiliateBanner class="my-6" />
+
+    <div v-if="bmi" class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
+      <div class="flex items-baseline gap-3 mb-4">
+        <span class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ bmiFormatted }}</span>
+        <span :class="category.color" class="text-lg font-semibold">{{ t(category.label) }}</span>
+      </div>
+
+      <div class="relative h-3 bg-stone-200 rounded-full overflow-hidden mb-1.5">
+        <div class="absolute inset-0 flex">
+          <div class="flex-1 bg-blue-400/8"></div>
+          <div class="flex-1 bg-green-600"></div>
+          <div class="flex-1 bg-yellow-500"></div>
+          <div class="flex-1 bg-red-500"></div>
+        </div>
+        <div
+          class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform"
+          :style="{ left: barPosition + '%' }"
+        ></div>
+      </div>
+      <div class="flex text-[10px] text-stone-400 tabular-nums">
+        <div class="flex-1">18.5</div>
+        <div class="flex-1 text-center">25</div>
+        <div class="flex-1 text-center">30</div>
+        <div class="flex-1 text-right">40</div>
+      </div>
+    </div>
 
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
       <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('bmi.categories') }}</h2>

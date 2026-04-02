@@ -82,40 +82,40 @@ const recommendationKeys = {
             class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150" />
         </div>
       </div>
-
-      <div v-if="result" class="pt-5 border-t border-stone-100">
-        <div class="flex items-baseline gap-3 mb-4">
-          <span data-testid="systolic-value" class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ systolic }}</span>
-          <span class="text-2xl text-stone-400 font-light">/</span>
-          <span data-testid="diastolic-value" class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ diastolic }}</span>
-          <span class="text-sm text-stone-400 ml-1">mmHg</span>
-        </div>
-        <p data-testid="category" :class="result.color" class="text-lg font-semibold mb-4">{{ t('bloodPressure.' + result.key) }}</p>
-
-        <div class="relative h-3 bg-stone-200 rounded-full overflow-hidden mb-1.5">
-          <div class="absolute inset-0 flex">
-            <div class="flex-1 bg-green-600"></div>
-            <div class="flex-1 bg-yellow-500"></div>
-            <div class="flex-1 bg-orange-500"></div>
-            <div class="flex-1 bg-red-500"></div>
-            <div class="flex-[0.5] bg-red-700"></div>
-          </div>
-        </div>
-        <div class="flex text-[10px] text-stone-400 tabular-nums mb-6">
-          <div class="flex-1">{{ t('bloodPressure.scaleNormal') }}</div>
-          <div class="flex-1 text-center">{{ t('bloodPressure.scaleElevated') }}</div>
-          <div class="flex-1 text-center">{{ t('bloodPressure.scaleStage1') }}</div>
-          <div class="flex-1 text-center">{{ t('bloodPressure.scaleStage2') }}</div>
-          <div class="flex-[0.5] text-right">{{ t('bloodPressure.scaleCrisis') }}</div>
-        </div>
-
-        <div data-testid="recommendation" class="bg-stone-50 border border-stone-200 rounded-lg p-4">
-          <p class="text-sm text-stone-600 leading-relaxed">{{ t(recommendationKeys[result.key]) }}</p>
-        </div>
-      </div>
     </div>
 
     <AffiliateBanner class="my-6" />
+
+    <div v-if="result" class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
+      <div class="flex items-baseline gap-3 mb-4">
+        <span data-testid="systolic-value" class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ systolic }}</span>
+        <span class="text-2xl text-stone-400 font-light">/</span>
+        <span data-testid="diastolic-value" class="text-5xl font-bold text-stone-900 tabular-nums tracking-tight leading-none">{{ diastolic }}</span>
+        <span class="text-sm text-stone-400 ml-1">mmHg</span>
+      </div>
+      <p data-testid="category" :class="result.color" class="text-lg font-semibold mb-4">{{ t('bloodPressure.' + result.key) }}</p>
+
+      <div class="relative h-3 bg-stone-200 rounded-full overflow-hidden mb-1.5">
+        <div class="absolute inset-0 flex">
+          <div class="flex-1 bg-green-600"></div>
+          <div class="flex-1 bg-yellow-500"></div>
+          <div class="flex-1 bg-orange-500"></div>
+          <div class="flex-1 bg-red-500"></div>
+          <div class="flex-[0.5] bg-red-700"></div>
+        </div>
+      </div>
+      <div class="flex text-[10px] text-stone-400 tabular-nums mb-6">
+        <div class="flex-1">{{ t('bloodPressure.scaleNormal') }}</div>
+        <div class="flex-1 text-center">{{ t('bloodPressure.scaleElevated') }}</div>
+        <div class="flex-1 text-center">{{ t('bloodPressure.scaleStage1') }}</div>
+        <div class="flex-1 text-center">{{ t('bloodPressure.scaleStage2') }}</div>
+        <div class="flex-[0.5] text-right">{{ t('bloodPressure.scaleCrisis') }}</div>
+      </div>
+
+      <div data-testid="recommendation" class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+        <p class="text-sm text-stone-600 leading-relaxed">{{ t(recommendationKeys[result.key]) }}</p>
+      </div>
+    </div>
 
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
       <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('bloodPressure.categoriesTitle') }}</h2>

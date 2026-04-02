@@ -222,62 +222,65 @@ const foodSources = computed(() => {
       </div>
     </div>
 
-    <div v-if="dailyProtein" class="pt-5 border-t border-stone-100">
-      <div class="mb-6">
-        <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('protein.dailyProtein') }}</p>
-        <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none" data-testid="protein-total">{{ dailyProtein }}</span>
-        <span class="text-lg text-stone-400 ml-1">{{ t('protein.gramsPerDay') }}</span>
-      </div>
+  </div>
 
-      <div class="grid grid-cols-2 gap-4 mb-6">
-        <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
-          <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="protein-per-kg">{{ proteinPerKg.toFixed(1) }}</p>
-          <p class="text-xs text-stone-500 font-medium">{{ t('protein.perKg') }}</p>
-        </div>
-        <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
-          <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="protein-per-meal">{{ proteinPerMeal }}</p>
-          <p class="text-xs text-stone-500 font-medium">{{ t('protein.grams') }} {{ t('protein.perMeal') }}</p>
-        </div>
-      </div>
+  <AffiliateBanner class="my-6" />
 
-      <!-- Goal comparison chart -->
-      <div class="mb-6">
-        <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-3">{{ t('protein.goalComparison') }}</p>
-        <div class="space-y-3">
-          <div v-for="item in goalComparison" :key="item.key" class="flex items-center gap-3">
-            <span class="text-sm text-stone-600 w-28 shrink-0">{{ t(goalLabels[item.key]) }}</span>
-            <div class="flex-1 bg-stone-100 rounded-full overflow-hidden" style="height: 24px">
-              <div
-                :class="goalColors[item.key]"
-                class="h-full rounded-full flex items-center justify-end pr-2 transition-all duration-300"
-                :style="{ width: (item.grams / maxGoalGrams * 100) + '%' }"
-              >
-                <span class="text-xs font-bold text-white">{{ item.grams }} g</span>
-              </div>
+  <div v-if="dailyProtein" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="mb-6">
+      <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-1">{{ t('protein.dailyProtein') }}</p>
+      <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none" data-testid="protein-total">{{ dailyProtein }}</span>
+      <span class="text-lg text-stone-400 ml-1">{{ t('protein.gramsPerDay') }}</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
+        <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="protein-per-kg">{{ proteinPerKg.toFixed(1) }}</p>
+        <p class="text-xs text-stone-500 font-medium">{{ t('protein.perKg') }}</p>
+      </div>
+      <div class="bg-white rounded-xl border border-stone-200 shadow-sm p-4 text-center">
+        <p class="text-2xl font-bold text-stone-900 tabular-nums" data-testid="protein-per-meal">{{ proteinPerMeal }}</p>
+        <p class="text-xs text-stone-500 font-medium">{{ t('protein.grams') }} {{ t('protein.perMeal') }}</p>
+      </div>
+    </div>
+
+    <!-- Goal comparison chart -->
+    <div class="mb-6">
+      <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-3">{{ t('protein.goalComparison') }}</p>
+      <div class="space-y-3">
+        <div v-for="item in goalComparison" :key="item.key" class="flex items-center gap-3">
+          <span class="text-sm text-stone-600 w-28 shrink-0">{{ t(goalLabels[item.key]) }}</span>
+          <div class="flex-1 bg-stone-100 rounded-full overflow-hidden" style="height: 24px">
+            <div
+              :class="goalColors[item.key]"
+              class="h-full rounded-full flex items-center justify-end pr-2 transition-all duration-300"
+              :style="{ width: (item.grams / maxGoalGrams * 100) + '%' }"
+            >
+              <span class="text-xs font-bold text-white">{{ item.grams }} g</span>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Food sources table -->
-      <div data-testid="food-sources">
-        <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-3">{{ t('protein.foodSources') }}</p>
-        <div class="bg-white border border-stone-200 rounded-xl shadow-sm overflow-hidden">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="bg-stone-50 border-b border-stone-200">
-                <th class="text-left px-6 py-3 font-semibold text-stone-700">{{ t('protein.food') }}</th>
-                <th class="text-left px-6 py-3 font-semibold text-stone-700">{{ t('protein.proteinPer100g') }}</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-stone-100">
-              <tr v-for="food in foodSources" :key="food.name">
-                <td class="px-6 py-3 text-stone-600">{{ food.name }}</td>
-                <td class="px-6 py-3 text-stone-900 font-medium">{{ food.protein }} g</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <!-- Food sources table -->
+    <div data-testid="food-sources">
+      <p class="text-xs font-semibold text-stone-500 tracking-wide uppercase mb-3">{{ t('protein.foodSources') }}</p>
+      <div class="bg-white border border-stone-200 rounded-xl shadow-sm overflow-hidden">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-stone-50 border-b border-stone-200">
+              <th class="text-left px-6 py-3 font-semibold text-stone-700">{{ t('protein.food') }}</th>
+              <th class="text-left px-6 py-3 font-semibold text-stone-700">{{ t('protein.proteinPer100g') }}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-100">
+            <tr v-for="food in foodSources" :key="food.name">
+              <td class="px-6 py-3 text-stone-600">{{ food.name }}</td>
+              <td class="px-6 py-3 text-stone-900 font-medium">{{ food.protein }} g</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

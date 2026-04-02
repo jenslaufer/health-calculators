@@ -126,13 +126,16 @@ const fmt = (v) => v?.toFixed(1)
       </div>
     </div>
 
-    <div v-if="formulas" data-testid="results" class="pt-5 border-t border-stone-100">
-      <div class="mb-4">
-        <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ fmt(average) }}</span>
-        <span class="text-lg text-stone-500 ml-2">{{ weightUnit }}</span>
-      </div>
-      <p class="text-sm text-stone-500 mb-6">{{ fmt(range.min) }} – {{ fmt(range.max) }} {{ weightUnit }}</p>
+  </div>
+
+  <AffiliateBanner class="my-6" />
+
+  <div v-if="formulas" data-testid="results" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
+    <div class="mb-4">
+      <span class="text-5xl font-bold text-stone-900 tabular-nums leading-none">{{ fmt(average) }}</span>
+      <span class="text-lg text-stone-500 ml-2">{{ weightUnit }}</span>
     </div>
+    <p class="text-sm text-stone-500 mb-6">{{ fmt(range.min) }} – {{ fmt(range.max) }} {{ weightUnit }}</p>
   </div>
 
   <div v-if="formulas" class="bg-white rounded-xl shadow-sm border border-stone-200 p-8 mb-6">
