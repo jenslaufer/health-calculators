@@ -3,11 +3,11 @@ import { defineConfig } from '@playwright/test'
 export default defineConfig({
   testDir: './e2e',
   use: {
-    baseURL: 'http://localhost:5179/health-calculators/',
+    baseURL: 'http://localhost:5179/',
   },
   webServer: {
     command: 'npx vite --port 5179',
-    url: 'http://localhost:5179/health-calculators/',
+    url: 'http://localhost:5179/',
     reuseExistingServer: false,
   },
 })
