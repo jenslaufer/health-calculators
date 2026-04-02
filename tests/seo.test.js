@@ -42,6 +42,7 @@ describe('sitemap.xml', () => {
     'eisprung-rechner',
     'protein-rechner',
     'bmr-rechner',
+    'intervallfasten-rechner',
   ]
 
   const enCalculatorSlugs = [
@@ -51,6 +52,7 @@ describe('sitemap.xml', () => {
     'blood-pressure-calculator', 'calorie-deficit-calculator',
     'waist-hip-ratio-calculator', 'ovulation-calculator',
     'protein-calculator', 'bmr-calculator',
+    'intermittent-fasting-calculator',
   ]
 
   it('contains all German calculator routes', () => {
@@ -78,6 +80,7 @@ describe('sitemap.xml', () => {
     'herzfrequenz-zonen-berechnen', 'taille-hueft-verhaeltnis-berechnen',
     'blutdruck-richtig-messen', 'eisprung-berechnen',
     'proteinbedarf-berechnen', 'grundumsatz-berechnen',
+    'intervallfasten-rechner',
   ]
 
   const enBlogSlugs = [
@@ -87,6 +90,7 @@ describe('sitemap.xml', () => {
     'calculate-heart-rate-zones', 'calculate-waist-hip-ratio',
     'measure-blood-pressure', 'calculate-ovulation',
     'protein-intake-guide', 'calculate-bmr',
+    'intermittent-fasting-calculator',
   ]
 
   it('contains all German blog article URLs', () => {
@@ -101,8 +105,8 @@ describe('sitemap.xml', () => {
     }
   })
 
-  // 1 home + 15 de calcs + 15 en calcs + 2 blog indexes + 15 de articles + 15 en articles = 63
-  it('contains exactly 63 URLs', () => {
-    expect(urls).toHaveLength(63)
+  // 1 home + 16 de calcs + 16 en calcs + 2 blog indexes + 16 de articles + 16 en articles = 67
+  it('contains exactly 67 URLs', () => {
+    expect(urls).toHaveLength(67)
   })
 })

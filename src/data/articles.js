@@ -143,6 +143,15 @@ export const articles = [
     calculatorKey: 'caloriesBurned',
     related: ['tdee-berechnen', 'kaloriendefizit-berechnen'],
   },
+  {
+    slug: 'intervallfasten-rechner',
+    title: 'Intervallfasten — Dein Leitfaden mit Rechner',
+    description: 'Intervallfasten erklärt: Protokolle (16:8, 18:6, 20:4, OMAD), Vorteile, Anfängertipps und kostenloser Intervallfasten-Rechner.',
+    date: '2026-04-02',
+    readTime: '8 min',
+    calculatorKey: 'intermittentFasting',
+    related: ['kaloriendefizit-berechnen', 'tdee-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

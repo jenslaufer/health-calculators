@@ -31,6 +31,7 @@ export const routeMap = {
   protein: { de: 'protein-rechner', en: 'protein-calculator' },
   bmr: { de: 'bmr-rechner', en: 'bmr-calculator' },
   caloriesBurned: { de: 'kalorienverbrauch', en: 'calories-burned' },
+  intermittentFasting: { de: 'intervallfasten-rechner', en: 'intermittent-fasting-calculator' },
   blog: { de: 'blog', en: 'blog' },
 }
 
