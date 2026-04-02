@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
+import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t, locale } = useI18n()
@@ -163,6 +164,7 @@ const hasResults = computed(() => !!lmpDate.value)
     </p>
   </div>
 
+
+    <AdSlot class="mt-8" />
   <BlogBanner calculator-key="ovulation" />
-  <AffiliateBanner />
 </template>
