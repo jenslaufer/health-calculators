@@ -152,6 +152,15 @@ export const articles = [
     calculatorKey: 'intermittentFasting',
     related: ['kaloriendefizit-berechnen', 'tdee-berechnen'],
   },
+  {
+    slug: 'one-rep-max-berechnen',
+    title: 'One Rep Max berechnen: 1RM mit vier Formeln ermitteln',
+    description: 'One Rep Max (1RM) berechnen mit Epley, Brzycki, Lombardi und O\'Conner. Formeln, Prozenttabelle und praktische Tipps.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'oneRepMax',
+    related: ['proteinbedarf-berechnen', 'kalorienverbrauch-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

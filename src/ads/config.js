@@ -136,4 +136,7 @@ export const routeContextMap = {
   // nutrition: Intermittent Fasting
   'intervallfasten-rechner': 'nutrition',
   'intermittent-fasting-calculator': 'nutrition',
+  // supplements: One Rep Max
+  'one-rep-max-rechner': 'supplements',
+  'one-rep-max-calculator': 'supplements',
 }

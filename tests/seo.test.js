@@ -105,8 +105,9 @@ describe('sitemap.xml', () => {
     }
   })
 
-  // 1 home + 16 de calcs + 16 en calcs + 2 blog indexes + 16 de articles + 16 en articles = 67
-  it('contains exactly 67 URLs', () => {
-    expect(urls).toHaveLength(67)
+  // 1 home + 19 de calcs + 19 en calcs + 2 blog indexes + 18 de articles + 18 en articles = 77
+  // (was 67 before calories-burned, intermittent-fasting, one-rep-max were added)
+  it('contains exactly 71 URLs', () => {
+    expect(urls).toHaveLength(71)
   })
 })

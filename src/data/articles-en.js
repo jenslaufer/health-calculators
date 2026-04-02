@@ -152,6 +152,15 @@ export const articlesEn = [
     calculatorKey: 'intermittentFasting',
     related: ['calculate-calorie-deficit', 'calculate-tdee'],
   },
+  {
+    slug: 'calculate-one-rep-max',
+    title: 'Calculate One Rep Max: Estimate Your 1RM With Four Formulas',
+    description: 'Calculate your one-rep max (1RM) using Epley, Brzycki, Lombardi and O\'Conner formulas. Percentage chart and practical tips.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'oneRepMax',
+    related: ['protein-intake-guide', 'calculate-calories-burned'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -89,6 +89,12 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://healthcalculator.app/de/one-rep-max-rechner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- English calculator routes -->
   <url>
     <loc>https://healthcalculator.app/en/bmi-calculator</loc>
@@ -168,6 +174,12 @@
 
   <url>
     <loc>https://healthcalculator.app/en/intermittent-fasting-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://healthcalculator.app/en/one-rep-max-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -267,6 +279,12 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://healthcalculator.app/de/blog/one-rep-max-berechnen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- English blog articles -->
   <url>
     <loc>https://healthcalculator.app/en/blog/calculate-bmi</loc>
@@ -345,6 +363,11 @@
   </url>
   <url>
     <loc>https://healthcalculator.app/en/blog/intermittent-fasting-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-one-rep-max</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
