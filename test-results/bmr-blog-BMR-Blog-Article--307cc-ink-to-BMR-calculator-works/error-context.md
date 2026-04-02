@@ -1,0 +1,59 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - link "← All Calculators" [ref=e17] [cursor=pointer]:
+        - /url: /en/
+      - heading "BMR Calculator" [level=1] [ref=e18]
+      - paragraph [ref=e19]: Calculate your Basal Metabolic Rate — the calories your body burns at rest.
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - button "Male" [ref=e22]
+        - button "Female" [ref=e23]
+      - generic [ref=e24]:
+        - button "Metric" [ref=e25]
+        - button "Imperial" [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: Age
+          - spinbutton "Age" [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]: Height (cm)
+          - spinbutton "Height (cm)" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: Weight (kg)
+          - spinbutton "Weight (kg)" [ref=e36]
+      - generic [ref=e37]:
+        - generic [ref=e38]: Formula
+        - combobox "Formula" [ref=e39]:
+          - option "Mifflin-St Jeor" [selected]
+          - option "Harris-Benedict"
+    - generic [ref=e40]:
+      - paragraph [ref=e41]: Read more
+      - 'link "Calculate BMR: Basal Metabolic Rate With Two Formulas →" [ref=e42] [cursor=pointer]':
+        - /url: /en/blog/calculate-bmr
+      - paragraph [ref=e43]: Calculate your Basal Metabolic Rate (BMR) using Mifflin-St Jeor and Harris-Benedict formulas. Activity factors, influencing factors and practical tips.
+    - generic [ref=e44]:
+      - paragraph [ref=e45]: Ad
+      - paragraph [ref=e46]: Compare protein powders & supplements — for your training goal.
+      - link "Compare now" [ref=e47] [cursor=pointer]:
+        - /url: "#"
+  - contentinfo [ref=e48]:
+    - paragraph [ref=e49]: For informational purposes only — not medical advice
+```

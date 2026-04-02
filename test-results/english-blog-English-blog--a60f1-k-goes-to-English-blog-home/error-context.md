@@ -1,0 +1,218 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /en/blog
+        - 'heading "Calculate Due Date: When Is My Baby Coming?" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: March 27, 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 7 min read
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - text: "You're pregnant — congratulations! One of the first questions is:"
+            - strong [ref=e27]: When is the baby coming?
+            - text: The
+            - strong [ref=e28]: estimated due date
+            - text: (EDD) gives you an orientation for the next 40 weeks.
+          - paragraph [ref=e29]: In this article, you'll learn how the due date is calculated, what Naegele's rule is, how pregnancy weeks and trimesters relate — and why only about 4% of babies are born on the estimated date.
+        - generic [ref=e30]:
+          - heading "What Is Naegele's Rule?" [level=2] [ref=e31]
+          - paragraph [ref=e32]:
+            - strong [ref=e33]: Naegele's rule
+            - text: "is the most widely used method for calculating the estimated due date worldwide. It was developed in the 19th century by German gynecologist Franz Naegele and is based on a simple formula:"
+          - generic [ref=e34]:
+            - paragraph [ref=e35]: Naegele's Formula (for a 28-day cycle)
+            - paragraph [ref=e36]:
+              - text: First day of last period
+              - strong [ref=e37]: + 7 days − 3 months + 1 year
+          - paragraph [ref=e38]:
+            - text: The formula assumes a
+            - strong [ref=e39]: 28-day cycle
+            - text: and that ovulation occurs on day 14. This results in a pregnancy duration of
+            - strong [ref=e40]: 280 days
+            - text: (40 weeks) from the first day of the last menstrual period.
+          - paragraph [ref=e41]:
+            - text: "Example: If the first day of your last period is January 1, 2026, the calculation is: January 1 + 7 days = January 8, minus 3 months = October 8, 2025, plus 1 year ="
+            - strong [ref=e42]: October 8, 2026
+            - text: .
+        - generic [ref=e43]:
+          - heading "How to Calculate the Due Date" [level=2] [ref=e44]
+          - paragraph [ref=e45]: "There are several ways to determine the due date. All are based on the same principle: the estimated time of conception plus the average pregnancy duration."
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - heading "By Last Period (Naegele's Rule)" [level=3] [ref=e48]
+              - paragraph [ref=e49]:
+                - text: The most common method. You only need the first day of your last menstrual period. Our
+                - link "Due Date Calculator" [ref=e50] [cursor=pointer]:
+                  - /url: /en/pregnancy-calculator
+                - text: uses exactly this calculation.
+            - generic [ref=e51]:
+              - heading "By Conception Date" [level=3] [ref=e52]
+              - paragraph [ref=e53]: If you know the exact conception date, add 266 days (38 weeks). This value is more accurate because it doesn't need to estimate ovulation.
+            - generic [ref=e54]:
+              - heading "By Ultrasound" [level=3] [ref=e55]
+              - paragraph [ref=e56]: In the first trimester, the doctor can measure the crown-rump length (CRL). This method is considered the most accurate and often corrects the calculated date if discrepancies are found.
+        - generic [ref=e57]:
+          - heading "Cycle Length and Its Impact on the Date" [level=2] [ref=e58]
+          - paragraph [ref=e59]:
+            - text: The standard Naegele's rule assumes a
+            - strong [ref=e60]: 28-day cycle
+            - text: . However, many women have shorter or longer cycles. This shifts ovulation — and therefore the due date.
+          - paragraph [ref=e61]:
+            - text: The
+            - strong [ref=e62]: extended Naegele's rule
+            - text: "accounts for this: If your cycle deviates from 28 days, the difference is added to or subtracted from the calculated date."
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: Extended Formula
+            - paragraph [ref=e65]:
+              - text: Calculated date (28-day cycle)
+              - strong [ref=e66]: + (Cycle length − 28) days
+          - paragraph [ref=e67]:
+            - text: "Example: With a 32-day cycle, the date shifts 4 days later. With a 25-day cycle, it moves 3 days earlier. Our"
+            - link "Due Date Calculator" [ref=e68] [cursor=pointer]:
+              - /url: /en/pregnancy-calculator
+            - text: automatically adjusts for your cycle length.
+        - generic [ref=e69]:
+          - heading "Calculate your due date now" [level=3] [ref=e70]
+          - paragraph [ref=e71]: Based on Naegele's rule — adjusted for your cycle length.
+          - link "Calculate for free now →" [ref=e72] [cursor=pointer]:
+            - /url: /en/pregnancy-calculator
+        - generic [ref=e73]:
+          - heading "Understanding Pregnancy Weeks" [level=2] [ref=e74]
+          - paragraph [ref=e75]:
+            - text: Pregnancy is divided into
+            - strong [ref=e76]: 40 weeks
+            - text: ", counted from the first day of the last period. This means: In the first two weeks, you are medically already \"pregnant,\" even though fertilization hasn't occurred yet."
+          - paragraph [ref=e77]:
+            - text: The notation
+            - strong [ref=e78]: 12+3
+            - text: "means: 12 completed weeks and 3 days — so you're in your 13th week of pregnancy. This counting method is the international standard."
+          - paragraph [ref=e79]:
+            - text: Each week brings new developmental milestones. The
+            - link "Pregnancy Calculator" [ref=e80] [cursor=pointer]:
+              - /url: /en/pregnancy-calculator
+            - text: shows you which week you're in and what milestones are coming up.
+        - generic [ref=e81]:
+          - heading "The Three Trimesters" [level=2] [ref=e82]
+          - paragraph [ref=e83]:
+            - text: The 40 weeks are divided into three
+            - strong [ref=e84]: trimesters
+            - text: . Each trimester has its own focus for the baby's development and the mother's well-being.
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - heading "1st Trimester (Weeks 1–12)" [level=3] [ref=e87]
+              - paragraph [ref=e88]: "All organs are formed. The heart begins to beat (week 6). By the end of the first trimester, the embryo is about 6 cm long. Common symptoms: nausea, fatigue, breast tenderness."
+            - generic [ref=e89]:
+              - heading "2nd Trimester (Weeks 13–27)" [level=3] [ref=e90]
+              - paragraph [ref=e91]: The baby grows rapidly. From week 20, most women feel the first movements. The sex is identifiable. Many pregnant women feel their best during this phase.
+            - generic [ref=e92]:
+              - heading "3rd Trimester (Weeks 28–40)" [level=3] [ref=e93]
+              - paragraph [ref=e94]: The baby matures and gains significant weight. The lungs fully develop. From week 37, the baby is considered "full term." In the final weeks, it usually turns into the birth position.
+        - generic [ref=e95]:
+          - heading "Important Pregnancy Milestones" [level=2] [ref=e96]
+          - list [ref=e98]:
+            - listitem [ref=e99]:
+              - strong [ref=e100]: "Week 6:"
+              - text: First heartbeat visible on ultrasound
+            - listitem [ref=e101]:
+              - strong [ref=e102]: "Week 12:"
+              - text: End of the critical early phase — miscarriage risk drops significantly
+            - listitem [ref=e103]:
+              - strong [ref=e104]: "Week 20:"
+              - text: Halfway point — the anatomy scan is scheduled
+            - listitem [ref=e105]:
+              - strong [ref=e106]: "Week 24:"
+              - text: Viability outside the womb (with intensive medical care)
+            - listitem [ref=e107]:
+              - strong [ref=e108]: "Week 28:"
+              - text: Start of the third trimester
+            - listitem [ref=e109]:
+              - strong [ref=e110]: "Week 37:"
+              - text: The baby is considered "full term"
+            - listitem [ref=e111]:
+              - strong [ref=e112]: "Week 40:"
+              - text: Estimated due date
+            - listitem [ref=e113]:
+              - strong [ref=e114]: "Week 42:"
+              - text: Post-term — induction is recommended
+        - generic [ref=e115]:
+          - heading "Why the Due Date Is Only an Estimate" [level=2] [ref=e116]
+          - paragraph [ref=e117]:
+            - text: The calculated due date is not a fixed date. Statistically, only
+            - strong [ref=e118]: about 4% of all babies
+            - text: are born exactly on the EDD. The majority are born within a window of
+            - strong [ref=e119]: two weeks before to two weeks after
+            - text: the date.
+          - paragraph [ref=e120]: "The reasons for this imprecision are varied:"
+          - list [ref=e121]:
+            - listitem [ref=e122]: The exact time of ovulation is rarely known
+            - listitem [ref=e123]: Cycle length varies from woman to woman and cycle to cycle
+            - listitem [ref=e124]: First pregnancies tend to last slightly longer on average
+            - listitem [ref=e125]: Genetic factors influence pregnancy duration
+            - listitem [ref=e126]: Naegele's rule is based on 19th-century averages
+          - paragraph [ref=e127]:
+            - text: Think of the due date as a
+            - strong [ref=e128]: reference point
+            - text: . Your doctor will adjust the date based on ultrasound measurements if needed. A birth between weeks 37 and 42 is considered normal.
+        - generic [ref=e129]:
+          - heading "Due Date and Health" [level=2] [ref=e130]
+          - paragraph [ref=e131]: "A healthy pregnancy requires attention to nutrition, exercise, and rest. Some of our calculators can support you:"
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - text: Your
+              - link "water intake" [ref=e134] [cursor=pointer]:
+                - /url: /en/blog/calculate-water-intake
+              - text: increases during pregnancy — calculate it with our tool
+            - listitem [ref=e135]:
+              - text: Pay attention to the right
+              - link "macronutrient distribution" [ref=e136] [cursor=pointer]:
+                - /url: /en/blog/calculate-macros
+              - text: for you and your baby
+            - listitem [ref=e137]:
+              - text: A healthy
+              - link "BMI" [ref=e138] [cursor=pointer]:
+                - /url: /en/blog/calculate-bmi
+              - text: before pregnancy is a good starting point
+        - generic [ref=e139]:
+          - heading "Conclusion" [level=2] [ref=e140]
+          - paragraph [ref=e141]:
+            - text: The due date gives you an important reference point but is not an exact date. Naegele's rule provides a proven estimate that you can determine in seconds with our
+            - link "Due Date Calculator" [ref=e142] [cursor=pointer]:
+              - /url: /en/pregnancy-calculator
+            - text: ". Remember: Every pregnancy is unique — trust your body and your medical team."
+        - generic [ref=e143]:
+          - heading "Related Articles" [level=2] [ref=e144]
+          - generic [ref=e145]:
+            - 'link "Calculate BMI: What the Body Mass Index Really Tells You Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist. Read more →" [ref=e146] [cursor=pointer]':
+              - /url: /en/blog/calculate-bmi
+              - 'heading "Calculate BMI: What the Body Mass Index Really Tells You" [level=3] [ref=e147]'
+              - paragraph [ref=e148]: Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist.
+              - generic [ref=e149]: Read more →
+            - 'link "Calculate Ovulation: How to Determine Your Fertile Days Calculate your ovulation with the calendar method. Fertile window, cycle length, luteal phase and tips for natural family planning. Read more →" [ref=e150] [cursor=pointer]':
+              - /url: /en/blog/calculate-ovulation
+              - 'heading "Calculate Ovulation: How to Determine Your Fertile Days" [level=3] [ref=e151]'
+              - paragraph [ref=e152]: Calculate your ovulation with the calendar method. Fertile window, cycle length, luteal phase and tips for natural family planning.
+              - generic [ref=e153]: Read more →
+  - contentinfo [ref=e154]:
+    - paragraph [ref=e155]: For informational purposes only — not medical advice
+```
