@@ -29,13 +29,11 @@ import OvulationCalculator from './pages/OvulationCalculator.vue'
 import ProteinCalculator from './pages/ProteinCalculator.vue'
 import BmrCalculator from './pages/BmrCalculator.vue'
 import CaloriesBurnedCalculator from './pages/CaloriesBurnedCalculator.vue'
-import RunningPaceCalculator from './pages/RunningPaceCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
 import ProteinbedarfBerechnen from './pages/blog/ProteinbedarfBerechnen.vue'
 import GrundumsatzBerechnen from './pages/blog/GrundumsatzBerechnen.vue'
 import KalorienverbrauchBerechnen from './pages/blog/KalorienverbrauchBerechnen.vue'
-import LauftempoBerechnen from './pages/blog/LauftempoBerechnen.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -53,7 +51,6 @@ import CalculateOvulation from './pages/blog/en/CalculateOvulation.vue'
 import CalculateProteinIntake from './pages/blog/en/CalculateProteinIntake.vue'
 import CalculateBmr from './pages/blog/en/CalculateBmr.vue'
 import CalculateCaloriesBurned from './pages/blog/en/CalculateCaloriesBurned.vue'
-import CalculateRunningPace from './pages/blog/en/CalculateRunningPace.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -72,7 +69,6 @@ const calculatorComponents = {
   protein: ProteinCalculator,
   bmr: BmrCalculator,
   caloriesBurned: CaloriesBurnedCalculator,
-  runningPace: RunningPaceCalculator,
 }
 
 const blogComponentsDe = {
@@ -92,7 +88,6 @@ const blogComponentsDe = {
   'proteinbedarf-berechnen': ProteinbedarfBerechnen,
   'grundumsatz-berechnen': GrundumsatzBerechnen,
   'kalorienverbrauch-berechnen': KalorienverbrauchBerechnen,
-  'lauftempo-berechnen': LauftempoBerechnen,
 }
 
 const blogComponentsEn = {
@@ -112,7 +107,6 @@ const blogComponentsEn = {
   'protein-intake-guide': CalculateProteinIntake,
   'calculate-bmr': CalculateBmr,
   'calculate-calories-burned': CalculateCaloriesBurned,
-  'calculate-running-pace': CalculateRunningPace,
 }
 
 const blogComponentsByLocale = {
