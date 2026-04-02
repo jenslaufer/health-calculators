@@ -1,0 +1,132 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /en/blog
+        - 'heading "Body Fat Percentage Calculator: Navy Method, Charts & Tips" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: March 25, 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 7 min read
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - strong [ref=e27]: Body fat percentage
+            - text: is one of the most meaningful metrics for your health. Unlike
+            - link "BMI" [ref=e28] [cursor=pointer]:
+              - /url: /en/blog/calculate-bmi
+            - text: ", it distinguishes between fat and muscle mass."
+          - paragraph [ref=e29]: In this article, you'll learn how the U.S. Navy method works, what the guidelines are for men and women, and why body fat percentage is superior to BMI.
+        - generic [ref=e30]:
+          - heading "The U.S. Navy Method" [level=2] [ref=e31]
+          - paragraph [ref=e32]: "The U.S. Navy method was developed in the 1980s to quickly determine the body fat percentage of military personnel without expensive equipment. You only need a measuring tape and three to four measurements:"
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - generic [ref=e35]: "1"
+              - paragraph [ref=e36]:
+                - strong [ref=e37]: Height
+                - text: in cm or inches.
+            - generic [ref=e38]:
+              - generic [ref=e39]: "2"
+              - paragraph [ref=e40]:
+                - strong [ref=e41]: Neck circumference
+                - text: at the narrowest point.
+            - generic [ref=e42]:
+              - generic [ref=e43]: "3"
+              - paragraph [ref=e44]:
+                - strong [ref=e45]: Waist circumference
+                - text: at navel height.
+            - generic [ref=e46]:
+              - generic [ref=e47]: "4"
+              - paragraph [ref=e48]:
+                - strong [ref=e49]: Hip circumference
+                - text: (women only) at the widest point.
+        - generic [ref=e50]:
+          - heading "Body Fat Categories" [level=2] [ref=e51]
+          - table [ref=e53]:
+            - rowgroup [ref=e54]:
+              - row "Category Men Women" [ref=e55]:
+                - columnheader "Category" [ref=e56]
+                - columnheader "Men" [ref=e57]
+                - columnheader "Women" [ref=e58]
+            - rowgroup [ref=e59]:
+              - row "Essential fat 2 – 5% 10 – 13%" [ref=e60]:
+                - cell "Essential fat" [ref=e61]: Essential fat
+                - cell "2 – 5%" [ref=e63]
+                - cell "10 – 13%" [ref=e64]
+              - row "Athletes 6 – 13% 14 – 20%" [ref=e65]:
+                - cell "Athletes" [ref=e66]: Athletes
+                - cell "6 – 13%" [ref=e68]
+                - cell "14 – 20%" [ref=e69]
+              - row "Fitness 14 – 17% 21 – 24%" [ref=e70]:
+                - cell "Fitness" [ref=e71]: Fitness
+                - cell "14 – 17%" [ref=e73]
+                - cell "21 – 24%" [ref=e74]
+              - row "Average 18 – 24% 25 – 31%" [ref=e75]:
+                - cell "Average" [ref=e76]: Average
+                - cell "18 – 24%" [ref=e78]
+                - cell "25 – 31%" [ref=e79]
+              - row "Overweight > 25% > 32%" [ref=e80]:
+                - cell "Overweight" [ref=e81]: Overweight
+                - cell "> 25%" [ref=e83]
+                - cell "> 32%" [ref=e84]
+        - generic [ref=e85]:
+          - heading "Calculate your body fat percentage now" [level=3] [ref=e86]
+          - paragraph [ref=e87]: U.S. Navy method — free and no sign-up required.
+          - link "Calculate for free now →" [ref=e88] [cursor=pointer]:
+            - /url: /en/body-fat-calculator
+        - generic [ref=e89]:
+          - heading "Body Fat vs. BMI" [level=2] [ref=e90]
+          - paragraph [ref=e91]: BMI cannot differentiate between fat and muscle. A muscular athlete is often classified as "overweight" even though their body fat percentage is very low. Body fat percentage solves this problem.
+          - paragraph [ref=e92]:
+            - text: Complement your result with your
+            - link "ideal weight" [ref=e93] [cursor=pointer]:
+              - /url: /en/blog/calculate-ideal-weight
+            - text: for a comprehensive picture of your body composition.
+        - generic [ref=e94]:
+          - heading "Conclusion" [level=2] [ref=e95]
+          - paragraph [ref=e96]:
+            - text: Body fat percentage is more meaningful than BMI. Use our
+            - link "Body Fat Calculator" [ref=e97] [cursor=pointer]:
+              - /url: /en/body-fat-calculator
+            - text: and complement the result with your
+            - link "BMI" [ref=e98] [cursor=pointer]:
+              - /url: /en/bmi-calculator
+            - text: and
+            - link "ideal weight" [ref=e99] [cursor=pointer]:
+              - /url: /en/ideal-weight-calculator
+            - text: .
+        - generic [ref=e100]:
+          - heading "Related Articles" [level=2] [ref=e101]
+          - generic [ref=e102]:
+            - 'link "Calculate BMI: What the Body Mass Index Really Tells You Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist. Read more →" [ref=e103] [cursor=pointer]':
+              - /url: /en/blog/calculate-bmi
+              - 'heading "Calculate BMI: What the Body Mass Index Really Tells You" [level=3] [ref=e104]'
+              - paragraph [ref=e105]: Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist.
+              - generic [ref=e106]: Read more →
+            - 'link "Calculate Ideal Weight: What Is the Perfect Weight? Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range. Read more →" [ref=e107] [cursor=pointer]':
+              - /url: /en/blog/calculate-ideal-weight
+              - 'heading "Calculate Ideal Weight: What Is the Perfect Weight?" [level=3] [ref=e108]'
+              - paragraph [ref=e109]: Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range.
+              - generic [ref=e110]: Read more →
+  - contentinfo [ref=e111]:
+    - paragraph [ref=e112]: For informational purposes only — not medical advice
+```

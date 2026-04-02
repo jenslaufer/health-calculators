@@ -1,0 +1,165 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - link "← All Calculators" [ref=e18] [cursor=pointer]:
+          - /url: /en/
+        - heading "Blog" [level=1] [ref=e19]
+        - paragraph [ref=e20]: Evidence-based articles on health metrics, nutrition, and fitness.
+      - generic [ref=e21]:
+        - 'link "2026-03-25 · 8 min Calculate BMI: What the Body Mass Index Really Tells You Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist." [ref=e22] [cursor=pointer]':
+          - /url: /en/blog/calculate-bmi
+          - generic [ref=e23]:
+            - generic [ref=e24]: 2026-03-25
+            - generic [ref=e25]: ·
+            - generic [ref=e26]: 8 min
+          - 'heading "Calculate BMI: What the Body Mass Index Really Tells You" [level=2] [ref=e27]'
+          - paragraph [ref=e28]: Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist.
+        - 'link "2026-03-25 · 7 min Calculate Ideal Weight: What Is the Perfect Weight? Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range." [ref=e29] [cursor=pointer]':
+          - /url: /en/blog/calculate-ideal-weight
+          - generic [ref=e30]:
+            - generic [ref=e31]: 2026-03-25
+            - generic [ref=e32]: ·
+            - generic [ref=e33]: 7 min
+          - 'heading "Calculate Ideal Weight: What Is the Perfect Weight?" [level=2] [ref=e34]'
+          - paragraph [ref=e35]: Calculate your ideal weight with four formulas. Devine, Robinson, Miller & Hamwi compared — plus healthy BMI range.
+        - 'link "2026-03-25 · 7 min Body Fat Percentage Calculator: Navy Method, Charts & Tips Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI." [ref=e36] [cursor=pointer]':
+          - /url: /en/blog/calculate-body-fat
+          - generic [ref=e37]:
+            - generic [ref=e38]: 2026-03-25
+            - generic [ref=e39]: ·
+            - generic [ref=e40]: 7 min
+          - 'heading "Body Fat Percentage Calculator: Navy Method, Charts & Tips" [level=2] [ref=e41]'
+          - paragraph [ref=e42]: Calculate body fat percentage using the U.S. Navy method. Categories, guidelines and why body fat is more meaningful than BMI.
+        - 'link "2026-03-25 · 7 min Calculate TDEE: How to Determine Your Daily Calorie Burn Calculate TDEE using the Mifflin-St Jeor formula. Basal metabolic rate, activity factors and calorie goals for losing or gaining weight." [ref=e43] [cursor=pointer]':
+          - /url: /en/blog/calculate-tdee
+          - generic [ref=e44]:
+            - generic [ref=e45]: 2026-03-25
+            - generic [ref=e46]: ·
+            - generic [ref=e47]: 7 min
+          - 'heading "Calculate TDEE: How to Determine Your Daily Calorie Burn" [level=2] [ref=e48]'
+          - paragraph [ref=e49]: Calculate TDEE using the Mifflin-St Jeor formula. Basal metabolic rate, activity factors and calorie goals for losing or gaining weight.
+        - 'link "2026-03-25 · 7 min Calculate Macronutrients: How to Split Protein, Carbs & Fat Calculate macronutrients based on your calorie needs and goals. Optimal distribution for weight loss, maintenance and muscle building." [ref=e50] [cursor=pointer]':
+          - /url: /en/blog/calculate-macros
+          - generic [ref=e51]:
+            - generic [ref=e52]: 2026-03-25
+            - generic [ref=e53]: ·
+            - generic [ref=e54]: 7 min
+          - 'heading "Calculate Macronutrients: How to Split Protein, Carbs & Fat" [level=2] [ref=e55]'
+          - paragraph [ref=e56]: Calculate macronutrients based on your calorie needs and goals. Optimal distribution for weight loss, maintenance and muscle building.
+        - 'link "2026-03-25 · 6 min Calculate Water Intake: How Much Water You Need Daily Calculate daily water intake — adjusted for weight, activity and climate. With glass conversion and practical tips." [ref=e57] [cursor=pointer]':
+          - /url: /en/blog/calculate-water-intake
+          - generic [ref=e58]:
+            - generic [ref=e59]: 2026-03-25
+            - generic [ref=e60]: ·
+            - generic [ref=e61]: 6 min
+          - 'heading "Calculate Water Intake: How Much Water You Need Daily" [level=2] [ref=e62]'
+          - paragraph [ref=e63]: Calculate daily water intake — adjusted for weight, activity and climate. With glass conversion and practical tips.
+        - 'link "2026-03-25 · 6 min Calculate Sleep Cycles: Wake Up at the Right Time Calculate sleep cycles for restful sleep. Understand 90-minute cycles and find your optimal bedtime or wake-up time." [ref=e64] [cursor=pointer]':
+          - /url: /en/blog/calculate-sleep-cycles
+          - generic [ref=e65]:
+            - generic [ref=e66]: 2026-03-25
+            - generic [ref=e67]: ·
+            - generic [ref=e68]: 6 min
+          - 'heading "Calculate Sleep Cycles: Wake Up at the Right Time" [level=2] [ref=e69]'
+          - paragraph [ref=e70]: Calculate sleep cycles for restful sleep. Understand 90-minute cycles and find your optimal bedtime or wake-up time.
+        - 'link "2026-03-26 · 7 min Calculate Due Date: When Is My Baby Coming? Calculate your due date using Naegele''s rule. Pregnancy weeks, trimesters, milestones and why only 4% of babies arrive on the estimated date." [ref=e71] [cursor=pointer]':
+          - /url: /en/blog/calculate-due-date
+          - generic [ref=e72]:
+            - generic [ref=e73]: 2026-03-26
+            - generic [ref=e74]: ·
+            - generic [ref=e75]: 7 min
+          - 'heading "Calculate Due Date: When Is My Baby Coming?" [level=2] [ref=e76]'
+          - paragraph [ref=e77]: Calculate your due date using Naegele's rule. Pregnancy weeks, trimesters, milestones and why only 4% of babies arrive on the estimated date.
+        - 'link "2026-03-27 · 7 min Calculate Calorie Deficit: How to Lose Weight Safely Calculate your calorie deficit using the Mifflin-St Jeor formula. TDEE, safe deficit and the 7,700 kcal rule explained simply." [ref=e78] [cursor=pointer]':
+          - /url: /en/blog/calculate-calorie-deficit
+          - generic [ref=e79]:
+            - generic [ref=e80]: 2026-03-27
+            - generic [ref=e81]: ·
+            - generic [ref=e82]: 7 min
+          - 'heading "Calculate Calorie Deficit: How to Lose Weight Safely" [level=2] [ref=e83]'
+          - paragraph [ref=e84]: Calculate your calorie deficit using the Mifflin-St Jeor formula. TDEE, safe deficit and the 7,700 kcal rule explained simply.
+        - 'link "2026-03-25 · 7 min Calculate Heart Rate Zones: Train in the Right Range Calculate the five heart rate zones. Standard and Karvonen methods for targeted training from fat burn to VO2max." [ref=e85] [cursor=pointer]':
+          - /url: /en/blog/calculate-heart-rate-zones
+          - generic [ref=e86]:
+            - generic [ref=e87]: 2026-03-25
+            - generic [ref=e88]: ·
+            - generic [ref=e89]: 7 min
+          - 'heading "Calculate Heart Rate Zones: Train in the Right Range" [level=2] [ref=e90]'
+          - paragraph [ref=e91]: Calculate the five heart rate zones. Standard and Karvonen methods for targeted training from fat burn to VO2max.
+        - 'link "2026-03-27 · 7 min Calculate Waist-to-Hip Ratio: WHR, WHO Thresholds & Risk Calculate your waist-to-hip ratio (WHR) and assess health risk. WHO thresholds, measurement guide and why WHR is more meaningful than BMI." [ref=e92] [cursor=pointer]':
+          - /url: /en/blog/calculate-waist-hip-ratio
+          - generic [ref=e93]:
+            - generic [ref=e94]: 2026-03-27
+            - generic [ref=e95]: ·
+            - generic [ref=e96]: 7 min
+          - 'heading "Calculate Waist-to-Hip Ratio: WHR, WHO Thresholds & Risk" [level=2] [ref=e97]'
+          - paragraph [ref=e98]: Calculate your waist-to-hip ratio (WHR) and assess health risk. WHO thresholds, measurement guide and why WHR is more meaningful than BMI.
+        - 'link "2026-03-27 · 7 min Measure Blood Pressure: Understand & Interpret Your Values Measure blood pressure correctly and interpret your values. AHA categories, measurement tips, risk factors and when to see a doctor." [ref=e99] [cursor=pointer]':
+          - /url: /en/blog/measure-blood-pressure
+          - generic [ref=e100]:
+            - generic [ref=e101]: 2026-03-27
+            - generic [ref=e102]: ·
+            - generic [ref=e103]: 7 min
+          - 'heading "Measure Blood Pressure: Understand & Interpret Your Values" [level=2] [ref=e104]'
+          - paragraph [ref=e105]: Measure blood pressure correctly and interpret your values. AHA categories, measurement tips, risk factors and when to see a doctor.
+        - 'link "2026-03-29 · 7 min Calculate Ovulation: How to Determine Your Fertile Days Calculate your ovulation with the calendar method. Fertile window, cycle length, luteal phase and tips for natural family planning." [ref=e106] [cursor=pointer]':
+          - /url: /en/blog/calculate-ovulation
+          - generic [ref=e107]:
+            - generic [ref=e108]: 2026-03-29
+            - generic [ref=e109]: ·
+            - generic [ref=e110]: 7 min
+          - 'heading "Calculate Ovulation: How to Determine Your Fertile Days" [level=2] [ref=e111]'
+          - paragraph [ref=e112]: Calculate your ovulation with the calendar method. Fertile window, cycle length, luteal phase and tips for natural family planning.
+        - 'link "2026-03-30 · 7 min Calculate Protein Intake: How Much Protein You Really Need Calculate your daily protein intake based on weight, activity and goal. Recommendations for muscle building, fat loss and maintenance — with food sources table." [ref=e113] [cursor=pointer]':
+          - /url: /en/blog/protein-intake-guide
+          - generic [ref=e114]:
+            - generic [ref=e115]: 2026-03-30
+            - generic [ref=e116]: ·
+            - generic [ref=e117]: 7 min
+          - 'heading "Calculate Protein Intake: How Much Protein You Really Need" [level=2] [ref=e118]'
+          - paragraph [ref=e119]: Calculate your daily protein intake based on weight, activity and goal. Recommendations for muscle building, fat loss and maintenance — with food sources table.
+        - 'link "2026-03-30 · 7 min Calculate BMR: Basal Metabolic Rate With Two Formulas Calculate your Basal Metabolic Rate (BMR) using Mifflin-St Jeor and Harris-Benedict formulas. Activity factors, influencing factors and practical tips." [ref=e120] [cursor=pointer]':
+          - /url: /en/blog/calculate-bmr
+          - generic [ref=e121]:
+            - generic [ref=e122]: 2026-03-30
+            - generic [ref=e123]: ·
+            - generic [ref=e124]: 7 min
+          - 'heading "Calculate BMR: Basal Metabolic Rate With Two Formulas" [level=2] [ref=e125]'
+          - paragraph [ref=e126]: Calculate your Basal Metabolic Rate (BMR) using Mifflin-St Jeor and Harris-Benedict formulas. Activity factors, influencing factors and practical tips.
+        - 'link "2026-04-02 · 7 min Calculate Calories Burned: How Many Calories You Really Burn Calculate calories burned with MET values. Formula, activity table, influencing factors and tips to boost your burn." [ref=e127] [cursor=pointer]':
+          - /url: /en/blog/calculate-calories-burned
+          - generic [ref=e128]:
+            - generic [ref=e129]: 2026-04-02
+            - generic [ref=e130]: ·
+            - generic [ref=e131]: 7 min
+          - 'heading "Calculate Calories Burned: How Many Calories You Really Burn" [level=2] [ref=e132]'
+          - paragraph [ref=e133]: Calculate calories burned with MET values. Formula, activity table, influencing factors and tips to boost your burn.
+        - 'link "2026-04-02 · 8 min Intermittent Fasting Guide with Calculator Intermittent fasting explained: protocols (16:8, 18:6, 20:4, OMAD), benefits, beginner tips, and free intermittent fasting calculator." [ref=e134] [cursor=pointer]':
+          - /url: /en/blog/intermittent-fasting-calculator
+          - generic [ref=e135]:
+            - generic [ref=e136]: 2026-04-02
+            - generic [ref=e137]: ·
+            - generic [ref=e138]: 8 min
+          - heading "Intermittent Fasting Guide with Calculator" [level=2] [ref=e139]
+          - paragraph [ref=e140]: "Intermittent fasting explained: protocols (16:8, 18:6, 20:4, OMAD), benefits, beginner tips, and free intermittent fasting calculator."
+  - contentinfo [ref=e141]:
+    - paragraph [ref=e142]: For informational purposes only — not medical advice
+```

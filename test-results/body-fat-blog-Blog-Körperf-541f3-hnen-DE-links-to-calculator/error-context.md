@@ -1,0 +1,133 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gesundheitsrechner" [ref=e7] [cursor=pointer]:
+          - /url: /de/
+        - generic [ref=e8]:
+          - link "Alle Rechner" [ref=e9] [cursor=pointer]:
+            - /url: /de/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /de/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /de/blog
+        - 'heading "Körperfettanteil berechnen: Methoden, Tabelle & Rechner" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: 25. März 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 7 min Lesezeit
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - text: Der
+            - strong [ref=e27]: Körperfettanteil
+            - text: ist eine der aussagekräftigsten Kennzahlen für deine Gesundheit. Anders als der
+            - link "BMI" [ref=e28] [cursor=pointer]:
+              - /url: /de/blog/bmi-berechnen
+            - text: unterscheidet er zwischen Fett- und Muskelmasse.
+          - paragraph [ref=e29]: In diesem Artikel erfährst du, wie die U.S. Navy-Methode funktioniert, welche Richtwerte für Männer und Frauen gelten, und warum der Körperfettanteil dem BMI überlegen ist.
+        - generic [ref=e30]:
+          - heading "Die U.S. Navy-Methode" [level=2] [ref=e31]
+          - paragraph [ref=e32]: "Die U.S. Navy-Methode wurde in den 1980er Jahren entwickelt, um den Körperfettanteil von Militärpersonal schnell und ohne teure Geräte zu bestimmen. Du brauchst nur ein Maßband und drei bis vier Messungen:"
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - generic [ref=e35]: "1"
+              - paragraph [ref=e36]:
+                - strong [ref=e37]: Körpergröße
+                - text: in cm oder Inches messen.
+            - generic [ref=e38]:
+              - generic [ref=e39]: "2"
+              - paragraph [ref=e40]:
+                - strong [ref=e41]: Halsumfang
+                - text: an der schmalsten Stelle messen.
+            - generic [ref=e42]:
+              - generic [ref=e43]: "3"
+              - paragraph [ref=e44]:
+                - strong [ref=e45]: Taillenumfang
+                - text: auf Nabelhöhe messen.
+            - generic [ref=e46]:
+              - generic [ref=e47]: "4"
+              - paragraph [ref=e48]:
+                - strong [ref=e49]: Hüftumfang
+                - text: (nur Frauen) an der breitesten Stelle messen.
+        - generic [ref=e50]:
+          - heading "Körperfett-Kategorien" [level=2] [ref=e51]
+          - table [ref=e53]:
+            - rowgroup [ref=e54]:
+              - row "Kategorie Männer Frauen" [ref=e55]:
+                - columnheader "Kategorie" [ref=e56]
+                - columnheader "Männer" [ref=e57]
+                - columnheader "Frauen" [ref=e58]
+            - rowgroup [ref=e59]:
+              - row "Essentielles Fett 2 – 5 % 10 – 13 %" [ref=e60]:
+                - cell "Essentielles Fett" [ref=e61]: Essentielles Fett
+                - cell "2 – 5 %" [ref=e63]
+                - cell "10 – 13 %" [ref=e64]
+              - row "Athleten 6 – 13 % 14 – 20 %" [ref=e65]:
+                - cell "Athleten" [ref=e66]: Athleten
+                - cell "6 – 13 %" [ref=e68]
+                - cell "14 – 20 %" [ref=e69]
+              - row "Fitness 14 – 17 % 21 – 24 %" [ref=e70]:
+                - cell "Fitness" [ref=e71]: Fitness
+                - cell "14 – 17 %" [ref=e73]
+                - cell "21 – 24 %" [ref=e74]
+              - row "Durchschnitt 18 – 24 % 25 – 31 %" [ref=e75]:
+                - cell "Durchschnitt" [ref=e76]: Durchschnitt
+                - cell "18 – 24 %" [ref=e78]
+                - cell "25 – 31 %" [ref=e79]
+              - row "Übergewicht > 25 % > 32 %" [ref=e80]:
+                - cell "Übergewicht" [ref=e81]: Übergewicht
+                - cell "> 25 %" [ref=e83]
+                - cell "> 32 %" [ref=e84]
+        - generic [ref=e85]:
+          - heading "Jetzt deinen Körperfettanteil berechnen" [level=3] [ref=e86]
+          - paragraph [ref=e87]: U.S. Navy-Methode — kostenlos und ohne Anmeldung.
+          - link "Jetzt kostenlos berechnen →" [ref=e88] [cursor=pointer]:
+            - /url: /de/koerperfett-rechner
+        - generic [ref=e89]:
+          - heading "Körperfett vs. BMI" [level=2] [ref=e90]
+          - paragraph [ref=e91]: Der BMI kann nicht zwischen Fett und Muskeln unterscheiden. Ein muskulöser Sportler wird oft als „übergewichtig" eingestuft, obwohl sein Körperfettanteil sehr niedrig ist. Der Körperfettanteil löst dieses Problem.
+          - paragraph [ref=e92]:
+            - text: Ergänze dein Ergebnis mit deinem
+            - link "Idealgewicht" [ref=e93] [cursor=pointer]:
+              - /url: /de/blog/idealgewicht-berechnen
+            - text: ", um ein umfassendes Bild deiner Körperzusammensetzung zu erhalten."
+        - generic [ref=e94]:
+          - heading "Fazit" [level=2] [ref=e95]
+          - paragraph [ref=e96]:
+            - text: Der Körperfettanteil ist aussagekräftiger als der BMI. Nutze unseren
+            - link "Body Fat Calculator" [ref=e97] [cursor=pointer]:
+              - /url: /de/koerperfett-rechner
+            - text: und ergänze das Ergebnis mit dem
+            - link "BMI" [ref=e98] [cursor=pointer]:
+              - /url: /de/bmi-rechner
+            - text: und dem
+            - link "Idealgewicht" [ref=e99] [cursor=pointer]:
+              - /url: /de/idealgewicht-rechner
+            - text: .
+        - generic [ref=e100]:
+          - heading "Verwandte Artikel" [level=2] [ref=e101]
+          - generic [ref=e102]:
+            - 'link "BMI berechnen: Was der Body Mass Index wirklich aussagt Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner. Weiterlesen →" [ref=e103] [cursor=pointer]':
+              - /url: /de/blog/bmi-berechnen
+              - 'heading "BMI berechnen: Was der Body Mass Index wirklich aussagt" [level=3] [ref=e104]'
+              - paragraph [ref=e105]: "Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner."
+              - generic [ref=e106]: Weiterlesen →
+            - 'link "Idealgewicht berechnen: Was ist das perfekte Gewicht? Idealgewicht mit vier Formeln berechnen. Devine, Robinson, Miller & Hamwi im Vergleich — plus gesunder BMI-Bereich. Weiterlesen →" [ref=e107] [cursor=pointer]':
+              - /url: /de/blog/idealgewicht-berechnen
+              - 'heading "Idealgewicht berechnen: Was ist das perfekte Gewicht?" [level=3] [ref=e108]'
+              - paragraph [ref=e109]: Idealgewicht mit vier Formeln berechnen. Devine, Robinson, Miller & Hamwi im Vergleich — plus gesunder BMI-Bereich.
+              - generic [ref=e110]: Weiterlesen →
+  - contentinfo [ref=e111]:
+    - paragraph [ref=e112]: Nur zu Informationszwecken — kein medizinischer Rat
+```

@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gesundheitsrechner" [ref=e7] [cursor=pointer]:
+          - /url: /de/
+        - generic [ref=e8]:
+          - link "Alle Rechner" [ref=e9] [cursor=pointer]:
+            - /url: /de/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /de/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - link "← Alle Rechner" [ref=e17] [cursor=pointer]:
+        - /url: /de/
+      - heading "Eisprung-Rechner" [level=1] [ref=e18]
+      - paragraph [ref=e19]: Berechne deinen Eisprung und deine fruchtbaren Tage basierend auf deiner Zykluslänge.
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: Erster Tag der letzten Periode
+        - textbox "Erster Tag der letzten Periode" [ref=e24]
+      - generic [ref=e25]:
+        - generic [ref=e26]: Zykluslänge (Tage)
+        - spinbutton "Zykluslänge (Tage)" [ref=e27]: "28"
+    - generic [ref=e28]:
+      - paragraph [ref=e29]: Anzeige
+      - paragraph [ref=e30]: Schwangerschafts-Essentials — von Vitaminen bis Erstausstattung.
+      - link "Produkte entdecken" [ref=e31] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e32]:
+      - heading "So funktioniert's" [level=2] [ref=e33]
+      - paragraph [ref=e34]: "Dieser Rechner nutzt die Kalendermethode: Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Bei einem 28-Tage-Zyklus ist das Tag 14, bei einem 32-Tage-Zyklus Tag 18. Das fruchtbare Fenster umfasst 5 Tage vor dem Eisprung, den Eisprungtag und 1 Tag danach."
+    - generic "Advertisement" [ref=e35]:
+      - generic [ref=e36]: Ad Slot
+    - generic [ref=e37]:
+      - paragraph [ref=e38]: Zum Nachlesen
+      - 'link "Eisprung berechnen: So bestimmst du deine fruchtbaren Tage →" [ref=e39] [cursor=pointer]':
+        - /url: /de/blog/eisprung-berechnen
+      - paragraph [ref=e40]: Eisprung berechnen mit der Kalendermethode. Fruchtbare Tage, Zykluslänge, Lutealphase und Tipps zur natürlichen Familienplanung.
+  - contentinfo [ref=e41]:
+    - paragraph [ref=e42]: Nur zu Informationszwecken — kein medizinischer Rat
+```

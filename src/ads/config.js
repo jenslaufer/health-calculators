@@ -1,139 +1,161 @@
 export const adConfig = {
-  supplements: {
-    network: 'various',
-    program: 'MyProtein / Foodspring',
-    affiliate: {
-      de: {
+  // ── German affiliate programs (unchanged) ──
+  de: {
+    supplements: {
+      network: 'various',
+      program: 'MyProtein / Foodspring',
+      affiliate: {
         text: 'Proteinpulver & Supplements vergleichen — für dein Trainingsziel.',
         cta: 'Jetzt vergleichen',
         url: '#',
       },
-      en: {
-        text: 'Compare protein powders & supplements — for your training goal.',
-        cta: 'Compare now',
-        url: '#',
-      },
     },
-  },
-  fitness: {
-    network: 'Amazon PartnerNet',
-    program: 'Fitness Trackers & Scales',
-    affiliate: {
-      de: {
+    fitness: {
+      network: 'Amazon PartnerNet',
+      program: 'Fitness Trackers & Scales',
+      affiliate: {
         text: 'Fitness-Tracker & Waagen im Vergleich — für präzises Tracking.',
         cta: 'Produkte vergleichen',
         url: '#',
       },
-      en: {
-        text: 'Compare fitness trackers & scales — for precise tracking.',
-        cta: 'Compare products',
-        url: '#',
-      },
     },
-  },
-  nutrition: {
-    network: 'various',
-    program: 'HelloFresh / Weight Management',
-    affiliate: {
-      de: {
+    nutrition: {
+      network: 'various',
+      program: 'HelloFresh / Weight Management',
+      affiliate: {
         text: 'Gesund essen leicht gemacht — fertige Rezepte nach Hause.',
         cta: 'Angebote ansehen',
         url: '#',
       },
-      en: {
-        text: 'Healthy eating made easy — ready-made recipes delivered.',
-        cta: 'View offers',
-        url: '#',
-      },
     },
-  },
-  pregnancy: {
-    network: 'Amazon PartnerNet',
-    program: 'Pregnancy & Baby Products',
-    affiliate: {
-      de: {
+    pregnancy: {
+      network: 'Amazon PartnerNet',
+      program: 'Pregnancy & Baby Products',
+      affiliate: {
         text: 'Schwangerschafts-Essentials — von Vitaminen bis Erstausstattung.',
         cta: 'Produkte entdecken',
         url: '#',
       },
-      en: {
-        text: 'Pregnancy essentials — from vitamins to first gear.',
-        cta: 'Discover products',
-        url: '#',
-      },
     },
-  },
-  wellness: {
-    network: 'Amazon PartnerNet',
-    program: 'Blood Pressure Monitors & Sleep Aids',
-    affiliate: {
-      de: {
+    wellness: {
+      network: 'Amazon PartnerNet',
+      program: 'Blood Pressure Monitors & Sleep Aids',
+      affiliate: {
         text: 'Blutdruckmessgeräte & Schlaf-Tracker im Vergleich.',
         cta: 'Jetzt vergleichen',
         url: '#',
       },
-      en: {
-        text: 'Compare blood pressure monitors & sleep trackers.',
-        cta: 'Compare now',
-        url: '#',
-      },
     },
-  },
-  default: {
-    network: 'various',
-    program: 'General Health & Fitness',
-    affiliate: {
-      de: {
+    default: {
+      network: 'various',
+      program: 'General Health & Fitness',
+      affiliate: {
         text: 'Gesundheit optimieren? Die besten Tools und Produkte im Vergleich.',
         cta: 'Jetzt entdecken',
         url: '#',
       },
-      en: {
-        text: 'Optimize your health? Compare the best tools and products.',
-        cta: 'Discover now',
-        url: '#',
+    },
+  },
+
+  // ── English affiliate programs ──
+  en: {
+    'weight-loss': {
+      network: 'Impact',
+      program: 'Hims & Hers',
+      affiliate: {
+        text: 'Clinically-backed weight loss programs — prescribed by real doctors.',
+        cta: 'Get started',
+        url: '#', // TODO: Add Hims & Hers affiliate tracking link (Impact)
+      },
+    },
+    coaching: {
+      network: 'ShareASale',
+      program: 'Noom',
+      affiliate: {
+        text: 'Personalized coaching to build healthier habits — backed by science.',
+        cta: 'Try Noom',
+        url: '#', // TODO: Add Noom affiliate tracking link (ShareASale)
+      },
+    },
+    greens: {
+      network: 'Impact',
+      program: 'AG1 Athletic Greens',
+      affiliate: {
+        text: 'Daily nutrition made simple — vitamins, probiotics & adaptogens in one scoop.',
+        cta: 'Try AG1',
+        url: '#', // TODO: Add AG1 affiliate tracking link (Impact)
+      },
+    },
+    supplements: {
+      network: 'Impact',
+      program: 'Thorne',
+      affiliate: {
+        text: 'NSF-certified supplements trusted by pro athletes and practitioners.',
+        cta: 'Shop Thorne',
+        url: '#', // TODO: Add Thorne affiliate tracking link (Impact)
+      },
+    },
+    vitamins: {
+      network: 'FlexOffers',
+      program: 'Ritual',
+      affiliate: {
+        text: 'Essential vitamins with traceable ingredients — clean and science-backed.',
+        cta: 'Try Ritual',
+        url: '#', // TODO: Add Ritual affiliate tracking link (FlexOffers)
+      },
+    },
+    default: {
+      network: 'Impact',
+      program: 'AG1 Athletic Greens',
+      affiliate: {
+        text: 'Daily nutrition made simple — vitamins, probiotics & adaptogens in one scoop.',
+        cta: 'Try AG1',
+        url: '#', // TODO: Add AG1 affiliate tracking link (Impact)
       },
     },
   },
 }
 
 export const routeContextMap = {
-  // supplements: Protein, Macro, TDEE, Calorie Deficit, BMR
-  'protein-rechner': 'supplements',
-  'protein-calculator': 'supplements',
-  'makro-rechner': 'supplements',
-  'macro-calculator': 'supplements',
-  'tdee-rechner': 'supplements',
-  'tdee-calculator': 'supplements',
-  'kaloriendefizit-rechner': 'supplements',
-  'calorie-deficit-calculator': 'supplements',
-  'bmr-rechner': 'supplements',
-  'bmr-calculator': 'supplements',
-  // fitness: BMI, Body Fat, Heart Rate, WHR
-  'bmi-rechner': 'fitness',
-  'bmi-calculator': 'fitness',
-  'koerperfett-rechner': 'fitness',
-  'body-fat-calculator': 'fitness',
-  'herzfrequenz-zonen': 'fitness',
-  'heart-rate-zones': 'fitness',
-  'taille-hueft-verhaeltnis': 'fitness',
-  'waist-hip-ratio-calculator': 'fitness',
-  // nutrition: Ideal Weight
-  'idealgewicht-rechner': 'nutrition',
-  'ideal-weight-calculator': 'nutrition',
-  // pregnancy: Pregnancy, Ovulation
-  'schwangerschafts-rechner': 'pregnancy',
-  'pregnancy-calculator': 'pregnancy',
-  'eisprung-rechner': 'pregnancy',
-  'ovulation-calculator': 'pregnancy',
-  // wellness: Blood Pressure, Sleep, Water Intake
-  'blutdruck-rechner': 'wellness',
-  'blood-pressure-calculator': 'wellness',
-  'schlafzyklen-rechner': 'wellness',
-  'sleep-cycle-calculator': 'wellness',
-  'wasser-rechner': 'wellness',
-  'water-intake-calculator': 'wellness',
-  // nutrition: Intermittent Fasting
-  'intervallfasten-rechner': 'nutrition',
-  'intermittent-fasting-calculator': 'nutrition',
+  // ── German route mappings (unchanged) ──
+  de: {
+    // supplements: Protein, Macro, TDEE, Calorie Deficit, BMR
+    'protein-rechner': 'supplements',
+    'makro-rechner': 'supplements',
+    'tdee-rechner': 'supplements',
+    'kaloriendefizit-rechner': 'supplements',
+    'bmr-rechner': 'supplements',
+    // fitness: BMI, Body Fat, Heart Rate, WHR
+    'bmi-rechner': 'fitness',
+    'koerperfett-rechner': 'fitness',
+    'herzfrequenz-zonen': 'fitness',
+    'taille-hueft-verhaeltnis': 'fitness',
+    // nutrition: Ideal Weight, Intermittent Fasting
+    'idealgewicht-rechner': 'nutrition',
+    'intervallfasten-rechner': 'nutrition',
+    // pregnancy: Pregnancy, Ovulation
+    'schwangerschafts-rechner': 'pregnancy',
+    'eisprung-rechner': 'pregnancy',
+    // wellness: Blood Pressure, Sleep, Water Intake
+    'blutdruck-rechner': 'wellness',
+    'schlafzyklen-rechner': 'wellness',
+    'wasser-rechner': 'wellness',
+  },
+
+  // ── English route mappings ──
+  en: {
+    // weight-loss (Hims & Hers): BMI, Calorie Deficit, Body Fat, TDEE
+    'bmi-calculator': 'weight-loss',
+    'calorie-deficit-calculator': 'weight-loss',
+    'body-fat-calculator': 'weight-loss',
+    'tdee-calculator': 'weight-loss',
+    // coaching (Noom): Macro, BMR
+    'macro-calculator': 'coaching',
+    'bmr-calculator': 'coaching',
+    // supplements (Thorne): Protein
+    'protein-calculator': 'supplements',
+    // vitamins (Ritual): Water Intake
+    'water-intake-calculator': 'vitamins',
+    // all others fall through to default (AG1)
+  },
 }

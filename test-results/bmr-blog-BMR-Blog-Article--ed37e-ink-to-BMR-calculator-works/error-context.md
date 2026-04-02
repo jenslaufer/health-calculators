@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gesundheitsrechner" [ref=e7] [cursor=pointer]:
+          - /url: /de/
+        - generic [ref=e8]:
+          - link "Alle Rechner" [ref=e9] [cursor=pointer]:
+            - /url: /de/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /de/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - link "← Alle Rechner" [ref=e17] [cursor=pointer]:
+        - /url: /de/
+      - heading "Grundumsatz-Rechner (BMR)" [level=1] [ref=e18]
+      - paragraph [ref=e19]: Berechne deinen Grundumsatz — die Kalorien, die dein Körper im Ruhezustand verbrennt.
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - button "Mann" [ref=e22]
+        - button "Frau" [ref=e23]
+      - generic [ref=e24]:
+        - button "Metrisch" [ref=e25]
+        - button "Imperial" [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: Alter
+          - spinbutton "Alter" [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]: Größe (cm)
+          - spinbutton "Größe (cm)" [ref=e33]
+        - generic [ref=e34]:
+          - generic [ref=e35]: Gewicht (kg)
+          - spinbutton "Gewicht (kg)" [ref=e36]
+      - generic [ref=e37]:
+        - generic [ref=e38]: Formel
+        - combobox "Formel" [ref=e39]:
+          - option "Mifflin-St Jeor" [selected]
+          - option "Harris-Benedict"
+    - generic [ref=e40]:
+      - paragraph [ref=e41]: Anzeige
+      - paragraph [ref=e42]: Proteinpulver & Supplements vergleichen — für dein Trainingsziel.
+      - link "Jetzt vergleichen" [ref=e43] [cursor=pointer]:
+        - /url: "#"
+    - generic "Advertisement" [ref=e44]:
+      - generic [ref=e45]: Ad Slot
+    - generic [ref=e46]:
+      - paragraph [ref=e47]: Zum Nachlesen
+      - 'link "Grundumsatz berechnen: BMR mit zwei Formeln ermitteln →" [ref=e48] [cursor=pointer]':
+        - /url: /de/blog/grundumsatz-berechnen
+      - paragraph [ref=e49]: Grundumsatz (BMR) berechnen mit der Mifflin-St Jeor- und Harris-Benedict-Formel. Aktivitätsfaktoren, Einflussfaktoren und praktische Tipps.
+  - contentinfo [ref=e50]:
+    - paragraph [ref=e51]: Nur zu Informationszwecken — kein medizinischer Rat
+```
