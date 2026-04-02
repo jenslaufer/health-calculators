@@ -152,6 +152,15 @@ export const articlesEn = [
     calculatorKey: 'intermittentFasting',
     related: ['calculate-calorie-deficit', 'calculate-tdee'],
   },
+  {
+    slug: 'calculate-running-pace',
+    title: 'Calculate Running Pace: Pace, Finish Time & Splits for Any Distance',
+    description: 'Calculate your running pace for 5K, 10K, half marathon, and marathon. Pace in min/km and min/mi, finish time, negative split strategy, and km/mile splits.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'runningPace',
+    related: ['calculate-calories-burned', 'calculate-heart-rate-zones'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -136,4 +136,7 @@ export const routeContextMap = {
   // nutrition: Intermittent Fasting
   'intervallfasten-rechner': 'nutrition',
   'intermittent-fasting-calculator': 'nutrition',
+  // fitness: Running Pace
+  'lauftempo-rechner': 'fitness',
+  'running-pace-calculator': 'fitness',
 }

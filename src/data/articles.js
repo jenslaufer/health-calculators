@@ -152,6 +152,15 @@ export const articles = [
     calculatorKey: 'intermittentFasting',
     related: ['kaloriendefizit-berechnen', 'tdee-berechnen'],
   },
+  {
+    slug: 'lauftempo-berechnen',
+    title: 'Lauftempo berechnen: Pace, Zielzeit & Splits für jede Distanz',
+    description: 'Lauftempo berechnen für 5K, 10K, Halbmarathon und Marathon. Pace in min/km, Zielzeit, Negative-Split-Strategie und Kilometer-Splits.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'runningPace',
+    related: ['kalorienverbrauch-berechnen', 'herzfrequenz-zonen-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
