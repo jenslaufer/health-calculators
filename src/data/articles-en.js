@@ -175,6 +175,15 @@ slug: 'calculate-running-pace',
     calculatorKey: 'runningPace',
     related: ['calculate-calories-burned', 'calculate-heart-rate-zones'],
   },
+  {
+    slug: 'keto-calculator-guide',
+    title: 'Keto Calculator: How to Calculate Your Keto Macros',
+    description: 'Calculate your keto macros — fat, protein and net carbs for the ketogenic diet. TDEE-based, personalized to your body and goals.',
+    date: '2026-04-03',
+    readTime: '8 min',
+    calculatorKey: 'keto',
+    related: ['calculate-macros', 'calculate-tdee'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

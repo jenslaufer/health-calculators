@@ -175,6 +175,15 @@ slug: 'lauftempo-berechnen',
     calculatorKey: 'runningPace',
     related: ['kalorienverbrauch-berechnen', 'herzfrequenz-zonen-berechnen'],
   },
+  {
+    slug: 'keto-rechner',
+    title: 'Keto-Rechner: Makros für die ketogene Ernährung berechnen',
+    description: 'Keto-Makros berechnen: Fett, Protein und Netto-Kohlenhydrate für die ketogene Diät. TDEE-basiert, individuell angepasst.',
+    date: '2026-04-03',
+    readTime: '8 min',
+    calculatorKey: 'keto',
+    related: ['makronaehrstoffe-berechnen', 'tdee-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

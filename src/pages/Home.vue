@@ -41,6 +41,7 @@ const groups = computed(() => [
       { name: t('home.calculators.protein.name'), description: t('home.calculators.protein.description'), path: localePath('protein') },
       { name: t('home.calculators.caloriesBurned.name'), description: t('home.calculators.caloriesBurned.description'), path: localePath('caloriesBurned') },
       { name: t('home.calculators.intermittentFasting.name'), description: t('home.calculators.intermittentFasting.description'), path: localePath('intermittentFasting') },
+      { name: t('home.calculators.keto.name'), description: t('home.calculators.keto.description'), path: localePath('keto') },
     ],
   },
   {
