@@ -1,0 +1,39 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancy": {
+        "name": "Pregnancy Due Date Calculator",
+        "description": "Estimate your due date and track milestones."
+      }
+    }
+  },
+  "pregnancy": {
+    "meta": {
+      "title": "Pregnancy Due Date Calculator — Free Naegele's Rule Calculator",
+      "description": "Calculate your pregnancy due date using Naegele's rule. Gestational age, trimester, conception date, progress bar, and milestone timeline. Free, instant, no sign-up."
+    },
+    "title": "Pregnancy Due Date Calculator",
+    "description": "Estimate your due date, gestational age, and pregnancy milestones.",
+    "lmp": "Last Menstrual Period",
+    "cycleLength": "Cycle Length (days)",
+    "dueDate": "Due Date",
+    "gestationalAge": "Gestational Age",
+    "weeksAndDays": "{weeks} weeks, {days} days",
+    "trimester": "Trimester",
+    "conceptionDate": "Conception Date",
+    "complete": "{pct}% complete",
+    "daysLeft": "{n} days left",
+    "milestones": "Milestones",
+    "week": "Week {n}",
+    "milestone6": "Heartbeat detectable",
+    "milestone12": "End of 1st trimester",
+    "milestone16": "Gender may be visible",
+    "milestone20": "Anatomy scan",
+    "milestone24": "Viability milestone",
+    "milestone28": "Start of 3rd trimester",
+    "milestone37": "Early term",
+    "milestone40": "Due date",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses Naegele's rule: add 280 days to the first day of your last menstrual period (LMP). If your cycle is longer or shorter than 28 days, the due date is adjusted accordingly. Gestational age counts from LMP, not from conception."
+  }
+}

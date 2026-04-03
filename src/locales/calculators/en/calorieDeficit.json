@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "calorieDeficit": {
+        "name": "Calorie Deficit Calculator",
+        "description": "Calculate your daily calorie target for weight loss."
+      }
+    }
+  },
+  "calorieDeficit": {
+    "meta": {
+      "title": "Calorie Deficit Calculator — Calculate Daily Calorie Goal",
+      "description": "Calculate your daily calorie goal for weight loss. Mifflin-St Jeor formula, individual deficit, and safety warnings."
+    },
+    "title": "Calorie Deficit Calculator",
+    "description": "Calculate your daily calorie goal for weight loss — based on the Mifflin-St Jeor formula.",
+    "heightCm": "Height (cm)",
+    "weightKg": "Weight (kg)",
+    "targetWeight": "Target weight (kg)",
+    "weeks": "Timeframe (weeks)",
+    "sedentary": "Sedentary (office job, little exercise)",
+    "lightlyActive": "Lightly active (1–3 days/week)",
+    "moderatelyActive": "Moderately active (3–5 days/week)",
+    "veryActive": "Very active (6–7 days/week)",
+    "extremelyActive": "Extremely active (athlete/physical job)",
+    "resultLabel": "kcal / day — your goal",
+    "tdee": "TDEE",
+    "dailyDeficit": "Daily Deficit",
+    "weeklyLoss": "Loss / Week",
+    "perWeek": "per week",
+    "warningUnsafe": "Your calorie goal is below 1,200 kcal/day. This is a health concern — please consult a doctor.",
+    "warningAggressive": "You are planning to lose more than 1 kg per week. A slower pace is more sustainable and healthier."
+  }
+}

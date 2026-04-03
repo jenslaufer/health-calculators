@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "calorieDeficit": {
+        "name": "Kaloriendefizit-Rechner",
+        "description": "Berechne dein tägliches Kalorienziel zum Abnehmen."
+      }
+    }
+  },
+  "calorieDeficit": {
+    "meta": {
+      "title": "Kaloriendefizit-Rechner — Tägliches Kalorienziel berechnen",
+      "description": "Berechne dein tägliches Kalorienziel zum Abnehmen. Mifflin-St Jeor-Formel, individuelles Defizit und Sicherheitswarnungen."
+    },
+    "title": "Kaloriendefizit-Rechner",
+    "description": "Berechne dein tägliches Kalorienziel zum Abnehmen — basierend auf der Mifflin-St Jeor-Formel.",
+    "heightCm": "Größe (cm)",
+    "weightKg": "Gewicht (kg)",
+    "targetWeight": "Zielgewicht (kg)",
+    "weeks": "Zeitraum (Wochen)",
+    "sedentary": "Sitzend (Bürojob, wenig Bewegung)",
+    "lightlyActive": "Leicht aktiv (1–3 Tage/Woche)",
+    "moderatelyActive": "Moderat aktiv (3–5 Tage/Woche)",
+    "veryActive": "Sehr aktiv (6–7 Tage/Woche)",
+    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)",
+    "resultLabel": "kcal / Tag — dein Ziel",
+    "tdee": "TDEE",
+    "dailyDeficit": "Tägliches Defizit",
+    "weeklyLoss": "Abnahme / Woche",
+    "perWeek": "pro Woche",
+    "warningUnsafe": "Dein Kalorienziel liegt unter 1.200 kcal/Tag. Das ist gesundheitlich bedenklich — bitte sprich mit einem Arzt.",
+    "warningAggressive": "Du planst mehr als 1 kg pro Woche abzunehmen. Ein langsameres Tempo ist nachhaltiger und gesünder."
+  }
+}

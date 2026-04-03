@@ -1,0 +1,27 @@
+{
+  "home": {
+    "calculators": {
+      "tdee": {
+        "name": "TDEE-Rechner",
+        "description": "Berechne deinen täglichen Kalorienbedarf."
+      }
+    }
+  },
+  "tdee": {
+    "meta": {
+      "title": "TDEE-Rechner — Kostenloser Kalorienbedarfs-Rechner",
+      "description": "Berechne deinen Gesamtenergieumsatz (TDEE). Wissenschaftlich fundierte Mifflin-St Jeor-Formel, individuell angepasst an dein Aktivitätslevel."
+    },
+    "title": "TDEE-Rechner",
+    "description": "Berechne deinen Gesamtenergieumsatz (TDEE) basierend auf der Mifflin-St Jeor-Gleichung.",
+    "sedentary": "Sitzend (Bürojob, wenig Bewegung)",
+    "lightlyActive": "Leicht aktiv (1–3 Tage/Woche)",
+    "moderatelyActive": "Moderat aktiv (3–5 Tage/Woche)",
+    "veryActive": "Sehr aktiv (6–7 Tage/Woche)",
+    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)",
+    "bmr": "BMR: {value} kcal",
+    "weightLoss": "Abnehmen",
+    "maintenance": "Halten",
+    "weightGain": "Zunehmen"
+  }
+}

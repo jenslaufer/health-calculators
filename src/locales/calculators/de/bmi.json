@@ -1,0 +1,23 @@
+{
+  "home": {
+    "calculators": {
+      "bmi": {
+        "name": "BMI-Rechner",
+        "description": "Prüfe, ob dein Gewicht im gesunden Bereich liegt."
+      }
+    }
+  },
+  "bmi": {
+    "meta": {
+      "title": "BMI-Rechner — Kostenloser Body-Mass-Index-Rechner",
+      "description": "Berechne deinen Body-Mass-Index sofort. Wissenschaftlich fundierte BMI-Formel, ohne Anmeldung."
+    },
+    "title": "BMI-Rechner",
+    "description": "Berechne deinen Body-Mass-Index und prüfe, ob dein Gewicht im gesunden Bereich liegt.",
+    "categories": "BMI-Kategorien",
+    "underweight": "Untergewicht",
+    "normal": "Normalgewicht",
+    "overweight": "Übergewicht",
+    "obese": "Adipositas"
+  }
+}

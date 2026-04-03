@@ -1,0 +1,40 @@
+{
+  "home": {
+    "calculators": {
+      "ovulation": {
+        "name": "Eisprung-Rechner",
+        "description": "Berechne deinen Eisprung und deine fruchtbaren Tage."
+      }
+    }
+  },
+  "ovulation": {
+    "meta": {
+      "title": "Eisprung-Rechner — Fruchtbare Tage berechnen | Health Calculators",
+      "description": "Eisprung und fruchtbare Tage berechnen. Zykluslänge eingeben, Eisprungdatum, fruchtbares Fenster und nächste Zyklen erhalten. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Eisprung-Rechner",
+    "description": "Berechne deinen Eisprung und deine fruchtbaren Tage basierend auf deiner Zykluslänge.",
+    "lmp": "Erster Tag der letzten Periode",
+    "cycleLength": "Zykluslänge (Tage)",
+    "ovulationDate": "Eisprung",
+    "fertileWindow": "Fruchtbares Fenster",
+    "cycleDay": "Zyklustag",
+    "dayN": "Tag {n}",
+    "currentCycle": "Aktueller Zyklus",
+    "phaseMenstruation": "Menstruation",
+    "phaseFollicular": "Follikelphase",
+    "phaseFertile": "Fruchtbar",
+    "phaseLuteal": "Lutealphase",
+    "currentPhaseLabel": "Aktuelle Phase",
+    "phase_menstruation": "Menstruation",
+    "phase_follicular": "Follikelphase",
+    "phase_fertile": "Fruchtbare Tage",
+    "phase_luteal": "Lutealphase",
+    "nextCycles": "Nächste 3 Zyklen",
+    "cycleN": "Zyklus {n}",
+    "periodLabel": "Periode",
+    "ovulationLabel": "Eisprung",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Bei einem 28-Tage-Zyklus ist das Tag 14, bei einem 32-Tage-Zyklus Tag 18. Das fruchtbare Fenster umfasst 5 Tage vor dem Eisprung, den Eisprungtag und 1 Tag danach."
+  }
+}

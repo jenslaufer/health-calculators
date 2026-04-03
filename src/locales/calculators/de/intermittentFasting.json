@@ -1,0 +1,36 @@
+{
+  "home": {
+    "calculators": {
+      "intermittentFasting": {
+        "name": "Intervallfasten-Rechner",
+        "description": "Berechne dein Essens- und Fastenfenster für dein Protokoll."
+      }
+    }
+  },
+  "intermittentFasting": {
+    "meta": {
+      "title": "Intervallfasten-Rechner — Essens- und Fastenfenster berechnen",
+      "description": "Berechne dein Essens- und Fastenfenster für 16:8, 18:6, 20:4 oder OMAD. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Intervallfasten-Rechner",
+    "description": "Berechne dein Essens- und Fastenfenster basierend auf deinem Protokoll und Zeitplan.",
+    "protocol": "Protokoll",
+    "mode": "Berechnung basierend auf",
+    "lastMeal": "Letzte Mahlzeit",
+    "firstMeal": "Erste Mahlzeit",
+    "lastMealTime": "Uhrzeit der letzten Mahlzeit",
+    "firstMealTime": "Uhrzeit der ersten Mahlzeit",
+    "eatingWindow": "Essensfenster",
+    "fastingWindow": "Fastenfenster",
+    "eating": "Essen",
+    "fasting": "Fasten",
+    "timeline": "24-Stunden-Übersicht",
+    "protocolTips": "Protokoll-Tipps",
+    "tip168": "Beliebtestes Protokoll. Überspringe das Frühstück, iss zwischen 12:00 und 20:00 Uhr. Ideal für Einsteiger.",
+    "tip186": "Etwas strenger. Essensfenster z. B. 13:00–19:00 Uhr. Gut für Fortgeschrittene, die mehr Fastenzeit wollen.",
+    "tip204": "Nur 4 Stunden Essen, z. B. 15:00–19:00 Uhr. Erfordert Erfahrung und sättigende Mahlzeiten.",
+    "tipOmad": "Eine Mahlzeit am Tag. Maximale Fastenzeit, erfordert eine nährstoffreiche, kalorienreiche Mahlzeit.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Beim Intervallfasten wechselst du zwischen Essens- und Fastenphasen. Dieser Rechner berechnet dein persönliches Zeitfenster basierend auf dem gewählten Protokoll und deiner letzten oder ersten Mahlzeit. Während der Fastenphase sind nur Wasser, Tee und schwarzer Kaffee erlaubt."
+  }
+}

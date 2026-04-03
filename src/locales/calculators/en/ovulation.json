@@ -1,0 +1,40 @@
+{
+  "home": {
+    "calculators": {
+      "ovulation": {
+        "name": "Ovulation Calculator",
+        "description": "Calculate your ovulation date and fertile days."
+      }
+    }
+  },
+  "ovulation": {
+    "meta": {
+      "title": "Ovulation Calculator — Calculate Your Fertile Days | Health Calculators",
+      "description": "Calculate your ovulation and fertile window. Enter your cycle length, get your ovulation date, fertile window and next cycle predictions. Free, instant, no sign-up."
+    },
+    "title": "Ovulation Calculator",
+    "description": "Calculate your ovulation date and fertile window based on your cycle length.",
+    "lmp": "First Day of Last Period",
+    "cycleLength": "Cycle Length (days)",
+    "ovulationDate": "Ovulation Date",
+    "fertileWindow": "Fertile Window",
+    "cycleDay": "Cycle Day",
+    "dayN": "Day {n}",
+    "currentCycle": "Current Cycle",
+    "phaseMenstruation": "Menstruation",
+    "phaseFollicular": "Follicular",
+    "phaseFertile": "Fertile",
+    "phaseLuteal": "Luteal",
+    "currentPhaseLabel": "Current Phase",
+    "phase_menstruation": "Menstruation",
+    "phase_follicular": "Follicular Phase",
+    "phase_fertile": "Fertile Days",
+    "phase_luteal": "Luteal Phase",
+    "nextCycles": "Next 3 Cycles",
+    "cycleN": "Cycle {n}",
+    "periodLabel": "Period",
+    "ovulationLabel": "Ovulation",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses the calendar method: ovulation occurs approximately 14 days before your next period. For a 28-day cycle, that is day 14; for a 32-day cycle, day 18. The fertile window spans 5 days before ovulation, ovulation day, and 1 day after."
+  }
+}

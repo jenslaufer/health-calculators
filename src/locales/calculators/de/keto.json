@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "keto": {
+        "name": "Keto-Rechner",
+        "description": "Berechne deine Keto-Makros für die ketogene Ernährung."
+      }
+    }
+  },
+  "keto": {
+    "meta": {
+      "title": "Keto-Rechner — Makros für die ketogene Ernährung",
+      "description": "Berechne deine Keto-Makros: Fett, Protein und Netto-Kohlenhydrate. Basierend auf deinem TDEE, Ziel und Körperdaten. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Keto-Rechner",
+    "description": "Berechne deine personalisierten Keto-Makros basierend auf deinem Kalorienbedarf und Ziel.",
+    "sedentary": "Sitzend",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Moderat aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "goal": "Ziel",
+    "loseWeight": "Abnehmen",
+    "maintain": "Halten",
+    "buildMuscle": "Muskelaufbau",
+    "bodyFat": "Körperfett (%) — optional",
+    "netCarbLimit": "Netto-Kohlenhydrate (g)",
+    "targetCalories": "Kalorienziel",
+    "fat": "Fett (g)",
+    "protein": "Protein (g)",
+    "netCarbs": "Netto-KH (g)",
+    "fiberRecommendation": "Ballaststoff-Empfehlung"
+  }
+}

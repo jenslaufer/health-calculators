@@ -1,0 +1,21 @@
+{
+  "home": {
+    "calculators": {
+      "idealWeight": {
+        "name": "Ideal Weight Calculator",
+        "description": "Find your healthy weight range."
+      }
+    }
+  },
+  "idealWeight": {
+    "meta": {
+      "title": "Ideal Weight Calculator — Find Your Healthy Weight Range",
+      "description": "Calculate your ideal weight using four science-backed formulas. Personalized results based on height and gender."
+    },
+    "title": "Ideal Weight Calculator",
+    "description": "Find your healthy weight range based on four science-backed formulas.",
+    "formulaComparison": "Formula Comparison",
+    "healthyBmiRange": "Healthy BMI Range",
+    "bmiRangeText": "Based on a BMI of 18.5 – 24.9, your healthy weight range is"
+  }
+}

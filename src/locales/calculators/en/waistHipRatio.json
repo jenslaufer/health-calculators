@@ -1,0 +1,27 @@
+{
+  "home": {
+    "calculators": {
+      "waistHipRatio": {
+        "name": "Waist-to-Hip Ratio",
+        "description": "Assess your health risk with WHO guidelines."
+      }
+    }
+  },
+  "waistHipRatio": {
+    "meta": {
+      "title": "Waist-to-Hip Ratio Calculator — WHO Risk Assessment",
+      "description": "Calculate your waist-to-hip ratio and assess health risk based on WHO guidelines. Free, instant results for men and women."
+    },
+    "title": "Waist-to-Hip Ratio Calculator",
+    "description": "Assess your health risk based on WHO waist-to-hip ratio guidelines.",
+    "waist": "Waist circumference (cm)",
+    "hip": "Hip circumference (cm)",
+    "lowRisk": "Low Risk",
+    "moderateRisk": "Moderate Risk",
+    "highRisk": "High Risk",
+    "recLow": "Your WHR indicates a {start}low health risk{end}. Keep up your healthy lifestyle with regular exercise and a balanced diet.",
+    "recModerate": "Your WHR indicates a {start}moderate health risk{end}. Consider increasing physical activity and monitoring your waist circumference.",
+    "recHigh": "Your WHR indicates a {start}high health risk{end} according to WHO guidelines. Central obesity is associated with increased cardiovascular and metabolic risk. Consult a healthcare professional.",
+    "thresholdsTitle": "WHO Risk Thresholds ({gender})"
+  }
+}

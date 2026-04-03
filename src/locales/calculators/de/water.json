@@ -1,0 +1,31 @@
+{
+  "home": {
+    "calculators": {
+      "water": {
+        "name": "Wasserbedarf-Rechner",
+        "description": "Wie viel Wasser solltest du täglich trinken?"
+      }
+    }
+  },
+  "water": {
+    "meta": {
+      "title": "Wasserbedarf-Rechner — Täglicher Flüssigkeitsbedarf",
+      "description": "Berechne, wie viel Wasser du täglich trinken solltest. Individuell angepasst an Gewicht, Aktivität und Klima."
+    },
+    "title": "Wasserbedarf-Rechner",
+    "description": "Berechne deinen täglichen Wasserbedarf basierend auf Gewicht, Aktivität und Klima.",
+    "climate": "Klima",
+    "sedentary": "Sitzend",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Moderat aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "temperate": "Gemäßigt",
+    "hotHumid": "Heiß / Feucht",
+    "cold": "Kalt",
+    "litersPerDay": "Liter / Tag",
+    "glasses": "Gläser",
+    "oz": "oz",
+    "tip": "Verteile die Flüssigkeitsaufnahme über den ganzen Tag für optimale Hydration."
+  }
+}

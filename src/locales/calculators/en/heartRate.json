@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "heartRate": {
+        "name": "Heart Rate Zones",
+        "description": "Discover your training heart rate zones."
+      }
+    }
+  },
+  "heartRate": {
+    "meta": {
+      "title": "Heart Rate Zone Calculator — Find Your Training Zones",
+      "description": "Calculate your five heart rate training zones. Standard and Karvonen methods for optimized fat burn, endurance, and peak performance."
+    },
+    "title": "Heart Rate Zone Calculator",
+    "description": "Find your five training heart rate zones.",
+    "restingHr": "Resting Heart Rate (optional)",
+    "standard": "Standard",
+    "karvonen": "Karvonen",
+    "maxHr": "Max Heart Rate",
+    "bpm": "bpm",
+    "zone": "Zone {n} — {name}",
+    "recovery": "Recovery",
+    "fatBurn": "Fat Burn",
+    "aerobic": "Aerobic",
+    "anaerobic": "Anaerobic",
+    "vo2max": "VO2 Max",
+    "recoveryDesc": "Light activity, active recovery. Improves overall health and aids recovery.",
+    "fatBurnDesc": "Easy endurance training. Builds aerobic base and burns fat efficiently.",
+    "aerobicDesc": "Moderate effort. Improves cardiovascular fitness and endurance.",
+    "anaerobicDesc": "Hard effort. Increases speed, power, and lactate threshold.",
+    "vo2maxDesc": "Maximum effort. Develops peak performance and speed."
+  }
+}

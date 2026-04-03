@@ -1,0 +1,36 @@
+{
+  "home": {
+    "calculators": {
+      "intermittentFasting": {
+        "name": "Intermittent Fasting Calculator",
+        "description": "Calculate your eating and fasting windows for your protocol."
+      }
+    }
+  },
+  "intermittentFasting": {
+    "meta": {
+      "title": "Intermittent Fasting Calculator — Eating & Fasting Windows",
+      "description": "Calculate your eating and fasting windows for 16:8, 18:6, 20:4 or OMAD. Free, instant, no sign-up."
+    },
+    "title": "Intermittent Fasting Calculator",
+    "description": "Calculate your eating and fasting windows based on your protocol and schedule.",
+    "protocol": "Protocol",
+    "mode": "Calculate based on",
+    "lastMeal": "Last Meal",
+    "firstMeal": "First Meal",
+    "lastMealTime": "Time of last meal",
+    "firstMealTime": "Time of first meal",
+    "eatingWindow": "Eating Window",
+    "fastingWindow": "Fasting Window",
+    "eating": "Eating",
+    "fasting": "Fasting",
+    "timeline": "24-Hour Overview",
+    "protocolTips": "Protocol Tips",
+    "tip168": "Most popular protocol. Skip breakfast, eat between 12:00 PM and 8:00 PM. Ideal for beginners.",
+    "tip186": "Slightly stricter. Eating window e.g. 1:00 PM–7:00 PM. Good for intermediates who want more fasting time.",
+    "tip204": "Only 4 hours of eating, e.g. 3:00 PM–7:00 PM. Requires experience and filling meals.",
+    "tipOmad": "One meal per day. Maximum fasting time, requires a nutrient-dense, high-calorie meal.",
+    "howItWorks": "How it works",
+    "howItWorksText": "With intermittent fasting, you alternate between eating and fasting windows. This calculator computes your personal time window based on the chosen protocol and your last or first meal time. During the fasting phase, only water, tea, and black coffee are allowed."
+  }
+}

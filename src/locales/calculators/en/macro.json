@@ -1,0 +1,31 @@
+{
+  "home": {
+    "calculators": {
+      "macro": {
+        "name": "Macro Calculator",
+        "description": "Get your ideal protein, carb, and fat split."
+      }
+    }
+  },
+  "macro": {
+    "meta": {
+      "title": "Macro Calculator — Free Protein, Carb & Fat Calculator",
+      "description": "Calculate your ideal macronutrient split. Personalized protein, carb, and fat targets based on your goals and activity level."
+    },
+    "title": "Macro Calculator",
+    "description": "Calculate your ideal protein, carb, and fat targets based on your goals.",
+    "sedentary": "Sedentary",
+    "lightlyActive": "Lightly active",
+    "moderatelyActive": "Moderately active",
+    "veryActive": "Very active",
+    "extremelyActive": "Extremely active",
+    "goal": "Goal",
+    "loseWeight": "Lose weight",
+    "maintain": "Maintain",
+    "buildMuscle": "Build muscle",
+    "targetCalories": "Target Calories",
+    "protein": "Protein (g)",
+    "carbs": "Carbs (g)",
+    "fat": "Fat (g)"
+  }
+}

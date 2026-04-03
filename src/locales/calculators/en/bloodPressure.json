@@ -1,0 +1,36 @@
+{
+  "home": {
+    "calculators": {
+      "bloodPressure": {
+        "name": "Blood Pressure Calculator",
+        "description": "Check your blood pressure category instantly."
+      }
+    }
+  },
+  "bloodPressure": {
+    "meta": {
+      "title": "Blood Pressure Calculator — Check Your Values | Health Calculators",
+      "description": "Enter your blood pressure values and instantly find out your category: Normal, Elevated, Stage 1, Stage 2 or Crisis. Free and no sign-up."
+    },
+    "title": "Blood Pressure Calculator",
+    "description": "Enter your blood pressure values and instantly find out your category.",
+    "systolic": "Systolic (mmHg)",
+    "diastolic": "Diastolic (mmHg)",
+    "normal": "Normal",
+    "elevated": "Elevated",
+    "stage1": "Hypertension Stage 1",
+    "stage2": "Hypertension Stage 2",
+    "crisis": "Hypertensive Crisis",
+    "scaleNormal": "Normal",
+    "scaleElevated": "Elevated",
+    "scaleStage1": "Stage 1",
+    "scaleStage2": "Stage 2",
+    "scaleCrisis": "Crisis",
+    "recNormal": "Your blood pressure values are optimal. Maintain your healthy lifestyle: balanced diet, regular exercise, and sufficient sleep.",
+    "recElevated": "Your values are slightly elevated. Reduce salt intake, exercise regularly, and monitor your blood pressure regularly.",
+    "recStage1": "Talk to your doctor about lifestyle changes and possible treatment. Regular monitoring is important.",
+    "recStage2": "See your doctor soon. Stage 2 hypertension usually requires medication.",
+    "recCrisis": "Call emergency services (911) immediately. Hypertensive crises require immediate medical treatment.",
+    "categoriesTitle": "Blood Pressure Categories"
+  }
+}

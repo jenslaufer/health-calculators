@@ -1,0 +1,31 @@
+{
+  "home": {
+    "calculators": {
+      "macro": {
+        "name": "Makro-Rechner",
+        "description": "Berechne deine ideale Protein-, Kohlenhydrat- und Fettverteilung."
+      }
+    }
+  },
+  "macro": {
+    "meta": {
+      "title": "Makro-Rechner — Kostenloser Protein-, Kohlenhydrat- & Fett-Rechner",
+      "description": "Berechne deine ideale Makronährstoffverteilung. Individuelle Protein-, Kohlenhydrat- und Fettziele basierend auf deinen Zielen und deinem Aktivitätslevel."
+    },
+    "title": "Makro-Rechner",
+    "description": "Berechne deine idealen Protein-, Kohlenhydrat- und Fettziele basierend auf deinen Zielen.",
+    "sedentary": "Sitzend",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Moderat aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "goal": "Ziel",
+    "loseWeight": "Abnehmen",
+    "maintain": "Halten",
+    "buildMuscle": "Muskelaufbau",
+    "targetCalories": "Zielkalorien",
+    "protein": "Protein (g)",
+    "carbs": "Kohlenhydrate (g)",
+    "fat": "Fett (g)"
+  }
+}
