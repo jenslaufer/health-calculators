@@ -167,6 +167,13 @@ slug: 'one-rep-max-berechnen',
     readTime: '7 min',
     calculatorKey: 'oneRepMax',
     related: ['proteinbedarf-berechnen', 'kalorienverbrauch-berechnen'],
+slug: 'lauftempo-berechnen',
+    title: 'Lauftempo berechnen: Pace, Zielzeit & Splits für jede Distanz',
+    description: 'Lauftempo berechnen für 5K, 10K, Halbmarathon und Marathon. Pace in min/km, Zielzeit, Negative-Split-Strategie und Kilometer-Splits.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'runningPace',
+    related: ['kalorienverbrauch-berechnen', 'herzfrequenz-zonen-berechnen'],
   },
 ]
 

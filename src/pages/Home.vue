@@ -51,6 +51,7 @@ const groups = computed(() => [
       { name: t('home.calculators.bloodPressure.name'), description: t('home.calculators.bloodPressure.description'), path: localePath('bloodPressure') },
 { name: t('home.calculators.vo2Max.name'), description: t('home.calculators.vo2Max.description'), path: localePath('vo2Max') },
 { name: t('home.calculators.oneRepMax.name'), description: t('home.calculators.oneRepMax.description'), path: localePath('oneRepMax') },
+{ name: t('home.calculators.runningPace.name'), description: t('home.calculators.runningPace.description'), path: localePath('runningPace') },
     ],
   },
   {

@@ -125,12 +125,13 @@ export const routeContextMap = {
     'tdee-rechner': 'supplements',
     'kaloriendefizit-rechner': 'supplements',
     'bmr-rechner': 'supplements',
-    // fitness: BMI, Body Fat, Heart Rate, WHR, VO2 Max
+    // fitness: BMI, Body Fat, Heart Rate, WHR, VO2 Max, Running Pace
     'bmi-rechner': 'fitness',
     'koerperfett-rechner': 'fitness',
     'herzfrequenz-zonen': 'fitness',
     'taille-hueft-verhaeltnis': 'fitness',
     'vo2max-rechner': 'fitness',
+    'lauftempo-rechner': 'fitness',
     // nutrition: Ideal Weight, Intermittent Fasting
     'idealgewicht-rechner': 'nutrition',
     'intervallfasten-rechner': 'nutrition',
@@ -160,10 +161,11 @@ export const routeContextMap = {
     'one-rep-max-calculator': 'supplements',
     // vitamins (Ritual): Water Intake
     'water-intake-calculator': 'vitamins',
-    // fitness: Heart Rate, WHR, VO2 Max
+    // fitness: Heart Rate, WHR, VO2 Max, Running Pace
     'heart-rate-zones': 'fitness',
     'waist-hip-ratio-calculator': 'fitness',
     'vo2max-calculator': 'fitness',
+    'running-pace-calculator': 'fitness',
     // nutrition: Ideal Weight, Intermittent Fasting
     'ideal-weight-calculator': 'nutrition',
     'intermittent-fasting-calculator': 'nutrition',

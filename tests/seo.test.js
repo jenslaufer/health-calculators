@@ -44,7 +44,8 @@ describe('sitemap.xml', () => {
     'bmr-rechner',
     'kalorienverbrauch',
     'intervallfasten-rechner',
-    'vo2max-rechner',
+'vo2max-rechner',
+'lauftempo-rechner',
   ]
 
   const enCalculatorSlugs = [
@@ -56,7 +57,8 @@ describe('sitemap.xml', () => {
     'protein-calculator', 'bmr-calculator',
     'calories-burned',
     'intermittent-fasting-calculator',
-    'vo2max-calculator',
+'vo2max-calculator',
+'running-pace-calculator',
   ]
 
   it('contains all German calculator routes', () => {
@@ -86,7 +88,8 @@ describe('sitemap.xml', () => {
     'proteinbedarf-berechnen', 'grundumsatz-berechnen',
     'kalorienverbrauch-berechnen',
     'intervallfasten-rechner',
-    'vo2max-berechnen',
+'vo2max-berechnen',
+'lauftempo-berechnen',
   ]
 
   const enBlogSlugs = [
@@ -98,7 +101,8 @@ describe('sitemap.xml', () => {
     'protein-intake-guide', 'calculate-bmr',
     'calculate-calories-burned',
     'intermittent-fasting-calculator',
-    'calculate-vo2max',
+'calculate-vo2max',
+'calculate-running-pace',
   ]
 
   it('contains all German blog article URLs', () => {
@@ -113,12 +117,8 @@ describe('sitemap.xml', () => {
     }
   })
 
-// 1 home + 18 de calcs + 18 en calcs + 2 blog indexes + 18 de articles + 18 en articles = 75
-  it('contains exactly 75 URLs', () => {
-    expect(urls).toHaveLength(75)
-// 1 home + 19 de calcs + 19 en calcs + 2 blog indexes + 18 de articles + 18 en articles = 77
-  // (was 67 before calories-burned, intermittent-fasting, one-rep-max were added)
-  it('contains exactly 71 URLs', () => {
-    expect(urls).toHaveLength(71)
+  // 1 home + 20 de calcs + 20 en calcs + 2 blog indexes + 20 de articles + 20 en articles = 83
+  it('contains exactly 83 URLs', () => {
+    expect(urls).toHaveLength(83)
   })
 })
