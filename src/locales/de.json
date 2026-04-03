@@ -60,7 +60,8 @@
       "intermittentFasting": { "name": "Intervallfasten-Rechner", "description": "Berechne dein Essens- und Fastenfenster für dein Protokoll." },
       "vo2Max": { "name": "VO2 Max Rechner", "description": "Berechne deine maximale Sauerstoffaufnahme und Fitnesskategorie." },
       "oneRepMax": { "name": "One Rep Max (1RM) Rechner", "description": "Schätze dein Maximalgewicht für eine Wiederholung." },
-      "runningPace": { "name": "Lauftempo-Rechner", "description": "Berechne dein Tempo, deine Zielzeit und Splits für jede Distanz." }
+      "runningPace": { "name": "Lauftempo-Rechner", "description": "Berechne dein Tempo, deine Zielzeit und Splits für jede Distanz." },
+      "keto": { "name": "Keto-Rechner", "description": "Berechne deine Keto-Makros für die ketogene Ernährung." }
     }
   },
   "blogHome": {
@@ -568,5 +569,29 @@
     "splits": "Splits",
     "splitTime": "Split-Zeit",
     "cumTime": "Gesamtzeit"
+  },
+  "keto": {
+    "meta": {
+      "title": "Keto-Rechner — Makros für die ketogene Ernährung",
+      "description": "Berechne deine Keto-Makros: Fett, Protein und Netto-Kohlenhydrate. Basierend auf deinem TDEE, Ziel und Körperdaten. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Keto-Rechner",
+    "description": "Berechne deine personalisierten Keto-Makros basierend auf deinem Kalorienbedarf und Ziel.",
+    "sedentary": "Sitzend",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Moderat aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "goal": "Ziel",
+    "loseWeight": "Abnehmen",
+    "maintain": "Halten",
+    "buildMuscle": "Muskelaufbau",
+    "bodyFat": "Körperfett (%) — optional",
+    "netCarbLimit": "Netto-Kohlenhydrate (g)",
+    "targetCalories": "Kalorienziel",
+    "fat": "Fett (g)",
+    "protein": "Protein (g)",
+    "netCarbs": "Netto-KH (g)",
+    "fiberRecommendation": "Ballaststoff-Empfehlung"
   }
 }

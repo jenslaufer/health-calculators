@@ -35,6 +35,7 @@ export const routeMap = {
 vo2Max: { de: 'vo2max-rechner', en: 'vo2max-calculator' },
 oneRepMax: { de: 'one-rep-max-rechner', en: 'one-rep-max-calculator' },
 runningPace: { de: 'lauftempo-rechner', en: 'running-pace-calculator' },
+keto: { de: 'keto-rechner', en: 'keto-calculator' },
   blog: { de: 'blog', en: 'blog' },
 }
 

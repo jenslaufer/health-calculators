@@ -60,7 +60,8 @@
       "intermittentFasting": { "name": "Intermittent Fasting Calculator", "description": "Calculate your eating and fasting windows for your protocol." },
       "vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." },
       "oneRepMax": { "name": "One Rep Max (1RM) Calculator", "description": "Estimate your one-rep max from any lift." },
-      "runningPace": { "name": "Running Pace Calculator", "description": "Calculate your pace, finish time, and splits for any distance." }
+      "runningPace": { "name": "Running Pace Calculator", "description": "Calculate your pace, finish time, and splits for any distance." },
+      "keto": { "name": "Keto Calculator", "description": "Calculate your keto macros for the ketogenic diet." }
     }
   },
   "blogHome": {
@@ -568,5 +569,29 @@
     "splits": "Splits",
     "splitTime": "Split Time",
     "cumTime": "Cumulative Time"
+  },
+  "keto": {
+    "meta": {
+      "title": "Keto Calculator — Macros for the Ketogenic Diet",
+      "description": "Calculate your keto macros: fat, protein and net carbs. Based on your TDEE, goal and body stats. Free, instant, no sign-up."
+    },
+    "title": "Keto Calculator",
+    "description": "Calculate your personalized keto macros based on your calorie needs and goals.",
+    "sedentary": "Sedentary",
+    "lightlyActive": "Lightly active",
+    "moderatelyActive": "Moderately active",
+    "veryActive": "Very active",
+    "extremelyActive": "Extremely active",
+    "goal": "Goal",
+    "loseWeight": "Lose weight",
+    "maintain": "Maintain",
+    "buildMuscle": "Build muscle",
+    "bodyFat": "Body Fat (%) — optional",
+    "netCarbLimit": "Net Carbs (g)",
+    "targetCalories": "Target Calories",
+    "fat": "Fat (g)",
+    "protein": "Protein (g)",
+    "netCarbs": "Net Carbs (g)",
+    "fiberRecommendation": "Fiber Recommendation"
   }
 }

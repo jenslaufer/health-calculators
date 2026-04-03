@@ -142,8 +142,9 @@ export const routeContextMap = {
     'blutdruck-rechner': 'wellness',
     'schlafzyklen-rechner': 'wellness',
     'wasser-rechner': 'wellness',
-    // supplements: One Rep Max
+    // supplements: One Rep Max, Keto
     'one-rep-max-rechner': 'supplements',
+    'keto-rechner': 'supplements',
   },
 
   // ── English route mappings ──
@@ -156,9 +157,10 @@ export const routeContextMap = {
     // coaching (Noom): Macro, BMR
     'macro-calculator': 'coaching',
     'bmr-calculator': 'coaching',
-    // supplements (Thorne): Protein, One Rep Max
+    // supplements (Thorne): Protein, One Rep Max, Keto
     'protein-calculator': 'supplements',
     'one-rep-max-calculator': 'supplements',
+    'keto-calculator': 'supplements',
     // vitamins (Ritual): Water Intake
     'water-intake-calculator': 'vitamins',
     // fitness: Heart Rate, WHR, VO2 Max, Running Pace
