@@ -106,6 +106,12 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://healthcalculator.app/de/promillerechner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- English calculator routes -->
   <url>
     <loc>https://healthcalculator.app/en/bmi-calculator</loc>
@@ -202,6 +208,12 @@
   <url>
     <loc>https://healthcalculator.app/en/one-rep-max-calculator</loc>
 <loc>https://healthcalculator.app/en/running-pace-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://healthcalculator.app/en/blood-alcohol-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -318,6 +330,12 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://healthcalculator.app/de/blog/promille-berechnen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- English blog articles -->
   <url>
     <loc>https://healthcalculator.app/en/blog/calculate-bmi</loc>
@@ -408,6 +426,11 @@
     <loc>https://healthcalculator.app/en/blog/calculate-vo2max</loc>
 <loc>https://healthcalculator.app/en/blog/calculate-one-rep-max</loc>
 <loc>https://healthcalculator.app/en/blog/calculate-running-pace</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/blood-alcohol-calculator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
