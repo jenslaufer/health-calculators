@@ -1,0 +1,42 @@
+{
+  "home": {
+    "calculators": {
+      "proteinNeed": {
+        "name": "Protein Need Calculator",
+        "description": "Calculate your daily protein requirement by activity, goal, and age."
+      }
+    }
+  },
+  "proteinNeed": {
+    "meta": {
+      "title": "Protein Need Calculator — Daily Protein Requirement",
+      "description": "Calculate your daily protein requirement based on activity level, goal, age, and gender. With per-meal breakdown and food examples."
+    },
+    "title": "Protein Need Calculator",
+    "description": "Calculate your individual daily protein requirement — adjusted for activity, goal, and age.",
+    "sedentary": "Sedentary",
+    "moderate": "Moderately active",
+    "active": "Active",
+    "athlete": "Athlete",
+    "goal": "Goal",
+    "maintain": "Maintain weight",
+    "lose": "Lose weight",
+    "muscle": "Build muscle",
+    "dailyProtein": "Daily Protein Need",
+    "gramsPerDay": "g / day",
+    "perKg": "g / kg bodyweight",
+    "mealBreakdown": "Per-Meal Breakdown",
+    "mealsPerDay": "Meals per day",
+    "meal": "Meal",
+    "gramsPerMeal": "g per meal",
+    "ageAdjustment": "Age adjustment (65+): +0.2 g/kg",
+    "loseAdjustment": "Weight loss bonus: +0.2 g/kg",
+    "foodExamples": "Food Examples",
+    "food": "Food",
+    "proteinPer100g": "Protein / 100 g",
+    "rangeLabel": "Recommended range",
+    "rangeLow": "Minimum",
+    "rangeHigh": "Maximum",
+    "activityComparison": "Protein need by activity level"
+  }
+}
