@@ -191,6 +191,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'keto',
     related: ['makronaehrstoffe-berechnen', 'tdee-berechnen'],
   },
+  {
+    slug: 'promille-berechnen',
+    title: 'Promille berechnen: Wie schnell baut der Körper Alkohol ab?',
+    description: 'Promille berechnen mit der Widmark-Formel. Alkoholabbau, Einflussfaktoren, gesetzliche Grenzen und wann du wieder nüchtern bist.',
+    date: '2026-04-03',
+    readTime: '8 min',
+    calculatorKey: 'bac',
+    related: ['wasserbedarf-berechnen', 'kalorienverbrauch-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

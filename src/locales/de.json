@@ -62,7 +62,8 @@
       "vo2Max": { "name": "VO2 Max Rechner", "description": "Berechne deine maximale Sauerstoffaufnahme und Fitnesskategorie." },
       "oneRepMax": { "name": "One Rep Max (1RM) Rechner", "description": "Schätze dein Maximalgewicht für eine Wiederholung." },
       "runningPace": { "name": "Lauftempo-Rechner", "description": "Berechne dein Tempo, deine Zielzeit und Splits für jede Distanz." },
-      "keto": { "name": "Keto-Rechner", "description": "Berechne deine Keto-Makros für die ketogene Ernährung." }
+      "keto": { "name": "Keto-Rechner", "description": "Berechne deine Keto-Makros für die ketogene Ernährung." },
+      "bac": { "name": "Promillerechner", "description": "Berechne deinen Blutalkoholspiegel und die Zeit bis zur Nüchternheit." }
     }
   },
   "blogHome": {
@@ -629,5 +630,47 @@
     "to": "bis",
     "howItWorks": "So funktioniert's",
     "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Die nächste Periode beginnt nach deiner Zykluslänge. Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Das fruchtbare Fenster umfasst die 5 Tage vor dem Eisprung und den Eisprungtag selbst."
+  },
+  "bac": {
+    "meta": {
+      "title": "Promillerechner — Blutalkohol mit Widmark-Formel berechnen",
+      "description": "Berechne deinen Blutalkoholspiegel (Promille) mit der Widmark-Formel. Restabbauzeit, gesetzliche Grenzwerte und Einflussfaktoren. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Promillerechner",
+    "description": "Berechne deinen Blutalkoholspiegel basierend auf der Widmark-Formel.",
+    "quickAdd": "Schnell hinzufügen",
+    "presetBeer": "Bier (0,5l)",
+    "presetWine": "Wein (0,2l)",
+    "presetSpirits": "Schnaps (4cl)",
+    "presetCocktail": "Cocktail (0,25l)",
+    "drinks": "Getränke",
+    "volume": "Volumen (ml)",
+    "alcoholPct": "Alkohol (%)",
+    "addDrink": "Getränk hinzufügen",
+    "hoursSinceFirst": "Stunden seit dem ersten Getränk",
+    "sober": "Nüchtern",
+    "minimal": "Minimal",
+    "belowLimit": "Unter Grenzwert",
+    "aboveLimit": "Über Grenzwert",
+    "significant": "Erheblich",
+    "dangerous": "Gefährlich",
+    "legalLimit": "Gesetzlicher Grenzwert (0,5 ‰ DE)",
+    "belowLegalLimit": "Du bist unter dem gesetzlichen Grenzwert von 0,5 ‰.",
+    "aboveLegalLimit": "Du bist über dem gesetzlichen Grenzwert von 0,5 ‰. Nicht fahren!",
+    "timeUntilSober": "Zeit bis nüchtern",
+    "alreadySober": "Bereits nüchtern",
+    "hoursMinutes": "{hours} Std. {minutes} Min.",
+    "totalAlcohol": "Reiner Alkohol",
+    "rawBac": "BAK ohne Abbau",
+    "bacRange": "Promille-Bereich",
+    "effect": "Wirkung",
+    "effectSober": "Keine Beeinträchtigung",
+    "effectMinimal": "Leichte Enthemmung, Wärmegefühl",
+    "effectMild": "Verminderte Reaktionsfähigkeit, gehobene Stimmung",
+    "effectModerate": "Deutliche Beeinträchtigung der Koordination und Reaktionszeit",
+    "effectSignificant": "Starke Gleichgewichtsstörungen, undeutliche Sprache",
+    "effectDangerous": "Bewusstseinsstörungen, Lebensgefahr",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner verwendet die Widmark-Formel: Alkohol (g) = Volumen × (Vol.-% / 100) × 0,8. Der Blutalkoholspiegel ergibt sich aus Alkohol (g) / (Körpergewicht × r), wobei r = 0,68 (Männer) bzw. 0,55 (Frauen). Der Abbau beträgt ca. 0,15 ‰ pro Stunde. Dies ist eine Schätzung — individuelle Faktoren können abweichen."
   }
 }

@@ -62,7 +62,8 @@
       "vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." },
       "oneRepMax": { "name": "One Rep Max (1RM) Calculator", "description": "Estimate your one-rep max from any lift." },
       "runningPace": { "name": "Running Pace Calculator", "description": "Calculate your pace, finish time, and splits for any distance." },
-      "keto": { "name": "Keto Calculator", "description": "Calculate your keto macros for the ketogenic diet." }
+      "keto": { "name": "Keto Calculator", "description": "Calculate your keto macros for the ketogenic diet." },
+      "bac": { "name": "Blood Alcohol Calculator", "description": "Calculate your blood alcohol level and time until sober." }
     }
   },
   "blogHome": {
@@ -629,5 +630,47 @@
     "to": "to",
     "howItWorks": "How it works",
     "howItWorksText": "This calculator uses the calendar method: your next period starts after your cycle length. Ovulation occurs approximately 14 days before your next period. The fertile window spans the 5 days before ovulation and ovulation day itself."
+  },
+  "bac": {
+    "meta": {
+      "title": "Blood Alcohol Calculator — BAC with Widmark Formula",
+      "description": "Calculate your blood alcohol concentration (BAC) with the Widmark formula. Time until sober, legal limits and influencing factors. Free, instant, no sign-up."
+    },
+    "title": "Blood Alcohol Calculator",
+    "description": "Calculate your blood alcohol concentration based on the Widmark formula.",
+    "quickAdd": "Quick add",
+    "presetBeer": "Beer (500ml)",
+    "presetWine": "Wine (200ml)",
+    "presetSpirits": "Spirits (40ml)",
+    "presetCocktail": "Cocktail (250ml)",
+    "drinks": "Drinks",
+    "volume": "Volume (ml)",
+    "alcoholPct": "Alcohol (%)",
+    "addDrink": "Add drink",
+    "hoursSinceFirst": "Hours since first drink",
+    "sober": "Sober",
+    "minimal": "Minimal",
+    "belowLimit": "Below limit",
+    "aboveLimit": "Above limit",
+    "significant": "Significant",
+    "dangerous": "Dangerous",
+    "legalLimit": "Legal limit (0.5‰ DE)",
+    "belowLegalLimit": "You are below the German legal limit of 0.5‰.",
+    "aboveLegalLimit": "You are above the German legal limit of 0.5‰. Do not drive!",
+    "timeUntilSober": "Time until sober",
+    "alreadySober": "Already sober",
+    "hoursMinutes": "{hours} hrs {minutes} min",
+    "totalAlcohol": "Pure alcohol",
+    "rawBac": "BAC without elimination",
+    "bacRange": "BAC range",
+    "effect": "Effect",
+    "effectSober": "No impairment",
+    "effectMinimal": "Slight disinhibition, feeling of warmth",
+    "effectMild": "Reduced reaction time, elevated mood",
+    "effectModerate": "Noticeable impairment of coordination and reaction time",
+    "effectSignificant": "Severe balance issues, slurred speech",
+    "effectDangerous": "Impaired consciousness, life-threatening",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses the Widmark formula: Alcohol (g) = Volume × (ABV / 100) × 0.8. BAC = Alcohol (g) / (Body weight × r), where r = 0.68 (men) or 0.55 (women). Elimination rate is approximately 0.15‰ per hour. This is an estimate — individual factors may vary."
   }
 }

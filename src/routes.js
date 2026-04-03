@@ -33,6 +33,7 @@ import OneRepMaxCalculator from './pages/OneRepMaxCalculator.vue'
 import RunningPaceCalculator from './pages/RunningPaceCalculator.vue'
 import KetoCalculator from './pages/KetoCalculator.vue'
 import PeriodCalculator from './pages/PeriodCalculator.vue'
+import BacCalculator from './pages/BacCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
 import ProteinbedarfBerechnen from './pages/blog/ProteinbedarfBerechnen.vue'
@@ -45,6 +46,7 @@ import OneRepMaxBerechnen from './pages/blog/OneRepMaxBerechnen.vue'
 import LauftempoBerechnen from './pages/blog/LauftempoBerechnen.vue'
 import KetoRechner from './pages/blog/KetoRechner.vue'
 import ZyklusrechnerGuide from './pages/blog/ZyklusrechnerGuide.vue'
+import PromilleBerechnen from './pages/blog/PromilleBerechnen.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -68,6 +70,7 @@ import CalculateOneRepMax from './pages/blog/en/CalculateOneRepMax.vue'
 import CalculateRunningPace from './pages/blog/en/CalculateRunningPace.vue'
 import KetoCalculatorGuide from './pages/blog/en/KetoCalculatorGuide.vue'
 import PeriodCalculatorGuide from './pages/blog/PeriodCalculatorGuide.vue'
+import BloodAlcoholCalculator from './pages/blog/en/BloodAlcoholCalculator.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -92,6 +95,7 @@ oneRepMax: OneRepMaxCalculator,
 runningPace: RunningPaceCalculator,
 keto: KetoCalculator,
 period: PeriodCalculator,
+bac: BacCalculator,
 }
 
 const blogComponentsDe = {
@@ -117,6 +121,7 @@ const blogComponentsDe = {
 'lauftempo-berechnen': LauftempoBerechnen,
 'keto-rechner': KetoRechner,
 'zyklusrechner-guide': ZyklusrechnerGuide,
+'promille-berechnen': PromilleBerechnen,
 }
 
 const blogComponentsEn = {
@@ -142,6 +147,7 @@ const blogComponentsEn = {
 'calculate-running-pace': CalculateRunningPace,
 'keto-calculator-guide': KetoCalculatorGuide,
 'period-calculator-guide': PeriodCalculatorGuide,
+'blood-alcohol-calculator': BloodAlcoholCalculator,
 }
 
 const blogComponentsByLocale = {
@@ -212,6 +218,7 @@ const oldRouteRedirects = [
 { path: '/running-pace', redirect: `/de/${routeMap.runningPace.de}` },
 { path: '/keto', redirect: `/de/${routeMap.keto.de}` },
 { path: '/period', redirect: `/de/${routeMap.period.de}` },
+{ path: '/bac', redirect: `/de/${routeMap.bac.de}` },
   { path: '/blog', redirect: '/de/blog' },
 ]
 

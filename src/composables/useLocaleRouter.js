@@ -37,6 +37,7 @@ oneRepMax: { de: 'one-rep-max-rechner', en: 'one-rep-max-calculator' },
 runningPace: { de: 'lauftempo-rechner', en: 'running-pace-calculator' },
 keto: { de: 'keto-rechner', en: 'keto-calculator' },
 period: { de: 'zyklusrechner', en: 'period-calculator' },
+bac: { de: 'promillerechner', en: 'blood-alcohol-calculator' },
   blog: { de: 'blog', en: 'blog' },
 }
 

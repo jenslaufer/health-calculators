@@ -191,6 +191,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'keto',
     related: ['calculate-macros', 'calculate-tdee'],
   },
+  {
+    slug: 'blood-alcohol-calculator',
+    title: 'Blood Alcohol Calculator: How Long Until You\'re Sober?',
+    description: 'Calculate your blood alcohol level with the Widmark formula. Alcohol elimination rate, influencing factors, legal limits and time until sober.',
+    date: '2026-04-03',
+    readTime: '8 min',
+    calculatorKey: 'bac',
+    related: ['calculate-water-intake', 'calculate-calories-burned'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
