@@ -60,6 +60,7 @@ const groups = computed(() => [
     items: [
       { name: t('home.calculators.pregnancy.name'), description: t('home.calculators.pregnancy.description'), path: localePath('pregnancy') },
       { name: t('home.calculators.ovulation.name'), description: t('home.calculators.ovulation.description'), path: localePath('ovulation') },
+      { name: t('home.calculators.period.name'), description: t('home.calculators.period.description'), path: localePath('period') },
     ],
   },
 ])
