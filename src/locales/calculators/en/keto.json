@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "keto": {
+        "name": "Keto Calculator",
+        "description": "Calculate your keto macros for the ketogenic diet."
+      }
+    }
+  },
+  "keto": {
+    "meta": {
+      "title": "Keto Calculator — Macros for the Ketogenic Diet",
+      "description": "Calculate your keto macros: fat, protein and net carbs. Based on your TDEE, goal and body stats. Free, instant, no sign-up."
+    },
+    "title": "Keto Calculator",
+    "description": "Calculate your personalized keto macros based on your calorie needs and goals.",
+    "sedentary": "Sedentary",
+    "lightlyActive": "Lightly active",
+    "moderatelyActive": "Moderately active",
+    "veryActive": "Very active",
+    "extremelyActive": "Extremely active",
+    "goal": "Goal",
+    "loseWeight": "Lose weight",
+    "maintain": "Maintain",
+    "buildMuscle": "Build muscle",
+    "bodyFat": "Body Fat (%) — optional",
+    "netCarbLimit": "Net Carbs (g)",
+    "targetCalories": "Target Calories",
+    "fat": "Fat (g)",
+    "protein": "Protein (g)",
+    "netCarbs": "Net Carbs (g)",
+    "fiberRecommendation": "Fiber Recommendation"
+  }
+}

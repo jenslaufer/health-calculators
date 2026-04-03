@@ -1,0 +1,27 @@
+{
+  "home": {
+    "calculators": {
+      "sleep": {
+        "name": "Sleep Cycle Calculator",
+        "description": "Find your optimal bedtime or wake time."
+      }
+    }
+  },
+  "sleep": {
+    "meta": {
+      "title": "Sleep Cycle Calculator — Optimal Bedtime & Wake Time",
+      "description": "Find your optimal bedtime or wake time based on 90-minute sleep cycles. Wake up refreshed, not groggy."
+    },
+    "title": "Sleep Cycle Calculator",
+    "description": "Find your optimal bedtime or wake time based on sleep cycles.",
+    "wakeUpAt": "Wake up at",
+    "goToSleepAt": "Go to sleep at",
+    "iWantTo": "I want to {mode} at",
+    "wakeUp": "wake up",
+    "goToSleep": "go to sleep",
+    "recommended": "Recommended",
+    "cycles": "{n} cycles",
+    "howItWorks": "How it works",
+    "howItWorksText": "A full sleep cycle lasts ~90 minutes. Waking between cycles helps you feel refreshed. This calculator factors in ~15 minutes to fall asleep and recommends times aligned with complete cycles."
+  }
+}

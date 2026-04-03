@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "oneRepMax": {
+        "name": "One Rep Max (1RM) Rechner",
+        "description": "Schätze dein Maximalgewicht für eine Wiederholung."
+      }
+    }
+  },
+  "oneRepMax": {
+    "meta": {
+      "title": "One Rep Max (1RM) Rechner — Maximalgewicht berechnen",
+      "description": "Berechne dein One Rep Max mit Epley, Brzycki, Lombardi und O'Conner. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "One Rep Max (1RM) Rechner",
+    "description": "Schätze dein Maximalgewicht für eine Wiederholung mit vier wissenschaftlich fundierten Formeln.",
+    "weightLifted": "Gehobenes Gewicht ({unit})",
+    "reps": "Wiederholungen",
+    "weightUnit": "Einheit",
+    "formula": "Formel",
+    "estimated1RM": "Geschätztes 1RM",
+    "formulaComparison": "Formelvergleich",
+    "percentageChart": "Prozenttabelle",
+    "percent": "% des 1RM",
+    "weight": "Gewicht",
+    "repsRange": "Wdh.",
+    "epley": "Epley",
+    "brzycki": "Brzycki",
+    "lombardi": "Lombardi",
+    "oconner": "O'Conner",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Das One Rep Max (1RM) ist das maximale Gewicht, das du für eine einzelne Wiederholung heben kannst. Diese Formeln schätzen dein 1RM aus einem submaximalen Satz — sicherer als ein echter Maximalversuch. Die Epley-Formel ist die am häufigsten verwendete: 1RM = Gewicht × (1 + Wiederholungen/30)."
+  }
+}

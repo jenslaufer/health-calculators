@@ -3,8 +3,7 @@ import { createI18n } from 'vue-i18n'
 import './style.css'
 import App from './App.vue'
 import routes from './routes.js'
-import en from './locales/en.json'
-import de from './locales/de.json'
+import { de, en } from './locales/index.js'
 
 export const createApp = ViteSSG(
   App,

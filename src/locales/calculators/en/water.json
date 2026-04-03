@@ -1,0 +1,31 @@
+{
+  "home": {
+    "calculators": {
+      "water": {
+        "name": "Water Intake Calculator",
+        "description": "How much water should you drink daily?"
+      }
+    }
+  },
+  "water": {
+    "meta": {
+      "title": "Water Intake Calculator — Daily Hydration Needs",
+      "description": "Calculate how much water you should drink daily. Personalized to your weight, activity level, and climate."
+    },
+    "title": "Water Intake Calculator",
+    "description": "Calculate how much water you should drink daily based on your weight, activity, and climate.",
+    "climate": "Climate",
+    "sedentary": "Sedentary",
+    "lightlyActive": "Lightly active",
+    "moderatelyActive": "Moderately active",
+    "veryActive": "Very active",
+    "extremelyActive": "Extremely active",
+    "temperate": "Temperate",
+    "hotHumid": "Hot / Humid",
+    "cold": "Cold",
+    "litersPerDay": "liters / day",
+    "glasses": "glasses",
+    "oz": "oz",
+    "tip": "Spread your intake throughout the day for best hydration."
+  }
+}

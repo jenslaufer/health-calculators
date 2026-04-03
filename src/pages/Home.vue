@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import { calculatorGroups } from '../discovery.js'
 
 const { t } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -20,49 +21,16 @@ useHead(() => ({
   },
 }))
 
-const groups = computed(() => [
-  {
-    label: t('home.groups.bodyComposition'),
-    items: [
-      { name: t('home.calculators.bmi.name'), description: t('home.calculators.bmi.description'), path: localePath('bmi') },
-      { name: t('home.calculators.bodyFat.name'), description: t('home.calculators.bodyFat.description'), path: localePath('bodyFat') },
-      { name: t('home.calculators.idealWeight.name'), description: t('home.calculators.idealWeight.description'), path: localePath('idealWeight') },
-      { name: t('home.calculators.waistHipRatio.name'), description: t('home.calculators.waistHipRatio.description'), path: localePath('waistHipRatio') },
-    ],
-  },
-  {
-    label: t('home.groups.nutritionEnergy'),
-    items: [
-      { name: t('home.calculators.bmr.name'), description: t('home.calculators.bmr.description'), path: localePath('bmr') },
-      { name: t('home.calculators.tdee.name'), description: t('home.calculators.tdee.description'), path: localePath('tdee') },
-      { name: t('home.calculators.macro.name'), description: t('home.calculators.macro.description'), path: localePath('macro') },
-      { name: t('home.calculators.water.name'), description: t('home.calculators.water.description'), path: localePath('water') },
-      { name: t('home.calculators.calorieDeficit.name'), description: t('home.calculators.calorieDeficit.description'), path: localePath('calorieDeficit') },
-      { name: t('home.calculators.protein.name'), description: t('home.calculators.protein.description'), path: localePath('protein') },
-      { name: t('home.calculators.caloriesBurned.name'), description: t('home.calculators.caloriesBurned.description'), path: localePath('caloriesBurned') },
-      { name: t('home.calculators.intermittentFasting.name'), description: t('home.calculators.intermittentFasting.description'), path: localePath('intermittentFasting') },
-      { name: t('home.calculators.keto.name'), description: t('home.calculators.keto.description'), path: localePath('keto') },
-    ],
-  },
-  {
-    label: t('home.groups.fitnessRecovery'),
-    items: [
-      { name: t('home.calculators.heartRate.name'), description: t('home.calculators.heartRate.description'), path: localePath('heartRate') },
-      { name: t('home.calculators.sleep.name'), description: t('home.calculators.sleep.description'), path: localePath('sleep') },
-      { name: t('home.calculators.bloodPressure.name'), description: t('home.calculators.bloodPressure.description'), path: localePath('bloodPressure') },
-      { name: t('home.calculators.vo2Max.name'), description: t('home.calculators.vo2Max.description'), path: localePath('vo2Max') },
-      { name: t('home.calculators.oneRepMax.name'), description: t('home.calculators.oneRepMax.description'), path: localePath('oneRepMax') },
-      { name: t('home.calculators.runningPace.name'), description: t('home.calculators.runningPace.description'), path: localePath('runningPace') },
-    ],
-  },
-  {
-    label: t('home.groups.pregnancy'),
-    items: [
-      { name: t('home.calculators.pregnancy.name'), description: t('home.calculators.pregnancy.description'), path: localePath('pregnancy') },
-      { name: t('home.calculators.ovulation.name'), description: t('home.calculators.ovulation.description'), path: localePath('ovulation') },
-    ],
-  },
-])
+const groups = computed(() =>
+  calculatorGroups.map(group => ({
+    label: t(`home.groups.${group.key}`),
+    items: group.calculators.map(key => ({
+      name: t(`home.calculators.${key}.name`),
+      description: t(`home.calculators.${key}.description`),
+      path: localePath(key),
+    })),
+  }))
+)
 </script>
 
 <template>

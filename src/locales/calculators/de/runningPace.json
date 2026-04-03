@@ -1,0 +1,44 @@
+{
+  "home": {
+    "calculators": {
+      "runningPace": {
+        "name": "Lauftempo-Rechner",
+        "description": "Berechne dein Tempo, deine Zielzeit und Splits für jede Distanz."
+      }
+    }
+  },
+  "runningPace": {
+    "meta": {
+      "title": "Lauftempo-Rechner — Pace, Zielzeit & Splits berechnen",
+      "description": "Berechne dein Lauftempo für 5K, 10K, Halbmarathon und Marathon. Pace in min/km und min/mi, Zielzeit, Negative-Split-Plan und Kilometer-Splits. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Lauftempo-Rechner",
+    "description": "Berechne dein Lauftempo, deine Zielzeit und Splits für jede Distanz.",
+    "distance": "Distanz",
+    "distance_5k": "5 km",
+    "distance_10k": "10 km",
+    "distance_half": "Halbmarathon",
+    "distance_marathon": "Marathon",
+    "distance_custom": "Eigene",
+    "customPlaceholder": "Distanz in km",
+    "calculateFrom": "Berechnung basierend auf",
+    "fromTime": "Zielzeit",
+    "fromPace": "Pace",
+    "hours": "Stunden",
+    "minutes": "Minuten",
+    "seconds": "Sekunden",
+    "paceMin": "Pace (min)",
+    "paceSec": "Pace (sek)",
+    "paceKm": "Pace (min/km)",
+    "paceMi": "Pace (min/mi)",
+    "finishTime": "Zielzeit",
+    "speed": "Geschwindigkeit",
+    "negativeSplit": "Negative-Split-Plan",
+    "negativeSplitDesc": "Laufe die erste Hälfte 2,5 % langsamer und die zweite Hälfte 2,5 % schneller als dein Durchschnittstempo.",
+    "firstHalf": "Erste Hälfte",
+    "secondHalf": "Zweite Hälfte",
+    "splits": "Splits",
+    "splitTime": "Split-Zeit",
+    "cumTime": "Gesamtzeit"
+  }
+}

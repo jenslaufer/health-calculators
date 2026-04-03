@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "oneRepMax": {
+        "name": "One Rep Max (1RM) Calculator",
+        "description": "Estimate your one-rep max from any lift."
+      }
+    }
+  },
+  "oneRepMax": {
+    "meta": {
+      "title": "One Rep Max (1RM) Calculator — Estimate Your Max Lift",
+      "description": "Calculate your one-rep max using Epley, Brzycki, Lombardi and O'Conner formulas. Free, instant, no sign-up."
+    },
+    "title": "One Rep Max (1RM) Calculator",
+    "description": "Estimate your one-rep max from any lift using four science-backed formulas.",
+    "weightLifted": "Weight Lifted ({unit})",
+    "reps": "Reps Completed",
+    "weightUnit": "Unit",
+    "formula": "Formula",
+    "estimated1RM": "Estimated 1RM",
+    "formulaComparison": "Formula Comparison",
+    "percentageChart": "Percentage Chart",
+    "percent": "% of 1RM",
+    "weight": "Weight",
+    "repsRange": "Reps",
+    "epley": "Epley",
+    "brzycki": "Brzycki",
+    "lombardi": "Lombardi",
+    "oconner": "O'Conner",
+    "howItWorks": "How it works",
+    "howItWorksText": "The one-rep max (1RM) is the maximum weight you can lift for a single repetition. These formulas estimate your 1RM from a submaximal lift — safer than actually attempting a true max. The Epley formula is the most widely used: 1RM = weight × (1 + reps/30)."
+  }
+}

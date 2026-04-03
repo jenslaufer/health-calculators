@@ -1,0 +1,29 @@
+{
+  "home": {
+    "calculators": {
+      "bodyFat": {
+        "name": "Body Fat Calculator",
+        "description": "Estimate your body fat percentage."
+      }
+    }
+  },
+  "bodyFat": {
+    "meta": {
+      "title": "Body Fat Calculator — U.S. Navy Method",
+      "description": "Estimate your body fat percentage using the U.S. Navy method. Simple tape measurements, instant science-backed results."
+    },
+    "title": "Body Fat Calculator",
+    "description": "Estimate your body fat percentage using the U.S. Navy method.",
+    "neck": "Neck ({unit})",
+    "waist": "Waist ({unit})",
+    "hip": "Hip ({unit})",
+    "essentialFat": "Essential fat",
+    "athletes": "Athletes",
+    "fitness": "Fitness",
+    "average": "Average",
+    "obese": "Obese",
+    "fatMass": "Fat Mass",
+    "leanMass": "Lean Mass",
+    "categoriesTitle": "Body Fat Categories ({gender})"
+  }
+}
