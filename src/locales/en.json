@@ -58,9 +58,9 @@
       "bmr": { "name": "BMR Calculator", "description": "Calculate the calories your body burns at rest." },
       "caloriesBurned": { "name": "Calories Burned Calculator", "description": "Calculate how many calories you burn during different activities." },
       "intermittentFasting": { "name": "Intermittent Fasting Calculator", "description": "Calculate your eating and fasting windows for your protocol." },
-"vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." }
-"oneRepMax": { "name": "One Rep Max (1RM) Calculator", "description": "Estimate your one-rep max from any lift." }
-"runningPace": { "name": "Running Pace Calculator", "description": "Calculate your pace, finish time, and splits for any distance." }
+      "vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." },
+      "oneRepMax": { "name": "One Rep Max (1RM) Calculator", "description": "Estimate your one-rep max from any lift." },
+      "runningPace": { "name": "Running Pace Calculator", "description": "Calculate your pace, finish time, and splits for any distance." }
     }
   },
   "blogHome": {
@@ -503,7 +503,7 @@
     "recHigh": "Your WHR indicates a {start}high health risk{end} according to WHO guidelines. Central obesity is associated with increased cardiovascular and metabolic risk. Consult a healthcare professional.",
     "thresholdsTitle": "WHO Risk Thresholds ({gender})"
   },
-"vo2Max": {
+  "vo2Max": {
     "meta": {
       "title": "VO2 Max Calculator — Calculate Maximum Oxygen Uptake",
       "description": "Calculate your VO2 Max with the Cooper Test, Rockport Walk Test or direct entry. Fitness category, age comparison and percentiles. Free, instant, no sign-up."
@@ -534,7 +534,8 @@
     "rockportInfo": "Walk 1 mile (1,609 m) as fast as you can and measure your heart rate at the end.",
     "directInfo": "Enter your known VO2 Max value directly.",
     "weightUnit": "Unit"
-"runningPace": {
+  },
+  "runningPace": {
     "meta": {
       "title": "Running Pace Calculator — Pace, Finish Time & Splits",
       "description": "Calculate your running pace for 5K, 10K, half marathon, and marathon. Pace in min/km and min/mi, finish time, negative split plan, and km/mile splits. Free, instant, no sign-up."
