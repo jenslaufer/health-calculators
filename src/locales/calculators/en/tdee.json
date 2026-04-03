@@ -1,0 +1,27 @@
+{
+  "home": {
+    "calculators": {
+      "tdee": {
+        "name": "TDEE Calculator",
+        "description": "Find your daily calorie needs."
+      }
+    }
+  },
+  "tdee": {
+    "meta": {
+      "title": "TDEE Calculator — Free Daily Calorie Needs Calculator",
+      "description": "Calculate your Total Daily Energy Expenditure. Science-backed Mifflin-St Jeor formula, personalized to your activity level."
+    },
+    "title": "TDEE Calculator",
+    "description": "Calculate your Total Daily Energy Expenditure based on the Mifflin-St Jeor equation.",
+    "sedentary": "Sedentary (office job, little exercise)",
+    "lightlyActive": "Lightly active (1-3 days/week)",
+    "moderatelyActive": "Moderately active (3-5 days/week)",
+    "veryActive": "Very active (6-7 days/week)",
+    "extremelyActive": "Extremely active (athlete/physical job)",
+    "bmr": "BMR: {value} kcal",
+    "weightLoss": "Weight Loss",
+    "maintenance": "Maintenance",
+    "weightGain": "Weight Gain"
+  }
+}

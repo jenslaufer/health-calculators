@@ -1,0 +1,41 @@
+{
+  "home": {
+    "calculators": {
+      "protein": {
+        "name": "Protein-Rechner",
+        "description": "Berechne deinen optimalen täglichen Proteinbedarf."
+      }
+    }
+  },
+  "protein": {
+    "meta": {
+      "title": "Protein-Rechner — Täglichen Proteinbedarf berechnen",
+      "description": "Berechne deinen täglichen Proteinbedarf basierend auf Gewicht, Aktivität, Ziel und Ernährungsform. Individuelle Empfehlungen mit Lebensmittelquellen."
+    },
+    "title": "Protein-Rechner",
+    "description": "Berechne dein tägliches Proteinziel basierend auf Gewicht, Aktivität, Ziel und Ernährung.",
+    "sedentary": "Sitzend",
+    "light": "Leicht aktiv",
+    "moderate": "Moderat aktiv",
+    "active": "Aktiv",
+    "athlete": "Athlet",
+    "goal": "Ziel",
+    "maintain": "Halten",
+    "loseFat": "Fett abbauen",
+    "buildMuscle": "Muskelaufbau",
+    "diet": "Ernährungsform",
+    "omnivore": "Mischkost",
+    "vegetarian": "Vegetarisch",
+    "vegan": "Vegan",
+    "meals": "Mahlzeiten pro Tag",
+    "dailyProtein": "Tägliches Protein",
+    "perKg": "g / kg Körpergewicht",
+    "perMeal": "pro Mahlzeit",
+    "grams": "g",
+    "gramsPerDay": "g / Tag",
+    "foodSources": "Top-Proteinquellen",
+    "food": "Lebensmittel",
+    "proteinPer100g": "Protein / 100 g",
+    "goalComparison": "Protein nach Ziel"
+  }
+}

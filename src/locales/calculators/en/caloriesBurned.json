@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "caloriesBurned": {
+        "name": "Calories Burned Calculator",
+        "description": "Calculate how many calories you burn during different activities."
+      }
+    }
+  },
+  "caloriesBurned": {
+    "meta": {
+      "title": "Calories Burned Calculator — Calculate Calories by Activity",
+      "description": "Calculate calories burned for 30+ activities. MET-based formula, food equivalents and weekly projection. Free, instant, no sign-up."
+    },
+    "title": "Calories Burned Calculator",
+    "description": "Calculate how many calories you burn during different activities — based on MET values.",
+    "activity": "Activity",
+    "duration": "Duration (minutes)",
+    "weightUnit": "Unit",
+    "selectActivity": "Select activity",
+    "categoryRunning": "Running",
+    "categoryCycling": "Cycling",
+    "categorySwimming": "Swimming",
+    "categoryGym": "Gym",
+    "categorySports": "Sports",
+    "categoryDaily": "Daily Activities",
+    "running_8kmh": "Running (8 km/h)",
+    "running_10kmh": "Running (10 km/h)",
+    "running_12kmh": "Running (12 km/h)",
+    "running_14kmh": "Running (14 km/h)",
+    "running_16kmh": "Running (16 km/h)",
+    "cycling_leisure": "Cycling (leisure)",
+    "cycling_moderate": "Cycling (moderate)",
+    "cycling_vigorous": "Cycling (vigorous)",
+    "cycling_mountain": "Mountain biking",
+    "swimming_leisurely": "Swimming (leisurely)",
+    "swimming_moderate": "Swimming (moderate)",
+    "swimming_vigorous": "Swimming (vigorous)",
+    "swimming_backstroke": "Backstroke",
+    "swimming_butterfly": "Butterfly",
+    "weightlifting_light": "Weight lifting (light)",
+    "weightlifting_vigorous": "Weight lifting (vigorous)",
+    "hiit": "HIIT",
+    "yoga": "Yoga",
+    "pilates": "Pilates",
+    "elliptical": "Elliptical",
+    "rowing_moderate": "Rowing (moderate)",
+    "soccer": "Soccer",
+    "basketball": "Basketball",
+    "tennis_singles": "Tennis (singles)",
+    "tennis_doubles": "Tennis (doubles)",
+    "badminton": "Badminton",
+    "volleyball": "Volleyball",
+    "hiking": "Hiking",
+    "walking_moderate": "Walking (moderate)",
+    "walking_brisk": "Brisk walking",
+    "gardening": "Gardening",
+    "housework": "Housework",
+    "dancing": "Dancing",
+    "stair_climbing": "Stair climbing",
+    "caloriesBurned": "Calories Burned",
+    "kcal": "kcal",
+    "foodEquivalents": "Food Equivalents",
+    "slicesPizza": "slices of pizza",
+    "bananas": "bananas",
+    "chocolate": "chocolate bars",
+    "weeklyProjection": "Weekly Projection",
+    "sessionsPerWeek": "sessions / week",
+    "kcalPerWeek": "kcal / week"
+  }
+}

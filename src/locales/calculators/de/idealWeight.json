@@ -1,0 +1,21 @@
+{
+  "home": {
+    "calculators": {
+      "idealWeight": {
+        "name": "Idealgewicht-Rechner",
+        "description": "Finde deinen gesunden Gewichtsbereich."
+      }
+    }
+  },
+  "idealWeight": {
+    "meta": {
+      "title": "Idealgewicht-Rechner — Gesunden Gewichtsbereich berechnen",
+      "description": "Berechne dein Idealgewicht mit vier wissenschaftlich fundierten Formeln. Individuelle Ergebnisse basierend auf Größe und Geschlecht."
+    },
+    "title": "Idealgewicht-Rechner",
+    "description": "Finde deinen gesunden Gewichtsbereich basierend auf vier wissenschaftlich fundierten Formeln.",
+    "formulaComparison": "Formelvergleich",
+    "healthyBmiRange": "Gesunder BMI-Bereich",
+    "bmiRangeText": "Basierend auf einem BMI von 18,5 – 24,9 liegt dein gesunder Gewichtsbereich bei"
+  }
+}

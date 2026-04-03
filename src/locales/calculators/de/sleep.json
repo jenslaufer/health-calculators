@@ -1,0 +1,27 @@
+{
+  "home": {
+    "calculators": {
+      "sleep": {
+        "name": "Schlafzyklen-Rechner",
+        "description": "Finde deine optimale Schlaf- oder Aufwachzeit."
+      }
+    }
+  },
+  "sleep": {
+    "meta": {
+      "title": "Schlafzyklen-Rechner — Optimale Schlaf- & Aufwachzeit",
+      "description": "Finde deine optimale Schlaf- oder Aufwachzeit basierend auf 90-Minuten-Schlafzyklen. Wache erfrischt auf, nicht benommen."
+    },
+    "title": "Schlafzyklen-Rechner",
+    "description": "Finde deine optimale Schlaf- oder Aufwachzeit basierend auf Schlafzyklen.",
+    "wakeUpAt": "Aufwachen um",
+    "goToSleepAt": "Einschlafen um",
+    "iWantTo": "Ich möchte um … {mode}",
+    "wakeUp": "aufwachen",
+    "goToSleep": "einschlafen",
+    "recommended": "Empfohlen",
+    "cycles": "{n} Zyklen",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Ein vollständiger Schlafzyklus dauert ca. 90 Minuten. Das Aufwachen zwischen Zyklen hilft dir, erfrischt aufzustehen. Dieser Rechner berücksichtigt ca. 15 Minuten Einschlafzeit und empfiehlt Zeiten, die auf vollständige Zyklen abgestimmt sind."
+  }
+}

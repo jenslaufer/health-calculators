@@ -1,0 +1,39 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancy": {
+        "name": "Geburtstermin-Rechner",
+        "description": "Berechne deinen Geburtstermin und verfolge Meilensteine."
+      }
+    }
+  },
+  "pregnancy": {
+    "meta": {
+      "title": "Geburtstermin-Rechner — Kostenloser Naegele-Regel-Rechner",
+      "description": "Berechne deinen Geburtstermin mit der Naegele-Regel. Schwangerschaftswoche, Trimester, Empfängnisdatum, Fortschrittsbalken und Meilenstein-Zeitplan. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Geburtstermin-Rechner",
+    "description": "Berechne deinen Geburtstermin, Schwangerschaftsalter und Meilensteine.",
+    "lmp": "Letzte Monatsblutung",
+    "cycleLength": "Zykluslänge (Tage)",
+    "dueDate": "Geburtstermin",
+    "gestationalAge": "Schwangerschaftsalter",
+    "weeksAndDays": "{weeks} Wochen, {days} Tage",
+    "trimester": "Trimester",
+    "conceptionDate": "Empfängnisdatum",
+    "complete": "{pct}% abgeschlossen",
+    "daysLeft": "{n} Tage verbleibend",
+    "milestones": "Meilensteine",
+    "week": "Woche {n}",
+    "milestone6": "Herzschlag erkennbar",
+    "milestone12": "Ende des 1. Trimesters",
+    "milestone16": "Geschlecht möglicherweise sichtbar",
+    "milestone20": "Feindiagnostik-Ultraschall",
+    "milestone24": "Lebensfähigkeits-Meilenstein",
+    "milestone28": "Beginn des 3. Trimesters",
+    "milestone37": "Frühes Termin",
+    "milestone40": "Geburtstermin",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner verwendet die Naegele-Regel: 280 Tage zum ersten Tag deiner letzten Monatsblutung addieren. Wenn dein Zyklus länger oder kürzer als 28 Tage ist, wird der Termin entsprechend angepasst. Das Schwangerschaftsalter zählt ab der letzten Monatsblutung, nicht ab der Empfängnis."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "home": {
+    "calculators": {
+      "bmr": {
+        "name": "Grundumsatz-Rechner (BMR)",
+        "description": "Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt."
+      }
+    }
+  },
+  "bmr": {
+    "meta": {
+      "title": "Grundumsatz-Rechner (BMR) — Kostenlos berechnen",
+      "description": "Berechne deinen Grundumsatz (BMR) mit der Mifflin-St Jeor- oder Harris-Benedict-Formel. Aktivitätslevel-Schätzungen, sofortige Ergebnisse."
+    },
+    "title": "Grundumsatz-Rechner (BMR)",
+    "description": "Berechne deinen Grundumsatz — die Kalorien, die dein Körper im Ruhezustand verbrennt.",
+    "formula": "Formel",
+    "mifflinStJeor": "Mifflin-St Jeor",
+    "harrisBenedict": "Harris-Benedict",
+    "bmrResult": "Grundumsatz (BMR)",
+    "activityEstimates": "Geschätzter Tagesverbrauch nach Aktivität",
+    "sedentary": "Sitzend (Bürojob)",
+    "lightlyActive": "Leicht aktiv (1–3 Tage/Woche)",
+    "moderatelyActive": "Moderat aktiv (3–5 Tage/Woche)",
+    "veryActive": "Sehr aktiv (6–7 Tage/Woche)",
+    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)"
+  }
+}

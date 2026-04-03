@@ -1,0 +1,27 @@
+{
+  "home": {
+    "calculators": {
+      "waistHipRatio": {
+        "name": "Taille-Hüft-Verhältnis",
+        "description": "Beurteile dein Gesundheitsrisiko nach WHO-Richtlinien."
+      }
+    }
+  },
+  "waistHipRatio": {
+    "meta": {
+      "title": "Taille-Hüft-Verhältnis-Rechner — WHO-Risikobewertung",
+      "description": "Berechne dein Taille-Hüft-Verhältnis und beurteile dein Gesundheitsrisiko nach WHO-Richtlinien. Kostenlos, sofortige Ergebnisse für Männer und Frauen."
+    },
+    "title": "Taille-Hüft-Verhältnis-Rechner",
+    "description": "Beurteile dein Gesundheitsrisiko basierend auf den WHO-Richtlinien zum Taille-Hüft-Verhältnis.",
+    "waist": "Taillenumfang (cm)",
+    "hip": "Hüftumfang (cm)",
+    "lowRisk": "Niedriges Risiko",
+    "moderateRisk": "Mittleres Risiko",
+    "highRisk": "Hohes Risiko",
+    "recLow": "Dein THV zeigt ein {start}niedriges Gesundheitsrisiko{end}. Behalte deinen gesunden Lebensstil mit regelmäßiger Bewegung und ausgewogener Ernährung bei.",
+    "recModerate": "Dein THV zeigt ein {start}mittleres Gesundheitsrisiko{end}. Erwäge, deine körperliche Aktivität zu erhöhen und deinen Taillenumfang zu überwachen.",
+    "recHigh": "Dein THV zeigt ein {start}hohes Gesundheitsrisiko{end} gemäß WHO-Richtlinien. Bauchfettleibigkeit ist mit erhöhtem kardiovaskulärem und metabolischem Risiko verbunden. Konsultiere einen Arzt.",
+    "thresholdsTitle": "WHO-Risikoschwellen ({gender})"
+  }
+}

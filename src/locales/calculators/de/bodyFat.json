@@ -1,0 +1,29 @@
+{
+  "home": {
+    "calculators": {
+      "bodyFat": {
+        "name": "Körperfett-Rechner",
+        "description": "Schätze deinen Körperfettanteil."
+      }
+    }
+  },
+  "bodyFat": {
+    "meta": {
+      "title": "Körperfett-Rechner — U.S. Navy-Methode",
+      "description": "Schätze deinen Körperfettanteil mit der U.S. Navy-Methode. Einfache Maßbandmessungen, sofortige wissenschaftlich fundierte Ergebnisse."
+    },
+    "title": "Körperfett-Rechner",
+    "description": "Schätze deinen Körperfettanteil mit der U.S. Navy-Methode.",
+    "neck": "Hals ({unit})",
+    "waist": "Taille ({unit})",
+    "hip": "Hüfte ({unit})",
+    "essentialFat": "Essentielles Fett",
+    "athletes": "Sportler",
+    "fitness": "Fitness",
+    "average": "Durchschnitt",
+    "obese": "Adipositas",
+    "fatMass": "Fettmasse",
+    "leanMass": "Magermasse",
+    "categoriesTitle": "Körperfett-Kategorien ({gender})"
+  }
+}

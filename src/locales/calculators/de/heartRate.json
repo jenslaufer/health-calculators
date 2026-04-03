@@ -1,0 +1,34 @@
+{
+  "home": {
+    "calculators": {
+      "heartRate": {
+        "name": "Herzfrequenz-Zonen",
+        "description": "Entdecke deine Trainings-Herzfrequenz-Zonen."
+      }
+    }
+  },
+  "heartRate": {
+    "meta": {
+      "title": "Herzfrequenz-Zonen-Rechner — Trainingszonen berechnen",
+      "description": "Berechne deine fünf Herzfrequenz-Trainingszonen. Standard- und Karvonen-Methode für optimierte Fettverbrennung, Ausdauer und Spitzenleistung."
+    },
+    "title": "Herzfrequenz-Zonen-Rechner",
+    "description": "Berechne deine fünf Trainings-Herzfrequenz-Zonen.",
+    "restingHr": "Ruhepuls (optional)",
+    "standard": "Standard",
+    "karvonen": "Karvonen",
+    "maxHr": "Maximale Herzfrequenz",
+    "bpm": "bpm",
+    "zone": "Zone {n} — {name}",
+    "recovery": "Erholung",
+    "fatBurn": "Fettverbrennung",
+    "aerobic": "Aerob",
+    "anaerobic": "Anaerob",
+    "vo2max": "VO2 Max",
+    "recoveryDesc": "Leichte Aktivität, aktive Erholung. Verbessert die allgemeine Gesundheit und fördert die Regeneration.",
+    "fatBurnDesc": "Leichtes Ausdauertraining. Baut aerobe Grundlage auf und verbrennt Fett effizient.",
+    "aerobicDesc": "Mittlere Anstrengung. Verbessert Herz-Kreislauf-Fitness und Ausdauer.",
+    "anaerobicDesc": "Hohe Anstrengung. Steigert Geschwindigkeit, Kraft und Laktatschwelle.",
+    "vo2maxDesc": "Maximale Anstrengung. Entwickelt Spitzenleistung und Geschwindigkeit."
+  }
+}

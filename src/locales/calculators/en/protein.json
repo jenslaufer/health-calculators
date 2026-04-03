@@ -1,0 +1,41 @@
+{
+  "home": {
+    "calculators": {
+      "protein": {
+        "name": "Protein Calculator",
+        "description": "Find your optimal daily protein intake."
+      }
+    }
+  },
+  "protein": {
+    "meta": {
+      "title": "Protein Calculator — Daily Protein Intake Calculator",
+      "description": "Calculate your daily protein intake based on weight, activity level, goal, and diet type. Personalized recommendations with food sources."
+    },
+    "title": "Protein Calculator",
+    "description": "Calculate your daily protein target based on your weight, activity, goal, and diet.",
+    "sedentary": "Sedentary",
+    "light": "Lightly active",
+    "moderate": "Moderately active",
+    "active": "Active",
+    "athlete": "Athlete",
+    "goal": "Goal",
+    "maintain": "Maintain",
+    "loseFat": "Lose fat",
+    "buildMuscle": "Build muscle",
+    "diet": "Diet Type",
+    "omnivore": "Omnivore",
+    "vegetarian": "Vegetarian",
+    "vegan": "Vegan",
+    "meals": "Meals per Day",
+    "dailyProtein": "Daily Protein",
+    "perKg": "g / kg bodyweight",
+    "perMeal": "per meal",
+    "grams": "g",
+    "gramsPerDay": "g / day",
+    "foodSources": "Top Protein Sources",
+    "food": "Food",
+    "proteinPer100g": "Protein / 100 g",
+    "goalComparison": "Protein by Goal"
+  }
+}

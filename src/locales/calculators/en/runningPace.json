@@ -1,0 +1,44 @@
+{
+  "home": {
+    "calculators": {
+      "runningPace": {
+        "name": "Running Pace Calculator",
+        "description": "Calculate your pace, finish time, and splits for any distance."
+      }
+    }
+  },
+  "runningPace": {
+    "meta": {
+      "title": "Running Pace Calculator — Pace, Finish Time & Splits",
+      "description": "Calculate your running pace for 5K, 10K, half marathon, and marathon. Pace in min/km and min/mi, finish time, negative split plan, and km/mile splits. Free, instant, no sign-up."
+    },
+    "title": "Running Pace Calculator",
+    "description": "Calculate your running pace, finish time, and splits for any distance.",
+    "distance": "Distance",
+    "distance_5k": "5K",
+    "distance_10k": "10K",
+    "distance_half": "Half Marathon",
+    "distance_marathon": "Marathon",
+    "distance_custom": "Custom",
+    "customPlaceholder": "Distance in km",
+    "calculateFrom": "Calculate from",
+    "fromTime": "Finish Time",
+    "fromPace": "Pace",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "paceMin": "Pace (min)",
+    "paceSec": "Pace (sec)",
+    "paceKm": "Pace (min/km)",
+    "paceMi": "Pace (min/mi)",
+    "finishTime": "Finish Time",
+    "speed": "Speed",
+    "negativeSplit": "Negative Split Plan",
+    "negativeSplitDesc": "Run the first half 2.5% slower and the second half 2.5% faster than your average pace.",
+    "firstHalf": "First Half",
+    "secondHalf": "Second Half",
+    "splits": "Splits",
+    "splitTime": "Split Time",
+    "cumTime": "Cumulative Time"
+  }
+}

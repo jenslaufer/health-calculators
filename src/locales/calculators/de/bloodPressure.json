@@ -1,0 +1,36 @@
+{
+  "home": {
+    "calculators": {
+      "bloodPressure": {
+        "name": "Blutdruck-Rechner",
+        "description": "Ordne deine Blutdruckwerte sofort ein."
+      }
+    }
+  },
+  "bloodPressure": {
+    "meta": {
+      "title": "Blutdruck-Rechner — Blutdruckwerte einordnen | Health Calculators",
+      "description": "Blutdruckwerte eingeben und sofort die Kategorie erfahren: Normal, Erhöht, Grad 1, Grad 2 oder Krise. Kostenlos und ohne Anmeldung."
+    },
+    "title": "Blutdruck-Rechner",
+    "description": "Geben Sie Ihre Blutdruckwerte ein und erfahren Sie sofort Ihre Kategorie.",
+    "systolic": "Systolisch (mmHg)",
+    "diastolic": "Diastolisch (mmHg)",
+    "normal": "Normal",
+    "elevated": "Erhöht",
+    "stage1": "Bluthochdruck Grad 1",
+    "stage2": "Bluthochdruck Grad 2",
+    "crisis": "Hypertensive Krise",
+    "scaleNormal": "Normal",
+    "scaleElevated": "Erhöht",
+    "scaleStage1": "Grad 1",
+    "scaleStage2": "Grad 2",
+    "scaleCrisis": "Krise",
+    "recNormal": "Ihre Blutdruckwerte sind optimal. Halten Sie Ihren gesunden Lebensstil bei: ausgewogene Ernährung, regelmäßige Bewegung und ausreichend Schlaf.",
+    "recElevated": "Ihre Werte sind leicht erhöht. Reduzieren Sie Salzkonsum, bewegen Sie sich regelmäßig und kontrollieren Sie Ihren Blutdruck regelmäßig.",
+    "recStage1": "Sprechen Sie mit Ihrem Arzt über Lebensstiländerungen und mögliche Behandlung. Regelmäßige Kontrolle ist wichtig.",
+    "recStage2": "Suchen Sie zeitnah Ihren Arzt auf. Bluthochdruck Grad 2 erfordert in der Regel eine medikamentöse Behandlung.",
+    "recCrisis": "Rufen Sie sofort den Notruf (112). Hypertensive Krisen erfordern eine sofortige medizinische Behandlung.",
+    "categoriesTitle": "Blutdruck-Kategorien"
+  }
+}
