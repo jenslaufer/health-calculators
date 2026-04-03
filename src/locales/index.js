@@ -8,6 +8,7 @@ const calcEnModules = import.meta.glob('./calculators/en/*.json', { eager: true 
 
 function deepMerge(target, source) {
   for (const key of Object.keys(source)) {
+    if (key === '__proto__' || key === 'constructor' || key === 'prototype') continue
     if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
       if (!target[key]) target[key] = {}
       deepMerge(target[key], source[key])
