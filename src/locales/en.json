@@ -58,7 +58,8 @@
       "bmr": { "name": "BMR Calculator", "description": "Calculate the calories your body burns at rest." },
       "caloriesBurned": { "name": "Calories Burned Calculator", "description": "Calculate how many calories you burn during different activities." },
       "intermittentFasting": { "name": "Intermittent Fasting Calculator", "description": "Calculate your eating and fasting windows for your protocol." },
-      "vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." }
+"vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." }
+"oneRepMax": { "name": "One Rep Max (1RM) Calculator", "description": "Estimate your one-rep max from any lift." }
     }
   },
   "blogHome": {
@@ -459,6 +460,30 @@
     "tipOmad": "One meal per day. Maximum fasting time, requires a nutrient-dense, high-calorie meal.",
     "howItWorks": "How it works",
     "howItWorksText": "With intermittent fasting, you alternate between eating and fasting windows. This calculator computes your personal time window based on the chosen protocol and your last or first meal time. During the fasting phase, only water, tea, and black coffee are allowed."
+  },
+  "oneRepMax": {
+    "meta": {
+      "title": "One Rep Max (1RM) Calculator — Estimate Your Max Lift",
+      "description": "Calculate your one-rep max using Epley, Brzycki, Lombardi and O'Conner formulas. Free, instant, no sign-up."
+    },
+    "title": "One Rep Max (1RM) Calculator",
+    "description": "Estimate your one-rep max from any lift using four science-backed formulas.",
+    "weightLifted": "Weight Lifted ({unit})",
+    "reps": "Reps Completed",
+    "weightUnit": "Unit",
+    "formula": "Formula",
+    "estimated1RM": "Estimated 1RM",
+    "formulaComparison": "Formula Comparison",
+    "percentageChart": "Percentage Chart",
+    "percent": "% of 1RM",
+    "weight": "Weight",
+    "repsRange": "Reps",
+    "epley": "Epley",
+    "brzycki": "Brzycki",
+    "lombardi": "Lombardi",
+    "oconner": "O'Conner",
+    "howItWorks": "How it works",
+    "howItWorksText": "The one-rep max (1RM) is the maximum weight you can lift for a single repetition. These formulas estimate your 1RM from a submaximal lift — safer than actually attempting a true max. The Epley formula is the most widely used: 1RM = weight × (1 + reps/30)."
   },
   "waistHipRatio": {
     "meta": {

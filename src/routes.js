@@ -29,6 +29,7 @@ import ProteinCalculator from './pages/ProteinCalculator.vue'
 import BmrCalculator from './pages/BmrCalculator.vue'
 import CaloriesBurnedCalculator from './pages/CaloriesBurnedCalculator.vue'
 import IntermittentFastingCalculator from './pages/IntermittentFastingCalculator.vue'
+import OneRepMaxCalculator from './pages/OneRepMaxCalculator.vue'
 import TaillenHueftVerhaeltnis from './pages/blog/TaillenHueftVerhaeltnis.vue'
 import EisprungBerechnen from './pages/blog/EisprungBerechnen.vue'
 import ProteinbedarfBerechnen from './pages/blog/ProteinbedarfBerechnen.vue'
@@ -37,6 +38,7 @@ import KalorienverbrauchBerechnen from './pages/blog/KalorienverbrauchBerechnen.
 import IntervallfastenRechner from './pages/blog/IntervallfastenRechner.vue'
 import Vo2MaxCalculator from './pages/Vo2MaxCalculator.vue'
 import Vo2MaxBerechnen from './pages/blog/Vo2MaxBerechnen.vue'
+import OneRepMaxBerechnen from './pages/blog/OneRepMaxBerechnen.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
 import CalculateBmi from './pages/blog/en/CalculateBmi.vue'
 import CalculateTdee from './pages/blog/en/CalculateTdee.vue'
@@ -56,6 +58,7 @@ import CalculateBmr from './pages/blog/en/CalculateBmr.vue'
 import CalculateCaloriesBurned from './pages/blog/en/CalculateCaloriesBurned.vue'
 import IntermittentFastingGuide from './pages/blog/en/IntermittentFastingGuide.vue'
 import CalculateVo2Max from './pages/blog/en/CalculateVo2Max.vue'
+import CalculateOneRepMax from './pages/blog/en/CalculateOneRepMax.vue'
 
 const calculatorComponents = {
   bmi: BmiCalculator,
@@ -75,7 +78,8 @@ const calculatorComponents = {
   bmr: BmrCalculator,
   caloriesBurned: CaloriesBurnedCalculator,
   intermittentFasting: IntermittentFastingCalculator,
-  vo2Max: Vo2MaxCalculator,
+vo2Max: Vo2MaxCalculator,
+oneRepMax: OneRepMaxCalculator,
 }
 
 const blogComponentsDe = {
@@ -96,7 +100,8 @@ const blogComponentsDe = {
   'grundumsatz-berechnen': GrundumsatzBerechnen,
   'kalorienverbrauch-berechnen': KalorienverbrauchBerechnen,
   'intervallfasten-rechner': IntervallfastenRechner,
-  'vo2max-berechnen': Vo2MaxBerechnen,
+'vo2max-berechnen': Vo2MaxBerechnen,
+'one-rep-max-berechnen': OneRepMaxBerechnen,
 }
 
 const blogComponentsEn = {
@@ -117,7 +122,8 @@ const blogComponentsEn = {
   'calculate-bmr': CalculateBmr,
   'calculate-calories-burned': CalculateCaloriesBurned,
   'intermittent-fasting-calculator': IntermittentFastingGuide,
-  'calculate-vo2max': CalculateVo2Max,
+'calculate-vo2max': CalculateVo2Max,
+'calculate-one-rep-max': CalculateOneRepMax,
 }
 
 const blogComponentsByLocale = {
@@ -183,7 +189,8 @@ const oldRouteRedirects = [
   { path: '/bmr', redirect: `/de/${routeMap.bmr.de}` },
   { path: '/calories-burned', redirect: `/de/${routeMap.caloriesBurned.de}` },
   { path: '/intermittent-fasting', redirect: `/de/${routeMap.intermittentFasting.de}` },
-  { path: '/vo2max', redirect: `/de/${routeMap.vo2Max.de}` },
+{ path: '/vo2max', redirect: `/de/${routeMap.vo2Max.de}` },
+{ path: '/one-rep-max', redirect: `/de/${routeMap.oneRepMax.de}` },
   { path: '/blog', redirect: '/de/blog' },
 ]
 

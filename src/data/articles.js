@@ -153,13 +153,20 @@ export const articles = [
     related: ['kaloriendefizit-berechnen', 'tdee-berechnen'],
   },
   {
-    slug: 'vo2max-berechnen',
+slug: 'vo2max-berechnen',
     title: 'VO2 Max berechnen: Wie fit bist du wirklich?',
     description: 'VO2 Max berechnen mit dem Cooper-Test, Rockport-Walktest oder Direkteingabe. Fitnesskategorien, Altersvergleich und was dein VO2 Max über deine Gesundheit aussagt.',
     date: '2026-04-02',
     readTime: '8 min',
     calculatorKey: 'vo2Max',
     related: ['herzfrequenz-zonen-berechnen', 'kalorienverbrauch-berechnen'],
+slug: 'one-rep-max-berechnen',
+    title: 'One Rep Max berechnen: 1RM mit vier Formeln ermitteln',
+    description: 'One Rep Max (1RM) berechnen mit Epley, Brzycki, Lombardi und O\'Conner. Formeln, Prozenttabelle und praktische Tipps.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'oneRepMax',
+    related: ['proteinbedarf-berechnen', 'kalorienverbrauch-berechnen'],
   },
 ]
 

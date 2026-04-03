@@ -153,13 +153,20 @@ export const articlesEn = [
     related: ['calculate-calorie-deficit', 'calculate-tdee'],
   },
   {
-    slug: 'calculate-vo2max',
+slug: 'calculate-vo2max',
     title: 'VO2 Max Calculator: How Fit Are You Really?',
     description: 'Calculate your VO2 Max with the Cooper Test, Rockport Walk Test or direct entry. Fitness categories, age comparison and what your VO2 Max says about your health.',
     date: '2026-04-02',
     readTime: '8 min',
     calculatorKey: 'vo2Max',
     related: ['calculate-heart-rate-zones', 'calculate-calories-burned'],
+slug: 'calculate-one-rep-max',
+    title: 'Calculate One Rep Max: Estimate Your 1RM With Four Formulas',
+    description: 'Calculate your one-rep max (1RM) using Epley, Brzycki, Lombardi and O\'Conner formulas. Percentage chart and practical tips.',
+    date: '2026-04-02',
+    readTime: '7 min',
+    calculatorKey: 'oneRepMax',
+    related: ['protein-intake-guide', 'calculate-calories-burned'],
   },
 ]
 
