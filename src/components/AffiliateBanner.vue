@@ -10,10 +10,12 @@ const { locale } = useI18n()
 
 const affiliate = computed(() => {
   const slug = route.path.split('/')[2] || ''
-  const ctx = props.context || routeContextMap[slug] || 'default'
-  const config = adConfig[ctx] || adConfig.default
   const lang = locale.value === 'de' ? 'de' : 'en'
-  return config.affiliate?.[lang] || adConfig.default.affiliate[lang]
+  const contextMap = routeContextMap[lang] || routeContextMap.de
+  const ctx = props.context || contextMap[slug] || 'default'
+  const localeConfig = adConfig[lang] || adConfig.de
+  const config = localeConfig[ctx] || localeConfig.default
+  return config.affiliate
 })
 </script>
 
