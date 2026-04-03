@@ -49,9 +49,9 @@ const groups = computed(() => [
       { name: t('home.calculators.heartRate.name'), description: t('home.calculators.heartRate.description'), path: localePath('heartRate') },
       { name: t('home.calculators.sleep.name'), description: t('home.calculators.sleep.description'), path: localePath('sleep') },
       { name: t('home.calculators.bloodPressure.name'), description: t('home.calculators.bloodPressure.description'), path: localePath('bloodPressure') },
-{ name: t('home.calculators.vo2Max.name'), description: t('home.calculators.vo2Max.description'), path: localePath('vo2Max') },
-{ name: t('home.calculators.oneRepMax.name'), description: t('home.calculators.oneRepMax.description'), path: localePath('oneRepMax') },
-{ name: t('home.calculators.runningPace.name'), description: t('home.calculators.runningPace.description'), path: localePath('runningPace') },
+      { name: t('home.calculators.vo2Max.name'), description: t('home.calculators.vo2Max.description'), path: localePath('vo2Max') },
+      { name: t('home.calculators.oneRepMax.name'), description: t('home.calculators.oneRepMax.description'), path: localePath('oneRepMax') },
+      { name: t('home.calculators.runningPace.name'), description: t('home.calculators.runningPace.description'), path: localePath('runningPace') },
     ],
   },
   {

@@ -1,11 +1,11 @@
-import { describe, it, expect } from 'vitest'
-import { readFileSync } from 'fs'
-import { resolve } from 'path'
+    import { describe, it, expect } from 'vitest'
+    import { readFileSync } from 'fs'
+    import { resolve } from 'path'
 
-const BASE_URL = 'https://healthcalculator.app'
-const publicDir = resolve(import.meta.dirname, '..', 'public')
+    const BASE_URL = 'https://healthcalculator.app'
+    const publicDir = resolve(import.meta.dirname, '..', 'public')
 
-describe('404.html', () => {
+    describe('404.html', () => {
   it('exists in public/', () => {
     const content = readFileSync(resolve(publicDir, '404.html'), 'utf-8')
     expect(content).toBeTruthy()
@@ -18,7 +18,7 @@ describe('404.html', () => {
   })
 })
 
-describe('sitemap.xml', () => {
+    describe('sitemap.xml', () => {
   const xml = readFileSync(resolve(publicDir, 'sitemap.xml'), 'utf-8')
 
   it('is valid XML with urlset root', () => {
@@ -44,8 +44,8 @@ describe('sitemap.xml', () => {
     'bmr-rechner',
     'kalorienverbrauch',
     'intervallfasten-rechner',
-'vo2max-rechner',
-'lauftempo-rechner',
+    'vo2max-rechner',
+    'lauftempo-rechner',
   ]
 
   const enCalculatorSlugs = [
@@ -57,8 +57,8 @@ describe('sitemap.xml', () => {
     'protein-calculator', 'bmr-calculator',
     'calories-burned',
     'intermittent-fasting-calculator',
-'vo2max-calculator',
-'running-pace-calculator',
+    'vo2max-calculator',
+    'running-pace-calculator',
   ]
 
   it('contains all German calculator routes', () => {
@@ -88,8 +88,8 @@ describe('sitemap.xml', () => {
     'proteinbedarf-berechnen', 'grundumsatz-berechnen',
     'kalorienverbrauch-berechnen',
     'intervallfasten-rechner',
-'vo2max-berechnen',
-'lauftempo-berechnen',
+    'vo2max-berechnen',
+    'lauftempo-berechnen',
   ]
 
   const enBlogSlugs = [
@@ -101,8 +101,8 @@ describe('sitemap.xml', () => {
     'protein-intake-guide', 'calculate-bmr',
     'calculate-calories-burned',
     'intermittent-fasting-calculator',
-'calculate-vo2max',
-'calculate-running-pace',
+    'calculate-vo2max',
+    'calculate-running-pace',
   ]
 
   it('contains all German blog article URLs', () => {
