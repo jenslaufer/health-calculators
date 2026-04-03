@@ -58,7 +58,9 @@
       "bmr": { "name": "Grundumsatz-Rechner (BMR)", "description": "Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt." },
       "caloriesBurned": { "name": "Kalorienverbrauch-Rechner", "description": "Berechne, wie viele Kalorien du bei verschiedenen Aktivitäten verbrennst." },
       "intermittentFasting": { "name": "Intervallfasten-Rechner", "description": "Berechne dein Essens- und Fastenfenster für dein Protokoll." },
-      "vo2Max": { "name": "VO2 Max Rechner", "description": "Berechne deine maximale Sauerstoffaufnahme und Fitnesskategorie." }
+"vo2Max": { "name": "VO2 Max Rechner", "description": "Berechne deine maximale Sauerstoffaufnahme und Fitnesskategorie." }
+"oneRepMax": { "name": "One Rep Max (1RM) Rechner", "description": "Schätze dein Maximalgewicht für eine Wiederholung." }
+"runningPace": { "name": "Lauftempo-Rechner", "description": "Berechne dein Tempo, deine Zielzeit und Splits für jede Distanz." }
     }
   },
   "blogHome": {
@@ -460,6 +462,30 @@
     "howItWorks": "So funktioniert's",
     "howItWorksText": "Beim Intervallfasten wechselst du zwischen Essens- und Fastenphasen. Dieser Rechner berechnet dein persönliches Zeitfenster basierend auf dem gewählten Protokoll und deiner letzten oder ersten Mahlzeit. Während der Fastenphase sind nur Wasser, Tee und schwarzer Kaffee erlaubt."
   },
+  "oneRepMax": {
+    "meta": {
+      "title": "One Rep Max (1RM) Rechner — Maximalgewicht berechnen",
+      "description": "Berechne dein One Rep Max mit Epley, Brzycki, Lombardi und O'Conner. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "One Rep Max (1RM) Rechner",
+    "description": "Schätze dein Maximalgewicht für eine Wiederholung mit vier wissenschaftlich fundierten Formeln.",
+    "weightLifted": "Gehobenes Gewicht ({unit})",
+    "reps": "Wiederholungen",
+    "weightUnit": "Einheit",
+    "formula": "Formel",
+    "estimated1RM": "Geschätztes 1RM",
+    "formulaComparison": "Formelvergleich",
+    "percentageChart": "Prozenttabelle",
+    "percent": "% des 1RM",
+    "weight": "Gewicht",
+    "repsRange": "Wdh.",
+    "epley": "Epley",
+    "brzycki": "Brzycki",
+    "lombardi": "Lombardi",
+    "oconner": "O'Conner",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Das One Rep Max (1RM) ist das maximale Gewicht, das du für eine einzelne Wiederholung heben kannst. Diese Formeln schätzen dein 1RM aus einem submaximalen Satz — sicherer als ein echter Maximalversuch. Die Epley-Formel ist die am häufigsten verwendete: 1RM = Gewicht × (1 + Wiederholungen/30)."
+  },
   "waistHipRatio": {
     "meta": {
       "title": "Taille-Hüft-Verhältnis-Rechner — WHO-Risikobewertung",
@@ -477,7 +503,7 @@
     "recHigh": "Dein THV zeigt ein {start}hohes Gesundheitsrisiko{end} gemäß WHO-Richtlinien. Bauchfettleibigkeit ist mit erhöhtem kardiovaskulärem und metabolischem Risiko verbunden. Konsultiere einen Arzt.",
     "thresholdsTitle": "WHO-Risikoschwellen ({gender})"
   },
-  "vo2Max": {
+"vo2Max": {
     "meta": {
       "title": "VO2 Max Rechner — Maximale Sauerstoffaufnahme berechnen",
       "description": "Berechne deinen VO2 Max mit dem Cooper-Test, Rockport-Walktest oder Direkteingabe. Fitnesskategorie, Altersvergleich und Perzentile. Kostenlos, sofort, ohne Anmeldung."
@@ -508,5 +534,38 @@
     "rockportInfo": "Gehe 1 Meile (1.609 m) so schnell wie möglich und miss deine Herzfrequenz am Ende.",
     "directInfo": "Gib deinen bekannten VO2 Max Wert direkt ein.",
     "weightUnit": "Einheit"
+"runningPace": {
+    "meta": {
+      "title": "Lauftempo-Rechner — Pace, Zielzeit & Splits berechnen",
+      "description": "Berechne dein Lauftempo für 5K, 10K, Halbmarathon und Marathon. Pace in min/km und min/mi, Zielzeit, Negative-Split-Plan und Kilometer-Splits. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Lauftempo-Rechner",
+    "description": "Berechne dein Lauftempo, deine Zielzeit und Splits für jede Distanz.",
+    "distance": "Distanz",
+    "distance_5k": "5 km",
+    "distance_10k": "10 km",
+    "distance_half": "Halbmarathon",
+    "distance_marathon": "Marathon",
+    "distance_custom": "Eigene",
+    "customPlaceholder": "Distanz in km",
+    "calculateFrom": "Berechnung basierend auf",
+    "fromTime": "Zielzeit",
+    "fromPace": "Pace",
+    "hours": "Stunden",
+    "minutes": "Minuten",
+    "seconds": "Sekunden",
+    "paceMin": "Pace (min)",
+    "paceSec": "Pace (sek)",
+    "paceKm": "Pace (min/km)",
+    "paceMi": "Pace (min/mi)",
+    "finishTime": "Zielzeit",
+    "speed": "Geschwindigkeit",
+    "negativeSplit": "Negative-Split-Plan",
+    "negativeSplitDesc": "Laufe die erste Hälfte 2,5 % langsamer und die zweite Hälfte 2,5 % schneller als dein Durchschnittstempo.",
+    "firstHalf": "Erste Hälfte",
+    "secondHalf": "Zweite Hälfte",
+    "splits": "Splits",
+    "splitTime": "Split-Zeit",
+    "cumTime": "Gesamtzeit"
   }
 }

@@ -1,0 +1,174 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /en/blog
+        - 'heading "Calculate BMR: Basal Metabolic Rate With Two Formulas" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: March 30, 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 7 min read
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - text: Your
+            - strong [ref=e27]: Basal Metabolic Rate (BMR)
+            - text: is the number of calories your body burns at complete rest — just to keep you alive. Breathing, heartbeat, brain activity, cell repair — all of this costs energy.
+          - paragraph [ref=e28]:
+            - text: BMR accounts for roughly
+            - strong [ref=e29]: 60–75%
+            - text: of your total daily calorie burn. Knowing it is the first step to calculating your
+            - link "TDEE" [ref=e30] [cursor=pointer]:
+              - /url: /en/blog/calculate-tdee
+            - text: .
+        - generic [ref=e31]:
+          - heading "What Is BMR?" [level=2] [ref=e32]
+          - paragraph [ref=e33]: "BMR measures the calories your body needs for 24 hours of complete rest — fasting, at a neutral temperature. It depends on:"
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - strong [ref=e36]: Body weight
+              - text: — more mass requires more energy
+            - listitem [ref=e37]:
+              - strong [ref=e38]: Height
+              - text: — larger body surface area needs more energy
+            - listitem [ref=e39]:
+              - strong [ref=e40]: Age
+              - text: — BMR decreases with age
+            - listitem [ref=e41]:
+              - strong [ref=e42]: Gender
+              - text: — men have a higher BMR on average
+            - listitem [ref=e43]:
+              - strong [ref=e44]: Muscle mass
+              - text: — muscle burns more energy than fat
+        - generic [ref=e45]:
+          - heading "The Mifflin-St Jeor Formula" [level=2] [ref=e46]
+          - paragraph [ref=e47]: "The Mifflin-St Jeor formula (1990) is considered the most accurate method for calculating BMR. It is recommended by the Academy of Nutrition and Dietetics:"
+          - generic [ref=e48]:
+            - paragraph [ref=e50]: "Men: BMR = 10 × Weight(kg) + 6.25 × Height(cm) − 5 × Age + 5"
+            - paragraph [ref=e52]: "Women: BMR = 10 × Weight(kg) + 6.25 × Height(cm) − 5 × Age − 161"
+          - paragraph [ref=e53]:
+            - strong [ref=e54]: "Example:"
+            - text: "A 30-year-old male, 180 cm, 80 kg: 10 × 80 + 6.25 × 180 − 5 × 30 + 5 ="
+            - strong [ref=e55]: 1,780 kcal/day
+            - text: .
+        - generic [ref=e56]:
+          - heading "The Harris-Benedict Formula" [level=2] [ref=e57]
+          - paragraph [ref=e58]: "The Harris-Benedict formula was developed in 1919 and revised by Roza & Shizgal in 1984. It tends to produce slightly higher values than Mifflin-St Jeor:"
+          - generic [ref=e59]:
+            - paragraph [ref=e61]: "Men: BMR = 13.397 × Weight(kg) + 4.799 × Height(cm) − 5.677 × Age + 88.362"
+            - paragraph [ref=e63]: "Women: BMR = 9.247 × Weight(kg) + 3.098 × Height(cm) − 4.330 × Age + 447.593"
+          - paragraph [ref=e64]: Harris-Benedict tends to slightly overestimate BMR — especially in overweight individuals. For most people, Mifflin-St Jeor is the better choice.
+        - generic [ref=e65]:
+          - heading "From BMR to Total Daily Burn" [level=2] [ref=e66]
+          - paragraph [ref=e67]: "Your BMR is only part of the picture. To find your actual daily calorie needs, multiply BMR by an activity factor:"
+          - table [ref=e69]:
+            - rowgroup [ref=e70]:
+              - row "Activity Level Factor Example (BMR 1,780)" [ref=e71]:
+                - columnheader "Activity Level" [ref=e72]
+                - columnheader "Factor" [ref=e73]
+                - columnheader "Example (BMR 1,780)" [ref=e74]
+            - rowgroup [ref=e75]:
+              - row "Sedentary 1.2 2,136 kcal" [ref=e76]:
+                - cell "Sedentary" [ref=e77]
+                - cell "1.2" [ref=e78]
+                - cell "2,136 kcal" [ref=e79]
+              - row "Lightly active 1.375 2,448 kcal" [ref=e80]:
+                - cell "Lightly active" [ref=e81]
+                - cell "1.375" [ref=e82]
+                - cell "2,448 kcal" [ref=e83]
+              - row "Moderately active 1.55 2,759 kcal" [ref=e84]:
+                - cell "Moderately active" [ref=e85]
+                - cell "1.55" [ref=e86]
+                - cell "2,759 kcal" [ref=e87]
+              - row "Very active 1.725 3,070 kcal" [ref=e88]:
+                - cell "Very active" [ref=e89]
+                - cell "1.725" [ref=e90]
+                - cell "3,070 kcal" [ref=e91]
+              - row "Extremely active 1.9 3,382 kcal" [ref=e92]:
+                - cell "Extremely active" [ref=e93]
+                - cell "1.9" [ref=e94]
+                - cell "3,382 kcal" [ref=e95]
+          - paragraph [ref=e96]:
+            - text: The result is your
+            - strong [ref=e97]: TDEE (Total Daily Energy Expenditure)
+            - text: — the foundation of any nutrition plan. Learn more in our
+            - link "TDEE guide" [ref=e98] [cursor=pointer]:
+              - /url: /en/blog/calculate-tdee
+            - text: .
+        - generic [ref=e99]:
+          - heading "Calculate your BMR now" [level=3] [ref=e100]
+          - paragraph [ref=e101]: Mifflin-St Jeor and Harris-Benedict compared — free and no sign-up required.
+          - link "Calculate for free now →" [ref=e102] [cursor=pointer]:
+            - /url: /en/bmr-calculator
+        - generic [ref=e103]:
+          - heading "What Affects Your BMR?" [level=2] [ref=e104]
+          - paragraph [ref=e105]: "Beyond the standard factors (weight, height, age, gender), several other things influence your BMR:"
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - strong [ref=e108]: "Muscle mass:"
+              - text: Muscle burns significantly more calories at rest than fat tissue. Strength training can permanently increase your BMR.
+            - listitem [ref=e109]:
+              - strong [ref=e110]: "Thyroid function:"
+              - text: Thyroid hormones regulate metabolism. An underactive or overactive thyroid directly affects BMR.
+            - listitem [ref=e111]:
+              - strong [ref=e112]: "Crash diets:"
+              - text: Extreme calorie restriction lowers BMR — your body adapts and burns less (metabolic adaptation).
+            - listitem [ref=e113]:
+              - strong [ref=e114]: "Genetics:"
+              - text: Individual genetic differences can cause BMR to vary by 5–10%.
+        - generic [ref=e115]:
+          - heading "BMR and Nutrition Goals" [level=2] [ref=e116]
+          - paragraph [ref=e117]:
+            - text: Your BMR is the absolute floor of your calorie intake. You should never consistently eat below your BMR. For healthy weight loss, aim for a moderate
+            - link "calorie deficit" [ref=e118] [cursor=pointer]:
+              - /url: /en/blog/calculate-calorie-deficit
+            - text: of 300–500 kcal below your TDEE.
+          - paragraph [ref=e119]:
+            - text: How to split your calories optimally is covered in our
+            - link "macronutrient guide" [ref=e120] [cursor=pointer]:
+              - /url: /en/blog/calculate-macros
+            - text: .
+        - generic [ref=e121]:
+          - heading "Conclusion" [level=2] [ref=e122]
+          - paragraph [ref=e123]:
+            - text: BMR is the foundation of every nutrition calculation. Calculate your
+            - link "BMR with our calculator" [ref=e124] [cursor=pointer]:
+              - /url: /en/bmr-calculator
+            - text: and use the result to determine your
+            - link "total daily energy expenditure" [ref=e125] [cursor=pointer]:
+              - /url: /en/tdee-calculator
+            - text: .
+        - generic [ref=e126]:
+          - heading "Related Articles" [level=2] [ref=e127]
+          - generic [ref=e128]:
+            - 'link "Calculate TDEE: How to Determine Your Daily Calorie Burn Calculate TDEE using the Mifflin-St Jeor formula. Basal metabolic rate, activity factors and calorie goals for losing or gaining weight. Read more →" [ref=e129] [cursor=pointer]':
+              - /url: /en/blog/calculate-tdee
+              - 'heading "Calculate TDEE: How to Determine Your Daily Calorie Burn" [level=3] [ref=e130]'
+              - paragraph [ref=e131]: Calculate TDEE using the Mifflin-St Jeor formula. Basal metabolic rate, activity factors and calorie goals for losing or gaining weight.
+              - generic [ref=e132]: Read more →
+            - 'link "Calculate Calorie Deficit: How to Lose Weight Safely Calculate your calorie deficit using the Mifflin-St Jeor formula. TDEE, safe deficit and the 7,700 kcal rule explained simply. Read more →" [ref=e133] [cursor=pointer]':
+              - /url: /en/blog/calculate-calorie-deficit
+              - 'heading "Calculate Calorie Deficit: How to Lose Weight Safely" [level=3] [ref=e134]'
+              - paragraph [ref=e135]: Calculate your calorie deficit using the Mifflin-St Jeor formula. TDEE, safe deficit and the 7,700 kcal rule explained simply.
+              - generic [ref=e136]: Read more →
+  - contentinfo [ref=e137]:
+    - paragraph [ref=e138]: For informational purposes only — not medical advice
+```

@@ -1,0 +1,137 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gesundheitsrechner" [ref=e7] [cursor=pointer]:
+          - /url: /de/
+        - generic [ref=e8]:
+          - link "Alle Rechner" [ref=e9] [cursor=pointer]:
+            - /url: /de/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /de/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /de/blog
+        - 'heading "Taille-Hüft-Verhältnis berechnen: WHR, WHO-Grenzwerte & Risiko" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: 27. März 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 7 min Lesezeit
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - text: Das
+            - strong [ref=e27]: Taille-Hüft-Verhältnis
+            - text: (Waist-to-Hip Ratio, WHR) ist ein einfacher Indikator für die Fettverteilung im Körper. Anders als der
+            - link "BMI" [ref=e28] [cursor=pointer]:
+              - /url: /de/blog/bmi-berechnen
+            - text: zeigt es,
+            - emphasis [ref=e29]: wo
+            - text: sich das Fett befindet — und genau das bestimmt das Gesundheitsrisiko.
+          - paragraph [ref=e30]: In diesem Artikel erfährst du, was das WHR ist, wie du es korrekt misst, welche WHO-Grenzwerte gelten und warum das Taille-Hüft-Verhältnis aussagekräftiger als der BMI sein kann.
+        - generic [ref=e31]:
+          - heading "Was ist das Taille-Hüft-Verhältnis?" [level=2] [ref=e32]
+          - paragraph [ref=e33]: Das WHR ergibt sich aus der Division von Taillenumfang durch Hüftumfang. Ein hoher Wert deutet auf abdominale (bauchbetonte) Fettverteilung hin — ein bekannter Risikofaktor für Herz-Kreislauf-Erkrankungen, Typ-2-Diabetes und metabolisches Syndrom.
+          - paragraph [ref=e35]: WHR = Taillenumfang ÷ Hüftumfang
+        - generic [ref=e36]:
+          - 'heading "Richtig messen: Schritt für Schritt" [level=2] [ref=e37]'
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - generic [ref=e40]: "1"
+              - paragraph [ref=e41]:
+                - strong [ref=e42]: Taillenumfang
+                - text: — Miss auf Nabelhöhe, entspannt nach dem Ausatmen. Das Maßband liegt waagerecht und eng an, ohne einzuschnüren.
+            - generic [ref=e43]:
+              - generic [ref=e44]: "2"
+              - paragraph [ref=e45]:
+                - strong [ref=e46]: Hüftumfang
+                - text: — Miss an der breitesten Stelle des Gesäßes. Steh aufrecht, Füße zusammen.
+            - generic [ref=e47]:
+              - generic [ref=e48]: "3"
+              - paragraph [ref=e49]:
+                - strong [ref=e50]: Berechnen
+                - text: — Teile den Taillenumfang durch den Hüftumfang. Oder nutze unseren
+                - link "WHR-Rechner" [ref=e51] [cursor=pointer]:
+                  - /url: /de/taille-hueft-verhaeltnis
+                - text: .
+        - generic [ref=e52]:
+          - heading "WHO-Grenzwerte" [level=2] [ref=e53]
+          - paragraph [ref=e54]: "Die Weltgesundheitsorganisation (WHO) definiert folgende Schwellenwerte für ein erhöhtes Gesundheitsrisiko:"
+          - table [ref=e56]:
+            - rowgroup [ref=e57]:
+              - row "Risikostufe Männer Frauen" [ref=e58]:
+                - columnheader "Risikostufe" [ref=e59]
+                - columnheader "Männer" [ref=e60]
+                - columnheader "Frauen" [ref=e61]
+            - rowgroup [ref=e62]:
+              - row "Niedriges Risiko ≤ 0,85 ≤ 0,80" [ref=e63]:
+                - cell "Niedriges Risiko" [ref=e64]: Niedriges Risiko
+                - cell "≤ 0,85" [ref=e66]
+                - cell "≤ 0,80" [ref=e67]
+              - row "Moderates Risiko 0,86 – 0,90 0,81 – 0,85" [ref=e68]:
+                - cell "Moderates Risiko" [ref=e69]: Moderates Risiko
+                - cell "0,86 – 0,90" [ref=e71]
+                - cell "0,81 – 0,85" [ref=e72]
+              - row "Hohes Risiko > 0,90 > 0,85" [ref=e73]:
+                - cell "Hohes Risiko" [ref=e74]: Hohes Risiko
+                - cell "> 0,90" [ref=e76]
+                - cell "> 0,85" [ref=e77]
+        - generic [ref=e78]:
+          - heading "Jetzt dein Taille-Hüft-Verhältnis berechnen" [level=3] [ref=e79]
+          - paragraph [ref=e80]: WHO-basierte Risikoeinschätzung — kostenlos und ohne Anmeldung.
+          - link "Jetzt kostenlos berechnen →" [ref=e81] [cursor=pointer]:
+            - /url: /de/taille-hueft-verhaeltnis
+        - generic [ref=e82]:
+          - 'heading "WHR vs. BMI: Warum die Fettverteilung zählt" [level=2] [ref=e83]'
+          - paragraph [ref=e84]:
+            - text: Der
+            - link "BMI" [ref=e85] [cursor=pointer]:
+              - /url: /de/blog/bmi-berechnen
+            - text: misst nur das Verhältnis von Gewicht zu Größe — er kann nicht zwischen Muskel- und Fettmasse unterscheiden und sagt nichts über die Fettverteilung aus.
+          - paragraph [ref=e86]:
+            - text: Das WHR erfasst gezielt die
+            - strong [ref=e87]: abdominale Adipositas
+            - text: . Studien zeigen, dass Bauchfett (viszerales Fett) metabolisch aktiver ist und stärker mit Herzerkrankungen, Schlaganfall und Diabetes korreliert als subkutanes Fett.
+          - paragraph [ref=e88]:
+            - text: Ergänze dein WHR mit dem
+            - link "Körperfettanteil" [ref=e89] [cursor=pointer]:
+              - /url: /de/blog/koerperfett-berechnen
+            - text: für ein vollständiges Bild deiner Körperzusammensetzung.
+        - generic [ref=e90]:
+          - heading "Fazit" [level=2] [ref=e91]
+          - paragraph [ref=e92]:
+            - text: Das Taille-Hüft-Verhältnis ist ein schneller, kostenloser Test für dein Gesundheitsrisiko. Nutze unseren
+            - link "WHR-Rechner" [ref=e93] [cursor=pointer]:
+              - /url: /de/taille-hueft-verhaeltnis
+            - text: und ergänze das Ergebnis mit dem
+            - link "BMI" [ref=e94] [cursor=pointer]:
+              - /url: /de/bmi-rechner
+            - text: und dem
+            - link "Körperfettanteil" [ref=e95] [cursor=pointer]:
+              - /url: /de/koerperfett-rechner
+            - text: .
+        - generic [ref=e96]:
+          - heading "Verwandte Artikel" [level=2] [ref=e97]
+          - generic [ref=e98]:
+            - 'link "BMI berechnen: Was der Body Mass Index wirklich aussagt Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner. Weiterlesen →" [ref=e99] [cursor=pointer]':
+              - /url: /de/blog/bmi-berechnen
+              - 'heading "BMI berechnen: Was der Body Mass Index wirklich aussagt" [level=3] [ref=e100]'
+              - paragraph [ref=e101]: "Alles zum BMI: Formel, WHO-Tabelle, Grenzen und bessere Alternativen. Mit kostenlosem BMI-Rechner."
+              - generic [ref=e102]: Weiterlesen →
+            - 'link "Körperfettanteil berechnen: Methoden, Tabelle & Rechner Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI. Weiterlesen →" [ref=e103] [cursor=pointer]':
+              - /url: /de/blog/koerperfett-berechnen
+              - 'heading "Körperfettanteil berechnen: Methoden, Tabelle & Rechner" [level=3] [ref=e104]'
+              - paragraph [ref=e105]: Körperfettanteil berechnen mit der U.S. Navy-Methode. Kategorien, Richtwerte und warum Körperfett mehr aussagt als der BMI.
+              - generic [ref=e106]: Weiterlesen →
+  - contentinfo [ref=e107]:
+    - paragraph [ref=e108]: Nur zu Informationszwecken — kein medizinischer Rat
+```

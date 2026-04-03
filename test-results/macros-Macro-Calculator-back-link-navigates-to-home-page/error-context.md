@@ -1,0 +1,73 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Gesundheitsrechner" [ref=e7] [cursor=pointer]:
+          - /url: /de/
+        - generic [ref=e8]:
+          - link "Alle Rechner" [ref=e9] [cursor=pointer]:
+            - /url: /de/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /de/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - link "← Alle Rechner" [ref=e17] [cursor=pointer]:
+        - /url: /de/
+      - heading "Makro-Rechner" [level=1] [ref=e18]
+      - paragraph [ref=e19]: Berechne deine idealen Protein-, Kohlenhydrat- und Fettziele basierend auf deinen Zielen.
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - button "Metrisch" [ref=e22]
+        - button "Imperial" [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Alter
+          - spinbutton [ref=e27]
+        - generic [ref=e28]:
+          - generic [ref=e29]: Geschlecht
+          - generic [ref=e30]:
+            - button "Mann" [ref=e31]
+            - button "Frau" [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Größe (cm)
+          - spinbutton [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Gewicht (kg)
+          - spinbutton [ref=e39]
+      - generic [ref=e40]:
+        - generic [ref=e41]: Aktivitätslevel
+        - generic [ref=e42]:
+          - button "Sitzend" [ref=e43]
+          - button "Leicht aktiv" [ref=e44]
+          - button "Moderat aktiv" [ref=e45]
+          - button "Sehr aktiv" [ref=e46]
+          - button "Extrem aktiv" [ref=e47]
+      - generic [ref=e48]:
+        - generic [ref=e49]: Ziel
+        - generic [ref=e50]:
+          - button "Abnehmen" [ref=e51]
+          - button "Halten" [ref=e52]
+          - button "Muskelaufbau" [ref=e53]
+    - generic [ref=e54]:
+      - paragraph [ref=e55]: Anzeige
+      - paragraph [ref=e56]: Proteinpulver & Supplements vergleichen — für dein Trainingsziel.
+      - link "Jetzt vergleichen" [ref=e57] [cursor=pointer]:
+        - /url: "#"
+    - generic "Advertisement" [ref=e58]:
+      - generic [ref=e59]: Ad Slot
+    - generic [ref=e60]:
+      - paragraph [ref=e61]: Zum Nachlesen
+      - 'link "Makronährstoffe berechnen: Protein, Kohlenhydrate & Fett richtig aufteilen →" [ref=e62] [cursor=pointer]':
+        - /url: /de/blog/makronaehrstoffe-berechnen
+      - paragraph [ref=e63]: Makronährstoffe berechnen basierend auf deinem Kalorienbedarf und Ziel. Optimale Verteilung für Abnehmen, Halten und Muskelaufbau.
+  - contentinfo [ref=e64]:
+    - paragraph [ref=e65]: Nur zu Informationszwecken — kein medizinischer Rat
+```

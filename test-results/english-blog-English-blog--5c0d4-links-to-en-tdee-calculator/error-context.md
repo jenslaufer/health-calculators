@@ -1,0 +1,127 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Health Calculators" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+        - generic [ref=e8]:
+          - link "All Calculators" [ref=e9] [cursor=pointer]:
+            - /url: /en/
+          - link "Blog" [ref=e10] [cursor=pointer]:
+            - /url: /en/blog
+          - generic [ref=e11]:
+            - button "DE" [ref=e12]
+            - generic [ref=e13]: "|"
+            - button "EN" [ref=e14]
+  - main [ref=e15]:
+    - article [ref=e16]:
+      - generic [ref=e17]:
+        - link "← Blog" [ref=e18] [cursor=pointer]:
+          - /url: /en/blog
+        - 'heading "Calculate TDEE: How to Determine Your Daily Calorie Burn" [level=1] [ref=e19]'
+        - generic [ref=e20]:
+          - generic [ref=e21]: March 25, 2026
+          - generic [ref=e22]: ·
+          - generic [ref=e23]: 7 min read
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]:
+            - text: Your
+            - strong [ref=e27]: TDEE (Total Daily Energy Expenditure)
+            - text: is the total number of calories your body burns in a day — including basal metabolism, digestion, and physical activity.
+          - paragraph [ref=e28]:
+            - text: Knowing your TDEE is the most important step whether you want to
+            - strong [ref=e29]: lose weight
+            - text: ","
+            - strong [ref=e30]: maintain
+            - text: your weight, or
+            - strong [ref=e31]: build muscle
+            - text: .
+        - generic [ref=e32]:
+          - heading "Basal Metabolic Rate (BMR) vs. TDEE" [level=2] [ref=e33]
+          - paragraph [ref=e34]:
+            - text: Your
+            - strong [ref=e35]: Basal Metabolic Rate (BMR)
+            - text: is the energy your body burns at rest — for breathing, heartbeat, and cell regeneration. TDEE multiplies BMR by an
+            - strong [ref=e36]: activity factor
+            - text: .
+          - paragraph [ref=e38]: TDEE = BMR × Activity Factor
+        - generic [ref=e39]:
+          - heading "The Mifflin-St Jeor Formula" [level=2] [ref=e40]
+          - paragraph [ref=e41]: "The Mifflin-St Jeor formula (1990) is considered the most accurate method for calculating basal metabolic rate:"
+          - generic [ref=e42]:
+            - paragraph [ref=e44]: "Men: BMR = 10 × Weight(kg) + 6.25 × Height(cm) − 5 × Age + 5"
+            - paragraph [ref=e46]: "Women: BMR = 10 × Weight(kg) + 6.25 × Height(cm) − 5 × Age − 161"
+        - generic [ref=e47]:
+          - heading "Activity Factors" [level=2] [ref=e48]
+          - table [ref=e50]:
+            - rowgroup [ref=e51]:
+              - row "Activity Level Factor" [ref=e52]:
+                - columnheader "Activity Level" [ref=e53]
+                - columnheader "Factor" [ref=e54]
+            - rowgroup [ref=e55]:
+              - row "Sedentary (office job) 1.2" [ref=e56]:
+                - cell "Sedentary (office job)" [ref=e57]
+                - cell "1.2" [ref=e58]
+              - row "Lightly active (1–3 days/week) 1.375" [ref=e59]:
+                - cell "Lightly active (1–3 days/week)" [ref=e60]
+                - cell "1.375" [ref=e61]
+              - row "Moderately active (3–5 days/week) 1.55" [ref=e62]:
+                - cell "Moderately active (3–5 days/week)" [ref=e63]
+                - cell "1.55" [ref=e64]
+              - row "Very active (6–7 days/week) 1.725" [ref=e65]:
+                - cell "Very active (6–7 days/week)" [ref=e66]
+                - cell "1.725" [ref=e67]
+              - row "Extremely active (athlete) 1.9" [ref=e68]:
+                - cell "Extremely active (athlete)" [ref=e69]
+                - cell "1.9" [ref=e70]
+        - generic [ref=e71]:
+          - heading "Calculate your TDEE now" [level=3] [ref=e72]
+          - paragraph [ref=e73]: Mifflin-St Jeor formula with calorie goals — free and no sign-up required.
+          - link "Calculate for free now →" [ref=e74] [cursor=pointer]:
+            - /url: /en/tdee-calculator
+        - generic [ref=e75]:
+          - heading "TDEE and Nutrition" [level=2] [ref=e76]
+          - paragraph [ref=e77]:
+            - text: Your TDEE determines your calorie goal. For
+            - strong [ref=e78]: weight loss
+            - text: ", eat 500 kcal less; for"
+            - strong [ref=e79]: muscle building
+            - text: ", eat 500 kcal more. How to split those calories is covered in our"
+            - link "macronutrient guide" [ref=e80] [cursor=pointer]:
+              - /url: /en/blog/calculate-macros
+            - text: .
+          - paragraph [ref=e81]:
+            - text: Your
+            - link "BMI" [ref=e82] [cursor=pointer]:
+              - /url: /en/blog/calculate-bmi
+            - text: can also help you determine whether losing or gaining weight makes sense.
+        - generic [ref=e83]:
+          - heading "Conclusion" [level=2] [ref=e84]
+          - paragraph [ref=e85]:
+            - text: TDEE is the foundation of any nutrition plan. Calculate your
+            - link "daily calorie burn" [ref=e86] [cursor=pointer]:
+              - /url: /en/tdee-calculator
+            - text: and use the result as a basis for your
+            - link "macronutrient distribution" [ref=e87] [cursor=pointer]:
+              - /url: /en/macro-calculator
+            - text: .
+        - generic [ref=e88]:
+          - heading "Related Articles" [level=2] [ref=e89]
+          - generic [ref=e90]:
+            - 'link "Calculate Macronutrients: How to Split Protein, Carbs & Fat Calculate macronutrients based on your calorie needs and goals. Optimal distribution for weight loss, maintenance and muscle building. Read more →" [ref=e91] [cursor=pointer]':
+              - /url: /en/blog/calculate-macros
+              - 'heading "Calculate Macronutrients: How to Split Protein, Carbs & Fat" [level=3] [ref=e92]'
+              - paragraph [ref=e93]: Calculate macronutrients based on your calorie needs and goals. Optimal distribution for weight loss, maintenance and muscle building.
+              - generic [ref=e94]: Read more →
+            - 'link "Calculate BMI: What the Body Mass Index Really Tells You Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist. Read more →" [ref=e95] [cursor=pointer]':
+              - /url: /en/blog/calculate-bmi
+              - 'heading "Calculate BMI: What the Body Mass Index Really Tells You" [level=3] [ref=e96]'
+              - paragraph [ref=e97]: Calculate your BMI with the formula, WHO table & interpretation. Learn the limits of BMI and which alternatives exist.
+              - generic [ref=e98]: Read more →
+  - contentinfo [ref=e99]:
+    - paragraph [ref=e100]: For informational purposes only — not medical advice
+```

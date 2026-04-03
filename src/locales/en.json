@@ -58,7 +58,9 @@
       "bmr": { "name": "BMR Calculator", "description": "Calculate the calories your body burns at rest." },
       "caloriesBurned": { "name": "Calories Burned Calculator", "description": "Calculate how many calories you burn during different activities." },
       "intermittentFasting": { "name": "Intermittent Fasting Calculator", "description": "Calculate your eating and fasting windows for your protocol." },
-      "vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." }
+"vo2Max": { "name": "VO2 Max Calculator", "description": "Calculate your maximum oxygen uptake and fitness category." }
+"oneRepMax": { "name": "One Rep Max (1RM) Calculator", "description": "Estimate your one-rep max from any lift." }
+"runningPace": { "name": "Running Pace Calculator", "description": "Calculate your pace, finish time, and splits for any distance." }
     }
   },
   "blogHome": {
@@ -460,6 +462,30 @@
     "howItWorks": "How it works",
     "howItWorksText": "With intermittent fasting, you alternate between eating and fasting windows. This calculator computes your personal time window based on the chosen protocol and your last or first meal time. During the fasting phase, only water, tea, and black coffee are allowed."
   },
+  "oneRepMax": {
+    "meta": {
+      "title": "One Rep Max (1RM) Calculator — Estimate Your Max Lift",
+      "description": "Calculate your one-rep max using Epley, Brzycki, Lombardi and O'Conner formulas. Free, instant, no sign-up."
+    },
+    "title": "One Rep Max (1RM) Calculator",
+    "description": "Estimate your one-rep max from any lift using four science-backed formulas.",
+    "weightLifted": "Weight Lifted ({unit})",
+    "reps": "Reps Completed",
+    "weightUnit": "Unit",
+    "formula": "Formula",
+    "estimated1RM": "Estimated 1RM",
+    "formulaComparison": "Formula Comparison",
+    "percentageChart": "Percentage Chart",
+    "percent": "% of 1RM",
+    "weight": "Weight",
+    "repsRange": "Reps",
+    "epley": "Epley",
+    "brzycki": "Brzycki",
+    "lombardi": "Lombardi",
+    "oconner": "O'Conner",
+    "howItWorks": "How it works",
+    "howItWorksText": "The one-rep max (1RM) is the maximum weight you can lift for a single repetition. These formulas estimate your 1RM from a submaximal lift — safer than actually attempting a true max. The Epley formula is the most widely used: 1RM = weight × (1 + reps/30)."
+  },
   "waistHipRatio": {
     "meta": {
       "title": "Waist-to-Hip Ratio Calculator — WHO Risk Assessment",
@@ -477,7 +503,7 @@
     "recHigh": "Your WHR indicates a {start}high health risk{end} according to WHO guidelines. Central obesity is associated with increased cardiovascular and metabolic risk. Consult a healthcare professional.",
     "thresholdsTitle": "WHO Risk Thresholds ({gender})"
   },
-  "vo2Max": {
+"vo2Max": {
     "meta": {
       "title": "VO2 Max Calculator — Calculate Maximum Oxygen Uptake",
       "description": "Calculate your VO2 Max with the Cooper Test, Rockport Walk Test or direct entry. Fitness category, age comparison and percentiles. Free, instant, no sign-up."
@@ -508,5 +534,38 @@
     "rockportInfo": "Walk 1 mile (1,609 m) as fast as you can and measure your heart rate at the end.",
     "directInfo": "Enter your known VO2 Max value directly.",
     "weightUnit": "Unit"
+"runningPace": {
+    "meta": {
+      "title": "Running Pace Calculator — Pace, Finish Time & Splits",
+      "description": "Calculate your running pace for 5K, 10K, half marathon, and marathon. Pace in min/km and min/mi, finish time, negative split plan, and km/mile splits. Free, instant, no sign-up."
+    },
+    "title": "Running Pace Calculator",
+    "description": "Calculate your running pace, finish time, and splits for any distance.",
+    "distance": "Distance",
+    "distance_5k": "5K",
+    "distance_10k": "10K",
+    "distance_half": "Half Marathon",
+    "distance_marathon": "Marathon",
+    "distance_custom": "Custom",
+    "customPlaceholder": "Distance in km",
+    "calculateFrom": "Calculate from",
+    "fromTime": "Finish Time",
+    "fromPace": "Pace",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "paceMin": "Pace (min)",
+    "paceSec": "Pace (sec)",
+    "paceKm": "Pace (min/km)",
+    "paceMi": "Pace (min/mi)",
+    "finishTime": "Finish Time",
+    "speed": "Speed",
+    "negativeSplit": "Negative Split Plan",
+    "negativeSplitDesc": "Run the first half 2.5% slower and the second half 2.5% faster than your average pace.",
+    "firstHalf": "First Half",
+    "secondHalf": "Second Half",
+    "splits": "Splits",
+    "splitTime": "Split Time",
+    "cumTime": "Cumulative Time"
   }
 }
