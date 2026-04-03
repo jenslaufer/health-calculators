@@ -54,6 +54,7 @@
       "bloodPressure": { "name": "Blutdruck-Rechner", "description": "Ordne deine Blutdruckwerte sofort ein." },
       "pregnancy": { "name": "Geburtstermin-Rechner", "description": "Berechne deinen Geburtstermin und verfolge Meilensteine." },
       "ovulation": { "name": "Eisprung-Rechner", "description": "Berechne deinen Eisprung und deine fruchtbaren Tage." },
+      "period": { "name": "Zyklusrechner", "description": "Sage deine nächsten Perioden und fruchtbaren Tage vorher." },
       "protein": { "name": "Protein-Rechner", "description": "Berechne deinen optimalen täglichen Proteinbedarf." },
       "bmr": { "name": "Grundumsatz-Rechner (BMR)", "description": "Berechne die Kalorien, die dein Körper im Ruhezustand verbrennt." },
       "caloriesBurned": { "name": "Kalorienverbrauch-Rechner", "description": "Berechne, wie viele Kalorien du bei verschiedenen Aktivitäten verbrennst." },
@@ -593,5 +594,40 @@
     "protein": "Protein (g)",
     "netCarbs": "Netto-KH (g)",
     "fiberRecommendation": "Ballaststoff-Empfehlung"
+  },
+  "period": {
+    "meta": {
+      "title": "Zyklusrechner — Nächste Periode & fruchtbare Tage berechnen | Health Calculators",
+      "description": "Nächste Perioden und fruchtbare Tage vorhersagen. Zykluslänge und Periodendauer eingeben, 6 Zyklen im Voraus planen. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Zyklusrechner",
+    "description": "Sage deine nächsten Perioden vorher und erkenne deine fruchtbaren Tage basierend auf deinem Zyklus.",
+    "lmp": "Erster Tag der letzten Periode",
+    "cycleLength": "Zykluslänge (Tage)",
+    "periodDuration": "Periodendauer (Tage)",
+    "cyclesToPredict": "Vorhersage-Zyklen",
+    "nextPeriod": "Nächste Periode",
+    "ovulationDate": "Eisprung",
+    "fertileWindow": "Fruchtbares Fenster",
+    "cycleDay": "Zyklustag",
+    "dayN": "Tag {n}",
+    "currentCycle": "Aktueller Zyklus",
+    "phaseMenstrual": "Menstruation",
+    "phaseFollicular": "Follikelphase",
+    "phaseOvulation": "Eisprung",
+    "phaseLuteal": "Lutealphase",
+    "currentPhaseLabel": "Aktuelle Phase",
+    "phase_menstrual": "Menstruation",
+    "phase_follicular": "Follikelphase",
+    "phase_ovulation": "Eisprung / Fruchtbare Tage",
+    "phase_luteal": "Lutealphase",
+    "predictedCycles": "Vorhergesagte Zyklen",
+    "cycleN": "Zyklus {n}",
+    "periodLabel": "Periode",
+    "ovulationLabel": "Eisprung",
+    "fertileLabel": "Fruchtbar",
+    "to": "bis",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Die nächste Periode beginnt nach deiner Zykluslänge. Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Das fruchtbare Fenster umfasst die 5 Tage vor dem Eisprung und den Eisprungtag selbst."
   }
 }

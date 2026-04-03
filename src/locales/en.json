@@ -54,6 +54,7 @@
       "bloodPressure": { "name": "Blood Pressure Calculator", "description": "Check your blood pressure category instantly." },
       "pregnancy": { "name": "Pregnancy Due Date Calculator", "description": "Estimate your due date and track milestones." },
       "ovulation": { "name": "Ovulation Calculator", "description": "Calculate your ovulation date and fertile days." },
+      "period": { "name": "Period Calculator", "description": "Predict your next periods and fertile windows." },
       "protein": { "name": "Protein Calculator", "description": "Find your optimal daily protein intake." },
       "bmr": { "name": "BMR Calculator", "description": "Calculate the calories your body burns at rest." },
       "caloriesBurned": { "name": "Calories Burned Calculator", "description": "Calculate how many calories you burn during different activities." },
@@ -593,5 +594,40 @@
     "protein": "Protein (g)",
     "netCarbs": "Net Carbs (g)",
     "fiberRecommendation": "Fiber Recommendation"
+  },
+  "period": {
+    "meta": {
+      "title": "Period Calculator — Predict Your Next Period & Fertile Days | Health Calculators",
+      "description": "Predict your next periods and fertile windows. Enter your cycle length and period duration, plan 6 cycles ahead. Free, instant, no sign-up."
+    },
+    "title": "Period Calculator",
+    "description": "Predict your next periods and identify your fertile windows based on your cycle.",
+    "lmp": "First Day of Last Period",
+    "cycleLength": "Cycle Length (days)",
+    "periodDuration": "Period Duration (days)",
+    "cyclesToPredict": "Cycles to Predict",
+    "nextPeriod": "Next Period",
+    "ovulationDate": "Ovulation Date",
+    "fertileWindow": "Fertile Window",
+    "cycleDay": "Cycle Day",
+    "dayN": "Day {n}",
+    "currentCycle": "Current Cycle",
+    "phaseMenstrual": "Menstruation",
+    "phaseFollicular": "Follicular",
+    "phaseOvulation": "Ovulation",
+    "phaseLuteal": "Luteal",
+    "currentPhaseLabel": "Current Phase",
+    "phase_menstrual": "Menstruation",
+    "phase_follicular": "Follicular Phase",
+    "phase_ovulation": "Ovulation / Fertile Days",
+    "phase_luteal": "Luteal Phase",
+    "predictedCycles": "Predicted Cycles",
+    "cycleN": "Cycle {n}",
+    "periodLabel": "Period",
+    "ovulationLabel": "Ovulation",
+    "fertileLabel": "Fertile",
+    "to": "to",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses the calendar method: your next period starts after your cycle length. Ovulation occurs approximately 14 days before your next period. The fertile window spans the 5 days before ovulation and ovulation day itself."
   }
 }
