@@ -145,6 +145,7 @@ export const routeContextMap = {
     // supplements: One Rep Max, Keto
     'one-rep-max-rechner': 'supplements',
     'keto-rechner': 'supplements',
+    'eiweissbedarf-rechner': 'supplements',
   },
 
   // ── English route mappings ──
@@ -161,6 +162,7 @@ export const routeContextMap = {
     'protein-calculator': 'supplements',
     'one-rep-max-calculator': 'supplements',
     'keto-calculator': 'supplements',
+    'protein-need-calculator': 'supplements',
     // vitamins (Ritual): Water Intake
     'water-intake-calculator': 'vitamins',
     // fitness: Heart Rate, WHR, VO2 Max, Running Pace

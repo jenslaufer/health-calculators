@@ -1,0 +1,42 @@
+{
+  "home": {
+    "calculators": {
+      "proteinNeed": {
+        "name": "Eiweißbedarfs-Rechner",
+        "description": "Berechne deinen täglichen Eiweißbedarf nach Aktivität, Ziel und Alter."
+      }
+    }
+  },
+  "proteinNeed": {
+    "meta": {
+      "title": "Eiweißbedarfs-Rechner — Täglichen Proteinbedarf berechnen",
+      "description": "Berechne deinen täglichen Eiweißbedarf basierend auf Aktivitätslevel, Ziel, Alter und Geschlecht. Mit Mahlzeiten-Aufteilung und Lebensmittelbeispielen."
+    },
+    "title": "Eiweißbedarfs-Rechner",
+    "description": "Berechne deinen individuellen täglichen Eiweißbedarf — angepasst an Aktivität, Ziel und Alter.",
+    "sedentary": "Sitzend",
+    "moderate": "Moderat aktiv",
+    "active": "Aktiv",
+    "athlete": "Athlet",
+    "goal": "Ziel",
+    "maintain": "Gewicht halten",
+    "lose": "Abnehmen",
+    "muscle": "Muskelaufbau",
+    "dailyProtein": "Täglicher Eiweißbedarf",
+    "gramsPerDay": "g / Tag",
+    "perKg": "g / kg Körpergewicht",
+    "mealBreakdown": "Aufteilung auf Mahlzeiten",
+    "mealsPerDay": "Mahlzeiten pro Tag",
+    "meal": "Mahlzeit",
+    "gramsPerMeal": "g pro Mahlzeit",
+    "ageAdjustment": "Altersanpassung (65+): +0,2 g/kg",
+    "loseAdjustment": "Abnehm-Zuschlag: +0,2 g/kg",
+    "foodExamples": "Lebensmittelbeispiele",
+    "food": "Lebensmittel",
+    "proteinPer100g": "Eiweiß / 100 g",
+    "rangeLabel": "Empfohlener Bereich",
+    "rangeLow": "Minimum",
+    "rangeHigh": "Maximum",
+    "activityComparison": "Eiweißbedarf nach Aktivitätslevel"
+  }
+}

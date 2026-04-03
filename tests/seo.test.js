@@ -46,6 +46,7 @@
     'intervallfasten-rechner',
     'vo2max-rechner',
     'lauftempo-rechner',
+    'eiweissbedarf-rechner',
   ]
 
   const enCalculatorSlugs = [
@@ -59,6 +60,7 @@
     'intermittent-fasting-calculator',
     'vo2max-calculator',
     'running-pace-calculator',
+    'protein-need-calculator',
   ]
 
   it('contains all German calculator routes', () => {
@@ -90,6 +92,7 @@
     'intervallfasten-rechner',
     'vo2max-berechnen',
     'lauftempo-berechnen',
+    'eiweissbedarf-berechnen',
   ]
 
   const enBlogSlugs = [
@@ -103,6 +106,7 @@
     'intermittent-fasting-calculator',
     'calculate-vo2max',
     'calculate-running-pace',
+    'protein-requirements-guide',
   ]
 
   it('contains all German blog article URLs', () => {
@@ -117,8 +121,8 @@
     }
   })
 
-  // 1 home + 21 de calcs + 21 en calcs + 2 blog indexes + 21 de articles + 21 en articles = 87
-  it('contains exactly 87 URLs', () => {
-    expect(urls).toHaveLength(87)
+  // 1 home + 22 de calcs + 22 en calcs + 2 blog indexes + 22 de articles + 22 en articles = 91
+  it('contains exactly 91 URLs', () => {
+    expect(urls).toHaveLength(91)
   })
 })
