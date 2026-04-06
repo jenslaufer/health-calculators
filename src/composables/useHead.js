@@ -1,74 +1,17 @@
-import { watchEffect, onUnmounted } from 'vue'
+import { computed } from 'vue'
+import { useHead as useUnhead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { localePath as resolveLocalePath, routeMap } from './useLocaleRouter.js'
 
 const BASE_URL = 'https://healthcalculator.app'
 
-function setMeta(attr, key, content) {
-  if (import.meta.env.SSR) return
-  let el = document.querySelector(`meta[${attr}="${key}"]`)
-  if (!el) {
-    el = document.createElement('meta')
-    el.setAttribute(attr, key)
-    document.head.appendChild(el)
-  }
-  el.setAttribute('content', content)
-}
-
-function setCanonical(url) {
-  if (import.meta.env.SSR) return
-  let el = document.querySelector('link[rel="canonical"]')
-  if (!el) {
-    el = document.createElement('link')
-    el.setAttribute('rel', 'canonical')
-    document.head.appendChild(el)
-  }
-  el.setAttribute('href', url)
-}
-
-function setHreflang(lang, url) {
-  if (import.meta.env.SSR) return
-  let el = document.querySelector(`link[hreflang="${lang}"]`)
-  if (!el) {
-    el = document.createElement('link')
-    el.setAttribute('rel', 'alternate')
-    el.setAttribute('hreflang', lang)
-    document.head.appendChild(el)
-  }
-  el.setAttribute('href', url)
-}
-
-function removeHreflang() {
-  if (import.meta.env.SSR) return
-  document.querySelectorAll('link[hreflang]').forEach(el => el.remove())
-}
-
-function setJsonLd(data) {
-  if (import.meta.env.SSR) return
-  let el = document.querySelector('script[data-head="jsonld"]')
-  if (!el) {
-    el = document.createElement('script')
-    el.setAttribute('type', 'application/ld+json')
-    el.setAttribute('data-head', 'jsonld')
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(data)
-}
-
-function removeJsonLd() {
-  if (import.meta.env.SSR) return
-  const el = document.querySelector('script[data-head="jsonld"]')
-  if (el) el.remove()
-}
-
 export function useHead(getConfig) {
   const resolve = typeof getConfig === 'function' ? getConfig : () => getConfig
-  const prevTitle = import.meta.env.SSR ? '' : document.title
   const route = useRoute()
   const { locale } = useI18n()
 
-  watchEffect(() => {
+  const headData = computed(() => {
     const { title, description, routeKey, jsonLd } = resolve()
     const currentLocale = locale.value
     const otherLocale = currentLocale === 'de' ? 'en' : 'de'
@@ -88,30 +31,31 @@ export function useHead(getConfig) {
 
     const url = `${BASE_URL}${currentPath}`
 
-    if (!import.meta.env.SSR) {
-      document.title = title
+    const head = {
+      title,
+      meta: [
+        { name: 'description', content: description },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:url', content: url },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
+      ],
+      link: [
+        { rel: 'canonical', href: url },
+        { rel: 'alternate', hreflang: currentLocale, href: `${BASE_URL}${currentPath}` },
+        { rel: 'alternate', hreflang: otherLocale, href: `${BASE_URL}${otherPath}` },
+      ],
     }
-    setMeta('name', 'description', description)
-    setMeta('property', 'og:title', title)
-    setMeta('property', 'og:description', description)
-    setMeta('property', 'og:url', url)
-    setMeta('name', 'twitter:title', title)
-    setMeta('name', 'twitter:description', description)
-    setCanonical(url)
-
-    setHreflang(currentLocale, `${BASE_URL}${currentPath}`)
-    setHreflang(otherLocale, `${BASE_URL}${otherPath}`)
 
     if (jsonLd) {
-      setJsonLd(jsonLd)
+      head.script = [
+        { type: 'application/ld+json', innerHTML: JSON.stringify(jsonLd) },
+      ]
     }
+
+    return head
   })
 
-  onUnmounted(() => {
-    if (!import.meta.env.SSR) {
-      document.title = prevTitle
-    }
-    removeJsonLd()
-    removeHreflang()
-  })
+  useUnhead(headData)
 }
