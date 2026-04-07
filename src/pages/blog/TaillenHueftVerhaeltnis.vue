@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-27',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/taille-hueft-verhaeltnis-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/taille-hueft-verhaeltnis-berechnen',
     },
   },
 })

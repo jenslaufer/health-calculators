@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-04-03',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/keto-rechner',
+      '@id': 'https://healthcalculator.app/de/blog/keto-rechner',
     },
   },
 })

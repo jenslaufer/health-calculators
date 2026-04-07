@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-25',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/herzfrequenz-zonen-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/herzfrequenz-zonen-berechnen',
     },
   },
 })

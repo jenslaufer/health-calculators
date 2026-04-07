@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-04-03',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/zyklusrechner-guide',
+      '@id': 'https://healthcalculator.app/de/blog/zyklusrechner-guide',
     },
   },
 })

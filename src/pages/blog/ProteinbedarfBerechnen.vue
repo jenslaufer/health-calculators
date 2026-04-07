@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-30',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/proteinbedarf-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/proteinbedarf-berechnen',
     },
   },
 })

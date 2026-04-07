@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-27',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/geburtstermin-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/geburtstermin-berechnen',
     },
   },
 })

@@ -38,8 +38,11 @@ export function useHead(getConfig) {
         { property: 'og:title', content: title },
         { property: 'og:description', content: description },
         { property: 'og:url', content: url },
+        { property: 'og:image', content: `${BASE_URL}/og-image.png` },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: `${BASE_URL}/og-image.png` },
       ],
       link: [
         { rel: 'canonical', href: url },
@@ -49,8 +52,16 @@ export function useHead(getConfig) {
     }
 
     if (jsonLd) {
+      const enriched = { ...jsonLd }
+      if (enriched['@type'] === 'WebApplication') {
+        enriched.url = url
+        enriched.description = description
+      }
+      if (enriched['@type'] === 'Article') {
+        enriched.mainEntityOfPage = { '@type': 'WebPage', '@id': url }
+      }
       head.script = [
-        { type: 'application/ld+json', innerHTML: JSON.stringify(jsonLd) },
+        { type: 'application/ld+json', innerHTML: JSON.stringify(enriched) },
       ]
     }
 

@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-27',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/kaloriendefizit-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/kaloriendefizit-berechnen',
     },
   },
 })

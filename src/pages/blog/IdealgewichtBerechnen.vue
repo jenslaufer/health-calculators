@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-03-25',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/idealgewicht-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/idealgewicht-berechnen',
     },
   },
 })

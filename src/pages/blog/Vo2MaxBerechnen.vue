@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-04-02',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/vo2max-berechnen',
+      '@id': 'https://healthcalculator.app/de/blog/vo2max-berechnen',
     },
   },
 })

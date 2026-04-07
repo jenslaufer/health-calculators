@@ -20,7 +20,7 @@ useHead({
     dateModified: '2026-04-02',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': 'https://healthcalculator.app/blog/intervallfasten-rechner',
+      '@id': 'https://healthcalculator.app/de/blog/intervallfasten-rechner',
     },
   },
 })
