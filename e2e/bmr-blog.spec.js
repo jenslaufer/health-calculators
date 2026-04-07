@@ -21,7 +21,7 @@ test.describe('BMR Blog Article (Grundumsatz berechnen)', () => {
 
   test('link to BMR calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Jetzt kostenlos berechnen/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/bmr-rechner$/)
+    await expect(page).toHaveURL(/\/de\/bmr-rechner$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {
@@ -62,11 +62,11 @@ test.describe('BMR Blog Article EN (Calculate BMR)', () => {
 
   test('link to BMR calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Calculate for free now/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/en\/bmr-calculator$/)
+    await expect(page).toHaveURL(/\/en\/bmr-calculator$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {
-    await expect(page.locator('a[href="/health-calculators/en/blog"]').first()).toBeVisible()
+    await expect(page.locator('a[href="/en/blog"]').first()).toBeVisible()
   })
 
   test('related articles section exists', async ({ page }) => {

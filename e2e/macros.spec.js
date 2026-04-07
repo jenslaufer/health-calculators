@@ -75,7 +75,7 @@ test.describe('Macro Calculator', () => {
   })
 
   test('back link navigates to home page', async ({ page }) => {
-    await page.click('a[href="/health-calculators/de/"]')
-    await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
+    await page.click('a[href="/de/"]')
+    await expect(page).toHaveURL(/\/de\/?$/)
   })
 })

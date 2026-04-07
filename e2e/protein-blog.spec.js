@@ -16,7 +16,7 @@ test.describe('Protein Blog Article (Proteinbedarf berechnen)', () => {
 
   test('link to protein calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Jetzt kostenlos berechnen/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/protein-rechner$/)
+    await expect(page).toHaveURL(/\/de\/protein-rechner$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {

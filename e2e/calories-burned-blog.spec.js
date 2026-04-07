@@ -15,7 +15,7 @@ test.describe('Calories Burned Blog Article DE (Kalorienverbrauch berechnen)', (
 
   test('link to calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Jetzt kostenlos berechnen/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/kalorienverbrauch$/)
+    await expect(page).toHaveURL(/\/de\/kalorienverbrauch$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {
@@ -43,7 +43,7 @@ test.describe('Calories Burned Blog Article EN (Calculate Calories Burned)', () 
 
   test('link to calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Calculate for free now/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/en\/calories-burned$/)
+    await expect(page).toHaveURL(/\/en\/calories-burned$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {

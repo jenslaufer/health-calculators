@@ -21,7 +21,7 @@ test.describe('Blog: Körperfettanteil berechnen (DE)', () => {
   })
 
   test('links to calculator', async ({ page }) => {
-    const ctaLink = page.locator('a[href="/health-calculators/de/koerperfett-rechner"]')
+    const ctaLink = page.locator('a[href="/de/koerperfett-rechner"]')
     await expect(ctaLink.first()).toBeVisible()
   })
 
@@ -32,7 +32,7 @@ test.describe('Blog: Körperfettanteil berechnen (DE)', () => {
 
   test('back link navigates to blog home', async ({ page }) => {
     await page.getByText('← Blog').click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/blog$/)
+    await expect(page).toHaveURL(/\/de\/blog$/)
   })
 })
 
@@ -57,7 +57,7 @@ test.describe('Blog: Calculate Body Fat (EN)', () => {
   })
 
   test('links to calculator', async ({ page }) => {
-    const ctaLink = page.locator('a[href="/health-calculators/en/body-fat-calculator"]')
+    const ctaLink = page.locator('a[href="/en/body-fat-calculator"]')
     await expect(ctaLink.first()).toBeVisible()
   })
 
@@ -68,6 +68,6 @@ test.describe('Blog: Calculate Body Fat (EN)', () => {
 
   test('back link navigates to blog home', async ({ page }) => {
     await page.getByText('← Blog').click()
-    await expect(page).toHaveURL(/\/health-calculators\/en\/blog$/)
+    await expect(page).toHaveURL(/\/en\/blog$/)
   })
 })

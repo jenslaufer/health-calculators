@@ -17,7 +17,7 @@ test.describe('Pregnancy Due Date Blog Article', () => {
 
   test('link to pregnancy calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Jetzt kostenlos berechnen/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/schwangerschafts-rechner$/)
+    await expect(page).toHaveURL(/\/de\/schwangerschafts-rechner$/)
   })
 
   test('blog banner link back to blog is visible', async ({ page }) => {

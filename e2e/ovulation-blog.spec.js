@@ -16,7 +16,7 @@ test.describe('Ovulation Blog Article (Eisprung berechnen)', () => {
 
   test('link to ovulation calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Jetzt kostenlos berechnen/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/eisprung-rechner$/)
+    await expect(page).toHaveURL(/\/de\/eisprung-rechner$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {

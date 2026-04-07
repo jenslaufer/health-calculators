@@ -14,15 +14,15 @@ test('article has back link to blog', async ({ page }) => {
 })
 
 test('article links to WHR calculator', async ({ page }) => {
-  const calcLink = page.locator('a[href="/health-calculators/de/taille-hueft-verhaeltnis"]')
+  const calcLink = page.locator('a[href="/de/taille-hueft-verhaeltnis"]')
   await expect(calcLink.first()).toBeVisible()
 })
 
 test('article links to related calculators (BMI, Body Fat)', async ({ page }) => {
-  const bmiLink = page.locator('a[href="/health-calculators/de/blog/bmi-berechnen"]')
+  const bmiLink = page.locator('a[href="/de/blog/bmi-berechnen"]')
   await expect(bmiLink.first()).toBeVisible()
 
-  const bodyFatLink = page.locator('a[href="/health-calculators/de/blog/koerperfett-berechnen"]')
+  const bodyFatLink = page.locator('a[href="/de/blog/koerperfett-berechnen"]')
   await expect(bodyFatLink.first()).toBeVisible()
 })
 

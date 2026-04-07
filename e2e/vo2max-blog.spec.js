@@ -15,7 +15,7 @@ test.describe('VO2 Max Blog Article DE (VO2 Max berechnen)', () => {
 
   test('link to calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Jetzt kostenlos berechnen/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/de\/vo2max-rechner$/)
+    await expect(page).toHaveURL(/\/de\/vo2max-rechner$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {
@@ -43,7 +43,7 @@ test.describe('VO2 Max Blog Article EN (VO2 Max Calculator)', () => {
 
   test('link to calculator works', async ({ page }) => {
     await page.getByRole('link', { name: /Calculate for free now/i }).click()
-    await expect(page).toHaveURL(/\/health-calculators\/en\/vo2max-calculator$/)
+    await expect(page).toHaveURL(/\/en\/vo2max-calculator$/)
   })
 
   test('back link to blog is visible', async ({ page }) => {

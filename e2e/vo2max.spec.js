@@ -52,5 +52,5 @@ test('direct entry shows result', async ({ page }) => {
 
 test('back link navigates to home page', async ({ page }) => {
   await page.getByRole('link', { name: '← Alle Rechner' }).click()
-  await expect(page).toHaveURL(/\/health-calculators\/de\/?$/)
+  await expect(page).toHaveURL(/\/de\/?$/)
 })

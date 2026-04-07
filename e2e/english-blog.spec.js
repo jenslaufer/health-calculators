@@ -112,7 +112,7 @@ test.describe('English blog articles link to calculators', () => {
   for (const article of englishBlogArticles) {
     test(`${article.slug} links to ${article.calculatorLink}`, async ({ page }) => {
       await page.goto(`en/blog/${article.slug}`)
-      const ctaLink = page.locator(`a[href="/health-calculators${article.calculatorLink}"]`)
+      const ctaLink = page.locator(`a[href="${article.calculatorLink}"]`)
       await expect(ctaLink.first()).toBeVisible()
     })
   }
@@ -135,7 +135,7 @@ test.describe('English blog articles use English internal links', () => {
   for (const article of englishBlogArticles) {
     test(`${article.slug} back link goes to English blog home`, async ({ page }) => {
       await page.goto(`en/blog/${article.slug}`)
-      const backLink = page.locator('a[href="/health-calculators/en/blog"]').first()
+      const backLink = page.locator('a[href="/en/blog"]').first()
       await expect(backLink).toBeVisible()
     })
   }
