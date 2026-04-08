@@ -209,6 +209,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'bac',
     related: ['calculate-water-intake', 'calculate-calories-burned'],
   },
+  {
+    slug: 'caffeine-calculator-sleep-guide',
+    title: 'Caffeine Calculator: How Long Until You Can Sleep?',
+    description: 'Caffeine has a half-life of ~5 hours. Calculate your current caffeine level and find out when you can safely fall asleep tonight.',
+    date: '2026-04-08',
+    readTime: '7 min',
+    calculatorKey: 'caffeine',
+    related: ['calculate-sleep-cycles', 'calculate-water-intake'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

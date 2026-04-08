@@ -209,6 +209,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'bac',
     related: ['wasserbedarf-berechnen', 'kalorienverbrauch-berechnen'],
   },
+  {
+    slug: 'koffein-rechner-schlafen',
+    title: 'Koffein-Rechner: Wann kannst du wieder schlafen?',
+    description: 'Koffein hat eine Halbwertszeit von ~5 Stunden. Berechne deinen aktuellen Koffeinspiegel und erfahre, wann du wieder sicher einschlafen kannst.',
+    date: '2026-04-08',
+    readTime: '7 min',
+    calculatorKey: 'caffeine',
+    related: ['schlafzyklen-berechnen', 'wasserbedarf-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

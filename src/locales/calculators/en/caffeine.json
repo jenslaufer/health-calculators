@@ -1,0 +1,42 @@
+{
+  "home": {
+    "calculators": {
+      "caffeine": {
+        "name": "Caffeine Calculator",
+        "description": "Track your current caffeine level and find out when you can safely sleep."
+      }
+    }
+  },
+  "caffeine": {
+    "meta": {
+      "title": "Caffeine Calculator — Track Your Caffeine Level & Safe Sleep Time",
+      "description": "Calculate your current caffeine level based on your drinks and find out when you can safely fall asleep. Includes half-life visualization and FDA limit comparison."
+    },
+    "title": "Caffeine Calculator",
+    "description": "Current caffeine level, safe sleep time, and daily limit — based on your drinks and caffeine half-life.",
+    "drinksLabel": "Drinks consumed today",
+    "addDrink": "+ Add drink",
+    "removeDrink": "Remove",
+    "drinkType": "Drink",
+    "quantity": "Quantity",
+    "timeOfConsumption": "Time",
+    "currentLevel": "Current caffeine level",
+    "dailyIntake": "Total intake today",
+    "sleepTimeLabel": "Safe to sleep from",
+    "dailyLimit": "FDA daily limit (400 mg)",
+    "limitWarning": "You have exceeded the FDA recommended daily limit of 400 mg.",
+    "limitOk": "Within FDA daily limit",
+    "halflifeNote": "Caffeine half-life: ~5 hours",
+    "decayTitle": "Caffeine decay over time",
+    "now": "Now",
+    "drinks": {
+      "coffee": "Coffee (95 mg)",
+      "espresso": "Espresso (63 mg)",
+      "doubleEspresso": "Double Espresso (126 mg)",
+      "blackTea": "Black Tea (47 mg)",
+      "greenTea": "Green Tea (28 mg)",
+      "energyDrink": "Energy Drink (80 mg)",
+      "cola": "Cola (34 mg / 330 ml)"
+    }
+  }
+}

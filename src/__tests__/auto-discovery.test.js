@@ -15,7 +15,7 @@ const EXPECTED_KEYS = [
   'sleep', 'tdee', 'pregnancy', 'bloodPressure', 'calorieDeficit',
   'waistHipRatio', 'ovulation', 'protein', 'bmr', 'caloriesBurned',
   'intermittentFasting', 'vo2Max', 'oneRepMax', 'runningPace', 'keto',
-  'period', 'bac', 'proteinNeed',
+  'period', 'bac', 'proteinNeed', 'caffeine',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -43,6 +43,7 @@ const EXPECTED_ROUTE_MAP = {
   period: { de: 'zyklusrechner', en: 'period-calculator' },
   bac: { de: 'promillerechner', en: 'blood-alcohol-calculator' },
   proteinNeed: { de: 'eiweissbedarf-rechner', en: 'protein-need-calculator' },
+  caffeine: { de: 'koffein-rechner', en: 'caffeine-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -58,6 +59,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'lauftempo-berechnen', 'keto-rechner',
   'zyklusrechner-guide', 'promille-berechnen',
   'eiweissbedarf-berechnen',
+  'koffein-rechner-schlafen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -73,11 +75,12 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'calculate-running-pace', 'keto-calculator-guide',
   'period-calculator-guide', 'blood-alcohol-calculator',
   'protein-requirements-guide',
+  'caffeine-calculator-sleep-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 24 calculators', () => {
-    expect(calculatorMetas).toHaveLength(24)
+  it('discovers all 25 calculators', () => {
+    expect(calculatorMetas).toHaveLength(25)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
@@ -85,7 +88,7 @@ describe('calculator discovery', () => {
   })
 
   it('builds calculatorComponents map for all keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(24)
+    expect(Object.keys(calculatorComponents)).toHaveLength(25)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -108,15 +111,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 24 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(24)
+  it('discovers all 25 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(25)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 24 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(24)
+  it('discovers all 25 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(25)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -132,10 +135,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 24 calculators with no duplicates', () => {
+  it('groups contain all 25 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(24)
-    expect(new Set(allKeys).size).toBe(24)
+    expect(allKeys).toHaveLength(25)
+    expect(new Set(allKeys).size).toBe(25)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -150,7 +153,7 @@ describe('calculator groups', () => {
   it('nutritionEnergy group has correct calculators in order', () => {
     expect(calculatorGroups[1].calculators).toEqual([
       'bmr', 'tdee', 'macro', 'water', 'calorieDeficit',
-      'protein', 'caloriesBurned', 'proteinNeed', 'intermittentFasting', 'keto',
+      'protein', 'caloriesBurned', 'proteinNeed', 'caffeine', 'intermittentFasting', 'keto',
     ])
   })
 
@@ -204,8 +207,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 150 routes', () => {
-    expect(routes).toHaveLength(150)
+  it('generates exactly 156 routes', () => {
+    expect(routes).toHaveLength(156)
   })
 
   it('has locale routes for all calculators in both languages', () => {
