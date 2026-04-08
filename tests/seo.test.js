@@ -121,8 +121,8 @@
     }
   })
 
-  // 1 home + 24 de calcs + 24 en calcs + 2 blog indexes + 24 de articles + 24 en articles = 99
-  it('contains exactly 99 URLs', () => {
-    expect(urls).toHaveLength(99)
+  // 1 home + 25 de calcs + 25 en calcs + 2 blog indexes + 25 de articles + 25 en articles = 103
+  it('contains exactly 103 URLs', () => {
+    expect(urls).toHaveLength(103)
   })
 })

@@ -1,0 +1,42 @@
+{
+  "home": {
+    "calculators": {
+      "caffeine": {
+        "name": "Koffein-Rechner",
+        "description": "Berechne deinen aktuellen Koffeinspiegel und wann du wieder schlafen kannst."
+      }
+    }
+  },
+  "caffeine": {
+    "meta": {
+      "title": "Koffein-Rechner — Koffeinspiegel berechnen & Schlafzeit ermitteln",
+      "description": "Berechne deinen aktuellen Koffeinspiegel basierend auf deinen Getränken und erfahre, wann du wieder sicher schlafen kannst. Mit Halbwertszeit-Visualisierung."
+    },
+    "title": "Koffein-Rechner",
+    "description": "Aktueller Koffeinspiegel, sichere Schlafzeit und Tageslimit — basierend auf deinen Getränken und der Koffein-Halbwertszeit.",
+    "drinksLabel": "Konsumierte Getränke",
+    "addDrink": "+ Getränk hinzufügen",
+    "removeDrink": "Entfernen",
+    "drinkType": "Getränk",
+    "quantity": "Anzahl",
+    "timeOfConsumption": "Uhrzeit",
+    "currentLevel": "Aktueller Koffeinspiegel",
+    "dailyIntake": "Gesamtaufnahme heute",
+    "sleepTimeLabel": "Sicher schlafen ab",
+    "dailyLimit": "FDA-Tageslimit (400 mg)",
+    "limitWarning": "Du hast das FDA-Tageslimit von 400 mg überschritten.",
+    "limitOk": "Innerhalb des FDA-Tageslimits",
+    "halflifeNote": "Koffein-Halbwertszeit: ~5 Stunden",
+    "decayTitle": "Koffeinabbau im Zeitverlauf",
+    "now": "Jetzt",
+    "drinks": {
+      "coffee": "Kaffee (95 mg)",
+      "espresso": "Espresso (63 mg)",
+      "doubleEspresso": "Doppelter Espresso (126 mg)",
+      "blackTea": "Schwarztee (47 mg)",
+      "greenTea": "Grüntee (28 mg)",
+      "energyDrink": "Energy Drink (80 mg)",
+      "cola": "Cola (34 mg / 330 ml)"
+    }
+  }
+}
