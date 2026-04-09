@@ -1,0 +1,40 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancyWeightGain": {
+        "name": "Pregnancy Weight Gain",
+        "description": "Recommended weight gain during pregnancy based on IOM guidelines."
+      }
+    }
+  },
+  "pregnancyWeightGain": {
+    "meta": {
+      "title": "Pregnancy Weight Gain Calculator — IOM 2009 Guidelines",
+      "description": "Calculate your recommended pregnancy weight gain based on IOM 2009 guidelines. Personalized for your pre-pregnancy BMI, current week, and twin pregnancies."
+    },
+    "title": "Pregnancy Weight Gain Calculator",
+    "description": "Recommended weight gain based on IOM 2009 guidelines — tailored to your pre-pregnancy BMI.",
+    "preWeight": "Pre-pregnancy weight (kg)",
+    "height": "Height (cm)",
+    "currentWeek": "Current pregnancy week",
+    "twinsLabel": "Multiple pregnancy",
+    "singleton": "Single",
+    "twins": "Twins",
+    "totalGainRange": "Recommended total gain",
+    "gainByWeek": "Gain by week {week}",
+    "chartTitle": "Week-by-week weight gain",
+    "weekShort": "Wk {w}",
+    "legendMax": "Upper recommendation",
+    "legendMin": "Lower recommendation",
+    "legendCurrent": "Current week",
+    "source": "Guidelines: Institute of Medicine (IOM) 2009",
+    "linkBmi": "BMI Calculator",
+    "linkPregnancy": "Pregnancy Calculator",
+    "categories": {
+      "underweight": "Underweight",
+      "normal": "Normal weight",
+      "overweight": "Overweight",
+      "obese": "Obese"
+    }
+  }
+}
