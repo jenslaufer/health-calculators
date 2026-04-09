@@ -1,0 +1,42 @@
+{
+  "home": {
+    "calculators": {
+      "hba1c": {
+        "name": "HbA1c-Umrechner",
+        "description": "HbA1c in Langzeit-Blutzucker (eAG) umrechnen und Risiko einschätzen."
+      }
+    }
+  },
+  "hba1c": {
+    "meta": {
+      "title": "HbA1c umrechnen — Langzeit-Blutzucker verstehen | Health Calculators",
+      "description": "HbA1c-Wert in geschätzten mittleren Blutzucker (eAG) umrechnen. Risikokategorien Normal, Prädiabetes, Diabetes. Formel und Rechner kostenlos."
+    },
+    "title": "HbA1c umrechnen — Langzeit-Blutzucker verstehen",
+    "description": "HbA1c-Wert in geschätzten mittleren Blutzucker (eAG) umrechnen oder umgekehrt. Risikokategorie sofort ablesen.",
+    "modeHbA1c": "HbA1c → Blutzucker",
+    "modeGlucose": "Blutzucker → HbA1c",
+    "hba1cLabel": "HbA1c (%)",
+    "hba1cPlaceholder": "z.B. 6,5",
+    "glucoseLabel": "Mittlerer Blutzucker",
+    "glucosePlaceholderMg": "z.B. 140",
+    "glucosePlaceholderMmol": "z.B. 7,8",
+    "eagMg": "eAG (mg/dL)",
+    "eagMmol": "eAG (mmol/L)",
+    "hba1cResult": "HbA1c (%)",
+    "category": "Risikokategorie",
+    "formula": "Formel",
+    "formulaText": "eAG (mg/dL) = 28,7 × HbA1c (%) − 46,7",
+    "formulaTextReverse": "HbA1c (%) = (eAG + 46,7) ÷ 28,7",
+    "normal": "Normal",
+    "prediabetes": "Prädiabetes",
+    "diabetes": "Diabetes",
+    "normalRange": "< 5,7 %",
+    "prediabetesRange": "5,7 – 6,4 %",
+    "diabetesRange": "≥ 6,5 %",
+    "categoriesTitle": "Risikokategorien (ADA)",
+    "normalDesc": "Kein erhöhtes Risiko für Diabetes.",
+    "prediabetesDesc": "Erhöhtes Risiko. Lebensstiländerungen empfohlen.",
+    "diabetesDesc": "Diabetes-Bereich. Arzt aufsuchen."
+  }
+}

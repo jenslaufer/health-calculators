@@ -16,6 +16,7 @@ const EXPECTED_KEYS = [
   'waistHipRatio', 'ovulation', 'protein', 'bmr', 'caloriesBurned',
   'intermittentFasting', 'vo2Max', 'oneRepMax', 'runningPace', 'keto',
   'period', 'bac', 'proteinNeed', 'caffeine',
+  'leanBodyMass', 'pregnancyWeightGain', 'hba1c',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -44,6 +45,9 @@ const EXPECTED_ROUTE_MAP = {
   bac: { de: 'promillerechner', en: 'blood-alcohol-calculator' },
   proteinNeed: { de: 'eiweissbedarf-rechner', en: 'protein-need-calculator' },
   caffeine: { de: 'koffein-rechner', en: 'caffeine-calculator' },
+  leanBodyMass: { de: 'magermasse-rechner', en: 'lean-body-mass-calculator' },
+  pregnancyWeightGain: { de: 'gewichtszunahme-schwangerschaft', en: 'pregnancy-weight-gain-calculator' },
+  hba1c: { de: 'hba1c-konverter', en: 'hba1c-converter' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -60,6 +64,9 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'zyklusrechner-guide', 'promille-berechnen',
   'eiweissbedarf-berechnen',
   'koffein-rechner-schlafen',
+  'magermasse-berechnen',
+  'gewichtszunahme-schwangerschaft-berechnen',
+  'hba1c-umrechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -76,19 +83,22 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'period-calculator-guide', 'blood-alcohol-calculator',
   'protein-requirements-guide',
   'caffeine-calculator-sleep-guide',
+  'calculate-lean-body-mass',
+  'pregnancy-weight-gain-guide',
+  'hba1c-converter-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 25 calculators', () => {
-    expect(calculatorMetas).toHaveLength(25)
+  it('discovers all 28 calculators', () => {
+    expect(calculatorMetas).toHaveLength(28)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(25)
+  it('builds calculatorComponents map for all 28 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(28)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -111,15 +121,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 25 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(25)
+  it('discovers all 28 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(28)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 25 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(25)
+  it('discovers all 28 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(28)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -135,10 +145,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 25 calculators with no duplicates', () => {
+  it('groups contain all 28 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(25)
-    expect(new Set(allKeys).size).toBe(25)
+    expect(allKeys).toHaveLength(28)
+    expect(new Set(allKeys).size).toBe(28)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -146,7 +156,7 @@ describe('calculator groups', () => {
 
   it('bodyComposition group has correct calculators in order', () => {
     expect(calculatorGroups[0].calculators).toEqual([
-      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio',
+      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'leanBodyMass',
     ])
   })
 
@@ -159,13 +169,13 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c',
     ])
   })
 
   it('pregnancy group has correct calculators in order', () => {
     expect(calculatorGroups[3].calculators).toEqual([
-      'pregnancy', 'ovulation', 'period',
+      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'period',
     ])
   })
 })
@@ -207,8 +217,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 156 routes', () => {
-    expect(routes).toHaveLength(156)
+  it('generates exactly 174 routes', () => {
+    expect(routes).toHaveLength(174)
   })
 
   it('has locale routes for all calculators in both languages', () => {
