@@ -1,0 +1,40 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancyWeightGain": {
+        "name": "Gewichtszunahme Schwangerschaft",
+        "description": "Empfohlene Gewichtszunahme in der Schwangerschaft nach IOM-Leitlinien."
+      }
+    }
+  },
+  "pregnancyWeightGain": {
+    "meta": {
+      "title": "Gewichtszunahme Schwangerschaft berechnen — IOM-Empfehlungen",
+      "description": "Berechne deine empfohlene Gewichtszunahme in der Schwangerschaft nach IOM 2009 Leitlinien. Individuell angepasst an deinen BMI, Schwangerschaftswoche und Mehrlinge."
+    },
+    "title": "Gewichtszunahme in der Schwangerschaft",
+    "description": "Empfohlene Gewichtszunahme nach IOM 2009 Leitlinien — basierend auf deinem Vor-Schwangerschafts-BMI.",
+    "preWeight": "Gewicht vor der Schwangerschaft (kg)",
+    "height": "Körpergröße (cm)",
+    "currentWeek": "Aktuelle Schwangerschaftswoche",
+    "twinsLabel": "Mehrlingsschwangerschaft",
+    "singleton": "Einling",
+    "twins": "Zwillinge",
+    "totalGainRange": "Empfohlene Gesamtzunahme",
+    "gainByWeek": "Zunahme bis SSW {week}",
+    "chartTitle": "Wochenverlauf der Gewichtszunahme",
+    "weekShort": "SSW {w}",
+    "legendMax": "Maximale Empfehlung",
+    "legendMin": "Minimale Empfehlung",
+    "legendCurrent": "Aktuelle Woche",
+    "source": "Leitlinien: Institute of Medicine (IOM) 2009",
+    "linkBmi": "BMI-Rechner",
+    "linkPregnancy": "Schwangerschafts-Rechner",
+    "categories": {
+      "underweight": "Untergewicht",
+      "normal": "Normalgewicht",
+      "overweight": "Übergewicht",
+      "obese": "Adipositas"
+    }
+  }
+}

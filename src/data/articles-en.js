@@ -227,6 +227,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'leanBodyMass',
     related: ['calculate-body-fat', 'calculate-bmi'],
   },
+  {
+    slug: 'pregnancy-weight-gain-guide',
+    title: 'Pregnancy Weight Gain Calculator — IOM 2009 Guidelines',
+    description: 'How much weight should you gain during pregnancy? IOM 2009 recommendations by pre-pregnancy BMI, week-by-week breakdown, and twin pregnancies explained.',
+    date: '2026-04-09',
+    readTime: '8 min',
+    calculatorKey: 'pregnancyWeightGain',
+    related: ['calculate-due-date', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

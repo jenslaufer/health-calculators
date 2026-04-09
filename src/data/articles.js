@@ -227,6 +227,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'leanBodyMass',
     related: ['koerperfett-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'gewichtszunahme-schwangerschaft-berechnen',
+    title: 'Gewichtszunahme in der Schwangerschaft berechnen — IOM-Leitlinien',
+    description: 'Empfohlene Gewichtszunahme in der Schwangerschaft nach IOM 2009. Richtwerte nach BMI-Kategorie, Wochenverlauf und Zwillingsschwangerschaften verständlich erklärt.',
+    date: '2026-04-09',
+    readTime: '8 min',
+    calculatorKey: 'pregnancyWeightGain',
+    related: ['geburtstermin-berechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
