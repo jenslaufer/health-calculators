@@ -1,0 +1,42 @@
+{
+  "home": {
+    "calculators": {
+      "hba1c": {
+        "name": "HbA1c Converter",
+        "description": "Convert HbA1c to estimated average glucose (eAG) and assess your risk."
+      }
+    }
+  },
+  "hba1c": {
+    "meta": {
+      "title": "HbA1c Converter — Understand Your Long-Term Blood Sugar | Health Calculators",
+      "description": "Convert HbA1c to estimated average glucose (eAG) and vice versa. Risk categories: Normal, Prediabetes, Diabetes. Free calculator with formula."
+    },
+    "title": "HbA1c Converter — Understand Your Long-Term Blood Sugar",
+    "description": "Convert your HbA1c value to estimated average glucose (eAG) or reverse. Instantly see your risk category.",
+    "modeHbA1c": "HbA1c → Glucose",
+    "modeGlucose": "Glucose → HbA1c",
+    "hba1cLabel": "HbA1c (%)",
+    "hba1cPlaceholder": "e.g. 6.5",
+    "glucoseLabel": "Average Blood Glucose",
+    "glucosePlaceholderMg": "e.g. 140",
+    "glucosePlaceholderMmol": "e.g. 7.8",
+    "eagMg": "eAG (mg/dL)",
+    "eagMmol": "eAG (mmol/L)",
+    "hba1cResult": "HbA1c (%)",
+    "category": "Risk Category",
+    "formula": "Formula",
+    "formulaText": "eAG (mg/dL) = 28.7 × HbA1c (%) − 46.7",
+    "formulaTextReverse": "HbA1c (%) = (eAG + 46.7) ÷ 28.7",
+    "normal": "Normal",
+    "prediabetes": "Prediabetes",
+    "diabetes": "Diabetes",
+    "normalRange": "< 5.7%",
+    "prediabetesRange": "5.7 – 6.4%",
+    "diabetesRange": "≥ 6.5%",
+    "categoriesTitle": "Risk Categories (ADA)",
+    "normalDesc": "No elevated diabetes risk.",
+    "prediabetesDesc": "Elevated risk. Lifestyle changes recommended.",
+    "diabetesDesc": "Diabetes range. Consult a doctor."
+  }
+}
