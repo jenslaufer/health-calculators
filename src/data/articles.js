@@ -218,6 +218,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'caffeine',
     related: ['schlafzyklen-berechnen', 'wasserbedarf-berechnen'],
   },
+  {
+    slug: 'magermasse-berechnen',
+    title: 'Fettfreie Körpermasse berechnen — was sie über deine Fitness verrät',
+    description: 'Fettfreie Körpermasse (Magermasse) berechnen mit drei wissenschaftlichen Formeln: Boer, James und Hume. Was LBM über deine Fitness verrät.',
+    date: '2026-04-08',
+    readTime: '7 min',
+    calculatorKey: 'leanBodyMass',
+    related: ['koerperfett-berechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

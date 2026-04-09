@@ -1,0 +1,25 @@
+{
+  "home": {
+    "calculators": {
+      "leanBodyMass": {
+        "name": "Magermasse-Rechner",
+        "description": "Berechne deine fettfreie Körpermasse."
+      }
+    }
+  },
+  "leanBodyMass": {
+    "meta": {
+      "title": "Magermasse-Rechner — Boer, James & Hume Formeln",
+      "description": "Berechne deine fettfreie Körpermasse (Lean Body Mass) mit drei wissenschaftlichen Formeln: Boer, James und Hume."
+    },
+    "title": "Magermasse-Rechner",
+    "description": "Berechne deine fettfreie Körpermasse mit drei wissenschaftlichen Formeln.",
+    "fatMass": "Fettmasse",
+    "leanPercent": "Magermasse-Anteil",
+    "formulaComparison": "Formelvergleich",
+    "boer": "Boer",
+    "james": "James",
+    "hume": "Hume",
+    "average": "Durchschnitt"
+  }
+}

@@ -218,6 +218,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'caffeine',
     related: ['calculate-sleep-cycles', 'calculate-water-intake'],
   },
+  {
+    slug: 'calculate-lean-body-mass',
+    title: 'Lean Body Mass Calculator — What It Tells You About Your Fitness',
+    description: 'Calculate lean body mass using three scientific formulas: Boer, James and Hume. What LBM reveals about your fitness and why it matters more than body weight.',
+    date: '2026-04-08',
+    readTime: '7 min',
+    calculatorKey: 'leanBodyMass',
+    related: ['calculate-body-fat', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
