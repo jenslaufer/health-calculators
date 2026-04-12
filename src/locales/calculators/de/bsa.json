@@ -1,0 +1,45 @@
+{
+  "home": {
+    "calculators": {
+      "bsa": {
+        "name": "Körperoberfläche-Rechner",
+        "description": "Körperoberfläche nach Du Bois, Mosteller und weiteren Formeln berechnen."
+      }
+    }
+  },
+  "bsa": {
+    "meta": {
+      "title": "Körperoberfläche berechnen — BSA-Rechner | Health Calculators",
+      "description": "Körperoberfläche (BSA) nach Du Bois, Mosteller, Haycock und Boyd berechnen. Wichtig für Chemotherapie-Dosierung und medizinische Berechnungen. Kostenlos."
+    },
+    "title": "Körperoberfläche-Rechner",
+    "description": "Körperoberfläche (BSA) nach verschiedenen Formeln berechnen — relevant für Medikamentendosierung und klinische Bewertungen.",
+    "formula": "Formel",
+    "formulaDubois": "Du Bois (1916)",
+    "formulaMosteller": "Mosteller (1987)",
+    "formulaHaycock": "Haycock (1978)",
+    "formulaBoyd": "Boyd (1935)",
+    "result": "Körperoberfläche",
+    "unit": "m²",
+    "comparison": "Formelvergleich",
+    "comparisonNote": "Alle vier Formeln mit deinen Messwerten:",
+    "selectedLabel": "Ausgewählt",
+    "contextTitle": "Medizinische Bedeutung",
+    "contextDrug": "Medikamentendosierung",
+    "contextDrugText": "Chemotherapeutika und andere Wirkstoffe werden häufig nach Körperoberfläche dosiert (mg/m²), um Über- und Unterdosierungen zu vermeiden.",
+    "contextBurn": "Verbrennungsmedizin",
+    "contextBurnText": "Die Körperoberfläche ist Grundlage der Verbrennungsgrad-Einschätzung (Neuner-Regel) und der Flüssigkeitsersatz-Berechnung.",
+    "contextRenal": "Nierenfunktion",
+    "contextRenalText": "Die glomeruläre Filtrationsrate (GFR) wird auf eine Standardfläche von 1,73 m² normiert, um Patienten unterschiedlicher Größe vergleichen zu können.",
+    "normalRange": "Normalbereich Erwachsene",
+    "normalRangeMale": "Männer: ~1,9 m²",
+    "normalRangeFemale": "Frauen: ~1,6 m²",
+    "heightFt": "Größe (Fuß)",
+    "heightIn": "Zoll",
+    "formulaInfo": "Formel-Referenz",
+    "formulaDuboisDesc": "Älteste und am häufigsten verwendete Formel. Standard in der Chemotherapie.",
+    "formulaMostellerDesc": "Einfachste Berechnung, sehr gute Näherung. Empfohlen vom New England Journal of Medicine.",
+    "formulaHaycockDesc": "Optimiert für Kinder und Erwachsene. Gilt als besonders präzise.",
+    "formulaBoydDesc": "Berücksichtigt nichtlineare Beziehung zwischen Gewicht und BSA. Weniger verbreitet."
+  }
+}
