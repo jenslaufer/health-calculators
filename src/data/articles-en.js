@@ -236,6 +236,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'pregnancyWeightGain',
     related: ['calculate-due-date', 'calculate-bmi'],
   },
+  {
+    slug: 'blood-sugar-converter-guide',
+    title: 'Blood Sugar Converter — mg/dL to mmol/L Guide',
+    description: 'Convert blood sugar between mg/dL and mmol/L. Understand fasting and postprandial reference ranges. Normal, Prediabetes, Diabetes explained with free calculator.',
+    date: '2026-04-12',
+    readTime: '7 min',
+    calculatorKey: 'bloodSugar',
+    related: ['hba1c-converter-guide', 'calculate-water-intake'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

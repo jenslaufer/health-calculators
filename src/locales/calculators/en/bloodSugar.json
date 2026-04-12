@@ -1,0 +1,55 @@
+{
+  "home": {
+    "calculators": {
+      "bloodSugar": {
+        "name": "Blood Sugar Converter",
+        "description": "Convert blood sugar between mg/dL and mmol/L and classify your reading."
+      }
+    }
+  },
+  "bloodSugar": {
+    "meta": {
+      "title": "Blood Sugar Converter — mg/dL to mmol/L | Health Calculators",
+      "description": "Convert blood sugar between mg/dL and mmol/L. Classify fasting and postprandial readings: Normal, Prediabetes, Diabetes. Free online calculator."
+    },
+    "title": "Blood Sugar Converter — mg/dL and mmol/L",
+    "description": "Convert your blood sugar value between mg/dL and mmol/L and instantly classify it as Normal, Prediabetes, or Diabetes.",
+    "unitLabel": "Unit of entered value",
+    "contextLabel": "Measurement context",
+    "fasting": "Fasting",
+    "postprandial": "After meal (2h)",
+    "valuePlaceholderMg": "e.g. 95",
+    "valuePlaceholderMmol": "e.g. 5.3",
+    "valueLabel": "Blood sugar value",
+    "resultLabel": "Converted value",
+    "category": "Classification",
+    "formula": "Conversion formula",
+    "formulaMgToMmol": "mmol/L = mg/dL ÷ 18.018",
+    "formulaMmolToMg": "mg/dL = mmol/L × 18.018",
+    "normal": "Normal",
+    "prediabetes": "Prediabetes",
+    "diabetes": "Diabetes",
+    "categoriesTitle": "Reference Ranges",
+    "fastingRangesTitle": "Fasting Blood Sugar",
+    "postprandialRangesTitle": "Postprandial Blood Sugar (2h after meal)",
+    "rangeCategory": "Category",
+    "rangeMg": "mg/dL",
+    "rangeMmol": "mmol/L",
+    "normalFastingRange": "< 100",
+    "normalFastingRangeMmol": "< 5.6",
+    "prediabeticFastingRange": "100 – 125",
+    "prediabeticFastingRangeMmol": "5.6 – 6.9",
+    "diabeticFastingRange": "≥ 126",
+    "diabeticFastingRangeMmol": "≥ 7.0",
+    "normalPostprandialRange": "< 140",
+    "normalPostprandialRangeMmol": "< 7.8",
+    "prediabeticPostprandialRange": "140 – 199",
+    "prediabeticPostprandialRangeMmol": "7.8 – 11.0",
+    "diabeticPostprandialRange": "≥ 200",
+    "diabeticPostprandialRangeMmol": "≥ 11.1",
+    "normalDesc": "No elevated risk.",
+    "prediabetesDesc": "Elevated risk. Lifestyle changes recommended.",
+    "diabetesDesc": "Diabetes range. Consult a doctor.",
+    "contextNote": "Values can vary depending on measurement time, time of day, and diet. Not a substitute for medical advice."
+  }
+}

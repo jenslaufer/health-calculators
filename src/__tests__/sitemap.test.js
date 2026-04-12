@@ -12,7 +12,7 @@ const EXPECTED_KEYS = [
   'waistHipRatio', 'ovulation', 'protein', 'bmr', 'caloriesBurned',
   'intermittentFasting', 'vo2Max', 'oneRepMax', 'runningPace', 'keto',
   'period', 'bac', 'proteinNeed', 'caffeine',
-  'leanBodyMass', 'pregnancyWeightGain', 'hba1c', 'bsa',
+  'leanBodyMass', 'pregnancyWeightGain', 'hba1c', 'bloodSugar', 'bsa',
 ]
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -32,6 +32,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'magermasse-berechnen',
   'gewichtszunahme-schwangerschaft-berechnen',
   'hba1c-umrechnen',
+  'blutzucker-umrechnen',
   'koerperoberflaeche-berechnen',
 ]
 
@@ -52,13 +53,14 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'calculate-lean-body-mass',
   'pregnancy-weight-gain-guide',
   'hba1c-converter-guide',
+  'blood-sugar-converter-guide',
   'body-surface-area-calculator',
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 29 calculator meta files', () => {
+  it('discovers all 30 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(29)
+    expect(metas).toHaveLength(30)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -96,19 +98,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 29 DE blog slugs', () => {
+  it('returns all 30 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(29)
+    expect(de).toHaveLength(30)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 29 EN blog slugs', () => {
+  it('returns all 30 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(29)
+    expect(en).toHaveLength(30)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -176,8 +178,8 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en"`)
   })
 
-  it('generates correct total URL count (2 home + 58 calcs + 2 blog index + 58 blog articles = 120)', () => {
+  it('generates correct total URL count (2 home + 60 calcs + 2 blog index + 60 blog articles = 124)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(120)
+    expect(urlCount).toBe(124)
   })
 })

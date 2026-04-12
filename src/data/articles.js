@@ -236,6 +236,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'pregnancyWeightGain',
     related: ['geburtstermin-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'blutzucker-umrechnen',
+    title: 'Blutzucker umrechnen — mg/dL und mmol/L verstehen',
+    description: 'Blutzucker zwischen mg/dL und mmol/L umrechnen. Nüchternwert und postprandialen Wert einordnen: Normal, Prädiabetes, Diabetes. Kostenloser Rechner.',
+    date: '2026-04-12',
+    readTime: '7 min',
+    calculatorKey: 'bloodSugar',
+    related: ['hba1c-umrechnen', 'wasserbedarf-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
