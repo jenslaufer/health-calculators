@@ -132,8 +132,8 @@ describe('generateSitemap', () => {
   })
 
   it('includes home pages for both locales', () => {
-    expect(xml).toContain(`<loc>${BASE_URL}/de</loc>`)
-    expect(xml).toContain(`<loc>${BASE_URL}/en</loc>`)
+    expect(xml).toContain(`<loc>${BASE_URL}/de/</loc>`)
+    expect(xml).toContain(`<loc>${BASE_URL}/en/</loc>`)
   })
 
   it('includes all calculator URLs for both locales', () => {
@@ -174,8 +174,8 @@ describe('generateSitemap', () => {
   })
 
   it('hreflang alternates link home pages', () => {
-    expect(xml).toContain(`hreflang="de" href="${BASE_URL}/de"`)
-    expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en"`)
+    expect(xml).toContain(`hreflang="de" href="${BASE_URL}/de/"`)
+    expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
   it('generates correct total URL count (2 home + 60 calcs + 2 blog index + 60 blog articles = 124)', () => {

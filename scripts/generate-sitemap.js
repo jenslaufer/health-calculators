@@ -62,9 +62,9 @@ export function generateSitemap(metas, baseUrl = BASE_URL) {
   xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
 
   // Home pages
-  const homeAlts = { de: `${baseUrl}/de`, en: `${baseUrl}/en` }
-  xml += urlEntry(`${baseUrl}/de`, homeAlts, '1.0')
-  xml += urlEntry(`${baseUrl}/en`, homeAlts, '1.0')
+  const homeAlts = { de: `${baseUrl}/de/`, en: `${baseUrl}/en/` }
+  xml += urlEntry(`${baseUrl}/de/`, homeAlts, '1.0')
+  xml += urlEntry(`${baseUrl}/en/`, homeAlts, '1.0')
 
   // Calculator pages
   for (const meta of metas) {

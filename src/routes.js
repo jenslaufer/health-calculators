@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home.vue'
 import BlogHome from './pages/BlogHome.vue'
 import BlogHomeEn from './pages/BlogHomeEn.vue'
+import NotFound from './pages/NotFound.vue'
 
 const blogComponentsByLocale = {
   de: blogComponentsDe,
@@ -67,6 +68,7 @@ const routes = [
   ...oldRedirects,
   { path: '/blog', redirect: '/de/blog' },
   ...oldBlogRedirects,
+  { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 
 export default routes
