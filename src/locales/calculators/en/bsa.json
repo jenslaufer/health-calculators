@@ -1,0 +1,45 @@
+{
+  "home": {
+    "calculators": {
+      "bsa": {
+        "name": "Body Surface Area Calculator",
+        "description": "Calculate body surface area using Du Bois, Mosteller, and other formulas."
+      }
+    }
+  },
+  "bsa": {
+    "meta": {
+      "title": "Body Surface Area Calculator — BSA Calculator | Health Calculators",
+      "description": "Calculate body surface area (BSA) using Du Bois, Mosteller, Haycock, and Boyd formulas. Essential for chemotherapy dosing and clinical assessments. Free."
+    },
+    "title": "Body Surface Area Calculator",
+    "description": "Calculate body surface area (BSA) using multiple validated formulas — essential for drug dosing and clinical assessments.",
+    "formula": "Formula",
+    "formulaDubois": "Du Bois (1916)",
+    "formulaMosteller": "Mosteller (1987)",
+    "formulaHaycock": "Haycock (1978)",
+    "formulaBoyd": "Boyd (1935)",
+    "result": "Body Surface Area",
+    "unit": "m²",
+    "comparison": "Formula Comparison",
+    "comparisonNote": "All four formulas with your measurements:",
+    "selectedLabel": "Selected",
+    "contextTitle": "Medical Significance",
+    "contextDrug": "Drug Dosing",
+    "contextDrugText": "Chemotherapy agents and other drugs are commonly dosed by body surface area (mg/m²) to prevent under- or overdosing across patients of different sizes.",
+    "contextBurn": "Burn Assessment",
+    "contextBurnText": "BSA is the foundation of burn severity assessment (Rule of Nines) and fluid resuscitation calculations in burn patients.",
+    "contextRenal": "Renal Function",
+    "contextRenalText": "Glomerular filtration rate (GFR) is normalized to a standard BSA of 1.73 m² to allow comparison across patients of different body sizes.",
+    "normalRange": "Normal Range Adults",
+    "normalRangeMale": "Males: ~1.9 m²",
+    "normalRangeFemale": "Females: ~1.6 m²",
+    "heightFt": "Height (feet)",
+    "heightIn": "Inches",
+    "formulaInfo": "Formula Reference",
+    "formulaDuboisDesc": "Oldest and most widely used formula. Standard in chemotherapy dosing.",
+    "formulaMostellerDesc": "Simplest calculation, very accurate approximation. Recommended by the New England Journal of Medicine.",
+    "formulaHaycockDesc": "Optimized for children and adults. Considered highly accurate.",
+    "formulaBoydDesc": "Accounts for non-linear relationship between weight and BSA. Less commonly used."
+  }
+}
