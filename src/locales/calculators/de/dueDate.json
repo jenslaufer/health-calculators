@@ -1,0 +1,57 @@
+{
+  "home": {
+    "calculators": {
+      "dueDate": {
+        "name": "Entbindungstermin-Rechner",
+        "description": "Errechne deinen Geburtstermin nach LMP, Empfängnis- oder IVF-Transferdatum."
+      }
+    }
+  },
+  "dueDate": {
+    "meta": {
+      "title": "Entbindungstermin-Rechner — LMP, Empfängnis & IVF | Health Calculators",
+      "description": "Geburtstermin berechnen nach letzter Periode, Empfängnisdatum oder IVF-Transfer. Naegele-Regel, SSW, Trimester, Countdown & Meilensteine. Kostenlos, sofort."
+    },
+    "title": "Entbindungstermin-Rechner",
+    "description": "Berechne deinen Geburtstermin nach deiner letzten Periode, dem Empfängnisdatum oder dem IVF-Transferdatum.",
+    "methodLabel": "Berechnungsmethode",
+    "methodLmp": "Letzte Periode (LMP)",
+    "methodConception": "Empfängnisdatum",
+    "methodIvf": "IVF-Transfer",
+    "lmpDate": "Erster Tag der letzten Periode",
+    "cycleLength": "Zykluslänge (Tage)",
+    "conceptionDate": "Empfängnisdatum",
+    "ivfTransferDate": "Transferdatum",
+    "ivfTransferDay": "Blastozystenalter",
+    "ivfDay3": "Tag 3 (Embryo)",
+    "ivfDay5": "Tag 5 (Blastozyste)",
+    "dueDate": "Errechneter Geburtstermin",
+    "gestationalAge": "Schwangerschaftsalter",
+    "weeksAndDays": "{weeks} Wo. {days} T.",
+    "trimester": "Trimester",
+    "trimester1": "1. Trimester",
+    "trimester2": "2. Trimester",
+    "trimester3": "3. Trimester",
+    "countdown": "Noch",
+    "countdownDays": "{n} Tage",
+    "keyDates": "Wichtige Termine",
+    "keyDateFirstVisit": "Erster Vorsorgebesuch (~SSW 8–10)",
+    "keyDateAnatomyScan": "Feindiagnostik-Ultraschall (~SSW 20)",
+    "keyDateViability": "Lebensfähigkeitsschwelle (~SSW 24)",
+    "keyDateFullTerm": "Reif geboren (~SSW 37)",
+    "milestones": "Meilensteine",
+    "week": "SSW {n}",
+    "milestone6": "Herzschlag erkennbar",
+    "milestone10": "Ende der Embryonalphase",
+    "milestone12": "Ende des 1. Trimesters",
+    "milestone20": "Feindiagnostik-Ultraschall",
+    "milestone24": "Lebensfähigkeitsschwelle",
+    "milestone28": "Beginn des 3. Trimesters",
+    "milestone37": "Reifgeborene",
+    "milestone40": "Errechneter Geburtstermin",
+    "complete": "{pct}% der Schwangerschaft",
+    "daysLeft": "{n} Tage verbleibend",
+    "howItWorks": "Berechnungsmethoden",
+    "howItWorksText": "LMP-Methode (Naegele-Regel): Erster Tag der letzten Periode + 280 Tage (angepasst an Zykluslänge). Empfängnismethode: Empfängnisdatum + 266 Tage. IVF-Transfer: Transferdatum + 261 Tage (Tag 5) bzw. + 263 Tage (Tag 3). Der Geburtstermin ist ein Schätzwert — nur ca. 4 % der Babys kommen genau am ET zur Welt."
+  }
+}
