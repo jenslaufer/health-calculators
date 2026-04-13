@@ -254,6 +254,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'gfr',
     related: ['measure-blood-pressure', 'blood-sugar-converter-guide'],
   },
+  {
+    slug: 'due-date-calculator',
+    title: 'Due Date Calculator: LMP, Conception & IVF Methods Explained',
+    description: "Calculate your due date from last period, conception date, or IVF transfer. Naegele's rule, gestational weeks, trimesters, and milestones explained.",
+    date: '2026-04-12',
+    readTime: '8 min',
+    calculatorKey: 'dueDate',
+    related: ['calculate-due-date', 'calculate-ovulation'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
