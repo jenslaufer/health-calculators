@@ -17,7 +17,7 @@ const EXPECTED_KEYS = [
   'intermittentFasting', 'vo2Max', 'oneRepMax', 'runningPace', 'keto',
   'period', 'bac', 'proteinNeed', 'caffeine',
   'leanBodyMass', 'pregnancyWeightGain', 'hba1c', 'bloodSugar', 'bsa', 'gfr',
-  'dueDate',
+  'dueDate', 'smokingCost',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -53,6 +53,7 @@ const EXPECTED_ROUTE_MAP = {
   bsa: { de: 'koerperoberflaeche-rechner', en: 'body-surface-area-calculator' },
   gfr: { de: 'gfr-rechner', en: 'gfr-calculator' },
   dueDate: { de: 'geburtstermin-rechner', en: 'due-date-calculator' },
+  smokingCost: { de: 'rauchen-kosten-rechner', en: 'smoking-cost-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -76,6 +77,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'koerperoberflaeche-berechnen',
   'gfr-rechner',
   'geburtsterminrechner',
+  'rauchen-kosten-rechner',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -99,19 +101,20 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'body-surface-area-calculator',
   'gfr-calculator-kidney-function',
   'due-date-calculator',
+  'smoking-cost-calculator',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 32 calculators', () => {
-    expect(calculatorMetas).toHaveLength(32)
+  it('discovers all 33 calculators', () => {
+    expect(calculatorMetas).toHaveLength(33)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 32 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(32)
+  it('builds calculatorComponents map for all 33 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(33)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -134,15 +137,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 32 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(32)
+  it('discovers all 33 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(33)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 32 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(32)
+  it('discovers all 33 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(33)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -158,10 +161,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 32 calculators with no duplicates', () => {
+  it('groups contain all 33 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(32)
-    expect(new Set(allKeys).size).toBe(32)
+    expect(allKeys).toHaveLength(33)
+    expect(new Set(allKeys).size).toBe(33)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -182,7 +185,7 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost',
     ])
   })
 
@@ -230,8 +233,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 199 routes', () => {
-    expect(routes).toHaveLength(199)
+  it('generates exactly 205 routes', () => {
+    expect(routes).toHaveLength(205)
   })
 
   it('has locale routes for all calculators in both languages', () => {
