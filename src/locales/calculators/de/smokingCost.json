@@ -1,0 +1,44 @@
+{
+  "home": {
+    "calculators": {
+      "smokingCost": {
+        "name": "Rauchen Kosten Rechner",
+        "description": "Berechne, wie viel dich deine Rauchergewohnheit täglich, monatlich und jährlich kostet."
+      }
+    }
+  },
+  "smokingCost": {
+    "meta": {
+      "title": "Rauchen Kosten Rechner — Wie viel kostet Rauchen wirklich?",
+      "description": "Berechne die täglichen, monatlichen und jährlichen Kosten deiner Rauchergewohnheit. Mit Investitionsvergleich bei 7 % Rendite."
+    },
+    "title": "Rauchen Kosten Rechner",
+    "description": "Wie viel gibst du für Zigaretten aus — pro Tag, Monat, Jahr und über 10 Jahre hinweg?",
+    "inputsLabel": "Deine Rauchergewohnheit",
+    "cigarettesPerDay": "Zigaretten pro Tag",
+    "pricePerPack": "Preis pro Schachtel",
+    "packSize": "Zigaretten pro Schachtel",
+    "currency": "Währung",
+    "costsLabel": "Deine Kosten",
+    "daily": "Täglich",
+    "weekly": "Wöchentlich",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "longTermLabel": "Langzeitkosten & Investitionsvergleich",
+    "fiveYears": "5 Jahre",
+    "tenYears": "10 Jahre",
+    "spent": "Ausgegeben",
+    "investedAt7": "Investiert bei 7 % p. a.",
+    "investmentNote": "Annahme: monatliche Einzahlungen, 7 % jährliche Rendite (Zinseszins). Historische Aktienmarktrendite als Richtwert.",
+    "couldBuyLabel": "Was du stattdessen kaufen könntest",
+    "couldBuySubtitle": "Pro Jahr — wenn du mit dem Rauchen aufhörst",
+    "examples": {
+      "vacation": { "emoji": "✈️", "label": "Urlaub" },
+      "smartphone": { "emoji": "📱", "label": "Neues Smartphone" },
+      "laptop": { "emoji": "💻", "label": "Laptop" },
+      "ebike": { "emoji": "🚲", "label": "E-Bike" },
+      "gym": { "emoji": "🏋️", "label": "Fitnessstudio (1 Jahr)" },
+      "streaming": { "emoji": "🎬", "label": "Streaming (1 Jahr)" }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "home": {
+    "calculators": {
+      "smokingCost": {
+        "name": "Smoking Cost Calculator",
+        "description": "Calculate how much your smoking habit costs you per day, month, and year."
+      }
+    }
+  },
+  "smokingCost": {
+    "meta": {
+      "title": "Smoking Cost Calculator — How Much Does Smoking Really Cost?",
+      "description": "Calculate the daily, monthly, and yearly cost of your smoking habit. Includes an investment comparison at 7% annual return."
+    },
+    "title": "Smoking Cost Calculator",
+    "description": "How much do you spend on cigarettes — per day, month, year, and over 10 years?",
+    "inputsLabel": "Your smoking habit",
+    "cigarettesPerDay": "Cigarettes per day",
+    "pricePerPack": "Price per pack",
+    "packSize": "Cigarettes per pack",
+    "currency": "Currency",
+    "costsLabel": "Your costs",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "longTermLabel": "Long-term costs & investment comparison",
+    "fiveYears": "5 Years",
+    "tenYears": "10 Years",
+    "spent": "Spent",
+    "investedAt7": "Invested at 7% p.a.",
+    "investmentNote": "Assumption: monthly contributions, 7% annual return (compound interest). Based on historical stock market returns.",
+    "couldBuyLabel": "What you could buy instead",
+    "couldBuySubtitle": "Per year — if you quit smoking",
+    "examples": {
+      "vacation": { "emoji": "✈️", "label": "Vacation" },
+      "smartphone": { "emoji": "📱", "label": "New smartphone" },
+      "laptop": { "emoji": "💻", "label": "Laptop" },
+      "ebike": { "emoji": "🚲", "label": "E-bike" },
+      "gym": { "emoji": "🏋️", "label": "Gym membership (1 year)" },
+      "streaming": { "emoji": "🎬", "label": "Streaming (1 year)" }
+    }
+  }
+}
