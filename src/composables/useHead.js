@@ -33,6 +33,7 @@ export function useHead(getConfig) {
 
     const head = {
       title,
+      htmlAttrs: { lang: currentLocale },
       meta: [
         { name: 'description', content: description },
         { property: 'og:title', content: title },
