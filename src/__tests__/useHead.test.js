@@ -5,7 +5,9 @@ vi.mock('@unhead/vue', () => ({ useHead: vi.fn() }))
 
 const mockRoute = { path: '/de/bmi-rechner', meta: { slug: 'bmi' } }
 vi.mock('vue-router', () => ({ useRoute: () => mockRoute }))
-vi.mock('vue-i18n', () => ({ useI18n: () => ({ locale: ref('de') }) }))
+
+const mockLocale = ref('de')
+vi.mock('vue-i18n', () => ({ useI18n: () => ({ locale: mockLocale }) }))
 vi.mock('../composables/useLocaleRouter.js', () => ({
   localePath: (key, locale) => `/${locale}/${key === 'bmi' ? (locale === 'de' ? 'bmi-rechner' : 'bmi-calculator') : key}`,
   routeMap: { bmi: { de: 'bmi-rechner', en: 'bmi-calculator' } },
@@ -93,5 +95,29 @@ describe('useHead', () => {
     const head = useUnhead.mock.calls[0][0].value
     const ogUrl = head.meta.find(m => m.property === 'og:url')
     expect(ogUrl.content).toBe('https://healthcalculator.app/de/bmi-rechner')
+  })
+
+  it('sets htmlAttrs.lang to "de" when locale is "de"', () => {
+    mockLocale.value = 'de'
+    useHead(() => ({
+      title: 'BMI Rechner',
+      description: 'Berechne deinen BMI',
+      routeKey: 'bmi',
+    }))
+
+    const head = useUnhead.mock.calls[0][0].value
+    expect(head.htmlAttrs).toEqual({ lang: 'de' })
+  })
+
+  it('sets htmlAttrs.lang to "en" when locale is "en"', () => {
+    mockLocale.value = 'en'
+    useHead(() => ({
+      title: 'BMI Calculator',
+      description: 'Calculate your BMI',
+      routeKey: 'bmi',
+    }))
+
+    const head = useUnhead.mock.calls[0][0].value
+    expect(head.htmlAttrs).toEqual({ lang: 'en' })
   })
 })
