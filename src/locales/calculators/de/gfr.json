@@ -1,0 +1,67 @@
+{
+  "home": {
+    "calculators": {
+      "gfr": {
+        "name": "GFR-Rechner",
+        "description": "Nierenfunktion berechnen: eGFR nach CKD-EPI 2021, CKD-Stadium und Risikobewertung."
+      }
+    }
+  },
+  "gfr": {
+    "meta": {
+      "title": "GFR-Rechner — eGFR und Nierenfunktion berechnen | Health Calculators",
+      "description": "eGFR nach CKD-EPI 2021 berechnen (rassenfrei, KDIGO-empfohlen). CKD-Stadium G1–G5, Risikobewertung und Arztempfehlung. Kostenloser Nierenrechner."
+    },
+    "title": "GFR-Rechner — Nierenfunktion (eGFR)",
+    "description": "Glomeruläre Filtrationsrate (eGFR) nach der CKD-EPI 2021-Formel berechnen und Nierenfunktion einordnen.",
+    "creatinineLabel": "Serum-Kreatinin",
+    "ageLabel": "Alter (Jahre)",
+    "sexLabel": "Biologisches Geschlecht",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "formulaNote": "Berechnung nach CKD-EPI 2021 (rassenfrei, KDIGO-empfohlen). Kein Ersatz für ärztliche Diagnose.",
+    "stage": "Stadium",
+    "riskLabel": "Risikobewertung",
+    "doctorLabel": "Arztempfehlung",
+    "stagesTitle": "CKD-Stadien (KDIGO)",
+    "contextTitle": "Hinweise zur Berechnung",
+    "contextEquation": "CKD-EPI 2021-Formel",
+    "contextEquationText": "Die CKD-EPI 2021-Formel ist die aktuell empfohlene Gleichung der KDIGO (Kidney Disease: Improving Global Outcomes). Sie ist rassenunabhängig und liefert präzise Schätzungen für alle Alters- und Kreatininbereiche.",
+    "contextDrug": "Medikamentendosierung",
+    "contextDrugText": "Viele Medikamente werden nach eGFR dosiert oder sind bei eingeschränkter Nierenfunktion kontraindiziert. Dazu gehören Metformin, NSAIDs, bestimmte Antibiotika und Kontrastmittel.",
+    "contextLimits": "Einschränkungen",
+    "contextLimitsText": "eGFR-Formeln schätzen — keine direkte Messung. Ergebnisse können bei extremer Muskelmasse, Mangelernährung, akuter Nierenerkrankung oder Schwangerschaft abweichen.",
+    "contextDisclaimer": "Medizinischer Hinweis",
+    "contextDisclaimerText": "Dieses Tool dient der Information und ersetzt keine ärztliche Untersuchung. Veränderte Nierenwerte sollten immer mit einem Arzt besprochen werden.",
+    "stageDesc": {
+      "G1": "Normal oder erhöht",
+      "G2": "Leicht eingeschränkt",
+      "G3a": "Leicht bis mäßig eingeschränkt",
+      "G3b": "Mäßig bis stark eingeschränkt",
+      "G4": "Stark eingeschränkt",
+      "G5": "Nierenversagen"
+    },
+    "stageRange": {
+      "G1": "≥ 90",
+      "G2": "60 – 89",
+      "G3a": "45 – 59",
+      "G3b": "30 – 44",
+      "G4": "15 – 29",
+      "G5": "< 15"
+    },
+    "risk": {
+      "low": "Normaler bis leicht erhöhter Bereich. Regelmäßige Kontrolluntersuchungen empfohlen.",
+      "moderate": "Leicht bis mäßig erhöhtes Risiko. Risikofaktoren (Bluthochdruck, Diabetes) behandeln lassen.",
+      "high": "Erhöhtes Risiko für Nierenkomplikationen. Nephrologische Betreuung empfohlen.",
+      "veryHigh": "Sehr hohes Risiko. Spezialisierte nephrologische Behandlung erforderlich.",
+      "kidney_failure": "Nierenversagen. Dialyse oder Transplantation kann notwendig sein."
+    },
+    "doctor": {
+      "G2": "Hausarzt informieren und Risikofaktoren (Blutdruck, Blutzucker) kontrollieren lassen.",
+      "G3a": "Regelmäßige Verlaufskontrollen beim Hausarzt oder Nephrologen empfohlen (mindestens jährlich).",
+      "G3b": "Nephrologen aufsuchen. Engmaschige Überwachung und Anpassung der Medikation erforderlich.",
+      "G4": "Dringend zum Nephrologen. Vorbereitung auf Nierenersatztherapie (Dialyse/Transplantation) besprechen.",
+      "G5": "Sofortige nephrologische Behandlung erforderlich. Nierenersatztherapie ist in der Regel notwendig."
+    }
+  }
+}

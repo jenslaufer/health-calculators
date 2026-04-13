@@ -245,6 +245,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'bloodSugar',
     related: ['hba1c-converter-guide', 'calculate-water-intake'],
   },
+  {
+    slug: 'gfr-calculator-kidney-function',
+    title: 'GFR Calculator — Understanding eGFR & Kidney Function',
+    description: 'Calculate eGFR using CKD-EPI 2021 and understand your kidney function. What do GFR values mean, CKD stages G1–G5, and when to see a doctor.',
+    date: '2026-04-13',
+    readTime: '8 min',
+    calculatorKey: 'gfr',
+    related: ['measure-blood-pressure', 'blood-sugar-converter-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

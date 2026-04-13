@@ -245,6 +245,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'bloodSugar',
     related: ['hba1c-umrechnen', 'wasserbedarf-berechnen'],
   },
+  {
+    slug: 'gfr-rechner',
+    title: 'GFR-Rechner: Nierenfunktion verstehen und einordnen',
+    description: 'eGFR nach CKD-EPI 2021 berechnen und CKD-Stadium einordnen. Was bedeuten GFR-Werte, CKD-Stadien G1–G5 und wann zum Arzt? Alles zur Nierenfunktion.',
+    date: '2026-04-13',
+    readTime: '8 min',
+    calculatorKey: 'gfr',
+    related: ['blutdruck-richtig-messen', 'blutzucker-umrechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
