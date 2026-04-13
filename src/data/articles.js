@@ -263,6 +263,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'dueDate',
     related: ['geburtstermin-berechnen', 'eisprung-berechnen'],
   },
+  {
+    slug: 'wachstumsperzentile-kinder',
+    title: 'Wachstumsperzentile Kinder: Was die Kurven wirklich bedeuten',
+    description: 'Wachstumsperzentilen verständlich erklärt: Wie WHO-Kurven funktionieren, was normal ist und wann du zum Kinderarzt solltest.',
+    date: '2026-04-13',
+    readTime: '8 min',
+    calculatorKey: 'childGrowth',
+    related: ['geburtsterminrechner', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
