@@ -1,0 +1,57 @@
+{
+  "home": {
+    "calculators": {
+      "dueDate": {
+        "name": "Due Date Calculator",
+        "description": "Calculate your due date from LMP, conception date, or IVF transfer."
+      }
+    }
+  },
+  "dueDate": {
+    "meta": {
+      "title": "Due Date Calculator — LMP, Conception & IVF | Health Calculators",
+      "description": "Calculate your due date from last period, conception date, or IVF transfer date. Naegele's rule, gestational weeks, trimesters, countdown & milestones. Free, instant."
+    },
+    "title": "Due Date Calculator",
+    "description": "Calculate your estimated due date from your last period, conception date, or IVF transfer date.",
+    "methodLabel": "Calculation method",
+    "methodLmp": "Last Period (LMP)",
+    "methodConception": "Conception Date",
+    "methodIvf": "IVF Transfer",
+    "lmpDate": "First day of last period",
+    "cycleLength": "Cycle length (days)",
+    "conceptionDate": "Conception date",
+    "ivfTransferDate": "Transfer date",
+    "ivfTransferDay": "Embryo age at transfer",
+    "ivfDay3": "Day 3 (cleavage)",
+    "ivfDay5": "Day 5 (blastocyst)",
+    "dueDate": "Estimated Due Date",
+    "gestationalAge": "Gestational Age",
+    "weeksAndDays": "{weeks}w {days}d",
+    "trimester": "Trimester",
+    "trimester1": "1st Trimester",
+    "trimester2": "2nd Trimester",
+    "trimester3": "3rd Trimester",
+    "countdown": "Countdown",
+    "countdownDays": "{n} days",
+    "keyDates": "Key Dates",
+    "keyDateFirstVisit": "First prenatal visit (~week 8–10)",
+    "keyDateAnatomyScan": "Anatomy scan (~week 20)",
+    "keyDateViability": "Viability threshold (~week 24)",
+    "keyDateFullTerm": "Full term (~week 37)",
+    "milestones": "Milestones",
+    "week": "Week {n}",
+    "milestone6": "Heartbeat detectable",
+    "milestone10": "End of embryonic period",
+    "milestone12": "End of 1st trimester",
+    "milestone20": "Anatomy scan",
+    "milestone24": "Viability milestone",
+    "milestone28": "Start of 3rd trimester",
+    "milestone37": "Full term",
+    "milestone40": "Due date",
+    "complete": "{pct}% of pregnancy",
+    "daysLeft": "{n} days left",
+    "howItWorks": "Calculation methods",
+    "howItWorksText": "LMP method (Naegele's rule): First day of last period + 280 days (adjusted for cycle length). Conception method: Conception date + 266 days. IVF transfer: Transfer date + 261 days (day 5) or + 263 days (day 3). The due date is an estimate — only about 4% of babies arrive exactly on the EDD."
+  }
+}

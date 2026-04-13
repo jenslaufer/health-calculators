@@ -245,6 +245,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'bloodSugar',
     related: ['hba1c-umrechnen', 'wasserbedarf-berechnen'],
   },
+  {
+    slug: 'geburtsterminrechner',
+    title: 'Entbindungstermin berechnen: LMP, Empfängnis & IVF erklärt',
+    description: 'Geburtstermin nach letzter Periode, Empfängnisdatum oder IVF-Transferdatum berechnen. Naegele-Regel, Schwangerschaftswochen, Trimester und Meilensteine verständlich erklärt.',
+    date: '2026-04-12',
+    readTime: '8 min',
+    calculatorKey: 'dueDate',
+    related: ['geburtstermin-berechnen', 'eisprung-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
