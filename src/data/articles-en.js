@@ -263,6 +263,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'dueDate',
     related: ['calculate-due-date', 'calculate-ovulation'],
   },
+  {
+    slug: 'child-growth-percentile-chart',
+    title: 'Child Growth Percentile Chart: What the Curves Really Mean',
+    description: 'Growth percentile charts explained: how WHO curves work, what counts as normal and when to see a paediatrician.',
+    date: '2026-04-13',
+    readTime: '8 min',
+    calculatorKey: 'childGrowth',
+    related: ['due-date-calculator', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -1,0 +1,43 @@
+{
+  "home": {
+    "calculators": {
+      "childGrowth": {
+        "name": "Wachstumsperzentile Kind",
+        "description": "Berechne Gewicht, Größe und BMI-Perzentile deines Kindes nach WHO-Standard."
+      }
+    }
+  },
+  "childGrowth": {
+    "meta": {
+      "title": "Wachstumsperzentile Kind berechnen — WHO-Standard | Health Calculators",
+      "description": "Wachstumsperzentilen für Kinder (0–18 Jahre) nach WHO-Standard berechnen: Gewicht, Größe, BMI und Kopfumfang mit Interpretation."
+    },
+    "title": "Wachstumsperzentile Kind",
+    "description": "Gewicht-, Größen- und BMI-Perzentile für Kinder von 0–18 Jahren nach WHO-Standard.",
+    "inputsLabel": "Angaben zum Kind",
+    "sex": "Geschlecht",
+    "male": "Junge",
+    "female": "Mädchen",
+    "ageYears": "Alter (Jahre)",
+    "ageMonths": "Zusätzliche Monate",
+    "months": "Mon.",
+    "weight": "Gewicht",
+    "height": "Größe / Länge",
+    "headCirc": "Kopfumfang",
+    "optional": "(optional, 0–3 J.)",
+    "resultsLabel": "Wachstumsperzentilen",
+    "heightForAge": "Größe für Alter",
+    "weightForAge": "Gewicht für Alter",
+    "bmiForAge": "BMI für Alter",
+    "hcForAge": "Kopfumfang für Alter",
+    "legend": "Kategorien",
+    "disclaimer": "Dieses Tool basiert auf den WHO-Wachstumsstandards (2006) und der WHO-Referenz 2007. Die Ergebnisse dienen zur Orientierung und ersetzen keine ärztliche Beurteilung. Bei Auffälligkeiten immer einen Kinderarzt aufsuchen.",
+    "cat": {
+      "veryLow": "Sehr niedrig",
+      "low": "Niedrig",
+      "normal": "Normal",
+      "high": "Hoch",
+      "veryHigh": "Sehr hoch"
+    }
+  }
+}

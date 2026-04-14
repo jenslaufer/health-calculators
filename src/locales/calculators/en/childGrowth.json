@@ -1,0 +1,43 @@
+{
+  "home": {
+    "calculators": {
+      "childGrowth": {
+        "name": "Child Growth Percentile",
+        "description": "Calculate weight, height and BMI percentiles for children using WHO growth standards."
+      }
+    }
+  },
+  "childGrowth": {
+    "meta": {
+      "title": "Child Growth Percentile Calculator — WHO Standards | Health Calculators",
+      "description": "Calculate growth percentiles for children (0–18 years) using WHO standards: weight, height, BMI and head circumference with interpretation."
+    },
+    "title": "Child Growth Percentile Calculator",
+    "description": "Weight, height and BMI percentiles for children aged 0–18 years based on WHO growth standards.",
+    "inputsLabel": "Child's Details",
+    "sex": "Sex",
+    "male": "Boy",
+    "female": "Girl",
+    "ageYears": "Age (years)",
+    "ageMonths": "Additional months",
+    "months": "mo.",
+    "weight": "Weight",
+    "height": "Height / Length",
+    "headCirc": "Head Circumference",
+    "optional": "(optional, 0–3 yrs)",
+    "resultsLabel": "Growth Percentiles",
+    "heightForAge": "Height-for-age",
+    "weightForAge": "Weight-for-age",
+    "bmiForAge": "BMI-for-age",
+    "hcForAge": "Head circumference-for-age",
+    "legend": "Categories",
+    "disclaimer": "This tool uses WHO Child Growth Standards (2006) and WHO Reference 2007. Results are for informational purposes only and do not replace professional medical evaluation. Always consult a paediatrician if you have concerns.",
+    "cat": {
+      "veryLow": "Very low",
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "veryHigh": "Very high"
+    }
+  }
+}
