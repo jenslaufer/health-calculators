@@ -148,22 +148,22 @@ describe('generateSitemap', () => {
   it('includes all calculator URLs for both locales', () => {
     const metas = discoverMetas(META_DIR)
     for (const meta of metas) {
-      expect(xml, `missing de URL for ${meta.key}`).toContain(`<loc>${BASE_URL}/de/${meta.slugs.de}</loc>`)
-      expect(xml, `missing en URL for ${meta.key}`).toContain(`<loc>${BASE_URL}/en/${meta.slugs.en}</loc>`)
+      expect(xml, `missing de URL for ${meta.key}`).toContain(`<loc>${BASE_URL}/de/${meta.slugs.de}/</loc>`)
+      expect(xml, `missing en URL for ${meta.key}`).toContain(`<loc>${BASE_URL}/en/${meta.slugs.en}/</loc>`)
     }
   })
 
   it('includes blog index for both locales', () => {
-    expect(xml).toContain(`<loc>${BASE_URL}/de/blog</loc>`)
-    expect(xml).toContain(`<loc>${BASE_URL}/en/blog</loc>`)
+    expect(xml).toContain(`<loc>${BASE_URL}/de/blog/</loc>`)
+    expect(xml).toContain(`<loc>${BASE_URL}/en/blog/</loc>`)
   })
 
   it('includes all blog article URLs for both locales', () => {
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
-      expect(xml, `missing de blog URL: ${slug}`).toContain(`<loc>${BASE_URL}/de/blog/${slug}</loc>`)
+      expect(xml, `missing de blog URL: ${slug}`).toContain(`<loc>${BASE_URL}/de/blog/${slug}/</loc>`)
     }
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
-      expect(xml, `missing en blog URL: ${slug}`).toContain(`<loc>${BASE_URL}/en/blog/${slug}</loc>`)
+      expect(xml, `missing en blog URL: ${slug}`).toContain(`<loc>${BASE_URL}/en/blog/${slug}/</loc>`)
     }
   })
 
@@ -178,8 +178,8 @@ describe('generateSitemap', () => {
     const metas = discoverMetas(META_DIR)
     // Pick bmi as a known example
     const bmi = metas.find(m => m.key === 'bmi')
-    expect(xml).toContain(`hreflang="de" href="${BASE_URL}/de/${bmi.slugs.de}"`)
-    expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/${bmi.slugs.en}"`)
+    expect(xml).toContain(`hreflang="de" href="${BASE_URL}/de/${bmi.slugs.de}/"`)
+    expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/${bmi.slugs.en}/"`)
   })
 
   it('hreflang alternates link home pages', () => {
@@ -190,5 +190,21 @@ describe('generateSitemap', () => {
   it('generates correct total URL count (2 home + 68 calcs + 2 blog index + 68 blog articles = 140)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
     expect(urlCount).toBe(140)
+  })
+
+  it('every <loc> URL ends with a trailing slash', () => {
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1])
+    expect(locs.length).toBeGreaterThan(0)
+    for (const loc of locs) {
+      expect(loc, `URL missing trailing slash: ${loc}`).toMatch(/\/$/)
+    }
+  })
+
+  it('every hreflang href URL ends with a trailing slash', () => {
+    const hrefs = [...xml.matchAll(/href="([^"]+)"/g)].map(m => m[1])
+    expect(hrefs.length).toBeGreaterThan(0)
+    for (const href of hrefs) {
+      expect(href, `hreflang href missing trailing slash: ${href}`).toMatch(/\/$/)
+    }
   })
 })

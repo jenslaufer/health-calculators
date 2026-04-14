@@ -42,9 +42,9 @@ describe('useHead', () => {
       { name: 'twitter:description', content: 'Berechne deinen BMI' },
     ]))
     expect(head.link).toEqual(expect.arrayContaining([
-      { rel: 'canonical', href: 'https://healthcalculator.app/de/bmi-rechner' },
-      { rel: 'alternate', hreflang: 'de', href: 'https://healthcalculator.app/de/bmi-rechner' },
-      { rel: 'alternate', hreflang: 'en', href: 'https://healthcalculator.app/en/bmi-calculator' },
+      { rel: 'canonical', href: 'https://healthcalculator.app/de/bmi-rechner/' },
+      { rel: 'alternate', hreflang: 'de', href: 'https://healthcalculator.app/de/bmi-rechner/' },
+      { rel: 'alternate', hreflang: 'en', href: 'https://healthcalculator.app/en/bmi-calculator/' },
     ]))
   })
 
@@ -94,7 +94,7 @@ describe('useHead', () => {
 
     const head = useUnhead.mock.calls[0][0].value
     const ogUrl = head.meta.find(m => m.property === 'og:url')
-    expect(ogUrl.content).toBe('https://healthcalculator.app/de/bmi-rechner')
+    expect(ogUrl.content).toBe('https://healthcalculator.app/de/bmi-rechner/')
   })
 
   it('sets htmlAttrs.lang to "de" when locale is "de"', () => {
@@ -119,5 +119,21 @@ describe('useHead', () => {
 
     const head = useUnhead.mock.calls[0][0].value
     expect(head.htmlAttrs).toEqual({ lang: 'en' })
+  })
+
+  it('canonical and all hreflang URLs end with a trailing slash', () => {
+    mockLocale.value = 'de'
+    useHead(() => ({
+      title: 'BMI Rechner',
+      description: 'Berechne deinen BMI',
+      routeKey: 'bmi',
+    }))
+
+    const head = useUnhead.mock.calls[0][0].value
+    const canonical = head.link.find(l => l.rel === 'canonical')
+    expect(canonical.href, 'canonical missing trailing slash').toMatch(/\/$/)
+    for (const link of head.link.filter(l => l.rel === 'alternate')) {
+      expect(link.href, `hreflang URL missing trailing slash: ${link.href}`).toMatch(/\/$/)
+    }
   })
 })
