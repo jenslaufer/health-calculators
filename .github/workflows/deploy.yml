@@ -39,3 +39,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Submit URLs to IndexNow
+        run: |
+          sleep 30
+          URLS=$(curl -s https://healthcalculator.app/sitemap.xml | grep -oP '(?<=<loc>)[^<]+')
+          curl -s -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"host\": \"healthcalculator.app\",
+              \"key\": \"d8a822fc1172432da43023ea81509e66\",
+              \"keyLocation\": \"https://healthcalculator.app/d8a822fc1172432da43023ea81509e66.txt\",
+              \"urlList\": [$(echo "$URLS" | sed 's/.*/"&"/' | paste -sd,)]
+            }"
+        continue-on-error: true
