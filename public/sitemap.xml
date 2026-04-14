@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://healthcalculator.app/de/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/promillerechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/promillerechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blood-alcohol-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blood-alcohol-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/promillerechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blood-alcohol-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blutdruck-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blutdruck-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blood-pressure-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blood-pressure-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blutdruck-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blood-pressure-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blutzucker-umrechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blutzucker-umrechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blood-sugar-converter/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blood-sugar-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blutzucker-umrechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blood-sugar-converter/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/bmi-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/bmi-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/bmi-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/bmi-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/bmi-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/bmi-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/bmr-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/bmr-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/bmr-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/bmr-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/bmr-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/bmr-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/koerperfett-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/koerperfett-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/body-fat-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/body-fat-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/koerperfett-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/body-fat-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/koerperoberflaeche-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/koerperoberflaeche-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/body-surface-area-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/body-surface-area-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/koerperoberflaeche-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/body-surface-area-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/koffein-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/koffein-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/caffeine-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/caffeine-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/koffein-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/caffeine-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/kaloriendefizit-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/kaloriendefizit-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/calorie-deficit-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/calorie-deficit-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/kaloriendefizit-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/calorie-deficit-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/kalorienverbrauch/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/kalorienverbrauch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/calories-burned/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/calories-burned/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/kalorienverbrauch/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/calories-burned/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/wachstumsperzentile-kind/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/wachstumsperzentile-kind/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/child-growth-percentile/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/child-growth-percentile/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/wachstumsperzentile-kind/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/child-growth-percentile/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/geburtstermin-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/geburtstermin-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/due-date-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/due-date-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/geburtstermin-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/due-date-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/gfr-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/gfr-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/gfr-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/gfr-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/gfr-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/gfr-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/hba1c-konverter/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/hba1c-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/hba1c-converter/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/hba1c-converter/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/hba1c-konverter/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/hba1c-converter/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/herzfrequenz-zonen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/herzfrequenz-zonen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/heart-rate-zones/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/heart-rate-zones/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/herzfrequenz-zonen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/heart-rate-zones/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/idealgewicht-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/idealgewicht-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/ideal-weight-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/ideal-weight-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/idealgewicht-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/ideal-weight-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/intervallfasten-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/intervallfasten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/intermittent-fasting-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/intermittent-fasting-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/intervallfasten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/intermittent-fasting-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/keto-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/keto-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/keto-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/keto-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/keto-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/keto-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/magermasse-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/magermasse-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/lean-body-mass-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/lean-body-mass-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/magermasse-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/lean-body-mass-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/makro-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/makro-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/macro-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/macro-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/makro-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/macro-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/one-rep-max-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/one-rep-max-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/one-rep-max-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/one-rep-max-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/one-rep-max-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/one-rep-max-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/eisprung-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/eisprung-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/ovulation-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/ovulation-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/eisprung-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/ovulation-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/zyklusrechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/zyklusrechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/period-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/period-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/zyklusrechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/period-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/schwangerschafts-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/schwangerschafts-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/pregnancy-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/pregnancy-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/schwangerschafts-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/pregnancy-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/gewichtszunahme-schwangerschaft/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/gewichtszunahme-schwangerschaft/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/pregnancy-weight-gain-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/pregnancy-weight-gain-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/gewichtszunahme-schwangerschaft/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/pregnancy-weight-gain-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/protein-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/protein-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/protein-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/protein-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/protein-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/protein-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/eiweissbedarf-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/eiweissbedarf-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/protein-need-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/protein-need-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/eiweissbedarf-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/protein-need-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/lauftempo-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/lauftempo-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/running-pace-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/running-pace-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/lauftempo-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/running-pace-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/schlafzyklen-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/schlafzyklen-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/sleep-cycle-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/sleep-cycle-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/schlafzyklen-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/sleep-cycle-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/rauchen-kosten-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/rauchen-kosten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/smoking-cost-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/smoking-cost-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/rauchen-kosten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/smoking-cost-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/tdee-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/tdee-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/tdee-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/tdee-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/tdee-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/tdee-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/vo2max-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/vo2max-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/vo2max-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/vo2max-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/vo2max-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/vo2max-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/taille-hueft-verhaeltnis/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/taille-hueft-verhaeltnis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/waist-hip-ratio-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/waist-hip-ratio-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/taille-hueft-verhaeltnis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/waist-hip-ratio-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/wasser-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/wasser-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/water-intake-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/water-intake-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/wasser-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/water-intake-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/promille-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/promille-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/blood-alcohol-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/blood-alcohol-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/promille-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/blood-alcohol-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/blutdruck-richtig-messen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/blutdruck-richtig-messen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/measure-blood-pressure/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/measure-blood-pressure/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/blutdruck-richtig-messen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/measure-blood-pressure/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/blutzucker-umrechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/blutzucker-umrechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/blood-sugar-converter-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/blood-sugar-converter-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/blutzucker-umrechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/blood-sugar-converter-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/bmi-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/bmi-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-bmi/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-bmi/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/bmi-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-bmi/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/grundumsatz-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/grundumsatz-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-bmr/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-bmr/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/grundumsatz-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-bmr/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/koerperfett-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/koerperfett-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-body-fat/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-body-fat/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/koerperfett-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-body-fat/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/koerperoberflaeche-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/koerperoberflaeche-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/body-surface-area-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/body-surface-area-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/koerperoberflaeche-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/body-surface-area-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/koffein-rechner-schlafen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/koffein-rechner-schlafen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/caffeine-calculator-sleep-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/caffeine-calculator-sleep-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/koffein-rechner-schlafen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/caffeine-calculator-sleep-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/kaloriendefizit-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/kaloriendefizit-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-calorie-deficit/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-calorie-deficit/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/kaloriendefizit-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-calorie-deficit/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/kalorienverbrauch-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/kalorienverbrauch-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-calories-burned/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-calories-burned/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/kalorienverbrauch-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-calories-burned/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/wachstumsperzentile-kinder/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/wachstumsperzentile-kinder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/child-growth-percentile-chart/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/child-growth-percentile-chart/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/wachstumsperzentile-kinder/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/child-growth-percentile-chart/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/geburtsterminrechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/geburtsterminrechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/due-date-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/due-date-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/geburtsterminrechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/due-date-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/gfr-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/gfr-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/gfr-calculator-kidney-function/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/gfr-calculator-kidney-function/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/gfr-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/gfr-calculator-kidney-function/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/hba1c-umrechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/hba1c-umrechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/hba1c-converter-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/hba1c-converter-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/hba1c-umrechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/hba1c-converter-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/herzfrequenz-zonen-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/herzfrequenz-zonen-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-heart-rate-zones/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-heart-rate-zones/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/herzfrequenz-zonen-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-heart-rate-zones/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/idealgewicht-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/idealgewicht-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-ideal-weight/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-ideal-weight/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/idealgewicht-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-ideal-weight/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/intervallfasten-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/intervallfasten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/intermittent-fasting-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/intermittent-fasting-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/intervallfasten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/intermittent-fasting-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/keto-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/keto-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/keto-calculator-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/keto-calculator-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/keto-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/keto-calculator-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/magermasse-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/magermasse-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-lean-body-mass/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-lean-body-mass/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/magermasse-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-lean-body-mass/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/makronaehrstoffe-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/makronaehrstoffe-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-macros/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-macros/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/makronaehrstoffe-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-macros/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/one-rep-max-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/one-rep-max-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-one-rep-max/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-one-rep-max/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/one-rep-max-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-one-rep-max/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/eisprung-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/eisprung-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-ovulation/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-ovulation/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/eisprung-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-ovulation/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/zyklusrechner-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/zyklusrechner-guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/period-calculator-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/period-calculator-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/zyklusrechner-guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/period-calculator-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/geburtstermin-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/geburtstermin-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-due-date/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-due-date/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/geburtstermin-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-due-date/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/gewichtszunahme-schwangerschaft-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/gewichtszunahme-schwangerschaft-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/pregnancy-weight-gain-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/pregnancy-weight-gain-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/gewichtszunahme-schwangerschaft-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/pregnancy-weight-gain-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/proteinbedarf-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/proteinbedarf-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/protein-intake-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/protein-intake-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/proteinbedarf-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/protein-intake-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/eiweissbedarf-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/eiweissbedarf-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/protein-requirements-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/protein-requirements-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/eiweissbedarf-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/protein-requirements-guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/lauftempo-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/lauftempo-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-running-pace/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-running-pace/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/lauftempo-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-running-pace/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/schlafzyklen-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/schlafzyklen-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-sleep-cycles/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-sleep-cycles/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/schlafzyklen-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-sleep-cycles/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/rauchen-kosten-rechner/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/rauchen-kosten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/smoking-cost-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/smoking-cost-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/rauchen-kosten-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/smoking-cost-calculator/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/tdee-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/tdee-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-tdee/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-tdee/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/tdee-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-tdee/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/vo2max-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/vo2max-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-vo2max/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-vo2max/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/vo2max-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-vo2max/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/taille-hueft-verhaeltnis-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/taille-hueft-verhaeltnis-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-waist-hip-ratio/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-waist-hip-ratio/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/taille-hueft-verhaeltnis-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-waist-hip-ratio/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/de/blog/wasserbedarf-berechnen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/wasserbedarf-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-water-intake/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://healthcalculator.app/en/blog/calculate-water-intake/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://healthcalculator.app/de/blog/wasserbedarf-berechnen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://healthcalculator.app/en/blog/calculate-water-intake/"/>
+    <priority>0.8</priority>
+  </url>
+</urlset>

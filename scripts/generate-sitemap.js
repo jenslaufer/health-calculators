@@ -69,25 +69,25 @@ export function generateSitemap(metas, baseUrl = BASE_URL) {
   // Calculator pages
   for (const meta of metas) {
     const alts = {
-      de: `${baseUrl}/de/${meta.slugs.de}`,
-      en: `${baseUrl}/en/${meta.slugs.en}`,
+      de: `${baseUrl}/de/${meta.slugs.de}/`,
+      en: `${baseUrl}/en/${meta.slugs.en}/`,
     }
     xml += urlEntry(alts.de, alts)
     xml += urlEntry(alts.en, alts)
   }
 
   // Blog index pages
-  const blogAlts = { de: `${baseUrl}/de/blog`, en: `${baseUrl}/en/blog` }
-  xml += urlEntry(`${baseUrl}/de/blog`, blogAlts)
-  xml += urlEntry(`${baseUrl}/en/blog`, blogAlts)
+  const blogAlts = { de: `${baseUrl}/de/blog/`, en: `${baseUrl}/en/blog/` }
+  xml += urlEntry(`${baseUrl}/de/blog/`, blogAlts)
+  xml += urlEntry(`${baseUrl}/en/blog/`, blogAlts)
 
   // Blog article pages — pair de/en by index (same order from metas)
   for (let i = 0; i < blogDeSlugs.length; i++) {
     const deSlug = blogDeSlugs[i]
     const enSlug = blogEnSlugs[i]
     const alts = {
-      de: `${baseUrl}/de/blog/${deSlug}`,
-      en: `${baseUrl}/en/blog/${enSlug}`,
+      de: `${baseUrl}/de/blog/${deSlug}/`,
+      en: `${baseUrl}/en/blog/${enSlug}/`,
     }
     xml += urlEntry(alts.de, alts)
     xml += urlEntry(alts.en, alts)

@@ -6,6 +6,8 @@ import { localePath as resolveLocalePath, routeMap } from './useLocaleRouter.js'
 
 const BASE_URL = 'https://healthcalculator.app'
 
+const ensureSlash = path => path.endsWith('/') ? path : `${path}/`
+
 export function useHead(getConfig) {
   const resolve = typeof getConfig === 'function' ? getConfig : () => getConfig
   const route = useRoute()
@@ -19,14 +21,14 @@ export function useHead(getConfig) {
     let currentPath, otherPath
     if (routeKey === 'blogArticle') {
       const slug = route.meta.slug
-      currentPath = `/${currentLocale}/blog/${slug}`
-      otherPath = `/${otherLocale}/blog/${slug}`
+      currentPath = `/${currentLocale}/blog/${slug}/`
+      otherPath = `/${otherLocale}/blog/${slug}/`
     } else if (routeKey && routeMap[routeKey]) {
-      currentPath = resolveLocalePath(routeKey, currentLocale)
-      otherPath = resolveLocalePath(routeKey, otherLocale)
+      currentPath = ensureSlash(resolveLocalePath(routeKey, currentLocale))
+      otherPath = ensureSlash(resolveLocalePath(routeKey, otherLocale))
     } else {
-      currentPath = route.path
-      otherPath = route.path
+      currentPath = ensureSlash(route.path)
+      otherPath = ensureSlash(route.path)
     }
 
     const url = `${BASE_URL}${currentPath}`
