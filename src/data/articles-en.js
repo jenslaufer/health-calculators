@@ -281,6 +281,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'lifeExpectancy',
     related: ['calculate-bmi', 'smoking-cost-calculator'],
   },
+  {
+    slug: 'diabetes-risk-score',
+    title: 'Diabetes Risk Score: FINDRISC Explained',
+    description: 'Calculate your type 2 diabetes risk with the FINDRISC score. How the test works, what the points mean, and which measures reduce your risk.',
+    date: '2026-04-15',
+    readTime: '8 min',
+    calculatorKey: 'diabetesRisk',
+    related: ['hba1c-converter-guide', 'blood-sugar-converter-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -1,0 +1,74 @@
+{
+  "common": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "home": {
+    "calculators": {
+      "diabetesRisk": {
+        "name": "Diabetes Risk Calculator",
+        "description": "Calculate your type 2 diabetes risk using the validated FINDRISC score."
+      }
+    }
+  },
+  "diabetesRisk": {
+    "meta": {
+      "title": "Diabetes Risk Calculator — FINDRISC Score",
+      "description": "Calculate your type 2 diabetes risk with the FINDRISC score. 8 questions, scientifically validated. 10-year probability, risk categories and prevention recommendations."
+    },
+    "title": "Diabetes Risk Calculator (FINDRISC)",
+    "description": "Calculate your 10-year risk of developing type 2 diabetes using the validated FINDRISC questionnaire.",
+    "gender": "Sex",
+    "ageGroup": "Age group",
+    "selectAge": "Select age group",
+    "ageLt45": "Under 45 years",
+    "age45_54": "45–54 years",
+    "age55_64": "55–64 years",
+    "ageGt64": "Over 64 years",
+    "weightHeight": "Weight & Height (for BMI)",
+    "placeholderWeight": "e.g. 75",
+    "placeholderHeight": "e.g. 175",
+    "bmiLabel": "BMI",
+    "waist": "Waist circumference",
+    "waistHint": "Measured at the level of the lowest rib, while standing.",
+    "placeholderWaistMale": "Men: < 94 / 94–102 / > 102 cm",
+    "placeholderWaistFemale": "Women: < 80 / 80–88 / > 88 cm",
+    "physicalActivity": "Physical activity",
+    "physicalActivityHint": "At least 30 minutes daily — everyday activities like walking count too.",
+    "vegFruitDaily": "Daily vegetables or fruit?",
+    "vegFruitHint": "Do you eat vegetables and/or fruit every day?",
+    "bpMedication": "Blood pressure medication",
+    "highBloodGlucose": "History of high blood glucose?",
+    "highBloodGlucoseHint": "Has high blood glucose ever been found — e.g. during a check-up, pregnancy or illness?",
+    "familyHistory": "Family history of diabetes",
+    "selectFamily": "Select family history",
+    "familyNone": "No diabetes in the family",
+    "familyDistant": "Yes — grandparent, aunt/uncle or first cousin",
+    "familyClose": "Yes — parent, sibling or own child",
+    "scoreRange": "Scale 0–26 points",
+    "riskCategory": "Risk category",
+    "probability10y": "10-year probability",
+    "risk_low": "Low",
+    "risk_slightly_elevated": "Slightly elevated",
+    "risk_moderate": "Moderate",
+    "risk_high": "High",
+    "risk_very_high": "Very high",
+    "factorBreakdown": "Score breakdown by factor",
+    "factorAge": "Age",
+    "factorBmi": "BMI",
+    "factorWaist": "Waist circumference",
+    "factorActivity": "Physical activity",
+    "factorVegFruit": "Daily vegetables/fruit",
+    "factorBpMed": "Blood pressure medication",
+    "factorHighGlucose": "High blood glucose history",
+    "factorFamily": "Family history",
+    "recommendations": "Prevention recommendations",
+    "recWeight": "Reach a healthy weight: A BMI below 25 significantly reduces your risk.",
+    "recActivity": "Move more: 30 minutes of moderate activity daily reduces diabetes risk by up to 58%.",
+    "recDiet": "Improve your diet: Daily vegetables and fruit, less sugar and processed foods.",
+    "recScreening": "Regular screening: Have blood glucose and HbA1c checked by your doctor.",
+    "recDoctor": "See a doctor: At this risk level, medical consultation is recommended.",
+    "recMaintain": "Keep it up: Your lifestyle supports a low diabetes risk.",
+    "disclaimer": "This calculator uses the validated FINDRISC questionnaire (Lindström & Tuomilehto, 2003) as a screening tool. It does not replace medical diagnosis. An elevated result does not mean you have or will develop diabetes. Consult a doctor if you have questions or concerns."
+  }
+}
