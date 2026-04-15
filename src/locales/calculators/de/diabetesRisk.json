@@ -1,0 +1,74 @@
+{
+  "common": {
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "home": {
+    "calculators": {
+      "diabetesRisk": {
+        "name": "Diabetes-Risiko-Rechner",
+        "description": "Berechne dein Typ-2-Diabetes-Risiko mit dem validierten FINDRISC-Score."
+      }
+    }
+  },
+  "diabetesRisk": {
+    "meta": {
+      "title": "Diabetes-Risiko berechnen — FINDRISC-Score Rechner",
+      "description": "Typ-2-Diabetes-Risiko mit dem FINDRISC-Score berechnen. 8 Fragen, wissenschaftlich validiert. 10-Jahres-Wahrscheinlichkeit, Risikokategorien und Präventionsempfehlungen."
+    },
+    "title": "Diabetes-Risiko-Rechner (FINDRISC)",
+    "description": "Berechne dein 10-Jahres-Risiko für Typ-2-Diabetes mit dem validierten FINDRISC-Fragebogen.",
+    "gender": "Geschlecht",
+    "ageGroup": "Altersgruppe",
+    "selectAge": "Altersgruppe wählen",
+    "ageLt45": "Unter 45 Jahre",
+    "age45_54": "45–54 Jahre",
+    "age55_64": "55–64 Jahre",
+    "ageGt64": "Über 64 Jahre",
+    "weightHeight": "Gewicht & Größe (für BMI)",
+    "placeholderWeight": "z. B. 75",
+    "placeholderHeight": "z. B. 175",
+    "bmiLabel": "BMI",
+    "waist": "Taillenumfang",
+    "waistHint": "Gemessen auf Höhe der untersten Rippe, im Stehen.",
+    "placeholderWaistMale": "Männer: < 94 / 94–102 / > 102 cm",
+    "placeholderWaistFemale": "Frauen: < 80 / 80–88 / > 88 cm",
+    "physicalActivity": "Körperliche Aktivität",
+    "physicalActivityHint": "Mindestens 30 Minuten täglich — auch Alltagsaktivität wie Gehen zählt.",
+    "vegFruitDaily": "Täglich Gemüse oder Obst?",
+    "vegFruitHint": "Konsumierst du jeden Tag Gemüse und/oder Obst?",
+    "bpMedication": "Blutdruckmedikamente",
+    "highBloodGlucose": "Erhöhter Blutzucker in der Vergangenheit?",
+    "highBloodGlucoseHint": "Wurde je ein erhöhter Blutzucker festgestellt — z. B. bei einer Untersuchung, Schwangerschaft oder Erkrankung?",
+    "familyHistory": "Familiengeschichte Diabetes",
+    "selectFamily": "Familiengeschichte wählen",
+    "familyNone": "Kein Diabetes in der Familie",
+    "familyDistant": "Ja — Großelternteil, Tante/Onkel oder Cousin",
+    "familyClose": "Ja — Elternteil, Geschwister oder eigenes Kind",
+    "scoreRange": "Skala 0–26 Punkte",
+    "riskCategory": "Risikokategorie",
+    "probability10y": "10-Jahres-Wahrscheinlichkeit",
+    "risk_low": "Gering",
+    "risk_slightly_elevated": "Leicht erhöht",
+    "risk_moderate": "Mäßig",
+    "risk_high": "Hoch",
+    "risk_very_high": "Sehr hoch",
+    "factorBreakdown": "Punkteverteilung nach Faktor",
+    "factorAge": "Alter",
+    "factorBmi": "BMI",
+    "factorWaist": "Taillenumfang",
+    "factorActivity": "Körperliche Aktivität",
+    "factorVegFruit": "Gemüse/Obst täglich",
+    "factorBpMed": "Blutdruckmedikamente",
+    "factorHighGlucose": "Erhöhter Blutzucker",
+    "factorFamily": "Familiengeschichte",
+    "recommendations": "Präventionsempfehlungen",
+    "recWeight": "Normalgewicht anstreben: Ein BMI unter 25 senkt das Risiko deutlich.",
+    "recActivity": "Mehr Bewegung: 30 Minuten moderate Aktivität täglich reduzieren das Diabetesrisiko um bis zu 58 %.",
+    "recDiet": "Ernährung verbessern: Täglich Gemüse und Obst, weniger Zucker und verarbeitete Lebensmittel.",
+    "recScreening": "Regelmäßiges Screening: Blutzucker und HbA1c beim Arzt kontrollieren lassen.",
+    "recDoctor": "Ärztliche Abklärung: Bei diesem Risiko ist eine Beratung durch einen Arzt empfehlenswert.",
+    "recMaintain": "Weiter so: Dein Lebensstil unterstützt ein geringes Diabetesrisiko.",
+    "disclaimer": "Dieser Rechner verwendet den validierten FINDRISC-Fragebogen (Lindström & Tuomilehto, 2003) als Screeninginstrument. Er ersetzt keine ärztliche Diagnose. Ein erhöhtes Ergebnis bedeutet nicht, dass du Diabetes hast oder bekommst. Konsultiere bei Fragen oder Bedenken einen Arzt."
+  }
+}

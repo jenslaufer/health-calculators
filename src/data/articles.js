@@ -281,6 +281,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'lifeExpectancy',
     related: ['bmi-berechnen', 'rauchen-kosten-rechner'],
   },
+  {
+    slug: 'diabetes-risiko-berechnen',
+    title: 'Diabetes-Risiko berechnen: FINDRISC-Score erklärt',
+    description: 'Typ-2-Diabetes-Risiko mit dem FINDRISC-Score berechnen. Wie der Test funktioniert, was die Punkte bedeuten und welche Maßnahmen das Risiko senken.',
+    date: '2026-04-15',
+    readTime: '8 min',
+    calculatorKey: 'diabetesRisk',
+    related: ['hba1c-umrechnen', 'blutzucker-umrechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
