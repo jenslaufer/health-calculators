@@ -272,6 +272,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'childGrowth',
     related: ['due-date-calculator', 'calculate-bmi'],
   },
+  {
+    slug: 'life-expectancy-calculator',
+    title: 'Life Expectancy Calculator — Factors That Really Matter',
+    description: 'Calculate your life expectancy based on lifestyle, chronic conditions, and genetics. WHO 2022 country data with science-backed adjustment factors.',
+    date: '2026-04-15',
+    readTime: '9 min',
+    calculatorKey: 'lifeExpectancy',
+    related: ['calculate-bmi', 'smoking-cost-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
