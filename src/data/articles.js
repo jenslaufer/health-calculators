@@ -272,6 +272,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'childGrowth',
     related: ['geburtsterminrechner', 'bmi-berechnen'],
   },
+  {
+    slug: 'lebenserwartung-berechnen',
+    title: 'Lebenserwartung berechnen: Faktoren, Tabellen & Rechner',
+    description: 'Lebenserwartung berechnen — Rauchen, Bewegung, Ernährung und Stress im Vergleich. Mit Ländertabelle (WHO 2022) und kostenlosem Lebenserwartung-Rechner.',
+    date: '2026-04-15',
+    readTime: '9 min',
+    calculatorKey: 'lifeExpectancy',
+    related: ['bmi-berechnen', 'rauchen-kosten-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
