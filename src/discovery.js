@@ -50,3 +50,7 @@ export const calculatorGroups = [...groupMap.entries()].map(([key, calculators])
   key,
   calculators,
 }))
+
+export const keyToGroup = Object.fromEntries(
+  calculatorMetas.map(m => [m.key, m.group])
+)

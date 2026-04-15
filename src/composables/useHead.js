@@ -2,36 +2,61 @@ import { computed } from 'vue'
 import { useHead as useUnhead } from '@unhead/vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { localePath as resolveLocalePath, routeMap } from './useLocaleRouter.js'
+import { localePath as resolveLocalePath, routeMap, keyToGroup } from './useLocaleRouter.js'
 
 const BASE_URL = 'https://healthcalculator.app'
 
 const ensureSlash = path => path.endsWith('/') ? path : `${path}/`
 
+export function buildBreadcrumb({ routeKey, title, locale, t, homeUrl, blogUrl }) {
+  if (routeKey === 'home') return null
+
+  const items = [
+    { '@type': 'ListItem', position: 1, name: t('nav.brand'), item: homeUrl },
+  ]
+
+  if (routeKey === 'blog') {
+    items.push({ '@type': 'ListItem', position: 2, name: t('nav.blog') })
+  } else if (routeKey === 'blogArticle') {
+    items.push({ '@type': 'ListItem', position: 2, name: t('nav.blog'), item: blogUrl })
+    items.push({ '@type': 'ListItem', position: 3, name: title })
+  } else {
+    const group = keyToGroup[routeKey]
+    if (group) {
+      items.push({ '@type': 'ListItem', position: 2, name: t(`home.groups.${group}`), item: homeUrl })
+    }
+    items.push({ '@type': 'ListItem', position: items.length + 1, name: title })
+  }
+
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items }
+}
+
 export function useHead(getConfig) {
   const resolve = typeof getConfig === 'function' ? getConfig : () => getConfig
   const route = useRoute()
-  const { locale } = useI18n()
+  const { locale, t } = useI18n()
 
   const headData = computed(() => {
-    const { title, description, routeKey, jsonLd } = resolve()
+    const { title, description, routeKey: configRouteKey, jsonLd } = resolve()
     const currentLocale = locale.value
     const otherLocale = currentLocale === 'de' ? 'en' : 'de'
 
     let currentPath, otherPath
-    if (routeKey === 'blogArticle') {
+    if (configRouteKey === 'blogArticle') {
       const slug = route.meta.slug
       currentPath = `/${currentLocale}/blog/${slug}/`
       otherPath = `/${otherLocale}/blog/${slug}/`
-    } else if (routeKey && routeMap[routeKey]) {
-      currentPath = ensureSlash(resolveLocalePath(routeKey, currentLocale))
-      otherPath = ensureSlash(resolveLocalePath(routeKey, otherLocale))
+    } else if (configRouteKey && routeMap[configRouteKey]) {
+      currentPath = ensureSlash(resolveLocalePath(configRouteKey, currentLocale))
+      otherPath = ensureSlash(resolveLocalePath(configRouteKey, otherLocale))
     } else {
       currentPath = ensureSlash(route.path)
       otherPath = ensureSlash(route.path)
     }
 
     const url = `${BASE_URL}${currentPath}`
+    const homeUrl = `${BASE_URL}/${currentLocale}/`
+    const blogUrl = `${BASE_URL}/${currentLocale}/blog/`
 
     const head = {
       title,
@@ -54,6 +79,8 @@ export function useHead(getConfig) {
       ],
     }
 
+    const scripts = []
+
     if (jsonLd) {
       const enriched = { ...jsonLd }
       if (enriched['@type'] === 'WebApplication') {
@@ -62,10 +89,21 @@ export function useHead(getConfig) {
       }
       if (enriched['@type'] === 'Article') {
         enriched.mainEntityOfPage = { '@type': 'WebPage', '@id': url }
+        if (!enriched.image) {
+          enriched.image = `${BASE_URL}/og-image.png`
+        }
       }
-      head.script = [
-        { type: 'application/ld+json', innerHTML: JSON.stringify(enriched) },
-      ]
+      scripts.push({ type: 'application/ld+json', innerHTML: JSON.stringify(enriched) })
+    }
+
+    const effectiveRouteKey = configRouteKey || route.meta.routeKey
+    const breadcrumb = buildBreadcrumb({ routeKey: effectiveRouteKey, title, locale: currentLocale, t, homeUrl, blogUrl })
+    if (breadcrumb) {
+      scripts.push({ type: 'application/ld+json', innerHTML: JSON.stringify(breadcrumb) })
+    }
+
+    if (scripts.length) {
+      head.script = scripts
     }
 
     return head
