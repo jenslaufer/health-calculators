@@ -2,12 +2,25 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { useHead } from '@unhead/vue'
 import { useLocaleRouter } from './composables/useLocaleRouter.js'
 
 const router = useRouter()
 const menuOpen = ref(false)
 const { t } = useI18n()
 const { localePath, switchLocale, locale } = useLocaleRouter()
+
+useHead({
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Health Calculator',
+      url: 'https://healthcalculator.app',
+    }),
+  }],
+})
 
 router.afterEach(() => { menuOpen.value = false })
 </script>

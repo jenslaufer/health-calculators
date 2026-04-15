@@ -2,7 +2,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { articles } from '../data/articles.js'
 import { articlesEn } from '../data/articles-en.js'
-import { routeMap } from '../discovery.js'
+import { routeMap, keyToGroup } from '../discovery.js'
 
 // Build blog slug map from article data using calculatorKey
 const blogSlugMap = {}
@@ -14,7 +14,7 @@ for (const deArticle of articles) {
   }
 }
 
-export { routeMap }
+export { routeMap, keyToGroup }
 
 export function localePath(routeKey, locale) {
   const slug = routeMap[routeKey]?.[locale]
