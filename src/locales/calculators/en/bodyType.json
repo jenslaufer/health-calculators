@@ -1,0 +1,66 @@
+{
+  "home": {
+    "calculators": {
+      "bodyType": {
+        "name": "Body Type Calculator",
+        "description": "Determine your somatotype: ectomorph, mesomorph or endomorph."
+      }
+    }
+  },
+  "bodyType": {
+    "meta": {
+      "title": "Body Type Calculator — Somatotype: Ectomorph, Mesomorph or Endomorph",
+      "description": "Find your somatotype using the adapted Heath-Carter method. Get personalized training and nutrition recommendations for your body type."
+    },
+    "title": "Body Type Calculator",
+    "description": "Determine your somatotype using body measurements. Get training and nutrition recommendations tailored to your body type.",
+    "measurementsMode": "Measurements",
+    "quickMode": "Quick",
+    "wrist": "Wrist circumference ({unit})",
+    "shoulder": "Shoulder width ({unit})",
+    "hip": "Hip width ({unit})",
+    "bodyFatOptional": "Body fat (%) — optional",
+    "questionnaire": "No measuring tape? Answer 2 quick questions",
+    "muscleTendency": "How easily do you build muscle?",
+    "fatTendency": "How easily do you gain body fat?",
+    "tendencyHard": "Hard",
+    "tendencyNormal": "Average",
+    "tendencyEasy": "Easily",
+    "ectomorph": "Ectomorph",
+    "mesomorph": "Mesomorph",
+    "endomorph": "Endomorph",
+    "ectoMesomorph": "Ecto-Mesomorph",
+    "endoMesomorph": "Endo-Mesomorph",
+    "ectoEndomorph": "Ecto-Endomorph",
+    "balanced": "Balanced",
+    "ectomorphDesc": "Lean, long body. Fast metabolism, difficulty gaining weight or muscle.",
+    "mesomorphDesc": "Athletic, muscular build. Responds well to training, gains muscle easily.",
+    "endomorphDesc": "Rounder build, higher body fat. Gains weight easily, harder to lose.",
+    "ectoMesomorphDesc": "Lean with good muscle development. Athletic frame with manageable body fat.",
+    "endoMesomorphDesc": "Muscular with higher body fat. Strong build but tends to store fat easily.",
+    "ectoEndomorphDesc": "Thin frame with higher body fat percentage. Low muscle mass relative to fat.",
+    "balancedDesc": "Mixed somatotype with no dominant component.",
+    "components": "Somatotype Components",
+    "ectomorphyScore": "Ectomorphy",
+    "mesomorphyScore": "Mesomorphy",
+    "endomorphyScore": "Endomorphy",
+    "training": "Training Recommendations",
+    "nutrition": "Nutrition Recommendations",
+    "trainingEctomorph": "Focus on heavy strength training with low reps (3–5 sets, 6–8 reps). Prioritize compound lifts: squats, deadlifts, bench press. Keep cardio minimal — 2× per week at most. Increase training volume slowly to avoid overtraining.",
+    "trainingMesomorph": "Respond best to varied training: combine strength and cardio. Aim for 3–4 strength sessions with moderate weight and reps (3–4 sets, 8–12 reps). Regular cardio 2–3× per week keeps body fat in check.",
+    "trainingEndomorph": "Prioritize high-intensity cardio (HIIT, 3–4× per week) combined with strength training. Circuit training with short rest periods is particularly effective. Aim for high calorie burn plus muscle building to boost metabolism. Consistency is key — plan at least 5 training days per week.",
+    "trainingEctoMesomorph": "Combine heavy strength training with moderate cardio. Focus on hypertrophy training (3–4 sets, 8–10 reps) with progressive overload. Cardio 2–3× per week for conditioning. You can build muscle relatively quickly while staying lean.",
+    "trainingEndoMesomorph": "Strong base for strength training, but don't neglect cardio. Target 4 strength sessions and 2–3 HIIT sessions per week. Circuit training helps combine both. Monitor calorie balance to maintain muscle while reducing fat.",
+    "trainingEctoEndomorph": "Start with moderate resistance training (3 sets, 10–15 reps) and progress regularly. Combine with cardio 3× per week. Building muscle mass improves your metabolism and helps reduce body fat percentage. Patience is key — progress comes steadily.",
+    "trainingBalanced": "Your balanced type benefits from varied training. Mix strength and cardio as needed. Typical: 3 strength sessions and 2 cardio sessions per week. Adaptability is your strength — experiment with different training formats.",
+    "nutritionEctomorph": "Eat more than you think — a calorie surplus of 300–500 kcal/day is needed. Emphasize carbohydrates (50–60% of calories) as energy and muscle-building fuel. Protein: at least 1.6–2.0 g/kg body weight daily. Frequent meals (5–6× daily) help meet the high calorie demand.",
+    "nutritionMesomorph": "Balanced macros: ~40% carbs, ~30% protein, ~30% fat. Adjust calories to your goal: slight surplus for muscle gain, slight deficit to lose fat. Protein: 1.6–2.0 g/kg/day. You respond well to clean eating — minimize processed foods.",
+    "nutritionEndomorph": "Reduce carbohydrates to 30–40% of calories, especially simple sugars. Prioritize protein (2.0–2.4 g/kg/day) for satiety and muscle preservation. Healthy fats: 30–35%. Regular meals (4× daily) stabilize blood sugar. Calorie tracking is especially helpful for this body type.",
+    "nutritionEctoMesomorph": "Sufficient calories for training and recovery — slight surplus when building, maintenance phase for definition. Macros: 40% carbs, 30% protein, 30% fat. Protein: 1.8 g/kg/day. Emphasize complex carbohydrates for sustained energy.",
+    "nutritionEndoMesomorph": "Control carbohydrates (35–45%), focus on protein (2.0–2.2 g/kg/day). Calorie surplus only during active building phases. Healthy fats: 25–30%. Timing helps: carbs around workouts, protein evenly distributed.",
+    "nutritionEctoEndomorph": "Higher protein (2.0–2.4 g/kg/day) supports muscle building and satiety. Moderate carbohydrates (35–40%), preferably complex. Slight calorie surplus for muscle gain, combined with strength training. Avoid calorie deficits — it costs muscle mass that you need for a higher basal metabolic rate.",
+    "nutritionBalanced": "Balanced macros work well for you: ~40% carbs, ~30% protein, ~30% fat. Adjust calories to your current goal. Protein: 1.6–1.8 g/kg/day as a baseline. Focus on food quality and regular meals.",
+    "methodNote": "Method: Heath-Carter (adapted). Ectomorphy is based on the Height-Weight Ratio (HWR). Mesomorphy and endomorphy are derived from body measurements or BMI estimate.",
+    "quickNote": "Quick mode: result based on height/weight + your answers. Enter measurements for more accurate results."
+  }
+}

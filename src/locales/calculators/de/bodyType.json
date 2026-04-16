@@ -1,0 +1,66 @@
+{
+  "home": {
+    "calculators": {
+      "bodyType": {
+        "name": "Körpertyp-Rechner",
+        "description": "Bestimme deinen Somatotyp: Ekto-, Meso- oder Endomorph."
+      }
+    }
+  },
+  "bodyType": {
+    "meta": {
+      "title": "Körpertyp-Rechner — Somatotyp bestimmen: Ekto-, Meso- oder Endomorph",
+      "description": "Bestimme deinen Somatotyp mit der Heath-Carter-Methode. Erhalte individuelle Trainings- und Ernährungsempfehlungen für deinen Körpertyp."
+    },
+    "title": "Körpertyp-Rechner",
+    "description": "Bestimme deinen Somatotyp anhand von Körpermessungen. Trainings- und Ernährungsempfehlungen passend zu deinem Körpertyp.",
+    "measurementsMode": "Messungen",
+    "quickMode": "Schnelltest",
+    "wrist": "Handgelenkumfang ({unit})",
+    "shoulder": "Schulterbreite ({unit})",
+    "hip": "Hüftbreite ({unit})",
+    "bodyFatOptional": "Körperfettanteil (%) — optional",
+    "questionnaire": "Keine Messung möglich? Beantworte 2 kurze Fragen",
+    "muscleTendency": "Wie leicht baust du Muskeln auf?",
+    "fatTendency": "Wie leicht nimmst du Körperfett zu?",
+    "tendencyHard": "Schwer",
+    "tendencyNormal": "Normal",
+    "tendencyEasy": "Leicht",
+    "ectomorph": "Ektomorph",
+    "mesomorph": "Mesomorph",
+    "endomorph": "Endomorph",
+    "ectoMesomorph": "Ekto-Mesomorph",
+    "endoMesomorph": "Endo-Mesomorph",
+    "ectoEndomorph": "Ekto-Endomorph",
+    "balanced": "Ausgewogen",
+    "ectomorphDesc": "Schlanker, langer Körperbau. Schneller Stoffwechsel, Schwierigkeiten beim Gewichts- und Muskelaufbau.",
+    "mesomorphDesc": "Athletischer, muskulöser Körperbau. Reagiert gut auf Training, baut leicht Muskeln auf.",
+    "endomorphDesc": "Rundlicherer Körperbau, höherer Körperfettanteil. Nimmt leicht zu, schwerer abzunehmen.",
+    "ectoMesomorphDesc": "Schlank mit guter Muskelentwicklung. Athletischer Rahmen bei kontrollierbarem Körperfett.",
+    "endoMesomorphDesc": "Muskulös mit höherem Körperfettanteil. Stark veranlagt, neigt aber zur Fettspeicherung.",
+    "ectoEndomorphDesc": "Schmaler Rahmen mit relativ hohem Körperfettanteil. Wenig Muskelmasse im Verhältnis zum Fett.",
+    "balancedDesc": "Gemischter Somatotyp ohne dominierende Komponente.",
+    "components": "Somatotyp-Komponenten",
+    "ectomorphyScore": "Ektomorphie",
+    "mesomorphyScore": "Mesomorphie",
+    "endomorphyScore": "Endomorphie",
+    "training": "Trainingsempfehlungen",
+    "nutrition": "Ernährungsempfehlungen",
+    "trainingEctomorph": "Setze auf Krafttraining mit schweren Gewichten und wenigen Wiederholungen (3–5 Sätze, 6–8 Reps). Priorisiere Grundübungen wie Kniebeugen, Kreuzheben und Bankdrücken. Halte Cardio minimal — maximal 2× pro Woche leicht. Erhöhe das Trainingsvolumen langsam, um Übertraining zu vermeiden.",
+    "trainingMesomorph": "Du reagierst optimal auf abwechslungsreiches Training: kombiniere Kraft- und Ausdauertraining. Typisch: 3–4 Krafteinheiten mit mittlerem Gewicht und moderaten Wiederholungen (3–4 Sätze, 8–12 Reps). Regelmäßiges Cardio (2–3× pro Woche) hält den Körperfettanteil in Schach.",
+    "trainingEndomorph": "Fokus auf hochintensives Cardio (HIIT, 3–4× pro Woche) kombiniert mit Krafttraining. Circuittraining mit kurzen Pausen ist besonders wirksam. Ziel: hoher Kalorienverbrauch und Muskelaufbau zur Stoffwechselsteigerung. Konsistenz ist entscheidend — plane mindestens 5 Trainingstage pro Woche.",
+    "trainingEctoMesomorph": "Kombination aus schwerem Krafttraining und moderatem Cardio. Priorisiere Hypertrophie-Training (3–4 Sätze, 8–10 Reps) mit progressiver Überlastung. Cardio 2–3× pro Woche zur Kondition. Du kannst relativ schnell Muskeln aufbauen und dabei schlank bleiben.",
+    "trainingEndoMesomorph": "Starke Basis für Krafttraining, aber Cardio nicht vernachlässigen. Ziele auf 4 Krafteinheiten und 2–3 HIIT-Sessions pro Woche. Circuittraining hilft, beides zu kombinieren. Achte auf Kalorienbalance, um Muskelmasse zu erhalten und Fett zu reduzieren.",
+    "trainingEctoEndomorph": "Beginne mit moderatem Widerstandstraining (3 Sätze, 10–15 Reps) und steigere regelmäßig. Kombiniere mit Cardio 3× pro Woche. Der Aufbau von Muskelmasse verbessert deinen Stoffwechsel und hilft, den Körperfettanteil zu reduzieren. Geduld ist key — Fortschritte kommen stetig.",
+    "trainingBalanced": "Dein ausgewogener Typ profitiert von vielseitigem Training. Mische Kraft- und Ausdauertraining nach Bedarf. Typisch: 3 Krafteinheiten und 2 Cardio-Sessions pro Woche. Anpassungsfähigkeit ist deine Stärke — experimentiere mit verschiedenen Trainingsformen.",
+    "nutritionEctomorph": "Esse mehr als du denkst — ein Kalorienüberschuss von 300–500 kcal/Tag ist nötig. Betone Kohlenhydrate (50–60 % der Kalorien) als Energiequelle und Muskelaufbau-Treibstoff. Protein: mind. 1,6–2,0 g/kg Körpergewicht täglich. Häufige Mahlzeiten (5–6× täglich) helfen, den hohen Kalorienbedarf zu decken.",
+    "nutritionMesomorph": "Ausgewogene Makros: ~40 % Kohlenhydrate, ~30 % Protein, ~30 % Fett. Passe Kalorien deinem Ziel an: leichter Überschuss für Muskelaufbau, leichtes Defizit zum Abnehmen. Protein: 1,6–2,0 g/kg/Tag. Du reagierst gut auf saubere Ernährung — verarbeitete Lebensmittel minimieren.",
+    "nutritionEndomorph": "Reduziere Kohlenhydrate auf 30–40 % der Kalorien, vor allem einfache Zucker. Priorisiere Protein (2,0–2,4 g/kg/Tag) zur Sättigung und Muskelerhalt. Gesunde Fette: 30–35 %. Regelmäßige Mahlzeiten (4× täglich) stabilisieren den Blutzucker. Kalorien-Tracking ist besonders hilfreich für diesen Körpertyp.",
+    "nutritionEctoMesomorph": "Ausreichend Kalorien für Training und Erholung — leichter Überschuss beim Aufbau, Erhaltungsphase zum Definieren. Makros: 40 % Kohlenhydrate, 30 % Protein, 30 % Fett. Protein: 1,8 g/kg/Tag. Betone komplexe Kohlenhydrate für anhaltende Energie.",
+    "nutritionEndoMesomorph": "Kontrolliere Kohlenhydrate (35–45 %), fokussiere auf Protein (2,0–2,2 g/kg/Tag). Kalorienüberschuss nur in der aktiven Aufbauphase. Gesunde Fette: 25–30 %. Timing hilft: Kohlenhydrate rund ums Training, Protein gleichmäßig verteilt.",
+    "nutritionEctoEndomorph": "Höheres Protein (2,0–2,4 g/kg/Tag) unterstützt Muskelaufbau und Sättigung. Moderierte Kohlenhydrate (35–40 %), bevorzugt komplex. Leichter Kalorienüberschuss für Muskelaufbau, kombiniert mit Krafttraining. Meide Kaloriendefizite — das kostet Muskeln, die du für einen höheren Grundumsatz brauchst.",
+    "nutritionBalanced": "Ausgewogene Makros funktionieren gut für dich: ~40 % Kohlenhydrate, ~30 % Protein, ~30 % Fett. Passe Kalorien deinem aktuellen Ziel an. Protein: 1,6–1,8 g/kg/Tag als Basis. Fokussiere auf Lebensmittelqualität und regelmäßige Mahlzeiten.",
+    "methodNote": "Methode: Heath-Carter (adaptiert). Ektomorphie basiert auf dem Gewicht-Größe-Verhältnis (HWR). Meso- und Endomorphie aus Körpermessungen oder BMI-Schätzung.",
+    "quickNote": "Schnelltest: Ergebnis basiert auf Größe/Gewicht + deinen Angaben. Für präzisere Ergebnisse Messungen eingeben."
+  }
+}
