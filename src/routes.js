@@ -62,7 +62,7 @@ const oldBlogRedirects = blogSlugs.map(slug => ({
 }))
 
 const routes = [
-  { path: '/', redirect: '/de/' },
+  { path: '/', redirect: '/en/' },
   ...createLocaleRoutes('de'),
   ...createLocaleRoutes('en'),
   ...oldRedirects,

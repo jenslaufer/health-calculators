@@ -269,7 +269,7 @@ describe('SSG routes', () => {
   })
 
   it('has redirect routes for old paths', () => {
-    expect(routes.find(r => r.path === '/')?.redirect).toBe('/de/')
+    expect(routes.find(r => r.path === '/')?.redirect).toBe('/en/')
     expect(routes.find(r => r.path === '/bmi')?.redirect).toBe('/de/bmi-rechner')
     expect(routes.find(r => r.path === '/blog')?.redirect).toBe('/de/blog')
   })
