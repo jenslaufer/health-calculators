@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test'
 
 test.describe('Locale-prefixed route resolution', () => {
-  test('/ redirects to /de/', async ({ page }) => {
+  test('/ redirects to /en/', async ({ page }) => {
     await page.goto('')
-    await expect(page).toHaveURL(/\/de\/?$/)
+    await expect(page).toHaveURL(/\/en\/?$/)
   })
 
   test('/de/ loads home page in German', async ({ page }) => {

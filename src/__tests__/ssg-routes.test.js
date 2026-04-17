@@ -34,7 +34,7 @@ describe('routes.js exports', () => {
     const redirectRoutes = routes.filter(r => r.redirect)
     expect(redirectRoutes.length).toBeGreaterThan(0)
     const rootRedirect = routes.find(r => r.path === '/')
-    expect(rootRedirect?.redirect).toBe('/de/')
+    expect(rootRedirect?.redirect).toBe('/en/')
   })
 
   it('has no routes with undefined or empty path', () => {
@@ -45,10 +45,10 @@ describe('routes.js exports', () => {
     }
   })
 
-  it('root redirect goes to /de/ with no competing undefined-path routes', () => {
+  it('root redirect goes to /en/ with no competing undefined-path routes', () => {
     const undefinedPathRoutes = routes.filter(r => r.path === undefined || r.path === '')
     expect(undefinedPathRoutes).toHaveLength(0)
     const rootRoute = routes.find(r => r.path === '/')
-    expect(rootRoute?.redirect).toBe('/de/')
+    expect(rootRoute?.redirect).toBe('/en/')
   })
 })
