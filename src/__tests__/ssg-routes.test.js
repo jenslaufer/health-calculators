@@ -36,4 +36,19 @@ describe('routes.js exports', () => {
     const rootRedirect = routes.find(r => r.path === '/')
     expect(rootRedirect?.redirect).toBe('/de/')
   })
+
+  it('has no routes with undefined or empty path', () => {
+    for (const route of routes) {
+      expect(route.path).toBeDefined()
+      expect(typeof route.path).toBe('string')
+      expect(route.path.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('root redirect goes to /de/ with no competing undefined-path routes', () => {
+    const undefinedPathRoutes = routes.filter(r => r.path === undefined || r.path === '')
+    expect(undefinedPathRoutes).toHaveLength(0)
+    const rootRoute = routes.find(r => r.path === '/')
+    expect(rootRoute?.redirect).toBe('/de/')
+  })
 })

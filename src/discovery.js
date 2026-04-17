@@ -31,11 +31,13 @@ export const blogComponentsEn = Object.fromEntries(
   calculatorMetas.map(m => [m.blog.en.slug, m.blog.en.component])
 )
 
-// Old redirect paths for backwards compatibility
-export const oldRedirects = calculatorMetas.map(m => ({
-  path: m.oldRedirect,
-  redirect: `/de/${m.slugs.de}`,
-}))
+// Old redirect paths for backwards compatibility (only for calculators that define one)
+export const oldRedirects = calculatorMetas
+  .filter(m => m.oldRedirect)
+  .map(m => ({
+    path: m.oldRedirect,
+    redirect: `/de/${m.slugs.de}`,
+  }))
 
 // Calculator groups for Home page, derived from meta ordering
 const groupMap = new Map()
