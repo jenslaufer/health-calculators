@@ -1,0 +1,90 @@
+{
+  "home": {
+    "calculators": {
+      "alcoholUnits": {
+        "name": "Alkoholeinheiten Rechner",
+        "description": "Berechne deinen wöchentlichen Alkoholkonsum in UK-Einheiten, Gramm reinen Alkohol und dein Gesundheitsrisiko."
+      }
+    }
+  },
+  "alcoholUnits": {
+    "meta": {
+      "title": "Alkoholeinheiten berechnen — Wöchentlicher Konsum & Gesundheitsrisiko",
+      "description": "Berechne deine wöchentlichen Alkoholeinheiten (UK/WHO) und Gramm reinen Alkohol. Vergleich mit DE DHS, UK NHS und US NIAAA — mit Kalorien- und Kostenschätzung."
+    },
+    "title": "Alkoholeinheiten Rechner",
+    "description": "Berechne deinen wöchentlichen Alkoholkonsum in UK-Einheiten und Gramm reinen Alkohol — mit Risikokategorie nach WHO, DHS und NHS sowie Kalorien- und Kostenschätzung.",
+    "sex": "Geschlecht",
+    "male": "Mann",
+    "female": "Frau",
+    "drinkTypes": "Getränke pro Woche",
+    "countLabel": "Anzahl / Woche",
+    "volumeLabel": "Volumen (ml)",
+    "abvLabel": "Alkohol (%)",
+    "costLabel": "Kosten (€/Stück)",
+    "costToggle": "Kosten schätzen (optional)",
+    "unitsPerDrink": "Einh. pro Stück",
+    "drinkType": {
+      "beer": "Bier",
+      "wine": "Wein",
+      "spirits": "Spirituosen",
+      "cocktails": "Cocktails"
+    },
+    "drinkDesc": {
+      "beer": "z. B. 500 ml Pils, 5 %",
+      "wine": "z. B. 175 ml Rotwein, 12 %",
+      "spirits": "z. B. 4 cl Whisky, 40 %",
+      "cocktails": "z. B. 200 ml, 15 %"
+    },
+    "results": "Ergebnis",
+    "totalUnits": "UK-Einheiten / Woche",
+    "totalGrams": "Gramm reiner Alkohol / Woche",
+    "caloriesLabel": "Kalorien / Woche",
+    "fromAlcohol": "aus Alkohol",
+    "weeklyCost": "Kosten / Woche",
+    "riskCategory": "Risikostufe",
+    "risk": {
+      "none": "Kein Konsum",
+      "low": "Geringes Risiko",
+      "increasing": "Erhöhtes Risiko",
+      "high": "Hohes Risiko",
+      "very_high": "Sehr hohes Risiko"
+    },
+    "riskDesc": {
+      "none": "Kein Alkohol ist die gesündeste Wahl.",
+      "low": "Dein Konsum liegt im Bereich geringen Risikos. Regelmäßige alkoholfreie Tage empfohlen.",
+      "increasing": "Dein Konsum übersteigt die Empfehlungen der meisten Leitlinien. Reduktion empfohlen.",
+      "high": "Erhebliches Gesundheitsrisiko. Körperliche und psychische Schäden wahrscheinlich.",
+      "very_high": "Sehr hohes Risiko. Professionelle Beratung dringend empfohlen."
+    },
+    "guidelinesTitle": "Vergleich mit nationalen Leitlinien",
+    "guidelineWithin": "innerhalb",
+    "guidelineExceeds": "überschritten um",
+    "of": "von",
+    "limit": "Grenze",
+    "units": "Einheiten",
+    "guidelines": {
+      "uk_nhs": "UK NHS",
+      "de_dhs": "DE DHS",
+      "us_niaaa": "US NIAAA"
+    },
+    "guidelineDesc": {
+      "uk_nhs": "14 Einheiten / Woche (beide Geschlechter)",
+      "de_dhs": "10,5 Einh./Wo. Frauen · 21 Einh./Wo. Männer",
+      "us_niaaa": "12,25 Einh./Wo. Frauen · 24,5 Einh./Wo. Männer"
+    },
+    "healthEffectsTitle": "Gesundheitliche Auswirkungen",
+    "healthEffects": {
+      "liver": "Leber",
+      "liverDesc": "Regelmäßiger Alkoholkonsum belastet die Leber. Ab ca. 30g/Tag (Frauen) bzw. 60g/Tag (Männer) steigt das Risiko für Fettleber und Zirrhose.",
+      "cancer": "Krebsrisiko",
+      "cancerDesc": "Alkohol ist ein Klasse-1-Karzinogen (IARC). Kein Konsum ist vollständig risikolos. Das Risiko steigt linear mit der konsumierten Menge.",
+      "cardiovascular": "Herz-Kreislauf",
+      "cardiovascularDesc": "Erhöhter Blutdruck, Herzrhythmusstörungen und erhöhtes Schlaganfallrisiko bei regelmäßigem Konsum über den Leitliniengrenzen.",
+      "sleep": "Schlaf & Erholung",
+      "sleepDesc": "Alkohol verschlechtert die Schlafqualität, unterdrückt den REM-Schlaf und erhöht Müdigkeit am Folgetag."
+    },
+    "disclaimerTitle": "Hinweis",
+    "disclaimer": "Dieser Rechner dient zur Information und ersetzt keine ärztliche Beratung. Kein Alkohol ist sicherer als jeder Konsum. Bei Fragen zu deinem Trinkverhalten wende dich an einen Arzt oder die Suchtberatung (z. B. BZgA: 0800 111 0 111)."
+  }
+}

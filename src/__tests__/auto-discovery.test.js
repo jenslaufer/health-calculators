@@ -18,7 +18,7 @@ const EXPECTED_KEYS = [
   'period', 'bac', 'proteinNeed', 'caffeine',
   'leanBodyMass', 'pregnancyWeightGain', 'hba1c', 'bloodSugar', 'bsa', 'gfr',
   'dueDate', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk',
-  'bodyType', 'biologicalAge', 'vitaminD',
+  'bodyType', 'biologicalAge', 'vitaminD', 'alcoholUnits',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -61,6 +61,7 @@ const EXPECTED_ROUTE_MAP = {
   bodyType: { de: 'koerpertyp-rechner', en: 'body-type-calculator' },
   biologicalAge: { de: 'biologisches-alter-rechner', en: 'biological-age-calculator' },
   vitaminD: { de: 'vitamin-d-rechner', en: 'vitamin-d-calculator' },
+  alcoholUnits: { de: 'alkohol-einheiten-rechner', en: 'alcohol-units-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -91,6 +92,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'koerpertyp-bestimmen',
   'biologisches-alter-berechnen',
   'vitamin-d-berechnen',
+  'alkohol-einheiten-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -121,19 +123,20 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'body-type-calculator',
   'biological-age-calculator',
   'vitamin-d-calculator',
+  'alcohol-unit-calculator',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 39 calculators', () => {
-    expect(calculatorMetas).toHaveLength(39)
+  it('discovers all 40 calculators', () => {
+    expect(calculatorMetas).toHaveLength(40)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 39 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(39)
+  it('builds calculatorComponents map for all 40 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(40)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -156,15 +159,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 39 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(39)
+  it('discovers all 40 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(40)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 39 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(39)
+  it('discovers all 40 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(40)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -180,10 +183,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 39 calculators with no duplicates', () => {
+  it('groups contain all 40 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(39)
-    expect(new Set(allKeys).size).toBe(39)
+    expect(allKeys).toHaveLength(40)
+    expect(new Set(allKeys).size).toBe(40)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -204,7 +207,7 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits',
     ])
   })
 
@@ -252,8 +255,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 237 routes', () => {
-    expect(routes).toHaveLength(237)
+  it('generates exactly 242 routes', () => {
+    expect(routes).toHaveLength(242)
   })
 
   it('has locale routes for all calculators in both languages', () => {
