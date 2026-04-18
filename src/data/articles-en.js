@@ -299,6 +299,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'vitaminD',
     related: ['life-expectancy-calculator', 'calculate-water-intake', 'blood-sugar-converter-guide'],
   },
+  {
+    slug: 'alcohol-unit-calculator',
+    title: 'Alcohol Unit Calculator — Weekly Consumption & Health Risk',
+    description: 'What is an alcohol unit? UK units, grams of pure alcohol, WHO risk categories and comparison with DHS, NHS and NIAAA guidelines explained.',
+    date: '2026-04-18',
+    readTime: '9 min',
+    calculatorKey: 'alcoholUnits',
+    related: ['blood-alcohol-calculator', 'life-expectancy-calculator', 'smoking-cost-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -14,7 +14,7 @@ const EXPECTED_KEYS = [
   'period', 'bac', 'proteinNeed', 'caffeine',
   'leanBodyMass', 'pregnancyWeightGain', 'hba1c', 'bloodSugar', 'bsa', 'gfr',
   'dueDate', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk',
-  'bodyType', 'biologicalAge', 'vitaminD',
+  'bodyType', 'biologicalAge', 'vitaminD', 'alcoholUnits',
 ]
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -45,6 +45,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'koerpertyp-bestimmen',
   'biologisches-alter-berechnen',
   'vitamin-d-berechnen',
+  'alkohol-einheiten-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -75,12 +76,13 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'body-type-calculator',
   'biological-age-calculator',
   'vitamin-d-calculator',
+  'alcohol-unit-calculator',
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 39 calculator meta files', () => {
+  it('discovers all 40 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(39)
+    expect(metas).toHaveLength(40)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -118,19 +120,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 39 DE blog slugs', () => {
+  it('returns all 40 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(39)
+    expect(de).toHaveLength(40)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 39 EN blog slugs', () => {
+  it('returns all 40 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(39)
+    expect(en).toHaveLength(40)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -198,9 +200,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 78 calcs + 2 blog index + 78 blog articles = 160)', () => {
+  it('generates correct total URL count (2 home + 80 calcs + 2 blog index + 80 blog articles = 164)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(160)
+    expect(urlCount).toBe(164)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {

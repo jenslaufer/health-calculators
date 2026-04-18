@@ -1,0 +1,90 @@
+{
+  "home": {
+    "calculators": {
+      "alcoholUnits": {
+        "name": "Alcohol Unit Calculator",
+        "description": "Calculate your weekly alcohol consumption in UK units, grams of pure alcohol, and health risk."
+      }
+    }
+  },
+  "alcoholUnits": {
+    "meta": {
+      "title": "Alcohol Unit Calculator — Weekly Consumption & Health Risk",
+      "description": "Calculate your weekly alcohol units (UK/WHO) and grams of pure alcohol. Compare to DE DHS, UK NHS and US NIAAA guidelines — with calorie and cost estimates."
+    },
+    "title": "Alcohol Unit Calculator",
+    "description": "Calculate your weekly alcohol consumption in UK units and grams of pure alcohol — with risk category per WHO, NHS and DHS guidelines, plus calorie and cost estimates.",
+    "sex": "Sex",
+    "male": "Male",
+    "female": "Female",
+    "drinkTypes": "Drinks per week",
+    "countLabel": "Count / week",
+    "volumeLabel": "Volume (ml)",
+    "abvLabel": "Alcohol (%)",
+    "costLabel": "Cost (€/drink)",
+    "costToggle": "Estimate weekly cost (optional)",
+    "unitsPerDrink": "units each",
+    "drinkType": {
+      "beer": "Beer",
+      "wine": "Wine",
+      "spirits": "Spirits",
+      "cocktails": "Cocktails"
+    },
+    "drinkDesc": {
+      "beer": "e.g. 500 ml lager, 5%",
+      "wine": "e.g. 175 ml red wine, 12%",
+      "spirits": "e.g. 40 ml whisky, 40%",
+      "cocktails": "e.g. 200 ml, 15%"
+    },
+    "results": "Results",
+    "totalUnits": "UK units / week",
+    "totalGrams": "Grams pure alcohol / week",
+    "caloriesLabel": "Calories / week",
+    "fromAlcohol": "from alcohol",
+    "weeklyCost": "Weekly cost",
+    "riskCategory": "Risk level",
+    "risk": {
+      "none": "No consumption",
+      "low": "Low risk",
+      "increasing": "Increasing risk",
+      "high": "High risk",
+      "very_high": "Very high risk"
+    },
+    "riskDesc": {
+      "none": "Not drinking is the healthiest choice.",
+      "low": "Your consumption is within the low-risk range. Regular alcohol-free days are recommended.",
+      "increasing": "Your consumption exceeds the recommendations of most guidelines. Reducing is advised.",
+      "high": "Significant health risk. Physical and mental harm is likely.",
+      "very_high": "Very high risk. Professional advice strongly recommended."
+    },
+    "guidelinesTitle": "Comparison with national guidelines",
+    "guidelineWithin": "within",
+    "guidelineExceeds": "exceeds by",
+    "of": "of",
+    "limit": "limit",
+    "units": "units",
+    "guidelines": {
+      "uk_nhs": "UK NHS",
+      "de_dhs": "DE DHS",
+      "us_niaaa": "US NIAAA"
+    },
+    "guidelineDesc": {
+      "uk_nhs": "14 units / week (both sexes)",
+      "de_dhs": "10.5 units/wk women · 21 units/wk men",
+      "us_niaaa": "12.25 units/wk women · 24.5 units/wk men"
+    },
+    "healthEffectsTitle": "Health effects",
+    "healthEffects": {
+      "liver": "Liver",
+      "liverDesc": "Regular alcohol consumption stresses the liver. From ~30g/day (women) or ~60g/day (men) the risk of fatty liver and cirrhosis rises significantly.",
+      "cancer": "Cancer risk",
+      "cancerDesc": "Alcohol is a class 1 carcinogen (IARC). No level of consumption is entirely risk-free. Risk increases linearly with the amount consumed.",
+      "cardiovascular": "Cardiovascular",
+      "cardiovascularDesc": "Regular consumption above guideline limits raises blood pressure, increases arrhythmia risk, and raises stroke risk.",
+      "sleep": "Sleep & recovery",
+      "sleepDesc": "Alcohol impairs sleep quality, suppresses REM sleep, and increases daytime fatigue even after moderate consumption."
+    },
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "This calculator is for informational purposes only and does not replace medical advice. No alcohol is safer than any consumption. If you have concerns about your drinking, speak to a doctor or a support service (e.g. UK Drinkline: 0300 123 1110)."
+  }
+}

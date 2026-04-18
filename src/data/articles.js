@@ -299,6 +299,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'vitaminD',
     related: ['lebenserwartung-berechnen', 'wasserbedarf-berechnen', 'blutzucker-umrechnen'],
   },
+  {
+    slug: 'alkohol-einheiten-berechnen',
+    title: 'Alkoholeinheiten berechnen: Wöchentlicher Konsum & Gesundheitsrisiko',
+    description: 'Was ist eine Alkoholeinheit? UK-Einheiten, Gramm reiner Alkohol, WHO-Risikoklassen und Vergleich mit DHS-, NHS- und NIAAA-Leitlinien erklärt.',
+    date: '2026-04-18',
+    readTime: '9 min',
+    calculatorKey: 'alcoholUnits',
+    related: ['promille-berechnen', 'lebenserwartung-berechnen', 'rauchen-kosten-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
