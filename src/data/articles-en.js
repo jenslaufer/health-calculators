@@ -290,6 +290,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'diabetesRisk',
     related: ['hba1c-converter-guide', 'blood-sugar-converter-guide'],
   },
+  {
+    slug: 'vitamin-d-calculator',
+    title: 'Vitamin D Calculator: How Much Sun Do You Really Need?',
+    description: 'How much sun for vitamin D? Skin type, latitude, season — all explained. With free vitamin D calculator.',
+    date: '2026-04-18',
+    readTime: '9 min',
+    calculatorKey: 'vitaminD',
+    related: ['life-expectancy-calculator', 'calculate-water-intake', 'blood-sugar-converter-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

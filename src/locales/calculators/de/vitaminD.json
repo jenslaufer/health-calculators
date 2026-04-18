@@ -1,0 +1,77 @@
+{
+  "home": {
+    "calculators": {
+      "vitaminD": {
+        "name": "Vitamin D Rechner",
+        "description": "Berechne, wie viel Sonne du täglich brauchst, um ausreichend Vitamin D zu produzieren."
+      }
+    }
+  },
+  "vitaminD": {
+    "meta": {
+      "title": "Vitamin D Rechner — Sonnenbedarf & Vitamin-D-Produktion berechnen",
+      "description": "Berechne deinen Sonnenbedarf für Vitamin D. Basierend auf Hauttyp, Breitengrad, Jahreszeit und Bekleidung — mit saisonalem UV-Chart."
+    },
+    "title": "Vitamin D & Sonnen-Rechner",
+    "description": "Berechne, wie viele Minuten Sonne du täglich brauchst, um 1.000 IU Vitamin D zu synthetisieren — basierend auf Hauttyp, Standort und Jahreszeit.",
+    "skinType": "Hauttyp (Fitzpatrick-Skala)",
+    "skinTypes": {
+      "0": "Typ I — Sehr hell, immer Sonnenbrand, bräunt nie",
+      "1": "Typ II — Hell, oft Sonnenbrand, bräunt kaum",
+      "2": "Typ III — Mittel, gelegentlich Sonnenbrand, bräunt langsam",
+      "3": "Typ IV — Olivfarben, selten Sonnenbrand, bräunt gut",
+      "4": "Typ V — Dunkelbraun, kaum Sonnenbrand, bräunt sehr gut",
+      "5": "Typ VI — Dunkelst, kein Sonnenbrand, stark pigmentiert"
+    },
+    "latitude": "Breitengrad (° N/S)",
+    "north": "Nord",
+    "south": "Süd",
+    "month": "Monat",
+    "timeOfDay": "Tageszeit",
+    "clothing": "Bekleidung",
+    "clothingOptions": {
+      "minimal": "Badebekleidung",
+      "light": "Shorts & T-Shirt",
+      "moderate": "Lange Kleidung",
+      "full": "Vollständig bedeckt"
+    },
+    "spf": "Sonnenschutz (LSF)",
+    "spfNone": "Kein LSF",
+    "currentLevel": "Aktueller Vitamin-D-Spiegel",
+    "optional": "(optional)",
+    "results": "Ergebnis",
+    "minutesLabel": "Minuten benötigt",
+    "for1000IU": "für 1.000 IU Vitamin D",
+    "productionLabel": "Produktion in 30 Min.",
+    "in30Min": "bei aktuellen Bedingungen",
+    "min": "min",
+    "insufficientUV": "Die Sonne steht zu tief oder scheint nicht. UV-B-Strahlung reicht für die Vitamin-D-Synthese nicht aus — Supplementierung empfohlen.",
+    "status": {
+      "deficient": "Mangel (< 30 nmol/L)",
+      "insufficient": "Unzureichend (30–50 nmol/L)",
+      "adequate": "Ausreichend (50–75 nmol/L)",
+      "optimal": "Optimal (> 75 nmol/L)"
+    },
+    "statusDesc": {
+      "deficient": "Klinischer Vitamin-D-Mangel. Arzt konsultieren und Supplementierung einleiten.",
+      "insufficient": "Unterhalb des optimalen Bereichs. Regelmäßige Supplementierung empfohlen.",
+      "adequate": "Normaler Bereich. Sonne oder Erhaltungsdosis beibehalten.",
+      "optimal": "Optimaler Spiegel. Aktuelle Gewohnheiten beibehalten."
+    },
+    "recommendation": "Supplementierungsempfehlung",
+    "recs": {
+      "high": "Mangel erkannt — 2.000–4.000 IU/Tag empfohlen (Arzt konsultieren)",
+      "medium": "Geringe UV-Verfügbarkeit — 1.000–2.000 IU/Tag supplementieren",
+      "consider": "Eingeschränkte Sonnenstunden — 400–1.000 IU/Tag erwägen",
+      "sun": "Aktuelle Bedingungen ermöglichen ausreichende Synthese durch Sonnenlicht",
+      "supplement": "Schwache UV-B-Strahlung — 1.000–2.000 IU/Tag supplementieren"
+    },
+    "seasonalTitle": "Saisonale UV-B-Verfügbarkeit",
+    "seasonalDesc": "UV-B-Potential zur Mittagszeit über das Jahr für deinen Breitengrad.",
+    "uvHigh": "Hoch (≥ 3)",
+    "uvMedium": "Mittel (1–3)",
+    "uvNone": "Keine Synthese (< 1)",
+    "disclaimerTitle": "Hinweis",
+    "disclaimer": "Dieser Rechner liefert Schätzwerte zu Bildungszwecken und ersetzt keine medizinische Beratung. Die Vitamin-D-Synthese hängt von vielen individuellen Faktoren ab. Konsultiere vor einer Supplementierung einen Arzt — insbesondere bei nachgewiesenem Mangel oder Vorerkrankungen."
+  }
+}
