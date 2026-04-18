@@ -290,6 +290,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'diabetesRisk',
     related: ['hba1c-umrechnen', 'blutzucker-umrechnen'],
   },
+  {
+    slug: 'vitamin-d-berechnen',
+    title: 'Vitamin D berechnen: Wie viel Sonne brauche ich wirklich?',
+    description: 'Wie viel Sonne für Vitamin D? Hauttyp, Breitengrad, Jahreszeit — alles erklärt. Mit kostenlosem Vitamin-D-Rechner.',
+    date: '2026-04-18',
+    readTime: '9 min',
+    calculatorKey: 'vitaminD',
+    related: ['lebenserwartung-berechnen', 'wasserbedarf-berechnen', 'blutzucker-umrechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
