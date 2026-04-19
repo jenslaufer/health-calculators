@@ -35,6 +35,32 @@
     "periodLabel": "Period",
     "ovulationLabel": "Ovulation",
     "howItWorks": "How it works",
-    "howItWorksText": "This calculator uses the calendar method: ovulation occurs approximately 14 days before your next period. For a 28-day cycle, that is day 14; for a 32-day cycle, day 18. The fertile window spans 5 days before ovulation, ovulation day, and 1 day after."
+    "howItWorksText": "This calculator uses the calendar method: ovulation occurs approximately 14 days before your next period. For a 28-day cycle, that is day 14; for a 32-day cycle, day 18. The fertile window spans 5 days before ovulation, ovulation day, and 1 day after.",
+    "faq": [
+      {
+        "q": "When does ovulation occur?",
+        "a": "About 14 days before the next period. In a 28-day cycle, day 14; in a 32-day cycle, day 18. Source: ACOG."
+      },
+      {
+        "q": "What is the fertile window?",
+        "a": "The 5 days before ovulation plus the day of ovulation itself. Sperm survive up to 5 days in the uterus; the egg lives 12–24 hours after release."
+      },
+      {
+        "q": "How accurate is the calendar method?",
+        "a": "Reasonably reliable for regular cycles (±2 days). For irregular cycles, LH ovulation tests or basal body temperature tracking are more accurate."
+      },
+      {
+        "q": "What are signs of ovulation?",
+        "a": "Clear, stretchy cervical mucus (egg-white texture), slight rise in basal body temperature (0.2–0.5 °C), mid-cycle pelvic pain, and increased libido."
+      },
+      {
+        "q": "Can this calculator be used for contraception?",
+        "a": "No. The calendar method has a Pearl index of 9–40 and is not adequate as a sole contraceptive. Symptothermal (FAM) methods are safer."
+      },
+      {
+        "q": "When is conception most likely?",
+        "a": "Highest 1–2 days before ovulation (~33 % per cycle per Wilcox 1995). Intercourse every 1–2 days during the fertile window maximizes the chance."
+      }
+    ]
   }
 }

@@ -16,6 +16,32 @@
     "description": "Find your healthy weight range based on four science-backed formulas.",
     "formulaComparison": "Formula Comparison",
     "healthyBmiRange": "Healthy BMI Range",
-    "bmiRangeText": "Based on a BMI of 18.5 – 24.9, your healthy weight range is"
+    "bmiRangeText": "Based on a BMI of 18.5 – 24.9, your healthy weight range is",
+    "faq": [
+      {
+        "q": "What is ideal body weight?",
+        "a": "The statistically optimal weight for a given height — associated with lowest mortality and disease risk. It is an estimate, not a target everyone must hit. Source: WHO."
+      },
+      {
+        "q": "Which formulas are used?",
+        "a": "Common formulas: Devine (1974), Robinson, Miller, Hamwi. They were originally developed for medication dosing and produce slightly different values."
+      },
+      {
+        "q": "How does ideal differ from normal weight?",
+        "a": "Normal weight is the entire BMI range 18.5–24.9. Ideal weight is a point value within that range, often near BMI 22 — the statistical low-risk point."
+      },
+      {
+        "q": "How meaningful is ideal weight?",
+        "a": "It is rough guidance, since it ignores muscle mass, sex (in some formulas), and age. Body-fat percentage and waist circumference are more informative."
+      },
+      {
+        "q": "Should I aim exactly for the ideal weight?",
+        "a": "No. Studies show slight overweight in older adults is associated with lower mortality ('obesity paradox'). Wellbeing and health markers matter more than a point value."
+      },
+      {
+        "q": "What BMI is considered ideal?",
+        "a": "Studies (Lancet 2016) show lowest mortality at BMI 20–25 for adults under 65. For seniors, the optimum is closer to BMI 24–29."
+      }
+    ]
   }
 }

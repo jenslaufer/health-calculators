@@ -62,6 +62,32 @@
       "G3b": "Nephrologen aufsuchen. Engmaschige Überwachung und Anpassung der Medikation erforderlich.",
       "G4": "Dringend zum Nephrologen. Vorbereitung auf Nierenersatztherapie (Dialyse/Transplantation) besprechen.",
       "G5": "Sofortige nephrologische Behandlung erforderlich. Nierenersatztherapie ist in der Regel notwendig."
-    }
+    },
+    "faq": [
+      {
+        "q": "Was ist die glomeruläre Filtrationsrate (GFR)?",
+        "a": "Die GFR misst, wie viel Blut die Nieren pro Minute filtern (ml/min/1,73 m²). Sie ist der wichtigste Marker für die Nierenfunktion. Quelle: KDIGO."
+      },
+      {
+        "q": "Welche GFR ist normal?",
+        "a": "Erwachsene: > 90 ml/min/1,73 m² gilt als normal. Werte zwischen 60–89 sind grenzwertig (G2), unter 60 deuten auf chronische Nierenerkrankung (CKD) hin."
+      },
+      {
+        "q": "Welche Formel wird verwendet?",
+        "a": "Dieser Rechner verwendet die CKD-EPI-Formel (2021), den aktuellen Standard zur Schätzung der GFR aus Serumkreatinin. Sie ist genauer als die ältere MDRD-Formel."
+      },
+      {
+        "q": "Warum sinkt die GFR mit dem Alter?",
+        "a": "Ab dem 40. Lebensjahr nimmt die GFR um etwa 1 ml/min/Jahr ab. Bluthochdruck, Diabetes und Übergewicht beschleunigen diesen Prozess."
+      },
+      {
+        "q": "Was sind die CKD-Stadien?",
+        "a": "G1 (>90), G2 (60–89), G3a (45–59), G3b (30–44), G4 (15–29), G5 (<15, terminales Nierenversagen). Quelle: KDIGO 2012."
+      },
+      {
+        "q": "Was kann ich tun, um meine Nieren zu schützen?",
+        "a": "Blutdruck unter 130/80, gute Blutzuckereinstellung, ausreichend Wasser, salzarme Ernährung, NSAR meiden, Rauchen einstellen. Bei eGFR < 60 nephrologische Abklärung."
+      }
+    ]
   }
 }

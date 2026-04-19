@@ -35,6 +35,32 @@
     "periodLabel": "Periode",
     "ovulationLabel": "Eisprung",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Bei einem 28-Tage-Zyklus ist das Tag 14, bei einem 32-Tage-Zyklus Tag 18. Das fruchtbare Fenster umfasst 5 Tage vor dem Eisprung, den Eisprungtag und 1 Tag danach."
+    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Bei einem 28-Tage-Zyklus ist das Tag 14, bei einem 32-Tage-Zyklus Tag 18. Das fruchtbare Fenster umfasst 5 Tage vor dem Eisprung, den Eisprungtag und 1 Tag danach.",
+    "faq": [
+      {
+        "q": "Wann findet der Eisprung statt?",
+        "a": "Etwa 14 Tage vor der nächsten Periode. Bei einem 28-Tage-Zyklus an Tag 14, bei einem 32-Tage-Zyklus an Tag 18. Quelle: Bundeszentrale für gesundheitliche Aufklärung (BZgA)."
+      },
+      {
+        "q": "Was ist das fruchtbare Fenster?",
+        "a": "Die 5 Tage vor dem Eisprung plus der Eisprungtag selbst. Spermien überleben bis zu 5 Tage in der Gebärmutter, die Eizelle 12–24 Stunden."
+      },
+      {
+        "q": "Wie genau ist die Kalendermethode?",
+        "a": "Bei regelmäßigen Zyklen relativ zuverlässig (±2 Tage). Bei unregelmäßigen Zyklen sind Ovulationstests (LH-Strips) oder Basaltemperaturmessungen genauer."
+      },
+      {
+        "q": "Welche Anzeichen deuten auf den Eisprung hin?",
+        "a": "Klarer, dehnbarer Zervixschleim (eiweißartig), leichter Anstieg der Basaltemperatur (0,2–0,5 °C), Mittelschmerz und gesteigertes Lustempfinden."
+      },
+      {
+        "q": "Funktioniert der Rechner zur Verhütung?",
+        "a": "Nein. Die Kalendermethode hat einen Pearl-Index von 9–40 und ist als alleinige Verhütung ungeeignet. Symptothermale Methoden (NFP) sind sicherer."
+      },
+      {
+        "q": "Wann ist die Empfängniswahrscheinlichkeit am höchsten?",
+        "a": "Am höchsten 1–2 Tage vor dem Eisprung (~33 % pro Zyklus laut Studie Wilcox 1995). Geschlechtsverkehr alle 1–2 Tage im fruchtbaren Fenster maximiert die Chance."
+      }
+    ]
   }
 }

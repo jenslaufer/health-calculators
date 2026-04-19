@@ -29,6 +29,32 @@
     "weeklyLoss": "Loss / Week",
     "perWeek": "per week",
     "warningUnsafe": "Your calorie goal is below 1,200 kcal/day. This is a health concern — please consult a doctor.",
-    "warningAggressive": "You are planning to lose more than 1 kg per week. A slower pace is more sustainable and healthier."
+    "warningAggressive": "You are planning to lose more than 1 kg per week. A slower pace is more sustainable and healthier.",
+    "faq": [
+      {
+        "q": "What is a healthy calorie deficit?",
+        "a": "300–500 kcal/day below TDEE produces roughly 0.3–0.5 kg of fat loss per week. This pace is considered sustainable by major nutrition bodies."
+      },
+      {
+        "q": "What is the minimum I should eat?",
+        "a": "Women should not chronically eat below 1,200 kcal/day, men below 1,500 kcal/day. Lower intakes risk nutrient deficiencies and metabolic adaptation."
+      },
+      {
+        "q": "Why is 7,000 kcal deficit ≠ 1 kg of fat?",
+        "a": "The '3,500 kcal = 1 lb fat' rule is a simplification. Water shifts, glycogen depletion, and muscle changes affect the scale. Actual fat loss is usually 0.3–0.5 kg per 3,500 kcal deficit."
+      },
+      {
+        "q": "How do I avoid muscle loss while dieting?",
+        "a": "Eating 1.6–2.2 g of protein per kg of body weight and resistance training 2–4×/week sharply reduces muscle loss (ISSN guidance)."
+      },
+      {
+        "q": "When should I take a diet break?",
+        "a": "After 8–12 weeks in a deficit, a 7–14-day diet break at maintenance calories can help restore hormones (leptin) and metabolic rate."
+      },
+      {
+        "q": "What do I do if I plateau?",
+        "a": "Plateaus are normal. Re-check tracking accuracy, raise activity, lower calories by ~100 kcal, or take a brief diet break."
+      }
+    ]
   }
 }

@@ -23,6 +23,14 @@
     "lightlyActive": "Leicht aktiv (1–3 Tage/Woche)",
     "moderatelyActive": "Moderat aktiv (3–5 Tage/Woche)",
     "veryActive": "Sehr aktiv (6–7 Tage/Woche)",
-    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)"
+    "extremelyActive": "Extrem aktiv (Athlet/körperliche Arbeit)",
+    "faq": [
+      { "q": "Was ist der Grundumsatz (BMR)?", "a": "Der Grundumsatz beschreibt die Energie, die der Körper in völliger Ruhe für lebenswichtige Funktionen wie Atmung, Herzschlag und Zellstoffwechsel benötigt. Quelle: Deutsche Gesellschaft für Ernährung (DGE)." },
+      { "q": "Welche Formel ist genauer: Mifflin-St Jeor oder Harris-Benedict?", "a": "Die Mifflin-St Jeor-Formel (1990) gilt heute als präziser für die Allgemeinbevölkerung als die ältere Harris-Benedict-Formel (1919). Beide Schätzungen liegen typischerweise innerhalb von ±10 % des tatsächlichen Werts." },
+      { "q": "Wie unterscheidet sich BMR vom Tagesumsatz (TDEE)?", "a": "Der BMR ist nur der Ruhebedarf. Der TDEE (Total Daily Energy Expenditure) addiert zusätzlich Bewegung, Verdauung und Alltagsaktivität durch Multiplikation mit einem Aktivitätsfaktor (1,2–1,9)." },
+      { "q": "Welche Faktoren beeinflussen den Grundumsatz?", "a": "Geschlecht, Alter, Körpergröße, Gewicht und vor allem Muskelmasse. Männer haben durchschnittlich einen um 5–10 % höheren BMR als Frauen aufgrund höherer Muskelmasse." },
+      { "q": "Sinkt der BMR mit dem Alter?", "a": "Ja, ab dem 30. Lebensjahr sinkt der Grundumsatz um etwa 1–2 % pro Jahrzehnt, hauptsächlich durch Verlust an Muskelmasse (Sarkopenie). Krafttraining kann diesen Effekt deutlich verlangsamen." },
+      { "q": "Sollte ich weniger Kalorien als meinen BMR essen?", "a": "Ein dauerhaftes Unterschreiten des Grundumsatzes wird von der DGE nicht empfohlen, da es Stoffwechselanpassungen, Muskelabbau und Nährstoffmangel begünstigen kann. Defizite sollten sich am TDEE orientieren." }
+    ]
   }
 }

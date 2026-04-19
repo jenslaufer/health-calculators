@@ -47,6 +47,32 @@
     "effectSignificant": "Starke Gleichgewichtsstörungen, undeutliche Sprache",
     "effectDangerous": "Bewusstseinsstörungen, Lebensgefahr",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Dieser Rechner verwendet die Widmark-Formel: Alkohol (g) = Volumen × (Vol.-% / 100) × 0,8. Der Blutalkoholspiegel ergibt sich aus Alkohol (g) / (Körpergewicht × r), wobei r = 0,68 (Männer) bzw. 0,55 (Frauen). Der Abbau beträgt ca. 0,15 ‰ pro Stunde. Dies ist eine Schätzung — individuelle Faktoren können abweichen."
+    "howItWorksText": "Dieser Rechner verwendet die Widmark-Formel: Alkohol (g) = Volumen × (Vol.-% / 100) × 0,8. Der Blutalkoholspiegel ergibt sich aus Alkohol (g) / (Körpergewicht × r), wobei r = 0,68 (Männer) bzw. 0,55 (Frauen). Der Abbau beträgt ca. 0,15 ‰ pro Stunde. Dies ist eine Schätzung — individuelle Faktoren können abweichen.",
+    "faq": [
+      {
+        "q": "Wie wird der Promillewert berechnet?",
+        "a": "Mit der Widmark-Formel: Alkohol (g) / (Körpergewicht × r). r = 0,68 für Männer, 0,55 für Frauen. Diese Schätzung ist medizinisch anerkannt, aber individuell variabel."
+      },
+      {
+        "q": "Wie schnell baut der Körper Alkohol ab?",
+        "a": "Etwa 0,1–0,2 ‰ pro Stunde, im Schnitt 0,15 ‰. Die Abbaurate kann nicht beschleunigt werden — weder durch Kaffee, Wasser noch durch Bewegung."
+      },
+      {
+        "q": "Welche Promille-Grenzwerte gelten in Deutschland?",
+        "a": "Auto: 0,5 ‰ Bußgeld, 0,3 ‰ mit Auffälligkeiten strafbar, 1,1 ‰ absolute Fahruntüchtigkeit. Fahranfänger und unter 21: 0,0 ‰. Fahrrad: 1,6 ‰. Quelle: StVG."
+      },
+      {
+        "q": "Warum ist die Schätzung ungenau?",
+        "a": "Individuelle Faktoren wie Magenfüllung, Leberfunktion, Geschlecht, Medikamente und Körperzusammensetzung beeinflussen den realen Wert um ±20–30 %."
+      },
+      {
+        "q": "Sind Frauen alkoholempfindlicher?",
+        "a": "Ja. Frauen haben durchschnittlich weniger Wasseranteil und das Magenenzym Alkoholdehydrogenase ist weniger aktiv. Bei gleichem Konsum sind die Promillewerte höher."
+      },
+      {
+        "q": "Wann ist man wieder fahrtüchtig?",
+        "a": "Erst bei 0,0 ‰. Bei 1,0 ‰ Promille dauert der Abbau ca. 6–7 Stunden. Restalkohol am Morgen ist häufig — auch nach 8 Stunden Schlaf."
+      }
+    ]
   }
 }

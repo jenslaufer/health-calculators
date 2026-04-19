@@ -50,6 +50,32 @@
     "normalDesc": "No elevated risk.",
     "prediabetesDesc": "Elevated risk. Lifestyle changes recommended.",
     "diabetesDesc": "Diabetes range. Consult a doctor.",
-    "contextNote": "Values can vary depending on measurement time, time of day, and diet. Not a substitute for medical advice."
+    "contextNote": "Values can vary depending on measurement time, time of day, and diet. Not a substitute for medical advice.",
+    "faq": [
+      {
+        "q": "Which blood-sugar units exist?",
+        "a": "mg/dL (US, Germany) and mmol/L (UK, Canada, international studies). Conversion: 1 mmol/L = 18.016 mg/dL."
+      },
+      {
+        "q": "What are normal fasting values?",
+        "a": "Normal: < 100 mg/dL (5.6 mmol/L). Prediabetes: 100–125 mg/dL (5.6–6.9 mmol/L). Diabetes: ≥ 126 mg/dL (7.0 mmol/L). Source: ADA."
+      },
+      {
+        "q": "What are normal post-meal values?",
+        "a": "2 hours after eating: < 140 mg/dL (7.8 mmol/L) normal. 140–199 mg/dL (7.8–11.0 mmol/L) prediabetic. ≥ 200 mg/dL (11.1 mmol/L) diabetic."
+      },
+      {
+        "q": "What is hypoglycemia?",
+        "a": "Blood sugar < 70 mg/dL (3.9 mmol/L). Symptoms: shakiness, sweating, hunger, confusion. Values < 54 mg/dL (3.0 mmol/L) signify clinically significant hypoglycemia."
+      },
+      {
+        "q": "How often should I check?",
+        "a": "Type-1 diabetes: multiple times daily. Type-2 on insulin: 1–4×/day, on oral therapy as advised. Healthy people generally do not need self-monitoring."
+      },
+      {
+        "q": "Which factors influence blood sugar?",
+        "a": "Diet (carbs), exercise, stress, sleep, illness, medication, hormones. Time of day (dawn phenomenon) and alcohol also matter."
+      }
+    ]
   }
 }

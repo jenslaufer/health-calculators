@@ -37,6 +37,32 @@
     "categoriesTitle": "Risikokategorien (ADA)",
     "normalDesc": "Kein erhöhtes Risiko für Diabetes.",
     "prediabetesDesc": "Erhöhtes Risiko. Lebensstiländerungen empfohlen.",
-    "diabetesDesc": "Diabetes-Bereich. Arzt aufsuchen."
+    "diabetesDesc": "Diabetes-Bereich. Arzt aufsuchen.",
+    "faq": [
+      {
+        "q": "Was ist HbA1c?",
+        "a": "HbA1c ist der glykierte Anteil des roten Blutfarbstoffs Hämoglobin. Er spiegelt den durchschnittlichen Blutzuckerspiegel der letzten 8–12 Wochen wider. Quelle: Deutsche Diabetes Gesellschaft."
+      },
+      {
+        "q": "Welche Werte sind normal?",
+        "a": "Normal: < 5,7 % (39 mmol/mol). Prädiabetes: 5,7–6,4 % (39–47 mmol/mol). Diabetes: ≥ 6,5 % (48 mmol/mol). Quelle: ADA-Klassifikation."
+      },
+      {
+        "q": "Wie wird HbA1c in mmol/mol umgerechnet?",
+        "a": "HbA1c (mmol/mol) = (HbA1c % - 2,15) × 10,929. NGSP (%) ist der ältere US-Standard, IFCC (mmol/mol) der internationale Standard."
+      },
+      {
+        "q": "Welche Faktoren beeinflussen HbA1c falsch?",
+        "a": "Anämie, Hämoglobinopathien (z. B. Sichelzelle), Schwangerschaft, Niereninsuffizienz und kürzliche Bluttransfusionen können den Wert verfälschen."
+      },
+      {
+        "q": "Wie oft sollte HbA1c gemessen werden?",
+        "a": "Bei stabilem Diabetes alle 6 Monate. Bei Therapieänderung oder schlechter Einstellung alle 3 Monate. Empfehlung: Nationale Versorgungsleitlinie Diabetes."
+      },
+      {
+        "q": "Welcher HbA1c-Zielwert wird empfohlen?",
+        "a": "Individuell: meist < 7 % (53 mmol/mol). Bei jungen Menschen ohne Komorbiditäten kann < 6,5 % sinnvoll sein. Bei älteren Patienten oft 7,5–8 % zur Hypoglykämie-Vermeidung."
+      }
+    ]
   }
 }

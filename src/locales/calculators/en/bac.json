@@ -47,6 +47,32 @@
     "effectSignificant": "Severe balance issues, slurred speech",
     "effectDangerous": "Impaired consciousness, life-threatening",
     "howItWorks": "How it works",
-    "howItWorksText": "This calculator uses the Widmark formula: Alcohol (g) = Volume × (ABV / 100) × 0.8. BAC = Alcohol (g) / (Body weight × r), where r = 0.68 (men) or 0.55 (women). Elimination rate is approximately 0.15‰ per hour. This is an estimate — individual factors may vary."
+    "howItWorksText": "This calculator uses the Widmark formula: Alcohol (g) = Volume × (ABV / 100) × 0.8. BAC = Alcohol (g) / (Body weight × r), where r = 0.68 (men) or 0.55 (women). Elimination rate is approximately 0.15‰ per hour. This is an estimate — individual factors may vary.",
+    "faq": [
+      {
+        "q": "How is BAC calculated?",
+        "a": "Using the Widmark formula: alcohol (g) / (body weight × r). r = 0.68 for men, 0.55 for women. This estimate is medically established but varies individually."
+      },
+      {
+        "q": "How fast does the body metabolize alcohol?",
+        "a": "About 0.015–0.02 % per hour, on average 0.015 % BAC. Metabolism cannot be sped up by coffee, water, or exercise."
+      },
+      {
+        "q": "What are the legal BAC limits?",
+        "a": "Most U.S. states: 0.08 % BAC. Many European countries: 0.05 %. Germany: 0.05 %. New drivers and under 21: typically 0.00 %. Always check local law."
+      },
+      {
+        "q": "Why is the estimate imprecise?",
+        "a": "Individual factors like stomach contents, liver function, sex, medications, and body composition can shift the real value by ±20–30 %."
+      },
+      {
+        "q": "Are women more sensitive to alcohol?",
+        "a": "Yes. Women on average have lower body water and reduced alcohol dehydrogenase activity. For the same intake, BAC is higher."
+      },
+      {
+        "q": "When is it safe to drive again?",
+        "a": "Only at 0.00 % BAC. After reaching 0.10 %, full clearance takes about 6–7 hours. Residual alcohol the next morning is common — even after 8 hours of sleep."
+      }
+    ]
   }
 }

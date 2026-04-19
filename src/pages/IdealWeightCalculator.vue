@@ -4,10 +4,13 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
+import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
+
+const faqItems = computed(() => tm('idealWeight.faq') || [])
 const { localePath } = useLocaleRouter()
 
 useHead(() => ({
@@ -161,5 +164,6 @@ const fmt = (v) => v?.toFixed(1)
 
 
     <AdSlot class="mt-8" />
+  <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
   <BlogBanner calculator-key="idealWeight" />
 </template>

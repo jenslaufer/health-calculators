@@ -29,6 +29,32 @@
     "fat": "Fat (g)",
     "protein": "Protein (g)",
     "netCarbs": "Net Carbs (g)",
-    "fiberRecommendation": "Fiber Recommendation"
+    "fiberRecommendation": "Fiber Recommendation",
+    "faq": [
+      {
+        "q": "What is the ketogenic diet?",
+        "a": "A very low-carb (≤50 g/day), high-fat diet. The body shifts to ketone bodies as its main energy source. Source: AHA scientific statement 2021."
+      },
+      {
+        "q": "How many carbs are allowed on keto?",
+        "a": "Standard keto: 20–50 g net carbs/day. Strict keto: < 20 g. Net carbs = total carbs minus fiber."
+      },
+      {
+        "q": "What is the macro split?",
+        "a": "Classic: 70–75 % fat, 20–25 % protein, 5–10 % carbs. Excess protein can disrupt ketosis via gluconeogenesis."
+      },
+      {
+        "q": "How long does it take to enter ketosis?",
+        "a": "2–7 days with strict carb restriction. Blood ketones > 0.5 mmol/L = nutritional ketosis. 'Keto flu' (fatigue, headache) is common in the first week."
+      },
+      {
+        "q": "What are the risks of keto?",
+        "a": "Elevated LDL cholesterol, kidney stones, nutrient deficiencies (B vitamins, magnesium), constipation. Contraindicated in pregnancy, type-1 diabetes, and liver disease."
+      },
+      {
+        "q": "Is keto better for weight loss than other diets?",
+        "a": "Studies show fast initial loss but no significant long-term (>12 months) advantage over calorie-matched mixed diets (NEJM 2018)."
+      }
+    ]
   }
 }

@@ -17,7 +17,8 @@
     "kcal": "kcal",
     "kcalPerDay": "kcal / Tag",
     "activityLevel": "Aktivitätslevel",
-    "method": "Methode"
+    "method": "Methode",
+    "faqTitle": "Häufige Fragen"
   },
   "nav": {
     "brand": "Gesundheitsrechner",

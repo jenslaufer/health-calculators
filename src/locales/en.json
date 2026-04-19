@@ -17,7 +17,8 @@
     "kcal": "kcal",
     "kcalPerDay": "kcal / day",
     "activityLevel": "Activity Level",
-    "method": "Method"
+    "method": "Method",
+    "faqTitle": "Frequently Asked Questions"
   },
   "nav": {
     "brand": "Health Calculators",

@@ -22,6 +22,32 @@
     "bmr": "BMR: {value} kcal",
     "weightLoss": "Abnehmen",
     "maintenance": "Halten",
-    "weightGain": "Zunehmen"
+    "weightGain": "Zunehmen",
+    "faq": [
+      {
+        "q": "Was ist der TDEE?",
+        "a": "Der Total Daily Energy Expenditure (TDEE) ist dein gesamter Tagesenergiebedarf — Grundumsatz plus Bewegung, Nahrungsverdauung (TEF) und Alltagsaktivität. Quelle: DGE."
+      },
+      {
+        "q": "Wie wird der TDEE berechnet?",
+        "a": "Der TDEE entsteht durch Multiplikation des Grundumsatzes (BMR) mit einem Aktivitätsfaktor zwischen 1,2 (sitzend) und 1,9 (sehr aktiv). Diese Schätzung weicht typischerweise um ±10–15 % vom realen Verbrauch ab."
+      },
+      {
+        "q": "Welcher Aktivitätsfaktor passt zu mir?",
+        "a": "1,2 sitzend; 1,375 leicht aktiv (1–3 Trainings/Woche); 1,55 moderat (3–5×); 1,725 sehr aktiv (6–7×); 1,9 extrem aktiv (zweimal täglich oder körperliche Arbeit)."
+      },
+      {
+        "q": "Wie viele Kalorien soll ich für eine Diät einsparen?",
+        "a": "Ein moderates Defizit von 300–500 kcal/Tag entspricht etwa 0,3–0,5 kg Fettverlust pro Woche. Größere Defizite riskieren Muskelabbau und Stoffwechselanpassung."
+      },
+      {
+        "q": "Wie genau ist die Schätzung?",
+        "a": "TDEE-Rechner liefern Ausgangswerte, keine Messungen. Passe nach 2–3 Wochen anhand der tatsächlichen Gewichtsentwicklung an."
+      },
+      {
+        "q": "Ändert sich mein TDEE im Diätverlauf?",
+        "a": "Ja. Mit sinkendem Körpergewicht sinkt auch der Energieverbrauch. Eine Neuberechnung alle 3–4 kg Gewichtsänderung wird empfohlen."
+      }
+    ]
   }
 }

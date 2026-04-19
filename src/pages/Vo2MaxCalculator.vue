@@ -4,9 +4,12 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogBanner from '../components/BlogBanner.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
+import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
+
+const faqItems = computed(() => tm('vo2Max.faq') || [])
 const { localePath } = useLocaleRouter()
 
 useHead(() => ({
@@ -276,6 +279,8 @@ const testTypes = [
       </div>
     </div>
   </div>
+
+  <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
   <BlogBanner calculator-key="vo2Max" />
   <AffiliateBanner />

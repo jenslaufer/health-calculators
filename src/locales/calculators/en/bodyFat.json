@@ -24,6 +24,32 @@
     "obese": "Obese",
     "fatMass": "Fat Mass",
     "leanMass": "Lean Mass",
-    "categoriesTitle": "Body Fat Categories ({gender})"
+    "categoriesTitle": "Body Fat Categories ({gender})",
+    "faq": [
+      {
+        "q": "What is a healthy body fat percentage?",
+        "a": "Men: 10–20 % healthy, women: 18–28 % healthy (American Council on Exercise). Athletes often run lower; very low values can cause hormonal disturbances."
+      },
+      {
+        "q": "How does this calculator estimate body fat?",
+        "a": "It uses the U.S. Navy circumference method (neck, waist, hip, and height). This method is accurate to within ±3–4 % of DEXA."
+      },
+      {
+        "q": "Which body-fat method is most accurate?",
+        "a": "DEXA (dual-energy X-ray) is the reference standard. Bioimpedance scales are less accurate (±5–8 %); skinfold calipers fall between, depending on the operator."
+      },
+      {
+        "q": "Why is body fat more telling than BMI?",
+        "a": "BMI does not separate muscle from fat. Two people with the same BMI can have very different metabolic risks; body-fat percentage reveals that."
+      },
+      {
+        "q": "How fast can body fat be reduced?",
+        "a": "Realistic: 0.5–1 % body-fat reduction per month with a moderate deficit. Very fast reductions raise the risk of muscle loss."
+      },
+      {
+        "q": "What is essential body fat?",
+        "a": "Essential fat (men ~3 %, women ~12 %) is required for hormone production, organ protection, and cell function. Lower values pose health risks."
+      }
+    ]
   }
 }

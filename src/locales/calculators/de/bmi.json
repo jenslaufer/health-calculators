@@ -18,6 +18,14 @@
     "underweight": "Untergewicht",
     "normal": "Normalgewicht",
     "overweight": "Übergewicht",
-    "obese": "Adipositas"
+    "obese": "Adipositas",
+    "faq": [
+      { "q": "Wie wird der BMI berechnet?", "a": "Der Body-Mass-Index berechnet sich nach der Formel BMI = Gewicht (kg) / Körpergröße (m)². Diese Formel wurde im 19. Jahrhundert von Adolphe Quetelet entwickelt und ist heute der international anerkannte Standard (WHO)." },
+      { "q": "Was bedeutet ein BMI im Normalbereich?", "a": "Laut WHO liegt der Normalbereich zwischen 18,5 und 24,9 kg/m². In diesem Bereich ist das statistische Risiko für gewichtsbedingte Erkrankungen am niedrigsten." },
+      { "q": "Ab welchem BMI spricht man von Übergewicht?", "a": "Übergewicht beginnt nach WHO-Kriterien ab einem BMI von 25,0. Ab 30,0 wird von Adipositas (Fettleibigkeit) gesprochen, unterteilt in drei Schweregrade." },
+      { "q": "Ist der BMI auch für Sportler aussagekräftig?", "a": "Nur eingeschränkt. Der BMI unterscheidet nicht zwischen Muskel- und Fettmasse. Athleten mit hoher Muskelmasse können einen BMI im Übergewichtsbereich haben, ohne tatsächlich überfettet zu sein." },
+      { "q": "Gilt der BMI auch für Kinder und Senioren?", "a": "Für Kinder gelten alters- und geschlechtsspezifische Perzentilen statt fester BMI-Grenzen. Bei Senioren über 65 verschiebt sich der gesunde Bereich laut DGE leicht nach oben (24–29 kg/m²)." },
+      { "q": "Was sagt der BMI nicht aus?", "a": "Der BMI berücksichtigt weder Körperfettverteilung noch Muskelanteil, Geschlecht oder Ethnizität. Für ein vollständiges Bild sind ergänzende Werte wie Taillenumfang oder Körperfettanteil sinnvoll." }
+    ]
   }
 }

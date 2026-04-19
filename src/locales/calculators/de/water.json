@@ -26,6 +26,32 @@
     "litersPerDay": "Liter / Tag",
     "glasses": "Gläser",
     "oz": "oz",
-    "tip": "Verteile die Flüssigkeitsaufnahme über den ganzen Tag für optimale Hydration."
+    "tip": "Verteile die Flüssigkeitsaufnahme über den ganzen Tag für optimale Hydration.",
+    "faq": [
+      {
+        "q": "Wie viel Wasser sollte ich täglich trinken?",
+        "a": "Die DGE empfiehlt etwa 1,5 Liter Trinkwasser pro Tag für Erwachsene, plus rund 0,7 Liter aus fester Nahrung. Bei körperlicher Aktivität, Hitze oder Stillzeit steigt der Bedarf."
+      },
+      {
+        "q": "Wie wird der individuelle Wasserbedarf berechnet?",
+        "a": "Eine gängige Faustformel ist 30–35 ml pro kg Körpergewicht. Sport- oder Hitzephasen erhöhen den Bedarf um 0,5–1 Liter pro Stunde Aktivität."
+      },
+      {
+        "q": "Zählen Kaffee und Tee zur Flüssigkeitszufuhr?",
+        "a": "Ja. Aktuelle Studien (EFSA) zeigen, dass moderater Koffeinkonsum nicht entwässert. Wasser, ungesüßte Tees und verdünnte Säfte tragen alle zur Bilanz bei."
+      },
+      {
+        "q": "Was sind Anzeichen von Dehydration?",
+        "a": "Dunkler Urin, Durstgefühl, Kopfschmerzen, Müdigkeit und Konzentrationsschwäche. Heller Urin (strohgelb) ist ein gutes Hydrationsmerkmal."
+      },
+      {
+        "q": "Kann man zu viel Wasser trinken?",
+        "a": "Ja, in seltenen Fällen führt extrem hohe Wasseraufnahme (mehrere Liter in kurzer Zeit) zu Hyponatriämie. Über den Tag verteiltes Trinken ist sicher."
+      },
+      {
+        "q": "Brauchen Sportler mehr Wasser?",
+        "a": "Ja. Pro Stunde intensiver Belastung verliert man 0,5–1 L Schweiß. Bei längerer Aktivität sind Elektrolyte (Natrium, Kalium) zusätzlich sinnvoll."
+      }
+    ]
   }
 }

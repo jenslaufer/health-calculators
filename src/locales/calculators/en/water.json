@@ -26,6 +26,32 @@
     "litersPerDay": "liters / day",
     "glasses": "glasses",
     "oz": "oz",
-    "tip": "Spread your intake throughout the day for best hydration."
+    "tip": "Spread your intake throughout the day for best hydration.",
+    "faq": [
+      {
+        "q": "How much water should I drink daily?",
+        "a": "EFSA recommends about 2.0 L/day for women and 2.5 L/day for men from beverages, with additional water from food. Needs rise with exercise, heat, and breastfeeding."
+      },
+      {
+        "q": "How is personal water need calculated?",
+        "a": "A common rule of thumb is 30–35 ml per kg of body weight. Add 0.5–1 L per hour of intense exercise or hot-weather exposure."
+      },
+      {
+        "q": "Do coffee and tea count toward fluid intake?",
+        "a": "Yes. Recent EFSA reviews show moderate caffeine intake does not cause net dehydration. Water, unsweetened teas, and diluted juices all contribute."
+      },
+      {
+        "q": "What are the signs of dehydration?",
+        "a": "Dark urine, thirst, headaches, fatigue, and reduced concentration. Light straw-colored urine is a good hydration indicator."
+      },
+      {
+        "q": "Can you drink too much water?",
+        "a": "Yes, in rare cases excessive intake (several liters in a short time) can cause hyponatremia. Spreading intake throughout the day is safe."
+      },
+      {
+        "q": "Do athletes need more water?",
+        "a": "Yes. Intense exercise costs roughly 0.5–1 L of sweat per hour. For prolonged activity, electrolytes (sodium, potassium) should be added."
+      }
+    ]
   }
 }

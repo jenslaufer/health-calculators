@@ -40,6 +40,32 @@
     "fertileLabel": "Fertile",
     "to": "to",
     "howItWorks": "How it works",
-    "howItWorksText": "This calculator uses the calendar method: your next period starts after your cycle length. Ovulation occurs approximately 14 days before your next period. The fertile window spans the 5 days before ovulation and ovulation day itself."
+    "howItWorksText": "This calculator uses the calendar method: your next period starts after your cycle length. Ovulation occurs approximately 14 days before your next period. The fertile window spans the 5 days before ovulation and ovulation day itself.",
+    "faq": [
+      {
+        "q": "How long is a normal menstrual cycle?",
+        "a": "21–35 days is considered normal, with an average of 28. Variations of ±7 days between cycles are unconcerning. Source: ACOG."
+      },
+      {
+        "q": "How is cycle length counted?",
+        "a": "From the first day of one period to the day before the next period starts. Day 1 is the first day of bleeding."
+      },
+      {
+        "q": "When is a cycle considered irregular?",
+        "a": "If length varies by more than 7–9 days between cycles, or is shorter than 21 or longer than 35 days. Common causes: PCOS, stress, hormone disorders."
+      },
+      {
+        "q": "How accurate is the period calculator?",
+        "a": "For regular cycles, very accurate (±2 days). For variable cycles, less reliable — an app with symptom tracking gives more precise forecasts."
+      },
+      {
+        "q": "What are the four cycle phases?",
+        "a": "1. Menstruation (days 1–5), 2. Follicular (days 1–13), 3. Ovulation (day ~14), 4. Luteal (days 15–28). Hormone profiles and symptoms differ across phases."
+      },
+      {
+        "q": "When should I see a doctor?",
+        "a": "If your period is absent for > 90 days, bleeding is very heavy (> 80 mL), there is bleeding between periods, or severe pain — consult a clinician."
+      }
+    ]
   }
 }

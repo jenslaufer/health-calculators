@@ -40,6 +40,32 @@
     "fertileLabel": "Fruchtbar",
     "to": "bis",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Die nächste Periode beginnt nach deiner Zykluslänge. Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Das fruchtbare Fenster umfasst die 5 Tage vor dem Eisprung und den Eisprungtag selbst."
+    "howItWorksText": "Dieser Rechner nutzt die Kalendermethode: Die nächste Periode beginnt nach deiner Zykluslänge. Der Eisprung findet etwa 14 Tage vor der nächsten Periode statt. Das fruchtbare Fenster umfasst die 5 Tage vor dem Eisprung und den Eisprungtag selbst.",
+    "faq": [
+      {
+        "q": "Wie lange ist ein normaler Zyklus?",
+        "a": "21–35 Tage gelten als normal, der Mittelwert liegt bei 28 Tagen. Schwankungen von ±7 Tagen zwischen den Zyklen sind unbedenklich. Quelle: ACOG."
+      },
+      {
+        "q": "Wie wird die Zykluslänge gezählt?",
+        "a": "Vom ersten Tag der Periode bis zum Tag vor der nächsten Periode. Der erste Blutungstag ist Tag 1."
+      },
+      {
+        "q": "Wann ist ein Zyklus unregelmäßig?",
+        "a": "Wenn die Länge zwischen den Zyklen um mehr als 7–9 Tage schwankt oder weniger als 21 oder mehr als 35 Tage beträgt. Häufige Ursachen: PCOS, Stress, Hormonstörungen."
+      },
+      {
+        "q": "Wie genau ist der Periodenrechner?",
+        "a": "Bei regelmäßigen Zyklen sehr genau (±2 Tage). Bei stark schwankenden Zyklen weniger zuverlässig — eine App mit Symptom-Tracking liefert genauere Vorhersagen."
+      },
+      {
+        "q": "Welche vier Zyklusphasen gibt es?",
+        "a": "1. Menstruation (Tag 1–5), 2. Follikelphase (Tag 1–13), 3. Ovulation (Tag 14), 4. Lutealphase (Tag 15–28). Hormonprofile und Symptome unterscheiden sich pro Phase."
+      },
+      {
+        "q": "Wann sollte ich zum Arzt?",
+        "a": "Bei Ausbleiben der Periode > 90 Tage, sehr starken Blutungen (> 80 ml), Blutungen zwischen den Perioden oder starken Schmerzen ist ärztliche Abklärung empfehlenswert."
+      }
+    ]
   }
 }
