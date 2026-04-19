@@ -18,6 +18,14 @@
     "underweight": "Underweight",
     "normal": "Normal weight",
     "overweight": "Overweight",
-    "obese": "Obese"
+    "obese": "Obese",
+    "faq": [
+      { "q": "How is BMI calculated?", "a": "Body Mass Index is calculated using the formula BMI = weight (kg) / height (m)². This formula, developed by Adolphe Quetelet in the 19th century, is the internationally recognized standard (WHO)." },
+      { "q": "What does a BMI in the normal range mean?", "a": "According to the WHO, the normal range is 18.5 to 24.9 kg/m². In this range, the statistical risk for weight-related diseases is the lowest." },
+      { "q": "At what BMI is someone considered overweight?", "a": "By WHO criteria, overweight starts at a BMI of 25.0. From 30.0 onward, the classification becomes obesity, divided into three severity classes." },
+      { "q": "Is BMI accurate for athletes?", "a": "Only to a limited degree. BMI does not distinguish between muscle and fat mass. Athletes with high muscle mass may show a BMI in the overweight range without being overfat." },
+      { "q": "Does BMI apply to children and seniors?", "a": "Children are assessed using age- and sex-specific percentiles rather than fixed BMI cutoffs. For seniors over 65, the healthy range shifts slightly upward (24–29 kg/m²) per recent guidelines." },
+      { "q": "What does BMI not tell you?", "a": "BMI ignores body fat distribution, muscle ratio, sex, and ethnicity. Complementary measures like waist circumference or body-fat percentage give a fuller picture." }
+    ]
   }
 }

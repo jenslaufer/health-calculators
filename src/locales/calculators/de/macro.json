@@ -26,6 +26,32 @@
     "targetCalories": "Zielkalorien",
     "protein": "Protein (g)",
     "carbs": "Kohlenhydrate (g)",
-    "fat": "Fett (g)"
+    "fat": "Fett (g)",
+    "faq": [
+      {
+        "q": "Was sind Makronährstoffe?",
+        "a": "Die drei Hauptenergieträger: Kohlenhydrate (4 kcal/g), Proteine (4 kcal/g), Fette (9 kcal/g). Sie liefern Energie und Bausteine für Stoffwechsel und Gewebe. Quelle: DGE."
+      },
+      {
+        "q": "Welche Makroverteilung empfiehlt die DGE?",
+        "a": "Kohlenhydrate > 50 % der Energie, Fett ~30 %, Protein ~15 %. Diese Werte gelten für gesunde Erwachsene mit normaler Aktivität."
+      },
+      {
+        "q": "Wie viel Protein für Muskelaufbau?",
+        "a": "1,6–2,2 g Protein pro kg Körpergewicht/Tag laut ISSN-Empfehlung. Mehr bringt keinen zusätzlichen Effekt für Muskelaufbau."
+      },
+      {
+        "q": "Welche Makros zum Abnehmen?",
+        "a": "Höherer Proteinanteil (1,8–2,4 g/kg) erhält Muskelmasse im Defizit. KH und Fett werden je nach Vorliebe reduziert. Wichtig: Gesamtkaloriendefizit."
+      },
+      {
+        "q": "Sind Low-Carb oder Low-Fat besser?",
+        "a": "Studien (DIETFITS 2018) zeigen: kein signifikanter Unterschied im Gewichtsverlust zwischen Low-Carb und Low-Fat bei gleichem Defizit. Persönliche Vorlieben entscheiden."
+      },
+      {
+        "q": "Wie genau muss ich Makros tracken?",
+        "a": "Wettkampfsportler tracken auf 5 g genau. Für allgemeine Gesundheit reicht eine Annäherung. Tracken über 4–6 Wochen schult das Mengenverständnis."
+      }
+    ]
   }
 }

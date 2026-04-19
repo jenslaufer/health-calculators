@@ -39,6 +39,32 @@
     "secondHalf": "Zweite Hälfte",
     "splits": "Splits",
     "splitTime": "Split-Zeit",
-    "cumTime": "Gesamtzeit"
+    "cumTime": "Gesamtzeit",
+    "faq": [
+      {
+        "q": "Was ist Lauftempo (Pace)?",
+        "a": "Das Lauftempo gibt an, wie viele Minuten pro Kilometer (oder Meile) man läuft. Es ist die gängigste Maßeinheit für Lauftraining. Quelle: Deutscher Leichtathletik-Verband."
+      },
+      {
+        "q": "Wie berechne ich meine Pace?",
+        "a": "Pace (min/km) = Zeit (min) / Distanz (km). Beispiel: 30 min für 5 km = 6:00 min/km. Dieser Rechner berechnet Pace, Distanz oder Zeit aus zwei der drei Werte."
+      },
+      {
+        "q": "Was ist eine gute Pace für Anfänger?",
+        "a": "Für Anfänger sind 6:30–8:00 min/km typisch. Wichtiger ist, dass du dich noch unterhalten kannst (Sprechtempo). Geschwindigkeit kommt mit der Zeit."
+      },
+      {
+        "q": "Wie kann ich meine Pace verbessern?",
+        "a": "Eine Mischung aus 80 % langsamen Dauerläufen, Intervalltraining und Tempoläufen verbessert die Pace nachhaltig. Quelle: Polarisiertes Training nach Stephen Seiler."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Pace und Geschwindigkeit?",
+        "a": "Pace ist Zeit pro Strecke (min/km), Geschwindigkeit ist Strecke pro Zeit (km/h). Umrechnung: Geschwindigkeit (km/h) = 60 / Pace (min/km)."
+      },
+      {
+        "q": "Welche Pace für Marathon, Halbmarathon, 10 km?",
+        "a": "Hobbyläufer-Mittelwerte: Marathon ~5:30–6:30 min/km, Halbmarathon ~5:15–6:15 min/km, 10 km ~5:00–6:00 min/km. Profis liegen deutlich darunter."
+      }
+    ]
   }
 }

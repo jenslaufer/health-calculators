@@ -31,6 +31,32 @@
     "tip204": "Only 4 hours of eating, e.g. 3:00 PM–7:00 PM. Requires experience and filling meals.",
     "tipOmad": "One meal per day. Maximum fasting time, requires a nutrient-dense, high-calorie meal.",
     "howItWorks": "How it works",
-    "howItWorksText": "With intermittent fasting, you alternate between eating and fasting windows. This calculator computes your personal time window based on the chosen protocol and your last or first meal time. During the fasting phase, only water, tea, and black coffee are allowed."
+    "howItWorksText": "With intermittent fasting, you alternate between eating and fasting windows. This calculator computes your personal time window based on the chosen protocol and your last or first meal time. During the fasting phase, only water, tea, and black coffee are allowed.",
+    "faq": [
+      {
+        "q": "What is intermittent fasting?",
+        "a": "An eating pattern that alternates fasting and eating windows. Popular protocols: 16:8, 14:10, 18:6, or OMAD. Source: Cell Metabolism reviews."
+      },
+      {
+        "q": "Which protocol is most popular?",
+        "a": "16:8 — 16 hours fasting, 8 hours eating window. It is practical for daily life and the most studied protocol."
+      },
+      {
+        "q": "What can I drink during the fasting window?",
+        "a": "Water, unsweetened tea, black coffee — anything without calories. Broths < 50 kcal are usually tolerated but technically break a strict fast."
+      },
+      {
+        "q": "Does intermittent fasting help with weight loss?",
+        "a": "Yes, mainly because the compressed eating window often lowers total intake. Trials show similar results to conventional diets at matched deficits (JAMA 2020)."
+      },
+      {
+        "q": "What health effects does intermittent fasting have?",
+        "a": "Studies report improved insulin sensitivity, lower inflammation markers, and possible autophagy activation. Long-term outcomes are not yet conclusive."
+      },
+      {
+        "q": "Who should avoid intermittent fasting?",
+        "a": "Pregnant or breastfeeding women, children, underweight individuals, people with eating disorders or type-1 diabetes should not fast without medical supervision."
+      }
+    ]
   }
 }

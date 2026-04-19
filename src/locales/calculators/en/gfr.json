@@ -62,6 +62,32 @@
       "G3b": "See a nephrologist. Close monitoring and medication adjustments are needed.",
       "G4": "Urgent nephrology referral. Discuss preparation for kidney replacement therapy (dialysis/transplant).",
       "G5": "Immediate nephrology care required. Kidney replacement therapy is typically necessary."
-    }
+    },
+    "faq": [
+      {
+        "q": "What is the glomerular filtration rate (GFR)?",
+        "a": "GFR measures how much blood the kidneys filter per minute (mL/min/1.73 m²). It is the most important marker of kidney function. Source: KDIGO."
+      },
+      {
+        "q": "What is a normal GFR?",
+        "a": "Adults: > 90 mL/min/1.73 m² is normal. 60–89 is borderline (G2). Values below 60 sustained for 3+ months indicate chronic kidney disease (CKD)."
+      },
+      {
+        "q": "Which formula does this calculator use?",
+        "a": "It uses the CKD-EPI 2021 equation, the current standard for estimating GFR from serum creatinine. It is more accurate than the older MDRD formula."
+      },
+      {
+        "q": "Why does GFR decline with age?",
+        "a": "From around age 40, GFR drops about 1 mL/min/year. Hypertension, diabetes, and obesity accelerate the decline."
+      },
+      {
+        "q": "What are the CKD stages?",
+        "a": "G1 (>90), G2 (60–89), G3a (45–59), G3b (30–44), G4 (15–29), G5 (<15, kidney failure). Source: KDIGO 2012 guidelines."
+      },
+      {
+        "q": "How can I protect my kidneys?",
+        "a": "Keep blood pressure under 130/80, manage blood sugar, stay hydrated, eat low-sodium, avoid NSAIDs, stop smoking. Refer to nephrology if eGFR < 60."
+      }
+    ]
   }
 }

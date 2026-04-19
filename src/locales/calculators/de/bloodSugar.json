@@ -50,6 +50,32 @@
     "normalDesc": "Kein erhöhtes Risiko.",
     "prediabetesDesc": "Erhöhtes Risiko. Lebensstiländerungen empfohlen.",
     "diabetesDesc": "Diabetes-Bereich. Arzt aufsuchen.",
-    "contextNote": "Werte können je nach Messzeitpunkt, Tageszeit und Ernährung variieren. Kein Ersatz für ärztliche Beratung."
+    "contextNote": "Werte können je nach Messzeitpunkt, Tageszeit und Ernährung variieren. Kein Ersatz für ärztliche Beratung.",
+    "faq": [
+      {
+        "q": "Welche Blutzucker-Einheiten gibt es?",
+        "a": "mg/dl (USA, Deutschland) und mmol/l (UK, Kanada, internationale Studien). Umrechnung: 1 mmol/l = 18,016 mg/dl."
+      },
+      {
+        "q": "Welche Werte sind normal (nüchtern)?",
+        "a": "Normal: < 100 mg/dl (5,6 mmol/l). Prädiabetes: 100–125 mg/dl (5,6–6,9 mmol/l). Diabetes: ≥ 126 mg/dl (7,0 mmol/l). Quelle: ADA."
+      },
+      {
+        "q": "Welche Werte sind normal (postprandial)?",
+        "a": "2 Stunden nach dem Essen: < 140 mg/dl (7,8 mmol/l) normal. 140–199 mg/dl (7,8–11,0 mmol/l) prädiabetisch. ≥ 200 mg/dl (11,1 mmol/l) Diabetes."
+      },
+      {
+        "q": "Was ist Hypoglykämie?",
+        "a": "Blutzucker < 70 mg/dl (3,9 mmol/l). Symptome: Zittern, Schwitzen, Heißhunger, Verwirrung. Bei Werten < 54 mg/dl (3,0 mmol/l) klinisch relevante Hypoglykämie."
+      },
+      {
+        "q": "Wie oft sollte ich messen?",
+        "a": "Bei Diabetes Typ 1 mehrfach täglich. Bei Diabetes Typ 2 unter Insulin 1–4× täglich, bei oraler Therapie nach Arztempfehlung. Bei Gesunden ist Selbstmessung nicht nötig."
+      },
+      {
+        "q": "Welche Faktoren beeinflussen den Blutzucker?",
+        "a": "Ernährung (Kohlenhydrate), Bewegung, Stress, Schlaf, Krankheit, Medikamente, Hormone. Auch Tageszeit (Dawn-Phänomen) und Alkohol spielen eine Rolle."
+      }
+    ]
   }
 }

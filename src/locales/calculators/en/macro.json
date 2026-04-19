@@ -26,6 +26,32 @@
     "targetCalories": "Target Calories",
     "protein": "Protein (g)",
     "carbs": "Carbs (g)",
-    "fat": "Fat (g)"
+    "fat": "Fat (g)",
+    "faq": [
+      {
+        "q": "What are macronutrients?",
+        "a": "The three main energy-providing nutrients: carbohydrates (4 kcal/g), protein (4 kcal/g), fat (9 kcal/g). They supply energy and building blocks for metabolism and tissues."
+      },
+      {
+        "q": "What macro split do nutrition bodies recommend?",
+        "a": "Roughly carbs > 50 % of energy, fat ~30 %, protein ~15 %, per most national dietary guidelines. These values apply to healthy adults with normal activity."
+      },
+      {
+        "q": "How much protein for muscle building?",
+        "a": "1.6–2.2 g protein per kg body weight/day per ISSN recommendation. More than that provides no additional muscle-building effect."
+      },
+      {
+        "q": "Which macros for fat loss?",
+        "a": "A higher protein intake (1.8–2.4 g/kg) preserves muscle mass during a deficit. Carbs and fat are reduced per preference. The overall calorie deficit matters most."
+      },
+      {
+        "q": "Is low-carb or low-fat better?",
+        "a": "Studies (DIETFITS 2018) show no significant difference in weight loss between low-carb and low-fat diets at matched calorie deficits. Personal preference decides."
+      },
+      {
+        "q": "How precisely do I need to track macros?",
+        "a": "Competitive athletes track within 5 g. For general health, approximation is enough. Tracking 4–6 weeks builds long-term portion sense."
+      }
+    ]
   }
 }

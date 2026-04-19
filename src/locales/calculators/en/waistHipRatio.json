@@ -22,6 +22,32 @@
     "recLow": "Your WHR indicates a {start}low health risk{end}. Keep up your healthy lifestyle with regular exercise and a balanced diet.",
     "recModerate": "Your WHR indicates a {start}moderate health risk{end}. Consider increasing physical activity and monitoring your waist circumference.",
     "recHigh": "Your WHR indicates a {start}high health risk{end} according to WHO guidelines. Central obesity is associated with increased cardiovascular and metabolic risk. Consult a healthcare professional.",
-    "thresholdsTitle": "WHO Risk Thresholds ({gender})"
+    "thresholdsTitle": "WHO Risk Thresholds ({gender})",
+    "faq": [
+      {
+        "q": "What is the waist-to-hip ratio (WHR)?",
+        "a": "WHR is waist circumference divided by hip circumference. It indicates fat distribution and is a marker for cardiovascular and metabolic risk. Source: WHO."
+      },
+      {
+        "q": "What are the WHO cutoffs?",
+        "a": "Men: increased risk at WHR ≥ 0.90. Women: increased risk at WHR ≥ 0.85. Higher values are associated with greater type-2 diabetes and heart disease risk."
+      },
+      {
+        "q": "How do I measure waist and hip correctly?",
+        "a": "Waist: narrowest point between the rib cage and iliac crest, standing, at the end of a normal exhalation. Hip: widest part of the buttocks."
+      },
+      {
+        "q": "Is WHR better than BMI?",
+        "a": "Studies (Lancet 2011) suggest WHR predicts cardiovascular risk more reliably than BMI, especially in normal-weight individuals with central adiposity."
+      },
+      {
+        "q": "How can I lower an elevated WHR?",
+        "a": "Reduce visceral fat via calorie deficit, aerobic training, and a fiber-rich diet. Resistance training also improves insulin sensitivity."
+      },
+      {
+        "q": "Is WHR useful during pregnancy?",
+        "a": "No. During pregnancy and breastfeeding, WHR is not meaningful — abdominal circumference is physiologically altered."
+      }
+    ]
   }
 }

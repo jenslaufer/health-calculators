@@ -29,6 +29,32 @@
     "fat": "Fett (g)",
     "protein": "Protein (g)",
     "netCarbs": "Netto-KH (g)",
-    "fiberRecommendation": "Ballaststoff-Empfehlung"
+    "fiberRecommendation": "Ballaststoff-Empfehlung",
+    "faq": [
+      {
+        "q": "Was ist die ketogene Ernährung?",
+        "a": "Eine sehr kohlenhydratarme (≤ 50 g/Tag), fettreiche Ernährung. Der Körper schaltet auf Ketonkörper als primäre Energiequelle um. Quelle: AHA Statement 2021."
+      },
+      {
+        "q": "Wie viele Kohlenhydrate erlaubt Keto?",
+        "a": "Standard-Keto: 20–50 g Netto-Kohlenhydrate pro Tag. Strenge Keto: < 20 g. Netto-KH = Gesamt-KH minus Ballaststoffe."
+      },
+      {
+        "q": "Wie ist die Makroverteilung?",
+        "a": "Klassisch: 70–75 % Fett, 20–25 % Protein, 5–10 % Kohlenhydrate. Zu hoher Proteinanteil kann die Ketose stören (Glukoneogenese)."
+      },
+      {
+        "q": "Wie lange dauert es bis zur Ketose?",
+        "a": "2–7 Tage bei strikter KH-Reduktion. Ketonkörper im Blut > 0,5 mmol/l = leichte Ketose. Symptome wie 'Keto-Grippe' (Müdigkeit, Kopfweh) treten in der Anfangsphase oft auf."
+      },
+      {
+        "q": "Welche Risiken hat Keto?",
+        "a": "Erhöhtes LDL-Cholesterin, Nierensteine, Nährstoffmangel (B-Vitamine, Magnesium), Verstopfung. Bei Schwangerschaft, Diabetes Typ 1, Lebererkrankungen kontraindiziert."
+      },
+      {
+        "q": "Ist Keto zum Abnehmen besser als andere Diäten?",
+        "a": "Studien zeigen: kurzfristig oft schnelle Gewichtsabnahme, langfristig (>12 Monate) keine signifikanten Vorteile gegenüber kalorienreduzierten Mischkost-Diäten (NEJM 2018)."
+      }
+    ]
   }
 }

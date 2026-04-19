@@ -31,6 +31,32 @@
     "tip204": "Nur 4 Stunden Essen, z. B. 15:00–19:00 Uhr. Erfordert Erfahrung und sättigende Mahlzeiten.",
     "tipOmad": "Eine Mahlzeit am Tag. Maximale Fastenzeit, erfordert eine nährstoffreiche, kalorienreiche Mahlzeit.",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Beim Intervallfasten wechselst du zwischen Essens- und Fastenphasen. Dieser Rechner berechnet dein persönliches Zeitfenster basierend auf dem gewählten Protokoll und deiner letzten oder ersten Mahlzeit. Während der Fastenphase sind nur Wasser, Tee und schwarzer Kaffee erlaubt."
+    "howItWorksText": "Beim Intervallfasten wechselst du zwischen Essens- und Fastenphasen. Dieser Rechner berechnet dein persönliches Zeitfenster basierend auf dem gewählten Protokoll und deiner letzten oder ersten Mahlzeit. Während der Fastenphase sind nur Wasser, Tee und schwarzer Kaffee erlaubt.",
+    "faq": [
+      {
+        "q": "Was ist Intervallfasten?",
+        "a": "Eine Ernährungsform, bei der Essens- und Fastenphasen abwechseln. Beliebt: 16:8, 14:10, 18:6 oder OMAD. Quelle: Cell Metabolism Reviews."
+      },
+      {
+        "q": "Welches Protokoll ist am beliebtesten?",
+        "a": "16:8 — 16 Stunden fasten, 8 Stunden Essensfenster. Es ist alltagstauglich und gut erforscht."
+      },
+      {
+        "q": "Was darf ich während des Fastens trinken?",
+        "a": "Wasser, ungesüßter Tee, schwarzer Kaffee — alles ohne Kalorien. Brühen mit < 50 kcal werden meist toleriert, brechen das Fasten aber streng genommen."
+      },
+      {
+        "q": "Hilft Intervallfasten beim Abnehmen?",
+        "a": "Ja, primär weil das verkürzte Essensfenster die Kalorienaufnahme oft reduziert. Studien zeigen ähnliche Resultate wie konventionelle Diäten bei gleichem Defizit (JAMA 2020)."
+      },
+      {
+        "q": "Welche gesundheitlichen Effekte hat Intervallfasten?",
+        "a": "Studien zeigen verbesserte Insulinsensitivität, niedrigere Entzündungsmarker und mögliche Autophagie-Aktivierung. Langzeitnutzen ist wissenschaftlich noch offen."
+      },
+      {
+        "q": "Für wen ist Intervallfasten nicht geeignet?",
+        "a": "Schwangere, Stillende, Kinder, Untergewichtige, Menschen mit Essstörungen oder Diabetes Typ 1 sollten kein Intervallfasten ohne ärztliche Begleitung machen."
+      }
+    ]
   }
 }

@@ -16,6 +16,32 @@
     "description": "Finde deinen gesunden Gewichtsbereich basierend auf vier wissenschaftlich fundierten Formeln.",
     "formulaComparison": "Formelvergleich",
     "healthyBmiRange": "Gesunder BMI-Bereich",
-    "bmiRangeText": "Basierend auf einem BMI von 18,5 – 24,9 liegt dein gesunder Gewichtsbereich bei"
+    "bmiRangeText": "Basierend auf einem BMI von 18,5 – 24,9 liegt dein gesunder Gewichtsbereich bei",
+    "faq": [
+      {
+        "q": "Was ist das Idealgewicht?",
+        "a": "Das statistisch optimale Gewicht für eine bestimmte Körpergröße — assoziiert mit niedrigster Sterblichkeit und Krankheitsrisiko. Es ist eine Schätzung, kein Pflichtwert. Quelle: WHO."
+      },
+      {
+        "q": "Welche Formeln werden verwendet?",
+        "a": "Bekannte Formeln: Devine (1974), Robinson, Miller, Hamwi. Sie wurden ursprünglich zur Medikamentendosierung entwickelt und liefern leicht unterschiedliche Werte."
+      },
+      {
+        "q": "Wie unterscheidet sich Idealgewicht vom Normalgewicht?",
+        "a": "Normalgewicht ist der gesamte BMI-Bereich 18,5–24,9. Das Idealgewicht ist ein Punktwert innerhalb dieses Bereichs, oft nahe BMI 22, dem statistischen Risikominimum."
+      },
+      {
+        "q": "Wie aussagekräftig ist das Idealgewicht?",
+        "a": "Es ist eine grobe Orientierung, da es Muskelmasse, Geschlecht (in einigen Formeln) oder Alter nicht berücksichtigt. Körperfettanteil und Taillenumfang sind aussagekräftiger."
+      },
+      {
+        "q": "Sollte ich genau das Idealgewicht anstreben?",
+        "a": "Nein. Studien zeigen, dass leichtes Übergewicht bei älteren Menschen mit niedrigerer Mortalität einhergeht ('Obesity Paradox'). Wohlbefinden und Gesundheitsmarker sind wichtiger als ein Punktwert."
+      },
+      {
+        "q": "Welcher BMI gilt als ideal?",
+        "a": "Studien (Lancet 2016) zeigen das niedrigste Mortalitätsrisiko bei BMI 20–25 für Erwachsene unter 65. Bei Senioren liegt das Optimum eher bei BMI 24–29."
+      }
+    ]
   }
 }

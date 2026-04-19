@@ -37,6 +37,32 @@
     "cooperInfo": "Run for 12 minutes as far as you can and enter the distance in meters.",
     "rockportInfo": "Walk 1 mile (1,609 m) as fast as you can and measure your heart rate at the end.",
     "directInfo": "Enter your known VO2 Max value directly.",
-    "weightUnit": "Unit"
+    "weightUnit": "Unit",
+    "faq": [
+      {
+        "q": "What is VO2max?",
+        "a": "VO2max is the maximum amount of oxygen the body can utilize per minute (mL/kg/min). It is regarded as the gold-standard marker of cardiorespiratory fitness. Source: American Heart Association."
+      },
+      {
+        "q": "What are normal VO2max values?",
+        "a": "Men 30–39: average 31–40 mL/kg/min. Women 30–39: average 27–35. Elite endurance athletes reach 70–90 mL/kg/min. Source: ACSM."
+      },
+      {
+        "q": "How is VO2max estimated here?",
+        "a": "Using the 1-mile Rockport walking test, which estimates VO2max from weight, time, end-of-test heart rate, and sex. Accuracy: ±10–15 % vs. lab spirometry."
+      },
+      {
+        "q": "How can I improve my VO2max?",
+        "a": "High-intensity interval training (HIIT) combined with long aerobic base work is most effective. Expect +10–25 % in 8–12 weeks if untrained."
+      },
+      {
+        "q": "Does VO2max decline with age?",
+        "a": "Yes — roughly 1 % per year from age 30 onward. Regular endurance training can halve or reverse this decline."
+      },
+      {
+        "q": "How is VO2max linked to lifespan?",
+        "a": "Low VO2max is a stronger predictor of early mortality than smoking or diabetes (JAMA 2018). Improving VO2max is associated with lower mortality."
+      }
+    ]
   }
 }

@@ -29,6 +29,32 @@
     "weeklyLoss": "Abnahme / Woche",
     "perWeek": "pro Woche",
     "warningUnsafe": "Dein Kalorienziel liegt unter 1.200 kcal/Tag. Das ist gesundheitlich bedenklich — bitte sprich mit einem Arzt.",
-    "warningAggressive": "Du planst mehr als 1 kg pro Woche abzunehmen. Ein langsameres Tempo ist nachhaltiger und gesünder."
+    "warningAggressive": "Du planst mehr als 1 kg pro Woche abzunehmen. Ein langsameres Tempo ist nachhaltiger und gesünder.",
+    "faq": [
+      {
+        "q": "Was ist ein gesundes Kaloriendefizit?",
+        "a": "300–500 kcal pro Tag unter dem TDEE führen zu etwa 0,3–0,5 kg Fettverlust pro Woche. Diese Größenordnung gilt als nachhaltig (DGE)."
+      },
+      {
+        "q": "Wie viel Kalorien sollte ich mindestens essen?",
+        "a": "Frauen sollten 1.200 kcal/Tag, Männer 1.500 kcal/Tag nicht dauerhaft unterschreiten. Zu niedrige Aufnahme begünstigt Nährstoffmangel und Stoffwechselanpassung."
+      },
+      {
+        "q": "Warum sind 7.000 kcal Defizit ≠ 1 kg Fett?",
+        "a": "Die Faustregel '7.000 kcal = 1 kg Fett' ist eine Vereinfachung. Wasserverlust, Glykogenabbau und Muskelmasse beeinflussen die Bilanz. Realer Fettverlust ist meist 0,3–0,5 kg pro 3.500 kcal Defizit."
+      },
+      {
+        "q": "Wie verhindere ich Muskelabbau in der Diät?",
+        "a": "Mindestens 1,6–2,2 g Protein pro kg Körpergewicht und Krafttraining 2–4× pro Woche reduzieren den Muskelverlust deutlich (ISSN-Empfehlung)."
+      },
+      {
+        "q": "Wann sollte ich eine Diätpause einlegen?",
+        "a": "Nach 8–12 Wochen Defizit kann eine Diätpause (Refeed) von 7–14 Tagen bei Erhaltungskalorien Hormone (Leptin) und Stoffwechsel regenerieren."
+      },
+      {
+        "q": "Was tun bei Plateaus?",
+        "a": "Plateaus sind normal. Genauere Tracking-Periode, Erhöhung der Aktivität, leichte Defizit-Anpassung (-100 kcal) oder Diätpause können helfen."
+      }
+    ]
   }
 }

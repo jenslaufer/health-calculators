@@ -34,6 +34,32 @@
     "milestone37": "Frühes Termin",
     "milestone40": "Geburtstermin",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Dieser Rechner verwendet die Naegele-Regel: 280 Tage zum ersten Tag deiner letzten Monatsblutung addieren. Wenn dein Zyklus länger oder kürzer als 28 Tage ist, wird der Termin entsprechend angepasst. Das Schwangerschaftsalter zählt ab der letzten Monatsblutung, nicht ab der Empfängnis."
+    "howItWorksText": "Dieser Rechner verwendet die Naegele-Regel: 280 Tage zum ersten Tag deiner letzten Monatsblutung addieren. Wenn dein Zyklus länger oder kürzer als 28 Tage ist, wird der Termin entsprechend angepasst. Das Schwangerschaftsalter zählt ab der letzten Monatsblutung, nicht ab der Empfängnis.",
+    "faq": [
+      {
+        "q": "Wie wird der Geburtstermin berechnet?",
+        "a": "Mit der Naegele-Regel werden 280 Tage zum ersten Tag der letzten Periode addiert. Bei abweichender Zykluslänge wird angepasst. Quelle: Deutsche Gesellschaft für Gynäkologie."
+      },
+      {
+        "q": "Ab wann zählt die Schwangerschaftswoche (SSW)?",
+        "a": "Die SSW wird ab dem ersten Tag der letzten Periode gezählt — nicht ab der Empfängnis. Eine durchschnittliche Schwangerschaft dauert 40 SSW (280 Tage)."
+      },
+      {
+        "q": "Wie genau ist die Berechnung?",
+        "a": "Nur etwa 4 % der Babys werden am errechneten Termin geboren. 90 % kommen innerhalb eines Zeitfensters von ±2 Wochen zur Welt. Eine Ultraschall-Datierung im 1. Trimester ist präziser."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Schwangerschaftswoche und -monat?",
+        "a": "Schwangerschaftsmonate sind keine Kalendermonate, sondern 4 SSW à 7 Tagen — also insgesamt 10 'Monate' à 28 Tagen für 280 Tage."
+      },
+      {
+        "q": "Welche Untersuchungen stehen wann an?",
+        "a": "Erstvorstellung 6.–8. SSW, Ersttrimester-Screening 11.–14. SSW, Feindiagnostik 19.–22. SSW, Glukosetoleranztest 24.–28. SSW. Quelle: Mutterschaftsrichtlinien G-BA."
+      },
+      {
+        "q": "Was passiert nach dem errechneten Termin?",
+        "a": "Bei Übertragung erfolgt ab SSW 40+0 engmaschige CTG-Überwachung. Eine Geburtseinleitung wird meist zwischen SSW 41+0 und 42+0 empfohlen."
+      }
+    ]
   }
 }

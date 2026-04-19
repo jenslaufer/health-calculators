@@ -37,6 +37,32 @@
     "cooperInfo": "Laufe 12 Minuten so weit wie möglich und gib die Distanz in Metern ein.",
     "rockportInfo": "Gehe 1 Meile (1.609 m) so schnell wie möglich und miss deine Herzfrequenz am Ende.",
     "directInfo": "Gib deinen bekannten VO2 Max Wert direkt ein.",
-    "weightUnit": "Einheit"
+    "weightUnit": "Einheit",
+    "faq": [
+      {
+        "q": "Was ist VO2max?",
+        "a": "VO2max ist die maximale Sauerstoffaufnahme pro Minute, gemessen in ml/kg/min. Sie gilt als wichtigster Marker der kardiorespiratorischen Fitness. Quelle: American Heart Association."
+      },
+      {
+        "q": "Welche VO2max-Werte sind normal?",
+        "a": "Männer 30–39 J.: 31–40 ml/kg/min Durchschnitt. Frauen 30–39 J.: 27–35 ml/kg/min. Spitzenausdauersportler erreichen 70–90 ml/kg/min. Quelle: ACSM."
+      },
+      {
+        "q": "Wie wird VO2max hier geschätzt?",
+        "a": "Mit dem 1-Meilen-Gehtest (Rockport-Methode), der aus Gewicht, Zeit, Endpuls und Geschlecht VO2max schätzt. Genauigkeit: ±10–15 % gegenüber Spiroergometrie."
+      },
+      {
+        "q": "Wie kann ich meine VO2max steigern?",
+        "a": "Hochintensives Intervalltraining (HIIT) und langes Grundlagentraining sind am effektivsten. Erwartbar: +10–25 % in 8–12 Wochen bei untrainierten Personen."
+      },
+      {
+        "q": "Sinkt VO2max mit dem Alter?",
+        "a": "Ja, etwa 1 % pro Jahr ab dem 30. Lebensjahr. Regelmäßiges Ausdauertraining kann diesen Rückgang halbieren oder umkehren."
+      },
+      {
+        "q": "Welcher Zusammenhang besteht zwischen VO2max und Lebenserwartung?",
+        "a": "Eine niedrige VO2max ist ein stärkerer Risikofaktor für Frühsterblichkeit als Rauchen oder Diabetes (JAMA 2018). Eine VO2max-Steigerung ist mit niedrigerer Mortalität assoziiert."
+      }
+    ]
   }
 }

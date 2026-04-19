@@ -39,6 +39,32 @@
     "secondHalf": "Second Half",
     "splits": "Splits",
     "splitTime": "Split Time",
-    "cumTime": "Cumulative Time"
+    "cumTime": "Cumulative Time",
+    "faq": [
+      {
+        "q": "What is running pace?",
+        "a": "Running pace is the time it takes to cover one kilometer (or one mile). It is the standard measure for endurance training. Source: USATF."
+      },
+      {
+        "q": "How do I calculate my pace?",
+        "a": "Pace (min/km) = time (min) / distance (km). Example: 30 min for 5 km = 6:00 min/km. This calculator derives pace, distance, or time from any two values."
+      },
+      {
+        "q": "What's a good pace for beginners?",
+        "a": "For beginners, 6:30–8:00 min/km (or 10:30–13:00 min/mile) is typical. The conversational test (you can still talk) matters more than speed."
+      },
+      {
+        "q": "How can I improve my pace?",
+        "a": "A mix of 80 % easy aerobic runs plus interval and tempo work yields lasting improvement. Source: polarized training (Stephen Seiler)."
+      },
+      {
+        "q": "What's the difference between pace and speed?",
+        "a": "Pace is time per distance (min/km); speed is distance per time (km/h). Convert: speed (km/h) = 60 / pace (min/km)."
+      },
+      {
+        "q": "What pace for marathon, half-marathon, 10K?",
+        "a": "Recreational averages: marathon ~5:30–6:30 min/km, half marathon ~5:15–6:15 min/km, 10K ~5:00–6:00 min/km. Elite athletes run significantly faster."
+      }
+    ]
   }
 }

@@ -37,6 +37,32 @@
     "categoriesTitle": "Risk Categories (ADA)",
     "normalDesc": "No elevated diabetes risk.",
     "prediabetesDesc": "Elevated risk. Lifestyle changes recommended.",
-    "diabetesDesc": "Diabetes range. Consult a doctor."
+    "diabetesDesc": "Diabetes range. Consult a doctor.",
+    "faq": [
+      {
+        "q": "What is HbA1c?",
+        "a": "HbA1c is the glycated portion of hemoglobin in red blood cells. It reflects the average blood-sugar level over the past 8–12 weeks. Source: American Diabetes Association (ADA)."
+      },
+      {
+        "q": "What are the reference ranges?",
+        "a": "Normal: < 5.7 % (39 mmol/mol). Prediabetes: 5.7–6.4 % (39–47 mmol/mol). Diabetes: ≥ 6.5 % (48 mmol/mol). Source: ADA."
+      },
+      {
+        "q": "How are NGSP % and IFCC mmol/mol converted?",
+        "a": "HbA1c (mmol/mol) = (HbA1c % − 2.15) × 10.929. NGSP (%) is the older US standard; IFCC (mmol/mol) is the international standard."
+      },
+      {
+        "q": "What can falsely alter HbA1c?",
+        "a": "Anemia, hemoglobinopathies (e.g. sickle cell), pregnancy, kidney failure, and recent blood transfusions can distort the value."
+      },
+      {
+        "q": "How often should HbA1c be measured?",
+        "a": "Every 6 months if diabetes is stable; every 3 months if treatment is changing or control is poor. Source: ADA Standards of Care."
+      },
+      {
+        "q": "What HbA1c target is recommended?",
+        "a": "Individualized — typically < 7 % (53 mmol/mol). Young patients without comorbidities may target < 6.5 %; older patients often 7.5–8 % to avoid hypoglycemia."
+      }
+    ]
   }
 }

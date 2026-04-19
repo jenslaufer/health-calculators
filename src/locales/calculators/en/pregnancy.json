@@ -34,6 +34,32 @@
     "milestone37": "Early term",
     "milestone40": "Due date",
     "howItWorks": "How it works",
-    "howItWorksText": "This calculator uses Naegele's rule: add 280 days to the first day of your last menstrual period (LMP). If your cycle is longer or shorter than 28 days, the due date is adjusted accordingly. Gestational age counts from LMP, not from conception."
+    "howItWorksText": "This calculator uses Naegele's rule: add 280 days to the first day of your last menstrual period (LMP). If your cycle is longer or shorter than 28 days, the due date is adjusted accordingly. Gestational age counts from LMP, not from conception.",
+    "faq": [
+      {
+        "q": "How is the due date calculated?",
+        "a": "Naegele's rule adds 280 days to the first day of the last menstrual period (LMP), adjusted for non-28-day cycles. Source: ACOG (American College of Obstetricians and Gynecologists)."
+      },
+      {
+        "q": "From when is the pregnancy week counted?",
+        "a": "Pregnancy weeks are counted from the first day of the last period — not from conception. An average pregnancy lasts 40 weeks (280 days)."
+      },
+      {
+        "q": "How accurate is the calculation?",
+        "a": "Only about 4 % of babies are born on the predicted date. 90 % arrive within ±2 weeks. A first-trimester ultrasound provides a more precise estimate."
+      },
+      {
+        "q": "What's the difference between pregnancy weeks and months?",
+        "a": "Pregnancy 'months' are not calendar months but 4-week (28-day) blocks. So 280 days = 10 four-week 'months', not 9 calendar months."
+      },
+      {
+        "q": "Which prenatal visits happen when?",
+        "a": "First visit weeks 6–8, first-trimester screen weeks 11–14, anatomy scan weeks 19–22, glucose tolerance test weeks 24–28. Source: ACOG guidelines."
+      },
+      {
+        "q": "What happens after the due date?",
+        "a": "Past 40+0 weeks, monitoring intensifies (e.g. CTG/NST). Labor induction is usually recommended between 41+0 and 42+0 weeks."
+      }
+    ]
   }
 }

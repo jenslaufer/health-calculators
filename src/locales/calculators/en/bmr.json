@@ -23,6 +23,14 @@
     "lightlyActive": "Lightly active (1–3 days/week)",
     "moderatelyActive": "Moderately active (3–5 days/week)",
     "veryActive": "Very active (6–7 days/week)",
-    "extremelyActive": "Extremely active (athlete/physical job)"
+    "extremelyActive": "Extremely active (athlete/physical job)",
+    "faq": [
+      { "q": "What is Basal Metabolic Rate (BMR)?", "a": "BMR is the energy your body uses at complete rest for vital functions such as breathing, circulation, and cell metabolism. Source: Academy of Nutrition and Dietetics." },
+      { "q": "Which formula is more accurate: Mifflin-St Jeor or Harris-Benedict?", "a": "The Mifflin-St Jeor equation (1990) is generally considered more accurate for the modern population than the older Harris-Benedict equation (1919). Both estimates typically fall within ±10 % of measured values." },
+      { "q": "What is the difference between BMR and TDEE?", "a": "BMR is your at-rest baseline. TDEE (Total Daily Energy Expenditure) adds physical activity, digestion (TEF), and non-exercise movement by multiplying BMR by an activity factor of 1.2–1.9." },
+      { "q": "Which factors influence BMR?", "a": "Sex, age, height, weight, and especially lean muscle mass. Men typically have a 5–10 % higher BMR than women due to greater muscle mass." },
+      { "q": "Does BMR decrease with age?", "a": "Yes — from around age 30, BMR drops about 1–2 % per decade, mostly due to muscle loss (sarcopenia). Resistance training can substantially slow this decline." },
+      { "q": "Should I eat below my BMR to lose weight?", "a": "Sustained intake below BMR is not recommended by major nutrition bodies because it risks metabolic adaptation, muscle loss, and nutrient deficiencies. Calorie deficits should be set against TDEE, not BMR." }
+    ]
   }
 }

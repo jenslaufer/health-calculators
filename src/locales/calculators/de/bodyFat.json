@@ -24,6 +24,32 @@
     "obese": "Adipositas",
     "fatMass": "Fettmasse",
     "leanMass": "Magermasse",
-    "categoriesTitle": "Körperfett-Kategorien ({gender})"
+    "categoriesTitle": "Körperfett-Kategorien ({gender})",
+    "faq": [
+      {
+        "q": "Was ist ein gesunder Körperfettanteil?",
+        "a": "Männer: 10–20 % gesund, Frauen: 18–28 % gesund (American Council on Exercise). Athleten liegen oft niedriger, sehr niedrige Werte können hormonelle Probleme verursachen."
+      },
+      {
+        "q": "Wie wird der Körperfettanteil hier berechnet?",
+        "a": "Dieser Rechner nutzt die US-Navy-Methode anhand von Umfangmessungen (Hals, Taille, Hüfte) und Körpergröße. Diese hat eine Genauigkeit von ±3–4 % gegenüber DEXA."
+      },
+      {
+        "q": "Welche Methode ist am genauesten?",
+        "a": "DEXA (Doppelröntgen) gilt als Referenzstandard. BIA-Waagen sind weniger genau (±5–8 %), Hautfaltenmessungen liegen dazwischen, abhängig vom Untersucher."
+      },
+      {
+        "q": "Warum ist Körperfett wichtiger als BMI?",
+        "a": "Der BMI unterscheidet nicht zwischen Muskel- und Fettmasse. Zwei Personen mit gleichem BMI können sehr unterschiedliche Stoffwechselrisiken haben — der Körperfettanteil zeigt das deutlich."
+      },
+      {
+        "q": "Wie schnell kann man Körperfett reduzieren?",
+        "a": "Realistisch sind 0,5–1 % Körperfettanteil pro Monat bei moderatem Defizit. Sehr schnelle Reduktion erhöht das Risiko für Muskelverlust."
+      },
+      {
+        "q": "Was ist essentielles Fett?",
+        "a": "Essentielles Fett (Männer ~3 %, Frauen ~12 %) wird für Hormonsynthese, Organschutz und Zellfunktion benötigt. Werte darunter sind gesundheitlich riskant."
+      }
+    ]
   }
 }

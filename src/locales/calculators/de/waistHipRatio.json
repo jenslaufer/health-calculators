@@ -22,6 +22,32 @@
     "recLow": "Dein THV zeigt ein {start}niedriges Gesundheitsrisiko{end}. Behalte deinen gesunden Lebensstil mit regelmäßiger Bewegung und ausgewogener Ernährung bei.",
     "recModerate": "Dein THV zeigt ein {start}mittleres Gesundheitsrisiko{end}. Erwäge, deine körperliche Aktivität zu erhöhen und deinen Taillenumfang zu überwachen.",
     "recHigh": "Dein THV zeigt ein {start}hohes Gesundheitsrisiko{end} gemäß WHO-Richtlinien. Bauchfettleibigkeit ist mit erhöhtem kardiovaskulärem und metabolischem Risiko verbunden. Konsultiere einen Arzt.",
-    "thresholdsTitle": "WHO-Risikoschwellen ({gender})"
+    "thresholdsTitle": "WHO-Risikoschwellen ({gender})",
+    "faq": [
+      {
+        "q": "Was ist das Taille-Hüft-Verhältnis (THV)?",
+        "a": "Das THV ist der Quotient aus Taillen- und Hüftumfang. Es zeigt die Fettverteilung und ist ein Indikator für kardiovaskuläre und metabolische Risiken. Quelle: WHO."
+      },
+      {
+        "q": "Welche WHO-Grenzwerte gelten?",
+        "a": "Bei Männern erhöhtes Risiko ab THV ≥ 0,90; bei Frauen ab ≥ 0,85. Werte darüber gehen mit höherem Risiko für Diabetes Typ 2 und Herzerkrankungen einher."
+      },
+      {
+        "q": "Wie messe ich Taille und Hüfte korrekt?",
+        "a": "Taille: schmalste Stelle zwischen Rippenbogen und Beckenkamm, im Stehen, am Ende einer normalen Ausatmung. Hüfte: an der breitesten Stelle des Gesäßes."
+      },
+      {
+        "q": "Ist THV besser als BMI?",
+        "a": "Studien (Lancet 2011) zeigen, dass das THV das kardiovaskuläre Risiko zuverlässiger vorhersagt als der BMI, insbesondere bei normalgewichtigen Personen mit Bauchfett."
+      },
+      {
+        "q": "Was tun bei erhöhtem THV?",
+        "a": "Reduktion des viszeralen Bauchfetts durch Kaloriendefizit, Ausdauertraining und ballaststoffreiche Ernährung. Krafttraining unterstützt zusätzlich die Insulinsensitivität."
+      },
+      {
+        "q": "Eignet sich das THV auch für Schwangere?",
+        "a": "Nein. Während Schwangerschaft und Stillzeit ist das THV nicht aussagekräftig — der Bauchumfang ist physiologisch verändert."
+      }
+    ]
   }
 }
