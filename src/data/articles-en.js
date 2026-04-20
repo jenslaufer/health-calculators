@@ -308,6 +308,15 @@ slug: 'period-calculator-guide',
     calculatorKey: 'alcoholUnits',
     related: ['blood-alcohol-calculator', 'life-expectancy-calculator', 'smoking-cost-calculator'],
   },
+  {
+    slug: 'body-temperature-calculator',
+    title: 'Body Temperature Calculator — Fever, Normal Range & Hypothermia',
+    description: 'What is a normal body temperature? Learn about fever, hypothermia, temperature variation by site, and when to see a doctor. With free body temperature calculator.',
+    date: '2026-04-20',
+    readTime: '8 min',
+    calculatorKey: 'bodyTemperature',
+    related: ['blood-pressure-guide', 'calculate-blood-sugar'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

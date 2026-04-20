@@ -1,0 +1,58 @@
+{
+  "home": {
+    "calculators": {
+      "bodyTemperature": {
+        "name": "Körpertemperatur-Rechner",
+        "description": "Körpertemperatur zwischen °C und °F umrechnen und Fieber, Normalwert oder Unterkühlung einordnen."
+      }
+    }
+  },
+  "bodyTemperature": {
+    "meta": {
+      "title": "Körpertemperatur-Rechner — Fieber, Normalwert & Unterkühlung",
+      "description": "Körpertemperatur zwischen Celsius und Fahrenheit umrechnen und sofort einordnen — Normalbereich, Fieber oder Unterkühlung. Kostenloser Online-Rechner."
+    },
+    "title": "Körpertemperatur-Rechner",
+    "description": "Körpertemperatur eingeben, zwischen °C und °F umrechnen und sofort einordnen — von Unterkühlung bis Hochfieber.",
+    "unitLabel": "Einheit",
+    "celsius": "Celsius (°C)",
+    "fahrenheit": "Fahrenheit (°F)",
+    "temperatureLabel": "Körpertemperatur",
+    "results": "Ergebnisse",
+    "categoryLabel": "Einordnung",
+    "rangesTitle": "Referenzwerte Körpertemperatur",
+    "rangeCategory": "Kategorie",
+    "rangeValues": "Bereich",
+    "infoTitle": "Wichtige Hintergründe",
+    "disclaimerTitle": "Medizinischer Hinweis",
+    "disclaimer": "Dieser Rechner dient nur zu Informationszwecken und ersetzt keine ärztliche Beratung. Bei Bedenken wegen Fieber oder Unterkühlung wende dich an einen Arzt oder Ärztin.",
+    "category": {
+      "hypothermia": "Unterkühlung",
+      "low": "Zu niedrig",
+      "normal": "Normal",
+      "elevated": "Leicht erhöht",
+      "fever": "Fieber",
+      "high_fever": "Hohes Fieber",
+      "very_high_fever": "Sehr hohes Fieber"
+    },
+    "categoryDesc": {
+      "hypothermia": "Die Körperkerntemperatur ist gefährlich niedrig (unter 35 °C / 95 °F). Sofort den Notruf rufen.",
+      "low": "Leicht unter dem Normalbereich. Kann bei Kälteexposition oder Erkrankungen auftreten. Beobachten.",
+      "normal": "Temperatur liegt im gesunden Bereich (36,1–37,2 °C / 97–99 °F). Kein Handlungsbedarf.",
+      "elevated": "Leicht über dem Normalbereich. Kann durch körperliche Aktivität, Stress oder beginnende Erkrankung verursacht sein.",
+      "fever": "Fieber bestätigt (38,1–39 °C / 100,6–102,2 °F). Ausruhen und viel trinken. Arzt aufsuchen, falls es anhält.",
+      "high_fever": "Hohes Fieber (39,1–40 °C / 102,4–104 °F). Ärztliche Behandlung empfohlen, besonders bei Kindern.",
+      "very_high_fever": "Sehr hohes Fieber (über 40 °C / 104 °F). Sofort ärztliche Hilfe aufsuchen — potenziell gefährlich."
+    },
+    "info": {
+      "measurement": "Messorte",
+      "measurementDesc": "Die Normaltemperatur variiert je nach Messort: rektal (36,6–38 °C), oral (35,5–37,5 °C), axillär (34,7–37,3 °C), tympanal (35,8–38 °C). Die rektale Messung ist am genauesten.",
+      "variation": "Natürliche Schwankungen",
+      "variationDesc": "Die Körpertemperatur schwankt im Tagesverlauf um bis zu 0,5 °C. Sie ist morgens am niedrigsten und am Nachmittag am höchsten. Auch der Eisprung erhöht die Temperatur leicht.",
+      "fever": "Ab wann Fieber behandeln",
+      "feverDesc": "Fieber über 38 °C bei Erwachsenen, das länger als 3 Tage anhält, oder Fieber über 39 °C in jedem Alter sollte ärztlich abgeklärt werden. Bei Säuglingen unter 3 Monaten ist jedes Fieber ein Notfall.",
+      "hypothermia": "Unterkühlungsrisiko",
+      "hypothermiaDesc": "Unterkühlung tritt auf, wenn die Körperkerntemperatur unter 35 °C fällt. Ursachen sind Kälteexposition, Kaltwassertauchen und bestimmte Erkrankungen. Es handelt sich um einen medizinischen Notfall."
+    }
+  }
+}
