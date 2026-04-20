@@ -1,0 +1,58 @@
+{
+  "home": {
+    "calculators": {
+      "bodyTemperature": {
+        "name": "Body Temperature Calculator",
+        "description": "Convert body temperature between °C and °F and interpret fever, normal, and hypothermia ranges."
+      }
+    }
+  },
+  "bodyTemperature": {
+    "meta": {
+      "title": "Body Temperature Calculator — Fever, Normal & Hypothermia Ranges",
+      "description": "Convert body temperature between Celsius and Fahrenheit and instantly see whether your reading indicates normal, fever, or hypothermia. Free online tool."
+    },
+    "title": "Body Temperature Calculator",
+    "description": "Enter your body temperature to convert between °C and °F and get an instant interpretation — from hypothermia to high fever.",
+    "unitLabel": "Unit",
+    "celsius": "Celsius (°C)",
+    "fahrenheit": "Fahrenheit (°F)",
+    "temperatureLabel": "Body temperature",
+    "results": "Results",
+    "categoryLabel": "Interpretation",
+    "rangesTitle": "Temperature Reference Ranges",
+    "rangeCategory": "Category",
+    "rangeValues": "Range",
+    "infoTitle": "What You Should Know",
+    "disclaimerTitle": "Medical disclaimer",
+    "disclaimer": "This calculator is for informational purposes only and does not constitute medical advice. If you are concerned about a fever or low body temperature, consult a healthcare professional.",
+    "category": {
+      "hypothermia": "Hypothermia",
+      "low": "Below normal",
+      "normal": "Normal",
+      "elevated": "Elevated",
+      "fever": "Fever",
+      "high_fever": "High fever",
+      "very_high_fever": "Very high fever"
+    },
+    "categoryDesc": {
+      "hypothermia": "Core body temperature is dangerously low (below 35 °C / 95 °F). Seek emergency medical care immediately.",
+      "low": "Slightly below the normal range. May occur with cold exposure or illness. Monitor closely.",
+      "normal": "Temperature is within the healthy range (36.1–37.2 °C / 97–99 °F). No action needed.",
+      "elevated": "Slightly above normal. This may be caused by mild physical activity, stress, or the early stages of illness.",
+      "fever": "Fever confirmed (38.1–39 °C / 100.6–102.2 °F). Rest and stay hydrated. Consult a doctor if it persists.",
+      "high_fever": "High fever (39.1–40 °C / 102.4–104 °F). Medical attention is recommended, especially for children.",
+      "very_high_fever": "Very high fever (above 40 °C / 104 °F). Seek medical care promptly — this is potentially dangerous."
+    },
+    "info": {
+      "measurement": "Measurement sites",
+      "measurementDesc": "Normal temperature varies by measurement site: rectal (36.6–38 °C), oral (35.5–37.5 °C), axillary (34.7–37.3 °C), and tympanic (35.8–38 °C). Rectal measurement is most accurate.",
+      "variation": "Natural variation",
+      "variationDesc": "Body temperature fluctuates by up to 0.5 °C throughout the day. It is lowest in the early morning and peaks in the late afternoon. Ovulation also raises temperature slightly.",
+      "fever": "When to act on fever",
+      "feverDesc": "Fever above 38 °C (100.4 °F) in adults lasting more than 3 days, or above 39 °C (102.2 °F) at any age, warrants medical evaluation. Any fever in infants under 3 months needs immediate attention.",
+      "hypothermia": "Hypothermia risk",
+      "hypothermiaDesc": "Hypothermia occurs when body temperature drops below 35 °C (95 °F). Causes include cold exposure, immersion in cold water, and certain medical conditions. It is a medical emergency."
+    }
+  }
+}

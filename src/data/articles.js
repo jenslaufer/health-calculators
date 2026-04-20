@@ -308,6 +308,15 @@ slug: 'zyklusrechner-guide',
     calculatorKey: 'alcoholUnits',
     related: ['promille-berechnen', 'lebenserwartung-berechnen', 'rauchen-kosten-rechner'],
   },
+  {
+    slug: 'koerpertemperatur-berechnen',
+    title: 'Körpertemperatur berechnen — Fieber, Normalwert & Unterkühlung',
+    description: 'Was ist Normaltemperatur? Fieber, Unterkühlung, Messunterschiede und wann zum Arzt. Mit kostenlosem Körpertemperatur-Rechner.',
+    date: '2026-04-20',
+    readTime: '8 min',
+    calculatorKey: 'bodyTemperature',
+    related: ['blutdruck-richtig-messen', 'blutzucker-umrechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
