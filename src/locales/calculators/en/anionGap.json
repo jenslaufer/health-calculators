@@ -1,0 +1,80 @@
+{
+  "home": {
+    "calculators": {
+      "anionGap": {
+        "name": "Anion Gap Calculator",
+        "description": "Calculate anion gap and classify metabolic acidosis. Includes albumin correction."
+      }
+    }
+  },
+  "anionGap": {
+    "meta": {
+      "title": "Anion Gap Calculator — Classify Metabolic Acidosis | Health Calculators",
+      "description": "Calculate anion gap (Na − Cl − HCO₃), albumin-corrected anion gap, and get clinical interpretation. Free online calculator for metabolic acidosis."
+    },
+    "title": "Anion Gap Calculator",
+    "description": "Calculate anion gap from sodium, chloride, and bicarbonate with optional albumin correction and clinical interpretation.",
+    "naLabel": "Sodium (Na⁺)",
+    "naPlaceholder": "e.g. 140",
+    "clLabel": "Chloride (Cl⁻)",
+    "clPlaceholder": "e.g. 102",
+    "hco3Label": "Bicarbonate (HCO₃⁻)",
+    "hco3Placeholder": "e.g. 24",
+    "albuminLabel": "Albumin (optional)",
+    "albuminPlaceholder": "e.g. 4.0",
+    "albuminHint": "Enter only if you want the albumin-corrected value (normal: 4.0 g/dL).",
+    "unitLabel": "mEq/L",
+    "unitAlbumin": "g/dL",
+    "calculate": "Calculate",
+    "resultAg": "Anion Gap",
+    "resultCorrectedAg": "Albumin-corrected Anion Gap",
+    "resultInterpretation": "Interpretation",
+    "clinicalHint": "Clinical Hint",
+    "warningPlausibility": "Warning: Input value is outside the physiologic range. Please check your input.",
+    "formula": "Formula",
+    "formulaAg": "AG = Na⁺ − (Cl⁻ + HCO₃⁻)",
+    "formulaCorrected": "Corrected AG = AG + 2.5 × (4.0 − Albumin)",
+    "interpretation": {
+      "low": "Low Anion Gap",
+      "normal": "Normal Anion Gap",
+      "mild": "Mildly Elevated Anion Gap",
+      "high": "High Anion Gap — Metabolic Acidosis"
+    },
+    "hint": {
+      "low": "Causes: hypoalbuminemia, bromide, lithium toxicity, hyperchloremia.",
+      "normal": "Anion gap within normal range (8–12 mEq/L).",
+      "mild": "Mild elevation. Consider clinical context.",
+      "high": "Suspect high-AG metabolic acidosis. Consider MUDPILES: Methanol, Uremia, DKA, Propylene glycol, Iron/Isoniazid, Lactic acidosis, Ethylene glycol, Salicylates."
+    },
+    "referenceTitle": "Reference Ranges",
+    "referenceRanges": [
+      { "range": "< 8 mEq/L", "label": "Low", "hint": "Hypoalbuminemia, bromide, lithium" },
+      { "range": "8 – 12 mEq/L", "label": "Normal", "hint": "No evidence of AG acidosis" },
+      { "range": "13 – 20 mEq/L", "label": "Mildly elevated", "hint": "Consider clinical context" },
+      { "range": "> 20 mEq/L", "label": "High", "hint": "High-AG metabolic acidosis (MUDPILES)" }
+    ],
+    "blogLink": "Read more in the anion gap article",
+    "faq": [
+      {
+        "q": "What is the anion gap?",
+        "a": "The anion gap (AG) is a calculated parameter from serum electrolytes: AG = Na⁺ − (Cl⁻ + HCO₃⁻). It helps narrow the cause of metabolic acidosis."
+      },
+      {
+        "q": "Why is albumin correction important?",
+        "a": "Albumin contributes to negative charge in serum. In hypoalbuminemia the AG is falsely low. The formula AG + 2.5 × (4.0 − albumin) corrects for this effect."
+      },
+      {
+        "q": "What are the most common causes of a high anion gap?",
+        "a": "MUDPILES: Methanol, Uremia, Diabetic Ketoacidosis (DKA), Propylene glycol, Iron/Isoniazid, Lactic acidosis, Ethylene glycol, Salicylates."
+      },
+      {
+        "q": "What causes a low anion gap?",
+        "a": "An AG < 8 mEq/L is most often caused by hypoalbuminemia, hyperchloremia, bromide intoxication, or lithium therapy. Measurement error is also possible."
+      },
+      {
+        "q": "Does this calculator replace medical diagnosis?",
+        "a": "No. The anion gap is a tool for clinical differential diagnosis and must always be interpreted in the context of history, symptoms, and other laboratory values."
+      }
+    ]
+  }
+}
