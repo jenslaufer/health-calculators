@@ -1,0 +1,29 @@
+{
+  "home": {
+    "calculators": {
+      "bmiFrauen": {
+        "name": "BMI Rechner Frauen",
+        "description": "BMI mit frauenspezifischer Einordnung und DGE-Hinweisen berechnen."
+      }
+    }
+  },
+  "bmiFrauen": {
+    "meta": {
+      "title": "BMI Rechner Frauen – Body-Mass-Index speziell für Frauen",
+      "description": "BMI Rechner Frauen: Body-Mass-Index berechnen mit DGE-Einordnung, Hinweisen zu Hormonen, Schwangerschaft und Wechseljahren."
+    },
+    "title": "BMI Rechner Frauen",
+    "description": "Berechne deinen BMI und ordne den Wert mit frauenspezifischem Kontext ein.",
+    "contentHeading": "BMI bei Frauen: Warum der Kontext entscheidend ist",
+    "content": "Die BMI-Formel ist für Frauen und Männer identisch, aber die Interpretation unterscheidet sich. Frauen haben physiologisch einen höheren Körperfettanteil als Männer, selbst bei gleichem BMI. Das ist hormonell bedingt und biologisch sinnvoll: Östrogen begünstigt Fetteinlagerungen an Hüfte, Gesäß und Oberschenkeln. Diese periphere Fettverteilung ist metabolisch oft weniger riskant als viszerales Bauchfett, das mit einem höheren Risiko für Diabetes und Herz-Kreislauf-Erkrankungen verbunden ist. Ein einzelner BMI-Wert zeigt diese Unterschiede nicht.\n\nZusätzlich verändern bestimmte Lebensphasen die Aussagekraft. In der Schwangerschaft steigt das Gewicht durch Kind, Fruchtwasser und Plazenta; der BMI ist dann zur Risikoabschätzung nur begrenzt geeignet. Entscheidend ist in dieser Zeit die empfohlene Gewichtszunahme basierend auf dem Ausgangs-BMI. Auch in der Stillzeit ist der Energiebedarf erhöht, was im BMI nicht direkt sichtbar wird.\n\nMit den Wechseljahren verschiebt sich die Fettverteilung häufig in Richtung Bauchbereich. Der BMI kann dabei unverändert bleiben, obwohl das kardiometabolische Risiko steigt. Deshalb sollte bei Frauen ab etwa 50 Jahren der Taillenumfang oder das Taille-Hüft-Verhältnis ergänzend betrachtet werden. Laut DGE kann bei Frauen über 65 ein leicht höherer BMI-Bereich als günstig gelten.\n\nAuch sportlich aktive Frauen profitieren von einer kombinierten Betrachtung. Bei Krafttraining steigt die Muskelmasse, wodurch der BMI höher ausfallen kann, ohne dass ein ungesund hoher Körperfettanteil vorliegt. Umgekehrt kann ein normaler BMI bei niedrigem Muskelanteil trügerisch beruhigend sein. Für eine realistische Einschätzung empfiehlt sich daher die Kombination aus BMI, Taillenumfang, WHR und – wenn verfügbar – Körperfettmessung.\n\nDer BMI bleibt ein sinnvoller Einstieg, ersetzt aber keine individuelle Gesundheitsbeurteilung. Besonders bei hormonellen Veränderungen, Schwangerschaft, höherem Alter oder intensivem Training ist ein mehrdimensionaler Blick auf die Körperzusammensetzung sinnvoller als ein isolierter Grenzwert.",
+    "relatedTitle": "Verwandte Rechner",
+    "faq": [
+      { "q": "Ist die BMI-Formel für Frauen anders?", "a": "Nein, die Formel ist gleich. Der Unterschied liegt in der Bewertung: Frauen haben bei gleichem BMI meist einen höheren Körperfettanteil als Männer." },
+      { "q": "Wie lautet der Normalbereich laut DGE?", "a": "Für erwachsene Frauen gelten in der Regel 18,5 bis 24,9 kg/m² als Normalbereich. Im höheren Alter kann ein leicht höherer Bereich sinnvoll sein." },
+      { "q": "Ist BMI in der Schwangerschaft aussagekräftig?", "a": "Nur eingeschränkt. Wichtiger ist die empfohlene Gewichtszunahme in Abhängigkeit vom Ausgangs-BMI vor der Schwangerschaft." },
+      { "q": "Was passiert in den Wechseljahren mit dem BMI?", "a": "Der BMI kann gleich bleiben, während sich Fett stärker im Bauchraum verteilt. Daher sollte zusätzlich der Taillenumfang oder das WHR betrachtet werden." },
+      { "q": "Sind sportliche Frauen mit hohem BMI automatisch übergewichtig?", "a": "Nein. Mehr Muskelmasse kann den BMI erhöhen, ohne dass ein erhöhtes Gesundheitsrisiko vorliegt." },
+      { "q": "Welche Werte ergänzen den BMI sinnvoll?", "a": "Taillenumfang, Taille-Hüft-Verhältnis und Körperfettanteil geben ein vollständigeres Bild als der BMI allein." }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "home": {
+    "calculators": {
+      "bmiMaenner": {
+        "name": "BMI Calculator Men",
+        "description": "Calculate BMI with muscle-mass and abdominal-fat context."
+      }
+    }
+  },
+  "bmiMaenner": {
+    "meta": {
+      "title": "BMI Calculator Men",
+      "description": "Calculate BMI for men with context on muscle mass, visceral fat, and risk interpretation."
+    },
+    "title": "BMI Calculator Men",
+    "description": "Calculate your BMI with men-specific interpretation notes.",
+    "contentHeading": "BMI in men: muscle and visceral fat",
+    "content": "BMI is a useful screening metric for men but should be interpreted with body composition in mind. Higher muscle mass can increase BMI without excess body fat, while abdominal fat can raise risk even with moderate BMI. Combine BMI with waist-based measures for better assessment.",
+    "relatedTitle": "Related Calculators",
+    "faq": [
+      { "q": "Why can athletes have high BMI?", "a": "More muscle mass increases body weight and can elevate BMI despite low body-fat levels." },
+      { "q": "Why is waist size important for men?", "a": "Abdominal fat is strongly associated with cardiometabolic risk and should be assessed alongside BMI." },
+      { "q": "What complements BMI best?", "a": "Waist circumference, waist-to-hip ratio, and body-fat assessment improve interpretation." }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "home": {
+    "calculators": {
+      "bmiFrauen": {
+        "name": "BMI Calculator Women",
+        "description": "Calculate BMI with women-specific context and guidance."
+      }
+    }
+  },
+  "bmiFrauen": {
+    "meta": {
+      "title": "BMI Calculator Women",
+      "description": "Calculate BMI for women with context on hormones, life phases, and body composition."
+    },
+    "title": "BMI Calculator Women",
+    "description": "Calculate your BMI with women-specific interpretation notes.",
+    "contentHeading": "BMI in women: context matters",
+    "content": "BMI uses the same formula for everyone, but women-specific interpretation is important. Hormonal changes, life stage, and body fat distribution can change risk despite similar BMI values. Use BMI as a starting point and combine it with waist measures and body-fat estimates when needed.",
+    "relatedTitle": "Related Calculators",
+    "faq": [
+      { "q": "Is the BMI formula different for women?", "a": "No, the formula is the same, but interpretation can differ due to physiological differences." },
+      { "q": "Is BMI reliable during pregnancy?", "a": "Only partially. Pregnancy-specific weight-gain guidance is more useful during that period." },
+      { "q": "What should I use with BMI?", "a": "Waist-to-hip ratio and body-fat estimates are useful complementary metrics." }
+    ]
+  }
+}
