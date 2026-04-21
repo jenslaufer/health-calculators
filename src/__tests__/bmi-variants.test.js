@@ -11,7 +11,7 @@ describe('useBmi composable', () => {
     expect(calcBmi(154, 67, 'imperial')).toBeCloseTo(24.1, 0)
   })
 
-  it('returns null for invalid missing input', () => {
+  it('returns null for missing input', () => {
     expect(calcBmi(null, 170, 'metric')).toBeNull()
     expect(calcBmi(70, null, 'metric')).toBeNull()
   })
