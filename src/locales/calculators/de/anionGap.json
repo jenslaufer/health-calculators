@@ -1,0 +1,80 @@
+{
+  "home": {
+    "calculators": {
+      "anionGap": {
+        "name": "Anionenlücken-Rechner",
+        "description": "Anionenlücke berechnen und metabolische Azidose einordnen. Mit Albumin-Korrektur."
+      }
+    }
+  },
+  "anionGap": {
+    "meta": {
+      "title": "Anionenlücken-Rechner — Metabolische Azidose einordnen | Health Calculators",
+      "description": "Anionenlücke (Na − Cl − HCO₃) berechnen, albumin-korrigierte Anionenlücke berechnen und Ergebnis klinisch einordnen. Kostenloser Online-Rechner."
+    },
+    "title": "Anionenlücken-Rechner",
+    "description": "Anionenlücke aus Natrium, Chlorid und Bikarbonat berechnen, mit optionaler Albumin-Korrektur und klinischer Einordnung.",
+    "naLabel": "Natrium (Na⁺)",
+    "naPlaceholder": "z.B. 140",
+    "clLabel": "Chlorid (Cl⁻)",
+    "clPlaceholder": "z.B. 102",
+    "hco3Label": "Bikarbonat (HCO₃⁻)",
+    "hco3Placeholder": "z.B. 24",
+    "albuminLabel": "Albumin (optional)",
+    "albuminPlaceholder": "z.B. 4,0",
+    "albuminHint": "Nur angeben, wenn ein albumin-korrigierter Wert gewünscht wird (normal: 4,0 g/dL).",
+    "unitLabel": "mEq/L",
+    "unitAlbumin": "g/dL",
+    "calculate": "Berechnen",
+    "resultAg": "Anionenlücke",
+    "resultCorrectedAg": "Albumin-korrigierte Anionenlücke",
+    "resultInterpretation": "Einordnung",
+    "clinicalHint": "Klinischer Hinweis",
+    "warningPlausibility": "Achtung: Eingabewert außerhalb des physiologischen Bereichs. Bitte Eingabe prüfen.",
+    "formula": "Formel",
+    "formulaAg": "AG = Na⁺ − (Cl⁻ + HCO₃⁻)",
+    "formulaCorrected": "Korrigierte AG = AG + 2,5 × (4,0 − Albumin)",
+    "interpretation": {
+      "low": "Niedrige Anionenlücke",
+      "normal": "Normale Anionenlücke",
+      "mild": "Leicht erhöhte Anionenlücke",
+      "high": "Hohe Anionenlücke — metabolische Azidose"
+    },
+    "hint": {
+      "low": "Ursachen: Hypoalbuminämie, Bromid, Lithiumtoxizität, Hyperchlorämie.",
+      "normal": "Anionenlücke im Normbereich (8–12 mEq/L).",
+      "mild": "Leichte Erhöhung. Klinischen Kontext prüfen.",
+      "high": "Verdacht auf High-AG-Azidose. MUDPILES bedenken: Methanol, Urämie, Ketoazidose (DKA), Propylenglykol, Eisen/Isoniazid, Laktatazidose, Ethylenglykol, Salicylate."
+    },
+    "referenceTitle": "Referenzbereiche",
+    "referenceRanges": [
+      { "range": "< 8 mEq/L", "label": "Niedrig", "hint": "Hypoalbuminämie, Bromid, Lithium" },
+      { "range": "8 – 12 mEq/L", "label": "Normal", "hint": "Kein Hinweis auf AG-Azidose" },
+      { "range": "13 – 20 mEq/L", "label": "Leicht erhöht", "hint": "Klinischen Kontext prüfen" },
+      { "range": "> 20 mEq/L", "label": "Hoch", "hint": "High-AG metabolische Azidose (MUDPILES)" }
+    ],
+    "blogLink": "Mehr erfahren im Artikel zur Anionenlücke",
+    "faq": [
+      {
+        "q": "Was ist die Anionenlücke?",
+        "a": "Die Anionenlücke (AG) ist ein berechneter Parameter aus Serum-Elektrolyten: AG = Na⁺ − (Cl⁻ + HCO₃⁻). Sie hilft, die Ursache einer metabolischen Azidose einzugrenzen."
+      },
+      {
+        "q": "Warum ist die Albumin-Korrektur wichtig?",
+        "a": "Albumin trägt zur negativen Ladung im Serum bei. Bei Hypoalbuminämie ist die AG falsch niedrig. Die Formel AG + 2,5 × (4,0 − Albumin) korrigiert diesen Effekt."
+      },
+      {
+        "q": "Was sind die häufigsten Ursachen einer hohen Anionenlücke?",
+        "a": "MUDPILES: Methanol, Urämie, Diabetische Ketoazidose (DKA), Propylenglykol, Eisen/Isoniazid, Laktatazidose, Ethylenglykol, Salicylate."
+      },
+      {
+        "q": "Was bedeutet eine niedrige Anionenlücke?",
+        "a": "Eine AG < 8 mEq/L entsteht oft durch Hypoalbuminämie, Hyperchlorämie, Bromid-Intoxikation oder Lithiumtherapie. Selten ist ein Messfehler möglich."
+      },
+      {
+        "q": "Ersetzt der Rechner ärztliche Diagnose?",
+        "a": "Nein. Die Anionenlücke ist ein Hilfsmittel zur klinischen Differenzialdiagnostik und muss immer im Kontext von Anamnese, Symptomen und weiteren Laborwerten interpretiert werden."
+      }
+    ]
+  }
+}
