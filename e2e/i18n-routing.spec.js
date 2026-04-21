@@ -189,13 +189,13 @@ test.describe('SEO', () => {
 test.describe('Navigation uses locale prefix', () => {
   test('DE home calculator links use /de/ prefix', async ({ page }) => {
     await page.goto('de/')
-    const firstCalcLink = page.locator('a[href*="/de/bmi-rechner"]')
+    const firstCalcLink = page.locator('a[href="/de/bmi-rechner"]')
     await expect(firstCalcLink).toBeVisible()
   })
 
   test('EN home calculator links use /en/ prefix', async ({ page }) => {
     await page.goto('en/')
-    const firstCalcLink = page.locator('a[href*="/en/bmi-calculator"]')
+    const firstCalcLink = page.locator('a[href="/en/bmi-calculator"]')
     await expect(firstCalcLink).toBeVisible()
   })
 

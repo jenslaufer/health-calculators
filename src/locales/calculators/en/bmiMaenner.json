@@ -1,0 +1,51 @@
+{
+  "home": {
+    "calculators": {
+      "bmiMaenner": {
+        "name": "BMI Calculator Men",
+        "description": "Calculate BMI with muscle mass notes and DGE classification for men."
+      }
+    }
+  },
+  "bmiMaenner": {
+    "meta": {
+      "title": "BMI Calculator Men — Body Mass Index for Men",
+      "description": "BMI calculator for men with DGE classification table and muscle mass correction for athletes. Includes visceral fat risk notes. Free, instant results."
+    },
+    "title": "BMI Calculator Men",
+    "description": "Calculate your BMI and get a men-specific assessment based on DGE guidelines, including muscle mass context for athletes.",
+    "contentHeading": "BMI for Men: Muscle Mass, Fat Distribution and Health Risk",
+    "content": "The men's BMI calculator uses the same formula as the general BMI calculator but provides an assessment tailored to typical male body composition. Men carry more muscle mass and bone density than women, both of which directly elevate BMI — since muscle tissue weighs more than fat tissue. An athlete with a muscular build can reach a BMI of 27–29 kg/m² without being overfat.\n\nThe athlete paradox particularly affects male strength athletes and bodybuilders: their high muscle mass pushes BMI into the overweight range despite a physiologically healthy body fat percentage. In such cases, measuring body fat percentage (e.g. via the U.S. Navy method) is a more meaningful alternative.\n\nMen tend to store fat preferentially in the abdominal area — visceral or android fat. This depot is metabolically active and elevates the risk of type 2 diabetes, cardiovascular disease, and hypertension more than peripheral fat. Even within the upper normal BMI range (22–24.9 kg/m²), men with a large waist circumference may already face elevated health risk.\n\nDGE therefore recommends men become vigilant from a waist circumference of 94 cm and seek medical advice from 102 cm — regardless of BMI. Clinical studies show that mortality risk for men rises modestly from BMI 25 and markedly from BMI 30.\n\nFor a complete assessment, men should supplement BMI with at least waist circumference measurement and waist-to-hip ratio. Those doing regular strength training benefit from a body fat analysis that separately quantifies muscle and fat mass.",
+    "relatedTitle": "Related Calculators",
+    "faq": [
+      {
+        "q": "Why is BMI often too high for men?",
+        "a": "BMI does not distinguish between muscle and fat mass. Men have on average 20–30% more muscle mass than women, which elevates BMI without health implications. Strength athletes in particular are systematically overestimated by BMI."
+      },
+      {
+        "q": "What is the healthy BMI range for men according to DGE?",
+        "a": "WHO and DGE apply the same normal range for men: 18.5–24.9 kg/m². For men over 65, DGE recommends a slightly elevated target range of 24–29 kg/m²."
+      },
+      {
+        "q": "How does muscle mass affect BMI?",
+        "a": "Muscle weighs more than fat tissue. A man weighing 90 kg at 175 cm has a BMI of 29.4 regardless of whether those 90 kg are muscle or fat. Athletes should interpret their BMI in the context of their muscle mass."
+      },
+      {
+        "q": "When does BMI become a health concern for men?",
+        "a": "Clinical studies show heart attack risk rises modestly for men from BMI 25 and markedly from BMI 30. Since male overweight is often abdominally distributed (visceral fat), a waist circumference above 94 cm is an additional warning signal."
+      },
+      {
+        "q": "How are BMI and visceral fat related in men?",
+        "a": "Men are genetically and hormonally predisposed to store fat in the abdominal cavity. Visceral fat is metabolically active and raises the risk of diabetes, dyslipidaemia, and heart disease. A high BMI correlates more strongly with visceral fat in men than in women."
+      },
+      {
+        "q": "Do I need to specify my gender for the BMI calculator?",
+        "a": "The BMI formula itself is gender-neutral. For interpretation — especially regarding muscle mass and fat distribution — gender is highly relevant. Supplementary calculators such as the body fat calculator explicitly incorporate gender."
+      },
+      {
+        "q": "What supplements BMI well for men?",
+        "a": "Waist-to-hip ratio is particularly informative for men with abdominal fat. The body fat calculator using the U.S. Navy method provides a direct body fat estimate. Both meaningfully complement BMI."
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "home": {
+    "calculators": {
+      "bmiFrauen": {
+        "name": "BMI Calculator Women",
+        "description": "Calculate BMI with gender-specific DGE classification for women."
+      }
+    }
+  },
+  "bmiFrauen": {
+    "meta": {
+      "title": "BMI Calculator Women — Body Mass Index for Women",
+      "description": "BMI calculator for women with DGE classification table. Includes notes on hormones, pregnancy, menopause, and muscle mass. Free, instant results."
+    },
+    "title": "BMI Calculator Women",
+    "description": "Calculate your BMI and get a women-specific assessment based on DGE guidelines.",
+    "contentHeading": "BMI for Women: Biological Specifics and Limitations",
+    "content": "The women's BMI calculator uses the same formula as the general BMI calculator but provides an assessment tailored to female physiology. Women naturally carry 5–10% more body fat than men at the same BMI. This is hormonally driven: oestrogen promotes fat storage in the breasts, hips, and thighs — so-called peripheral fat — which carries lower cardiovascular risk than visceral abdominal fat.\n\nDuring pregnancy, body weight changes significantly and BMI becomes uninformative. Recommended weight gain during pregnancy depends on pre-pregnancy BMI and is assessed separately. During breastfeeding, caloric requirements are elevated in ways the BMI does not reflect.\n\nAfter menopause, declining oestrogen causes fat to shift from the periphery toward the abdomen. This redistribution increases cardiovascular risk even without a change in BMI. Women over 50 should additionally monitor waist circumference or waist-to-hip ratio.\n\nAthletic women with high muscle mass may show an elevated BMI without being overfat. For competitive female athletes, body fat percentage is a more meaningful measure than BMI.\n\nThe DGE notes that BMI imperfectly reflects individual health in women. For women over 65, a slightly elevated range of 24–29 kg/m² is considered healthy. A complete picture requires combining BMI with waist circumference, waist-to-hip ratio, and body fat percentage.",
+    "relatedTitle": "Related Calculators",
+    "faq": [
+      {
+        "q": "Does BMI work the same way for women as for men?",
+        "a": "The formula is identical. However, interpretation differs: women carry physiologically 5–10% more body fat than men at the same BMI. WHO and DGE use the same thresholds but emphasise that BMI alone is insufficient for women."
+      },
+      {
+        "q": "What is the healthy BMI range for women according to DGE?",
+        "a": "DGE recommends the same normal range as WHO for adult women: 18.5–24.9 kg/m². For women over 65, a range of 24–29 kg/m² is considered favourable, as slightly higher weight may be protective in older age."
+      },
+      {
+        "q": "Is BMI meaningful during pregnancy?",
+        "a": "No. During pregnancy BMI is not suitable for assessing health status. Recommended weight gain depends on pre-pregnancy BMI and is evaluated separately using IOM guidelines."
+      },
+      {
+        "q": "Why does BMI often increase after menopause?",
+        "a": "Declining oestrogen levels shift body fat from the periphery (hips, thighs) to the abdominal area. Simultaneously, muscle mass decreases, lowering basal metabolic rate. Both factors contribute to weight gain reflected in BMI."
+      },
+      {
+        "q": "Are athletic women with a high BMI overweight?",
+        "a": "Not necessarily. Women with high muscle mass — through strength or combat sports — may have an elevated BMI without being overfat. Body fat percentage is a better measure in these cases."
+      },
+      {
+        "q": "What waist circumference is critical for women?",
+        "a": "WHO recommends women aim for a waist circumference below 80 cm. From 88 cm, WHO identifies elevated risk for cardiovascular disease and type 2 diabetes."
+      },
+      {
+        "q": "What is the sensible next step after using the BMI calculator?",
+        "a": "Supplement BMI with waist-to-hip ratio and, where available, body fat percentage. These values together give a more complete picture of body composition and health risk."
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "home": {
+    "calculators": {
+      "bmiMaenner": {
+        "name": "BMI Rechner Männer",
+        "description": "BMI berechnen mit Muskelmasse-Hinweisen und DGE-Tabelle für Männer."
+      }
+    }
+  },
+  "bmiMaenner": {
+    "meta": {
+      "title": "BMI Rechner Männer — Body-Mass-Index für Männer berechnen",
+      "description": "BMI Rechner für Männer: Berechne deinen Body-Mass-Index mit DGE-Tabelle und Muskelmasse-Korrektur für Sportler. Hinweise zu viszeralem Fett und Gesundheitsrisiken. Kostenlos."
+    },
+    "title": "BMI Rechner Männer",
+    "description": "Berechne deinen BMI und erhalte eine männerspezifische Einordnung nach DGE-Richtlinien mit Hinweisen zu Muskelmasse.",
+    "contentHeading": "BMI bei Männern: Muskelmasse, Fettverteilung und Gesundheitsrisiko",
+    "content": "Der BMI-Rechner für Männer berechnet denselben Body-Mass-Index wie der allgemeine Rechner, liefert aber eine Einordnung, die auf die typische männliche Körperzusammensetzung zugeschnitten ist. Männer haben im Vergleich zu Frauen einen höheren Anteil an Muskelmasse und Knochendichte. Das beeinflusst den BMI direkt, denn Muskelgewebe ist schwerer als Fettgewebe. Ein Sportler mit ausgeprägt muskulöser Physis kann einen BMI von 27–29 kg/m² erreichen, ohne dabei körperfettbedingt übergewichtig zu sein.\n\nDer sogenannte Athleten-Paradox betrifft besonders männliche Kraftsportler und Bodybuilder: Ihr hoher Muskelanteil treibt den BMI in den Übergewichtsbereich, obwohl ihr Körperfettanteil physiologisch gesund ist. In solchen Fällen empfiehlt sich die Messung des Körperfettanteils (z. B. nach der US-Navy-Methode) als aussagekräftigere Alternative.\n\nMänner neigen dazu, Fett bevorzugt im Bauchbereich einzulagern – das sogenannte viszerale oder androide Fett. Dieses Fettdepot ist metabolisch aktiv und erhöht das Risiko für Typ-2-Diabetes, Herz-Kreislauf-Erkrankungen und Bluthochdruck stärker als das periphere Fett. Bereits bei einem BMI im oberen Normalbereich (22–24,9 kg/m²) kann bei Männern mit breitem Bauchumfang ein erhöhtes Gesundheitsrisiko vorliegen.\n\nDie DGE empfiehlt Männern daher, ab einem Taillenumfang von 94 cm wachsam zu werden und ab 102 cm ärztliche Beratung zu suchen – unabhängig vom BMI. Klinische Studien zeigen, dass die Sterblichkeitsrisiken bei Männern schon ab einem BMI von 25 kg/m² leicht ansteigen, stärker noch ab 30 kg/m².\n\nUm eine vollständige Einschätzung zu erhalten, sollten Männer ergänzend zum BMI mindestens ihren Taillenumfang messen und das Taille-Hüft-Verhältnis berechnen. Wer regelmäßig Krafttraining betreibt, profitiert von einer Körperfettanalyse, die Muskel- und Fettmasse getrennt ausweist.",
+    "relatedTitle": "Verwandte Rechner",
+    "faq": [
+      {
+        "q": "Warum ist der BMI bei Männern oft zu hoch?",
+        "a": "Der BMI unterscheidet nicht zwischen Muskel- und Fettmasse. Männer haben im Schnitt 20–30 % mehr Muskelmasse als Frauen, was den BMI erhöht, ohne gesundheitlich problematisch zu sein. Besonders Kraftsportler werden durch den BMI systematisch überschätzt."
+      },
+      {
+        "q": "Was ist der gesunde BMI-Bereich für Männer laut DGE?",
+        "a": "Laut WHO und DGE gilt für Männer derselbe Normalbereich: 18,5–24,9 kg/m². Für Männer über 65 empfiehlt die DGE einen leicht erhöhten Zielbereich von 24–29 kg/m²."
+      },
+      {
+        "q": "Wie wirkt sich Muskelmasse auf den BMI aus?",
+        "a": "Muskeln sind schwerer als Fettgewebe. Ein Mann mit 90 kg Körpergewicht und 175 cm Größe hat einen BMI von 29,4 – unabhängig davon, ob diese 90 kg aus Muskel oder Fett bestehen. Sportler sollten ihren BMI daher im Kontext ihrer Muskelmasse interpretieren."
+      },
+      {
+        "q": "Ab wann ist ein BMI bei Männern gesundheitlich bedenklich?",
+        "a": "Klinische Studien zeigen, dass das Herzinfarktrisiko bei Männern ab BMI 25 leicht und ab BMI 30 deutlich ansteigt. Da männliches Übergewicht oft bauchbetont verteilt ist (viszerales Fett), ist zusätzlich ein Taillenumfang über 94 cm ein Warnsignal."
+      },
+      {
+        "q": "Wie hängen BMI und viszerales Fett bei Männern zusammen?",
+        "a": "Männer neigen genetisch und hormonell dazu, Fett im Bauchraum einzulagern. Viszerales Fett ist metabolisch aktiv und erhöht das Risiko für Diabetes, Fettstoffwechselstörungen und Herzerkrankungen. Ein hoher BMI geht bei Männern häufiger mit viszeralem Fett einher als bei Frauen."
+      },
+      {
+        "q": "Muss ich für den BMI-Rechner mein Geschlecht angeben?",
+        "a": "Die BMI-Formel selbst ist geschlechtsneutral. Für die Interpretation – besonders im Hinblick auf Muskelmasse und Fettverteilung – ist das Geschlecht jedoch relevant. Ergänzende Rechner wie der Körperfett-Rechner beziehen das Geschlecht explizit ein."
+      },
+      {
+        "q": "Was sind sinnvolle Ergänzungen zum BMI für Männer?",
+        "a": "Das Taille-Hüft-Verhältnis ist besonders bei Männern mit Bauchfett aufschlussreich. Der Körperfett-Rechner nach der US-Navy-Methode liefert eine direkte Einschätzung des Fettanteils. Beide Werte ergänzen den BMI sinnvoll."
+      }
+    ]
+  }
+}

@@ -22,13 +22,17 @@ export const routeMap = {
   blog: { de: 'blog', en: 'blog' },
 }
 
-// { slug: component } maps for blog routes
+// { slug: component } maps for blog routes (calculators without blog are skipped)
 export const blogComponentsDe = Object.fromEntries(
-  calculatorMetas.map(m => [m.blog.de.slug, m.blog.de.component])
+  calculatorMetas
+    .filter(m => m.blog?.de)
+    .map(m => [m.blog.de.slug, m.blog.de.component])
 )
 
 export const blogComponentsEn = Object.fromEntries(
-  calculatorMetas.map(m => [m.blog.en.slug, m.blog.en.component])
+  calculatorMetas
+    .filter(m => m.blog?.en)
+    .map(m => [m.blog.en.slug, m.blog.en.component])
 )
 
 // Old redirect paths for backwards compatibility (only for calculators that define one)

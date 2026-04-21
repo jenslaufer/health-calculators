@@ -1,0 +1,51 @@
+{
+  "home": {
+    "calculators": {
+      "bmiFrauen": {
+        "name": "BMI Rechner Frauen",
+        "description": "BMI berechnen mit Einordnung nach DGE-Tabelle für Frauen."
+      }
+    }
+  },
+  "bmiFrauen": {
+    "meta": {
+      "title": "BMI Rechner Frauen — Body-Mass-Index für Frauen berechnen",
+      "description": "BMI Rechner speziell für Frauen: Berechne deinen Body-Mass-Index mit DGE-Tabelle, Hinweisen zu Hormonen, Schwangerschaft und Muskelmasse. Kostenlos, sofortige Ergebnisse."
+    },
+    "title": "BMI Rechner Frauen",
+    "description": "Berechne deinen BMI und erhalte eine frauenspezifische Einordnung nach DGE-Richtlinien.",
+    "contentHeading": "BMI bei Frauen: Besonderheiten und Einschränkungen",
+    "content": "Der BMI-Rechner für Frauen nutzt dieselbe Formel wie der allgemeine BMI-Rechner, berücksichtigt aber die biologischen Besonderheiten des weiblichen Körpers bei der Bewertung. Frauen haben physiologisch einen höheren Körperfettanteil als Männer – auch bei identischem BMI. Ein BMI von 22 kg/m² bedeutet bei einer Frau typischerweise 25–30 % Körperfett, bei einem Mann hingegen nur 15–20 %. Diese Unterschiede sind hormonell bedingt und biologisch notwendig: Östrogen fördert die Fetteinlagerung, besonders im Bereich von Brust, Hüften und Oberschenkeln – dem sogenannten peripheren Fett. Dieses hat im Gegensatz zum viszeralen Bauchfett ein geringeres kardiovaskuläres Risiko.\n\nWährend der Schwangerschaft verändert sich das Gewicht erheblich – der BMI ist in diesem Zeitraum nicht aussagekräftig. Für schwangere Frauen gelten eigene Empfehlungen zur Gewichtszunahme, die vom Ausgangs-BMI abhängen. Stillende Frauen benötigen zudem einen erhöhten Kalorienbedarf, der sich im BMI nicht widerspiegelt.\n\nMit dem Rückgang der Östrogenspiegel in den Wechseljahren verändert sich die Fettverteilung: Peripheres Fett wandert zunehmend in die Körpermitte. Der BMI zeigt diese Verschiebung nicht an, obwohl sie das kardiovaskuläre Risiko erhöht. Frauen ab 50 sollten ergänzend ihren Taillenumfang oder das Taille-Hüft-Verhältnis im Blick behalten.\n\nSportlich aktive Frauen können trotz niedrigem Körperfettanteil einen unauffälligen BMI haben – oder umgekehrt. Kraftsportlerinnen haben durch ihre höhere Muskelmasse einen erhöhten BMI, ohne gesundheitlich gefährdet zu sein. Für Leistungssportlerinnen ist der Körperfettanteil ein deutlich aussagekräftigerer Wert.\n\nDie DGE weist darauf hin, dass der BMI bei Frauen die individuelle Gesundheit nur eingeschränkt abbildet. Besonders bei Frauen über 65 verschiebt sich der als gesund geltende Bereich leicht nach oben (24–29 kg/m²). Für eine vollständige Bewertung empfiehlt sich die Kombination mit dem Taillenumfang, dem Taille-Hüft-Verhältnis und – bei konkretem Verdacht – einer Messung des Körperfettanteils.",
+    "relatedTitle": "Verwandte Rechner",
+    "faq": [
+      {
+        "q": "Gilt der BMI für Frauen genauso wie für Männer?",
+        "a": "Die Berechnungsformel ist identisch. Die Interpretation unterscheidet sich jedoch: Frauen haben physiologisch 5–10 % mehr Körperfett als Männer bei gleichem BMI. WHO und DGE verwenden trotzdem dieselben Grenzwerte, betonen aber, dass der BMI bei Frauen alleine nicht ausreicht."
+      },
+      {
+        "q": "Was ist der gesunde BMI-Bereich für Frauen laut DGE?",
+        "a": "Die DGE empfiehlt für erwachsene Frauen denselben Normalbereich wie die WHO: 18,5–24,9 kg/m². Für Frauen über 65 wird ein Bereich von 24–29 kg/m² als günstig angesehen, da ein etwas höheres Gewicht im Alter protektiv wirken kann."
+      },
+      {
+        "q": "Ist der BMI in der Schwangerschaft aussagekräftig?",
+        "a": "Nein. Während der Schwangerschaft ist der BMI nicht zur Beurteilung des Gesundheitszustands geeignet. Die empfohlene Gewichtszunahme hängt vom Ausgangs-BMI vor der Schwangerschaft ab und wird separat nach IOM-Leitlinien bewertet."
+      },
+      {
+        "q": "Warum steigt der BMI in den Wechseljahren?",
+        "a": "Mit dem Abfall der Östrogenspiegel verlagert sich Körperfett von der Peripherie (Hüften, Oberschenkel) in den Bauchbereich. Gleichzeitig nimmt die Muskelmasse ab, was den Grundumsatz senkt. Beides trägt zu einer Gewichtszunahme bei, die sich im BMI widerspiegelt."
+      },
+      {
+        "q": "Sind Sportlerinnen mit hohem BMI übergewichtig?",
+        "a": "Nicht zwangsläufig. Frauen mit hoher Muskelmasse – z. B. durch Kraft- oder Kampfsport – können einen erhöhten BMI haben, ohne überfettet zu sein. In solchen Fällen ist der Körperfettanteil die bessere Messgröße."
+      },
+      {
+        "q": "Welcher Taillenumfang ist für Frauen kritisch?",
+        "a": "Die WHO empfiehlt Frauen, einen Taillenumfang unter 80 cm anzustreben. Ab 88 cm spricht die WHO von einem erhöhten Gesundheitsrisiko für Herz-Kreislauf-Erkrankungen und Typ-2-Diabetes."
+      },
+      {
+        "q": "Was ist nach dem BMI-Rechner der sinnvolle nächste Schritt?",
+        "a": "Ergänze den BMI durch das Taille-Hüft-Verhältnis und, falls verfügbar, den Körperfettanteil. Diese Werte geben gemeinsam ein vollständigeres Bild deiner Körperzusammensetzung und des Gesundheitsrisikos."
+      }
+    ]
+  }
+}
