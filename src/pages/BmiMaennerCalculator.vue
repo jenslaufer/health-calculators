@@ -2,30 +2,27 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
-import BlogBanner from '../components/BlogBanner.vue'
-import AffiliateBanner from '../components/AffiliateBanner.vue'
-import AdSlot from '../components/AdSlot.vue'
-import CalculatorFAQ from '../components/CalculatorFAQ.vue'
-import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { calcBmi, getBmiCategory, getBmiBarPosition } from '../composables/useBmi.js'
+import CalculatorFAQ from '../components/CalculatorFAQ.vue'
+import AdSlot from '../components/AdSlot.vue'
+import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
 
-const faqItems = computed(() => tm('bmi.faq') || [])
+const faqItems = computed(() => tm('bmiMaenner.faq') || [])
 
 useHead(() => ({
-  title: t('bmi.meta.title'),
-  description: t('bmi.meta.description'),
-  routeKey: 'bmi',
+  title: t('bmiMaenner.meta.title'),
+  description: t('bmiMaenner.meta.description'),
+  routeKey: 'bmiMaenner',
   jsonLd: {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'BMI Calculator',
-    url: 'https://healthcalculator.app/bmi',
+    name: t('bmiMaenner.title'),
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   },
 }))
 
@@ -35,7 +32,6 @@ const unit = ref('metric')
 
 const bmi = computed(() => calcBmi(weight.value, height.value, unit.value))
 const category = computed(() => getBmiCategory(bmi.value))
-
 const bmiFormatted = computed(() => bmi.value?.toFixed(1))
 const barPosition = computed(() => getBmiBarPosition(bmi.value))
 </script>
@@ -44,8 +40,8 @@ const barPosition = computed(() => getBmiBarPosition(bmi.value))
   <div>
     <div class="mb-10">
       <router-link :to="localePath('home')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; {{ t('common.backToAll') }}</router-link>
-      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('bmi.title') }}</h1>
-      <p class="text-base text-stone-500 font-normal">{{ t('bmi.description') }}</p>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-2">{{ t('bmiMaenner.title') }}</h1>
+      <p class="text-base text-stone-500 font-normal">{{ t('bmiMaenner.description') }}</p>
     </div>
 
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
@@ -70,7 +66,7 @@ const barPosition = computed(() => getBmiBarPosition(bmi.value))
           <input
             v-model.number="height"
             type="number"
-            :placeholder="unit === 'metric' ? '170' : '67'"
+            :placeholder="unit === 'metric' ? '180' : '71'"
             class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
           />
         </div>
@@ -81,14 +77,12 @@ const barPosition = computed(() => getBmiBarPosition(bmi.value))
           <input
             v-model.number="weight"
             type="number"
-            :placeholder="unit === 'metric' ? '70' : '154'"
+            :placeholder="unit === 'metric' ? '80' : '176'"
             class="w-full border border-stone-300 rounded-lg px-4 py-3.5 text-stone-900 text-base font-medium bg-white focus:outline-none focus:border-stone-600 focus:bg-stone-50 transition-all duration-150"
           />
         </div>
       </div>
     </div>
-
-    <AffiliateBanner class="my-6" />
 
     <div v-if="bmi" class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
       <div class="flex items-baseline gap-3 mb-4">
@@ -103,10 +97,7 @@ const barPosition = computed(() => getBmiBarPosition(bmi.value))
           <div class="flex-1 bg-yellow-500"></div>
           <div class="flex-1 bg-red-500"></div>
         </div>
-        <div
-          class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform"
-          :style="{ left: barPosition + '%' }"
-        ></div>
+        <div class="absolute top-0 w-1 h-full bg-stone-900 rounded-full transform" :style="{ left: barPosition + '%' }"></div>
       </div>
       <div class="flex text-[10px] text-stone-400 tabular-nums">
         <div class="flex-1">18.5</div>
@@ -116,43 +107,54 @@ const barPosition = computed(() => getBmiBarPosition(bmi.value))
       </div>
     </div>
 
-    <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8">
-      <h2 class="text-lg font-semibold text-stone-900 mb-3">{{ t('bmi.categories') }}</h2>
+    <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
+      <h2 class="text-lg font-semibold text-stone-900 mb-3">DGE-Einordnung für Männer</h2>
       <div class="space-y-3.5">
-        <div class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
-          <div class="flex items-center gap-3">
-            <div class="w-2.5 h-2.5 rounded-full bg-blue-400/8 border border-stone-300"></div>
-            <span class="text-sm text-stone-600">{{ t('bmi.underweight') }}</span>
-          </div>
+        <div class="flex items-start justify-between border-b border-stone-100 pb-3.5">
+          <span class="text-sm text-stone-600">Untergewicht <span class="text-xs text-stone-400 block">Risiko für Muskelabbau und Leistungsabfall</span></span>
           <span class="text-sm font-medium text-stone-900 tabular-nums">&lt; 18.5</span>
         </div>
-        <div class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
-          <div class="flex items-center gap-3">
-            <div class="w-2.5 h-2.5 rounded-full bg-green-600"></div>
-            <span class="text-sm text-stone-600">{{ t('bmi.normal') }}</span>
-          </div>
+        <div class="flex items-start justify-between border-b border-stone-100 pb-3.5">
+          <span class="text-sm text-stone-600">Normalgewicht <span class="text-xs text-stone-400 block">WHO/DGE-Referenz für Männer 18–65</span></span>
           <span class="text-sm font-medium text-stone-900 tabular-nums">18.5 – 24.9</span>
         </div>
-        <div class="flex items-center justify-between border-b border-stone-100 pb-3.5 last:border-0">
-          <div class="flex items-center gap-3">
-            <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-            <span class="text-sm text-stone-600">{{ t('bmi.overweight') }}</span>
-          </div>
+        <div class="flex items-start justify-between border-b border-stone-100 pb-3.5">
+          <span class="text-sm text-stone-600">Übergewicht <span class="text-xs text-stone-400 block">bei Sportlern oft muskelbedingt, Bauchumfang prüfen</span></span>
           <span class="text-sm font-medium text-stone-900 tabular-nums">25.0 – 29.9</span>
         </div>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
-            <span class="text-sm text-stone-600">{{ t('bmi.obese') }}</span>
-          </div>
+        <div class="flex items-start justify-between">
+          <span class="text-sm text-stone-600">Adipositas <span class="text-xs text-stone-400 block">deutlich erhöhtes Risiko für Herz-Kreislauf-Erkrankungen</span></span>
           <span class="text-sm font-medium text-stone-900 tabular-nums">&ge; 30.0</span>
         </div>
       </div>
     </div>
 
-    <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
+      <h2 class="text-lg font-semibold text-stone-900 mb-4">{{ t('bmiMaenner.contentHeading') }}</h2>
+      <div class="space-y-4 text-sm text-stone-600 leading-relaxed">
+        <p v-for="(para, i) in t('bmiMaenner.content').split('\n\n')" :key="i">{{ para }}</p>
+      </div>
+    </div>
 
-    <BlogBanner calculator-key="bmi" />
+    <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-6">
+      <h2 class="text-lg font-semibold text-stone-900 mb-4">{{ t('bmiMaenner.relatedTitle') }}</h2>
+      <div class="grid gap-3 sm:grid-cols-3">
+        <router-link :to="localePath('bmi')" class="block p-4 border border-stone-200 rounded-lg hover:border-stone-400 transition-colors">
+          <div class="text-sm font-semibold text-stone-900 mb-1">BMI-Rechner</div>
+          <div class="text-xs text-stone-500">Allgemeiner Body-Mass-Index</div>
+        </router-link>
+        <router-link :to="localePath('waistHipRatio')" class="block p-4 border border-stone-200 rounded-lg hover:border-stone-400 transition-colors">
+          <div class="text-sm font-semibold text-stone-900 mb-1">Taille-Hüft-Verhältnis</div>
+          <div class="text-xs text-stone-500">WHR-Risiko für Bauchfett</div>
+        </router-link>
+        <router-link :to="localePath('bodyFat')" class="block p-4 border border-stone-200 rounded-lg hover:border-stone-400 transition-colors">
+          <div class="text-sm font-semibold text-stone-900 mb-1">Körperfett-Rechner</div>
+          <div class="text-xs text-stone-500">US-Navy-Methode</div>
+        </router-link>
+      </div>
+    </div>
+
+    <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
     <AdSlot class="mt-8" />
   </div>

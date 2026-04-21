@@ -19,6 +19,7 @@ const EXPECTED_KEYS = [
   'leanBodyMass', 'pregnancyWeightGain', 'hba1c', 'bloodSugar', 'bsa', 'gfr',
   'dueDate', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk',
   'bodyType', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature',
+  'bmiFrauen', 'bmiMaenner',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -63,6 +64,8 @@ const EXPECTED_ROUTE_MAP = {
   vitaminD: { de: 'vitamin-d-rechner', en: 'vitamin-d-calculator' },
   alcoholUnits: { de: 'alkohol-einheiten-rechner', en: 'alcohol-units-calculator' },
   bodyTemperature: { de: 'koerpertemperatur-rechner', en: 'body-temperature-calculator' },
+  bmiFrauen: { de: 'bmi-rechner-frauen', en: 'bmi-calculator-women' },
+  bmiMaenner: { de: 'bmi-rechner-maenner', en: 'bmi-calculator-men' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -130,16 +133,16 @@ const EXPECTED_BLOG_SLUGS_EN = [
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 41 calculators', () => {
-    expect(calculatorMetas).toHaveLength(41)
+  it('discovers all 43 calculators', () => {
+    expect(calculatorMetas).toHaveLength(43)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 41 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(41)
+  it('builds calculatorComponents map for all 43 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(43)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -186,10 +189,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 41 calculators with no duplicates', () => {
+  it('groups contain all 43 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(41)
-    expect(new Set(allKeys).size).toBe(41)
+    expect(allKeys).toHaveLength(43)
+    expect(new Set(allKeys).size).toBe(43)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -197,7 +200,7 @@ describe('calculator groups', () => {
 
   it('bodyComposition group has correct calculators in order', () => {
     expect(calculatorGroups[0].calculators).toEqual([
-      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'leanBodyMass', 'bsa', 'bodyType',
+      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'leanBodyMass', 'bsa', 'bodyType', 'bmiFrauen', 'bmiMaenner',
     ])
   })
 
@@ -258,8 +261,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 247 routes', () => {
-    expect(routes).toHaveLength(247)
+  it('generates exactly 251 routes', () => {
+    expect(routes).toHaveLength(251)
   })
 
   it('has locale routes for all calculators in both languages', () => {

@@ -25,7 +25,7 @@ function parseMeta(source) {
     ? { de: { slug: blogDeSlug }, en: { slug: blogEnSlug } }
     : null
 
-  return key && slugs && blog ? { key, slugs, blog } : null
+  return key && slugs ? { key, slugs, blog } : null
 }
 
 export function discoverMetas(metaDir) {
@@ -36,9 +36,10 @@ export function discoverMetas(metaDir) {
 }
 
 export function discoverBlogSlugs(metas) {
+  const withBlog = metas.filter(m => m.blog?.de && m.blog?.en)
   return {
-    de: metas.map(m => m.blog.de.slug),
-    en: metas.map(m => m.blog.en.slug),
+    de: withBlog.map(m => m.blog.de.slug),
+    en: withBlog.map(m => m.blog.en.slug),
   }
 }
 

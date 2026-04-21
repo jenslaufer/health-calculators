@@ -1,0 +1,39 @@
+{
+  "home": {
+    "calculators": {
+      "bmiMaenner": {
+        "name": "BMI Rechner Männer",
+        "description": "BMI mit Fokus auf Muskelmasse und Bauchfett-Risiko berechnen."
+      }
+    }
+  },
+  "bmiMaenner": {
+    "meta": {
+      "title": "BMI Rechner Männer – Body-Mass-Index für Männer",
+      "description": "BMI Rechner Männer: Body-Mass-Index berechnen mit DGE-Einordnung, Muskelmasse-Kontext und Hinweisen zu viszeralem Fett."
+    },
+    "title": "BMI Rechner Männer",
+    "description": "Berechne deinen BMI und bewerte ihn im männerspezifischen Kontext.",
+    "contentHeading": "BMI bei Männern: Muskelmasse und Bauchfett richtig einordnen",
+    "content": "Der BMI ist schnell berechnet und für Männer ein guter Startpunkt, aber kein vollständiges Gesundheitsprofil. Männer besitzen im Durchschnitt mehr Muskelmasse und eine höhere Knochendichte als Frauen. Da Muskelgewebe schwerer ist als Fettgewebe, kann ein trainierter Mann einen BMI im Übergewichtsbereich haben, obwohl der Körperfettanteil niedrig ist. Dieses Muster sieht man besonders bei Kraftsportlern, Rugbyspielern oder körperlich stark aktiven Berufen.
+
+Gleichzeitig neigen Männer häufiger zu zentraler Fettverteilung im Bauchraum. Dieses viszerale Fett ist metabolisch besonders aktiv und geht mit erhöhtem Risiko für Bluthochdruck, Typ-2-Diabetes und Herz-Kreislauf-Erkrankungen einher. Deshalb reicht ein BMI-Wert allein nicht aus, um das individuelle Risiko zu bewerten. Zwei Männer mit identischem BMI können je nach Taillenumfang ein deutlich unterschiedliches Risikoprofil haben.
+
+Die DGE empfiehlt, den BMI immer zusammen mit dem Bauchumfang zu interpretieren. Werte ab etwa 94 cm gelten als Warnsignal, ab 102 cm steigt das Risiko deutlich. Auch das Taille-Hüft-Verhältnis liefert zusätzliche Informationen zur Fettverteilung. So lässt sich erkennen, ob ein BMI im oberen Normalbereich bereits mit ungünstigem Bauchfett einhergeht.
+
+Im Alter verändert sich zudem die Körperzusammensetzung: Muskelmasse nimmt häufig ab, Fettmasse zu, selbst wenn das Körpergewicht stabil bleibt. Dadurch kann ein scheinbar unauffälliger BMI eine ungünstige Entwicklung überdecken. Für Männer über 65 ist die Einordnung deshalb differenzierter als bei jüngeren Erwachsenen.
+
+Für Sportler gilt umgekehrt: Ein erhöhter BMI ist nicht automatisch problematisch, wenn der Körperfettanteil niedrig und die kardiometabolischen Marker unauffällig sind. In solchen Fällen sind direkte Messungen wie Körperfettanalyse und Bauchumfang deutlich aussagekräftiger.
+
+Fazit: Der BMI ist ein nützliches Screening-Tool, aber bei Männern sollte er immer im Kontext von Muskelmasse, Fettverteilung und Lebensphase interpretiert werden. Erst die Kombination mehrerer Kennzahlen liefert eine fundierte Einschätzung des Gesundheitsrisikos.",
+    "relatedTitle": "Verwandte Rechner",
+    "faq": [
+      { "q": "Warum ist mein BMI trotz Training hoch?", "a": "Muskelmasse erhöht das Gewicht und damit den BMI. Ein hoher BMI bedeutet bei trainierten Männern nicht automatisch zu viel Körperfett." },
+      { "q": "Welcher BMI-Bereich gilt als normal?", "a": "Für erwachsene Männer gelten meist 18,5 bis 24,9 kg/m² als Normalbereich. Die Einordnung sollte mit Bauchumfang kombiniert werden." },
+      { "q": "Warum ist Bauchfett bei Männern so relevant?", "a": "Viszerales Fett im Bauchraum erhöht das Risiko für Diabetes, Bluthochdruck und Herz-Kreislauf-Erkrankungen stärker als peripheres Fett." },
+      { "q": "Ab welchem Bauchumfang wird es kritisch?", "a": "Als grobe Orientierung gelten bei Männern ab etwa 94 cm erhöhte Aufmerksamkeit und ab 102 cm ein deutlich erhöhtes Risiko." },
+      { "q": "Ist BMI im Alter noch zuverlässig?", "a": "Nur bedingt. Mit zunehmendem Alter sinkt oft die Muskelmasse, sodass der BMI Veränderungen der Körperzusammensetzung nicht vollständig abbildet." },
+      { "q": "Was ergänzt den BMI bei Männern sinnvoll?", "a": "Bauchumfang, Taille-Hüft-Verhältnis und Körperfettanteil ergänzen den BMI und verbessern die Risikoeinschätzung deutlich." }
+    ]
+  }
+}
