@@ -1,0 +1,83 @@
+{
+  "home": {
+    "calculators": {
+      "cholesterolRatio": {
+        "name": "Cholesterol Ratio Calculator",
+        "description": "Calculate cholesterol ratios and assess cardiovascular risk. Total/HDL, LDL/HDL, Triglyceride/HDL."
+      }
+    }
+  },
+  "cholesterolRatio": {
+    "meta": {
+      "title": "Cholesterol Ratio Calculator — Total/HDL, LDL/HDL & Triglyceride/HDL | Health Calculators",
+      "description": "Calculate cholesterol ratios (Total/HDL, LDL/HDL, Triglyceride/HDL) and assess cardiovascular risk per AHA/ESC 2023. Supports Friedewald formula and mmol/L conversion."
+    },
+    "title": "Cholesterol Ratio Calculator",
+    "description": "Calculate cholesterol ratios and assess cardiovascular risk per AHA/ESC 2023 guidelines.",
+    "totalLabel": "Total Cholesterol",
+    "hdlLabel": "HDL Cholesterol",
+    "ldlLabel": "LDL Cholesterol",
+    "trigLabel": "Triglycerides",
+    "optional": "optional",
+    "ldlHint": "Leave empty for Friedewald estimate (only valid when triglycerides < 400 mg/dL)",
+    "warningTrigHighForLdl": "Triglycerides ≥ 400 mg/dL: Friedewald LDL estimate is not valid. LDL/HDL ratio is omitted.",
+    "warningPlausibility": "Input values are outside the clinically plausible range. Please check your values.",
+    "friedewaldUsed": "LDL estimated via Friedewald formula",
+    "totalHdlRatio": "Total/HDL",
+    "ldlHdlRatio": "LDL/HDL",
+    "trigHdlRatio": "Triglyceride/HDL",
+    "optimalBelow": "Optimal: < {value}",
+    "classification": {
+      "optimal": "Optimal",
+      "moderate": "Moderate",
+      "high": "High Risk"
+    },
+    "ldlHdlClass": {
+      "optimal": "Optimal",
+      "borderline": "Borderline",
+      "high": "High"
+    },
+    "trigHdlClass": {
+      "optimal": "Optimal",
+      "borderline": "Borderline",
+      "high": "High"
+    },
+    "clinicalHint": "Clinical interpretation",
+    "hint": {
+      "optimal": "Favorable lipid profile. Continue with a heart-healthy diet and regular physical activity.",
+      "moderate": "Moderately elevated risk. Lifestyle changes (diet, exercise) are recommended. Consider consulting a physician.",
+      "high": "Elevated cardiovascular risk. Medical evaluation and possibly pharmacological therapy are recommended."
+    },
+    "referenceTitle": "Reference ranges (AHA/ESC 2023)",
+    "ratioCol": "Ratio",
+    "optimalCol": "Optimal",
+    "moderateCol": "Moderate",
+    "highCol": "High",
+    "faq": [
+      {
+        "q": "What is the Total/HDL ratio?",
+        "a": "The Total/HDL ratio (also called cholesterol-HDL ratio) divides total cholesterol by HDL. The AHA recommends a value below 5.0, ideally below 3.5. Higher values indicate increased atherosclerosis risk."
+      },
+      {
+        "q": "What is the Friedewald formula?",
+        "a": "LDL = Total Cholesterol − HDL − Triglycerides/5 (in mg/dL). This estimate is reliable when triglycerides are below 400 mg/dL. Above that threshold, a direct LDL measurement is required."
+      },
+      {
+        "q": "What does the Triglyceride/HDL ratio mean?",
+        "a": "The Trig/HDL ratio is a marker for metabolic syndrome and insulin resistance. Values above 4 (mg/dL) are considered elevated. It correlates with small, dense LDL particles that are particularly atherogenic."
+      },
+      {
+        "q": "What values should I aim for?",
+        "a": "Total/HDL: ideally < 3.5. LDL/HDL: < 2.5. Triglyceride/HDL: < 2. These targets apply to adults without known heart disease. Stricter targets apply with existing cardiovascular risk."
+      },
+      {
+        "q": "How can I improve my ratios?",
+        "a": "Regular exercise, weight loss, and dietary changes (less saturated fat, more fiber, omega-3 fatty acids) measurably improve the lipid profile. Reducing alcohol effectively lowers triglycerides."
+      },
+      {
+        "q": "How do I convert mg/dL to mmol/L?",
+        "a": "Cholesterol (Total, LDL, HDL): mg/dL ÷ 38.67 = mmol/L. Triglycerides: mg/dL ÷ 88.57 = mmol/L. The calculator handles this conversion automatically."
+      }
+    ]
+  }
+}

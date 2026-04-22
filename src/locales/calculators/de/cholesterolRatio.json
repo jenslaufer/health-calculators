@@ -1,0 +1,83 @@
+{
+  "home": {
+    "calculators": {
+      "cholesterolRatio": {
+        "name": "Cholesterin-Verhältnis-Rechner",
+        "description": "Cholesterin-Quotienten berechnen und kardiovaskuläres Risiko einschätzen. Total/HDL, LDL/HDL, Triglyzerid/HDL."
+      }
+    }
+  },
+  "cholesterolRatio": {
+    "meta": {
+      "title": "Cholesterin-Verhältnis-Rechner — Total/HDL, LDL/HDL & Triglyzerid/HDL | Health Calculators",
+      "description": "Cholesterin-Quotienten (Total/HDL, LDL/HDL, Triglyzerid/HDL) berechnen und kardiovaskuläres Risiko nach AHA/ESC 2023 einordnen. Mit Friedewald-Formel und mmol/L-Umrechnung."
+    },
+    "title": "Cholesterin-Verhältnis-Rechner",
+    "description": "Cholesterin-Quotienten berechnen und kardiovaskuläres Risiko nach AHA/ESC 2023 Leitlinien einschätzen.",
+    "totalLabel": "Gesamtcholesterin",
+    "hdlLabel": "HDL-Cholesterin",
+    "ldlLabel": "LDL-Cholesterin",
+    "trigLabel": "Triglyzeride",
+    "optional": "optional",
+    "ldlHint": "Leer lassen für Friedewald-Schätzung (nur wenn Triglyzeride < 400 mg/dL)",
+    "warningTrigHighForLdl": "Triglyzeride ≥ 400 mg/dL: LDL-Berechnung nach Friedewald nicht möglich. LDL/HDL-Quotient wird nicht angezeigt.",
+    "warningPlausibility": "Eingabewerte außerhalb des klinisch plausiblen Bereichs. Bitte Werte prüfen.",
+    "friedewaldUsed": "LDL nach Friedewald-Formel berechnet",
+    "totalHdlRatio": "Total/HDL",
+    "ldlHdlRatio": "LDL/HDL",
+    "trigHdlRatio": "Triglyzerid/HDL",
+    "optimalBelow": "Optimal: < {value}",
+    "classification": {
+      "optimal": "Optimal",
+      "moderate": "Moderat",
+      "high": "Erhöhtes Risiko"
+    },
+    "ldlHdlClass": {
+      "optimal": "Optimal",
+      "borderline": "Grenzwertig",
+      "high": "Erhöht"
+    },
+    "trigHdlClass": {
+      "optimal": "Optimal",
+      "borderline": "Grenzwertig",
+      "high": "Erhöht"
+    },
+    "clinicalHint": "Klinische Einordnung",
+    "hint": {
+      "optimal": "Günstige Lipidkonstellation. Weiterhin auf herzgesunde Ernährung und Bewegung achten.",
+      "moderate": "Mäßig erhöhtes Risiko. Lebensstiländerungen (Ernährung, Sport) empfohlen. Ärztliche Beratung sinnvoll.",
+      "high": "Erhöhtes kardiovaskuläres Risiko. Ärztliche Abklärung und ggf. medikamentöse Therapie empfohlen."
+    },
+    "referenceTitle": "Referenzwerte (AHA/ESC 2023)",
+    "ratioCol": "Quotient",
+    "optimalCol": "Optimal",
+    "moderateCol": "Moderat",
+    "highCol": "Erhöht",
+    "faq": [
+      {
+        "q": "Was ist der Total/HDL-Quotient?",
+        "a": "Der Total/HDL-Quotient (auch Cholesterin-HDL-Ratio) teilt das Gesamtcholesterin durch den HDL-Wert. Die AHA empfiehlt einen Wert unter 5,0, ideal unter 3,5. Hohe Werte zeigen ein erhöhtes Atheroskleroserisiko an."
+      },
+      {
+        "q": "Was ist die Friedewald-Formel?",
+        "a": "LDL = Gesamtcholesterin − HDL − Triglyzeride/5 (in mg/dL). Diese Schätzung ist bei Triglyzeriden unter 400 mg/dL zuverlässig. Darüber ist die Formel ungenau — dann ist eine direkte LDL-Messung nötig."
+      },
+      {
+        "q": "Was bedeutet der Triglyzerid/HDL-Quotient?",
+        "a": "Der Trig/HDL-Quotient ist ein Marker für das metabolische Syndrom und Insulinresistenz. Werte über 4 (mg/dL) gelten als erhöht. Er korreliert mit kleinen, dichten LDL-Partikeln, die besonders atherogen sind."
+      },
+      {
+        "q": "Welchen Wert sollte ich anstreben?",
+        "a": "Total/HDL: idealerweise < 3,5. LDL/HDL: < 2,5. Triglyzerid/HDL: < 2. Diese Zielwerte gelten für Erwachsene ohne bekannte Herzerkrankung. Bei bestehendem Risiko gelten strengere Vorgaben."
+      },
+      {
+        "q": "Wie kann ich meine Werte verbessern?",
+        "a": "Regelmäßige Bewegung, Gewichtsreduktion und Ernährungsumstellung (weniger gesättigte Fette, mehr Ballaststoffe, Omega-3-Fettsäuren) verbessern das Lipidprofil messbar. Alkoholverzicht senkt Triglyzeride effektiv."
+      },
+      {
+        "q": "Wie rechne ich mg/dL in mmol/L um?",
+        "a": "Cholesterin (Total, LDL, HDL): mg/dL ÷ 38,67 = mmol/L. Triglyzeride: mg/dL ÷ 88,57 = mmol/L. Der Rechner nimmt die Umrechnung automatisch vor."
+      }
+    ]
+  }
+}
