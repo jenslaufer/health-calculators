@@ -1,0 +1,77 @@
+{
+  "home": {
+    "calculators": {
+      "sodiumCorrection": {
+        "name": "Sodium Correction Calculator",
+        "description": "Corrected serum sodium for hyperglycemia. Hillier and Katz formulas."
+      }
+    }
+  },
+  "sodiumCorrection": {
+    "meta": {
+      "title": "Sodium Correction Calculator — Corrected Sodium for Hyperglycemia | Health Calculators",
+      "description": "Calculate corrected serum sodium in hyperglycemia using the Hillier or Katz formula. Identify pseudohyponatremia, true hyponatremia, and DKA — free online calculator."
+    },
+    "title": "Sodium Correction Calculator",
+    "description": "Calculate corrected serum sodium in the setting of hyperglycemia using the Hillier or Katz formula, with classification of hypo- and hypernatremia.",
+    "naLabel": "Measured sodium (Na⁺)",
+    "naPlaceholder": "e.g. 130",
+    "glucoseLabel": "Glucose",
+    "formulaLabel": "Formula",
+    "formulaHillier": "Hillier (2.4)",
+    "formulaKatz": "Katz (1.6)",
+    "formulaHint": "The Hillier formula (2018) is today's standard. Katz (1973) is legacy and underestimates correction.",
+    "warningPlausibility": "Warning: input is outside the physiologic range. Please double-check your values.",
+    "resultCorrectedNa": "Corrected sodium",
+    "resultDelta": "Correction",
+    "clinicalHint": "Clinical hint",
+    "pseudohyponatremiaTitle": "Pseudohyponatremia likely",
+    "pseudohyponatremiaHint": "Measured sodium is low but corrected sodium is normal. Typical in hyperglycemia/DKA — the hyponatremia is dilutional, not a true sodium deficit.",
+    "formula": "Formula",
+    "formulaHillierExpr": "Corrected Na = Measured Na + 2.4 × ((Glucose mg/dL − 100) / 100)",
+    "formulaKatzExpr": "Corrected Na = Measured Na + 1.6 × ((Glucose mg/dL − 100) / 100)",
+    "classification": {
+      "hyponatremia": "Hyponatremia",
+      "normal": "Normal",
+      "hypernatremia": "Hypernatremia"
+    },
+    "hint": {
+      "hyponatremia": "Corrected sodium < 135 mEq/L — true hyponatremia. Assess volume status, ADH, and osmolality.",
+      "normal": "Corrected sodium within normal range (135–145 mEq/L).",
+      "hypernatremia": "Corrected sodium > 145 mEq/L — suggests free-water deficit or hypertonic dehydration."
+    },
+    "referenceTitle": "Reference ranges (corrected sodium)",
+    "referenceRanges": [
+      { "range": "< 135 mEq/L", "label": "Hyponatremia", "hint": "True hyponatremia after correction" },
+      { "range": "135 – 145 mEq/L", "label": "Normal", "hint": "Eunatremia" },
+      { "range": "> 145 mEq/L", "label": "Hypernatremia", "hint": "Free-water deficit, hypertonic dehydration" }
+    ],
+    "disclaimer": "Note: this calculator is an educational tool and is not a substitute for medical advice. For healthcare professional reference only.",
+    "faq": [
+      {
+        "q": "When do I need to correct sodium for hyperglycemia?",
+        "a": "Whenever serum glucose exceeds 200 mg/dL (11.1 mmol/L) and sodium is abnormal. High glucose draws water into the extracellular space and dilutes sodium by roughly 2.4 mEq/L for every 100 mg/dL above 100 mg/dL (Hillier formula)."
+      },
+      {
+        "q": "Hillier vs Katz — which formula is more accurate?",
+        "a": "The Hillier formula (2018) is based on hypertonic glucose-infusion experiments and uses a factor of 2.4. The older Katz formula (1973) uses 1.6 and underestimates the correction; it is largely abandoned today."
+      },
+      {
+        "q": "What is pseudohyponatremia?",
+        "a": "Apparent hyponatremia caused by hyperglycemia, hyperlipidemia, or hyperproteinemia. Once corrected, sodium is normal — there is no true sodium deficit. Classic in diabetic ketoacidosis (DKA)."
+      },
+      {
+        "q": "How do I convert glucose from mmol/L to mg/dL?",
+        "a": "1 mmol/L glucose = 18.0182 mg/dL. Example: 22.2 mmol/L × 18 ≈ 400 mg/dL. The calculator accepts both units."
+      },
+      {
+        "q": "What sodium values define hyponatremia?",
+        "a": "Serum sodium < 135 mEq/L. Severity: mild 130–134, moderate 125–129, severe < 125 mEq/L. Levels below 120 mEq/L are a medical emergency."
+      },
+      {
+        "q": "Does this calculator replace clinical assessment?",
+        "a": "No. Sodium correction is a tool for the differential diagnosis of hyponatremia and must be interpreted alongside volume status, serum osmolality, urine sodium, and clinical exam."
+      }
+    ]
+  }
+}

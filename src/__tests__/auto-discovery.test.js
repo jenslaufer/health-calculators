@@ -98,6 +98,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'vitamin-d-berechnen',
   'alkohol-einheiten-berechnen',
   'koerpertemperatur-berechnen',
+  'natrium-korrektur-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -130,6 +131,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'vitamin-d-calculator',
   'alcohol-unit-calculator',
   'body-temperature-calculator',
+  'sodium-correction-calculator',
 ]
 
 describe('calculator discovery', () => {
@@ -165,15 +167,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 41 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(41)
+  it('discovers all 43 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(43)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 41 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(41)
+  it('discovers all 43 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(43)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }

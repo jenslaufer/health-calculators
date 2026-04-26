@@ -1,0 +1,77 @@
+{
+  "home": {
+    "calculators": {
+      "sodiumCorrection": {
+        "name": "Natrium-Korrektur-Rechner",
+        "description": "Korrigiertes Serum-Natrium bei Hyperglykämie berechnen. Hillier- und Katz-Formel."
+      }
+    }
+  },
+  "sodiumCorrection": {
+    "meta": {
+      "title": "Natrium-Korrektur-Rechner — Korrigiertes Natrium bei Hyperglykämie | Health Calculators",
+      "description": "Korrigiertes Serum-Natrium bei Hyperglykämie berechnen. Hillier- und Katz-Formel. Hyponatriämie, Pseudohyponatriämie und DKA klinisch einordnen — kostenlos online."
+    },
+    "title": "Natrium-Korrektur-Rechner",
+    "description": "Berechne das korrigierte Serum-Natrium bei Hyperglykämie. Mit Hillier- und Katz-Formel sowie klinischer Einordnung von Hypo- und Hypernatriämie.",
+    "naLabel": "Gemessenes Natrium (Na⁺)",
+    "naPlaceholder": "z. B. 130",
+    "glucoseLabel": "Glukose",
+    "formulaLabel": "Formel",
+    "formulaHillier": "Hillier (2,4)",
+    "formulaKatz": "Katz (1,6)",
+    "formulaHint": "Die Hillier-Formel (2018) gilt heute als Standard. Katz (1973) wird seltener verwendet.",
+    "warningPlausibility": "Achtung: Eingabewert außerhalb des physiologischen Bereichs. Bitte Eingabe prüfen.",
+    "resultCorrectedNa": "Korrigiertes Natrium",
+    "resultDelta": "Korrektur",
+    "clinicalHint": "Klinischer Hinweis",
+    "pseudohyponatremiaTitle": "Pseudohyponatriämie wahrscheinlich",
+    "pseudohyponatremiaHint": "Das gemessene Natrium ist niedrig, aber der korrigierte Wert ist normal. Typisch bei Hyperglykämie/DKA — die Hyponatriämie ist „verdünnungsbedingt“ und kein echter Natriummangel.",
+    "formula": "Formel",
+    "formulaHillierExpr": "Korrigiertes Na = Gemessenes Na + 2,4 × ((Glukose mg/dL − 100) / 100)",
+    "formulaKatzExpr": "Korrigiertes Na = Gemessenes Na + 1,6 × ((Glukose mg/dL − 100) / 100)",
+    "classification": {
+      "hyponatremia": "Hyponatriämie",
+      "normal": "Normales Natrium",
+      "hypernatremia": "Hypernatriämie"
+    },
+    "hint": {
+      "hyponatremia": "Korrigiertes Natrium < 135 mEq/L. Echte Hyponatriämie — Volumenstatus, ADH und osmotische Ursachen abklären.",
+      "normal": "Korrigiertes Natrium im Normbereich (135–145 mEq/L).",
+      "hypernatremia": "Korrigiertes Natrium > 145 mEq/L. Hinweis auf Wasserdefizit oder hypertone Dehydratation."
+    },
+    "referenceTitle": "Referenzbereiche (korrigiertes Natrium)",
+    "referenceRanges": [
+      { "range": "< 135 mEq/L", "label": "Hyponatriämie", "hint": "Echte Hyponatriämie nach Korrektur" },
+      { "range": "135 – 145 mEq/L", "label": "Normal", "hint": "Eunatriämie" },
+      { "range": "> 145 mEq/L", "label": "Hypernatriämie", "hint": "Wasserdefizit, hypertone Dehydratation" }
+    ],
+    "disclaimer": "Hinweis: Dieser Rechner ist ein Bildungswerkzeug und ersetzt keine medizinische Beratung. Nur zur Orientierung für medizinisches Fachpersonal.",
+    "faq": [
+      {
+        "q": "Wann muss man Natrium bei Hyperglykämie korrigieren?",
+        "a": "Bei jedem Patienten mit Blutzucker > 200 mg/dL (11,1 mmol/L) und auffälligem Natrium. Hohe Glukose bindet Wasser im Extrazellulärraum und „verdünnt“ das Natrium um etwa 2,4 mEq/L pro 100 mg/dL Glukose über 100 mg/dL (Hillier-Formel)."
+      },
+      {
+        "q": "Hillier oder Katz — welche Formel ist genauer?",
+        "a": "Die Hillier-Formel (2018) basiert auf experimentellen Infusionsstudien und korrigiert mit Faktor 2,4. Die ältere Katz-Formel (1973) verwendet 1,6 und unterschätzt die Korrektur — sie ist heute weitgehend verlassen."
+      },
+      {
+        "q": "Was ist Pseudohyponatriämie?",
+        "a": "Eine scheinbare Hyponatriämie durch Hyperglykämie, Hyperlipidämie oder Hyperproteinämie. Der korrigierte Natriumwert ist normal — es liegt kein echter Natriummangel vor. Typisch bei diabetischer Ketoazidose (DKA)."
+      },
+      {
+        "q": "Wie wird Glukose von mmol/L in mg/dL umgerechnet?",
+        "a": "1 mmol/L Glukose = 18,0182 mg/dL. Beispiel: 22,2 mmol/L × 18 = 400 mg/dL. Der Rechner unterstützt beide Einheiten."
+      },
+      {
+        "q": "Welche Natrium-Werte gelten als Hyponatriämie?",
+        "a": "Serum-Natrium < 135 mEq/L. Schweregrade: leicht 130–134, mittelschwer 125–129, schwer < 125 mEq/L. Werte unter 120 mEq/L sind ein medizinischer Notfall."
+      },
+      {
+        "q": "Ersetzt der Rechner ärztliche Diagnostik?",
+        "a": "Nein. Die Natrium-Korrektur ist ein Hilfsmittel zur Differenzialdiagnostik der Hyponatriämie. Sie muss immer im Kontext von Volumenstatus, Osmolalität, Urin-Natrium und klinischer Untersuchung interpretiert werden."
+      }
+    ]
+  }
+}
