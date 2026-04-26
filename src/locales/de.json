@@ -51,7 +51,7 @@
     "heading": "Blog",
     "subtitle": "Evidenzbasierte Artikel zu Gesundheitskennzahlen, Ernährung und Fitness."
   },
-  "blogBanner": {
-    "label": "Zum Nachlesen"
+  "blogArticleLink": {
+    "label": "Vertiefung"
   }
 }

@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
-import BlogBanner from '../components/BlogBanner.vue'
+import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
@@ -202,6 +202,6 @@ const sessionOptions = [1, 2, 3, 4, 5, 6, 7]
     </div>
   </div>
 
-  <BlogBanner calculator-key="caloriesBurned" />
+  <BlogArticleLink calculator-key="caloriesBurned" />
   <AffiliateBanner />
 </template>

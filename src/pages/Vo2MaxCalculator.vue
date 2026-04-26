@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
-import BlogBanner from '../components/BlogBanner.vue'
+import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
@@ -282,6 +282,6 @@ const testTypes = [
 
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
-  <BlogBanner calculator-key="vo2Max" />
+  <BlogArticleLink calculator-key="vo2Max" />
   <AffiliateBanner />
 </template>

@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
-import BlogBanner from '../components/BlogBanner.vue'
+import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
@@ -215,7 +215,7 @@ function switchUnit(u) {
       <p class="text-stone-500 text-base">{{ t('diabetesRisk.description') }}</p>
     </div>
 
-    <BlogBanner calculatorKey="diabetesRisk" />
+    <BlogArticleLink calculatorKey="diabetesRisk" />
 
     <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-6 mb-6">
 
