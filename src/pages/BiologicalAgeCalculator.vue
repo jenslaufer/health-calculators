@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
+import BlogArticleLink from '../components/BlogArticleLink.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
@@ -538,14 +539,7 @@ const blogSlug = computed(() => locale.value === 'de' ? 'biologisches-alter-bere
     </div>
   </div>
 
-  <!-- Blog link -->
-  <div class="mt-6 bg-stone-50 border border-stone-200 rounded-xl p-6" data-testid="blog-banner">
-    <p class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-2">{{ t('biologicalAge.blogLinkLabel') }}</p>
-    <router-link
-      :to="localeBlogPath(blogSlug)"
-      class="text-base font-semibold text-stone-900 hover:text-stone-600 transition-colors"
-    >{{ t('biologicalAge.blogLinkTitle') }} &rarr;</router-link>
-  </div>
+  <BlogArticleLink calculator-key="biologicalAge" />
 
   <AdSlot class="mt-8" />
 </template>

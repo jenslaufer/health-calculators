@@ -72,14 +72,14 @@ describe('AffiliateBanner layout order — all calculators', () => {
   )
 
   it.each(calculators)(
-    '$file: BlogBanner and AdSlot come after results section',
+    '$file: BlogArticleLink and AdSlot come after results section',
     ({ file, resultMarker }) => {
       const template = getTemplate(file)
       const resultsIdx = template.indexOf(resultMarker)
-      const blogIdx = template.indexOf('<BlogBanner')
+      const blogIdx = template.indexOf('<BlogArticleLink')
       const adIdx = template.indexOf('<AdSlot')
 
-      expect(blogIdx, `${file}: BlogBanner must come after results`).toBeGreaterThan(resultsIdx)
+      expect(blogIdx, `${file}: BlogArticleLink must come after results`).toBeGreaterThan(resultsIdx)
       expect(adIdx, `${file}: AdSlot must come after results`).toBeGreaterThan(resultsIdx)
     }
   )

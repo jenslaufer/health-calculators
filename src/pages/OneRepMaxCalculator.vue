@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
-import BlogBanner from '../components/BlogBanner.vue'
+import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
@@ -178,6 +178,6 @@ const percentageChart = computed(() => {
     <p class="text-sm text-stone-500 leading-relaxed">{{ t('oneRepMax.howItWorksText') }}</p>
   </div>
 
-  <BlogBanner calculator-key="oneRepMax" />
+  <BlogArticleLink calculator-key="oneRepMax" />
   <AffiliateBanner />
 </template>

@@ -51,7 +51,7 @@
     "heading": "Blog",
     "subtitle": "Evidence-based articles on health metrics, nutrition, and fitness."
   },
-  "blogBanner": {
-    "label": "Read more"
+  "blogArticleLink": {
+    "label": "Background"
   }
 }
