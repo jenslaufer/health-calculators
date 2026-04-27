@@ -25,7 +25,7 @@ function parseMeta(source) {
     en: { slug: blogEnSlug, file: blogEnFile },
   } : null
 
-  return key && slugs && blog ? { key, slugs, blog } : null
+  return key && slugs ? { key, slugs, blog } : null
 }
 
 export function discoverMetas(metaDir = META_DIR) {
@@ -83,7 +83,7 @@ export function generateLlmsTxt(metas, baseUrl = BASE_URL, metaDir = META_DIR) {
   }
 
   txt += '\n## Blog\n\n'
-  for (const meta of metas) {
+  for (const meta of metas.filter(m => m.blog)) {
     const enBlog = meta.blog.en.file ? parseBlogComponent(meta.blog.en.file, metaDir) : { title: '', description: '' }
     const deBlog = meta.blog.de.file ? parseBlogComponent(meta.blog.de.file, metaDir) : { title: '', description: '' }
     if (enBlog.title) txt += `- [${enBlog.title}](${baseUrl}/en/blog/${meta.blog.en.slug}): ${enBlog.description}\n`
