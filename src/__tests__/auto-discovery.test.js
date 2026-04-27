@@ -98,6 +98,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'vitamin-d-berechnen',
   'alkohol-einheiten-berechnen',
   'koerpertemperatur-berechnen',
+  'anionenluecke-rechner',
   'natrium-korrektur-berechnen',
 ]
 
@@ -131,20 +132,21 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'vitamin-d-calculator',
   'alcohol-unit-calculator',
   'body-temperature-calculator',
+  'anion-gap',
   'sodium-correction-calculator',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 43 calculators', () => {
-    expect(calculatorMetas).toHaveLength(43)
+  it('discovers all 45 calculators', () => {
+    expect(calculatorMetas).toHaveLength(45)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 43 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(43)
+  it('builds calculatorComponents map for all 45 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(45)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -191,10 +193,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 43 calculators with no duplicates', () => {
+  it('groups contain all 45 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(43)
-    expect(new Set(allKeys).size).toBe(43)
+    expect(allKeys).toHaveLength(45)
+    expect(new Set(allKeys).size).toBe(45)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -215,7 +217,7 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection',
     ])
   })
 
@@ -263,8 +265,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 251 routes', () => {
-    expect(routes).toHaveLength(251)
+  it('generates exactly 261 routes', () => {
+    expect(routes).toHaveLength(261)
   })
 
   it('has locale routes for all calculators in both languages', () => {
