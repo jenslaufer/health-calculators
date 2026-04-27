@@ -30,26 +30,26 @@ describe('generateLlmsTxt', () => {
     expect(txt).toContain('## Blog')
   })
 
-  it('includes EN calculator URLs for all 30 calculators', () => {
+  it('includes EN calculator URLs for all calculators', () => {
     for (const meta of metas) {
       expect(txt, `missing EN URL for ${meta.key}`).toContain(`${BASE_URL}/en/${meta.slugs.en}`)
     }
   })
 
-  it('includes DE calculator URLs for all 30 calculators', () => {
+  it('includes DE calculator URLs for all calculators', () => {
     for (const meta of metas) {
       expect(txt, `missing DE URL for ${meta.key}`).toContain(`${BASE_URL}/de/${meta.slugs.de}`)
     }
   })
 
-  it('includes EN blog URLs for all 30 articles', () => {
-    for (const meta of metas) {
+  it('includes EN blog URLs for all articles', () => {
+    for (const meta of metas.filter(m => m.blog)) {
       expect(txt, `missing EN blog URL for ${meta.key}`).toContain(`${BASE_URL}/en/blog/${meta.blog.en.slug}`)
     }
   })
 
-  it('includes DE blog URLs for all 30 articles', () => {
-    for (const meta of metas) {
+  it('includes DE blog URLs for all articles', () => {
+    for (const meta of metas.filter(m => m.blog)) {
       expect(txt, `missing DE blog URL for ${meta.key}`).toContain(`${BASE_URL}/de/blog/${meta.blog.de.slug}`)
     }
   })
@@ -65,9 +65,9 @@ describe('generateLlmsTxt', () => {
     }
   })
 
-  it('generates 172 links (43 calcs × 2 locales + 43 blogs × 2 locales)', () => {
+  it('generates 176 links (45 calcs × 2 locales + 43 blogs × 2 locales)', () => {
     const links = txt.split('\n').filter(l => l.startsWith('- ['))
-    expect(links).toHaveLength(172)
+    expect(links).toHaveLength(176)
   })
 
   it('blog titles do not contain "| Health Calculators" suffix', () => {
