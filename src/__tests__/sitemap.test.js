@@ -48,6 +48,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'vitamin-d-berechnen',
   'alkohol-einheiten-berechnen',
   'koerpertemperatur-berechnen',
+  'anionenluecke-rechner',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -80,12 +81,13 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'vitamin-d-calculator',
   'alcohol-unit-calculator',
   'body-temperature-calculator',
+  'anion-gap',
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 43 calculator meta files', () => {
+  it('discovers all 44 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(43)
+    expect(metas).toHaveLength(44)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -123,19 +125,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 41 DE blog slugs', () => {
+  it('returns all 42 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(41)
+    expect(de).toHaveLength(42)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 41 EN blog slugs', () => {
+  it('returns all 42 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(41)
+    expect(en).toHaveLength(42)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -203,9 +205,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 86 calcs + 2 blog index + 82 blog articles = 172)', () => {
+  it('generates correct total URL count (2 home + 88 calcs + 2 blog index + 84 blog articles = 176)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(172)
+    expect(urlCount).toBe(176)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
