@@ -386,6 +386,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'smokingCost',
     related: ['lebenserwartung-berechnen', 'promille-berechnen'],
   },
+  {
+    slug: 'kinder-dosierung-rechner',
+    title: 'Kinder-Dosierung berechnen — Sichere gewichtsbasierte Dosis',
+    description: 'Paracetamol, Ibuprofen und Amoxicillin für Kinder gewichtsbasiert dosieren. Mit Formel, Tageshöchstdosis und Volumen in mL.',
+    date: '2026-04-28',
+    readTime: '7 min',
+    calculatorKey: 'childDosage',
+    related: ['wachstumsperzentile-kinder', 'koerperoberflaeche-berechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

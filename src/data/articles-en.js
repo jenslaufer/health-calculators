@@ -386,6 +386,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'smokingCost',
     related: ['life-expectancy-calculator', 'blood-alcohol-calculator'],
   },
+  {
+    slug: 'child-dosage-calculator',
+    title: 'Child Dosage Calculator — Safe Weight-Based Paediatric Dosing',
+    description: 'Calculate paracetamol, ibuprofen and amoxicillin doses for children by body weight. Formula, daily maxima and volume in mL.',
+    date: '2026-04-28',
+    readTime: '7 min',
+    calculatorKey: 'childDosage',
+    related: ['child-growth-percentile-chart', 'body-surface-area-calculator', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

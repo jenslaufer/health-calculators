@@ -1,0 +1,68 @@
+{
+  "home": {
+    "calculators": {
+      "childDosage": {
+        "name": "Kinder-Dosierungsrechner",
+        "description": "Gewichtsbasierte Dosierung von Paracetamol, Ibuprofen und Amoxicillin für Kinder."
+      }
+    }
+  },
+  "childDosage": {
+    "meta": {
+      "title": "Kinder-Dosierungsrechner — Gewichtsbasierte Medikamentendosis | Health Calculators",
+      "description": "Sichere Einzeldosis und Tageshöchstdosis für Paracetamol, Ibuprofen und Amoxicillin nach Körpergewicht berechnen. Mit Volumenangabe in mL. Kein medizinischer Rat."
+    },
+    "title": "Kinder-Dosierungsrechner",
+    "description": "Berechne die gewichtsbasierte Einzel- und Tagesdosis gängiger Kindermedikamente — Paracetamol, Ibuprofen, Amoxicillin.",
+    "drugLabel": "Wirkstoff",
+    "weightLabel": "Körpergewicht des Kindes",
+    "weightPlaceholder": "z.B. 20",
+    "mgPerKgLabel": "Dosis pro kg (mg/kg)",
+    "mgPerKgHint": "Empfohlen: {min}–{max} mg/kg pro Einzeldosis",
+    "concentrationLabel": "Konzentration (Saft)",
+    "concentrationHint": "Optional — z.B. Paracetamol-Saft 24 mg/mL, Ibuprofen-Saft 20 mg/mL.",
+    "frequencyLabel": "Verabreichungsintervall",
+    "everyHours": "alle {h} Std.",
+    "dosesPerDay": "Dosen/Tag",
+    "resultSingleDose": "Einzeldosis",
+    "resultMaxDaily": "Tageshöchstdosis",
+    "formulaText": "Berechnung: {weight} kg × {mgPerKg} mg/kg = {dose} mg pro Einzeldosis.",
+    "tableDrug": "Wirkstoff",
+    "tableSingle": "Einzeldosis",
+    "tableDaily": "Tagesmaximum",
+    "tableInterval": "Intervall",
+    "warnings": {
+      "weightTooLow": "Gewicht unter 3 kg — Neugeborene benötigen zwingend eine ärztliche Dosierung.",
+      "weightTooHigh": "Gewicht über 80 kg — bitte Erwachsenen-Dosierung verwenden.",
+      "belowMinWeight": "Unter empfohlenem Mindestgewicht für diesen Wirkstoff. Vor Anwendung Arzt fragen.",
+      "overdose": "Überdosierungs-Warnung: angegebene mg/kg liegen über der empfohlenen Einzeldosis."
+    },
+    "disclaimer": "Wichtiger Hinweis: Dies ist keine medizinische Beratung. Die Dosierung von Kindermedikamenten muss immer von einer Ärztin, einem Arzt oder einer Apotheke bestätigt werden.",
+    "faq": [
+      {
+        "q": "Wie wird die Dosis für Kinder berechnet?",
+        "a": "Die Standardformel ist Dosis (mg) = Körpergewicht (kg) × mg pro kg. Für Paracetamol gilt 10–15 mg/kg pro Einzeldosis, für Ibuprofen 7–10 mg/kg. Diese Werte stammen aus pädiatrischen Fachinformationen."
+      },
+      {
+        "q": "Wie viele mL Saft soll ich geben?",
+        "a": "Volumen (mL) = Dosis (mg) ÷ Konzentration (mg/mL). Beispiel: 300 mg Paracetamol bei einer Konzentration von 24 mg/mL ergeben 12,5 mL Saft."
+      },
+      {
+        "q": "Welche Tageshöchstdosis darf nicht überschritten werden?",
+        "a": "Paracetamol: max. 60 mg/kg/Tag (oder 4 g für ältere Kinder). Ibuprofen: max. 30 mg/kg/Tag (oder 2,4 g). Amoxicillin: 20–90 mg/kg/Tag, je nach Indikation und Dosierungsschema."
+      },
+      {
+        "q": "Ab welchem Alter sind diese Wirkstoffe geeignet?",
+        "a": "Paracetamol: ab Geburt (Dosierung anpassen). Ibuprofen: ab 3 Monaten und mindestens 5 kg. Amoxicillin: ab Geburt (mit pädiatrischer Anpassung). Bei Säuglingen unter 3 Monaten immer ärztlich abklären."
+      },
+      {
+        "q": "Was tun bei versehentlicher Überdosierung?",
+        "a": "Sofort die Giftnotrufzentrale oder den Notarzt kontaktieren. Insbesondere bei Paracetamol kann eine Überdosis ohne anfängliche Symptome zu schweren Leberschäden führen."
+      },
+      {
+        "q": "Ersetzt dieser Rechner ärztliche Beratung?",
+        "a": "Nein. Der Rechner ist ein Hilfsmittel zur Plausibilitätskontrolle. Die endgültige Dosis muss immer von einer Ärztin, einem Arzt oder einer Apothekerin bestätigt werden."
+      }
+    ]
+  }
+}
