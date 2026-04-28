@@ -1,0 +1,68 @@
+{
+  "home": {
+    "calculators": {
+      "childDosage": {
+        "name": "Child Dosage Calculator",
+        "description": "Weight-based paediatric dosing for paracetamol, ibuprofen and amoxicillin."
+      }
+    }
+  },
+  "childDosage": {
+    "meta": {
+      "title": "Child Dosage Calculator — Weight-Based Paediatric Drug Dosing | Health Calculators",
+      "description": "Calculate safe single-dose and max daily dose of paracetamol, ibuprofen and amoxicillin by child weight. Includes volume in mL. Not medical advice."
+    },
+    "title": "Child Dosage Calculator",
+    "description": "Calculate the weight-based single dose and daily maximum of common paediatric medicines — paracetamol, ibuprofen, amoxicillin.",
+    "drugLabel": "Drug",
+    "weightLabel": "Child's body weight",
+    "weightPlaceholder": "e.g. 20",
+    "mgPerKgLabel": "Dose per kg (mg/kg)",
+    "mgPerKgHint": "Recommended: {min}–{max} mg/kg per single dose",
+    "concentrationLabel": "Liquid concentration",
+    "concentrationHint": "Optional — e.g. paracetamol syrup 24 mg/mL, ibuprofen syrup 20 mg/mL.",
+    "frequencyLabel": "Dosing interval",
+    "everyHours": "every {h} h",
+    "dosesPerDay": "doses/day",
+    "resultSingleDose": "Single dose",
+    "resultMaxDaily": "Max daily dose",
+    "formulaText": "Calculation: {weight} kg × {mgPerKg} mg/kg = {dose} mg per single dose.",
+    "tableDrug": "Drug",
+    "tableSingle": "Single dose",
+    "tableDaily": "Daily max",
+    "tableInterval": "Interval",
+    "warnings": {
+      "weightTooLow": "Weight below 3 kg — neonates require clinician-supervised dosing.",
+      "weightTooHigh": "Weight above 80 kg — please use adult dosing.",
+      "belowMinWeight": "Below recommended minimum weight for this drug. Confirm with a clinician before use.",
+      "overdose": "Overdose warning: requested mg/kg exceeds recommended single dose."
+    },
+    "disclaimer": "Important: this is not medical advice. Paediatric dosing must be confirmed by a licensed clinician or pharmacist.",
+    "faq": [
+      {
+        "q": "How is paediatric dose calculated?",
+        "a": "The standard formula is dose (mg) = body weight (kg) × mg per kg. Paracetamol uses 10–15 mg/kg per single dose, ibuprofen 7–10 mg/kg. These come from paediatric prescribing references."
+      },
+      {
+        "q": "How many mL of syrup should I give?",
+        "a": "Volume (mL) = dose (mg) ÷ concentration (mg/mL). Example: 300 mg paracetamol at 24 mg/mL = 12.5 mL of syrup."
+      },
+      {
+        "q": "What is the maximum daily dose?",
+        "a": "Paracetamol: max 60 mg/kg/day (or 4 g for older children). Ibuprofen: max 30 mg/kg/day (or 2.4 g). Amoxicillin: 20–90 mg/kg/day depending on indication."
+      },
+      {
+        "q": "From what age are these drugs appropriate?",
+        "a": "Paracetamol: from birth (with adjusted dosing). Ibuprofen: from 3 months and ≥5 kg. Amoxicillin: from birth with paediatric adjustment. For infants under 3 months always consult a clinician."
+      },
+      {
+        "q": "What should I do in case of accidental overdose?",
+        "a": "Call poison control or emergency services immediately. Paracetamol overdose can cause severe liver damage even when initial symptoms are absent."
+      },
+      {
+        "q": "Does this calculator replace medical advice?",
+        "a": "No. The calculator is a plausibility tool. The final dose must always be confirmed by a licensed clinician or pharmacist."
+      }
+    ]
+  }
+}
