@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite-ssg build && node scripts/generate-sitemap.js && node scripts/generate-llms-txt.js",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:ssr": "npm run build && vitest run src/__tests__/faq-ssr.test.js"
   },
   "dependencies": {
     "@unhead/vue": "^2.1.13",
