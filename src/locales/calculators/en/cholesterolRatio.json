@@ -1,0 +1,74 @@
+{
+  "home": {
+    "calculators": {
+      "cholesterolRatio": {
+        "name": "Cholesterol Ratio Calculator",
+        "description": "Calculate Total, LDL and Triglyceride to HDL ratios with risk classification."
+      }
+    }
+  },
+  "cholesterolRatio": {
+    "meta": {
+      "title": "Cholesterol Ratio Calculator — Total/HDL, LDL/HDL & Triglyceride/HDL",
+      "description": "Calculate your cholesterol ratios (Total/HDL, LDL/HDL, Triglyceride/HDL) for a more accurate cardiovascular risk assessment. Friedewald fallback included. Free, instant, no sign-up."
+    },
+    "title": "Cholesterol Ratio Calculator",
+    "description": "Calculate your cholesterol ratios and atherogenic risk per AHA/ESC guidelines.",
+    "totalLabel": "Total Cholesterol",
+    "hdlLabel": "HDL",
+    "ldlLabel": "LDL",
+    "trigLabel": "Triglycerides",
+    "optional": "optional",
+    "friedewaldHint": "If LDL is empty, it will be estimated via the Friedewald formula (only when triglycerides < 400 mg/dL).",
+    "totalHdlSuffix": "Total/HDL",
+    "totalHdlLabel": "Total/HDL",
+    "ldlHdlLabel": "LDL/HDL",
+    "trigHdlLabel": "Triglyceride/HDL",
+    "targetTotalHdl": "Target < 3.5 (AHA/ESC)",
+    "ldlBand_optimal": "Optimal",
+    "ldlBand_borderline": "Borderline",
+    "ldlBand_high": "Elevated",
+    "trigBand_optimal": "Optimal",
+    "trigBand_borderline": "Borderline",
+    "trigBand_high": "Elevated (metabolic syndrome marker)",
+    "refRatio": "Ratio",
+    "refOptimal": "Optimal",
+    "refModerate": "Moderate",
+    "refHigh": "Elevated risk",
+    "friedewaldUsed": "LDL estimated via Friedewald formula: {ldl} mg/dL.",
+    "warning_friedewaldSkipped": "LDL could not be estimated via Friedewald (triglycerides ≥ 400 mg/dL). Please enter LDL directly.",
+    "warning_totalOutOfRange": "Total cholesterol outside the clinically plausible range (100–400 mg/dL).",
+    "warning_hdlOutOfRange": "HDL outside the clinically plausible range (20–120 mg/dL).",
+    "warning_ldlOutOfRange": "LDL outside the clinically plausible range (30–300 mg/dL).",
+    "warning_trigOutOfRange": "Triglycerides outside the clinically plausible range (30–1000 mg/dL).",
+    "warning_hdlZero": "HDL cannot be 0 — ratio is undefined.",
+    "howItWorks": "How it works",
+    "howItWorksText": "The Total/HDL ratio is an established marker of cardiovascular risk. Per AHA/ESC, values below 3.5 are optimal, 3.5–5.0 moderate, above 5.0 elevated. The LDL/HDL ratio and atherogenic index (Triglyceride/HDL) provide additional risk insight. When LDL is missing and triglycerides < 400 mg/dL, the Friedewald formula is used: LDL = Total − HDL − Triglycerides/5.",
+    "faq": [
+      {
+        "q": "What is the cholesterol ratio and why does it matter?",
+        "a": "Studies (Framingham, INTERHEART) show that the Total/HDL ratio predicts heart attacks more accurately than total cholesterol alone. By accounting for protective HDL, it is a more robust single marker."
+      },
+      {
+        "q": "What value is optimal?",
+        "a": "AHA/ESC 2023: Total/HDL below 3.5 is optimal, 3.5–5.0 moderate, above 5.0 elevated risk. The LDL/HDL ratio should be below 2.5."
+      },
+      {
+        "q": "What is the Friedewald formula?",
+        "a": "The Friedewald formula estimates LDL from total cholesterol, HDL and triglycerides: LDL = Total − HDL − Triglycerides/5. It is only valid when triglycerides are below 400 mg/dL."
+      },
+      {
+        "q": "What does a high Triglyceride/HDL ratio mean?",
+        "a": "Values above 4 indicate insulin resistance and elevated metabolic risk. This ratio correlates strongly with small dense LDL particles, which are particularly atherogenic."
+      },
+      {
+        "q": "How can I improve my cholesterol ratio?",
+        "a": "Raise HDL with endurance exercise, olive oil, fatty fish, and avoiding trans fats. Lower LDL and triglycerides through weight loss, less sugar and alcohol, and a fibre-rich diet."
+      },
+      {
+        "q": "Do I need to fast before the blood test?",
+        "a": "Yes for triglycerides — and therefore for the Friedewald LDL estimate — at least 9–12 hours fasting. Total cholesterol and HDL do not strictly require fasting."
+      }
+    ]
+  }
+}

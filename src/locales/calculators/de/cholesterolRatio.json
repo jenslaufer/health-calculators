@@ -1,0 +1,74 @@
+{
+  "home": {
+    "calculators": {
+      "cholesterolRatio": {
+        "name": "Cholesterin-Verhältnis-Rechner",
+        "description": "Berechne Total-, LDL- und Triglycerid-zu-HDL-Verhältnisse mit Risikoeinordnung."
+      }
+    }
+  },
+  "cholesterolRatio": {
+    "meta": {
+      "title": "Cholesterin-Verhältnis-Rechner — Total/HDL, LDL/HDL & Triglyceride/HDL",
+      "description": "Berechne dein Cholesterin-Verhältnis (Total/HDL, LDL/HDL, Triglyceride/HDL) für eine bessere Einschätzung des kardiovaskulären Risikos. Mit Friedewald-Fallback. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Cholesterin-Verhältnis-Rechner",
+    "description": "Berechne dein Cholesterin-Verhältnis und das atherogene Risiko nach AHA/ESC-Leitlinien.",
+    "totalLabel": "Gesamtcholesterin",
+    "hdlLabel": "HDL",
+    "ldlLabel": "LDL",
+    "trigLabel": "Triglyceride",
+    "optional": "optional",
+    "friedewaldHint": "Wenn LDL leer ist, wird es per Friedewald-Formel geschätzt (nur bei Triglyceriden < 400 mg/dL).",
+    "totalHdlSuffix": "Total/HDL",
+    "totalHdlLabel": "Total/HDL",
+    "ldlHdlLabel": "LDL/HDL",
+    "trigHdlLabel": "Triglyceride/HDL",
+    "targetTotalHdl": "Ziel < 3.5 (AHA/ESC)",
+    "ldlBand_optimal": "Optimal",
+    "ldlBand_borderline": "Grenzwertig",
+    "ldlBand_high": "Erhöht",
+    "trigBand_optimal": "Optimal",
+    "trigBand_borderline": "Grenzwertig",
+    "trigBand_high": "Erhöht (Marker für metabolisches Syndrom)",
+    "refRatio": "Verhältnis",
+    "refOptimal": "Optimal",
+    "refModerate": "Moderat",
+    "refHigh": "Erhöhtes Risiko",
+    "friedewaldUsed": "LDL geschätzt per Friedewald-Formel: {ldl} mg/dL.",
+    "warning_friedewaldSkipped": "LDL konnte nicht per Friedewald geschätzt werden (Triglyceride ≥ 400 mg/dL). Bitte LDL direkt eingeben.",
+    "warning_totalOutOfRange": "Gesamtcholesterin außerhalb des klinisch plausiblen Bereichs (100–400 mg/dL).",
+    "warning_hdlOutOfRange": "HDL außerhalb des klinisch plausiblen Bereichs (20–120 mg/dL).",
+    "warning_ldlOutOfRange": "LDL außerhalb des klinisch plausiblen Bereichs (30–300 mg/dL).",
+    "warning_trigOutOfRange": "Triglyceride außerhalb des klinisch plausiblen Bereichs (30–1000 mg/dL).",
+    "warning_hdlZero": "HDL kann nicht 0 sein — Verhältnis nicht berechenbar.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Das Total/HDL-Verhältnis ist ein etablierter Marker für das kardiovaskuläre Risiko. Werte unter 3.5 gelten nach AHA/ESC als optimal, 3.5–5.0 als moderat, über 5.0 als erhöht. Das LDL/HDL-Verhältnis und der atherogene Index (Triglyceride/HDL) liefern zusätzliche Risikoinformationen. Bei fehlendem LDL und Triglyceriden < 400 mg/dL wird die Friedewald-Formel verwendet: LDL = Gesamt − HDL − Triglyceride/5.",
+    "faq": [
+      {
+        "q": "Was ist das Cholesterin-Verhältnis und warum ist es wichtig?",
+        "a": "Das Total/HDL-Verhältnis ist nach Studien (Framingham, INTERHEART) ein präziserer Prädiktor für Herzinfarkte als das absolute Cholesterin. Es berücksichtigt das schützende HDL und ist daher als Single-Marker robuster."
+      },
+      {
+        "q": "Welcher Wert ist optimal?",
+        "a": "Total/HDL unter 3.5 ist nach AHA/ESC 2023 optimal. 3.5–5.0 gilt als moderat, über 5.0 als erhöhtes Risiko. Das LDL/HDL-Verhältnis sollte unter 2.5 liegen."
+      },
+      {
+        "q": "Was ist die Friedewald-Formel?",
+        "a": "Die Friedewald-Formel schätzt das LDL aus Gesamt-, HDL-Cholesterin und Triglyceriden: LDL = Gesamt − HDL − Triglyceride/5. Sie ist nur valide bei Triglyceriden unter 400 mg/dL."
+      },
+      {
+        "q": "Was bedeutet ein hohes Triglyceride/HDL-Verhältnis?",
+        "a": "Werte über 4 deuten auf Insulinresistenz und ein erhöhtes metabolisches Risiko hin. Dieses Verhältnis korreliert stark mit kleinen, dichten LDL-Partikeln, die besonders atherogen sind."
+      },
+      {
+        "q": "Wie kann ich mein Cholesterin-Verhältnis verbessern?",
+        "a": "HDL erhöhen durch Ausdauersport, Olivenöl, fettem Fisch und Verzicht auf Transfette. LDL und Triglyceride senken durch Gewichtsabnahme, weniger Zucker und Alkohol sowie ballaststoffreiche Ernährung."
+      },
+      {
+        "q": "Müssen die Blutwerte nüchtern abgenommen werden?",
+        "a": "Für Triglyceride und damit auch die Friedewald-LDL-Schätzung ja — mindestens 9–12 Stunden nüchtern. Für Total und HDL ist Nüchternheit nicht zwingend erforderlich."
+      }
+    ]
+  }
+}
