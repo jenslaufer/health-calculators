@@ -1,0 +1,73 @@
+{
+  "home": {
+    "calculators": {
+      "prostateRisk": {
+        "name": "Prostate Cancer Risk Calculator",
+        "description": "Estimate prostate cancer risk from PSA, age and family history."
+      }
+    }
+  },
+  "prostateRisk": {
+    "meta": {
+      "title": "Prostate Cancer Risk Calculator — PSA, Age & Family History",
+      "description": "Estimate your prostate cancer risk from PSA, age and family history. Uses age-adjusted PSA thresholds (Oesterling). Free, instant, no sign-up."
+    },
+    "title": "Prostate Cancer Risk Calculator",
+    "description": "Estimate prostate cancer risk based on PSA, age and family history.",
+    "psaLabel": "PSA value (ng/mL)",
+    "psaPlaceholder": "e.g. 2.5",
+    "ageLabel": "Age (years)",
+    "agePlaceholder": "e.g. 60",
+    "familyHistoryLabel": "Family history of prostate cancer?",
+    "familyHistoryHint": "Father, brother or son diagnosed with prostate cancer before age 65.",
+    "yes": "Yes",
+    "no": "No",
+    "results": "Risk assessment",
+    "categoryLabel": "Risk category",
+    "scoreLabel": "Risk score",
+    "thresholdLabel": "Age-adjusted PSA threshold",
+    "ratioLabel": "PSA / threshold",
+    "biopsyRecommended": "Biopsy workup recommended — see a urologist.",
+    "biopsyNotRecommended": "Biopsy not currently indicated. Routine follow-up advised.",
+    "category_low": "Low",
+    "category_moderate": "Moderate",
+    "category_high": "High",
+    "category_veryHigh": "Very high",
+    "interpretation_low": "PSA below the age-adjusted threshold. Routine screening per AUA / EAU guidelines.",
+    "interpretation_moderate": "PSA in the gray zone. Repeat in 3–6 months; consider free PSA, MRI or biopsy.",
+    "interpretation_high": "PSA clearly elevated. Urological work-up with MRI and likely biopsy advised.",
+    "interpretation_veryHigh": "PSA strongly elevated. Urgent urological evaluation — high probability of clinically significant cancer.",
+    "refTitle": "Age-adjusted PSA thresholds (Oesterling)",
+    "ageRange": "Age group",
+    "psaThreshold": "PSA upper limit (ng/mL)",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses age-adjusted PSA thresholds per Oesterling et al. (JAMA, 1993): 40–49 → 2.5, 50–59 → 3.5, 60–69 → 4.5, 70–79 → 6.5 ng/mL. Categories: PSA < threshold = low; threshold to 10 ng/mL = moderate (gray zone); 10–20 ng/mL = high; > 20 ng/mL = very high. A positive family history (father or brother diagnosed before age 65) roughly doubles the baseline risk and may shift a low result to moderate. This is a screening estimate — definitive diagnosis requires urological work-up with MRI and biopsy.",
+    "disclaimer": "This calculator does not replace medical evaluation. With elevated PSA or a positive family history, see a urologist.",
+    "faq": [
+      {
+        "q": "What is PSA?",
+        "a": "Prostate-specific antigen (PSA) is a protein produced by prostate cells. Elevated values may indicate prostate cancer, benign hyperplasia (BPH) or prostatitis — a high value alone does not mean cancer."
+      },
+      {
+        "q": "At what age should I get tested?",
+        "a": "The American Urological Association recommends shared decision-making about PSA testing starting at age 50 for average-risk men, age 40–45 for those with a family history or African ancestry."
+      },
+      {
+        "q": "What does a PSA above 4 ng/mL mean?",
+        "a": "PSA between 4 and 10 ng/mL is the gray zone — about 25–30 % of these men have prostate cancer. MRI and possibly biopsy are indicated. Above 10 ng/mL the probability rises to 50–67 %."
+      },
+      {
+        "q": "How does family history change the risk?",
+        "a": "A first-degree relative (father, brother) diagnosed before age 65 roughly doubles your risk. With two affected relatives, the risk is roughly four-fold. Earlier screening from age 40–45 is recommended in those cases."
+      },
+      {
+        "q": "Why age-adjusted thresholds?",
+        "a": "The prostate enlarges with age, raising baseline PSA. Age-adjusted thresholds (Oesterling 1993) cut false-positives in older men and false-negatives in younger ones."
+      },
+      {
+        "q": "What happens with an abnormal value?",
+        "a": "Standard practice is to repeat the PSA, then perform a multiparametric MRI of the prostate. Targeted fusion biopsy is performed only if MRI shows a suspicious lesion — replacing the older blind systematic biopsy."
+      }
+    ]
+  }
+}

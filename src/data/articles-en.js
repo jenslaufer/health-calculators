@@ -404,6 +404,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'cholesterolRatio',
     related: ['calculate-bmi', 'measure-blood-pressure', 'diabetes-risk-score'],
   },
+  {
+    slug: 'prostate-cancer-risk',
+    title: 'Prostate Cancer Risk: What Your PSA, Age and Family History Really Mean',
+    description: 'Calculate your prostate cancer risk — PSA, age-adjusted thresholds and family history. Includes biopsy guidance per AUA / EAU recommendations.',
+    date: '2026-04-30',
+    readTime: '8 min',
+    calculatorKey: 'prostateRisk',
+    related: ['life-expectancy-calculator', 'biological-age-calculator', 'diabetes-risk-score'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
