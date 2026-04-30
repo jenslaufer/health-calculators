@@ -395,6 +395,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'childDosage',
     related: ['wachstumsperzentile-kinder', 'koerperoberflaeche-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'cholesterol-verhaeltnis-rechner',
+    title: 'Cholesterin-Verhältnis berechnen: Was deine Blutwerte wirklich aussagen',
+    description: 'Cholesterin-Verhältnis berechnen — Total/HDL, LDL/HDL und atherogener Index. Risikoeinordnung nach AHA/ESC, Friedewald-Formel und Tipps zur Verbesserung.',
+    date: '2026-04-30',
+    readTime: '8 min',
+    calculatorKey: 'cholesterolRatio',
+    related: ['bmi-berechnen', 'blutdruck-richtig-messen', 'diabetes-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

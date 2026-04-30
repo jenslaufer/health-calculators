@@ -395,6 +395,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'childDosage',
     related: ['child-growth-percentile-chart', 'body-surface-area-calculator', 'calculate-bmi'],
   },
+  {
+    slug: 'cholesterol-ratio',
+    title: 'Cholesterol Ratio Explained: What Your Blood Work Really Tells You',
+    description: 'Calculate your cholesterol ratios — Total/HDL, LDL/HDL and the atherogenic index. AHA/ESC risk classification, Friedewald formula and tips to improve.',
+    date: '2026-04-30',
+    readTime: '8 min',
+    calculatorKey: 'cholesterolRatio',
+    related: ['calculate-bmi', 'measure-blood-pressure', 'diabetes-risk-score'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
