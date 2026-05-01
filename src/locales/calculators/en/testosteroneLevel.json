@@ -1,0 +1,66 @@
+{
+  "home": {
+    "calculators": {
+      "testosteroneLevel": {
+        "name": "Testosterone Level Calculator",
+        "description": "Calculate free testosterone from total T, SHBG and albumin (Vermeulen formula)."
+      }
+    }
+  },
+  "testosteroneLevel": {
+    "meta": {
+      "title": "Testosterone Level Calculator — Free T from Total T & SHBG (Vermeulen)",
+      "description": "Calculate free testosterone from total testosterone, SHBG and albumin using the Vermeulen equation. Reference ranges and hypogonadism flag. Free, instant, no sign-up."
+    },
+    "title": "Testosterone Level Calculator",
+    "description": "Calculate your free testosterone from total testosterone, SHBG and albumin using the Vermeulen equation.",
+    "totalLabel": "Total testosterone ({unit})",
+    "shbgLabel": "SHBG (nmol/L)",
+    "albuminLabel": "Albumin (g/L)",
+    "albuminHint": "Default: 43 g/L. Adjust only if you know your albumin (e.g. from blood panel).",
+    "results": "Result",
+    "totalResult": "Total testosterone",
+    "freeResult": "Free testosterone",
+    "category_low": "Low",
+    "category_borderline": "Borderline",
+    "category_normal": "Normal",
+    "category_high": "High",
+    "hypogonadismLikely": "Possible hypogonadism — please consult an endocrinologist or urologist.",
+    "hypogonadismUnlikely": "Values in normal range — no signs of testosterone deficiency.",
+    "refTitle": "Reference ranges (adult men)",
+    "refMarker": "Marker",
+    "refRange": "Range",
+    "refInterpretation": "Interpretation",
+    "refRangeNormal": "Normal — no action needed",
+    "refRangeLow": "Possible hypogonadism",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses the Vermeulen equation (Vermeulen et al., JCEM 1999) to compute free testosterone from total testosterone, SHBG and albumin. In blood, only about 1–3 % of total testosterone is biologically active (free) — the rest is bound to SHBG (~44 %) or albumin (~54 %). The formula solves a quadratic with binding constants KT (SHBG) = 1·10⁹ L/mol and KA (albumin) = 3.6·10⁴ L/mol. Adult-male reference ranges: total 8.6–29 nmol/L, free 0.20–0.62 nmol/L (200–620 pmol/L). Total testosterone below 8 nmol/L is classified as hypogonadism per the Endocrine Society guideline.",
+    "disclaimer": "This calculator is not a medical diagnosis. If your values are low or you have symptoms of testosterone deficiency (fatigue, low libido, muscle loss), please see a doctor.",
+    "faq": [
+      {
+        "q": "What is free testosterone?",
+        "a": "Free testosterone is the unbound, biologically active fraction of your testosterone. Only about 1–3 % circulates freely — the rest is bound to SHBG (sex hormone-binding globulin) or albumin and is physiologically less active."
+      },
+      {
+        "q": "Why isn't total testosterone enough?",
+        "a": "If total testosterone is normal but SHBG is high, free testosterone may be in deficit. Symptoms of low testosterone often correlate better with free testosterone than with the total."
+      },
+      {
+        "q": "When should I get tested?",
+        "a": "In the morning between 7–10am (peak), fasting, after good sleep. If hypogonadism is suspected (fatigue, low libido, muscle loss), do two separate-day measurements."
+      },
+      {
+        "q": "What affects SHBG?",
+        "a": "SHBG rises with hyperthyroidism, liver disease, estrogen therapy, and age. SHBG drops with obesity, insulin resistance, hypothyroidism, and Cushing's syndrome."
+      },
+      {
+        "q": "What do low values mean?",
+        "a": "Total testosterone below 8 nmol/L (≈ 230 ng/dL) is classified as hypogonadism per the Endocrine Society guideline (2018). 8–12 nmol/L is a gray zone — combine with clinical symptoms and free testosterone."
+      },
+      {
+        "q": "Can I raise testosterone naturally?",
+        "a": "Resistance training (especially compound lifts), 7–9 hours of sleep, sufficient vitamin D and zinc, weight loss if overweight, reduced alcohol. These measures raise testosterone by 10–20 % in deficient men."
+      }
+    ]
+  }
+}

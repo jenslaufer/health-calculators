@@ -1,0 +1,66 @@
+{
+  "home": {
+    "calculators": {
+      "testosteroneLevel": {
+        "name": "Testosteron-Rechner",
+        "description": "Berechne freies Testosteron aus Gesamt-T, SHBG und Albumin (Vermeulen-Formel)."
+      }
+    }
+  },
+  "testosteroneLevel": {
+    "meta": {
+      "title": "Testosteron-Rechner — Freies Testosteron berechnen (Vermeulen)",
+      "description": "Freies Testosteron aus Gesamt-Testosteron, SHBG und Albumin berechnen — mit der Vermeulen-Formel. Referenzbereiche, Hypogonadismus-Hinweis. Kostenlos und sofort."
+    },
+    "title": "Testosteron-Rechner",
+    "description": "Berechne dein freies Testosteron aus Gesamt-Testosteron, SHBG und Albumin nach Vermeulen.",
+    "totalLabel": "Gesamt-Testosteron ({unit})",
+    "shbgLabel": "SHBG (nmol/L)",
+    "albuminLabel": "Albumin (g/L)",
+    "albuminHint": "Standard: 43 g/L. Anpassen nur bei bekanntem Albumin-Wert (z. B. aus Blutbild).",
+    "results": "Ergebnis",
+    "totalResult": "Gesamt-Testosteron",
+    "freeResult": "Freies Testosteron",
+    "category_low": "Niedrig",
+    "category_borderline": "Grenzwertig",
+    "category_normal": "Normal",
+    "category_high": "Erhöht",
+    "hypogonadismLikely": "Hinweis auf Hypogonadismus — bitte einen Endokrinologen oder Urologen aufsuchen.",
+    "hypogonadismUnlikely": "Werte im Normalbereich — keine Hinweise auf Testosteronmangel.",
+    "refTitle": "Referenzbereiche (erwachsene Männer)",
+    "refMarker": "Marker",
+    "refRange": "Bereich",
+    "refInterpretation": "Bedeutung",
+    "refRangeNormal": "Normal — keine Maßnahme nötig",
+    "refRangeLow": "Hypogonadismus möglich",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner verwendet die Vermeulen-Formel (Vermeulen et al., JCEM 1999) zur Berechnung des freien Testosterons aus Gesamt-Testosteron, SHBG und Albumin. Im Blut ist nur etwa 1–3 % des Gesamt-Testosterons biologisch aktiv (frei) — der Rest ist an SHBG (~44 %) oder Albumin (~54 %) gebunden. Die Formel löst eine quadratische Gleichung mit den Bindungskonstanten KT (SHBG) = 1·10⁹ L/mol und KA (Albumin) = 3,6·10⁴ L/mol. Referenzbereiche für erwachsene Männer: Gesamt 8,6–29 nmol/L, frei 0,20–0,62 nmol/L (200–620 pmol/L). Werte unter 8 nmol/L (Gesamt) gelten nach Endocrine-Society-Leitlinie als Hypogonadismus.",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Diagnose. Bei niedrigen Werten oder Symptomen einer Testosteron-Insuffizienz (Müdigkeit, Libidoverlust, Muskelabbau) bitte einen Arzt aufsuchen.",
+    "faq": [
+      {
+        "q": "Was ist freies Testosteron?",
+        "a": "Freies Testosteron ist der ungebundene, biologisch aktive Anteil deines Testosterons. Nur etwa 1–3 % zirkulieren frei im Blut — der Rest ist an SHBG (Sexualhormon-bindendes Globulin) oder Albumin gebunden und ist physiologisch weniger wirksam."
+      },
+      {
+        "q": "Warum nicht nur Gesamt-Testosteron messen?",
+        "a": "Bei normalem Gesamt-Testosteron, aber hohem SHBG, kann das freie Testosteron im Mangel sein. Symptome eines Testosteronmangels korrelieren oft besser mit dem freien Testosteron als mit dem Gesamtwert."
+      },
+      {
+        "q": "Wann sollte ich Testosteron messen lassen?",
+        "a": "Morgens zwischen 7 und 10 Uhr (Tagesspitze), nüchtern, nach gutem Schlaf. Bei Verdacht auf Hypogonadismus (Müdigkeit, Libidoverlust, Muskelschwund) zwei Messungen an verschiedenen Tagen."
+      },
+      {
+        "q": "Was beeinflusst den SHBG-Wert?",
+        "a": "SHBG steigt durch Schilddrüsenüberfunktion, Lebererkrankungen, Östrogen-Therapie und mit zunehmendem Alter. SHBG sinkt bei Adipositas, Insulinresistenz, Hypothyreose und Cushing-Syndrom."
+      },
+      {
+        "q": "Was bedeuten niedrige Werte?",
+        "a": "Gesamt-Testosteron unter 8 nmol/L gilt nach Endocrine-Society-Leitlinie (2018) als Hypogonadismus. Im Bereich 8–12 nmol/L liegt eine Grauzone — kombiniere mit klinischen Symptomen und freiem Testosteron."
+      },
+      {
+        "q": "Wie kann ich Testosteron natürlich steigern?",
+        "a": "Krafttraining (vor allem schwere Verbundübungen), 7–9 Stunden Schlaf, Vitamin-D- und Zink-Versorgung sicherstellen, Übergewicht abbauen, Alkohol reduzieren. Diese Maßnahmen heben Testosteron um 10–20 % bei einem Mangel."
+      }
+    ]
+  }
+}
