@@ -1,0 +1,73 @@
+{
+  "home": {
+    "calculators": {
+      "prostateRisk": {
+        "name": "Prostatakrebs-Risiko-Rechner",
+        "description": "Schätze dein Prostatakrebs-Risiko aus PSA, Alter und Familienanamnese."
+      }
+    }
+  },
+  "prostateRisk": {
+    "meta": {
+      "title": "Prostatakrebs-Risiko berechnen — PSA, Alter & Familienanamnese",
+      "description": "Berechne dein Prostatakrebs-Risiko aus PSA-Wert, Alter und Familienanamnese. Mit altersadjustiertem PSA-Schwellenwert nach Oesterling. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Prostatakrebs-Risiko-Rechner",
+    "description": "Schätze dein Prostatakrebs-Risiko basierend auf PSA, Alter und Familienanamnese.",
+    "psaLabel": "PSA-Wert (ng/mL)",
+    "psaPlaceholder": "z. B. 2.5",
+    "ageLabel": "Alter (Jahre)",
+    "agePlaceholder": "z. B. 60",
+    "familyHistoryLabel": "Prostatakrebs in der Familie?",
+    "familyHistoryHint": "Vater, Bruder oder Sohn mit Prostatakrebs vor dem 65. Lebensjahr.",
+    "yes": "Ja",
+    "no": "Nein",
+    "results": "Risikoeinschätzung",
+    "categoryLabel": "Risikokategorie",
+    "scoreLabel": "Risiko-Score",
+    "thresholdLabel": "Altersadjustierter PSA-Schwellenwert",
+    "ratioLabel": "PSA / Schwellenwert",
+    "biopsyRecommended": "Biopsie empfohlen — bitte Urologen aufsuchen.",
+    "biopsyNotRecommended": "Aktuell keine Biopsie indiziert. Regelmäßige Kontrolle empfohlen.",
+    "category_low": "Niedrig",
+    "category_moderate": "Moderat",
+    "category_high": "Hoch",
+    "category_veryHigh": "Sehr hoch",
+    "interpretation_low": "PSA unter dem altersadjustierten Schwellenwert. Routinekontrolle nach AWMF-Leitlinie.",
+    "interpretation_moderate": "PSA im Graubereich. Verlaufskontrolle in 3–6 Monaten, ggf. freies PSA, MRT oder Biopsie diskutieren.",
+    "interpretation_high": "PSA deutlich erhöht. Urologische Abklärung mit MRT und ggf. Biopsie zeitnah indiziert.",
+    "interpretation_veryHigh": "PSA stark erhöht. Sofortige urologische Abklärung — Wahrscheinlichkeit eines klinisch signifikanten Karzinoms hoch.",
+    "refTitle": "Altersadjustierte PSA-Schwellenwerte (Oesterling)",
+    "ageRange": "Altersgruppe",
+    "psaThreshold": "PSA-Obergrenze (ng/mL)",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner verwendet altersadjustierte PSA-Schwellenwerte nach Oesterling et al. (JAMA, 1993): 40–49 → 2.5, 50–59 → 3.5, 60–69 → 4.5, 70–79 → 6.5 ng/mL. Risikokategorien: PSA < Schwellenwert = niedrig; Schwellenwert bis 10 ng/mL = moderat (Graubereich); 10–20 ng/mL = hoch; > 20 ng/mL = sehr hoch. Eine positive Familienanamnese (Vater/Bruder mit Prostatakrebs vor dem 65. Lebensjahr) erhöht das Risiko etwa um den Faktor 2 und kann eine niedrige Kategorie auf moderat heben. Dies ist eine Schätzung — die endgültige Diagnose erfolgt durch Urologen mittels MRT und Biopsie.",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Untersuchung. Bei erhöhtem PSA oder Familienanamnese unbedingt Urologen aufsuchen.",
+    "faq": [
+      {
+        "q": "Was ist der PSA-Wert?",
+        "a": "Das prostataspezifische Antigen (PSA) ist ein Eiweiß, das von Prostatazellen gebildet wird. Erhöhte Werte können auf Prostatakrebs, gutartige Vergrößerung (BPH) oder Prostatitis hindeuten — nicht jeder hohe Wert bedeutet Krebs."
+      },
+      {
+        "q": "Ab welchem Alter sollte ich PSA testen lassen?",
+        "a": "Die deutsche AWMF-Leitlinie empfiehlt ab 45 Jahren ein Beratungsgespräch (bei familiärer Belastung ab 40). Eine Routine-Bestimmung erfolgt nach individueller Aufklärung über Nutzen und Risiken."
+      },
+      {
+        "q": "Was bedeutet ein PSA-Wert über 4 ng/mL?",
+        "a": "PSA zwischen 4 und 10 ng/mL gilt als Graubereich — etwa 25–30 % dieser Männer haben Prostatakrebs. Eine MRT und ggf. Biopsie sind indiziert. Über 10 ng/mL steigt die Wahrscheinlichkeit auf 50–67 %."
+      },
+      {
+        "q": "Wie verändert eine Familienanamnese das Risiko?",
+        "a": "Hat ein erstgradiger Verwandter (Vater, Bruder) Prostatakrebs vor dem 65. Lebensjahr, verdoppelt sich das Risiko etwa. Bei zwei Betroffenen vervierfacht es sich. Empfohlen ist dann ein früheres Screening ab 40–45 Jahren."
+      },
+      {
+        "q": "Warum altersadjustierte PSA-Werte?",
+        "a": "Die Prostata wächst mit dem Alter, der PSA-Wert steigt physiologisch an. Altersadjustierte Schwellenwerte (Oesterling 1993) reduzieren falsch-positive Befunde bei älteren Männern und falsch-negative bei jüngeren."
+      },
+      {
+        "q": "Was passiert bei einem auffälligen Wert?",
+        "a": "Üblicherweise erfolgt eine Wiederholung des PSA-Tests, dann eine MRT-Untersuchung der Prostata. Nur bei MRT-Auffälligkeit ist eine gezielte Fusionsbiopsie nötig — die Praxis hat sich von der Standard-Biopsie weg entwickelt."
+      }
+    ]
+  }
+}

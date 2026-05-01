@@ -404,6 +404,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'cholesterolRatio',
     related: ['bmi-berechnen', 'blutdruck-richtig-messen', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'prostatakrebs-risiko-berechnen',
+    title: 'Prostatakrebs-Risiko berechnen: Was PSA, Alter und Familienanamnese wirklich aussagen',
+    description: 'Prostatakrebs-Risiko berechnen — PSA-Wert, altersadjustierte Schwellenwerte und Familienanamnese richtig einordnen. Mit Empfehlungen nach AWMF-Leitlinie.',
+    date: '2026-04-30',
+    readTime: '8 min',
+    calculatorKey: 'prostateRisk',
+    related: ['lebenserwartung-berechnen', 'biologisches-alter-berechnen', 'diabetes-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
