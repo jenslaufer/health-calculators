@@ -422,6 +422,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pcosSymptoms',
     related: ['eisprung-berechnen', 'zyklusrechner-guide', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'testosteronwert-berechnen',
+    title: 'Testosteronwert berechnen: Frei vs. gebunden, SHBG und was die Werte bedeuten',
+    description: 'Freies Testosteron aus Gesamt-T, SHBG und Albumin berechnen — mit der Vermeulen-Formel. Referenzbereiche, Symptome bei Mangel und natürliche Maßnahmen.',
+    date: '2026-05-01',
+    readTime: '8 min',
+    calculatorKey: 'testosteroneLevel',
+    related: ['prostatakrebs-risiko-berechnen', 'biologisches-alter-berechnen', 'proteinbedarf-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -422,6 +422,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'pcosSymptoms',
     related: ['calculate-ovulation', 'period-calculator-guide', 'diabetes-risk-score'],
   },
+  {
+    slug: 'testosterone-level-calculator',
+    title: 'Testosterone Level Calculator: Free vs Bound, SHBG and What Your Numbers Mean',
+    description: 'Calculate free testosterone from total T, SHBG and albumin using the Vermeulen formula. Reference ranges, low-T symptoms, and natural ways to raise it.',
+    date: '2026-05-01',
+    readTime: '8 min',
+    calculatorKey: 'testosteroneLevel',
+    related: ['prostate-cancer-risk', 'biological-age-calculator', 'protein-requirements-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
