@@ -1,0 +1,106 @@
+{
+  "home": {
+    "calculators": {
+      "erectileDysfunction": {
+        "name": "Erektile-Dysfunktion-Test",
+        "description": "IIEF-5-Fragebogen — wissenschaftlich validierter Test zur Einschätzung von Erektionsstörungen (5 Fragen)."
+      }
+    }
+  },
+  "erectileDysfunction": {
+    "meta": {
+      "title": "Erektile-Dysfunktion-Test (IIEF-5) — Selbstcheck mit Score | Health Calculators",
+      "description": "Erektile Dysfunktion einschätzen mit dem IIEF-5-Fragebogen (SHIM). 5 Fragen, sofortiger Score, Schweregrad nach Cappelleri & Rosen. Anonym, kostenlos, ohne Anmeldung."
+    },
+    "title": "Erektile-Dysfunktion-Test (IIEF-5)",
+    "description": "Selbsteinschätzung mit dem International Index of Erectile Function (Kurzform). 5 Fragen zu den letzten 6 Monaten — Score, Schweregrad und Empfehlung in unter 2 Minuten.",
+    "instructionsLabel": "Anleitung",
+    "instructions": "Beantworte jede Frage zu den letzten 6 Monaten ehrlich. Für jede Frage gibt es 5 Antwortmöglichkeiten — wähle diejenige, die deine Erfahrung am besten beschreibt.",
+    "results": "Dein IIEF-5-Score",
+    "reset": "Zurücksetzen",
+    "questions": {
+      "q1": {
+        "text": "Wie schätzt du dein Vertrauen ein, eine Erektion zu bekommen und aufrechtzuerhalten?",
+        "opt1": "Sehr gering",
+        "opt2": "Gering",
+        "opt3": "Mittelmäßig",
+        "opt4": "Hoch",
+        "opt5": "Sehr hoch"
+      },
+      "q2": {
+        "text": "Wenn du Erektionen durch sexuelle Stimulation hattest, wie oft waren sie hart genug für die Penetration?",
+        "opt1": "Fast nie / nie",
+        "opt2": "Selten (deutlich weniger als die Hälfte der Versuche)",
+        "opt3": "Manchmal (etwa die Hälfte der Versuche)",
+        "opt4": "Meistens (deutlich mehr als die Hälfte der Versuche)",
+        "opt5": "Fast immer / immer"
+      },
+      "q3": {
+        "text": "Beim Geschlechtsverkehr — wie oft konntest du deine Erektion bis zum Ende halten?",
+        "opt1": "Fast nie / nie",
+        "opt2": "Selten (deutlich weniger als die Hälfte der Versuche)",
+        "opt3": "Manchmal (etwa die Hälfte der Versuche)",
+        "opt4": "Meistens (deutlich mehr als die Hälfte der Versuche)",
+        "opt5": "Fast immer / immer"
+      },
+      "q4": {
+        "text": "Wie schwierig war es während des Geschlechtsverkehrs, die Erektion bis zum Abschluss aufrechtzuerhalten?",
+        "opt1": "Extrem schwierig",
+        "opt2": "Sehr schwierig",
+        "opt3": "Schwierig",
+        "opt4": "Etwas schwierig",
+        "opt5": "Nicht schwierig"
+      },
+      "q5": {
+        "text": "Wenn du Geschlechtsverkehr versucht hast, wie oft war er befriedigend für dich?",
+        "opt1": "Fast nie / nie",
+        "opt2": "Selten (deutlich weniger als die Hälfte der Versuche)",
+        "opt3": "Manchmal (etwa die Hälfte der Versuche)",
+        "opt4": "Meistens (deutlich mehr als die Hälfte der Versuche)",
+        "opt5": "Fast immer / immer"
+      }
+    },
+    "severity_noEd": "Keine erektile Dysfunktion",
+    "severity_mild": "Leichte ED",
+    "severity_mildModerate": "Leicht bis mittelschwer",
+    "severity_moderate": "Mittelschwere ED",
+    "severity_severe": "Schwere ED",
+    "advice_noEd": "Deine Werte sprechen nicht für eine erektile Dysfunktion. Bei gelegentlichen Schwierigkeiten — Stress, Alkohol oder Müdigkeit — keine Sorge: das ist normal.",
+    "advice_mild": "Leichte Hinweise auf eine ED. Häufig durch Lebensstil-Faktoren bedingt — Schlaf, Bewegung, Stressreduktion und ggf. Alkohol-/Nikotinverzicht zeigen oft schnell Wirkung. Bei anhaltenden Beschwerden: ärztlich abklären.",
+    "advice_mildModerate": "Mäßige ED. Bitte mit deinem Hausarzt oder Urologen sprechen — häufig stehen vaskuläre, hormonelle (Testosteron) oder psychogene Ursachen dahinter, die gut behandelbar sind.",
+    "advice_moderate": "Mittelschwere ED. Eine ärztliche Abklärung wird empfohlen. Häufig liegen Begleiterkrankungen (Herz-Kreislauf, Diabetes, Hormonmangel) vor, die ohnehin behandelt werden sollten.",
+    "advice_severe": "Schwere ED. Bitte zeitnah einen Urologen aufsuchen. ED ist oft ein früher Marker für Herz-Kreislauf-Erkrankungen — eine vollständige Abklärung schützt deine Gesundheit insgesamt.",
+    "refTitle": "Schweregrad-Tabelle (Cappelleri & Rosen 2005)",
+    "refScore": "Score",
+    "refSeverity": "Bedeutung",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der IIEF-5 (auch SHIM — Sexual Health Inventory for Men) ist die international validierte 5-Fragen-Kurzform des International Index of Erectile Function. Entwickelt von Rosen et al. (1999) und 2005 von Cappelleri & Rosen mit Schweregrad-Bändern versehen, wird er weltweit in Klinik und Forschung als Screening-Instrument eingesetzt. Jede der 5 Fragen wird mit 1–5 Punkten bewertet — der Gesamtscore reicht von 5 bis 25. Werte ab 22 sprechen gegen eine ED, Werte unter 8 gelten als schwere Form. Sensitivität: 98 %, Spezifität: 88 % bei einem Cutoff von ≤ 21 für die ED-Diagnose.",
+    "disclaimer": "Dieser Test ersetzt keine ärztliche Diagnose. ED ist häufig ein früher Indikator für Gefäßerkrankungen, Diabetes oder Hormonmangel — bei auffälligem Score bitte den Hausarzt oder Urologen konsultieren. Niedrige Werte bedeuten nicht, dass du eine Krankheit hast — sie sind ein Anlass, gemeinsam mit dem Arzt nach Ursachen zu suchen.",
+    "faq": [
+      {
+        "q": "Was ist der IIEF-5?",
+        "a": "Der IIEF-5 ist die validierte Kurzform des International Index of Erectile Function — ein 5-Fragen-Selbstcheck zur Einschätzung der Erektionsfähigkeit über die letzten 6 Monate. Entwickelt 1999 von Rosen et al., heute weltweiter Standard im Screening."
+      },
+      {
+        "q": "Wie verlässlich ist das Ergebnis?",
+        "a": "Bei einem Cutoff von ≤ 21 erreicht der IIEF-5 eine Sensitivität von 98 % und eine Spezifität von 88 %. Das heißt: er entdeckt fast alle ED-Fälle und liefert wenige Fehlalarme. Eine ärztliche Untersuchung bleibt aber für die Ursachenabklärung notwendig."
+      },
+      {
+        "q": "Sind meine Antworten anonym?",
+        "a": "Ja — der Rechner läuft komplett im Browser. Es werden keine Daten an einen Server übermittelt, nichts gespeichert und nichts geteilt. Schließe einfach den Tab und alle Antworten sind weg."
+      },
+      {
+        "q": "Was sind die häufigsten Ursachen einer ED?",
+        "a": "ED hat meist mehrere Ursachen: vaskulär (Herz-Kreislauf-Erkrankungen, Atherosklerose, Bluthochdruck), endokrin (Testosteronmangel, Diabetes), neurogen (nach Operationen oder bei Multiple Sklerose), medikamentös (Betablocker, SSRI) und psychogen (Stress, Beziehungsprobleme, Versagensangst)."
+      },
+      {
+        "q": "Was hilft natürlich gegen ED?",
+        "a": "Studienevidenz für: regelmäßige Bewegung (40 % Risikoreduktion), Gewichtsabnahme bei Übergewicht, Mediterrane Ernährung, Rauchstopp, Alkohol begrenzen, ausreichend Schlaf, Stressreduktion. Bei Testosteronmangel kann Substitution helfen, bei vaskulären Ursachen PDE-5-Hemmer."
+      },
+      {
+        "q": "Wann sollte ich zum Arzt?",
+        "a": "Ab einem Score von 21 oder niedriger — und immer dann, wenn dich die Situation belastet. ED ist auch bei jüngeren Männern häufig ein früher Marker für Herz-Kreislauf-Erkrankungen, daher lohnt sich die Abklärung unabhängig vom Alter."
+      }
+    ]
+  }
+}

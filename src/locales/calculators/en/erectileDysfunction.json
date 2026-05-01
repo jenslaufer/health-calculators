@@ -1,0 +1,106 @@
+{
+  "home": {
+    "calculators": {
+      "erectileDysfunction": {
+        "name": "Erectile Dysfunction Calculator",
+        "description": "IIEF-5 (SHIM) questionnaire — validated 5-question screening tool for erectile dysfunction."
+      }
+    }
+  },
+  "erectileDysfunction": {
+    "meta": {
+      "title": "Erectile Dysfunction Calculator (IIEF-5) — Free Online Self-Check | Health Calculators",
+      "description": "Assess erectile dysfunction with the IIEF-5 (SHIM) questionnaire. 5 questions, instant score, severity classification by Cappelleri & Rosen. Anonymous, free, no sign-up."
+    },
+    "title": "Erectile Dysfunction Calculator (IIEF-5)",
+    "description": "Self-assessment using the International Index of Erectile Function (short form). 5 questions about the last 6 months — score, severity grade and guidance in under 2 minutes.",
+    "instructionsLabel": "Instructions",
+    "instructions": "Answer each question honestly about your last 6 months. Each question has 5 options — pick the one that best matches your experience.",
+    "results": "Your IIEF-5 score",
+    "reset": "Reset",
+    "questions": {
+      "q1": {
+        "text": "How do you rate your confidence that you could get and keep an erection?",
+        "opt1": "Very low",
+        "opt2": "Low",
+        "opt3": "Moderate",
+        "opt4": "High",
+        "opt5": "Very high"
+      },
+      "q2": {
+        "text": "When you had erections with sexual stimulation, how often were they hard enough for penetration?",
+        "opt1": "Almost never / never",
+        "opt2": "A few times (much less than half the time)",
+        "opt3": "Sometimes (about half the time)",
+        "opt4": "Most times (much more than half the time)",
+        "opt5": "Almost always / always"
+      },
+      "q3": {
+        "text": "During sexual intercourse, how often were you able to maintain your erection after penetration?",
+        "opt1": "Almost never / never",
+        "opt2": "A few times (much less than half the time)",
+        "opt3": "Sometimes (about half the time)",
+        "opt4": "Most times (much more than half the time)",
+        "opt5": "Almost always / always"
+      },
+      "q4": {
+        "text": "During sexual intercourse, how difficult was it to maintain your erection to completion?",
+        "opt1": "Extremely difficult",
+        "opt2": "Very difficult",
+        "opt3": "Difficult",
+        "opt4": "Slightly difficult",
+        "opt5": "Not difficult"
+      },
+      "q5": {
+        "text": "When you attempted intercourse, how often was it satisfactory for you?",
+        "opt1": "Almost never / never",
+        "opt2": "A few times (much less than half the time)",
+        "opt3": "Sometimes (about half the time)",
+        "opt4": "Most times (much more than half the time)",
+        "opt5": "Almost always / always"
+      }
+    },
+    "severity_noEd": "No erectile dysfunction",
+    "severity_mild": "Mild ED",
+    "severity_mildModerate": "Mild to moderate",
+    "severity_moderate": "Moderate ED",
+    "severity_severe": "Severe ED",
+    "advice_noEd": "Your answers don't suggest erectile dysfunction. Occasional difficulty — from stress, alcohol or fatigue — is normal and not a concern.",
+    "advice_mild": "Mild signs of ED. Often driven by lifestyle factors — sleep, exercise, stress reduction, cutting alcohol/nicotine usually help quickly. If symptoms persist, see a doctor.",
+    "advice_mildModerate": "Mild-to-moderate ED. Worth talking to your GP or urologist — vascular, hormonal (testosterone) or psychogenic causes are common and treatable.",
+    "advice_moderate": "Moderate ED. A medical evaluation is recommended. Underlying conditions (cardiovascular disease, diabetes, hormone deficiency) are common and warrant treatment regardless.",
+    "advice_severe": "Severe ED. Please see a urologist soon. ED is often an early marker of cardiovascular disease — a full workup protects your overall health.",
+    "refTitle": "Severity bands (Cappelleri & Rosen 2005)",
+    "refScore": "Score",
+    "refSeverity": "Interpretation",
+    "howItWorks": "How it works",
+    "howItWorksText": "The IIEF-5 (also called SHIM — Sexual Health Inventory for Men) is the internationally validated 5-question short form of the International Index of Erectile Function. Developed by Rosen et al. (1999) and given severity bands by Cappelleri & Rosen (2005), it's the global standard screening tool in clinical practice and research. Each of the 5 questions is scored 1–5; total range is 5–25. Scores of 22+ rule out ED, scores below 8 indicate severe ED. Sensitivity: 98 %, specificity: 88 % at a cutoff of ≤ 21.",
+    "disclaimer": "This test does not replace a medical diagnosis. ED is often an early indicator of vascular disease, diabetes or hormone deficiency — if your score is concerning, please see a GP or urologist. A low score doesn't mean you have a disease — it's a reason to investigate causes with your doctor.",
+    "faq": [
+      {
+        "q": "What is the IIEF-5?",
+        "a": "The IIEF-5 is the validated short form of the International Index of Erectile Function — a 5-question self-check that assesses erectile function over the last 6 months. Developed by Rosen et al. in 1999, it's the global standard for ED screening."
+      },
+      {
+        "q": "How accurate is the result?",
+        "a": "At a cutoff of ≤ 21, the IIEF-5 achieves 98 % sensitivity and 88 % specificity. It catches almost all ED cases with few false positives. A medical evaluation is still needed to identify the underlying cause."
+      },
+      {
+        "q": "Are my answers private?",
+        "a": "Yes — the calculator runs entirely in your browser. Nothing is sent to a server, nothing is stored, nothing is shared. Just close the tab and your answers are gone."
+      },
+      {
+        "q": "What are the most common causes of ED?",
+        "a": "ED usually has multiple causes: vascular (cardiovascular disease, atherosclerosis, hypertension), endocrine (low testosterone, diabetes), neurogenic (post-surgery or with multiple sclerosis), drug-induced (beta-blockers, SSRIs), and psychogenic (stress, relationship issues, performance anxiety)."
+      },
+      {
+        "q": "What helps ED naturally?",
+        "a": "Strong evidence for: regular exercise (40 % risk reduction), weight loss if overweight, Mediterranean diet, smoking cessation, limiting alcohol, sufficient sleep, stress reduction. If testosterone is low, replacement therapy can help; for vascular causes, PDE-5 inhibitors are first-line."
+      },
+      {
+        "q": "When should I see a doctor?",
+        "a": "Score of 21 or below — and any time the situation is causing you distress. Even in younger men, ED can be an early marker of cardiovascular disease, so it's worth investigating regardless of age."
+      }
+    ]
+  }
+}

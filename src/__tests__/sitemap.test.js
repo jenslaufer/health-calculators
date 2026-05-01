@@ -54,6 +54,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'prostatakrebs-risiko-berechnen',
   'pcos-symptome-erkennen',
   'testosteronwert-berechnen',
+  'erektile-dysfunktion-test',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -92,12 +93,13 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'prostate-cancer-risk',
   'pcos-symptom-checker',
   'testosterone-level-calculator',
+  'erectile-dysfunction-iief-5',
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 50 calculator meta files', () => {
+  it('discovers all 51 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(50)
+    expect(metas).toHaveLength(51)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -135,19 +137,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 48 DE blog slugs', () => {
+  it('returns all 49 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(48)
+    expect(de).toHaveLength(49)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 48 EN blog slugs', () => {
+  it('returns all 49 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(48)
+    expect(en).toHaveLength(49)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -215,9 +217,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 100 calcs + 2 blog index + 96 blog articles = 200)', () => {
+  it('generates correct total URL count (2 home + 102 calcs + 2 blog index + 98 blog articles = 204)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(200)
+    expect(urlCount).toBe(204)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
