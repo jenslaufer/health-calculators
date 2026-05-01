@@ -413,6 +413,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'prostateRisk',
     related: ['life-expectancy-calculator', 'biological-age-calculator', 'diabetes-risk-score'],
   },
+  {
+    slug: 'pcos-symptom-checker',
+    title: 'PCOS Symptom Checker: Rotterdam Criteria, Signs and the Path to Diagnosis',
+    description: 'PCOS symptom checker — irregular cycles, hyperandrogenism, acanthosis nigricans and fertility issues. With Rotterdam criteria, diagnosis pathway and a free PCOS screener.',
+    date: '2026-05-01',
+    readTime: '8 min',
+    calculatorKey: 'pcosSymptoms',
+    related: ['calculate-ovulation', 'period-calculator-guide', 'diabetes-risk-score'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -1,0 +1,80 @@
+{
+  "home": {
+    "calculators": {
+      "pcosSymptoms": {
+        "name": "PCOS Symptom Checker",
+        "description": "Screen for PCOS using the Rotterdam criteria and common symptom patterns."
+      }
+    }
+  },
+  "pcosSymptoms": {
+    "meta": {
+      "title": "PCOS Symptom Checker — Rotterdam Criteria Screening",
+      "description": "Screen your PCOS symptoms against the Rotterdam criteria. Cycle changes, hyperandrogenism, hirsutism, acne and more — fast, free, no sign-up."
+    },
+    "title": "PCOS Symptom Checker",
+    "description": "Symptom screening based on the Rotterdam criteria — to prepare a focused conversation with your gynecologist.",
+    "ovulatorySection": "Cycle & ovulation",
+    "androgenSection": "Hyperandrogenic signs",
+    "metabolicSection": "Metabolic & other clues",
+    "irregularCycles": "Irregular cycles (longer than 35 or shorter than 21 days)",
+    "missedPeriods": "Missed periods (3 or more in a row)",
+    "hirsutism": "Excess body hair (hirsutism — face, chest, abdomen)",
+    "acne": "Persistent adult acne (face, chest, back)",
+    "hairLoss": "Scalp hair thinning (androgenic alopecia)",
+    "weightGain": "Weight gain or central obesity despite stable lifestyle",
+    "acanthosis": "Dark velvety patches in skin folds (acanthosis nigricans)",
+    "fertilityIssues": "Trouble conceiving for over 12 months",
+    "familyHistory": "PCOS or type 2 diabetes in close family",
+    "yes": "Yes",
+    "no": "No",
+    "results": "Symptom assessment",
+    "category_low": "Low",
+    "category_moderate": "Moderate",
+    "category_high": "High",
+    "criteriaMet": "Rotterdam criteria met: {count} of 3",
+    "ovulatoryDysfunction": "Ovulatory dysfunction detected",
+    "hyperandrogenism": "Hyperandrogenic signs detected",
+    "noFinding": "No typical pattern detected",
+    "symptomCount": "Symptoms reported",
+    "interpretation_low": "No typical PCOS pattern is showing right now. Track your cycle and revisit if anything changes.",
+    "interpretation_moderate": "A few symptoms hint at a possible hormonal imbalance. A focused hormone panel (androgens, LH/FSH, insulin) and a gynecology visit are reasonable next steps.",
+    "interpretation_high": "Two of three Rotterdam criteria are met clinically — a specialist work-up with hormone panel and ultrasound is clearly recommended.",
+    "evaluationRecommended": "Specialist evaluation recommended — book an appointment with gynecology or endocrinology.",
+    "evaluationNotRecommended": "No specific evaluation indicated right now. Re-check if symptoms change.",
+    "criteriaTitle": "Rotterdam criteria (2 of 3 needed for PCOS diagnosis)",
+    "criterion1": "1. Ovulatory dysfunction (oligo- or anovulation)",
+    "criterion2": "2. Hyperandrogenism (clinical or biochemical)",
+    "criterion3": "3. Polycystic ovaries on ultrasound",
+    "criterion3Note": "Criterion 3 requires ultrasound imaging by a clinician — this calculator cannot replace it.",
+    "howItWorks": "How it works",
+    "howItWorksText": "This tool maps to the Rotterdam criteria (ESHRE/ASRM 2003): a PCOS diagnosis needs 2 of 3 — ovulatory dysfunction, clinical or biochemical hyperandrogenism, and polycystic ovaries on ultrasound. Your inputs estimate the first two criteria; the ultrasound stays with your clinician. Supporting symptoms (acanthosis nigricans, weight gain, fertility issues, family history) raise the suspicion score. The result is orientation, not a diagnosis.",
+    "disclaimer": "This calculator does not replace medical evaluation. If PCOS is suspected, consult a gynecologist or endocrinologist — therapy and lifestyle measures are often very effective.",
+    "faq": [
+      {
+        "q": "What is PCOS?",
+        "a": "Polycystic ovary syndrome (PCOS) is a hormonal disorder with elevated androgens, ovulatory dysfunction and often polycystic ovaries. It is the most common endocrine disorder in women of reproductive age, affecting roughly 5–10 %."
+      },
+      {
+        "q": "What are the Rotterdam criteria?",
+        "a": "The Rotterdam criteria (ESHRE/ASRM 2003) are the international standard for PCOS diagnosis. Two of three are required: ovulatory dysfunction, hyperandrogenism (clinical or biochemical), and polycystic ovaries on ultrasound."
+      },
+      {
+        "q": "What is hirsutism?",
+        "a": "Hirsutism is excess male-pattern terminal hair in women — face, chest, abdomen, back. It is graded clinically with the modified Ferriman-Gallwey score; values of 8 or higher are considered abnormal."
+      },
+      {
+        "q": "Which lab tests are used in PCOS work-up?",
+        "a": "Standard hormones: total and free testosterone, SHBG, DHEAS, androstenedione, LH, FSH, estradiol, prolactin, TSH, optionally 17-OH-progesterone. Metabolic: fasting insulin, HbA1c and an oral glucose tolerance test for insulin resistance."
+      },
+      {
+        "q": "Can you get pregnant with PCOS?",
+        "a": "Yes — most women with PCOS can have children, though support is often needed. Effective options include lifestyle change (weight), metformin, letrozole or clomiphene for ovulation induction, and assisted reproduction (IVF) when indicated."
+      },
+      {
+        "q": "What helps with PCOS?",
+        "a": "Lifestyle changes have the biggest effect: a 5–10 % weight loss often restores cycles and lowers androgens. Pharmacology: metformin (insulin resistance), combined pill (cycle regulation, acne, hirsutism), spironolactone (antiandrogen), and inositol as a supplement."
+      }
+    ]
+  }
+}
