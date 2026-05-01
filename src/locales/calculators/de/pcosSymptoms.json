@@ -1,0 +1,80 @@
+{
+  "home": {
+    "calculators": {
+      "pcosSymptoms": {
+        "name": "PCOS-Symptome-Rechner",
+        "description": "Schätze dein PCOS-Risiko anhand der Rotterdam-Kriterien und typischer Symptome."
+      }
+    }
+  },
+  "pcosSymptoms": {
+    "meta": {
+      "title": "PCOS-Symptome-Rechner — Rotterdam-Kriterien online prüfen",
+      "description": "Prüfe deine PCOS-Symptome nach den Rotterdam-Kriterien. Zyklusstörungen, Hyperandrogenismus, Hirsutismus, Akne und mehr — schnell, kostenlos, ohne Anmeldung."
+    },
+    "title": "PCOS-Symptome-Rechner",
+    "description": "Symptom-Screening nach den Rotterdam-Kriterien — als Vorbereitung für das Gespräch mit deiner Gynäkologin.",
+    "ovulatorySection": "Zyklus & Eisprung",
+    "androgenSection": "Hyperandrogene Zeichen",
+    "metabolicSection": "Stoffwechsel & weitere Hinweise",
+    "irregularCycles": "Unregelmäßige Zyklen (länger als 35 oder kürzer als 21 Tage)",
+    "missedPeriods": "Ausgebliebene Perioden (3 oder mehr in Folge)",
+    "hirsutism": "Vermehrte Körperbehaarung (Hirsutismus, z. B. Gesicht, Brust, Bauch)",
+    "acne": "Hartnäckige Akne (Gesicht, Brust, Rücken)",
+    "hairLoss": "Haarausfall am Kopf (androgene Alopezie)",
+    "weightGain": "Gewichtszunahme oder Bauchfett trotz unverändertem Lebensstil",
+    "acanthosis": "Dunkle Hautstellen in Hautfalten (Acanthosis nigricans)",
+    "fertilityIssues": "Unerfüllter Kinderwunsch über 12 Monate",
+    "familyHistory": "PCOS oder Typ-2-Diabetes in der nahen Familie",
+    "yes": "Ja",
+    "no": "Nein",
+    "results": "Symptom-Auswertung",
+    "category_low": "Niedrig",
+    "category_moderate": "Moderat",
+    "category_high": "Hoch",
+    "criteriaMet": "Rotterdam-Kriterien erfüllt: {count} von 3",
+    "ovulatoryDysfunction": "Zyklusstörung erkannt",
+    "hyperandrogenism": "Hyperandrogene Zeichen erkannt",
+    "noFinding": "Kein typisches Zeichen erkannt",
+    "symptomCount": "Erkannte Symptome",
+    "interpretation_low": "Aktuell ergeben sich keine typischen PCOS-Hinweise. Beobachte deinen Zyklus und sprich bei Veränderungen mit deiner Gynäkologin.",
+    "interpretation_moderate": "Einzelne Symptome können auf hormonelle Ungleichgewichte hindeuten. Ein Hormonstatus (Androgene, LH/FSH, Insulin) und ein Gespräch mit der Gynäkologin sind sinnvoll.",
+    "interpretation_high": "Du erfüllst zwei der drei Rotterdam-Kriterien klinisch — eine fachärztliche Abklärung mit Hormonstatus und Ultraschall ist klar empfohlen.",
+    "evaluationRecommended": "Fachärztliche Abklärung empfohlen — bitte vereinbare einen Termin in der Gynäkologie oder Endokrinologie.",
+    "evaluationNotRecommended": "Aktuell keine spezifische Abklärung indiziert. Bei Veränderungen erneut prüfen.",
+    "criteriaTitle": "Rotterdam-Kriterien (2 von 3 für PCOS-Diagnose)",
+    "criterion1": "1. Zyklusstörung (Oligo- oder Anovulation)",
+    "criterion2": "2. Hyperandrogenismus (klinisch oder laborchemisch)",
+    "criterion3": "3. Polyzystische Ovarien im Ultraschall",
+    "criterion3Note": "Punkt 3 wird per Ultraschall ärztlich beurteilt — dieser Rechner kann die Bildgebung nicht ersetzen.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner orientiert sich an den Rotterdam-Kriterien (ESHRE/ASRM 2003): Für eine PCOS-Diagnose sind 2 von 3 Kriterien nötig — Zyklusstörung, klinischer oder laborchemischer Hyperandrogenismus und polyzystische Ovarien im Ultraschall. Aus deinen Eingaben werden die ersten beiden Kriterien geschätzt; der Ultraschall bleibt der Ärztin/dem Arzt vorbehalten. Begleitsymptome (Akanthosis, Übergewicht, Fertilitätsprobleme, Familienanamnese) erhöhen den Verdachtsscore. Das Ergebnis ist eine Orientierung — keine Diagnose.",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Abklärung. Bei Verdacht auf PCOS bitte Gynäkologin oder Endokrinologie aufsuchen — oft sind Therapie oder Lebensstilmaßnahmen sehr wirksam.",
+    "faq": [
+      {
+        "q": "Was ist PCOS?",
+        "a": "Das polyzystische Ovarialsyndrom (PCOS) ist eine hormonelle Störung mit erhöhten Androgenen, Zyklusstörungen und häufig polyzystischen Eierstöcken. Es ist die häufigste Hormonstörung bei Frauen im fortpflanzungsfähigen Alter — etwa 5–10 % sind betroffen."
+      },
+      {
+        "q": "Was sind die Rotterdam-Kriterien?",
+        "a": "Die Rotterdam-Kriterien (ESHRE/ASRM 2003) sind der internationale Standard für die PCOS-Diagnose. Erforderlich sind 2 von 3: Zyklusstörung, Hyperandrogenismus (klinisch oder im Labor) und polyzystische Ovarien im Ultraschall."
+      },
+      {
+        "q": "Was bedeutet Hirsutismus?",
+        "a": "Hirsutismus ist eine vermehrte, männlich-typische Körperbehaarung bei Frauen — z. B. Bart, Brust, Bauch, Rücken. Beurteilt wird er klinisch über den modifizierten Ferriman-Gallwey-Score (Werte ab 8 gelten als auffällig)."
+      },
+      {
+        "q": "Welche Hormonwerte werden bei PCOS geprüft?",
+        "a": "Standardlabor: Testosteron (Gesamt + frei), SHBG, DHEAS, Androstendion, LH, FSH, Östradiol, Prolaktin, TSH, ggf. 17-OH-Progesteron. Stoffwechsel: Nüchterninsulin, HbA1c und ein OGTT zum Ausschluss einer Insulinresistenz."
+      },
+      {
+        "q": "Kann man mit PCOS schwanger werden?",
+        "a": "Ja — die meisten Frauen mit PCOS können Mutter werden, oft ist aber Unterstützung nötig. Wirksam sind Lebensstil (Gewicht), Metformin, Letrozol oder Clomifen zur Ovulationsinduktion und ggf. assistierte Reproduktion (IVF)."
+      },
+      {
+        "q": "Was hilft bei PCOS?",
+        "a": "Lebensstil hat den größten Effekt: 5–10 % Gewichtsabnahme normalisiert oft den Zyklus und senkt Androgene. Medikamentös: Metformin (Insulinresistenz), kombinierte Pille (Zyklusregulation, Akne, Hirsutismus), Spironolacton (Antiandrogen), Inositol als Nahrungsergänzung."
+      }
+    ]
+  }
+}

@@ -413,6 +413,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'prostateRisk',
     related: ['lebenserwartung-berechnen', 'biologisches-alter-berechnen', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'pcos-symptome-erkennen',
+    title: 'PCOS-Symptome erkennen: Rotterdam-Kriterien, Anzeichen und Diagnose',
+    description: 'PCOS-Symptome erkennen — Zyklusstörungen, Hyperandrogenismus, Acanthosis nigricans und Kinderwunsch. Mit Rotterdam-Kriterien, Diagnose-Pfad und Symptom-Rechner.',
+    date: '2026-05-01',
+    readTime: '8 min',
+    calculatorKey: 'pcosSymptoms',
+    related: ['eisprung-berechnen', 'zyklusrechner-guide', 'diabetes-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
