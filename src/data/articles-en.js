@@ -449,6 +449,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'malePattern',
     related: ['testosterone-level-calculator', 'erectile-dysfunction-iief-5', 'biological-age-calculator'],
   },
+  {
+    slug: 'cardiovascular-risk-framingham',
+    title: 'Cardiovascular Risk Calculator: Framingham, SCORE2 and What the Numbers Mean',
+    description: 'Estimate your 10-year risk of heart attack and stroke with Framingham/SCORE2. Cholesterol, blood pressure, lifestyle — and what actually moves the needle.',
+    date: '2026-05-02',
+    readTime: '9 min',
+    calculatorKey: 'cardiovascularRisk',
+    related: ['cholesterol-ratio', 'diabetes-risk-score', 'measure-blood-pressure'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

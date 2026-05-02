@@ -449,6 +449,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'malePattern',
     related: ['testosteronwert-berechnen', 'erektile-dysfunktion-test', 'biologisches-alter-berechnen'],
   },
+  {
+    slug: 'herz-kreislauf-risiko-berechnen',
+    title: 'Herz-Kreislauf-Risiko berechnen: Framingham, SCORE2 und was die Werte bedeuten',
+    description: 'Berechne dein 10-Jahres-Risiko für Herzinfarkt und Schlaganfall mit Framingham/SCORE2. Cholesterin, Blutdruck, Lebensstil — und was wirklich hilft.',
+    date: '2026-05-02',
+    readTime: '9 min',
+    calculatorKey: 'cardiovascularRisk',
+    related: ['cholesterol-verhaeltnis-rechner', 'diabetes-risiko-berechnen', 'blutdruck-richtig-messen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
