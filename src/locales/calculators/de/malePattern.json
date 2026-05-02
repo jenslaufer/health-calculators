@@ -1,0 +1,113 @@
+{
+  "home": {
+    "calculators": {
+      "malePattern": {
+        "name": "Haarausfall-Rechner (Norwood)",
+        "description": "Norwood-Hamilton-Skala — Selbsteinschätzung des androgenetischen Haarausfalls in 4 Fragen mit Stadium 1–7."
+      }
+    }
+  },
+  "malePattern": {
+    "meta": {
+      "title": "Haarausfall-Rechner für Männer (Norwood-Hamilton) — Stadium ermitteln | Health Calculators",
+      "description": "Androgenetischen Haarausfall einschätzen mit der Norwood-Hamilton-Skala. 4 Fragen, sofortiges Stadium (1–7), Empfehlungen — anonym, kostenlos, ohne Anmeldung."
+    },
+    "title": "Haarausfall-Rechner für Männer (Norwood-Hamilton)",
+    "description": "Selbsteinschätzung mit der Norwood-Hamilton-Skala — dem klinischen Standard zur Klassifikation des androgenetischen Haarausfalls. 4 Fragen — Stadium, Score und Empfehlung in unter 2 Minuten.",
+    "instructionsLabel": "Anleitung",
+    "instructions": "Schau in den Spiegel (am besten im Tageslicht, mit Frontal- und Aufsicht-Foto). Beantworte jede Frage anhand deiner aktuellen Haarsituation — wähle die Option, die deinem Bild am nächsten kommt.",
+    "results": "Dein Norwood-Stadium",
+    "scoreLabel": "Punktzahl",
+    "reset": "Zurücksetzen",
+    "questions": {
+      "q1": {
+        "text": "Wie stark sind die Geheimratsecken (Schläfen) zurückgewichen?",
+        "opt1": "Gar nicht — Haarlinie wie in der Jugend",
+        "opt2": "Leicht — kleine Schläfendreiecke, reife Haarlinie",
+        "opt3": "Deutlich — sichtbare M-Form an der Stirn",
+        "opt4": "Stark — tiefe Geheimratsecken bis zur Mitte des Kopfes",
+        "opt5": "Sehr stark — Schläfen und Stirn nahezu kahl"
+      },
+      "q2": {
+        "text": "Wie sieht es am Wirbel/Hinterkopf (Tonsur) aus?",
+        "opt1": "Volles Haar, keine sichtbare Verdünnung",
+        "opt2": "Leichte Ausdünnung, wenn ich die Haare nass mache",
+        "opt3": "Eine Tonsur ist sichtbar (rundlicher dünnerer Bereich)",
+        "opt4": "Deutliche Tonsur, Kopfhaut klar erkennbar",
+        "opt5": "Großer kahler Bereich am Hinterkopf"
+      },
+      "q3": {
+        "text": "Wie viel Kopfhaut sieht man auf der Oberseite (Scheitel/Stirnpartie)?",
+        "opt1": "Keine — Haar deckt vollständig",
+        "opt2": "Wenig — nur bei nassem Haar oder grellem Licht",
+        "opt3": "Mäßig — bei normalem Tageslicht sichtbar",
+        "opt4": "Deutlich — Kopfhaut dominiert über das Haar",
+        "opt5": "Fast vollständig — kaum noch Haar oben"
+      },
+      "q4": {
+        "text": "Wie verhält sich der Haarkranz (Seiten und Hinterkopf) zur Oberseite?",
+        "opt1": "Gleichmäßig dicht — kein Unterschied",
+        "opt2": "Seiten leicht dichter, oben minimal dünner",
+        "opt3": "Klarer Unterschied: Seiten dicht, oben dünn",
+        "opt4": "Nur noch ein schmaler Haarkranz an Seiten/Hinterkopf",
+        "opt5": "Spärlicher Haarkranz, Oberkopf komplett kahl"
+      }
+    },
+    "stage_1_name": "Stadium 1",
+    "stage_2_name": "Stadium 2",
+    "stage_3_name": "Stadium 3",
+    "stage_3v_name": "Stadium 3 Vertex",
+    "stage_4_name": "Stadium 4",
+    "stage_5_name": "Stadium 5",
+    "stage_6_name": "Stadium 6",
+    "stage_7_name": "Stadium 7",
+    "stage_1_desc": "Kein erkennbarer Haarausfall — jugendliche Haarlinie",
+    "stage_2_desc": "Reife Haarlinie — leichte Schläfendreiecke, klinisch nicht relevant",
+    "stage_3_desc": "Erstes klinisch relevantes Stadium — deutliche M-förmige Geheimratsecken",
+    "stage_3v_desc": "Geheimratsecken plus zusätzliche Verdünnung am Wirbel (Vertex)",
+    "stage_4_desc": "Fortgeschritten — Geheimratsecken vertieft, Tonsur deutlich, Haarband zwischen den Bereichen",
+    "stage_5_desc": "Stirn- und Scheitelregion verschmelzen — schmales Haarband bleibt",
+    "stage_6_desc": "Haarband verschwunden — größerer zusammenhängender kahler Bereich",
+    "stage_7_desc": "Schwerstes Stadium — nur noch spärliches Haar an Seiten und Hinterkopf",
+    "advice_1": "Keine Anzeichen für androgenetischen Haarausfall. Achte auf Stress, Eisen-/Vitamin-D-Versorgung und Schilddrüsen-Werte, falls dir Haarausfall trotzdem auffällt.",
+    "advice_2": "Reife Haarlinie — eine normale altersbedingte Veränderung, die fast jeder Mann erlebt. Kein Behandlungsbedarf, aber gute Gelegenheit für eine Foto-Baseline zur Verlaufskontrolle.",
+    "advice_3": "Stadium 3 — der Punkt, an dem viele Männer aktiv werden. Frühzeitige Behandlung mit Minoxidil 5 % oder Finasterid hat hier die beste Wirksamkeit. Hausarzt oder Dermatologe ansprechen.",
+    "advice_3v": "Frontale Geheimratsecken plus Wirbel-Verdünnung — der androgenetische Haarausfall ist klar manifest. Kombinationstherapie (Minoxidil + Finasterid) sollte mit dem Arzt besprochen werden.",
+    "advice_4": "Fortgeschrittener androgenetischer Haarausfall. Medikamentöse Therapie kann den Verlauf bremsen, aber selten Haar zurückbringen. Haartransplantation wird ab Stadium 4–5 zunehmend erwogen.",
+    "advice_5": "Stadien 5–7 sprechen meist nicht mehr stark auf Minoxidil/Finasterid an. Eine Haartransplantation oder kosmetische Lösungen (Mikropigmentierung, Toupet) sind realistische Optionen.",
+    "advice_6": "Sehr fortgeschritten — Spenderbereich kann für eine Transplantation noch ausreichen, aber realistische Erwartungen sind wichtig. Mikropigmentierung ist eine etablierte Alternative.",
+    "advice_7": "Endstadium der Norwood-Skala. Akzeptanz, Mikropigmentierung der Kopfhaut oder eine partielle Transplantation des Spenderhaars sind Optionen. Dermatologische Beratung empfohlen.",
+    "refTitle": "Norwood-Hamilton-Stadien",
+    "refStage": "Stadium",
+    "refDescription": "Beschreibung",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Die Norwood-Hamilton-Skala wurde von Hamilton (1951) entwickelt und 1975 von O'Tar Norwood erweitert. Sie ist der internationale klinische Standard zur Klassifikation des androgenetischen Haarausfalls bei Männern (MAGA — Male Androgenetic Alopecia). Die 8 Stadien (1, 2, 3, 3-Vertex, 4, 5, 6, 7) beschreiben den typischen Verlauf vom jugendlichen Haar bis zum vollständigen Verlust der Oberkopf-Haare. In dieser Selbsteinschätzung beantwortest du 4 Fragen zu Geheimratsecken, Tonsur (Wirbel), Kopfhaut-Sichtbarkeit und Haarkranz — daraus wird dein Stadium berechnet (Score 4–20). Sensitivität und Reproduzierbarkeit der Norwood-Skala wurden in mehreren Studien validiert (Kappa 0,77–0,82 bei Selbst-/Fremdbewertung).",
+    "disclaimer": "Diese Einschätzung ersetzt keine ärztliche Diagnose. Der androgenetische Haarausfall ist die häufigste Form, aber andere Ursachen (Eisenmangel, Schilddrüsenstörung, Alopecia areata, Stress, Medikamente) sind möglich und sollten bei plötzlichem oder ungewöhnlichem Haarausfall ausgeschlossen werden. Für Diagnose und Therapieentscheidung bitte einen Dermatologen aufsuchen.",
+    "faq": [
+      {
+        "q": "Was ist die Norwood-Hamilton-Skala?",
+        "a": "Die Norwood-Hamilton-Skala ist die international anerkannte Klassifikation des männlichen Haarausfalls. Hamilton beschrieb 1951 die Stadien, Norwood erweiterte sie 1975 um Zwischenstadien. Sie umfasst 8 Stufen (1, 2, 3, 3-Vertex, 4, 5, 6, 7) und wird in Klinik, Forschung und Haartransplantation als Standard genutzt."
+      },
+      {
+        "q": "Ab welchem Stadium sollte ich behandeln?",
+        "a": "Stadium 3 ist der typische Einstiegspunkt für eine medikamentöse Therapie. Minoxidil 5 % (topisch) und Finasterid 1 mg (oral) sind die einzigen FDA-zugelassenen Wirkstoffe. Beide wirken am besten in frühen Stadien — verlorenes Haar lässt sich schwer zurückgewinnen, der Verlust kann aber gestoppt werden."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Stadium 3 und 3-Vertex?",
+        "a": "Stadium 3 zeigt nur frontale Geheimratsecken (M-Form). Stadium 3-Vertex zeigt zusätzlich eine beginnende Tonsur am Wirbel. Beide Bereiche schreiten typischerweise unabhängig voneinander fort, weshalb Norwood diese Unterscheidung eingeführt hat."
+      },
+      {
+        "q": "Sind meine Antworten anonym?",
+        "a": "Ja — der Rechner läuft komplett im Browser. Es werden keine Daten an einen Server gesendet, nichts gespeichert und nichts geteilt. Schließe einfach den Tab und alle Antworten sind weg."
+      },
+      {
+        "q": "Welche Rolle spielt Genetik?",
+        "a": "Androgenetischer Haarausfall ist zu 80 % erblich bedingt. Der Hauptmechanismus ist eine erhöhte Empfindlichkeit der Haarfollikel gegenüber Dihydrotestosteron (DHT). Wenn Vater oder Großvater (mütterlicherseits) früh verkahlt waren, ist das Risiko erhöht — der Verlauf ist aber individuell."
+      },
+      {
+        "q": "Hilft eine Haartransplantation?",
+        "a": "Ja, ab Stadium 3–4 ist eine Transplantation eine etablierte Option. Voraussetzung: ausreichend dichter Spenderbereich am Hinterkopf und stabilisierter Verlust (idealerweise unter Finasterid). Methoden: FUE (Follicular Unit Extraction) und FUT (Streifentechnik). Realistisches Ergebnis: kein voller Schopf wie mit 18, sondern eine ästhetisch dichte Linie."
+      }
+    ]
+  }
+}

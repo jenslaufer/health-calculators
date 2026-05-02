@@ -1,0 +1,113 @@
+{
+  "home": {
+    "calculators": {
+      "malePattern": {
+        "name": "Male Pattern Baldness Calculator",
+        "description": "Norwood-Hamilton scale — self-assess male androgenetic alopecia in 4 questions, get stage 1–7."
+      }
+    }
+  },
+  "malePattern": {
+    "meta": {
+      "title": "Male Pattern Baldness Calculator (Norwood-Hamilton) — Stage 1–7 | Health Calculators",
+      "description": "Assess male pattern baldness with the Norwood-Hamilton scale. 4 questions, instant stage (1–7), evidence-based recommendations — anonymous, free, no sign-up."
+    },
+    "title": "Male Pattern Baldness Calculator (Norwood-Hamilton)",
+    "description": "Self-assessment using the Norwood-Hamilton scale — the clinical standard for classifying male androgenetic alopecia. 4 questions — stage, score and guidance in under 2 minutes.",
+    "instructionsLabel": "Instructions",
+    "instructions": "Look in the mirror in good daylight (front and top-down photos work best). Answer each question based on your current hair — pick the option that matches your image most closely.",
+    "results": "Your Norwood stage",
+    "scoreLabel": "Score",
+    "reset": "Reset",
+    "questions": {
+      "q1": {
+        "text": "How far has your hairline receded at the temples?",
+        "opt1": "Not at all — youthful hairline",
+        "opt2": "Slightly — small temple triangles, mature hairline",
+        "opt3": "Clearly — visible M-shape at the forehead",
+        "opt4": "Strongly — deep recession into mid-scalp",
+        "opt5": "Very strongly — temples and forehead nearly bare"
+      },
+      "q2": {
+        "text": "What does the crown / vertex (top-back of head) look like?",
+        "opt1": "Full hair, no visible thinning",
+        "opt2": "Slight thinning, only when hair is wet",
+        "opt3": "A bald spot is visible (round thin patch)",
+        "opt4": "Pronounced bald spot, scalp clearly visible",
+        "opt5": "Large bald area at the back-top of the head"
+      },
+      "q3": {
+        "text": "How much scalp shows through on top (mid-scalp / front)?",
+        "opt1": "None — hair fully covers",
+        "opt2": "A little — only with wet hair or harsh light",
+        "opt3": "Moderate — visible in normal daylight",
+        "opt4": "Substantial — scalp dominates over hair",
+        "opt5": "Almost fully — barely any hair on top"
+      },
+      "q4": {
+        "text": "How does the hair band (sides and back) compare to the top?",
+        "opt1": "Evenly dense — no difference",
+        "opt2": "Sides slightly denser, top minimally thinner",
+        "opt3": "Clear contrast: sides full, top thin",
+        "opt4": "Only a narrow horseshoe band at sides/back remains",
+        "opt5": "Sparse band, top of head completely bald"
+      }
+    },
+    "stage_1_name": "Stage 1",
+    "stage_2_name": "Stage 2",
+    "stage_3_name": "Stage 3",
+    "stage_3v_name": "Stage 3 Vertex",
+    "stage_4_name": "Stage 4",
+    "stage_5_name": "Stage 5",
+    "stage_6_name": "Stage 6",
+    "stage_7_name": "Stage 7",
+    "stage_1_desc": "No visible hair loss — youthful hairline",
+    "stage_2_desc": "Mature hairline — slight temple recession, not clinically relevant",
+    "stage_3_desc": "First clinically significant stage — pronounced M-shaped temple recession",
+    "stage_3v_desc": "Frontal recession plus additional thinning at the vertex (crown)",
+    "stage_4_desc": "Advanced — deeper recession, distinct vertex bald spot, hair band between zones",
+    "stage_5_desc": "Frontal and vertex zones merging — narrow band of hair remains",
+    "stage_6_desc": "Hair band gone — larger contiguous bald area",
+    "stage_7_desc": "Most severe stage — only sparse hair on sides and back",
+    "advice_1": "No signs of androgenetic alopecia. If you still notice shedding, check stress, iron / vitamin D, and thyroid markers — they are common reversible causes.",
+    "advice_2": "Mature hairline — a normal age-related change almost every man experiences. No treatment needed, but a good moment to take a baseline photo for tracking.",
+    "advice_3": "Stage 3 — the point where many men start treatment. Early intervention with topical minoxidil 5 % or oral finasteride is most effective here. Talk to your GP or dermatologist.",
+    "advice_3v": "Frontal recession plus vertex thinning — androgenetic alopecia is clearly manifest. Combination therapy (minoxidil + finasteride) is worth discussing with a doctor.",
+    "advice_4": "Advanced androgenetic alopecia. Medical therapy can slow progression but rarely regrows lost hair. Hair transplantation is increasingly considered from stage 4–5.",
+    "advice_5": "Stages 5–7 typically respond poorly to minoxidil/finasteride alone. Hair transplantation or cosmetic options (scalp micropigmentation, hair systems) are realistic alternatives.",
+    "advice_6": "Very advanced — donor area may still suffice for a transplant, but realistic expectations matter. Scalp micropigmentation is an established alternative.",
+    "advice_7": "Final Norwood stage. Acceptance, scalp micropigmentation, or partial transplantation from the donor area are options. Dermatology consult recommended.",
+    "refTitle": "Norwood-Hamilton stages",
+    "refStage": "Stage",
+    "refDescription": "Description",
+    "howItWorks": "How it works",
+    "howItWorksText": "The Norwood-Hamilton scale was developed by Hamilton (1951) and extended by O'Tar Norwood in 1975. It is the international clinical standard for classifying male androgenetic alopecia (MAGA). The 8 stages (1, 2, 3, 3-vertex, 4, 5, 6, 7) describe the typical course from a youthful hairline to complete loss of the top-of-scalp hair. In this self-assessment you answer 4 questions about temple recession, vertex (crown) thinning, scalp visibility and the hair band — your stage is then computed (score 4–20). The scale's reproducibility has been validated in multiple studies (kappa 0.77–0.82 between self- and clinician-rating).",
+    "disclaimer": "This assessment does not replace a medical diagnosis. Male androgenetic alopecia is the most common form, but other causes (iron deficiency, thyroid disorders, alopecia areata, stress, medications) are possible and should be ruled out for sudden or unusual loss. For diagnosis and treatment decisions, please see a dermatologist.",
+    "faq": [
+      {
+        "q": "What is the Norwood-Hamilton scale?",
+        "a": "The Norwood-Hamilton scale is the internationally recognised classification of male pattern baldness. Hamilton described the stages in 1951; Norwood extended them in 1975 with intermediate stages. It comprises 8 levels (1, 2, 3, 3-vertex, 4, 5, 6, 7) and is the standard in clinical practice, research and hair transplantation."
+      },
+      {
+        "q": "At which stage should I start treatment?",
+        "a": "Stage 3 is the typical entry point for medical therapy. Topical minoxidil 5 % and oral finasteride 1 mg are the only FDA-approved drugs. Both work best in early stages — lost hair is hard to recover, but progression can be stopped."
+      },
+      {
+        "q": "What's the difference between stage 3 and 3-vertex?",
+        "a": "Stage 3 shows only frontal temple recession (M-shape). Stage 3-vertex adds early thinning at the crown. The two zones typically progress independently, which is why Norwood added this distinction."
+      },
+      {
+        "q": "Are my answers private?",
+        "a": "Yes — the calculator runs entirely in your browser. Nothing is sent to a server, nothing is stored, nothing is shared. Just close the tab and your answers are gone."
+      },
+      {
+        "q": "How important is genetics?",
+        "a": "Male pattern baldness is roughly 80 % heritable. The main mechanism is increased follicle sensitivity to dihydrotestosterone (DHT). If your father or maternal grandfather went bald early, your risk is higher — but progression is individual."
+      },
+      {
+        "q": "Does a hair transplant work?",
+        "a": "Yes — from stage 3–4 onwards a transplant is an established option. Requirements: a sufficiently dense donor area at the back of the head and stabilised loss (ideally on finasteride). Methods: FUE (Follicular Unit Extraction) and FUT (strip technique). Realistic outcome: not a full teenage head of hair, but an aesthetically dense hairline."
+      }
+    ]
+  }
+}

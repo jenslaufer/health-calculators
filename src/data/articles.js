@@ -440,6 +440,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'erectileDysfunction',
     related: ['testosteronwert-berechnen', 'diabetes-risiko-berechnen', 'biologisches-alter-berechnen'],
   },
+  {
+    slug: 'haarausfall-norwood-skala',
+    title: 'Haarausfall bei Männern: Norwood-Hamilton-Skala, Ursachen und Behandlung',
+    description: 'Androgenetischen Haarausfall mit der Norwood-Hamilton-Skala einschätzen. Stadien, Ursachen, Minoxidil/Finasterid und Haartransplantation — evidenzbasiert und kostenlos.',
+    date: '2026-05-02',
+    readTime: '9 min',
+    calculatorKey: 'malePattern',
+    related: ['testosteronwert-berechnen', 'erektile-dysfunktion-test', 'biologisches-alter-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

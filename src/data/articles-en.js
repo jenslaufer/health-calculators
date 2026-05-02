@@ -440,6 +440,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'erectileDysfunction',
     related: ['testosterone-level-calculator', 'diabetes-risk-score', 'biological-age-calculator'],
   },
+  {
+    slug: 'male-pattern-baldness-norwood',
+    title: 'Male Pattern Baldness: Norwood-Hamilton Scale, Causes and Treatment',
+    description: 'Assess male androgenetic alopecia with the Norwood-Hamilton scale. Stages, causes, minoxidil/finasteride and hair transplantation — evidence-based and free.',
+    date: '2026-05-02',
+    readTime: '9 min',
+    calculatorKey: 'malePattern',
+    related: ['testosterone-level-calculator', 'erectile-dysfunction-iief-5', 'biological-age-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
