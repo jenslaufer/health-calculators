@@ -431,6 +431,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'testosteroneLevel',
     related: ['prostatakrebs-risiko-berechnen', 'biologisches-alter-berechnen', 'proteinbedarf-berechnen'],
   },
+  {
+    slug: 'erektile-dysfunktion-test',
+    title: 'Erektile Dysfunktion testen: IIEF-5-Fragebogen, Ursachen und was hilft',
+    description: 'Erektile Dysfunktion mit dem IIEF-5 (SHIM) einschätzen. Ursachen, Schweregrade nach Cappelleri & Rosen, evidenzbasierte Maßnahmen — anonym und kostenlos.',
+    date: '2026-05-01',
+    readTime: '8 min',
+    calculatorKey: 'erectileDysfunction',
+    related: ['testosteronwert-berechnen', 'diabetes-risiko-berechnen', 'biologisches-alter-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

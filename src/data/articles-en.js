@@ -431,6 +431,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'testosteroneLevel',
     related: ['prostate-cancer-risk', 'biological-age-calculator', 'protein-requirements-guide'],
   },
+  {
+    slug: 'erectile-dysfunction-iief-5',
+    title: 'Erectile Dysfunction Test (IIEF-5): Score, Causes and What Works',
+    description: 'Assess erectile dysfunction with the IIEF-5 (SHIM). Causes, severity bands by Cappelleri & Rosen, evidence-based interventions — anonymous and free.',
+    date: '2026-05-01',
+    readTime: '8 min',
+    calculatorKey: 'erectileDysfunction',
+    related: ['testosterone-level-calculator', 'diabetes-risk-score', 'biological-age-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
