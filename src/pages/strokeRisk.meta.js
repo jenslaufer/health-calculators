@@ -8,7 +8,7 @@ export default {
   slugs: { de: 'schlaganfall-risiko-rechner', en: 'stroke-risk-calculator' },
   group: 'fitnessRecovery',
   groupOrder: 2,
-  order: 31,
+  order: 32,
   blog: {
     de: { slug: 'schlaganfall-risiko-berechnen', component: BlogDe },
     en: { slug: 'stroke-risk-calculator-cha2ds2-vasc', component: BlogEn },
