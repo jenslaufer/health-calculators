@@ -1,0 +1,92 @@
+{
+  "home": {
+    "calculators": {
+      "strokeRisk": {
+        "name": "Schlaganfall-Risiko-Rechner",
+        "description": "CHA₂DS₂-VASc-Score zur Einschätzung des jährlichen Schlaganfallrisikos bei Vorhofflimmern."
+      }
+    }
+  },
+  "strokeRisk": {
+    "meta": {
+      "title": "Schlaganfall-Risiko-Rechner (CHA₂DS₂-VASc) — Vorhofflimmern",
+      "description": "Schlaganfall-Risiko bei Vorhofflimmern berechnen mit dem CHA₂DS₂-VASc-Score nach ESC-Leitlinie. Jährliches Risiko, Antikoagulations-Empfehlung. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Schlaganfall-Risiko-Rechner (CHA₂DS₂-VASc)",
+    "description": "Berechne dein jährliches Schlaganfallrisiko bei Vorhofflimmern nach dem CHA₂DS₂-VASc-Score (Lip et al. 2010, ESC-Leitlinie 2020).",
+    "instructionsLabel": "Anleitung",
+    "instructions": "Gib dein Alter und Geschlecht an und markiere alle zutreffenden Risikofaktoren. Der CHA₂DS₂-VASc-Score reicht von 0 bis 9 — höhere Werte bedeuten höheres Schlaganfallrisiko.",
+    "ageLabel": "Alter (Jahre)",
+    "agePlaceholder": "72",
+    "sexLabel": "Geschlecht",
+    "factorsLabel": "Risikofaktoren",
+    "factor_heartFailure": "Herzinsuffizienz / linksventrikuläre Dysfunktion",
+    "factor_heartFailure_desc": "Klinische Herzinsuffizienz oder LV-Ejektionsfraktion ≤ 40 %",
+    "factor_hypertension": "Bluthochdruck",
+    "factor_hypertension_desc": "Behandelter Hypertonus oder Ruheblutdruck > 140/90 mmHg",
+    "factor_diabetes": "Diabetes mellitus",
+    "factor_diabetes_desc": "Nüchternblutzucker > 125 mg/dl oder antidiabetische Therapie",
+    "factor_strokeHistory": "Schlaganfall / TIA / Thromboembolie in der Vorgeschichte",
+    "factor_strokeHistory_desc": "Früherer Schlaganfall, transitorische ischämische Attacke oder Thromboembolie",
+    "factor_vascularDisease": "Gefäßerkrankung",
+    "factor_vascularDisease_desc": "KHK nach Herzinfarkt, periphere arterielle Verschlusskrankheit oder Aortenplaque",
+    "results": "Dein CHA₂DS₂-VASc-Score",
+    "annualRiskLabel": "Jährliches Schlaganfallrisiko",
+    "anticoagulationLabel": "Antikoagulations-Empfehlung (ESC 2020)",
+    "anticoagulation_none": "Keine orale Antikoagulation empfohlen",
+    "anticoagulation_consider": "Antikoagulation kann erwogen werden — individuelle Nutzen-Risiko-Abwägung",
+    "anticoagulation_recommended": "Orale Antikoagulation empfohlen (DOAK bevorzugt vor Warfarin)",
+    "category_low": "Niedriges Risiko",
+    "category_borderline": "Grenzwertig",
+    "category_moderate": "Moderates Risiko",
+    "category_high": "Hohes Risiko",
+    "category_veryHigh": "Sehr hohes Risiko",
+    "scoreSummaryLabel": "Punkte-Aufschlüsselung",
+    "breakdown_heartFailure": "Herzinsuffizienz",
+    "breakdown_hypertension": "Bluthochdruck",
+    "breakdown_ageOver75": "Alter ≥ 75",
+    "breakdown_age65to74": "Alter 65–74",
+    "breakdown_diabetes": "Diabetes",
+    "breakdown_strokeHistory": "Schlaganfall / TIA",
+    "breakdown_vascularDisease": "Gefäßerkrankung",
+    "breakdown_female": "Weibliches Geschlecht",
+    "pointsLabel": "Punkte",
+    "scoreOf": "von 9",
+    "refTitle": "Jährliches Schlaganfallrisiko nach CHA₂DS₂-VASc-Score",
+    "refScore": "Score",
+    "refRisk": "Jährliches Risiko",
+    "refRecommendation": "Empfehlung",
+    "rec_none": "Keine OAK",
+    "rec_consider": "OAK erwägen",
+    "rec_recommended": "OAK empfohlen",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der CHA₂DS₂-VASc-Score (Lip et al. 2010) ist die international anerkannte Erweiterung des CHADS₂-Scores zur Einschätzung des Schlaganfallrisikos bei Patienten mit nicht-valvulärem Vorhofflimmern. Er addiert Punkte für Herzinsuffizienz (1), Hypertonie (1), Alter ≥ 75 (2), Diabetes (1), Schlaganfall/TIA-Vorgeschichte (2), Gefäßerkrankung (1), Alter 65-74 (1) und weibliches Geschlecht (1). Die jährlichen Risiko-Werte stammen aus einer schwedischen Kohortenstudie (Friberg et al., Eur Heart J 2012, n = 90 490). Die ESC-Leitlinie 2020 empfiehlt orale Antikoagulation ab einem Score von 2 (Männer) bzw. 3 (Frauen).",
+    "disclaimer": "Dieser Rechner dient zur Selbstinformation und ersetzt keine ärztliche Beratung. Die Indikation zur Antikoagulation muss immer individuell mit Berücksichtigung des Blutungsrisikos (HAS-BLED-Score) durch einen Arzt gestellt werden. Der Score gilt nur für Patienten mit nicht-valvulärem Vorhofflimmern.",
+    "faq": [
+      {
+        "q": "Was ist der CHA₂DS₂-VASc-Score?",
+        "a": "Der CHA₂DS₂-VASc-Score (Lip et al. 2010) ist ein klinisches Bewertungsschema zur Abschätzung des jährlichen Schlaganfallrisikos bei Patienten mit Vorhofflimmern. Er reicht von 0 bis 9 Punkten und berücksichtigt acht Risikofaktoren — darunter Alter, Geschlecht und kardiovaskuläre Komorbiditäten."
+      },
+      {
+        "q": "Ab welchem Score wird eine Antikoagulation empfohlen?",
+        "a": "Nach der ESC-Leitlinie 2020: bei Männern ab einem Score von 2, bei Frauen ab einem Score von 3. Bei einem Score von 1 (Männer) oder 2 (Frauen) kann eine Antikoagulation erwogen werden — individuell unter Abwägung des Blutungsrisikos."
+      },
+      {
+        "q": "Warum bekommen Frauen einen Extrapunkt?",
+        "a": "Weibliches Geschlecht ist mit einem leicht erhöhten Schlaganfallrisiko bei Vorhofflimmern assoziiert. Allerdings gilt: weibliches Geschlecht alleine (Score = 1 nur durch Sex) ist kein Indiz für Antikoagulation — es muss mindestens ein weiterer Risikofaktor vorliegen."
+      },
+      {
+        "q": "Welche Antikoagulation ist erste Wahl?",
+        "a": "Direkte orale Antikoagulanzien (DOAK / NOAK) wie Apixaban, Rivaroxaban, Edoxaban oder Dabigatran sind nach ESC-Leitlinie 2020 erste Wahl — außer bei mechanischen Herzklappen oder mittelschwerer/schwerer Mitralklappenstenose, wo Warfarin (VKA) erforderlich bleibt."
+      },
+      {
+        "q": "Wie hoch ist das Schlaganfallrisiko ohne Behandlung?",
+        "a": "Bei Vorhofflimmern und einem CHA₂DS₂-VASc-Score von 4 liegt das jährliche Schlaganfallrisiko bei etwa 4,8 %, bei einem Score von 7 bei rund 11 %. Eine korrekte Antikoagulation reduziert dieses Risiko um etwa 64 %."
+      },
+      {
+        "q": "Sollte ich auch das Blutungsrisiko prüfen?",
+        "a": "Ja. Vor jeder Antikoagulation sollte zusätzlich der HAS-BLED-Score erhoben werden, um das Blutungsrisiko abzuschätzen. Ein erhöhter HAS-BLED ist jedoch keine Kontraindikation, sondern ein Hinweis, modifizierbare Risikofaktoren (Bluthochdruck, Alkohol, Komedikation) zu adressieren."
+      }
+    ]
+  }
+}

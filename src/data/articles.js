@@ -449,6 +449,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'malePattern',
     related: ['testosteronwert-berechnen', 'erektile-dysfunktion-test', 'biologisches-alter-berechnen'],
   },
+  {
+    slug: 'schlaganfall-risiko-berechnen',
+    title: 'Schlaganfall-Risiko berechnen: CHA₂DS₂-VASc-Score bei Vorhofflimmern',
+    description: 'Schlaganfall-Risiko bei Vorhofflimmern mit dem CHA₂DS₂-VASc-Score berechnen. Risikofaktoren, Antikoagulations-Empfehlung nach ESC-Leitlinie und Tipps zur Senkung.',
+    date: '2026-05-03',
+    readTime: '9 min',
+    calculatorKey: 'strokeRisk',
+    related: ['blutdruck-richtig-messen', 'diabetes-risiko-berechnen', 'cholesterol-verhaeltnis-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
