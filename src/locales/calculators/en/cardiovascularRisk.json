@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "cardiovascularRisk": {
+        "name": "Cardiovascular Risk Calculator",
+        "description": "Estimate your 10-year risk of heart attack or stroke (Framingham)."
+      }
+    }
+  },
+  "cardiovascularRisk": {
+    "meta": {
+      "title": "Cardiovascular Risk Calculator — Framingham 10-Year Risk",
+      "description": "Estimate your 10-year risk of heart attack and stroke with the Framingham general CVD score. Includes heart age, risk band and recommendations — free, anonymous."
+    },
+    "title": "Cardiovascular Risk Calculator",
+    "description": "Estimate your 10-year risk of cardiovascular disease using the Framingham general CVD model.",
+    "age": "Age",
+    "totalChol": "Total cholesterol",
+    "hdl": "HDL cholesterol",
+    "sbp": "Systolic blood pressure",
+    "treated": "On blood pressure medication",
+    "smoker": "Current smoker",
+    "diabetic": "Diabetes mellitus",
+    "reset": "Reset",
+    "results": "Result",
+    "tenYearLabel": "Estimated 10-year risk of heart attack, stroke or cardiovascular event.",
+    "heartAge": "Heart age",
+    "years": "years",
+    "heartAgeOlder": "Your heart is {years} years older than your actual age.",
+    "heartAgeYounger": "Your heart is {years} years younger than your actual age.",
+    "cat_low": "Low",
+    "cat_borderline": "Borderline",
+    "cat_intermediate": "Intermediate",
+    "cat_high": "High",
+    "advice_low": "Low 10-year risk. Maintain: don't smoke, exercise regularly, follow a Mediterranean diet. Routine check-up every 4–6 years.",
+    "advice_borderline": "Borderline risk. Intensify lifestyle: 150 min/week aerobic exercise, weight management, cholesterol and blood pressure check every 1–2 years.",
+    "advice_intermediate": "Intermediate risk. Discuss with your physician: consider statin eligibility, optimize blood pressure, screen for diabetes, increase activity.",
+    "advice_high": "High risk. Medical evaluation recommended — statin therapy, blood pressure control and lifestyle changes are usually indicated. ESC Guidelines 2021.",
+    "refTitle": "Risk categories (AHA/ACC)",
+    "refRange": "10-year risk",
+    "refCategory": "Category",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses the D'Agostino general CVD Framingham model (Circulation 2008). Inputs: age, sex, total and HDL cholesterol, systolic blood pressure (treated/untreated), smoking, diabetes. Validated for ages 30–79. Output: 10-year probability of myocardial infarction, stroke, heart failure or peripheral artery disease.",
+    "disclaimer": "This calculator does not replace medical diagnosis. If your risk is elevated, or you have chest pain, shortness of breath or a strong family history, see your physician or cardiologist promptly.",
+    "faq": [
+      {
+        "q": "What does 10-year risk mean?",
+        "a": "It estimates the probability of a cardiovascular event (heart attack, stroke, heart failure, peripheral artery disease) within the next 10 years. The figure is based on statistical models from large prospective cohort studies."
+      },
+      {
+        "q": "How does Framingham differ from SCORE2?",
+        "a": "Framingham (US, 2008) covers fatal and non-fatal events for ages 30–79. SCORE2 (Europe, ESC 2021) was recalibrated for European populations and is the official ESC recommendation for ages 40–69. Both produce comparable risk estimates."
+      },
+      {
+        "q": "What is heart age?",
+        "a": "Heart age is the chronological age of someone with optimal risk factors who has the same cardiovascular risk as you. A heart age above your real age signals avoidable risk through lifestyle or therapy."
+      },
+      {
+        "q": "What are ideal cholesterol values?",
+        "a": "Total cholesterol: < 190 mg/dL (4.9 mmol/L). LDL: < 116 mg/dL (3.0 mmol/L) — much lower in high-risk patients. HDL: men > 40 mg/dL, women > 48 mg/dL. Triglycerides: < 150 mg/dL. Source: ESC/EAS Guidelines 2019."
+      },
+      {
+        "q": "When is statin therapy recommended?",
+        "a": "AHA/ACC and ESC guidelines discuss statin therapy at a 10-year risk ≥ 7.5 % (intermediate) and generally recommend it at ≥ 20 %. The final decision is shared with the physician based on individual factors."
+      },
+      {
+        "q": "How can I lower my risk?",
+        "a": "Quitting smoking halves cardiovascular risk within 5 years. 150 min/week of moderate exercise halves heart attack risk. Mediterranean diet (PREDIMED): –30 %. Lowering systolic BP by 10 mmHg: –20 %. Lowering LDL by 1 mmol/L: –22 % events."
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "cardiovascularRisk": {
+        "name": "Herz-Kreislauf-Risiko-Rechner",
+        "description": "Berechne dein 10-Jahres-Risiko für Herzinfarkt oder Schlaganfall (Framingham)."
+      }
+    }
+  },
+  "cardiovascularRisk": {
+    "meta": {
+      "title": "Herz-Kreislauf-Risiko berechnen — Framingham 10-Jahres-Risiko",
+      "description": "Berechne dein 10-Jahres-Risiko für Herzinfarkt und Schlaganfall mit dem Framingham-Score. Inkl. Herzalter, Risikoeinordnung und Empfehlungen — kostenlos, anonym."
+    },
+    "title": "Herz-Kreislauf-Risiko-Rechner",
+    "description": "Schätze dein 10-Jahres-Risiko für eine Herz-Kreislauf-Erkrankung mit der Framingham-Formel.",
+    "age": "Alter",
+    "totalChol": "Gesamtcholesterin",
+    "hdl": "HDL-Cholesterin",
+    "sbp": "Systolischer Blutdruck",
+    "treated": "Blutdruckmedikamente",
+    "smoker": "Aktueller Raucher",
+    "diabetic": "Diabetes mellitus",
+    "reset": "Zurücksetzen",
+    "results": "Ergebnis",
+    "tenYearLabel": "Geschätztes 10-Jahres-Risiko für Herzinfarkt oder Schlaganfall.",
+    "heartAge": "Herzalter",
+    "years": "Jahre",
+    "heartAgeOlder": "Dein Herz ist {years} Jahre älter als dein tatsächliches Alter.",
+    "heartAgeYounger": "Dein Herz ist {years} Jahre jünger als dein tatsächliches Alter.",
+    "cat_low": "Niedrig",
+    "cat_borderline": "Grenzwertig",
+    "cat_intermediate": "Mittel",
+    "cat_high": "Hoch",
+    "advice_low": "Geringes 10-Jahres-Risiko. Beibehalten: nicht rauchen, regelmäßige Bewegung, mediterrane Ernährung. Routinekontrolle alle 4–6 Jahre.",
+    "advice_borderline": "Grenzwertiges Risiko. Lebensstil intensivieren: 150 min/Woche Ausdauersport, Gewichtsoptimierung, Cholesterin- und Blutdruckkontrolle alle 1–2 Jahre.",
+    "advice_intermediate": "Mittleres Risiko. Mit Hausarzt besprechen: ggf. Statin-Indikation prüfen, Blutdruck optimieren, Diabetes-Screening, Bewegung intensivieren.",
+    "advice_high": "Hohes Risiko. Ärztliche Abklärung empfohlen — Statin-Therapie, Blutdrucksenkung und Lebensstiländerung sind in der Regel indiziert. ESC-Leitlinie 2021.",
+    "refTitle": "Risikokategorien (AHA/ACC)",
+    "refRange": "10-Jahres-Risiko",
+    "refCategory": "Kategorie",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Dieser Rechner verwendet das D'Agostino-Modell (General CVD Framingham, Circulation 2008). Berücksichtigt: Alter, Geschlecht, Gesamt- und HDL-Cholesterin, systolischer Blutdruck (mit/ohne Therapie), Rauchen, Diabetes. Validiert für 30–79 Jahre. Ergebnis: 10-Jahres-Wahrscheinlichkeit für Herzinfarkt, Schlaganfall, Herzinsuffizienz oder peripheren Gefäßverschluss.",
+    "disclaimer": "Hinweis: Dieser Rechner ersetzt keine ärztliche Diagnose. Bei erhöhtem Risiko, Brustschmerzen, Kurzatmigkeit oder familiärer Vorbelastung suche zeitnah deinen Hausarzt oder Kardiologen auf.",
+    "faq": [
+      {
+        "q": "Was bedeutet das 10-Jahres-Risiko?",
+        "a": "Es schätzt die Wahrscheinlichkeit, in den nächsten 10 Jahren eine Herz-Kreislauf-Erkrankung (Infarkt, Schlaganfall, Herzinsuffizienz, periphere Verschlusskrankheit) zu erleiden. Der Wert basiert auf statistischen Modellen großer Kohortenstudien."
+      },
+      {
+        "q": "Was unterscheidet Framingham von SCORE2?",
+        "a": "Framingham (USA) misst tödliche und nicht-tödliche Ereignisse, validiert für 30–79 Jahre. SCORE2 (Europa, ESC 2021) wurde an europäische Kohorten neu kalibriert und ist offizielle Empfehlung der ESC für 40–69 Jahre. Beide liefern ähnliche Risikoabschätzungen."
+      },
+      {
+        "q": "Was ist das Herzalter?",
+        "a": "Das Herzalter beschreibt das biologische Alter eines Menschen mit optimalen Risikofaktoren, der das gleiche kardiovaskuläre Risiko wie du hat. Ein Herzalter über deinem realen Alter signalisiert vermeidbares Risiko durch Lebensstil oder Therapie."
+      },
+      {
+        "q": "Welche Cholesterinwerte sind ideal?",
+        "a": "Gesamt-Cholesterin: < 190 mg/dL (4,9 mmol/L). LDL: < 116 mg/dL (3,0 mmol/L) — bei Risikopatienten deutlich tiefer. HDL: Männer > 40 mg/dL, Frauen > 48 mg/dL. Triglyceride: < 150 mg/dL. Quelle: ESC/EAS-Leitlinie 2019."
+      },
+      {
+        "q": "Ab welchem Risiko ist eine Statin-Therapie sinnvoll?",
+        "a": "Nach AHA/ACC- und ESC-Leitlinien wird bei einem 10-Jahres-Risiko ≥ 7,5 % (intermediär) eine Statin-Therapie diskutiert, ab ≥ 20 % in der Regel empfohlen. Die endgültige Entscheidung fällt im Arztgespräch unter Berücksichtigung individueller Faktoren."
+      },
+      {
+        "q": "Wie kann ich mein Risiko senken?",
+        "a": "Nicht rauchen senkt das Risiko innerhalb von 5 Jahren um 50 %. 150 min/Woche moderate Bewegung halbiert das Infarktrisiko. Mediterrane Ernährung (PREDIMED-Studie): –30 %. Blutdrucksenkung um 10 mmHg: –20 %. LDL-Senkung um 1 mmol/L: –22 % Ereignisse."
+      }
+    ]
+  }
+}
