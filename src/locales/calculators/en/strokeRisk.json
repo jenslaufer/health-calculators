@@ -1,0 +1,92 @@
+{
+  "home": {
+    "calculators": {
+      "strokeRisk": {
+        "name": "Stroke Risk Calculator",
+        "description": "CHA₂DS₂-VASc score to estimate annual stroke risk in atrial fibrillation."
+      }
+    }
+  },
+  "strokeRisk": {
+    "meta": {
+      "title": "Stroke Risk Calculator (CHA₂DS₂-VASc) — Atrial Fibrillation",
+      "description": "Estimate stroke risk in atrial fibrillation with the CHA₂DS₂-VASc score (ESC guideline). Annual risk percentage and anticoagulation guidance. Free, instant, no sign-up."
+    },
+    "title": "Stroke Risk Calculator (CHA₂DS₂-VASc)",
+    "description": "Estimate your annual stroke risk in atrial fibrillation using the CHA₂DS₂-VASc score (Lip et al. 2010, ESC guideline 2020).",
+    "instructionsLabel": "Instructions",
+    "instructions": "Enter your age and sex, then check every risk factor that applies. The CHA₂DS₂-VASc score ranges from 0 to 9 — higher scores mean higher annual stroke risk.",
+    "ageLabel": "Age (years)",
+    "agePlaceholder": "72",
+    "sexLabel": "Sex",
+    "factorsLabel": "Risk factors",
+    "factor_heartFailure": "Congestive heart failure / LV dysfunction",
+    "factor_heartFailure_desc": "Clinical heart failure or left-ventricular ejection fraction ≤ 40 %",
+    "factor_hypertension": "Hypertension",
+    "factor_hypertension_desc": "Treated hypertension or resting blood pressure > 140/90 mmHg",
+    "factor_diabetes": "Diabetes mellitus",
+    "factor_diabetes_desc": "Fasting glucose > 125 mg/dL or on antidiabetic therapy",
+    "factor_strokeHistory": "Prior stroke / TIA / thromboembolism",
+    "factor_strokeHistory_desc": "Previous ischemic stroke, transient ischemic attack, or systemic thromboembolism",
+    "factor_vascularDisease": "Vascular disease",
+    "factor_vascularDisease_desc": "CAD with prior MI, peripheral artery disease, or aortic plaque",
+    "results": "Your CHA₂DS₂-VASc score",
+    "annualRiskLabel": "Annual stroke risk",
+    "anticoagulationLabel": "Anticoagulation guidance (ESC 2020)",
+    "anticoagulation_none": "Oral anticoagulation not recommended",
+    "anticoagulation_consider": "Anticoagulation may be considered — individual benefit-risk discussion",
+    "anticoagulation_recommended": "Oral anticoagulation recommended (DOAC preferred over warfarin)",
+    "category_low": "Low risk",
+    "category_borderline": "Borderline",
+    "category_moderate": "Moderate risk",
+    "category_high": "High risk",
+    "category_veryHigh": "Very high risk",
+    "scoreSummaryLabel": "Score breakdown",
+    "breakdown_heartFailure": "Heart failure",
+    "breakdown_hypertension": "Hypertension",
+    "breakdown_ageOver75": "Age ≥ 75",
+    "breakdown_age65to74": "Age 65–74",
+    "breakdown_diabetes": "Diabetes",
+    "breakdown_strokeHistory": "Stroke / TIA",
+    "breakdown_vascularDisease": "Vascular disease",
+    "breakdown_female": "Female sex",
+    "pointsLabel": "Points",
+    "scoreOf": "of 9",
+    "refTitle": "Annual stroke risk by CHA₂DS₂-VASc score",
+    "refScore": "Score",
+    "refRisk": "Annual risk",
+    "refRecommendation": "Recommendation",
+    "rec_none": "No OAC",
+    "rec_consider": "Consider OAC",
+    "rec_recommended": "OAC recommended",
+    "howItWorks": "How it works",
+    "howItWorksText": "The CHA₂DS₂-VASc score (Lip et al. 2010) is the international standard for stroke risk stratification in non-valvular atrial fibrillation. It assigns points for congestive heart failure (1), hypertension (1), age ≥ 75 (2), diabetes (1), prior stroke or TIA (2), vascular disease (1), age 65–74 (1) and female sex (1). Annual stroke rates were derived from a Swedish AF cohort (Friberg et al., Eur Heart J 2012, n = 90,490). The 2020 ESC guideline recommends oral anticoagulation from a score of 2 in men and 3 in women.",
+    "disclaimer": "This calculator is for informational purposes only and does not replace medical advice. The decision to anticoagulate must always be made by a clinician weighing the bleeding risk (HAS-BLED score). The score applies only to non-valvular atrial fibrillation.",
+    "faq": [
+      {
+        "q": "What is the CHA₂DS₂-VASc score?",
+        "a": "The CHA₂DS₂-VASc score (Lip et al. 2010) is a clinical scoring system that estimates annual stroke risk in patients with atrial fibrillation. It ranges from 0 to 9 points, derived from eight clinical risk factors including age, sex, and cardiovascular comorbidities."
+      },
+      {
+        "q": "When should anticoagulation be started?",
+        "a": "Per the 2020 ESC guideline: in men from a score of 2, in women from a score of 3. With a score of 1 (men) or 2 (women) anticoagulation may be considered after individual benefit-risk assessment including bleeding risk."
+      },
+      {
+        "q": "Why do women get an extra point?",
+        "a": "Female sex is associated with a slightly higher stroke risk in atrial fibrillation. However, female sex alone (score = 1 from sex only) is not an indication for anticoagulation — at least one additional risk factor must be present."
+      },
+      {
+        "q": "Which anticoagulant is first line?",
+        "a": "Direct oral anticoagulants (DOACs / NOACs) such as apixaban, rivaroxaban, edoxaban or dabigatran are first-line per the 2020 ESC guideline — except for mechanical heart valves or moderate-to-severe mitral stenosis, where warfarin (VKA) remains required."
+      },
+      {
+        "q": "How high is stroke risk without treatment?",
+        "a": "In atrial fibrillation with a CHA₂DS₂-VASc score of 4 the annual stroke risk is around 4.8 %, at a score of 7 it rises to roughly 11 %. Adequate anticoagulation reduces this risk by about 64 %."
+      },
+      {
+        "q": "Should bleeding risk also be assessed?",
+        "a": "Yes. Before any anticoagulation the HAS-BLED score should also be calculated to estimate bleeding risk. A high HAS-BLED is not a contraindication but a flag to address modifiable risk factors (blood pressure, alcohol, concomitant medication)."
+      }
+    ]
+  }
+}

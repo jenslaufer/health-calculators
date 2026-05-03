@@ -458,6 +458,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'cardiovascularRisk',
     related: ['cholesterol-ratio', 'diabetes-risk-score', 'measure-blood-pressure'],
   },
+  {
+    slug: 'stroke-risk-calculator-cha2ds2-vasc',
+    title: 'Stroke Risk Calculator (CHA₂DS₂-VASc) for Atrial Fibrillation',
+    description: 'Estimate stroke risk in atrial fibrillation with the CHA₂DS₂-VASc score. Risk factors, anticoagulation guidance per ESC guideline and tips to lower your risk.',
+    date: '2026-05-03',
+    readTime: '9 min',
+    calculatorKey: 'strokeRisk',
+    related: ['measure-blood-pressure', 'diabetes-risk-score', 'cholesterol-ratio'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

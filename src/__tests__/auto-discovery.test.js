@@ -21,7 +21,7 @@ const EXPECTED_KEYS = [
   'bodyType', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature',
   'bmiFrauen', 'bmiMaenner', 'childDosage', 'cholesterolRatio',
   'prostateRisk', 'pcosSymptoms', 'testosteroneLevel', 'erectileDysfunction',
-  'malePattern', 'cardiovascularRisk',
+  'malePattern', 'cardiovascularRisk', 'strokeRisk',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -76,6 +76,7 @@ const EXPECTED_ROUTE_MAP = {
   erectileDysfunction: { de: 'erektile-dysfunktion-rechner', en: 'erectile-dysfunction-calculator' },
   malePattern: { de: 'haarausfall-rechner-maenner', en: 'male-pattern-baldness-calculator' },
   cardiovascularRisk: { de: 'herz-kreislauf-risiko-rechner', en: 'cardiovascular-risk-calculator' },
+  strokeRisk: { de: 'schlaganfall-risiko-rechner', en: 'stroke-risk-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -118,6 +119,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'erektile-dysfunktion-test',
   'haarausfall-norwood-skala',
   'herz-kreislauf-risiko-berechnen',
+  'schlaganfall-risiko-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -160,19 +162,20 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'erectile-dysfunction-iief-5',
   'male-pattern-baldness-norwood',
   'cardiovascular-risk-framingham',
+  'stroke-risk-calculator-cha2ds2-vasc',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 53 calculators', () => {
-    expect(calculatorMetas).toHaveLength(53)
+  it('discovers all 54 calculators', () => {
+    expect(calculatorMetas).toHaveLength(54)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 53 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(53)
+  it('builds calculatorComponents map for all 54 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(54)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -195,15 +198,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 51 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(51)
+  it('discovers all 52 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(52)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 51 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(51)
+  it('discovers all 52 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(52)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -219,10 +222,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 53 calculators with no duplicates', () => {
+  it('groups contain all 54 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(53)
-    expect(new Set(allKeys).size).toBe(53)
+    expect(allKeys).toHaveLength(54)
+    expect(new Set(allKeys).size).toBe(54)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -243,7 +246,7 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk',
     ])
   })
 
@@ -291,8 +294,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 301 routes', () => {
-    expect(routes).toHaveLength(301)
+  it('generates exactly 306 routes', () => {
+    expect(routes).toHaveLength(306)
   })
 
   it('has locale routes for all calculators in both languages', () => {
