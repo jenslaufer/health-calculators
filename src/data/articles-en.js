@@ -467,6 +467,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'strokeRisk',
     related: ['measure-blood-pressure', 'diabetes-risk-score', 'cholesterol-ratio'],
   },
+  {
+    slug: 'blood-alcohol-estimator-guide',
+    title: 'Blood Alcohol Estimator: Standard Drinks, BAC and Driving Limits',
+    description: 'Estimate your blood alcohol concentration (BAC) fast using US standard drinks and body weight. Widmark formula, US/EU driving limits and hourly elimination — explained.',
+    date: '2026-05-04',
+    readTime: '8 min',
+    calculatorKey: 'bloodAlcoholEstimator',
+    related: ['blood-alcohol-calculator', 'alcohol-unit-calculator', 'life-expectancy-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

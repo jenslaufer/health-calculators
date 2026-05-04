@@ -1,0 +1,85 @@
+{
+  "home": {
+    "calculators": {
+      "bloodAlcoholEstimator": {
+        "name": "Blutalkohol-Schätzer",
+        "description": "Schnell-Schätzung des Blutalkohols (BAC) mit Standardgetränken, Gewicht und Zeit."
+      }
+    }
+  },
+  "bloodAlcoholEstimator": {
+    "meta": {
+      "title": "Blutalkohol-Schätzer — Schneller BAC-Rechner mit Standardgetränken",
+      "description": "Schätze deinen Blutalkohol (BAC) in % schnell mit Standardgetränken, Körpergewicht und Zeit. Widmark-Formel, Abbau-Prognose und Grenzwerte. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Blutalkohol-Schätzer",
+    "description": "Schnelle BAC-Schätzung mit Standardgetränken (14 g reiner Alkohol pro Drink), Gewicht und Zeit — ideal für eine schnelle Einschätzung.",
+    "instructionsLabel": "Anleitung",
+    "instructions": "Wähle Geschlecht und Maßeinheit, gib Körpergewicht, Anzahl der Standardgetränke und Stunden seit dem ersten Drink ein. Ein Standardgetränk entspricht 14 g reinem Alkohol (= ein 0,33-l-Bier mit ~5 %, 150 ml Wein mit ~12 % oder 44 ml Spirituose mit ~40 %).",
+    "sexLabel": "Geschlecht",
+    "weightLabel": "Körpergewicht ({unit})",
+    "weightPlaceholder": "80",
+    "drinksLabel": "Anzahl Standardgetränke",
+    "drinksPlaceholder": "3",
+    "drinksHelp": "1 Standardgetränk = 14 g reiner Alkohol",
+    "hoursLabel": "Stunden seit dem ersten Getränk",
+    "hoursPlaceholder": "1",
+    "results": "Geschätzter Blutalkohol",
+    "bacLabel": "BAC",
+    "promilleLabel": "Promille",
+    "timeUntilSoberLabel": "Zeit bis nüchtern (BAC = 0)",
+    "alreadySober": "Bereits nüchtern",
+    "hoursMinutes": "{hours} Std. {minutes} Min.",
+    "alcoholGramsLabel": "Reiner Alkohol",
+    "legalLimitLabel": "Gesetzlicher Grenzwert",
+    "belowUsLimit": "Unter US-Grenzwert (0,08 %).",
+    "aboveUsLimit": "Über US-Grenzwert (0,08 %). Nicht fahren!",
+    "belowDeLimit": "Unter DE-Grenzwert (0,5 ‰).",
+    "aboveDeLimit": "Über DE-Grenzwert (0,5 ‰). Nicht fahren!",
+    "impairment_sober": "Nüchtern",
+    "impairment_minimal": "Minimale Beeinträchtigung",
+    "impairment_mild": "Leichte Beeinträchtigung",
+    "impairment_legal": "Gesetzlicher Grenzwert erreicht",
+    "impairment_significant": "Erhebliche Beeinträchtigung",
+    "impairment_dangerous": "Gefährlicher Bereich",
+    "scaleLabel": "BAC-Skala (%)",
+    "effectsTableTitle": "BAC-Bereich und Wirkung",
+    "bacRangeHeader": "BAC (%)",
+    "effectHeader": "Wirkung",
+    "effect_sober": "Keine Beeinträchtigung",
+    "effect_minimal": "Wärmegefühl, leichte Enthemmung",
+    "effect_mild": "Reduzierte Reaktionszeit, Stimmung gehoben",
+    "effect_legal": "Deutlich verlangsamte Reaktion, Koordinationsstörungen — US-Fahrgrenze",
+    "effect_significant": "Sprache, Sehen und Gleichgewicht stark gestört",
+    "effect_dangerous": "Bewusstseinsstörungen, Erbrechen, Lebensgefahr",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Diese Schätzung verwendet US-Standardgetränke (14 g reiner Alkohol) und die Widmark-Formel. BAC (%) = (Drinks × 14 g) / (Gewicht × r) × 0,1 − 0,015 × Stunden, mit r = 0,68 (Mann) bzw. 0,55 (Frau). Die Abbaurate beträgt ca. 0,015 % pro Stunde. Die Schätzung kann individuell um ±20–30 % abweichen — Magenfüllung, Lebergesundheit, Medikamente und genetische Unterschiede beeinflussen den Wert.",
+    "disclaimer": "Diese Schätzung ersetzt keinen Atem- oder Bluttest. Wenn du getrunken hast: Nicht fahren.",
+    "faq": [
+      {
+        "q": "Was ist ein Standardgetränk?",
+        "a": "Ein US-Standardgetränk enthält 14 g reinen Alkohol. Das entspricht ungefähr 350 ml Bier (5 %), 150 ml Wein (12 %) oder 44 ml Spirituose (40 %). In Deutschland werden meist 10–12 g pro Einheit verwendet — der Rechner verwendet die US-Konvention."
+      },
+      {
+        "q": "Wie unterscheidet sich BAC von Promille?",
+        "a": "BAC in % (USA) und Promille (DE/EU) messen dasselbe, nur in unterschiedlichen Einheiten. 0,08 % BAC = 0,8 ‰. Der Rechner zeigt beide Werte parallel an."
+      },
+      {
+        "q": "Wie schnell baut der Körper Alkohol ab?",
+        "a": "Im Mittel etwa 0,015 % pro Stunde (≈ 0,15 ‰). Diese Rate ist nahezu konstant und kann nicht durch Kaffee, Wasser oder Bewegung beschleunigt werden."
+      },
+      {
+        "q": "Welche Grenzwerte gelten beim Fahren?",
+        "a": "USA: meist 0,08 % BAC (0,04 % für Berufsfahrer, 0,00 % für unter 21). Deutschland: 0,5 ‰ (0,3 ‰ bei Auffälligkeiten, 0,0 ‰ Fahranfänger). EU-Länder variieren — meist 0,02–0,05 %."
+      },
+      {
+        "q": "Warum ist die Schätzung ungenau?",
+        "a": "Magenfüllung, Lebergesundheit, Medikamente, Hormonzyklus und genetische Unterschiede beeinflussen den realen Wert. Frauen haben außerdem im Mittel weniger Wasseranteil im Körper. Im Zweifel immer das niedrigere Risiko annehmen."
+      },
+      {
+        "q": "Was unterscheidet diesen Rechner vom Promillerechner?",
+        "a": "Der Promillerechner nimmt einzelne Getränke (Volumen × Vol.-%) an — präzise, aber langsam. Dieser Schätzer arbeitet mit Standardgetränken — schneller, aber weniger fein justiert. Beide Rechner verwenden die gleiche Widmark-Formel."
+      }
+    ]
+  }
+}

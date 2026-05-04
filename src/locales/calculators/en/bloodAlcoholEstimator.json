@@ -1,0 +1,85 @@
+{
+  "home": {
+    "calculators": {
+      "bloodAlcoholEstimator": {
+        "name": "Blood Alcohol Estimator",
+        "description": "Quick BAC estimate from standard drinks, weight and time."
+      }
+    }
+  },
+  "bloodAlcoholEstimator": {
+    "meta": {
+      "title": "Blood Alcohol Estimator — Quick BAC Calculator with Standard Drinks",
+      "description": "Estimate your blood alcohol concentration (BAC) fast using standard drinks, body weight and time. Widmark formula, sobriety prognosis and legal limits. Free, instant, no sign-up."
+    },
+    "title": "Blood Alcohol Estimator",
+    "description": "Quick BAC estimate using US standard drinks (14 g pure alcohol per drink), body weight and time — for a fast read on your level.",
+    "instructionsLabel": "How to use",
+    "instructions": "Pick sex and unit, enter your body weight, the number of standard drinks you've had and the hours since your first drink. One US standard drink = 14 g pure alcohol (≈ 12 oz beer at 5%, 5 oz wine at 12%, or 1.5 oz spirits at 40%).",
+    "sexLabel": "Sex",
+    "weightLabel": "Body weight ({unit})",
+    "weightPlaceholder": "180",
+    "drinksLabel": "Number of standard drinks",
+    "drinksPlaceholder": "3",
+    "drinksHelp": "1 standard drink = 14 g pure alcohol",
+    "hoursLabel": "Hours since first drink",
+    "hoursPlaceholder": "1",
+    "results": "Estimated BAC",
+    "bacLabel": "BAC",
+    "promilleLabel": "Promille",
+    "timeUntilSoberLabel": "Time until sober (BAC = 0)",
+    "alreadySober": "Already sober",
+    "hoursMinutes": "{hours} hr {minutes} min",
+    "alcoholGramsLabel": "Pure alcohol",
+    "legalLimitLabel": "Legal limit",
+    "belowUsLimit": "Below US legal limit (0.08%).",
+    "aboveUsLimit": "Above US legal limit (0.08%). Do not drive!",
+    "belowDeLimit": "Below German legal limit (0.05%).",
+    "aboveDeLimit": "Above German legal limit (0.05%). Do not drive!",
+    "impairment_sober": "Sober",
+    "impairment_minimal": "Minimal impairment",
+    "impairment_mild": "Mild impairment",
+    "impairment_legal": "Legal limit reached",
+    "impairment_significant": "Significant impairment",
+    "impairment_dangerous": "Dangerous range",
+    "scaleLabel": "BAC scale (%)",
+    "effectsTableTitle": "BAC range and effect",
+    "bacRangeHeader": "BAC (%)",
+    "effectHeader": "Effect",
+    "effect_sober": "No impairment",
+    "effect_minimal": "Feeling of warmth, slight disinhibition",
+    "effect_mild": "Reduced reaction time, elevated mood",
+    "effect_legal": "Notably slowed reaction, coordination loss — US driving limit",
+    "effect_significant": "Slurred speech, blurred vision, severe balance issues",
+    "effect_dangerous": "Impaired consciousness, vomiting, life-threatening",
+    "howItWorks": "How it works",
+    "howItWorksText": "This estimator uses US standard drinks (14 g pure alcohol) and the Widmark formula. BAC (%) = (drinks × 14 g) / (weight × r) × 0.1 − 0.015 × hours, where r = 0.68 (male) or 0.55 (female). Elimination is approximately 0.015% per hour. Individual values can shift ±20–30% — stomach contents, liver health, medications and genetics all matter.",
+    "disclaimer": "This estimate is no substitute for a breath or blood test. If you've been drinking: do not drive.",
+    "faq": [
+      {
+        "q": "What is a standard drink?",
+        "a": "A US standard drink contains 14 g of pure alcohol. That's roughly 12 oz of beer (5%), 5 oz of wine (12%) or 1.5 oz of spirits (40%). UK units are smaller (8 g) — this calculator uses the US convention."
+      },
+      {
+        "q": "What's the difference between BAC and promille?",
+        "a": "BAC in % (US) and promille (Europe) measure the same thing in different units. 0.08% BAC = 0.8‰. The result panel shows both side by side."
+      },
+      {
+        "q": "How fast does the body process alcohol?",
+        "a": "On average about 0.015% BAC per hour (≈ 0.15‰). The rate is roughly constant and cannot be sped up by coffee, water or exercise — only time."
+      },
+      {
+        "q": "What are the driving limits?",
+        "a": "US: 0.08% BAC in most states (0.04% for commercial drivers, 0.00% under 21). Germany: 0.05% / 0.5‰ (0.03% with signs of impairment, 0.00% for new drivers). Most EU countries: 0.02–0.05%."
+      },
+      {
+        "q": "Why is the estimate imprecise?",
+        "a": "Stomach contents, liver function, medications, hormonal cycle and genetics all shift real BAC. Women on average have less body water. When in doubt, assume the more conservative reading."
+      },
+      {
+        "q": "How is this different from the Blood Alcohol Calculator?",
+        "a": "The full Blood Alcohol Calculator takes individual drinks (volume × ABV) — precise but slower. This estimator uses standard drinks — faster but less fine-grained. Both use the Widmark formula."
+      }
+    ]
+  }
+}
