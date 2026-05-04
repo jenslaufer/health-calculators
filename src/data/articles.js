@@ -467,6 +467,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'strokeRisk',
     related: ['blutdruck-richtig-messen', 'diabetes-risiko-berechnen', 'cholesterol-verhaeltnis-rechner'],
   },
+  {
+    slug: 'blutalkohol-schaetzen',
+    title: 'Blutalkohol schätzen: BAC, Promille und der schnelle Standardgetränk-Rechner',
+    description: 'Blutalkohol (BAC) schnell schätzen mit Standardgetränken und Körpergewicht. Widmark-Formel, US- und DE-Grenzwerte, Abbau pro Stunde — kompakt erklärt.',
+    date: '2026-05-04',
+    readTime: '8 min',
+    calculatorKey: 'bloodAlcoholEstimator',
+    related: ['promille-berechnen', 'alkohol-einheiten-berechnen', 'lebenserwartung-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
