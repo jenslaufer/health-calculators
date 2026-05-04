@@ -476,6 +476,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'bloodAlcoholEstimator',
     related: ['blood-alcohol-calculator', 'alcohol-unit-calculator', 'life-expectancy-calculator'],
   },
+  {
+    slug: 'dehydration-risk-calculator-guide',
+    title: 'Dehydration Risk Calculator: Spot Fluid Loss with Symptoms',
+    description: 'Estimate dehydration risk from fluid intake, body weight, and symptoms. EFSA daily requirement, WHO/CDC symptom criteria, red-flag signs and rehydration guidance — explained.',
+    date: '2026-05-04',
+    readTime: '8 min',
+    calculatorKey: 'dehydrationRisk',
+    related: ['calculate-water-intake', 'caffeine-calculator-sleep-guide', 'sodium-correction-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -65,9 +65,9 @@ describe('generateLlmsTxt', () => {
     }
   })
 
-  it('generates 216 links (55 calcs × 2 locales + 53 blogs × 2 locales)', () => {
+  it('generates 220 links (56 calcs × 2 locales + 54 blogs × 2 locales)', () => {
     const links = txt.split('\n').filter(l => l.startsWith('- ['))
-    expect(links).toHaveLength(216)
+    expect(links).toHaveLength(220)
   })
 
   it('blog titles do not contain "| Health Calculators" suffix', () => {
