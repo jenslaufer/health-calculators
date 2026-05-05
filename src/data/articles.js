@@ -485,6 +485,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'heartFailureRisk',
     related: ['herz-kreislauf-risiko-berechnen', 'schlaganfall-risiko-berechnen', 'blutdruck-richtig-messen'],
   },
+  {
+    slug: 'dehydrations-risiko-berechnen',
+    title: 'Dehydration berechnen: Flüssigkeitsmangel-Risiko mit Symptomen erkennen',
+    description: 'Dehydrations-Risiko aus Trinkmenge, Körpergewicht und Symptomen einschätzen. EFSA-Tagesbedarf, WHO-Symptomkriterien und Trinkempfehlungen — kompakt erklärt.',
+    date: '2026-05-04',
+    readTime: '8 min',
+    calculatorKey: 'dehydrationRisk',
+    related: ['wasserbedarf-berechnen', 'koffein-rechner-schlafen', 'natrium-korrektur-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

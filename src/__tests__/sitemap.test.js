@@ -16,7 +16,7 @@ const EXPECTED_KEYS = [
   'dueDate', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk',
   'bodyType', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature',
   'bmiFrauen', 'bmiMaenner', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator',
-  'heartFailureRisk',
+  'heartFailureRisk', 'dehydrationRisk',
 ]
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -61,6 +61,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'schlaganfall-risiko-berechnen',
   'blutalkohol-schaetzen',
   'herzinsuffizienz-risiko-berechnen',
+  'dehydrations-risiko-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -105,12 +106,13 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'stroke-risk-calculator-cha2ds2-vasc',
   'blood-alcohol-estimator-guide',
   'heart-failure-risk-calculator',
+  'dehydration-risk-calculator-guide',
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 56 calculator meta files', () => {
+  it('discovers all 57 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(56)
+    expect(metas).toHaveLength(57)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -148,19 +150,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 54 DE blog slugs', () => {
+  it('returns all 55 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(54)
+    expect(de).toHaveLength(55)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 54 EN blog slugs', () => {
+  it('returns all 55 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(54)
+    expect(en).toHaveLength(55)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }

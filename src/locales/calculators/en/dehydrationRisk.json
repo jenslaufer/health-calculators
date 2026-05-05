@@ -1,0 +1,87 @@
+{
+  "home": {
+    "calculators": {
+      "dehydrationRisk": {
+        "name": "Dehydration Risk Calculator",
+        "description": "Estimate your dehydration risk from fluid intake, body weight, and symptoms."
+      }
+    }
+  },
+  "dehydrationRisk": {
+    "meta": {
+      "title": "Dehydration Risk Calculator — Fluid Deficit & Symptoms",
+      "description": "Estimate dehydration severity from your daily fluid intake, body weight, and clinical symptoms. Deficit %, symptom score, and replacement guidance. Free, instant, no sign-up."
+    },
+    "title": "Dehydration Risk Calculator",
+    "description": "Determine your fluid deficit from daily intake and clinical symptoms — based on EFSA reference values and WHO/CDC dehydration signs.",
+    "intakeLabel": "Fluid intake today ({unit})",
+    "symptomsLabel": "Symptoms (check all that apply)",
+    "symptom_thirst": "Thirst",
+    "symptom_thirst_desc": "Earliest, most sensitive sign — appears at 1–2 % deficit",
+    "symptom_darkUrine": "Dark urine",
+    "symptom_darkUrine_desc": "Concentrated yellow-amber urine (urine colour scale 5–8)",
+    "symptom_dryMouth": "Dry mouth / sticky tongue",
+    "symptom_dryMouth_desc": "Reduced saliva production, rough mucous membranes",
+    "symptom_fatigue": "Fatigue / low energy",
+    "symptom_fatigue_desc": "Reduced physical and cognitive performance",
+    "symptom_headache": "Headache",
+    "symptom_headache_desc": "Dull, often bilateral — driven by reduced plasma volume",
+    "symptom_dizziness": "Lightheaded on standing",
+    "symptom_dizziness_desc": "Orthostatic hypotension — sign of intravascular volume loss",
+    "symptom_rapidHeartbeat": "Rapid heartbeat",
+    "symptom_rapidHeartbeat_desc": "Resting tachycardia (> 100 bpm) as compensation",
+    "symptom_confusion": "Confusion / disorientation",
+    "symptom_confusion_desc": "Red-flag symptom — seek medical care immediately",
+    "resultsLabel": "Your dehydration risk",
+    "deficitPctLabel": "Fluid deficit",
+    "symptomScoreLabel": "Symptom score",
+    "requirementLabel": "Daily requirement (35 ml/kg)",
+    "deficitMlLabel": "Recommended replacement",
+    "category_none": "No risk",
+    "category_mild": "Mild",
+    "category_moderate": "Moderate",
+    "category_severe": "Severe",
+    "advice_none": "Your fluid balance looks fine. Keep drinking steadily through the day.",
+    "advice_mild": "Mild dehydration. Drink 250–500 ml of water now and watch how your symptoms develop.",
+    "advice_moderate": "Moderate dehydration. Replace 500–1000 ml gradually over the next 1–2 hours, avoid heat and exertion. See a clinician if symptoms persist.",
+    "advice_severe": "Severe dehydration — possible medical emergency. With confusion, dizziness, or no urination, call emergency services. Oral rehydration alone is often insufficient.",
+    "refTitle": "Dehydration severity grades",
+    "refCategory": "Severity",
+    "refDeficit": "Deficit (% body weight)",
+    "refSigns": "Typical signs",
+    "refSigns_none": "None — normal fluid balance",
+    "refSigns_mild": "Thirst, darker urine, mild fatigue",
+    "refSigns_moderate": "Dry mouth, headache, dizziness, tachycardia",
+    "refSigns_severe": "Confusion, no urination, low blood pressure, loss of consciousness",
+    "flOz": "fl oz",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator combines two methods: (1) Fluid balance — daily requirement equals 35 ml per kg of body weight (EFSA / IOM reference for healthy adults). Your current intake versus requirement yields the percentage deficit. (2) Clinical symptom score — adapted from WHO and CDC criteria, eight signs are weighted and summed. The final severity is the higher of the two estimates. Confusion is always treated as a red-flag, severe-grade symptom.",
+    "disclaimer": "This calculator is intended for self-assessment in healthy adults and does not replace clinical evaluation. For infants, elderly patients, severe diarrhea, vomiting, heat stroke, confusion, or absent urination seek medical care immediately.",
+    "faq": [
+      {
+        "q": "When is someone considered dehydrated?",
+        "a": "Losing 1–2 % of body weight in fluid (about 0.7–1.4 kg in a 70 kg adult) counts as mild dehydration. From 5 % it is moderate, from 10 % severe and potentially life-threatening."
+      },
+      {
+        "q": "How much should I drink each day?",
+        "a": "EFSA recommends 2.0 L/day for women and 2.5 L/day for men from beverages — about 35 ml per kg of body weight. Heat, exercise, fever, or pregnancy add another 0.5–1.0 L."
+      },
+      {
+        "q": "Which symptoms suggest severe dehydration?",
+        "a": "Confusion, drowsiness, no urination for over 8 hours, sunken eyes, cool mottled skin, rapid weak pulse, low blood pressure. This is a medical emergency — call emergency services."
+      },
+      {
+        "q": "Do coffee and tea count toward fluid intake?",
+        "a": "Yes, in moderate amounts. The old idea that caffeine strongly dehydrates is debunked. Up to 400 mg caffeine per day (~4 cups of coffee) contributes net positively to fluid balance."
+      },
+      {
+        "q": "What is the fastest way to recover from mild dehydration?",
+        "a": "Sip water or an oral rehydration solution (such as ORS-200) — about 500 ml over 30 minutes. Drinking too fast can trigger hyponatremia, especially after long endurance exercise."
+      },
+      {
+        "q": "Are older adults at higher risk?",
+        "a": "Yes. Thirst sensation declines with age, kidneys concentrate urine less effectively, and medications (diuretics) increase losses. Older adults should drink regularly even without feeling thirsty."
+      }
+    ]
+  }
+}
