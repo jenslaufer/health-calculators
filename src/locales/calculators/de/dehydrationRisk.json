@@ -1,0 +1,87 @@
+{
+  "home": {
+    "calculators": {
+      "dehydrationRisk": {
+        "name": "Dehydrations-Risiko-Rechner",
+        "description": "Schätze dein Dehydrationsrisiko aus Trinkmenge, Körpergewicht und Symptomen."
+      }
+    }
+  },
+  "dehydrationRisk": {
+    "meta": {
+      "title": "Dehydrations-Risiko-Rechner — Flüssigkeitsmangel erkennen",
+      "description": "Berechne dein Dehydrationsrisiko aus Trinkmenge, Körpergewicht und klinischen Symptomen. Schweregrad, Flüssigkeitsdefizit und Trinkempfehlung. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Dehydrations-Risiko-Rechner",
+    "description": "Bestimme deinen Flüssigkeitsmangel aus täglicher Trinkmenge und klinischen Symptomen — basierend auf EFSA-Referenzwerten und WHO-/CDC-Symptomkriterien.",
+    "intakeLabel": "Trinkmenge heute ({unit})",
+    "symptomsLabel": "Symptome (alle zutreffenden ankreuzen)",
+    "symptom_thirst": "Durst",
+    "symptom_thirst_desc": "Frühestes und sensitivstes Zeichen — bereits bei 1–2 % Defizit",
+    "symptom_darkUrine": "Dunkler Urin",
+    "symptom_darkUrine_desc": "Konzentrierter, gelb-bernsteinfarbener Urin (Urinfarbskala 5–8)",
+    "symptom_dryMouth": "Trockener Mund / klebrige Zunge",
+    "symptom_dryMouth_desc": "Reduzierte Speichelproduktion, raue Mundschleimhaut",
+    "symptom_fatigue": "Müdigkeit / Antriebslosigkeit",
+    "symptom_fatigue_desc": "Verminderte körperliche und geistige Leistungsfähigkeit",
+    "symptom_headache": "Kopfschmerzen",
+    "symptom_headache_desc": "Dumpf, oft beidseitig — ausgelöst durch reduziertes Plasmavolumen",
+    "symptom_dizziness": "Schwindel beim Aufstehen",
+    "symptom_dizziness_desc": "Orthostatische Hypotonie — Hinweis auf intravaskuläres Volumendefizit",
+    "symptom_rapidHeartbeat": "Schneller Puls",
+    "symptom_rapidHeartbeat_desc": "Tachykardie in Ruhe (> 100/min) als Kompensationsmechanismus",
+    "symptom_confusion": "Verwirrtheit / Desorientierung",
+    "symptom_confusion_desc": "Alarmsymptom — sofort medizinisch abklären lassen",
+    "resultsLabel": "Dein Dehydrationsrisiko",
+    "deficitPctLabel": "Flüssigkeitsdefizit",
+    "symptomScoreLabel": "Symptom-Score",
+    "requirementLabel": "Tagesbedarf (35 ml/kg)",
+    "deficitMlLabel": "Empfohlen nachzutrinken",
+    "category_none": "Kein Risiko",
+    "category_mild": "Leicht",
+    "category_moderate": "Moderat",
+    "category_severe": "Schwer",
+    "advice_none": "Deine Flüssigkeitsbilanz ist im grünen Bereich. Trinke gleichmäßig über den Tag verteilt weiter.",
+    "advice_mild": "Leichte Dehydration. Trinke jetzt 250–500 ml Wasser und behalte deine Symptome im Blick.",
+    "advice_moderate": "Moderate Dehydration. Trinke schrittweise 500–1000 ml über die nächsten 1–2 Stunden, vermeide Hitze und Anstrengung. Suche bei anhaltenden Symptomen einen Arzt auf.",
+    "advice_severe": "Schwere Dehydration — möglicher medizinischer Notfall. Bei Verwirrtheit, Kreislaufschwäche oder fehlendem Wasserlassen sofort medizinische Hilfe rufen (112). Orale Rehydratation reicht hier oft nicht mehr aus.",
+    "refTitle": "Schweregrade der Dehydration",
+    "refCategory": "Schweregrad",
+    "refDeficit": "Defizit (% Körpergewicht)",
+    "refSigns": "Typische Zeichen",
+    "refSigns_none": "Keine — normale Flüssigkeitsbilanz",
+    "refSigns_mild": "Durst, dunklerer Urin, leichte Müdigkeit",
+    "refSigns_moderate": "Trockener Mund, Kopfschmerzen, Schwindel, Tachykardie",
+    "refSigns_severe": "Verwirrtheit, kein Wasserlassen, Kreislaufschwäche, Bewusstseinsverlust",
+    "flOz": "fl oz",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner kombiniert zwei Methoden: (1) Flüssigkeitsbilanz — der Tagesbedarf wird mit 35 ml pro kg Körpergewicht berechnet (EFSA-/IOM-Referenz für gesunde Erwachsene). Aus deiner aktuellen Trinkmenge ergibt sich das prozentuale Defizit. (2) Klinischer Symptom-Score — angelehnt an WHO- und CDC-Kriterien werden 8 Zeichen mit unterschiedlicher Gewichtung addiert. Die Schweregrad-Einstufung folgt dem höheren der beiden Werte. Verwirrtheit gilt immer als Notfallzeichen.",
+    "disclaimer": "Dieser Rechner dient zur Selbsteinschätzung gesunder Erwachsener und ersetzt keine ärztliche Untersuchung. Bei Säuglingen, älteren Menschen, schwerer Diarrhoe, Erbrechen, Hitzschlag, Verwirrtheit oder fehlendem Wasserlassen sofort medizinische Hilfe in Anspruch nehmen.",
+    "faq": [
+      {
+        "q": "Ab wann gilt man als dehydriert?",
+        "a": "Bereits ein Flüssigkeitsverlust von 1–2 % des Körpergewichts (etwa 0,7–1,4 kg bei 70 kg) gilt als leichte Dehydration. Ab 5 % spricht man von moderater, ab 10 % von schwerer Dehydration mit potenzieller Lebensgefahr."
+      },
+      {
+        "q": "Wie viel sollte ich täglich trinken?",
+        "a": "Die EFSA empfiehlt 2,0 l/Tag für Frauen und 2,5 l/Tag für Männer aus Getränken — etwa 35 ml pro kg Körpergewicht. Bei Hitze, Sport, Fieber oder Schwangerschaft erhöht sich der Bedarf um 0,5–1,0 l."
+      },
+      {
+        "q": "Welche Symptome zeigen eine schwere Dehydration?",
+        "a": "Verwirrtheit, Schläfrigkeit, kein Wasserlassen über 8 Stunden, eingesunkene Augen, kalter, fleckiger Hautton, schneller schwacher Puls und niedriger Blutdruck. Das ist ein medizinischer Notfall — sofort 112 rufen."
+      },
+      {
+        "q": "Hilft Kaffee oder Tee bei der Flüssigkeitszufuhr?",
+        "a": "Ja, in moderaten Mengen. Frühere Annahmen, dass Koffein stark dehydrierend wirkt, sind widerlegt. Bis zu 400 mg Koffein pro Tag (ca. 4 Tassen Kaffee) tragen netto positiv zur Flüssigkeitsbilanz bei."
+      },
+      {
+        "q": "Was ist der schnellste Weg, eine leichte Dehydration auszugleichen?",
+        "a": "Wasser oder eine elektrolythaltige orale Rehydratationslösung (z. B. ORS-200) langsam und in kleinen Schlucken trinken — etwa 500 ml über 30 Minuten. Übertriebenes hastiges Trinken kann zu Hyponatriämie führen."
+      },
+      {
+        "q": "Sind ältere Menschen besonders gefährdet?",
+        "a": "Ja. Mit zunehmendem Alter sinkt das Durstempfinden, die Nieren konzentrieren den Urin schlechter und Medikamente (Diuretika) verstärken Verluste. Senioren sollten regelmäßig trinken — auch ohne Durstgefühl."
+      }
+    ]
+  }
+}
