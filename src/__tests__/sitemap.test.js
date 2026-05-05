@@ -230,9 +230,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 112 calcs + 2 blog index + 108 blog articles = 224)', () => {
+  it('generates correct total URL count (2 home + 114 calcs + 2 blog index + 110 blog articles = 228)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(224)
+    expect(urlCount).toBe(228)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
