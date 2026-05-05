@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "heartFailureRisk": {
+        "name": "Herzinsuffizienz-Risiko-Rechner",
+        "description": "Schätze dein 10-Jahres-Risiko für Herzinsuffizienz aus Alter, BMI und Risikofaktoren."
+      }
+    }
+  },
+  "heartFailureRisk": {
+    "meta": {
+      "title": "Herzinsuffizienz-Risiko-Rechner — 10-Jahres-Risiko schätzen",
+      "description": "Berechne dein Risiko für Herzschwäche (Herzinsuffizienz) anhand von Alter, BMI, Bluthochdruck, Diabetes, KHK und weiteren Faktoren. Kostenlos, sofort, anonym."
+    },
+    "title": "Herzinsuffizienz-Risiko-Rechner",
+    "description": "Schätze dein 10-Jahres-Risiko für Herzschwäche basierend auf etablierten Risikofaktoren.",
+    "age": "Alter (Jahre)",
+    "weight": "Gewicht",
+    "height": "Größe",
+    "factorsTitle": "Risikofaktoren",
+    "hypertension": "Bluthochdruck (Hypertonie)",
+    "diabetes": "Diabetes mellitus",
+    "cad": "Koronare Herzkrankheit (KHK)",
+    "priorMi": "Früherer Herzinfarkt",
+    "smoker": "Raucher (aktuell)",
+    "inactive": "Bewegungsmangel (< 150 min/Woche)",
+    "ckd": "Chronische Nierenerkrankung (eGFR < 60)",
+    "reset": "Zurücksetzen",
+    "results": "Ergebnis",
+    "points": "Punkte",
+    "tenYearLabel": "Geschätztes 10-Jahres-Risiko: ca. {pct} %",
+    "cat_low": "Niedrig",
+    "cat_moderate": "Mittel",
+    "cat_high": "Hoch",
+    "cat_veryHigh": "Sehr hoch",
+    "advice_low": "Dein Risiko ist niedrig. Halte Lebensstil und Vorsorge bei — Bewegung, gesunde Ernährung und regelmäßige Blutdruckkontrolle bleiben sinnvoll.",
+    "advice_moderate": "Dein Risiko ist erhöht. Achte auf Blutdruck, Gewicht und Bewegung. Sprich mit deinem Hausarzt über LDL-Cholesterin und Blutzucker.",
+    "advice_high": "Dein Risiko ist hoch. Eine ärztliche Abklärung ist empfehlenswert — inklusive EKG, Echokardiografie und Laborkontrolle. Risikofaktoren konsequent senken.",
+    "advice_veryHigh": "Dein Risiko ist sehr hoch. Suche zeitnah einen Kardiologen auf. Aggressive Behandlung der zugrundeliegenden Faktoren (Blutdruck, Diabetes, KHK) ist entscheidend.",
+    "refTitle": "Risikoeinordnung",
+    "refScore": "Punkte",
+    "refCategory": "Kategorie",
+    "refTenYear": "10-Jahres-Risiko",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner addiert Punkte für jeden vorhandenen Risikofaktor (Alter, Geschlecht, BMI, Bluthochdruck, Diabetes, KHK, früherer Herzinfarkt, Rauchen, Bewegungsmangel, Niereninsuffizienz). Die Gewichtung folgt etablierten Modellen (MAGGIC, Framingham Heart Study). Die Summe wird in Kategorien und ein geschätztes 10-Jahres-Risiko übersetzt.",
+    "disclaimer": "Hinweis: Dieser Rechner ist ein Screening-Werkzeug und ersetzt keine ärztliche Diagnostik. Bei Symptomen wie Atemnot, Beinödemen oder eingeschränkter Belastbarkeit suche umgehend ärztlichen Rat.",
+    "faq": [
+      {
+        "q": "Was ist Herzinsuffizienz?",
+        "a": "Herzinsuffizienz (Herzschwäche) bedeutet, dass das Herz nicht mehr genug Blut durch den Körper pumpt. Typische Symptome sind Atemnot, Müdigkeit, geschwollene Beine und Leistungsabfall. Sie ist die häufigste Krankenhausdiagnose bei über 65-Jährigen in Deutschland."
+      },
+      {
+        "q": "Welche Risikofaktoren sind am wichtigsten?",
+        "a": "Bluthochdruck und koronare Herzkrankheit verursachen rund 75 % aller Fälle. Diabetes, Übergewicht, frühere Herzinfarkte, Rauchen und chronische Nierenerkrankung erhöhen das Risiko zusätzlich."
+      },
+      {
+        "q": "Wie zuverlässig ist die Risikoschätzung?",
+        "a": "Die Schätzung basiert auf etablierten Punktesystemen aus großen Kohortenstudien (Framingham, MAGGIC). Sie liefert eine fundierte Orientierung, ersetzt aber keine kardiologische Untersuchung mit EKG, Echo und Labor."
+      },
+      {
+        "q": "Welche Werte sollte ich kennen?",
+        "a": "Blutdruck (Ziel: < 130/80 mmHg), LDL-Cholesterin, Nüchternglucose oder HbA1c, eGFR (Nierenfunktion) und BMI. Diese sechs Werte erfassen den Großteil des Risikos."
+      },
+      {
+        "q": "Was kann ich tun, um mein Risiko zu senken?",
+        "a": "Mehr Bewegung (150 min/Woche), Gewichtsabnahme bei Übergewicht, Rauchstopp, Blutdrucksenkung auf < 130/80, Diabetes-Einstellung und Behandlung erhöhter Cholesterinwerte. Mediterrane Ernährung wirkt zusätzlich schützend."
+      },
+      {
+        "q": "Wann sollte ich zum Arzt?",
+        "a": "Bei wiederkehrender Atemnot bei Belastung, nächtlichem Hustenreiz, geschwollenen Beinen oder Knöcheln, schneller Erschöpfung oder Brustschmerzen — sofort. Hochrisiko-Profile sollten regelmäßig kardiologisch betreut werden."
+      },
+      {
+        "q": "Spielt die Genetik eine Rolle?",
+        "a": "Ja. Familiäre Vorbelastung mit frühem Herzinfarkt oder Kardiomyopathie erhöht dein Risiko und sollte beim Hausarztgespräch erwähnt werden."
+      }
+    ]
+  }
+}
