@@ -476,6 +476,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'bloodAlcoholEstimator',
     related: ['promille-berechnen', 'alkohol-einheiten-berechnen', 'lebenserwartung-berechnen'],
   },
+  {
+    slug: 'herzinsuffizienz-risiko-berechnen',
+    title: 'Herzinsuffizienz-Risiko berechnen: Risikofaktoren, Symptome und Prävention',
+    description: 'Berechne dein 10-Jahres-Risiko für Herzschwäche. Bluthochdruck, KHK, Diabetes, BMI — die wichtigsten Hebel und was Studien wirklich zeigen.',
+    date: '2026-05-05',
+    readTime: '9 min',
+    calculatorKey: 'heartFailureRisk',
+    related: ['herz-kreislauf-risiko-berechnen', 'schlaganfall-risiko-berechnen', 'blutdruck-richtig-messen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -476,6 +476,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'bloodAlcoholEstimator',
     related: ['blood-alcohol-calculator', 'alcohol-unit-calculator', 'life-expectancy-calculator'],
   },
+  {
+    slug: 'heart-failure-risk-calculator',
+    title: 'Heart Failure Risk Calculator: Risk Factors, Symptoms and Prevention',
+    description: 'Estimate your 10-year heart failure risk. Hypertension, CAD, diabetes, BMI — the biggest levers and what the evidence actually shows.',
+    date: '2026-05-05',
+    readTime: '9 min',
+    calculatorKey: 'heartFailureRisk',
+    related: ['cardiovascular-risk-framingham', 'stroke-risk-calculator-cha2ds2-vasc', 'measure-blood-pressure'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

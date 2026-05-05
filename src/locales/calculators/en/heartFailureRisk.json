@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "heartFailureRisk": {
+        "name": "Heart Failure Risk Calculator",
+        "description": "Estimate your 10-year heart failure risk from age, BMI, and risk factors."
+      }
+    }
+  },
+  "heartFailureRisk": {
+    "meta": {
+      "title": "Heart Failure Risk Calculator — 10-Year Risk Estimate",
+      "description": "Estimate your risk of developing heart failure based on age, BMI, hypertension, diabetes, CAD and other factors. Free, instant, anonymous."
+    },
+    "title": "Heart Failure Risk Calculator",
+    "description": "Estimate your 10-year heart failure risk based on established risk factors.",
+    "age": "Age (years)",
+    "weight": "Weight",
+    "height": "Height",
+    "factorsTitle": "Risk Factors",
+    "hypertension": "High blood pressure (hypertension)",
+    "diabetes": "Diabetes mellitus",
+    "cad": "Coronary artery disease (CAD)",
+    "priorMi": "Prior heart attack",
+    "smoker": "Current smoker",
+    "inactive": "Physical inactivity (< 150 min/week)",
+    "ckd": "Chronic kidney disease (eGFR < 60)",
+    "reset": "Reset",
+    "results": "Result",
+    "points": "points",
+    "tenYearLabel": "Estimated 10-year risk: about {pct}%",
+    "cat_low": "Low",
+    "cat_moderate": "Moderate",
+    "cat_high": "High",
+    "cat_veryHigh": "Very high",
+    "advice_low": "Your risk is low. Keep up healthy lifestyle and regular check-ups — exercise, balanced diet, and blood pressure control remain worthwhile.",
+    "advice_moderate": "Your risk is elevated. Watch your blood pressure, weight, and exercise. Talk to your GP about LDL cholesterol and blood glucose.",
+    "advice_high": "Your risk is high. A medical workup is recommended — including ECG, echocardiogram, and labs. Aggressively manage modifiable risk factors.",
+    "advice_veryHigh": "Your risk is very high. See a cardiologist promptly. Aggressive treatment of underlying conditions (blood pressure, diabetes, CAD) is critical.",
+    "refTitle": "Risk classification",
+    "refScore": "Points",
+    "refCategory": "Category",
+    "refTenYear": "10-year risk",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator adds points for each risk factor present (age, sex, BMI, hypertension, diabetes, CAD, prior heart attack, smoking, inactivity, kidney disease). Weights are based on established models (MAGGIC, Framingham Heart Study). The total score maps to a risk category and an estimated 10-year heart failure risk.",
+    "disclaimer": "Note: this calculator is a screening tool and does not replace medical evaluation. If you experience shortness of breath, leg swelling, or reduced exercise tolerance, seek medical advice promptly.",
+    "faq": [
+      {
+        "q": "What is heart failure?",
+        "a": "Heart failure means the heart can no longer pump enough blood to meet the body's needs. Typical symptoms are shortness of breath, fatigue, leg swelling, and reduced exercise capacity. It is the most common hospital diagnosis in adults over 65 in many countries."
+      },
+      {
+        "q": "Which risk factors matter most?",
+        "a": "High blood pressure and coronary artery disease cause about 75% of cases. Diabetes, obesity, prior heart attack, smoking, and chronic kidney disease further increase risk."
+      },
+      {
+        "q": "How accurate is this risk estimate?",
+        "a": "The estimate is based on established point systems from large cohort studies (Framingham, MAGGIC). It provides a sound orientation but does not replace cardiology evaluation with ECG, echocardiogram, and lab tests."
+      },
+      {
+        "q": "Which numbers should I know?",
+        "a": "Blood pressure (target: < 130/80 mmHg), LDL cholesterol, fasting glucose or HbA1c, eGFR (kidney function), and BMI. These six values capture most of the modifiable risk."
+      },
+      {
+        "q": "What can I do to lower my risk?",
+        "a": "More physical activity (150 min/week), weight loss if overweight, smoking cessation, lowering blood pressure to < 130/80, managing diabetes, and treating elevated cholesterol. The Mediterranean diet provides additional protection."
+      },
+      {
+        "q": "When should I see a doctor?",
+        "a": "If you have recurring shortness of breath on exertion, nighttime cough, swollen legs/ankles, rapid fatigue, or chest pain — see a doctor right away. High-risk profiles should be followed by a cardiologist."
+      },
+      {
+        "q": "Does genetics play a role?",
+        "a": "Yes. Family history of early heart attack or cardiomyopathy raises your risk and should be mentioned to your physician."
+      }
+    ]
+  }
+}
