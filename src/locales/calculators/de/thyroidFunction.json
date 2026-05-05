@@ -1,0 +1,87 @@
+{
+  "home": {
+    "calculators": {
+      "thyroidFunction": {
+        "name": "Schilddrüsen-Rechner",
+        "description": "Werte TSH, freies T3 und T4 ein und erhalte eine Einordnung der Schilddrüsenfunktion."
+      }
+    }
+  },
+  "thyroidFunction": {
+    "meta": {
+      "title": "Schilddrüsen-Rechner — TSH, T3, T4 Werte interpretieren",
+      "description": "Schilddrüsenwerte verstehen: TSH, freies T3 und freies T4 in einen Befund einordnen. Hyperthyreose, Hypothyreose, subklinische Formen — kostenlos und sofort."
+    },
+    "title": "Schilddrüsen-Rechner",
+    "description": "TSH, freies T3 und freies T4 in einen Schilddrüsenbefund einordnen — basierend auf den ATA-Referenzbereichen.",
+    "tshLabel": "TSH (mIU/L)",
+    "tshRange": "Normalbereich: 0,4 – 4,0 mIU/L",
+    "t4Label": "Freies T4 (fT4)",
+    "t4RangeNgdl": "Normalbereich: 0,8 – 1,8 ng/dL",
+    "t4RangePmol": "Normalbereich: 10,3 – 23,2 pmol/L",
+    "t3Label": "Freies T3 (fT3)",
+    "t3RangePgml": "Normalbereich: 2,3 – 4,2 pg/mL",
+    "t3RangePmol": "Normalbereich: 3,5 – 6,5 pmol/L",
+    "reset": "Zurücksetzen",
+    "results": "Ergebnis",
+    "cat_low": "Niedrig",
+    "cat_normal": "Normal",
+    "cat_high": "Erhöht",
+    "status_euthyroid": "Euthyreote Funktion",
+    "status_primaryHypo": "Primäre Hypothyreose",
+    "status_subclinicalHypo": "Subklinische Hypothyreose",
+    "status_primaryHyper": "Primäre Hyperthyreose",
+    "status_subclinicalHyper": "Subklinische Hyperthyreose",
+    "status_elevatedTsh": "Erhöhter TSH-Wert",
+    "status_suppressedTsh": "Supprimierter TSH-Wert",
+    "status_indeterminate": "Befund nicht eindeutig",
+    "advice_euthyroid": "Deine Schilddrüsenwerte liegen im Normbereich. Eine routinemäßige Kontrolle reicht in der Regel aus.",
+    "advice_primaryHypo": "Hinweise auf eine manifeste Schilddrüsenunterfunktion. Sprich mit deinem Arzt — meist ist eine Behandlung mit Levothyroxin sinnvoll.",
+    "advice_subclinicalHypo": "Subklinische Unterfunktion: TSH erhöht, T4 noch normal. Kontrolle nach 4–8 Wochen empfohlen, ggf. Antikörper (TPO-Ak) bestimmen.",
+    "advice_primaryHyper": "Hinweise auf eine manifeste Schilddrüsenüberfunktion. Eine zeitnahe ärztliche Abklärung ist wichtig — Morbus Basedow oder Knoten möglich.",
+    "advice_subclinicalHyper": "Subklinische Überfunktion: TSH supprimiert, T4 und T3 normal. Kontrolle nach 4–8 Wochen, Risiko für Vorhofflimmern und Osteoporose beachten.",
+    "advice_elevatedTsh": "TSH ist erhöht. Eine Bestimmung von freiem T4 ist erforderlich, um zwischen subklinischer und manifester Unterfunktion zu unterscheiden.",
+    "advice_suppressedTsh": "TSH ist niedrig. Bestimmung von freiem T4 und freiem T3 zur weiteren Abklärung empfohlen.",
+    "advice_indeterminate": "Die Werte ergeben kein eindeutiges Muster. Eine Wiederholung in 4–6 Wochen kann sinnvoll sein.",
+    "refTitle": "Referenzbereiche (Erwachsene, ATA-Leitlinien)",
+    "refMarker": "Marker",
+    "refRange": "Normalbereich",
+    "refMeaning": "Bedeutung",
+    "refTshMeaning": "Hypophysensignal an die Schilddrüse",
+    "refT4Meaning": "Hauptspeicherhormon (Vorstufe)",
+    "refT3Meaning": "Aktive Form, wirkt auf Zellen",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner ordnet TSH, freies T4 und freies T3 anhand der ATA-Referenzbereiche in eines von acht Mustern ein. Das Verhältnis der drei Werte unterscheidet primäre und subklinische Formen von Hyper- und Hypothyreose. Die Hypophyse setzt TSH frei, das die Schilddrüse zur T4- und T3-Bildung anregt — bei Funktionsstörungen sind diese Werte typisch verschoben.",
+    "disclaimer": "Hinweis: Dieser Rechner ist ein Orientierungs-Tool. Eine Diagnose erfordert immer ärztliche Bewertung mit Anamnese, klinischem Befund und ggf. Antikörpern (TPO-Ak, TRAK) sowie Sonografie.",
+    "faq": [
+      {
+        "q": "Was sagt der TSH-Wert aus?",
+        "a": "TSH (Thyreoidea-stimulierendes Hormon) wird von der Hypophyse gebildet und steuert die Schilddrüse. Ein hoher TSH-Wert deutet auf eine Unterfunktion hin (die Hypophyse ‚ruft lauter‘), ein niedriger Wert auf eine Überfunktion. TSH ist der empfindlichste Einzelmarker."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen T3 und T4?",
+        "a": "T4 (Thyroxin) ist die Hauptspeicherform — etwa 80 % der Schilddrüsenproduktion. T3 (Trijodthyronin) ist die biologisch aktive Form, die in Geweben aus T4 entsteht. Frei (‚fT4‘, ‚fT3‘) bezeichnet den ungebundenen, wirksamen Anteil."
+      },
+      {
+        "q": "Was ist eine subklinische Schilddrüsenstörung?",
+        "a": "Bei subklinischer Hypothyreose ist der TSH-Wert erhöht, das freie T4 aber noch normal. Subklinische Hyperthyreose: TSH supprimiert, T4 und T3 normal. Symptome können vorhanden oder fehlend sein."
+      },
+      {
+        "q": "Welche Symptome deuten auf Schilddrüsenstörungen hin?",
+        "a": "Unterfunktion: Müdigkeit, Gewichtszunahme, Kälteempfindlichkeit, Verstopfung, trockene Haut. Überfunktion: Herzrasen, Gewichtsverlust, Hitzewallungen, Nervosität, Schlafstörungen. Hashimoto und Morbus Basedow sind die häufigsten Autoimmun-Ursachen."
+      },
+      {
+        "q": "Wie oft sollten die Werte kontrolliert werden?",
+        "a": "Bei normaler Funktion alle 1–2 Jahre, bei Levothyroxin-Therapie alle 6–12 Monate, bei subklinischen Befunden nach 4–8 Wochen. Schwangere mit Hypothyreose: alle 4–6 Wochen."
+      },
+      {
+        "q": "Beeinflussen Medikamente die Schilddrüsenwerte?",
+        "a": "Ja. Biotin (Hochdosis), Lithium, Amiodaron, Östrogen und Glukokortikoide können die Werte verfälschen. Biotin sollte 48 Stunden vor dem Bluttest pausiert werden."
+      },
+      {
+        "q": "Was ist Hashimoto-Thyreoiditis?",
+        "a": "Die häufigste Ursache der Hypothyreose: eine Autoimmunerkrankung, bei der das Immunsystem die Schilddrüse angreift. Diagnose über TPO-Antikörper. Behandlung mit Levothyroxin, sobald TSH dauerhaft erhöht ist."
+      }
+    ]
+  }
+}

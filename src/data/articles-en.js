@@ -494,6 +494,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'dehydrationRisk',
     related: ['calculate-water-intake', 'caffeine-calculator-sleep-guide', 'sodium-correction-calculator'],
   },
+  {
+    slug: 'thyroid-function-calculator',
+    title: 'Thyroid Function Calculator: Read TSH, T3 and T4 Like a Pro',
+    description: 'Interpret TSH, free T3 and free T4 values. Hypothyroidism, hyperthyroidism, subclinical patterns and what each marker really tells you.',
+    date: '2026-05-05',
+    readTime: '9 min',
+    calculatorKey: 'thyroidFunction',
+    related: ['calculate-bmr', 'calculate-tdee', 'diabetes-risk-score'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

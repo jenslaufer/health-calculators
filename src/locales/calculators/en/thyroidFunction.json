@@ -1,0 +1,87 @@
+{
+  "home": {
+    "calculators": {
+      "thyroidFunction": {
+        "name": "Thyroid Function Calculator",
+        "description": "Enter TSH, free T3 and T4 to interpret thyroid function with ATA reference ranges."
+      }
+    }
+  },
+  "thyroidFunction": {
+    "meta": {
+      "title": "Thyroid Function Calculator — Interpret TSH, T3, T4",
+      "description": "Understand your thyroid panel: TSH, free T3 and free T4 mapped to a clear pattern. Hyperthyroid, hypothyroid, subclinical forms — free, instant, no sign-up."
+    },
+    "title": "Thyroid Function Calculator",
+    "description": "Map TSH, free T3 and free T4 to a thyroid function pattern using ATA adult reference ranges.",
+    "tshLabel": "TSH (mIU/L)",
+    "tshRange": "Reference range: 0.4 – 4.0 mIU/L",
+    "t4Label": "Free T4 (fT4)",
+    "t4RangeNgdl": "Reference range: 0.8 – 1.8 ng/dL",
+    "t4RangePmol": "Reference range: 10.3 – 23.2 pmol/L",
+    "t3Label": "Free T3 (fT3)",
+    "t3RangePgml": "Reference range: 2.3 – 4.2 pg/mL",
+    "t3RangePmol": "Reference range: 3.5 – 6.5 pmol/L",
+    "reset": "Reset",
+    "results": "Result",
+    "cat_low": "Low",
+    "cat_normal": "Normal",
+    "cat_high": "High",
+    "status_euthyroid": "Euthyroid",
+    "status_primaryHypo": "Primary hypothyroidism",
+    "status_subclinicalHypo": "Subclinical hypothyroidism",
+    "status_primaryHyper": "Primary hyperthyroidism",
+    "status_subclinicalHyper": "Subclinical hyperthyroidism",
+    "status_elevatedTsh": "Elevated TSH",
+    "status_suppressedTsh": "Suppressed TSH",
+    "status_indeterminate": "Indeterminate pattern",
+    "advice_euthyroid": "Your thyroid markers are within the reference range. Routine monitoring is usually sufficient.",
+    "advice_primaryHypo": "Pattern suggests overt hypothyroidism. Discuss with your doctor — levothyroxine therapy is often indicated.",
+    "advice_subclinicalHypo": "Subclinical hypothyroidism: TSH elevated, free T4 still normal. Recheck in 4–8 weeks; consider TPO antibodies.",
+    "advice_primaryHyper": "Pattern suggests overt hyperthyroidism. Prompt medical evaluation is important — Graves' disease or autonomous nodules are possible.",
+    "advice_subclinicalHyper": "Subclinical hyperthyroidism: TSH suppressed, free T4 and T3 normal. Recheck in 4–8 weeks; watch for atrial fibrillation and bone loss risk.",
+    "advice_elevatedTsh": "TSH is elevated. Free T4 testing is needed to distinguish subclinical from overt hypothyroidism.",
+    "advice_suppressedTsh": "TSH is suppressed. Test free T4 and free T3 to clarify the picture.",
+    "advice_indeterminate": "The values do not fit a single pattern. A repeat panel in 4–6 weeks is reasonable.",
+    "refTitle": "Reference ranges (adults, ATA guidelines)",
+    "refMarker": "Marker",
+    "refRange": "Reference range",
+    "refMeaning": "Meaning",
+    "refTshMeaning": "Pituitary signal to the thyroid",
+    "refT4Meaning": "Main storage hormone (precursor)",
+    "refT3Meaning": "Active form, acts on cells",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator maps TSH, free T4 and free T3 against ATA reference ranges and matches the pattern to one of eight categories. The relationship between the three values distinguishes primary from subclinical forms of hyper- and hypothyroidism. The pituitary releases TSH to drive thyroid hormone production — when the gland under- or over-produces, the values shift in characteristic ways.",
+    "disclaimer": "Note: This is an educational tool, not a diagnosis. A clinical assessment requires history, physical exam, and often antibodies (TPO, TRAb) plus ultrasound.",
+    "faq": [
+      {
+        "q": "What does TSH measure?",
+        "a": "TSH (thyroid-stimulating hormone) is released by the pituitary gland and tells the thyroid to make T4 and T3. High TSH suggests an underactive thyroid (the pituitary is 'shouting louder'); low TSH suggests an overactive thyroid. TSH is the most sensitive single marker."
+      },
+      {
+        "q": "What's the difference between T3 and T4?",
+        "a": "T4 (thyroxine) is the main storage form — about 80 % of thyroid output. T3 (triiodothyronine) is the biologically active form, converted from T4 in tissues. 'Free' (fT4, fT3) refers to the unbound, active fraction."
+      },
+      {
+        "q": "What is subclinical thyroid disease?",
+        "a": "Subclinical hypothyroidism: TSH elevated, free T4 still normal. Subclinical hyperthyroidism: TSH suppressed, free T4 and T3 normal. Symptoms may be subtle or absent."
+      },
+      {
+        "q": "What symptoms suggest a thyroid problem?",
+        "a": "Hypothyroidism: fatigue, weight gain, cold intolerance, constipation, dry skin. Hyperthyroidism: palpitations, weight loss, heat intolerance, anxiety, insomnia. Hashimoto's and Graves' are the leading autoimmune causes."
+      },
+      {
+        "q": "How often should thyroid values be checked?",
+        "a": "Normal function: every 1–2 years. On levothyroxine: every 6–12 months. Subclinical findings: recheck in 4–8 weeks. In pregnancy with hypothyroidism: every 4–6 weeks."
+      },
+      {
+        "q": "Do medications affect thyroid values?",
+        "a": "Yes. High-dose biotin, lithium, amiodarone, estrogen, and glucocorticoids can shift the values. Hold biotin for 48 hours before testing."
+      },
+      {
+        "q": "What is Hashimoto's thyroiditis?",
+        "a": "The most common cause of hypothyroidism — an autoimmune disease where the immune system attacks the thyroid. Diagnosed via TPO antibodies. Treated with levothyroxine once TSH is persistently elevated."
+      }
+    ]
+  }
+}
