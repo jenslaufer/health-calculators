@@ -503,6 +503,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'thyroidFunction',
     related: ['grundumsatz-berechnen', 'tdee-berechnen', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'anaemie-risiko-berechnen',
+    title: 'Anämie berechnen: Eisenmangel und Blutarmut früh erkennen',
+    description: 'Anämie-Risiko aus Hämoglobin, Geschlecht und 10 typischen Symptomen einschätzen. WHO-Grenzwerte, Eisenmangel-Hinweise und Therapieprinzipien — kompakt erklärt.',
+    date: '2026-05-06',
+    readTime: '8 min',
+    calculatorKey: 'anemiaRisk',
+    related: ['herz-kreislauf-risiko-berechnen', 'grundumsatz-berechnen', 'schilddruesenfunktion-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

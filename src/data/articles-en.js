@@ -503,6 +503,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'thyroidFunction',
     related: ['calculate-bmr', 'calculate-tdee', 'diabetes-risk-score'],
   },
+  {
+    slug: 'anemia-risk-calculator-guide',
+    title: 'Anemia Risk Calculator: Spot Iron Deficiency and Low Hemoglobin Early',
+    description: 'Screen for anemia from hemoglobin, sex, and 10 typical symptoms. WHO cutoffs, iron-deficiency clues, and treatment principles — explained.',
+    date: '2026-05-06',
+    readTime: '8 min',
+    calculatorKey: 'anemiaRisk',
+    related: ['cardiovascular-risk-framingham', 'calculate-bmr', 'thyroid-function-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

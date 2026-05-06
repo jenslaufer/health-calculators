@@ -1,0 +1,89 @@
+{
+  "home": {
+    "calculators": {
+      "anemiaRisk": {
+        "name": "Anemia Risk Calculator",
+        "description": "Estimate your anemia risk from hemoglobin level, sex, and clinical symptoms."
+      }
+    }
+  },
+  "anemiaRisk": {
+    "meta": {
+      "title": "Anemia Risk Calculator — Iron Deficiency & Low Hemoglobin Screen",
+      "description": "Screen for anemia from hemoglobin, sex, and clinical symptoms. WHO cutoffs, severity grading, and clinical guidance. Free, instant, no sign-up."
+    },
+    "title": "Anemia Risk Calculator",
+    "description": "Grade your anemia risk from hemoglobin and 10 clinical symptoms — based on WHO reference values and guideline-derived symptom criteria.",
+    "sexLabel": "Sex",
+    "sexFemale": "Female",
+    "sexMale": "Male",
+    "hbLabel": "Hemoglobin ({unit})",
+    "symptomsLabel": "Symptoms (check all that apply)",
+    "symptom_fatigue": "Fatigue / low energy",
+    "symptom_fatigue_desc": "Persistent tiredness, low drive even after sleep",
+    "symptom_pallor": "Pale skin / mucous membranes",
+    "symptom_pallor_desc": "Pale face, inner eyelids, or nail beds",
+    "symptom_shortnessOfBreath": "Shortness of breath on exertion",
+    "symptom_shortnessOfBreath_desc": "Breathlessness climbing stairs or with light effort",
+    "symptom_dizziness": "Lightheaded on standing",
+    "symptom_dizziness_desc": "Dizziness, vision blackouts when getting up",
+    "symptom_coldHandsFeet": "Cold hands and feet",
+    "symptom_coldHandsFeet_desc": "Reduced peripheral perfusion in a warm room",
+    "symptom_headache": "Headache",
+    "symptom_headache_desc": "Frequent dull headaches, often in the morning",
+    "symptom_rapidHeartbeat": "Palpitations / rapid heartbeat",
+    "symptom_rapidHeartbeat_desc": "Resting tachycardia or noticeable heart pounding",
+    "symptom_brittleNails": "Brittle nails / hair loss",
+    "symptom_brittleNails_desc": "Dry skin, ridged nails, or spoon-shaped nails",
+    "symptom_restlessLegs": "Restless legs / leg tingling",
+    "symptom_restlessLegs_desc": "Urge to move legs in the evening — typical for iron deficiency",
+    "symptom_pica": "Pica / unusual cravings",
+    "symptom_pica_desc": "Craving ice, dirt, or starch — red-flag iron-deficiency sign",
+    "resultsLabel": "Your anemia risk",
+    "hbCategoryLabel": "Hb assessment",
+    "symptomScoreLabel": "Symptom score",
+    "cutoffLabel": "WHO cutoff",
+    "cutoffValue": "{value} {unit}",
+    "category_none": "No risk",
+    "category_mild": "Mild",
+    "category_moderate": "Moderate",
+    "category_severe": "Severe",
+    "advice_none": "Your hemoglobin and symptoms do not currently suggest anemia. If fatigue persists, ask your GP for a complete blood count anyway.",
+    "advice_mild": "Mild anemia is likely. Have your GP order a full blood count and iron panel (ferritin, transferrin saturation).",
+    "advice_moderate": "Moderate anemia — see a clinician within the next few days. Identify the cause (iron, B12, folate deficiency, or chronic disease) and treat accordingly.",
+    "advice_severe": "Severe anemia — possibly life-threatening. With breathlessness at rest, chest pain, or fainting, call emergency services. Otherwise seek same-day medical care for repeat Hb testing and possible transfusion.",
+    "refTitle": "WHO hemoglobin cutoffs (g/dL)",
+    "refCategory": "Severity",
+    "refWomen": "Women (non-pregnant)",
+    "refMen": "Men",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator combines two methods: (1) Hemoglobin — your value is compared to WHO cutoffs (women < 12.0 g/dL, men < 13.0 g/dL define anemia). (2) Symptom score — ten typical anemia signs are weighted and summed (max. 13 points). The higher of the two estimates determines the final severity. Pica and restless legs are considered specific signs of iron deficiency and warrant clinical evaluation.",
+    "disclaimer": "This calculator is intended for self-assessment in healthy adults and does not replace clinical evaluation. Pregnant women, children, and people with chronic disease or cancer have different cutoffs. With breathlessness at rest, chest pain, syncope, or black stools seek medical care immediately.",
+    "faq": [
+      {
+        "q": "What is anemia?",
+        "a": "Anemia means a reduced hemoglobin level in the blood, lowering the oxygen-carrying capacity. That explains fatigue, breathlessness, and reduced performance. Iron deficiency is the leading cause worldwide."
+      },
+      {
+        "q": "Which hemoglobin values count as anemic?",
+        "a": "WHO defines anemia as Hb < 12.0 g/dL in non-pregnant women and < 13.0 g/dL in men. The cutoff in pregnancy is 11.0 g/dL. Values below 8.0 g/dL are considered severe."
+      },
+      {
+        "q": "What are typical symptoms?",
+        "a": "Fatigue, pale skin, breathlessness on exertion, palpitations, headaches, cold hands and feet, brittle nails, hair loss, restless legs, and unusual cravings for ice or dirt (pica)."
+      },
+      {
+        "q": "What are common causes?",
+        "a": "Iron deficiency (heavy menstruation, vegan diet, peptic ulcer), vitamin B12 or folate deficiency, chronic inflammation, kidney disease, and blood loss. Diagnosis always requires a complete blood count plus iron and vitamin parameters."
+      },
+      {
+        "q": "How is anemia treated?",
+        "a": "Treatment depends on the cause: oral iron supplements (60–120 mg/day), B12 or folate replacement, treating the underlying disease. Severe or symptomatic cases may require IV iron or blood transfusion."
+      },
+      {
+        "q": "Which foods help prevent iron deficiency?",
+        "a": "Heme iron from red meat, fish, and poultry is absorbed better than non-heme iron. Legumes, whole grains, dark leafy greens, and nuts combined with vitamin C (e.g. peppers) improve absorption. Coffee, tea, and calcium reduce it."
+      }
+    ]
+  }
+}
