@@ -494,6 +494,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'dehydrationRisk',
     related: ['wasserbedarf-berechnen', 'koffein-rechner-schlafen', 'natrium-korrektur-berechnen'],
   },
+  {
+    slug: 'schilddruesenfunktion-berechnen',
+    title: 'Schilddrüsenwerte verstehen: TSH, T3 und T4 richtig deuten',
+    description: 'TSH, freies T3 und freies T4 in einen Befund einordnen. Hypothyreose, Hyperthyreose, subklinische Formen und welche Werte was bedeuten.',
+    date: '2026-05-05',
+    readTime: '9 min',
+    calculatorKey: 'thyroidFunction',
+    related: ['grundumsatz-berechnen', 'tdee-berechnen', 'diabetes-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
