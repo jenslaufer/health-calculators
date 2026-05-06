@@ -512,6 +512,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'anemiaRisk',
     related: ['herz-kreislauf-risiko-berechnen', 'grundumsatz-berechnen', 'schilddruesenfunktion-berechnen'],
   },
+  {
+    slug: 'hepatitis-risiko-berechnen',
+    title: 'Hepatitis berechnen: Risiko für Hep B und C aus Expositionen',
+    description: 'Hepatitis-Risiko aus 13 CDC-/USPSTF-Faktoren einschätzen. Übertragungswege, Screening-Empfehlung, Impfung und Therapie — kompakt erklärt.',
+    date: '2026-05-06',
+    readTime: '9 min',
+    calculatorKey: 'hepatitisRisk',
+    related: ['alkohol-einheiten-berechnen', 'gfr-rechner', 'anaemie-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

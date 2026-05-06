@@ -512,6 +512,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'anemiaRisk',
     related: ['cardiovascular-risk-framingham', 'calculate-bmr', 'thyroid-function-calculator'],
   },
+  {
+    slug: 'hepatitis-risk-calculator-guide',
+    title: 'Hepatitis Risk Calculator: Score Your HBV and HCV Risk by Exposure',
+    description: 'Score hepatitis B and C risk from 13 CDC/USPSTF exposure factors. Transmission routes, screening recommendations, vaccination, and treatment principles.',
+    date: '2026-05-06',
+    readTime: '9 min',
+    calculatorKey: 'hepatitisRisk',
+    related: ['alcohol-unit-calculator', 'gfr-calculator-kidney-function', 'anemia-risk-calculator-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -1,0 +1,96 @@
+{
+  "home": {
+    "calculators": {
+      "hepatitisRisk": {
+        "name": "Hepatitis-Risiko-Rechner",
+        "description": "Schätze dein Risiko für Hepatitis B und C anhand von Expositionsfaktoren ein."
+      }
+    }
+  },
+  "hepatitisRisk": {
+    "meta": {
+      "title": "Hepatitis-Risiko-Rechner — Hepatitis B & C Screening (CDC/USPSTF)",
+      "description": "Bewerte dein Hepatitis-B- und -C-Risiko aus 13 Expositionsfaktoren. CDC-/USPSTF-basierter Screening-Hinweis, Schweregrad und Empfehlungen. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Hepatitis-Risiko-Rechner",
+    "description": "Schätze dein Risiko für Hepatitis B und C anhand von 13 Expositionsfaktoren — Drogenkonsum, medizinische Eingriffe, Geburtsland, sexuelles Verhalten und mehr.",
+    "exposuresLabel": "Expositionsfaktoren (alle zutreffenden ankreuzen)",
+    "exp_injectionDrugUse": "Intravenöser Drogenkonsum (jemals)",
+    "exp_injectionDrugUse_desc": "Hauptrisikofaktor für Hep C — gemeinsam genutzte Spritzen, auch einmalig",
+    "exp_bornHighPrevalenceCountry": "Geboren in Hochprävalenz-Region",
+    "exp_bornHighPrevalenceCountry_desc": "Asien, Afrika, Osteuropa, Pazifikinseln, Naher Osten",
+    "exp_hivPositive": "HIV-positiv",
+    "exp_hivPositive_desc": "Koinfektionsrisiko stark erhöht — Screening obligat",
+    "exp_hemodialysis": "Aktuelle oder frühere Hämodialyse",
+    "exp_hemodialysis_desc": "Wiederholte Blutkontakte trotz strenger Hygiene",
+    "exp_transfusionBefore1992": "Bluttransfusion vor 1992",
+    "exp_transfusionBefore1992_desc": "Vor Routine-Hep-C-Screening von Blutprodukten",
+    "exp_motherInfected": "Mutter mit Hepatitis B oder C",
+    "exp_motherInfected_desc": "Vertikale Übertragung um die Geburt — typisch für Hep B",
+    "exp_incarceration": "Jemals inhaftiert",
+    "exp_incarceration_desc": "Erhöhte Prävalenz in Justizvollzug — auch ohne sonstige Risiken",
+    "exp_needlestickExposure": "Nadelstich-Verletzung im Beruf",
+    "exp_needlestickExposure_desc": "Pflegekräfte, Tätowierer, Reinigungsdienste, Polizei",
+    "exp_unregulatedTattooPiercing": "Tätowierung / Piercing in nicht-regulierter Umgebung",
+    "exp_unregulatedTattooPiercing_desc": "Im Ausland, im Gefängnis oder ohne Sterilisations-Standards",
+    "exp_multipleSexualPartners": "Mehrere Sexualpartner / ungeschützter Verkehr",
+    "exp_multipleSexualPartners_desc": "Hep B sexuell übertragbar; bei MSM auch Hep C",
+    "exp_sharedRazorsToothbrush": "Geteilte Rasierer / Zahnbürsten",
+    "exp_sharedRazorsToothbrush_desc": "Im Haushalt mit infizierter Person",
+    "exp_travelEndemicArea": "Reisen in Endemiegebiete (≥ 4 Wochen)",
+    "exp_travelEndemicArea_desc": "Längerer Aufenthalt in Hochprävalenz-Ländern",
+    "exp_chronicLiverDisease": "Chronische Lebererkrankung / erhöhte Leberwerte",
+    "exp_chronicLiverDisease_desc": "Persistierend erhöhtes ALT, Steatose, Zirrhose unklarer Ursache",
+    "vaccineLabel": "Hepatitis-B-Impfung vollständig",
+    "vaccineDesc": "Mindestens 3 Dosen; senkt das Risiko für Hep B (nicht für Hep C) um eine Stufe",
+    "resultsLabel": "Dein Hepatitis-Risiko",
+    "scoreLabel": "Risiko-Score",
+    "countLabel": "Anzahl Faktoren",
+    "category_none": "Kein Risiko",
+    "category_low": "Niedrig",
+    "category_moderate": "Moderat",
+    "category_high": "Hoch",
+    "advice_none": "Aktuell keine relevanten Risikofaktoren. Eine routinemäßige Hep-B/C-Testung ist laut USPSTF dennoch einmal im Erwachsenenalter sinnvoll.",
+    "advice_low": "Geringes Risiko. Eine einmalige Antikörper- und Antigen-Testung beim Hausarzt ist empfehlenswert — gerade weil eine chronische Hepatitis C oft jahrelang stumm verläuft.",
+    "advice_moderate": "Moderates Risiko. Lass beim Hausarzt Hep-B-Antigen (HBsAg), Anti-HBc, Anti-HBs sowie Anti-HCV bestimmen. Ungeimpfte sollten die Hep-B-Impfung nachholen.",
+    "advice_high": "Hohes Risiko. Zeitnahe Hep-B/C-Testung erforderlich. Bei akuter Exposition (z. B. Nadelstich) sofort PEP-Indikation prüfen lassen. Bei IDU oder HIV-Koinfektion auch HCV-RNA-PCR.",
+    "screeningCallout": "Screening-Empfehlung: HBsAg, Anti-HBc, Anti-HBs und Anti-HCV beim Hausarzt — ohne Wartezeit, oft kostenlos.",
+    "refTitle": "Risiko-Bänder",
+    "refCategory": "Schweregrad",
+    "refScore": "Score",
+    "refMeaning": "Bedeutung",
+    "refMeaning_none": "Keine relevante Exposition",
+    "refMeaning_low": "Einzelner geringer Risikofaktor",
+    "refMeaning_moderate": "Screening empfohlen",
+    "refMeaning_high": "Dringende Testung — auch HCV-RNA",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner gewichtet 13 Expositionsfaktoren nach den USPSTF- und CDC-Empfehlungen für Hepatitis-B-/-C-Screening. Hochrisikofaktoren wie intravenöser Drogenkonsum, HIV-Koinfektion, Hämodialyse und vertikale Übertragung erhalten 3 bis 4 Punkte. Mittelrisikofaktoren (Inhaftierung, Nadelstich, Tattoo, Sexualverhalten) zählen 2 Punkte, Reisen und Haushaltskontakte je 1 Punkt. Eine vollständige Hepatitis-B-Impfung senkt die Risikostufe für Hep B um eins (Hep C bleibt unberührt — es gibt keinen Impfstoff).",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Untersuchung. Hepatitis B und C verlaufen oft jahrelang symptomlos und werden nur über Bluttests erkannt. Bei akuter Nadelstich-Verletzung sofort durchspülen und innerhalb von 6 Stunden in der Notaufnahme PEP-Indikation prüfen lassen. Schwangere, Kinder und Immunsupprimierte benötigen abweichende Screening-Strategien.",
+    "faq": [
+      {
+        "q": "Was sind die häufigsten Übertragungswege für Hepatitis B und C?",
+        "a": "Hep B wird parenteral, sexuell und vertikal (Mutter zu Kind) übertragen. Hep C praktisch ausschließlich parenteral — gemeinsam genutzte Spritzen, kontaminierte Instrumente bei Tätowierungen oder medizinischen Eingriffen, Bluttransfusionen vor 1992. Sexuelle Übertragung von Hep C ist selten, außer bei MSM und HIV-Koinfektion."
+      },
+      {
+        "q": "Welche Symptome treten bei Hepatitis auf?",
+        "a": "Eine akute Hepatitis kann Müdigkeit, Übelkeit, Druck im rechten Oberbauch, Gelbsucht und dunklen Urin verursachen. Über 80 Prozent der chronischen Hep-C-Infektionen verlaufen jedoch über Jahre symptomlos und werden zufällig durch erhöhte Leberwerte oder im Rahmen einer Risikotestung entdeckt."
+      },
+      {
+        "q": "Wann sollte ich mich auf Hepatitis testen lassen?",
+        "a": "Die USPSTF empfiehlt mindestens einmal im Erwachsenenalter (18–79) ein Hep-C-Antikörper-Screening — unabhängig von Risikofaktoren. Bei Risikofaktoren oder Schwangerschaft alle 1–3 Jahre. Hep B sollte bei jeder Schwangeren, vor Operationen, vor Chemotherapie und bei jedem positiven Risikofaktor untersucht werden."
+      },
+      {
+        "q": "Welche Werte werden bei der Testung bestimmt?",
+        "a": "Hep B: HBsAg (akute oder chronische Infektion), Anti-HBc (durchgemachte Infektion), Anti-HBs (Impfschutz). Hep C: Anti-HCV (Antikörper); bei positivem Befund HCV-RNA-PCR zur Bestätigung einer aktuellen Infektion. Zusätzlich werden ALT, AST und GGT als Leberwerte gemessen."
+      },
+      {
+        "q": "Wie wird Hepatitis behandelt?",
+        "a": "Hep C ist heute mit direkt antiviralen Medikamenten (DAA) in 8–12 Wochen zu fast 100 Prozent heilbar — unabhängig vom Genotyp. Chronische Hep B wird mit Tenofovir oder Entecavir oft lebenslang unterdrückt. Akute Hep B heilt meist spontan aus, bei schweren Verläufen ist eine antivirale Therapie indiziert."
+      },
+      {
+        "q": "Hilft die Hepatitis-B-Impfung gegen Hepatitis C?",
+        "a": "Nein. Es gibt aktuell keinen Impfstoff gegen Hepatitis C — der hohe Genotyp-Variabilität wegen. Die Hep-B-Impfung bietet ausschließlich Schutz vor Hep B (und damit indirekt vor der gefährlichen Hep-D-Koinfektion, die nur bei Hep-B-Trägern entsteht)."
+      }
+    ]
+  }
+}
