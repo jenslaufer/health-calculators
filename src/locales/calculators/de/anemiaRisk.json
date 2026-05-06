@@ -1,0 +1,89 @@
+{
+  "home": {
+    "calculators": {
+      "anemiaRisk": {
+        "name": "Anämie-Risiko-Rechner",
+        "description": "Schätze dein Anämie-Risiko aus Hämoglobinwert, Geschlecht und Symptomen ein."
+      }
+    }
+  },
+  "anemiaRisk": {
+    "meta": {
+      "title": "Anämie-Risiko-Rechner — Eisenmangel & Blutarmut erkennen",
+      "description": "Berechne dein Anämie-Risiko aus Hämoglobin, Geschlecht und klinischen Symptomen. WHO-Grenzwerte, Schweregrad-Einstufung und ärztliche Hinweise. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Anämie-Risiko-Rechner",
+    "description": "Schätze deinen Schweregrad einer Blutarmut aus Hämoglobinwert und 10 klinischen Symptomen — basierend auf WHO-Referenzwerten und Leitlinien-Symptomkriterien.",
+    "sexLabel": "Geschlecht",
+    "sexFemale": "Weiblich",
+    "sexMale": "Männlich",
+    "hbLabel": "Hämoglobin ({unit})",
+    "symptomsLabel": "Symptome (alle zutreffenden ankreuzen)",
+    "symptom_fatigue": "Müdigkeit / Erschöpfung",
+    "symptom_fatigue_desc": "Anhaltende Schwäche, Antriebslosigkeit auch nach Schlaf",
+    "symptom_pallor": "Blasse Haut / Schleimhäute",
+    "symptom_pallor_desc": "Blasses Gesicht, Augenlider innen oder Nagelbett",
+    "symptom_shortnessOfBreath": "Atemnot bei Belastung",
+    "symptom_shortnessOfBreath_desc": "Kurzatmigkeit beim Treppensteigen oder leichter Anstrengung",
+    "symptom_dizziness": "Schwindel beim Aufstehen",
+    "symptom_dizziness_desc": "Benommenheit, Schwarzwerden vor den Augen",
+    "symptom_coldHandsFeet": "Kalte Hände und Füße",
+    "symptom_coldHandsFeet_desc": "Reduzierte periphere Durchblutung trotz warmer Umgebung",
+    "symptom_headache": "Kopfschmerzen",
+    "symptom_headache_desc": "Häufige dumpfe Kopfschmerzen, oft morgens",
+    "symptom_rapidHeartbeat": "Herzklopfen / schneller Puls",
+    "symptom_rapidHeartbeat_desc": "Tachykardie, spürbares Herzklopfen schon in Ruhe",
+    "symptom_brittleNails": "Brüchige Nägel / Haarausfall",
+    "symptom_brittleNails_desc": "Trockene Haut, Längsrillen oder Löffelnägel",
+    "symptom_restlessLegs": "Restless-Legs / Kribbeln in Beinen",
+    "symptom_restlessLegs_desc": "Unruhige Beine besonders abends — typisch bei Eisenmangel",
+    "symptom_pica": "Pica / ungewöhnliches Verlangen",
+    "symptom_pica_desc": "Drang, Eis, Erde oder Stärke zu essen — alarmierendes Eisenmangel-Zeichen",
+    "resultsLabel": "Dein Anämie-Risiko",
+    "hbCategoryLabel": "Hb-Bewertung",
+    "symptomScoreLabel": "Symptom-Score",
+    "cutoffLabel": "WHO-Grenzwert",
+    "cutoffValue": "{value} {unit}",
+    "category_none": "Kein Risiko",
+    "category_mild": "Leicht",
+    "category_moderate": "Moderat",
+    "category_severe": "Schwer",
+    "advice_none": "Dein Hämoglobinwert und deine Symptome sprechen aktuell nicht für eine Anämie. Bei anhaltender Müdigkeit dennoch Blutbild kontrollieren lassen.",
+    "advice_mild": "Leichte Anämie wahrscheinlich. Lass ein großes Blutbild und Eisenparameter (Ferritin, Transferrin-Sättigung) bei deinem Hausarzt bestimmen.",
+    "advice_moderate": "Moderate Anämie — ärztliche Abklärung in den nächsten Tagen empfohlen. Ursache klären (Eisen-, B12-, Folatmangel oder chronische Erkrankung) und gezielt therapieren.",
+    "advice_severe": "Schwere Anämie — kann lebensbedrohlich sein. Bei Atemnot in Ruhe, Brustschmerz oder Synkope sofort Notarzt rufen. Sonst zeitnahe internistische Vorstellung mit Hb-Kontrolle und ggf. Transfusion.",
+    "refTitle": "WHO-Grenzwerte für Hämoglobin (g/dL)",
+    "refCategory": "Schweregrad",
+    "refWomen": "Frauen (nicht schwanger)",
+    "refMen": "Männer",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner kombiniert zwei Verfahren: (1) Hämoglobin — der eingegebene Wert wird gegen die WHO-Grenzwerte abgeglichen (Frauen 12,0 g/dL, Männer 13,0 g/dL für 'keine Anämie'). (2) Symptom-Score — zehn typische Anämie-Zeichen werden gewichtet aufaddiert (max. 13 Punkte). Maßgeblich ist der höhere der beiden Schweregrade. Pica und Restless-Legs gelten als spezifische Hinweise auf Eisenmangel und sollten ärztlich abgeklärt werden.",
+    "disclaimer": "Dieser Rechner dient zur Selbsteinschätzung gesunder Erwachsener und ersetzt keine ärztliche Untersuchung. Schwangere, Kinder, Menschen mit chronischen Erkrankungen oder Tumorleiden benötigen abweichende Grenzwerte. Bei Atemnot, Brustschmerz, Synkope oder schwarzem Stuhl sofort medizinische Hilfe in Anspruch nehmen.",
+    "faq": [
+      {
+        "q": "Was ist Anämie?",
+        "a": "Anämie (Blutarmut) bezeichnet einen verminderten Hämoglobingehalt im Blut. Damit kann weniger Sauerstoff zu den Geweben transportiert werden, was Müdigkeit, Atemnot und Leistungsabfall erklärt. Die häufigste Ursache weltweit ist Eisenmangel."
+      },
+      {
+        "q": "Welche Hb-Werte gelten als anämisch?",
+        "a": "Die WHO definiert Anämie ab Hb < 12,0 g/dL bei nicht-schwangeren Frauen und < 13,0 g/dL bei Männern. Bei Schwangeren liegt die Grenze bei 11,0 g/dL. Werte unter 8,0 g/dL gelten als schwer."
+      },
+      {
+        "q": "Welche Symptome treten typischerweise auf?",
+        "a": "Müdigkeit, blasse Haut, Atemnot bei Belastung, schneller Puls, Kopfschmerzen, kalte Extremitäten, brüchige Nägel, Haarausfall, Restless-Legs sowie ungewöhnliches Verlangen nach Eis oder Erde (Pica)."
+      },
+      {
+        "q": "Was sind häufige Ursachen?",
+        "a": "Eisenmangel (z. B. starke Menstruation, vegane Ernährung, Magengeschwüre), Vitamin-B12- oder Folsäuremangel, chronische Entzündungen, Nierenerkrankungen und Blutverluste. Eine Diagnose erfordert immer ein Blutbild plus Eisen- bzw. Vitaminparameter."
+      },
+      {
+        "q": "Wie wird Anämie behandelt?",
+        "a": "Je nach Ursache: orale Eisenpräparate (60–120 mg/Tag), Vitamin-B12- oder Folsäure-Substitution, Behandlung der Grunderkrankung. Bei schwerer oder symptomatischer Anämie ggf. intravenöse Eisengabe oder Bluttransfusion."
+      },
+      {
+        "q": "Welche Ernährung beugt Eisenmangel vor?",
+        "a": "Hämeisen aus rotem Fleisch, Fisch und Geflügel wird besser aufgenommen als pflanzliches Nicht-Hämeisen. Hülsenfrüchte, Vollkorn, dunkles Blattgemüse und Nüsse plus Vitamin C (z. B. Paprika) zur Aufnahmesteigerung. Kaffee, Tee und Calcium hemmen die Eisenaufnahme."
+      }
+    ]
+  }
+}
