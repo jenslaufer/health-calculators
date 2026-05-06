@@ -1,0 +1,82 @@
+{
+  "home": {
+    "calculators": {
+      "apgarScore": {
+        "name": "APGAR Score Calculator",
+        "description": "Score a newborn's condition at 1 and 5 minutes using the five APGAR criteria."
+      }
+    }
+  },
+  "apgarScore": {
+    "meta": {
+      "title": "APGAR Score Calculator — Newborn Assessment at 1 & 5 Minutes",
+      "description": "Calculate your newborn's APGAR score from skin color, pulse, reflexes, muscle tone, and breathing. Instant 1- and 5-minute results. Free, no sign-up."
+    },
+    "title": "APGAR Score Calculator",
+    "description": "Score a newborn's clinical condition using Virginia Apgar's five-criterion system — each rated 0–2 points, evaluated at 1 and 5 minutes after birth.",
+    "oneMinuteTitle": "1 minute after birth",
+    "fiveMinuteTitle": "5 minutes after birth",
+    "oneMinuteScore": "1-minute score",
+    "fiveMinuteScore": "5-minute score",
+    "selectPlaceholder": "Please select…",
+    "component_appearance": "Appearance (skin color)",
+    "component_pulse": "Pulse (heart rate)",
+    "component_grimace": "Grimace (reflex irritability)",
+    "component_activity": "Activity (muscle tone)",
+    "component_respiration": "Respiration (breathing effort)",
+    "appearance_0": "Blue / pale all over",
+    "appearance_1": "Body pink, extremities blue",
+    "appearance_2": "Pink all over",
+    "pulse_0": "No pulse detectable",
+    "pulse_1": "Below 100 bpm",
+    "pulse_2": "Above 100 bpm",
+    "grimace_0": "No response",
+    "grimace_1": "Grimace",
+    "grimace_2": "Cry, cough, or sneeze",
+    "activity_0": "Limp",
+    "activity_1": "Some flexion of extremities",
+    "activity_2": "Active motion",
+    "respiration_0": "Absent",
+    "respiration_1": "Slow / irregular",
+    "respiration_2": "Strong cry",
+    "resultsLabel": "APGAR result",
+    "category_reassuring": "Reassuring",
+    "category_moderate": "Moderately depressed",
+    "category_critical": "Critical",
+    "advice_reassuring": "A 5-minute score of ≥ 7 indicates good neonatal adaptation. Routine post-delivery care (bonding, newborn examination) is sufficient.",
+    "advice_moderate": "A score of 4–6 typically requires supportive measures: airway clearing, oxygen, or stimulation. Continued close observation by midwife or paediatrician — alert the resuscitation team if values do not improve.",
+    "advice_critical": "A score of ≤ 3 reflects a life-threatening condition. Immediate cardiopulmonary resuscitation and neonatal intensive care are required.",
+    "extendedNote": "5-minute score below 7: per guidelines, repeat the assessment every 5 minutes until ≥ 7 or until the newborn is handed over to neonatology.",
+    "refTitle": "APGAR scoring chart",
+    "refSign": "Sign",
+    "howItWorks": "How it works",
+    "howItWorksText": "The APGAR score was developed in 1953 by anaesthesiologist Virginia Apgar. It rates five vital signs — Appearance, Pulse, Grimace, Activity, and Respiration — with 0 to 2 points each. The total (0–10) is conventionally measured at 1 and 5 minutes after birth. Scores ≥ 7 are reassuring, 4–6 indicate moderate depression, and ≤ 3 are critical and require resuscitation.",
+    "disclaimer": "This calculator helps structure the APGAR assessment and does not replace expert clinical judgement. Newborn evaluation requires hands-on experience. If any vital sign is impaired, immediately involve a midwife, obstetrician, or neonatologist.",
+    "faq": [
+      {
+        "q": "What is the APGAR score?",
+        "a": "The APGAR score is a quick newborn-assessment tool created in 1953 by Virginia Apgar. It rates five clinical signs (skin color, pulse, reflexes, muscle tone, breathing) with 0 to 2 points each, summing to a total between 0 and 10."
+      },
+      {
+        "q": "When is the APGAR score taken?",
+        "a": "Routinely at 1 and 5 minutes after birth. If the 5-minute score is below 7, the assessment is repeated every 5 minutes until it reaches 7 or higher — typically also at 10, 15, and 20 minutes."
+      },
+      {
+        "q": "What APGAR values are normal?",
+        "a": "Scores between 7 and 10 at 5 minutes are considered reassuring. 4–6 indicates moderate adaptation difficulty, while ≤ 3 reflects a severely depressed newborn requiring immediate resuscitation."
+      },
+      {
+        "q": "Does the APGAR score predict long-term outcome?",
+        "a": "The 1-minute score only describes immediate adaptation status and is not a prognostic tool. Persistently low 5-minute scores (≤ 3 over 10–20 minutes) correlate with elevated neurologic risk, but most low APGAR babies develop normally."
+      },
+      {
+        "q": "Who performs the APGAR scoring?",
+        "a": "Usually the midwife or obstetrician, often together with a neonatologist or paediatrician. Standardized, independent evaluation of each sign is essential."
+      },
+      {
+        "q": "What does APGAR stand for?",
+        "a": "APGAR is both the inventor's name (Virginia Apgar) and an acronym: Appearance (skin color), Pulse (heart rate), Grimace (reflex irritability), Activity (muscle tone), and Respiration (breathing effort)."
+      }
+    ]
+  }
+}
