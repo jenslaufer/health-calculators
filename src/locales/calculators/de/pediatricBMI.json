@@ -1,0 +1,73 @@
+{
+  "home": {
+    "calculators": {
+      "pediatricBMI": {
+        "name": "Kinder-BMI-Rechner",
+        "description": "BMI-Perzentile für Kinder und Jugendliche (2–20 Jahre) berechnen — alters- und geschlechtsspezifisch nach WHO."
+      }
+    }
+  },
+  "pediatricBMI": {
+    "meta": {
+      "title": "Kinder-BMI-Rechner — BMI-Perzentile für Kinder & Jugendliche",
+      "description": "Berechne den BMI deines Kindes (2–20 Jahre) und die alters- und geschlechtsspezifische Perzentile nach WHO. Untergewicht, Normalgewicht, Übergewicht und Adipositas erkennen — kostenlos, ohne Anmeldung."
+    },
+    "title": "Kinder-BMI-Rechner",
+    "description": "Der Body-Mass-Index für Kinder und Jugendliche wird altersabhängig und geschlechtsspezifisch als Perzentile interpretiert — nicht über feste Erwachsenen-Grenzwerte.",
+    "sex": "Geschlecht",
+    "boy": "Junge",
+    "girl": "Mädchen",
+    "ageYears": "Alter (Jahre)",
+    "ageMonths": "Zusätzliche Monate",
+    "heightCm": "Körpergröße (cm)",
+    "heightIn": "Körpergröße (in)",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "resultsLabel": "Ergebnis",
+    "bmi": "BMI",
+    "percentile": "Perzentile",
+    "percentileRange": "Perzentil-Bereich",
+    "categoryLabel": "Einordnung",
+    "category_underweight": "Untergewicht",
+    "category_healthy": "Normalgewicht",
+    "category_overweight": "Übergewicht",
+    "category_obesity": "Adipositas",
+    "advice_underweight": "Der BMI liegt unter der 5. Perzentile. Eine ärztliche Abklärung wird empfohlen, um Ursachen wie Mangelernährung, Wachstumsstörungen oder chronische Erkrankungen auszuschließen.",
+    "advice_healthy": "Der BMI liegt im normalen Bereich (5. bis unter 85. Perzentile). Halte ausgewogene Ernährung, regelmäßige Bewegung und ausreichend Schlaf bei.",
+    "advice_overweight": "Der BMI liegt im Bereich Übergewicht (85. bis unter 95. Perzentile). Ein Beratungsgespräch mit dem Kinderarzt zu Ernährung, Bewegung und Bildschirmzeit ist sinnvoll.",
+    "advice_obesity": "Der BMI liegt im Bereich Adipositas (≥ 95. Perzentile). Eine ärztliche Beurteilung mit gezielten Lebensstil- oder Therapiemaßnahmen wird empfohlen.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Bei Kindern und Jugendlichen verändert sich der Körperfettanteil mit dem Alter — ein BMI-Wert ist daher nur in Bezug auf gleichaltrige Kinder gleichen Geschlechts aussagekräftig. Der Rechner verwendet die WHO BMI-für-Alter-Referenztabellen (LMS-Methode, Box-Cox-Transformation) und gibt die Perzentile zurück. Klassifizierung nach CDC: < 5. Perzentile = Untergewicht, 5.–85. = Normalgewicht, 85.–95. = Übergewicht, ≥ 95. = Adipositas.",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Diagnose. Wachstum und BMI sind individuell — sprich bei Auffälligkeiten mit dem Kinderarzt.",
+    "faq": [
+      {
+        "q": "Warum gilt für Kinder ein anderer BMI-Maßstab als für Erwachsene?",
+        "a": "Der Körperfettanteil ändert sich im Wachstum stark — ein BMI von 20 ist für ein 5-jähriges Kind viel und für einen Teenager wenig. Daher wird der BMI alters- und geschlechtsspezifisch als Perzentile bewertet, nicht über feste Grenzwerte."
+      },
+      {
+        "q": "Was bedeutet eine Perzentile von 75?",
+        "a": "75 % aller gleichaltrigen Kinder gleichen Geschlechts haben einen niedrigeren BMI, 25 % einen höheren. Werte zwischen der 5. und 85. Perzentile gelten als normal."
+      },
+      {
+        "q": "Ab welcher Perzentile spricht man von Übergewicht?",
+        "a": "Nach CDC und WHO: 85. bis unter 95. Perzentile = Übergewicht, ≥ 95. Perzentile = Adipositas. Werte unter der 5. Perzentile gelten als Untergewicht."
+      },
+      {
+        "q": "Für welches Alter ist dieser Rechner geeignet?",
+        "a": "Der Rechner deckt das Alter von 2 bis 20 Jahren ab (24 bis 240 Monate). Für Säuglinge unter 2 Jahren wird statt BMI das Gewicht-für-Länge-Perzentil verwendet."
+      },
+      {
+        "q": "Welche Messmethode wird verwendet?",
+        "a": "Die WHO-LMS-Methode mit Box-Cox-Transformation: aus alters- und geschlechtsspezifischen L-, M- und S-Parametern wird ein z-Wert berechnet und über die Standardnormalverteilung in eine Perzentile umgerechnet."
+      },
+      {
+        "q": "Mein Kind ist groß und schwer — ist es übergewichtig?",
+        "a": "Nicht zwingend. Muskelmasse und Körperbau beeinflussen den BMI. Bei sehr sportlichen oder spät reifenden Kindern kann der BMI ohne klinische Bedeutung erhöht oder erniedrigt sein. Im Zweifel klinisch beurteilen."
+      },
+      {
+        "q": "Wie oft sollte ich den BMI bei Kindern messen?",
+        "a": "Im Rahmen der U-Untersuchungen (U7–U11, J1) wird der BMI in Deutschland routinemäßig erfasst. Eine zusätzliche Eigenmessung alle 6–12 Monate reicht in der Regel aus."
+      }
+    ]
+  }
+}

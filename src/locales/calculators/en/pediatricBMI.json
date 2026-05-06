@@ -1,0 +1,73 @@
+{
+  "home": {
+    "calculators": {
+      "pediatricBMI": {
+        "name": "Pediatric BMI Calculator",
+        "description": "Calculate BMI percentile for children and teens (2–20 years) — age- and sex-specific per WHO references."
+      }
+    }
+  },
+  "pediatricBMI": {
+    "meta": {
+      "title": "Pediatric BMI Calculator — BMI Percentile for Children & Teens",
+      "description": "Calculate your child's BMI (ages 2–20) and the age- and sex-specific percentile per WHO references. Identify underweight, healthy weight, overweight, and obesity. Free, no signup."
+    },
+    "title": "Pediatric BMI Calculator",
+    "description": "BMI for children and teens is interpreted as an age- and sex-specific percentile, not against fixed adult cut-offs.",
+    "sex": "Sex",
+    "boy": "Boy",
+    "girl": "Girl",
+    "ageYears": "Age (years)",
+    "ageMonths": "Additional months",
+    "heightCm": "Height (cm)",
+    "heightIn": "Height (in)",
+    "weightKg": "Weight (kg)",
+    "weightLb": "Weight (lb)",
+    "resultsLabel": "Result",
+    "bmi": "BMI",
+    "percentile": "Percentile",
+    "percentileRange": "Percentile range",
+    "categoryLabel": "Category",
+    "category_underweight": "Underweight",
+    "category_healthy": "Healthy weight",
+    "category_overweight": "Overweight",
+    "category_obesity": "Obesity",
+    "advice_underweight": "BMI is below the 5th percentile. A medical evaluation is recommended to rule out causes such as undernutrition, growth disorders, or chronic conditions.",
+    "advice_healthy": "BMI is in the healthy range (5th to below 85th percentile). Maintain balanced nutrition, regular activity, and adequate sleep.",
+    "advice_overweight": "BMI is in the overweight range (85th to below 95th percentile). A consultation with the pediatrician about nutrition, activity, and screen time is advisable.",
+    "advice_obesity": "BMI is in the obesity range (≥ 95th percentile). A medical assessment with targeted lifestyle or treatment measures is recommended.",
+    "howItWorks": "How it works",
+    "howItWorksText": "In children and teens, body composition changes with age — a single BMI number only makes sense relative to peers of the same age and sex. This calculator uses the WHO BMI-for-age reference tables (LMS method with Box-Cox transformation) and reports the percentile. CDC weight-status categories: < 5th = underweight, 5th–85th = healthy, 85th–95th = overweight, ≥ 95th = obesity.",
+    "disclaimer": "This calculator is not a substitute for medical advice. Growth and BMI vary individually — discuss any concerns with your pediatrician.",
+    "faq": [
+      {
+        "q": "Why are children's BMI cut-offs different from adults'?",
+        "a": "Body fat percentage changes substantially during growth — a BMI of 20 is high for a 5-year-old and low for a teenager. So pediatric BMI is interpreted as an age- and sex-specific percentile, not via fixed cut-offs."
+      },
+      {
+        "q": "What does a 75th percentile mean?",
+        "a": "75% of same-age, same-sex peers have a lower BMI; 25% have a higher one. Values between the 5th and 85th percentile are considered healthy."
+      },
+      {
+        "q": "At what percentile is a child considered overweight?",
+        "a": "Per CDC and WHO: 85th to below 95th percentile = overweight, ≥ 95th percentile = obesity. Below the 5th percentile is classed as underweight."
+      },
+      {
+        "q": "What ages does this calculator cover?",
+        "a": "From age 2 through 20 (24 to 240 months). For infants under 2, weight-for-length percentiles are used instead of BMI."
+      },
+      {
+        "q": "What method is used to compute the percentile?",
+        "a": "The WHO LMS method with a Box-Cox transformation: age- and sex-specific L, M, and S parameters are used to compute a z-score, then converted via the standard normal distribution to a percentile."
+      },
+      {
+        "q": "My child is tall and heavy — does that mean overweight?",
+        "a": "Not necessarily. Muscle mass and body build influence BMI. Athletic or late-maturing children may have a high or low BMI without clinical concern. When in doubt, get a clinical assessment."
+      },
+      {
+        "q": "How often should I check my child's BMI?",
+        "a": "Pediatric BMI is recorded at routine well-child visits. Additional checks every 6–12 months are generally sufficient unless concerns arise."
+      }
+    ]
+  }
+}

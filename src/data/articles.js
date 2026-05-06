@@ -521,6 +521,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'apgarScore',
     related: ['geburtsterminrechner', 'wachstumsperzentile-kinder', 'kinder-dosierung-rechner'],
   },
+  {
+    slug: 'paediatrischen-bmi-berechnen',
+    title: 'Kinder-BMI berechnen: Perzentile statt fester Grenzwerte',
+    description: 'Warum der BMI bei Kindern nicht über feste Grenzen, sondern als Perzentile bewertet wird. WHO-Methode, CDC-Klassifikation und wann eine Auffälligkeit klinisch relevant ist — kompakt erklärt.',
+    date: '2026-05-06',
+    readTime: '8 min',
+    calculatorKey: 'pediatricBMI',
+    related: ['bmi-berechnen', 'wachstumsperzentile-kinder', 'idealgewicht-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

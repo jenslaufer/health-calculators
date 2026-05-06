@@ -521,6 +521,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'apgarScore',
     related: ['due-date-calculator', 'child-growth-percentile-chart', 'child-dosage-calculator'],
   },
+  {
+    slug: 'pediatric-bmi-calculator-guide',
+    title: 'Pediatric BMI Calculator: Why Children Need Percentiles, Not Cut-offs',
+    description: 'Why kids’ BMI is interpreted as a percentile, not against fixed adult cut-offs. WHO method, CDC categories, and when an unusual value is clinically meaningful — explained.',
+    date: '2026-05-06',
+    readTime: '8 min',
+    calculatorKey: 'pediatricBMI',
+    related: ['calculate-bmi', 'child-growth-percentile-chart', 'calculate-ideal-weight'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
