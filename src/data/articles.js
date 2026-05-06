@@ -512,6 +512,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'anemiaRisk',
     related: ['herz-kreislauf-risiko-berechnen', 'grundumsatz-berechnen', 'schilddruesenfunktion-berechnen'],
   },
+  {
+    slug: 'apgar-score-bewerten',
+    title: 'APGAR-Score: Neugeborene in 1 und 5 Minuten richtig bewerten',
+    description: 'Was der APGAR-Score nach 1 und 5 Minuten über dein Neugeborenes aussagt. Die fünf Kriterien, Punktebewertung, normale und kritische Werte — kompakt erklärt.',
+    date: '2026-05-06',
+    readTime: '7 min',
+    calculatorKey: 'apgarScore',
+    related: ['geburtsterminrechner', 'wachstumsperzentile-kinder', 'kinder-dosierung-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

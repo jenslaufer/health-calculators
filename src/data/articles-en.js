@@ -512,6 +512,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'anemiaRisk',
     related: ['cardiovascular-risk-framingham', 'calculate-bmr', 'thyroid-function-calculator'],
   },
+  {
+    slug: 'apgar-score-calculator-guide',
+    title: 'APGAR Score: How to Read 1- and 5-Minute Newborn Assessments',
+    description: 'What the APGAR score at 1 and 5 minutes tells you about your newborn. The five criteria, scoring scale, normal vs. critical values — explained clearly.',
+    date: '2026-05-06',
+    readTime: '7 min',
+    calculatorKey: 'apgarScore',
+    related: ['due-date-calculator', 'child-growth-percentile-chart', 'child-dosage-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

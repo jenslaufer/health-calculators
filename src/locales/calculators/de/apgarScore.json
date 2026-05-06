@@ -1,0 +1,82 @@
+{
+  "home": {
+    "calculators": {
+      "apgarScore": {
+        "name": "APGAR-Score-Rechner",
+        "description": "Bewerte den Zustand eines Neugeborenen nach 1 und 5 Minuten anhand der fünf APGAR-Kriterien."
+      }
+    }
+  },
+  "apgarScore": {
+    "meta": {
+      "title": "APGAR-Score-Rechner — Neugeborenen-Bewertung 1 & 5 Minuten",
+      "description": "Berechne den APGAR-Score deines Neugeborenen aus Hautfarbe, Puls, Reflexen, Muskeltonus und Atmung. Sofortige Auswertung für 1- und 5-Minuten-Werte. Kostenlos, ohne Anmeldung."
+    },
+    "title": "APGAR-Score-Rechner",
+    "description": "Bewerte den klinischen Zustand eines Neugeborenen nach Virginia Apgar — fünf Kriterien je 0–2 Punkte, ausgewertet 1 und 5 Minuten nach der Geburt.",
+    "oneMinuteTitle": "1 Minute nach der Geburt",
+    "fiveMinuteTitle": "5 Minuten nach der Geburt",
+    "oneMinuteScore": "1-Minuten-Score",
+    "fiveMinuteScore": "5-Minuten-Score",
+    "selectPlaceholder": "Bitte wählen…",
+    "component_appearance": "Hautfarbe (Appearance)",
+    "component_pulse": "Puls (Pulse)",
+    "component_grimace": "Reflexe (Grimace)",
+    "component_activity": "Muskeltonus (Activity)",
+    "component_respiration": "Atmung (Respiration)",
+    "appearance_0": "Blau / blass am ganzen Körper",
+    "appearance_1": "Körper rosig, Extremitäten bläulich",
+    "appearance_2": "Komplett rosig",
+    "pulse_0": "Kein Puls tastbar",
+    "pulse_1": "Unter 100 Schläge/min",
+    "pulse_2": "Über 100 Schläge/min",
+    "grimace_0": "Keine Reaktion",
+    "grimace_1": "Grimassieren",
+    "grimace_2": "Schreien, Husten, Niesen",
+    "activity_0": "Schlaff",
+    "activity_1": "Geringe Beugung der Extremitäten",
+    "activity_2": "Aktive Bewegung",
+    "respiration_0": "Keine Atmung",
+    "respiration_1": "Langsam / unregelmäßig",
+    "respiration_2": "Kräftiges Schreien",
+    "resultsLabel": "APGAR-Auswertung",
+    "category_reassuring": "Unauffällig",
+    "category_moderate": "Moderat eingeschränkt",
+    "category_critical": "Kritisch",
+    "advice_reassuring": "Der 5-Minuten-Score von ≥ 7 spricht für eine gute postnatale Anpassung. Reguläre Routinemaßnahmen (Bonding, Erstuntersuchung U1/U2) reichen aus.",
+    "advice_moderate": "Score zwischen 4 und 6 — das Neugeborene benötigt häufig Atemunterstützung, Absaugen oder Sauerstoffgabe. Hebamme oder Arzt sollten eng überwachen, ggf. Reanimationsteam alarmieren.",
+    "advice_critical": "Score ≤ 3 — das Neugeborene ist in einem lebensbedrohlichen Zustand. Sofortige kardiopulmonale Reanimation und neonatologische Versorgung erforderlich.",
+    "extendedNote": "5-Minuten-Score unter 7: leitliniengerecht weitere Bewertungen alle 5 Minuten bis zum Score ≥ 7 oder bis zur Übergabe an die Neonatologie.",
+    "refTitle": "APGAR-Bewertungsschema",
+    "refSign": "Kriterium",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der APGAR-Score wurde 1953 von der Anästhesistin Virginia Apgar entwickelt. Er bewertet fünf Vitalkriterien — Hautfarbe (Appearance), Puls (Pulse), Reflexe (Grimace), Muskeltonus (Activity) und Atmung (Respiration) — mit jeweils 0 bis 2 Punkten. Die Summe (0–10) wird üblicherweise nach 1 und 5 Minuten erhoben. Werte ≥ 7 gelten als unauffällig, 4–6 als moderat eingeschränkt, ≤ 3 als kritisch und reanimationspflichtig.",
+    "disclaimer": "Dieser Rechner unterstützt die strukturierte Erfassung des APGAR-Scores und ersetzt keine fachärztliche Einschätzung. Die Bewertung eines Neugeborenen erfordert klinische Erfahrung. Bei jedem Verdacht auf eingeschränkte Vitalwerte sofort Hebamme, Geburtshelfer oder Neonatologie hinzuziehen.",
+    "faq": [
+      {
+        "q": "Was ist der APGAR-Score?",
+        "a": "Der APGAR-Score ist ein 1953 von Virginia Apgar entwickeltes Schema zur schnellen Beurteilung des Zustands Neugeborener. Er bewertet fünf Kriterien (Hautfarbe, Puls, Reflexe, Muskeltonus, Atmung) mit je 0 bis 2 Punkten — die Summe liegt zwischen 0 und 10."
+      },
+      {
+        "q": "Wann wird der APGAR-Score erhoben?",
+        "a": "Standardmäßig nach 1 und 5 Minuten nach der Geburt. Liegt der 5-Minuten-Wert unter 7, werden zusätzliche Messungen alle 5 Minuten bis zur Stabilisierung empfohlen — typischerweise auch nach 10, 15 und 20 Minuten."
+      },
+      {
+        "q": "Welche APGAR-Werte gelten als normal?",
+        "a": "Werte zwischen 7 und 10 nach 5 Minuten gelten als unauffällig. 4–6 weisen auf eine moderate Anpassungsstörung hin, ≤ 3 ist eine schwere Beeinträchtigung mit unmittelbarem Reanimationsbedarf."
+      },
+      {
+        "q": "Sagt der APGAR-Score etwas über die spätere Entwicklung?",
+        "a": "Der 1-Minuten-Wert beschreibt nur den unmittelbaren Anpassungsstatus und ist kein Prognoseinstrument. Erst sehr niedrige 5-Minuten-Werte (≤ 3) und insbesondere persistierend niedrige Werte über 10–20 Minuten korrelieren mit erhöhtem neurologischem Risiko."
+      },
+      {
+        "q": "Wer erhebt den APGAR-Score?",
+        "a": "In der Regel die Hebamme oder der Geburtshelfer, häufig gemeinsam mit einem Neonatologen oder Kinderarzt. Wichtig ist eine standardisierte und unabhängige Bewertung jedes Kriteriums."
+      },
+      {
+        "q": "Was bedeutet APGAR konkret?",
+        "a": "APGAR ist sowohl Eigenname (nach Virginia Apgar) als auch Akronym für Appearance (Hautfarbe), Pulse (Puls), Grimace (Reflexe), Activity (Muskeltonus) und Respiration (Atmung)."
+      }
+    ]
+  }
+}
