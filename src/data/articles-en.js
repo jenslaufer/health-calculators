@@ -557,6 +557,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'correctedCalcium',
     related: ['anion-gap', 'sodium-correction-calculator', 'gfr-calculator-kidney-function'],
   },
+  {
+    slug: 'asthma-control-test-guide',
+    title: 'Asthma Control Test (ACT) Guide: Score, Ranges, and Next Steps',
+    description: 'How well is your asthma controlled? The validated 5-question ACT yields a 5–25 score with clear interpretation and step-up guidance for everyday management.',
+    date: '2026-05-07',
+    readTime: '8 min',
+    calculatorKey: 'asthmaControl',
+    related: ['calculate-vo2max', 'calculate-heart-rate-zones', 'vitamin-d-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
