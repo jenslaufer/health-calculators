@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "whtrRechner": {
+        "name": "Waist-to-Height Ratio",
+        "description": "Waist-to-height ratio (WHtR) — a stronger predictor of metabolic risk than BMI."
+      }
+    }
+  },
+  "whtrRechner": {
+    "meta": {
+      "title": "Waist-to-Height Ratio Calculator (WHtR)",
+      "description": "Calculate your waist-to-height ratio (WHtR). Ashwell-based risk classification — a stronger predictor of cardiometabolic risk than BMI. Free, instant, no sign-up."
+    },
+    "title": "Waist-to-Height Ratio Calculator",
+    "description": "Calculate your waist-to-height ratio (WHtR) — considered a more reliable risk signal than BMI.",
+    "waist": "Waist circumference (cm)",
+    "height": "Height (cm)",
+    "age": "Age (years)",
+    "result": "WHtR",
+    "rule": "Rule of thumb: keep your waist below half your height.",
+    "slim": "Underweight",
+    "low": "Low risk",
+    "moderate": "Increased risk (consider action)",
+    "increased": "Substantially increased risk",
+    "high": "Very high risk",
+    "thresholdsTitle": "Ashwell classification (age-adjusted)",
+    "ageHintLabel": "Age group",
+    "ageHintUnder40": "under 40 years",
+    "ageHint40to50": "40–50 years",
+    "ageHintOver50": "over 50 years",
+    "categoryColumn": "Category",
+    "rangeColumn": "WHtR range",
+    "exampleTitle": "Example",
+    "exampleText": "A woman with an 85 cm waist and 175 cm height has a WHtR of 85 ÷ 175 = 0.486. Below 0.50 — low risk per Ashwell. With a 92 cm waist the ratio would be 0.526, already in the increased-risk zone.",
+    "aboutTitle": "Why WHtR instead of BMI?",
+    "aboutText": "The waist-to-height ratio (WHtR) is a simple measure for estimating the risk of cardiovascular disease, type 2 diabetes and the metabolic syndrome. Unlike BMI, it accounts for the distribution of body fat — and visceral abdominal fat is now considered the decisive risk factor for cardiometabolic health. A meta-analysis by Ashwell, Gunn & Gibson (2012) showed that WHtR outperforms BMI in predicting diabetes, hypertension and cardiovascular disease. Its key advantage is scalability across all heights and sexes: the simple rule «keep your waist below half your height» applies universally — from teenagers to older adults, with a small age-based adjustment. Compared to the waist-to-hip ratio (WHR), WHtR is easier to measure because it requires only one circumference plus height. That makes it ideal for regular self-monitoring. Important: measure your waist in the morning, fasted, at navel height, after a normal exhale. The tape should be horizontal and snug, but not compressing the skin. Combine WHtR with other indicators such as BMI, body fat percentage and ideal weight for a complete picture of body composition.",
+    "disclaimer": "Note: this calculator does not replace medical diagnosis. Discuss any concerning values with a physician.",
+    "relatedTitle": "Related calculators",
+    "relatedBmi": "BMI calculator",
+    "relatedWhr": "Waist-to-hip ratio",
+    "relatedBodyFat": "Body fat",
+    "relatedIdealWeight": "Ideal weight",
+    "faq": [
+      {
+        "q": "What is WHtR?",
+        "a": "WHtR (Waist-to-Height Ratio) is the ratio of waist circumference to height. Both are measured in the same unit (cm). A value below 0.5 is considered healthy."
+      },
+      {
+        "q": "How is WHtR calculated?",
+        "a": "WHtR = waist circumference ÷ height. Example: 85 cm waist and 175 cm height give 85 ÷ 175 = 0.486."
+      },
+      {
+        "q": "Which values are healthy?",
+        "a": "Per Ashwell (2012): below 0.40 underweight, 0.40–0.49 low risk, 0.50–0.54 increased, 0.55–0.59 substantially increased, 0.60 and above very high. Thresholds rise slightly from age 40."
+      },
+      {
+        "q": "Is WHtR more meaningful than BMI?",
+        "a": "Yes. Studies show WHtR outperforms BMI in predicting cardiovascular risk and type 2 diabetes because it accounts for fat distribution."
+      },
+      {
+        "q": "WHtR or waist-to-hip ratio?",
+        "a": "Both measure abdominal adiposity. WHtR is simpler (one circumference plus height) and applies universally. WHR is established in WHO classification."
+      },
+      {
+        "q": "How do I measure waist correctly?",
+        "a": "Standing, in the morning, fasted, at navel height, after a normal exhale. Tape horizontal and snug but not compressing."
+      }
+    ]
+  }
+}

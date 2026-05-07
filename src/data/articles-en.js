@@ -530,6 +530,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'osteoporosisRisk',
     related: ['vitamin-d-calculator', 'biological-age-calculator', 'calculate-bmi'],
   },
+  {
+    slug: 'calculate-waist-to-height-ratio',
+    title: 'Waist-to-Height Ratio (WHtR): Calculator, Risk & Ashwell Chart',
+    description: 'Calculate your waist-to-height ratio (WHtR). Ashwell classification, measurement guide, and why WHtR outperforms BMI as a cardiometabolic risk marker.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'whtrRechner',
+    related: ['calculate-bmi', 'calculate-waist-hip-ratio', 'calculate-body-fat'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

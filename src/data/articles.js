@@ -530,6 +530,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'osteoporosisRisk',
     related: ['vitamin-d-berechnen', 'biologisches-alter-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'whtr-berechnen',
+    title: 'WHtR berechnen: Taille-zu-Größe-Verhältnis & Gesundheitsrisiko',
+    description: 'WHtR berechnen: Taille-zu-Größe-Verhältnis nach Ashwell. Klassifikation, Messanleitung und warum WHtR den BMI als Risikomarker übertrifft.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'whtrRechner',
+    related: ['bmi-berechnen', 'taille-hueft-verhaeltnis-berechnen', 'koerperfett-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

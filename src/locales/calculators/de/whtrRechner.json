@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "whtrRechner": {
+        "name": "WHtR-Rechner",
+        "description": "Taille zu Größe: das aussagekräftigste Maß für viszerales Bauchfett."
+      }
+    }
+  },
+  "whtrRechner": {
+    "meta": {
+      "title": "WHtR-Rechner — Taille-Größe-Verhältnis berechnen",
+      "description": "WHtR-Rechner: Taille-zu-Größe-Verhältnis berechnen. Risikoeinschätzung nach Ashwell. Aussagekräftiger als der BMI. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "WHtR-Rechner",
+    "description": "Berechne dein Taille-zu-Größe-Verhältnis (Waist-to-Height Ratio) — gilt als verlässlicheres Risikosignal als der BMI.",
+    "waist": "Taillenumfang (cm)",
+    "height": "Körpergröße (cm)",
+    "age": "Alter (Jahre)",
+    "result": "WHtR",
+    "rule": "Faustregel: Halte deinen Taillenumfang unter der Hälfte deiner Körpergröße.",
+    "slim": "Untergewicht",
+    "low": "Niedriges Risiko",
+    "moderate": "Erhöhtes Risiko (handeln)",
+    "increased": "Stark erhöhtes Risiko",
+    "high": "Sehr hohes Risiko",
+    "thresholdsTitle": "Klassifikation nach Ashwell (altersabhängig)",
+    "ageHintLabel": "Altersgruppe",
+    "ageHintUnder40": "unter 40 Jahre",
+    "ageHint40to50": "40–50 Jahre",
+    "ageHintOver50": "über 50 Jahre",
+    "categoryColumn": "Kategorie",
+    "rangeColumn": "WHtR-Bereich",
+    "exampleTitle": "Beispiel",
+    "exampleText": "Eine Frau mit 85 cm Taille und 175 cm Körpergröße hat ein WHtR von 85 ÷ 175 = 0,486. Wert unter 0,50 — niedriges Risiko nach Ashwell. Bei 92 cm Taille läge das Verhältnis bei 0,526 und damit bereits im erhöhten Risikobereich.",
+    "aboutTitle": "Warum WHtR statt BMI?",
+    "aboutText": "Das Taille-zu-Größe-Verhältnis (Waist-to-Height Ratio, WHtR) ist ein einfaches Maß zur Einschätzung des Risikos für Herz-Kreislauf-Erkrankungen, Typ-2-Diabetes und das metabolische Syndrom. Anders als der BMI berücksichtigt es die Verteilung des Körperfetts — und genau das viszerale Bauchfett gilt heute als der entscheidende Risikofaktor für die kardiometabolische Gesundheit. Eine Meta-Analyse von Ashwell, Gunn & Gibson (2012) zeigte, dass das WHtR den BMI in der Vorhersage von Diabetes, Bluthochdruck und Herz-Kreislauf-Erkrankungen übertrifft. Der Vorteil liegt in der Skalierbarkeit über alle Körpergrößen und Geschlechter hinweg: Die Faustregel «Taille unter halbe Körpergröße» gilt universell — von Teenagern bis zu älteren Erwachsenen, mit einer leichten altersabhängigen Anpassung. Im Vergleich zum Taille-Hüft-Verhältnis (WHR) ist das WHtR einfacher zu messen, da nur ein einziger Umfang plus die Körpergröße benötigt wird. Damit eignet es sich hervorragend für regelmäßiges Selbst-Monitoring. Wichtig: Miss den Taillenumfang morgens, nüchtern, auf Nabelhöhe und nach normalem Ausatmen. Das Maßband sollte waagerecht und eng anliegen, ohne in die Haut einzuschneiden. Kombiniere das WHtR mit weiteren Indikatoren wie dem BMI, dem Körperfettanteil und dem Idealgewicht, um ein vollständiges Bild deiner Körperzusammensetzung zu erhalten.",
+    "disclaimer": "Hinweis: Dieser Rechner ersetzt keine medizinische Diagnose. Bei Auffälligkeiten besprich deine Werte mit einer Ärztin oder einem Arzt.",
+    "relatedTitle": "Verwandte Rechner",
+    "relatedBmi": "BMI berechnen",
+    "relatedWhr": "Taille-Hüft-Verhältnis",
+    "relatedBodyFat": "Körperfettanteil",
+    "relatedIdealWeight": "Idealgewicht",
+    "faq": [
+      {
+        "q": "Was ist das WHtR?",
+        "a": "Das WHtR (Waist-to-Height Ratio) ist das Verhältnis von Taillenumfang zu Körpergröße. Beide werden in derselben Einheit gemessen (cm). Ein Wert unter 0,5 gilt als gesund."
+      },
+      {
+        "q": "Wie wird das WHtR berechnet?",
+        "a": "WHtR = Taillenumfang ÷ Körpergröße. Beispiel: 85 cm Taille und 175 cm Größe ergeben 85 ÷ 175 = 0,486."
+      },
+      {
+        "q": "Welche Werte sind gesund?",
+        "a": "Nach Ashwell (2012) gilt: unter 0,40 Untergewicht, 0,40–0,49 niedriges Risiko, 0,50–0,54 erhöht, 0,55–0,59 stark erhöht, ab 0,60 sehr hoch. Ab 40 Jahren steigen die Grenzen leicht an."
+      },
+      {
+        "q": "Ist WHtR aussagekräftiger als der BMI?",
+        "a": "Ja. Studien zeigen, dass das WHtR den BMI bei der Vorhersage von Herz-Kreislauf-Risiken und Typ-2-Diabetes übertrifft, weil es die Fettverteilung berücksichtigt."
+      },
+      {
+        "q": "WHtR oder Taille-Hüft-Verhältnis?",
+        "a": "Beide messen abdominale Adipositas. WHtR ist einfacher (nur ein Umfang plus Größe) und international gleich anwendbar. WHR ist etabliert in der WHO-Klassifikation."
+      },
+      {
+        "q": "Wie messe ich den Taillenumfang richtig?",
+        "a": "Stehend, morgens, nüchtern, auf Nabelhöhe, nach normalem Ausatmen. Maßband waagerecht, eng anliegend, aber ohne Einschnürung."
+      }
+    ]
+  }
+}
