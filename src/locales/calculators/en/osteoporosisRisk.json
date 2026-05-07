@@ -1,0 +1,86 @@
+{
+  "home": {
+    "calculators": {
+      "osteoporosisRisk": {
+        "name": "Osteoporosis Risk Calculator",
+        "description": "FRAX-based 10-year fracture risk estimate from age, BMI, and clinical risk factors."
+      }
+    }
+  },
+  "osteoporosisRisk": {
+    "meta": {
+      "title": "Osteoporosis Risk Calculator — FRAX 10-Year Fracture Risk",
+      "description": "Estimate your 10-year osteoporotic fracture risk. FRAX-inspired with age, BMI, fracture history, glucocorticoids, and optional T-score. Free, instant, no sign-up."
+    },
+    "title": "Osteoporosis Risk Calculator",
+    "description": "FRAX-inspired score for 10-year major osteoporotic fracture risk — based on age, sex, BMI, and 8 established clinical risk factors.",
+    "unitMetric": "Metric",
+    "unitImperial": "Imperial",
+    "ageLabel": "Age (years)",
+    "sexLabel": "Sex",
+    "sexFemale": "Female",
+    "sexMale": "Male",
+    "weightLabel": "Weight ({unit})",
+    "heightLabel": "Height ({unit})",
+    "tScoreLabel": "Femoral neck T-score (optional)",
+    "tScorePlaceholder": "e.g. -1.8 (DXA result)",
+    "tScoreHelp": "If you have a bone density (DXA) result, the T-score refines the estimate.",
+    "riskFactorsLabel": "Clinical risk factors",
+    "rf_previousFracture": "Previous osteoporotic fracture",
+    "rf_previousFracture_desc": "Vertebral, hip, wrist, or humerus fracture from low-energy trauma",
+    "rf_parentHipFracture": "Parent had hip fracture",
+    "rf_parentHipFracture_desc": "Family history — strongest genetic risk factor",
+    "rf_smoking": "Current smoker",
+    "rf_smoking_desc": "Smoking reduces bone density and impairs fracture healing",
+    "rf_glucocorticoids": "Glucocorticoids ≥ 3 months",
+    "rf_glucocorticoids_desc": "Prednisolone ≥ 5 mg/day or equivalent — major risk factor",
+    "rf_rheumatoidArthritis": "Rheumatoid arthritis",
+    "rf_rheumatoidArthritis_desc": "Confirmed diagnosis (not osteoarthritis)",
+    "rf_secondaryOsteoporosis": "Secondary osteoporosis cause",
+    "rf_secondaryOsteoporosis_desc": "Type 1 diabetes, hyperthyroidism, early menopause, hypogonadism, chronic liver disease",
+    "rf_alcohol3Plus": "Alcohol ≥ 3 units/day",
+    "rf_alcohol3Plus_desc": "One unit ≈ 10–12 g of pure alcohol",
+    "resultsLabel": "Your 10-year fracture risk",
+    "scoreLabel": "Risk score",
+    "bmiLabel": "BMI",
+    "category_low": "Low",
+    "category_moderate": "Moderate",
+    "category_high": "High",
+    "advice_low": "Low 10-year fracture risk (< 10 %). Calcium- and vitamin-D-rich diet, regular weight-bearing exercise, and basic fall prevention are sufficient. Routine DXA recommended for women ≥ 65 and men ≥ 70.",
+    "advice_moderate": "Moderate risk (10–20 %). DXA bone density scan recommended. Optimize vitamin D, calcium, and protein intake; add resistance training. Ask your GP for a fall-risk assessment.",
+    "advice_high": "High 10-year fracture risk (> 20 %). See a clinician for DXA, lab workup (vitamin D, calcium, TSH), and likely pharmacologic osteoporosis therapy (bisphosphonates, denosumab, teriparatide). Implement strict fall prevention.",
+    "refTitle": "FRAX score categories",
+    "refCategory": "Category",
+    "refScore": "Points",
+    "refRisk": "10-year risk (estimated)",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator combines the main WHO FRAX risk factors into a simple point score: age (0–7 points), female sex (+1), low BMI (+1 to +2), previous fracture (+3), parent hip fracture (+2), smoking (+1), long-term glucocorticoids (+2), rheumatoid arthritis (+1), secondary osteoporosis (+1), and heavy alcohol use (+2). If a DXA result is available, the T-score adjusts the total (+1 for osteopenia, +3 for osteoporosis). A score ≥ 8 corresponds to the NOF/DVO treatment threshold.",
+    "disclaimer": "This calculator provides a risk estimate — it does not replace an official FRAX report or a DXA bone density scan. Treatment decisions require a clinician's individualized assessment. With sudden back pain or height loss > 4 cm, seek imaging to rule out vertebral fracture.",
+    "faq": [
+      {
+        "q": "What is osteoporosis?",
+        "a": "Osteoporosis is a systemic skeletal disease with reduced bone mass and disrupted micro-architecture, leading to fragile bones — especially at the spine, hip, wrist, and humerus. Worldwide, about 200 million people are affected, mostly post-menopausal women."
+      },
+      {
+        "q": "What is FRAX?",
+        "a": "FRAX (Fracture Risk Assessment Tool) is a WHO-developed algorithm that estimates the 10-year probability of major osteoporotic fracture (hip, spine, forearm, shoulder). It uses 11 clinical risk factors and optionally bone density (DXA T-score)."
+      },
+      {
+        "q": "When is treatment required?",
+        "a": "Most guidelines (NOF, DVO) recommend pharmacologic treatment when the 10-year major fracture risk exceeds 20 % — corresponding to a score of ≥ 8 in our calculator. A prior vertebral fracture or T-score ≤ -2.5 typically triggers immediate treatment."
+      },
+      {
+        "q": "Which medications are used?",
+        "a": "First-line: bisphosphonates (alendronate, risedronate, zoledronate) — effective and inexpensive. Alternatives: denosumab (antibody), teriparatide (PTH analog for severe cases), romosozumab. Always combined with vitamin D and calcium."
+      },
+      {
+        "q": "How can I prevent osteoporosis?",
+        "a": "Aim for 1.0–1.2 g/kg protein, 1000 mg calcium, and 800–1000 IU vitamin D daily; do regular weight-bearing and resistance exercise; avoid smoking; limit alcohol; address fall risk (vision, footwear, home environment). These steps demonstrably reduce fracture incidence."
+      },
+      {
+        "q": "What's the difference between T-score and Z-score?",
+        "a": "The T-score compares your bone density to that of a young healthy adult — it drives diagnosis and treatment decisions (≤ -2.5 = osteoporosis). The Z-score compares to age-matched peers and is mainly used in younger patients."
+      }
+    ]
+  }
+}

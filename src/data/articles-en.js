@@ -521,6 +521,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'apgarScore',
     related: ['due-date-calculator', 'child-growth-percentile-chart', 'child-dosage-calculator'],
   },
+  {
+    slug: 'osteoporosis-risk-calculator-guide',
+    title: 'Osteoporosis Risk Calculator: Understand Your 10-Year FRAX Fracture Risk',
+    description: 'FRAX-inspired estimate of your 10-year osteoporotic fracture risk. Risk factors, T-score, treatment thresholds, and prevention — clearly explained.',
+    date: '2026-05-06',
+    readTime: '9 min',
+    calculatorKey: 'osteoporosisRisk',
+    related: ['vitamin-d-calculator', 'biological-age-calculator', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

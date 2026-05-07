@@ -1,0 +1,86 @@
+{
+  "home": {
+    "calculators": {
+      "osteoporosisRisk": {
+        "name": "Osteoporose-Risiko-Rechner",
+        "description": "FRAX-basierte Einschätzung deines 10-Jahres-Frakturrisikos aus Alter, BMI und klinischen Risikofaktoren."
+      }
+    }
+  },
+  "osteoporosisRisk": {
+    "meta": {
+      "title": "Osteoporose-Risiko-Rechner — FRAX 10-Jahres-Frakturrisiko",
+      "description": "Berechne dein 10-Jahres-Risiko für osteoporotische Frakturen. FRAX-basiert mit Alter, BMI, Frakturhistorie, Glukokortikoiden und optionalem T-Score. Kostenlos, sofort, anonym."
+    },
+    "title": "Osteoporose-Risiko-Rechner",
+    "description": "FRAX-inspirierter Score für das 10-Jahres-Risiko einer osteoporotischen Fraktur — basierend auf Alter, Geschlecht, BMI und 8 etablierten klinischen Risikofaktoren.",
+    "unitMetric": "metrisch",
+    "unitImperial": "imperial",
+    "ageLabel": "Alter (Jahre)",
+    "sexLabel": "Geschlecht",
+    "sexFemale": "Weiblich",
+    "sexMale": "Männlich",
+    "weightLabel": "Gewicht ({unit})",
+    "heightLabel": "Größe ({unit})",
+    "tScoreLabel": "Femurhals T-Score (optional)",
+    "tScorePlaceholder": "z. B. -1.8 (DXA-Befund)",
+    "tScoreHelp": "Falls eine Knochendichtemessung (DXA) vorliegt, kann der T-Score präziser einstufen.",
+    "riskFactorsLabel": "Klinische Risikofaktoren",
+    "rf_previousFracture": "Frühere osteoporotische Fraktur",
+    "rf_previousFracture_desc": "Wirbel-, Hüft-, Handgelenks- oder Oberarmbruch nach Bagatelltrauma",
+    "rf_parentHipFracture": "Hüftfraktur eines Elternteils",
+    "rf_parentHipFracture_desc": "Familiäre Belastung — wichtigster genetischer Risikofaktor",
+    "rf_smoking": "Aktiver Tabakkonsum",
+    "rf_smoking_desc": "Rauchen verringert die Knochendichte und Frakturheilung",
+    "rf_glucocorticoids": "Glukokortikoide ≥ 3 Monate",
+    "rf_glucocorticoids_desc": "Prednisolon ≥ 5 mg/Tag oder vergleichbar — starkes Risiko",
+    "rf_rheumatoidArthritis": "Rheumatoide Arthritis",
+    "rf_rheumatoidArthritis_desc": "Gesicherte Diagnose (nicht Arthrose)",
+    "rf_secondaryOsteoporosis": "Sekundäre Osteoporose-Ursache",
+    "rf_secondaryOsteoporosis_desc": "Diabetes Typ 1, Hyperthyreose, frühe Menopause, Hypogonadismus, chronische Lebererkrankung",
+    "rf_alcohol3Plus": "Alkohol ≥ 3 Einheiten/Tag",
+    "rf_alcohol3Plus_desc": "Eine Einheit ≈ 10–12 g reiner Alkohol",
+    "resultsLabel": "Dein 10-Jahres-Frakturrisiko",
+    "scoreLabel": "Risiko-Score",
+    "bmiLabel": "BMI",
+    "category_low": "Niedrig",
+    "category_moderate": "Moderat",
+    "category_high": "Hoch",
+    "advice_low": "Niedriges 10-Jahres-Frakturrisiko (< 10 %). Kalzium- und Vitamin-D-reiche Ernährung, regelmäßige Belastungsübungen sowie Sturzprophylaxe genügen aktuell. Bei Frauen ab 65 / Männern ab 70 Routine-DXA empfohlen.",
+    "advice_moderate": "Moderates Risiko (10–20 %). DXA-Knochendichtemessung empfohlen. Optimierung von Vitamin D, Kalzium, Eiweißzufuhr und Krafttraining. Sturzrisiko-Assessment durch Hausarzt sinnvoll.",
+    "advice_high": "Hohes 10-Jahres-Frakturrisiko (> 20 %). Ärztliche Vorstellung mit DXA, Labordiagnostik (Vitamin D, Kalzium, TSH) und ggf. medikamentöse Osteoporose-Therapie (Bisphosphonate, Denosumab, Teriparatid). Sturzprophylaxe konsequent umsetzen.",
+    "refTitle": "FRAX-Score Kategorien",
+    "refCategory": "Kategorie",
+    "refScore": "Punkte",
+    "refRisk": "10-Jahres-Risiko (geschätzt)",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner kombiniert die wichtigsten FRAX-Risikofaktoren der WHO zu einem einfachen Punktescore: Alter (0–7 Punkte), weibliches Geschlecht (+1), niedriger BMI (+1 bis +2), frühere Fraktur (+3), Hüftfraktur eines Elternteils (+2), Rauchen (+1), Langzeit-Glukokortikoide (+2), rheumatoide Arthritis (+1), sekundäre Ursachen (+1) und schwerer Alkoholkonsum (+2). Liegt eine DXA vor, modifiziert der T-Score den Score (+1 bei Osteopenie, +3 bei Osteoporose). Score ≥ 8 entspricht der NOF/DVO-Behandlungsschwelle.",
+    "disclaimer": "Dieser Rechner liefert eine Risikoeinschätzung — er ersetzt keinen offiziellen FRAX-Befund noch eine DXA-Knochendichtemessung. Behandlungsentscheidungen treffen Ärzt:innen unter Berücksichtigung individueller Faktoren. Bei Verdacht auf Wirbelfraktur (akuter Rückenschmerz, Größenverlust > 4 cm) zeitnah Bildgebung veranlassen.",
+    "faq": [
+      {
+        "q": "Was ist Osteoporose?",
+        "a": "Osteoporose ist eine systemische Skeletterkrankung mit verminderter Knochenmasse und gestörter Mikroarchitektur. Folge: erhöhte Knochenbrüchigkeit, vor allem an Wirbeln, Hüfte, Handgelenk und Oberarm. In Deutschland sind etwa 6 Millionen Menschen betroffen, überwiegend Frauen nach der Menopause."
+      },
+      {
+        "q": "Was ist FRAX?",
+        "a": "FRAX (Fracture Risk Assessment Tool) ist ein von der WHO entwickelter Algorithmus zur Berechnung des 10-Jahres-Risikos für eine schwere osteoporotische Fraktur (Hüfte, Wirbel, Unterarm, Schulter). Er berücksichtigt 11 klinische Risikofaktoren und optional die Knochendichte (DXA T-Score)."
+      },
+      {
+        "q": "Ab wann ist eine Therapie nötig?",
+        "a": "Die DVO-Leitlinie empfiehlt eine medikamentöse Therapie ab einem 10-Jahres-Risiko von ≥ 20 % für Wirbel- und Hüftfrakturen — entspricht in unserem Score ≥ 8 Punkten. Bei stattgehabter Wirbelfraktur oder T-Score ≤ -2,5 wird in der Regel direkt therapiert."
+      },
+      {
+        "q": "Welche Medikamente kommen infrage?",
+        "a": "First-Line sind Bisphosphonate (Alendronat, Risedronat, Zoledronat) — gut wirksam und kostengünstig. Alternativen: Denosumab (Antikörper), Teriparatid (PTH-Analog für schwere Osteoporose) sowie Romosozumab. Immer in Kombination mit Vitamin D und Kalzium."
+      },
+      {
+        "q": "Wie kann ich vorbeugen?",
+        "a": "Tägliche Eiweißzufuhr von 1,0–1,2 g/kg, 1000 mg Kalzium und 800–1000 IE Vitamin D, regelmäßige Belastungs- und Krafttrainings, Rauchverzicht, moderater Alkoholkonsum sowie Sturzprophylaxe (Sehkraft, Schuhwerk, Wohnumfeld) reduzieren das Risiko nachweislich."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen T-Score und Z-Score?",
+        "a": "Der T-Score vergleicht deine Knochendichte mit der eines jungen, gesunden Erwachsenen — relevant für Diagnose und Therapieentscheidung (≤ -2,5 = Osteoporose). Der Z-Score vergleicht mit Gleichaltrigen und wird vor allem bei jüngeren Patient:innen verwendet."
+      }
+    ]
+  }
+}

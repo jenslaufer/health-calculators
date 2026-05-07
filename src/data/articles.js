@@ -521,6 +521,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'apgarScore',
     related: ['geburtsterminrechner', 'wachstumsperzentile-kinder', 'kinder-dosierung-rechner'],
   },
+  {
+    slug: 'osteoporose-risiko-berechnen',
+    title: 'Osteoporose-Risiko berechnen: FRAX 10-Jahres-Frakturrisiko verstehen',
+    description: 'FRAX-basierte Einschätzung deines 10-Jahres-Frakturrisikos. Risikofaktoren, T-Score, DVO-Behandlungsschwelle und Prävention — verständlich erklärt.',
+    date: '2026-05-06',
+    readTime: '9 min',
+    calculatorKey: 'osteoporosisRisk',
+    related: ['vitamin-d-berechnen', 'biologisches-alter-berechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
