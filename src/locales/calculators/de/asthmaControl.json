@@ -1,0 +1,124 @@
+{
+  "home": {
+    "calculators": {
+      "asthmaControl": {
+        "name": "Asthma-Kontrolle (ACT)",
+        "description": "ACT-Score berechnen — Asthma-Kontrolle der letzten 4 Wochen einschätzen."
+      }
+    }
+  },
+  "asthmaControl": {
+    "meta": {
+      "title": "Asthma Control Test (ACT) Rechner — Asthma-Kontrolle einschätzen | Health Calculators",
+      "description": "Asthma Control Test (ACT) online berechnen. 5 Fragen, Score 5–25, Klassifikation gut / nicht gut / schlecht kontrolliert. Kostenlos, sofort, anonym."
+    },
+    "title": "Asthma Control Test (ACT)",
+    "description": "Beantworte fünf Fragen zu den letzten vier Wochen. Der ACT-Score (5–25) hilft dir und deinem Arzt einzuschätzen, wie gut dein Asthma kontrolliert ist.",
+    "introNote": "Bezugszeitraum: die letzten 4 Wochen. Wähle pro Frage genau eine Antwort.",
+    "questions": {
+      "activityLimitation": {
+        "title": "1. Wie oft hat dein Asthma dich in den letzten 4 Wochen davon abgehalten, bei der Arbeit, in der Schule oder zu Hause so viel wie üblich zu schaffen?",
+        "options": [
+          { "value": 1, "label": "Die ganze Zeit" },
+          { "value": 2, "label": "Meistens" },
+          { "value": 3, "label": "Manchmal" },
+          { "value": 4, "label": "Selten" },
+          { "value": 5, "label": "Nie" }
+        ]
+      },
+      "shortnessOfBreath": {
+        "title": "2. Wie oft hattest du in den letzten 4 Wochen Atemnot?",
+        "options": [
+          { "value": 1, "label": "Mehr als 1× pro Tag" },
+          { "value": 2, "label": "1× pro Tag" },
+          { "value": 3, "label": "3–6× pro Woche" },
+          { "value": 4, "label": "1–2× pro Woche" },
+          { "value": 5, "label": "Gar nicht" }
+        ]
+      },
+      "nightSymptoms": {
+        "title": "3. Wie oft haben dich Asthma-Symptome (Husten, Pfeifen, Atemnot, Engegefühl) in den letzten 4 Wochen nachts oder früh morgens geweckt?",
+        "options": [
+          { "value": 1, "label": "4 oder mehr Nächte pro Woche" },
+          { "value": 2, "label": "2–3 Nächte pro Woche" },
+          { "value": 3, "label": "1× pro Woche" },
+          { "value": 4, "label": "1–2× insgesamt" },
+          { "value": 5, "label": "Gar nicht" }
+        ]
+      },
+      "rescueInhalerUse": {
+        "title": "4. Wie oft hast du in den letzten 4 Wochen dein Notfall-Spray (z. B. Salbutamol) oder Vernebler benutzt?",
+        "options": [
+          { "value": 1, "label": "3 oder mehr Mal pro Tag" },
+          { "value": 2, "label": "1–2× pro Tag" },
+          { "value": 3, "label": "2–3× pro Woche" },
+          { "value": 4, "label": "1× pro Woche oder seltener" },
+          { "value": 5, "label": "Gar nicht" }
+        ]
+      },
+      "selfRating": {
+        "title": "5. Wie würdest du selbst die Kontrolle deines Asthmas in den letzten 4 Wochen einschätzen?",
+        "options": [
+          { "value": 1, "label": "Überhaupt nicht kontrolliert" },
+          { "value": 2, "label": "Schlecht kontrolliert" },
+          { "value": 3, "label": "Etwas kontrolliert" },
+          { "value": 4, "label": "Gut kontrolliert" },
+          { "value": 5, "label": "Vollständig kontrolliert" }
+        ]
+      }
+    },
+    "categories": {
+      "wellControlled": "Gut kontrolliert",
+      "notWellControlled": "Nicht gut kontrolliert",
+      "poorlyControlled": "Schlecht kontrolliert"
+    },
+    "hints": {
+      "wellControlled": "Score 20–25: Dein Asthma scheint gut kontrolliert. Behalte deine Therapie und Auslöser-Vermeidung bei. Sprich beim nächsten Termin mit deinem Arzt über mögliche Anpassungen.",
+      "notWellControlled": "Score 16–19: Dein Asthma ist nicht ausreichend kontrolliert. Vereinbare einen Termin mit deinem Arzt — eine Anpassung der Dauertherapie ist häufig sinnvoll.",
+      "poorlyControlled": "Score 5–15: Dein Asthma ist schlecht kontrolliert. Suche zeitnah ärztliche Hilfe. Bei akuter Atemnot: Notfall-Spray nutzen und ggf. Notruf 112."
+    },
+    "reset": "Antworten zurücksetzen",
+    "scoreLabel": "ACT-Score",
+    "scoreScale": "von 25",
+    "incompleteHint": "Beantworte alle 5 Fragen, um deinen ACT-Score zu sehen.",
+    "scaleTitle": "Bewertungsskala",
+    "scaleRows": [
+      { "range": "20 – 25", "label": "Gut kontrolliert", "hint": "Therapie & Auslöser-Vermeidung beibehalten" },
+      { "range": "16 – 19", "label": "Nicht gut kontrolliert", "hint": "Therapie-Anpassung mit Arzt besprechen" },
+      { "range": "5 – 15", "label": "Schlecht kontrolliert", "hint": "Zeitnah ärztlich abklären lassen" }
+    ],
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Asthma Control Test (ACT) wurde 2004 von Nathan und Kollegen validiert (J Allergy Clin Immunol). Fünf Fragen mit je 1–5 Punkten ergeben einen Gesamtscore von 5 bis 25. Ein Score ≥ 20 entspricht gut kontrolliertem Asthma; ≤ 19 zeigt einen Therapie-Bedarf an. GINA empfiehlt den ACT als Verlaufsinstrument.",
+    "disclaimer": "Der ACT ist ein Screening- und Verlaufsinstrument. Er ersetzt keine ärztliche Diagnose. Bei akuter Atemnot, Notfallspray-Gebrauch über 4× pro Tag oder rapider Verschlechterung sofort ärztliche Hilfe suchen.",
+    "faq": [
+      {
+        "q": "Was misst der Asthma Control Test (ACT)?",
+        "a": "Der ACT misst, wie gut dein Asthma in den letzten 4 Wochen kontrolliert war. Er erfasst Aktivitätseinschränkung, Atemnot, nächtliche Symptome, Notfallspray-Gebrauch und deine subjektive Einschätzung."
+      },
+      {
+        "q": "Welche Score-Bereiche gibt es?",
+        "a": "20–25 Punkte: gut kontrolliert. 16–19 Punkte: nicht gut kontrolliert. 5–15 Punkte: schlecht kontrolliert. Ein Score von 25 bedeutet vollständige Kontrolle."
+      },
+      {
+        "q": "Wie oft sollte ich den ACT machen?",
+        "a": "Bei stabilem Asthma alle 3 Monate. Bei Therapieumstellung oder Verschlechterung häufiger. Trends über mehrere Tests sind aussagekräftiger als ein Einzelwert."
+      },
+      {
+        "q": "Was bedeutet ein Score unter 20?",
+        "a": "Ein Score unter 20 zeigt, dass dein Asthma in den letzten 4 Wochen nicht optimal kontrolliert war. Das ist ein Anlass, mit deinem Arzt über Therapie-Anpassungen oder Auslöser-Vermeidung zu sprechen — nicht zwingend ein Notfall."
+      },
+      {
+        "q": "Ist der ACT für Kinder geeignet?",
+        "a": "Der hier vorgestellte ACT ist für Erwachsene und Jugendliche ab 12 Jahren validiert. Für Kinder von 4–11 Jahren existiert der Childhood Asthma Control Test (cACT) mit kindgerechten Fragen."
+      },
+      {
+        "q": "Ersetzt der ACT eine Lungenfunktionsprüfung?",
+        "a": "Nein. Der ACT erfasst Symptome, nicht die Lungenfunktion. FEV1 oder Peak-Flow-Messungen ergänzen den ACT — beide zusammen geben das vollständige Bild der Asthma-Kontrolle."
+      },
+      {
+        "q": "Was tun bei akuter Atemnot trotz ACT-Score?",
+        "a": "Bei akuter Atemnot zählt nicht der ACT, sondern sofortiges Handeln: Notfallspray (Salbutamol) 2–4 Hübe, aufrecht hinsetzen, ruhig atmen. Bei ausbleibender Besserung Notruf 112."
+      }
+    ]
+  }
+}
