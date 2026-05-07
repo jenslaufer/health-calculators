@@ -1,0 +1,96 @@
+{
+  "home": {
+    "calculators": {
+      "hepatitisRisk": {
+        "name": "Hepatitis Risk Calculator",
+        "description": "Estimate your hepatitis B and C risk from exposure factors."
+      }
+    }
+  },
+  "hepatitisRisk": {
+    "meta": {
+      "title": "Hepatitis Risk Calculator — Screen for Hepatitis B & C from Exposure Factors",
+      "description": "Estimate your hepatitis B and C risk from 13 evidence-based exposure factors. CDC and WHO screening criteria, severity grading, and clear next steps. Free, instant, no sign-up."
+    },
+    "title": "Hepatitis Risk Calculator",
+    "description": "Estimate your hepatitis B and C infection risk from 13 typical exposure factors — based on CDC and WHO screening recommendations.",
+    "factorsLabel": "Risk factors (check all that apply)",
+    "protectionLabel": "Protective factors",
+    "factor_bornHighPrevalence": "Born in HBV high-prevalence country",
+    "factor_bornHighPrevalence_desc": "Asia, sub-Saharan Africa, Pacific Islands, Eastern Europe — chronic HBV prevalence ≥ 2 %",
+    "factor_birthCohort1945to1965": "Born between 1945 and 1965",
+    "factor_birthCohort1945to1965_desc": "CDC HCV birth cohort with elevated HCV prevalence",
+    "factor_injectionDrugUse": "Injection drug use (ever)",
+    "factor_injectionDrugUse_desc": "Even one-time needle sharing — the dominant HCV transmission route",
+    "factor_transfusionBefore1992": "Blood transfusion before 1992",
+    "factor_transfusionBefore1992_desc": "Pre-systematic HCV screening era; also organ transplants before 1992",
+    "factor_tattooPiercingUnsterile": "Tattoo / piercing in non-licensed setting",
+    "factor_tattooPiercingUnsterile_desc": "Done abroad, in prison, or without single-use needles",
+    "factor_multipleSexPartners": "Multiple unprotected sex partners",
+    "factor_multipleSexPartners_desc": "≥ 4 partners in 6 months or unprotected anal intercourse",
+    "factor_hivPositive": "HIV infection",
+    "factor_hivPositive_desc": "Shared transmission routes — co-infection is common",
+    "factor_healthcareNeedlestick": "Healthcare needlestick injury",
+    "factor_healthcareNeedlestick_desc": "Occupational exposure to blood or body fluids",
+    "factor_householdContactInfected": "Hepatitis-positive household contact",
+    "factor_householdContactInfected_desc": "Shared razors, toothbrushes, or needles possible",
+    "factor_hemodialysis": "Long-term hemodialysis",
+    "factor_hemodialysis_desc": "Elevated nosocomial HCV risk during chronic dialysis",
+    "factor_incarcerated": "Long-term incarceration",
+    "factor_incarcerated_desc": "≥ 6 months — elevated HCV prevalence in correctional settings",
+    "factor_maternalInfection": "Mother HBV- or HCV-positive",
+    "factor_maternalInfection_desc": "Perinatal transmission risk, especially HBV without vaccination",
+    "factor_elevatedLiverEnzymes": "Elevated liver enzymes (ALT/AST)",
+    "factor_elevatedLiverEnzymes_desc": "Unexplained transaminase elevation — hepatitis must be ruled out",
+    "factor_hbvVaccinated": "Complete HBV vaccination",
+    "factor_hbvVaccinated_desc": "Three-dose hepatitis B vaccine with documented anti-HBs response > 10 IU/L",
+    "resultsLabel": "Your hepatitis risk",
+    "scoreLabel": "Risk score",
+    "bandLabel": "Severity",
+    "category_none": "No risk",
+    "category_low": "Low",
+    "category_moderate": "Moderate",
+    "category_high": "High",
+    "advice_none": "No known risk factors. Routine hepatitis screening is not strictly required — speak to your GP if you have unexplained symptoms.",
+    "advice_low": "Low risk — a one-time hepatitis B and C test through your GP is sensible. Verify HBV vaccine immunity and consider a booster.",
+    "advice_moderate": "Moderate risk — book HBsAg, anti-HBc, and anti-HCV antibody testing soon. With exposure also test HCV-RNA by PCR. Review HBV vaccination status.",
+    "advice_high": "High risk — see a clinician promptly for full hepatitis serology including HCV-PCR. After acute exposure (needlestick, unprotected sex with a known carrier) post-exposure prophylaxis is possible within 72 hours.",
+    "refTitle": "Risk bands & recommendations",
+    "refBand": "Severity",
+    "refScore": "Score",
+    "refAction": "Recommendation",
+    "refAction_none": "No routine testing needed",
+    "refAction_low": "One-time test advised",
+    "refAction_moderate": "Prompt serology + possible PCR",
+    "refAction_high": "Immediate workup & counseling",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator weights 13 CDC- and WHO-recommended screening factors. Injection drug use carries the highest single weight (4 points) because it is the leading HCV transmission route. Pre-1992 transfusions (3) and perinatal transmission (3) also weigh heavily. A complete HBV vaccination subtracts 2 points (floor at 0) because it prevents HBV infection — HCV remains independently possible. Bands: 0 none, 1–3 low, 4–7 moderate, ≥ 8 high.",
+    "disclaimer": "This calculator is for self-assessment and does not replace clinical diagnostics. Confirmed diagnosis requires blood tests (HBsAg, anti-HBc, anti-HCV). After acute exposure to known infected material — needlestick, sex with a confirmed carrier — go to an emergency department immediately, since post-exposure prophylaxis is only effective within the first 72 hours.",
+    "faq": [
+      {
+        "q": "What are hepatitis B and C?",
+        "a": "Hepatitis B (HBV) and Hepatitis C (HCV) are viral liver infections. HBV is mostly transmitted sexually and perinatally; HCV mostly through blood. Both can become chronic and lead to cirrhosis or liver cancer over the long term."
+      },
+      {
+        "q": "How is hepatitis transmitted?",
+        "a": "HBV: unprotected sex, mother-to-child transmission, needlesticks, shared injection equipment. HCV: shared injection equipment, unsterile tattoos, transfusions before 1992, less commonly sexual. HAV (hepatitis A) spreads via the fecal-oral route through contaminated food and is not covered by this calculator."
+      },
+      {
+        "q": "Who should be tested for hepatitis?",
+        "a": "CDC and WHO recommend a one-time HCV screen for all adults aged ≥ 18 and HBV screening for anyone with a risk factor. Pregnant women are routinely tested for HBsAg. Anyone with unexplained elevated liver enzymes should also be screened."
+      },
+      {
+        "q": "What tests are run?",
+        "a": "For HBV: HBsAg (acute or chronic infection), anti-HBc (past infection), anti-HBs (vaccine immunity). For HCV: anti-HCV antibodies (screening), confirmed by HCV-RNA PCR for active infection. Plus ALT/AST as markers of liver inflammation."
+      },
+      {
+        "q": "Is hepatitis curable?",
+        "a": "Hepatitis C has been curable since 2014 with direct-acting antivirals (DAAs) in over 95 % of cases within 8–12 weeks. Hepatitis B is usually not curable but well controlled with tenofovir or entecavir; acute HBV in adults clears spontaneously in 90–95 % of cases."
+      },
+      {
+        "q": "How can I protect myself?",
+        "a": "HBV: a three-dose vaccine provides long-term protection (standard immunization in many countries since the 1990s). Practice safer sex, avoid shared needles, use licensed tattoo and piercing studios. HCV: there is no vaccine — strict avoidance of risk exposure, especially shared injection or snorting equipment."
+      }
+    ]
+  }
+}
