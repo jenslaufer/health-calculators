@@ -530,6 +530,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'osteoporosisRisk',
     related: ['vitamin-d-calculator', 'biological-age-calculator', 'calculate-bmi'],
   },
+  {
+    slug: 'hepatitis-risk-calculator-guide',
+    title: 'Hepatitis Risk Calculator: Screen for Hepatitis B and C from Exposure Factors',
+    description: 'Estimate hepatitis B and C risk from 13 evidence-based exposure factors. Transmission routes, vaccination, post-exposure prophylaxis, and diagnostics — clearly explained.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'hepatitisRisk',
+    related: ['blood-alcohol-calculator', 'alcohol-unit-calculator', 'anemia-risk-calculator-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

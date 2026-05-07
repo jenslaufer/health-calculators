@@ -1,0 +1,96 @@
+{
+  "home": {
+    "calculators": {
+      "hepatitisRisk": {
+        "name": "Hepatitis-Risiko-Rechner",
+        "description": "Schätze dein Risiko für Hepatitis B und C aus Expositionsfaktoren ein."
+      }
+    }
+  },
+  "hepatitisRisk": {
+    "meta": {
+      "title": "Hepatitis-Risiko-Rechner — Hepatitis B & C aus Risikofaktoren einschätzen",
+      "description": "Berechne dein Risiko für Hepatitis B und C aus 13 evidenzbasierten Expositionsfaktoren. CDC- und WHO-Empfehlungen, Schweregrad-Einstufung, klare Handlungsempfehlung. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Hepatitis-Risiko-Rechner",
+    "description": "Schätze dein Risiko für eine Hepatitis-B- oder -C-Infektion aus 13 typischen Expositionsfaktoren — basierend auf CDC- und WHO-Screening-Empfehlungen.",
+    "factorsLabel": "Risikofaktoren (alle zutreffenden ankreuzen)",
+    "protectionLabel": "Schutzfaktoren",
+    "factor_bornHighPrevalence": "Geboren in HBV-Hochprävalenzland",
+    "factor_bornHighPrevalence_desc": "Asien, Afrika südlich der Sahara, Pazifik-Inseln, Osteuropa — chronische HBV-Prävalenz ≥ 2 %",
+    "factor_birthCohort1945to1965": "Geboren zwischen 1945 und 1965",
+    "factor_birthCohort1945to1965_desc": "CDC-HCV-Geburtskohorte mit erhöhter HCV-Prävalenz",
+    "factor_injectionDrugUse": "Intravenöser Drogenkonsum (jemals)",
+    "factor_injectionDrugUse_desc": "Auch einmaliger Nadeltausch — wichtigster Risikofaktor für HCV",
+    "factor_transfusionBefore1992": "Bluttransfusion vor 1992",
+    "factor_transfusionBefore1992_desc": "Vor systematischem HCV-Screening; auch Organtransplantate vor 1992",
+    "factor_tattooPiercingUnsterile": "Tattoo / Piercing in nicht zertifizierter Praxis",
+    "factor_tattooPiercingUnsterile_desc": "Im Ausland, im Gefängnis oder ohne Einwegnadeln gestochen",
+    "factor_multipleSexPartners": "Mehrere ungeschützte Sexualpartner",
+    "factor_multipleSexPartners_desc": "≥ 4 Partner in 6 Monaten oder ungeschützter Analverkehr",
+    "factor_hivPositive": "HIV-Infektion",
+    "factor_hivPositive_desc": "Gleiche Übertragungswege — Koinfektion ist häufig",
+    "factor_healthcareNeedlestick": "Nadelstichverletzung im Gesundheitswesen",
+    "factor_healthcareNeedlestick_desc": "Beruflicher Kontakt mit Blut oder Körperflüssigkeiten",
+    "factor_householdContactInfected": "Hepatitis-positiver Haushaltskontakt",
+    "factor_householdContactInfected_desc": "Gemeinsame Rasierer, Zahnbürsten oder Spritzen möglich",
+    "factor_hemodialysis": "Langzeit-Hämodialyse",
+    "factor_hemodialysis_desc": "Erhöhtes nosokomiales HCV-Risiko bei chronischer Dialyse",
+    "factor_incarcerated": "Längere Haftaufenthalte",
+    "factor_incarcerated_desc": "≥ 6 Monate Haft — erhöhte HCV-Prävalenz im Strafvollzug",
+    "factor_maternalInfection": "Mutter HBV- oder HCV-positiv",
+    "factor_maternalInfection_desc": "Perinatales Übertragungsrisiko, besonders bei HBV ohne Impfung",
+    "factor_elevatedLiverEnzymes": "Erhöhte Leberwerte (ALT/AST)",
+    "factor_elevatedLiverEnzymes_desc": "Unklar erhöhte Transaminasen — Hepatitis muss ausgeschlossen werden",
+    "factor_hbvVaccinated": "Vollständige HBV-Impfung",
+    "factor_hbvVaccinated_desc": "Drei Dosen Hepatitis-B-Impfung mit dokumentierter Anti-HBs-Antwort > 10 IU/L",
+    "resultsLabel": "Dein Hepatitis-Risiko",
+    "scoreLabel": "Risiko-Score",
+    "bandLabel": "Schweregrad",
+    "category_none": "Kein Risiko",
+    "category_low": "Niedrig",
+    "category_moderate": "Moderat",
+    "category_high": "Hoch",
+    "advice_none": "Keine bekannten Risikofaktoren. Eine Routine-Hepatitis-Untersuchung ist nicht zwingend nötig — sprich beim Hausarzt aber bei unklaren Beschwerden.",
+    "advice_low": "Niedriges Risiko — eine einmalige Hepatitis-B- und -C-Testung beim Hausarzt ist sinnvoll. Bestehender Impfschutz für HBV sollte aufgefrischt werden.",
+    "advice_moderate": "Moderates Risiko — zeitnahe Testung auf HBsAg, Anti-HBc und Anti-HCV-Antikörper empfohlen. Bei Risikoexposition zusätzlich HCV-RNA-PCR. HBV-Impfung prüfen.",
+    "advice_high": "Hohes Risiko — Sofortige hausärztliche Vorstellung mit kompletter Hepatitis-Serologie inklusive HCV-PCR. Bei akuter Exposition (Nadelstich, ungeschützter Sex mit Infiziertem) Postexpositionsprophylaxe innerhalb von 72 Stunden möglich.",
+    "refTitle": "Risiko-Bänder & Empfehlungen",
+    "refBand": "Schweregrad",
+    "refScore": "Score",
+    "refAction": "Empfehlung",
+    "refAction_none": "Keine routinemäßige Testung nötig",
+    "refAction_low": "Einmalige Testung sinnvoll",
+    "refAction_moderate": "Zeitnahe Serologie + ggf. PCR",
+    "refAction_high": "Sofortige Diagnostik & Beratung",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner gewichtet 13 von CDC und WHO empfohlene Screening-Faktoren. Intravenöser Drogenkonsum (4 Punkte) hat das höchste Einzelgewicht, da er der wichtigste HCV-Übertragungsweg ist. Bluttransfusionen vor 1992 (3) und perinatale Übertragung (3) wiegen ebenfalls schwer. Eine vollständige HBV-Impfung subtrahiert 2 Punkte vom Score (mindestens 0), da sie HBV-Infektionen verhindert — HCV bleibt jedoch unabhängig davon möglich. Score-Bänder: 0 keine, 1–3 niedrig, 4–7 moderat, ≥ 8 hoch.",
+    "disclaimer": "Dieser Rechner dient zur Selbsteinschätzung und ersetzt keine ärztliche Diagnostik. Eine sichere Diagnose ist nur über Bluttests möglich (HBsAg, Anti-HBc, Anti-HCV). Bei akuter Exposition mit infiziertem Material — z. B. Nadelstich, sexueller Kontakt mit nachgewiesenem Träger — sofort die Notaufnahme oder den ärztlichen Notdienst aufsuchen, da eine Postexpositionsprophylaxe nur innerhalb der ersten 72 Stunden wirksam ist.",
+    "faq": [
+      {
+        "q": "Was ist Hepatitis B und C?",
+        "a": "Hepatitis B (HBV) und Hepatitis C (HCV) sind virale Leberentzündungen. HBV wird vor allem sexuell und perinatal übertragen, HCV überwiegend durch Blut. Beide können chronisch verlaufen und langfristig zu Leberzirrhose oder Leberkrebs führen."
+      },
+      {
+        "q": "Wie wird Hepatitis übertragen?",
+        "a": "HBV: ungeschützter Geschlechtsverkehr, Mutter-Kind-Übertragung, Nadelstiche, geteilte Spritzen. HCV: vor allem geteilte Spritzen, unsteril gestochene Tattoos, Bluttransfusionen vor 1992, seltener sexuell. HAV (Hepatitis A) wird hingegen fäkal-oral via verseuchte Lebensmittel übertragen — und ist durch unseren Rechner nicht abgedeckt."
+      },
+      {
+        "q": "Wer sollte sich auf Hepatitis testen lassen?",
+        "a": "CDC und WHO empfehlen ein einmaliges HCV-Screening für alle Erwachsenen ≥ 18 Jahre und ein HBV-Screening bei jedem Risikofaktor. Schwangere werden in Deutschland routinemäßig auf HBsAg getestet. Bei Personen mit erhöhten Leberwerten ist immer eine Hepatitis-Diagnostik angezeigt."
+      },
+      {
+        "q": "Welche Tests werden gemacht?",
+        "a": "Für HBV: HBsAg (akute oder chronische Infektion), Anti-HBc (durchgemachte Infektion), Anti-HBs (Impfschutz). Für HCV: Anti-HCV-Antikörper (Screening), bei positivem Ergebnis HCV-RNA-PCR zur Bestätigung einer aktiven Infektion. Plus ALT/AST als Marker für Leberentzündung."
+      },
+      {
+        "q": "Ist Hepatitis heilbar?",
+        "a": "Hepatitis C ist seit 2014 durch direkt wirksame Antivirale (DAA) in über 95 % der Fälle in 8–12 Wochen heilbar. Hepatitis B ist meist nicht heilbar, aber mit Tenofovir oder Entecavir gut kontrollierbar; eine akute HBV bei Erwachsenen heilt in 90–95 % spontan aus."
+      },
+      {
+        "q": "Wie kann ich mich schützen?",
+        "a": "HBV: Impfung mit drei Dosen schützt langfristig (in Deutschland Standardimpfung ab Geburt seit 1995). Sicherer Sex, keine geteilten Nadeln, sterile Tätowierung. HCV: Es gibt keinen Impfstoff — daher konsequent Risikoexposition vermeiden, vor allem keine geteilten Spritzen oder Schnupfröhrchen."
+      }
+    ]
+  }
+}
