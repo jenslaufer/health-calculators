@@ -123,7 +123,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 60 calculator meta files', () => {
+  it('discovers all 63 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
     expect(metas).toHaveLength(63)
   })
@@ -163,7 +163,7 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 58 DE blog slugs', () => {
+  it('returns all 61 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
     expect(de).toHaveLength(61)
@@ -172,7 +172,7 @@ describe('discoverBlogSlugs', () => {
     }
   })
 
-  it('returns all 58 EN blog slugs', () => {
+  it('returns all 61 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
     expect(en).toHaveLength(61)

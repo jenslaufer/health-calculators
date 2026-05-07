@@ -195,7 +195,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 60 calculators', () => {
+  it('discovers all 63 calculators', () => {
     expect(calculatorMetas).toHaveLength(63)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
@@ -203,7 +203,7 @@ describe('calculator discovery', () => {
     }
   })
 
-  it('builds calculatorComponents map for all 60 keys', () => {
+  it('builds calculatorComponents map for all 63 keys', () => {
     expect(Object.keys(calculatorComponents)).toHaveLength(63)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
@@ -227,14 +227,14 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 58 German blog components', () => {
+  it('discovers all 61 German blog components', () => {
     expect(Object.keys(blogComponentsDe)).toHaveLength(61)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 58 English blog components', () => {
+  it('discovers all 61 English blog components', () => {
     expect(Object.keys(blogComponentsEn)).toHaveLength(61)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
@@ -251,7 +251,7 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 60 calculators with no duplicates', () => {
+  it('groups contain all 63 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
     expect(allKeys).toHaveLength(63)
     expect(new Set(allKeys).size).toBe(63)
@@ -323,7 +323,7 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 336 routes', () => {
+  it('generates exactly 351 routes', () => {
     expect(routes).toHaveLength(351)
   })
 
