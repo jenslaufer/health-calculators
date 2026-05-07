@@ -89,7 +89,6 @@ const EXPECTED_ROUTE_MAP = {
   whtrRechner: { de: 'whtr-rechner', en: 'waist-to-height-ratio-calculator' },
   hepatitisRisk: { de: 'hepatitis-risiko-rechner', en: 'hepatitis-risk-calculator' },
   correctedCalcium: { de: 'korrigiertes-calcium-rechner', en: 'corrected-calcium-calculator' },
-  whtrRechner: { de: 'whtr-rechner', en: 'waist-to-height-ratio-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -143,7 +142,6 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'whtr-berechnen',
   'hepatitis-risiko-berechnen',
   'korrigiertes-calcium-rechner',
-  'whtr-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -256,7 +254,7 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 63 calculators with no duplicates', () => {
+  it('groups contain all 64 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
     expect(allKeys).toHaveLength(64)
     expect(new Set(allKeys).size).toBe(64)
