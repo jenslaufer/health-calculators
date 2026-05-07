@@ -1,0 +1,68 @@
+{
+  "home": {
+    "calculators": {
+      "babyFeedingAmount": {
+        "name": "Baby Trinkmenge Rechner",
+        "description": "Wie viel Milch braucht dein Baby? Tagesmenge und Menge pro Mahlzeit nach Alter und Gewicht."
+      }
+    }
+  },
+  "babyFeedingAmount": {
+    "meta": {
+      "title": "Baby Trinkmenge Rechner — Milchmenge nach Alter und Gewicht",
+      "description": "Berechne die richtige Trinkmenge für dein Baby. Tagesmenge und Menge pro Mahlzeit für Muttermilch und Säuglingsnahrung — nach Alter und Körpergewicht. Kostenlos."
+    },
+    "title": "Baby Trinkmenge Rechner",
+    "description": "Wie viel Muttermilch oder Säuglingsnahrung braucht dein Baby? Berechne die Tagesmenge und die Menge pro Mahlzeit nach Alter und Gewicht.",
+    "ageLabel": "Alter (Monate)",
+    "ageHint": "0–24 Monate. Bei Frühchen mit dem Kinderarzt sprechen.",
+    "weightLabel": "Körpergewicht",
+    "weightHint": "Aktuelles Gewicht des Babys.",
+    "dailyTotal": "Tagesmenge gesamt",
+    "perFeeding": "Menge pro Mahlzeit",
+    "feedingsPerDay": "Mahlzeiten/Tag",
+    "formula": "Berechnung",
+    "day": "Tag",
+    "months": "Monate",
+    "stage": {
+      "newborn": "Neugeborenes",
+      "earlyInfant": "Säugling (2–3 Monate)",
+      "midInfant": "Säugling (4–5 Monate)",
+      "solidsIntro": "Beikost-Phase",
+      "toddler": "Kleinkind"
+    },
+    "tableAge": "Alter",
+    "tableMlPerKg": "Milchmenge",
+    "tableFeedings": "Mahlzeiten/Tag",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner verwendet die international anerkannte Faustregel: Säuglinge unter 6 Monaten benötigen ca. 150 ml Milch pro Kilogramm Körpergewicht pro Tag. Ab 6 Monaten (Beikost-Einführung) sinkt der Bedarf auf ~120 ml/kg, ab 12 Monaten auf ~90 ml/kg. Die Tagesmenge wird auf altersgerechte Mahlzeiten verteilt — von 7–8 bei Neugeborenen bis 4 bei Kleinkindern.",
+    "disclaimer": "Dies sind Richtwerte für gesunde Termingeborene. Trinkmengen variieren stark zwischen Babys. Bei Frühchen, Wachstumsstörungen, Krankheit oder Stillbabys (die nach Bedarf trinken) bitte mit Hebamme oder Kinderarzt abstimmen.",
+    "blogLink": "Mehr im Artikel zur Baby-Trinkmenge",
+    "faq": [
+      {
+        "q": "Wie viel Milch braucht ein Baby pro Tag?",
+        "a": "Als Faustregel gilt: ca. 150 ml Milch pro Kilogramm Körpergewicht pro Tag in den ersten 6 Monaten. Ein 4 kg schweres Baby trinkt also ~600 ml/Tag. Ab 6 Monaten sinkt der Bedarf, weil Beikost dazu kommt."
+      },
+      {
+        "q": "Wie viele Mahlzeiten pro Tag?",
+        "a": "Neugeborene trinken meist 7–8 Mahlzeiten in 24 Stunden. Mit 2–5 Monaten reichen oft 6 Mahlzeiten, ab 6 Monaten sind es 5, ab dem 1. Geburtstag etwa 4. Stillbabys regulieren das selbst — die Anzahl ist nur ein Richtwert."
+      },
+      {
+        "q": "Gilt die Formel auch fürs Stillen?",
+        "a": "Beim Stillen nach Bedarf braucht es keine Mengenrechnung — gestillte Babys regulieren selbst. Der Rechner ist v.a. hilfreich bei Flaschenfütterung, abgepumpter Muttermilch oder Säuglingsnahrung. Stillberatung kann zusätzlich helfen."
+      },
+      {
+        "q": "Was tun, wenn das Baby weniger oder mehr trinkt?",
+        "a": "Schwankungen von ±20 % sind normal. Wichtigste Indikatoren sind regelmäßige Gewichtszunahme, ausreichend nasse Windeln (≥6/Tag) und ein zufriedenes Baby. Bei dauerhaft niedriger Trinkmenge oder fehlender Gewichtszunahme zum Kinderarzt."
+      },
+      {
+        "q": "Ab wann Beikost statt Milch?",
+        "a": "Empfohlener Zeitraum: zwischen 4 und 6 vollendeten Lebensmonaten, abhängig von Beikostreife (Sitzen mit Stütze, Greifen, Verdauung). Milch bleibt bis zum 1. Lebensjahr Hauptnahrung, Beikost ergänzt — daher der niedrigere Milchbedarf."
+      },
+      {
+        "q": "Welche Trinkmenge bei Frühchen?",
+        "a": "Frühchen brauchen oft mehr Kalorien pro kg, aber kleinere Mahlzeiten in kürzeren Abständen. Der Bedarf hängt von korrigiertem Alter, Gewicht und Krankenhausplan ab. Bitte nicht selbst nach Faustformel rechnen — immer mit Kinderarzt abstimmen."
+      }
+    ]
+  }
+}

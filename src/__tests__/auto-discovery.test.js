@@ -24,6 +24,7 @@ const EXPECTED_KEYS = [
   'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator',
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
+  'babyFeedingAmount',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -89,6 +90,7 @@ const EXPECTED_ROUTE_MAP = {
   whtrRechner: { de: 'whtr-rechner', en: 'waist-to-height-ratio-calculator' },
   hepatitisRisk: { de: 'hepatitis-risiko-rechner', en: 'hepatitis-risk-calculator' },
   correctedCalcium: { de: 'korrigiertes-calcium-rechner', en: 'corrected-calcium-calculator' },
+  babyFeedingAmount: { de: 'baby-trinkmenge-rechner', en: 'baby-feeding-amount-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -142,6 +144,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'whtr-berechnen',
   'hepatitis-risiko-berechnen',
   'korrigiertes-calcium-rechner',
+  'baby-trinkmenge-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -195,19 +198,20 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'calculate-waist-to-height-ratio',
   'hepatitis-risk-calculator-guide',
   'corrected-calcium-calculator',
+  'baby-feeding-amount-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 64 calculators', () => {
-    expect(calculatorMetas).toHaveLength(64)
+  it('discovers all 65 calculators', () => {
+    expect(calculatorMetas).toHaveLength(65)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 64 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(64)
+  it('builds calculatorComponents map for all 65 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(65)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -230,15 +234,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 62 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(62)
+  it('discovers all 63 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(63)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 62 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(62)
+  it('discovers all 63 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(63)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -254,10 +258,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 64 calculators with no duplicates', () => {
+  it('groups contain all 65 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(64)
-    expect(new Set(allKeys).size).toBe(64)
+    expect(allKeys).toHaveLength(65)
+    expect(new Set(allKeys).size).toBe(65)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -284,7 +288,7 @@ describe('calculator groups', () => {
 
   it('pregnancy group has correct calculators in order', () => {
     expect(calculatorGroups[3].calculators).toEqual([
-      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore',
+      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore', 'babyFeedingAmount',
     ])
   })
 })
@@ -326,8 +330,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 356 routes', () => {
-    expect(routes).toHaveLength(356)
+  it('generates exactly 361 routes', () => {
+    expect(routes).toHaveLength(361)
   })
 
   it('has locale routes for all calculators in both languages', () => {

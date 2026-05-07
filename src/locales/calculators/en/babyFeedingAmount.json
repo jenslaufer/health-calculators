@@ -1,0 +1,68 @@
+{
+  "home": {
+    "calculators": {
+      "babyFeedingAmount": {
+        "name": "Baby Feeding Amount Calculator",
+        "description": "How much milk does your baby need? Daily total and per-feeding amount by age and weight."
+      }
+    }
+  },
+  "babyFeedingAmount": {
+    "meta": {
+      "title": "Baby Feeding Amount Calculator — Milk Volume by Age and Weight",
+      "description": "Calculate the right feeding amount for your baby. Daily total and per-feeding volume of breast milk or formula based on age and body weight. Free, instant."
+    },
+    "title": "Baby Feeding Amount Calculator",
+    "description": "How much breast milk or formula does your baby need? Get the daily total and per-feeding volume based on age and body weight.",
+    "ageLabel": "Age (months)",
+    "ageHint": "0–24 months. For preterm infants, consult your pediatrician.",
+    "weightLabel": "Body weight",
+    "weightHint": "Current weight of the baby.",
+    "dailyTotal": "Daily total",
+    "perFeeding": "Per feeding",
+    "feedingsPerDay": "feedings/day",
+    "formula": "Calculation",
+    "day": "day",
+    "months": "months",
+    "stage": {
+      "newborn": "Newborn",
+      "earlyInfant": "Young infant (2–3 mo)",
+      "midInfant": "Infant (4–5 mo)",
+      "solidsIntro": "Solids introduction",
+      "toddler": "Toddler"
+    },
+    "tableAge": "Age",
+    "tableMlPerKg": "Milk amount",
+    "tableFeedings": "Feedings/day",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator uses the widely cited rule of thumb: term infants under 6 months need about 150 ml of milk per kilogram of body weight per day. From 6 months (with solids introduced), the need drops to ~120 ml/kg; from 12 months to ~90 ml/kg. The daily volume is split across age-appropriate feedings — from 7–8 in newborns down to 4 in toddlers.",
+    "disclaimer": "These are reference values for healthy term infants. Volumes vary considerably between babies. For preterm infants, growth concerns, illness, or breastfed babies (who feed on demand), please consult your pediatrician or lactation consultant.",
+    "blogLink": "Read more in the baby feeding amount guide",
+    "faq": [
+      {
+        "q": "How much milk does a baby need per day?",
+        "a": "A common rule of thumb: about 150 ml of milk per kilogram of body weight per day during the first 6 months. A 4 kg baby would drink ~600 ml/day. From 6 months on, the need decreases as solid foods are introduced."
+      },
+      {
+        "q": "How many feedings per day?",
+        "a": "Newborns typically feed 7–8 times in 24 hours. From 2–5 months, 6 feedings are usually enough; from 6 months, 5 feedings; from 12 months, about 4. Breastfed babies self-regulate — counts are reference points only."
+      },
+      {
+        "q": "Does the rule apply to breastfeeding?",
+        "a": "On-demand breastfeeding doesn't require volume math — breastfed babies self-regulate. The calculator is most useful for bottle-feeding with formula or expressed breast milk. A lactation consultant can help with breastfeeding questions."
+      },
+      {
+        "q": "What if my baby drinks less or more than the calculated amount?",
+        "a": "Variations of ±20 % are normal. The key indicators are steady weight gain, enough wet diapers (≥6 per day) and a content baby. If intake stays consistently low or weight gain stalls, see your pediatrician."
+      },
+      {
+        "q": "When to start solids instead of milk?",
+        "a": "Recommended window: between 4 and 6 completed months, depending on signs of readiness (sits with support, grasps, digestion ready). Milk remains the primary food until 12 months; solids complement — that's why the milk requirement drops."
+      },
+      {
+        "q": "What about preterm babies?",
+        "a": "Preterm infants often need more calories per kg but smaller feedings at shorter intervals. Volumes depend on corrected age, weight and the hospital feeding plan. Don't apply rules of thumb — always coordinate with your pediatrician."
+      }
+    ]
+  }
+}

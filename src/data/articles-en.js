@@ -557,6 +557,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'correctedCalcium',
     related: ['anion-gap', 'sodium-correction-calculator', 'gfr-calculator-kidney-function'],
   },
+  {
+    slug: 'baby-feeding-amount-guide',
+    title: 'Baby Feeding Amount Guide — How Much Milk Does Your Baby Need?',
+    description: 'How much breast milk or formula does your baby need? Feeding amounts by age and weight — rule of thumb, schedule table, and free online calculator.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'babyFeedingAmount',
+    related: ['child-growth-percentile-chart', 'due-date-calculator', 'child-dosage-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

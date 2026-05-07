@@ -557,6 +557,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'correctedCalcium',
     related: ['anionenluecke-rechner', 'natrium-korrektur-berechnen', 'gfr-rechner'],
   },
+  {
+    slug: 'baby-trinkmenge-berechnen',
+    title: 'Baby Trinkmenge berechnen — Wie viel Milch braucht dein Baby?',
+    description: 'Wie viel Muttermilch oder Säuglingsnahrung braucht dein Baby? Trinkmenge nach Alter und Gewicht — Faustformel, Tabelle und kostenloser Rechner.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'babyFeedingAmount',
+    related: ['wachstumsperzentile-kinder', 'geburtsterminrechner', 'kinder-dosierung-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
