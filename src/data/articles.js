@@ -566,6 +566,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'asthmaControl',
     related: ['vo2max-berechnen', 'herzfrequenz-zonen-berechnen', 'vitamin-d-berechnen'],
   },
+  {
+    slug: 'baby-meilensteine-tracker',
+    title: 'Baby-Meilensteine 0–24 Monate — was dein Baby wann kann',
+    description: 'Welche Entwicklungsmeilensteine erreicht ein Baby in welchem Alter? Übersicht für 2, 4, 6, 9, 12, 15, 18 und 24 Monate nach CDC — Motorik, Sprache, Sozial, Kognition.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'babyMilestones',
+    related: ['wachstumsperzentile-kinder', 'apgar-score-bewerten', 'geburtsterminrechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

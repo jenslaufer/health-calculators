@@ -566,6 +566,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'asthmaControl',
     related: ['calculate-vo2max', 'calculate-heart-rate-zones', 'vitamin-d-calculator'],
   },
+  {
+    slug: 'baby-milestone-tracker-guide',
+    title: 'Baby Milestones 0–24 Months — What Babies Do When',
+    description: "What developmental milestones should your baby reach at 2, 4, 6, 9, 12, 15, 18 and 24 months? CDC framework with watch-out signs and tips on when to call the pediatrician.",
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'babyMilestones',
+    related: ['child-growth-percentile-chart', 'apgar-score-calculator-guide', 'due-date-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
