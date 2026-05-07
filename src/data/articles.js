@@ -530,6 +530,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'osteoporosisRisk',
     related: ['vitamin-d-berechnen', 'biologisches-alter-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'hepatitis-risiko-berechnen',
+    title: 'Hepatitis-Risiko berechnen: Hepatitis B und C aus Expositionsfaktoren erkennen',
+    description: 'Hepatitis-B- und -C-Risiko aus 13 evidenzbasierten Expositionsfaktoren einschätzen. Übertragungswege, Impfschutz, Postexpositionsprophylaxe und Diagnostik — kompakt erklärt.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'hepatitisRisk',
+    related: ['promille-berechnen', 'alkohol-einheiten-berechnen', 'anaemie-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
