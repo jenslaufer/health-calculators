@@ -1,0 +1,69 @@
+{
+  "home": {
+    "calculators": {
+      "correctedCalcium": {
+        "name": "Corrected Calcium Calculator",
+        "description": "Calculate albumin-corrected serum calcium — accurate classification in hypoalbuminemia."
+      }
+    }
+  },
+  "correctedCalcium": {
+    "meta": {
+      "title": "Corrected Calcium Calculator — Albumin Correction (Payne Formula) | Health Calculators",
+      "description": "Calculate albumin-corrected calcium with the Payne formula. Conventional (mg/dL) and SI (mmol/L) units, with clinical interpretation. Free online."
+    },
+    "title": "Corrected Calcium Calculator",
+    "description": "Calculate albumin-corrected serum calcium with the Payne formula in conventional or SI units, with clinical classification.",
+    "totalCaLabel": "Total Calcium",
+    "albuminLabel": "Serum Albumin",
+    "albuminHint": "Normal albumin: 4.0 g/dL or 40 g/L. Without albumin no correction is possible.",
+    "warningAlbuminMissing": "Albumin missing. The albumin value is required to compute the correction.",
+    "warningPlausibility": "Input value outside the physiologic range. Please check your input.",
+    "resultCorrected": "Corrected Calcium",
+    "resultDelta": "Delta vs. measured",
+    "clinicalHint": "Clinical Hint",
+    "formula": "Formula",
+    "formulaConventional": "Corrected Ca = Total Ca + 0.8 × (4.0 − Albumin [g/dL])",
+    "formulaSi": "Corrected Ca = Total Ca + 0.02 × (40 − Albumin [g/L])",
+    "interpretation": {
+      "hypocalcemia": "Hypocalcemia",
+      "normal": "Normal Calcium",
+      "hypercalcemia": "Hypercalcemia"
+    },
+    "hint": {
+      "hypocalcemia": "Hypocalcemia after albumin correction. Causes: vitamin D deficiency, hypoparathyroidism, CKD, acute pancreatitis, severe sepsis. Verify with clinical context and consider ionized calcium.",
+      "normal": "Corrected calcium within the normal range (8.5–10.2 mg/dL or 2.12–2.55 mmol/L).",
+      "hypercalcemia": "Hypercalcemia after correction. Most common causes: primary hyperparathyroidism and malignancy. Workup: PTH, vitamin D, phosphate, kidney function."
+    },
+    "referenceTitle": "Reference Ranges (corrected calcium)",
+    "referenceRanges": [
+      { "range": "< 8.5 mg/dL  ·  < 2.12 mmol/L", "label": "Hypocalcemia", "hint": "Symptoms: tetany, paresthesia, cramps" },
+      { "range": "8.5 – 10.2 mg/dL  ·  2.12 – 2.55 mmol/L", "label": "Normal", "hint": "Albumin-corrected normal range" },
+      { "range": "> 10.2 mg/dL  ·  > 2.55 mmol/L", "label": "Hypercalcemia", "hint": "DDx: HPT, malignancy, vitamin D toxicity" }
+    ],
+    "disclaimer": "The Payne correction is unreliable in severe acid-base disturbances. Ionized calcium is the gold standard. This calculator does not replace clinical diagnosis.",
+    "blogLink": "Read more in the corrected calcium article",
+    "faq": [
+      {
+        "q": "Why correct calcium for albumin?",
+        "a": "About 40% of serum calcium is bound to albumin. In hypoalbuminemia the measured total calcium appears falsely low even though the physiologically active ionized calcium may be normal. The Payne formula compensates for this effect."
+      },
+      {
+        "q": "What is the Payne formula?",
+        "a": "Corrected Ca [mg/dL] = Total Ca + 0.8 × (4.0 − Albumin [g/dL]). In SI units: Corrected Ca [mmol/L] = Total Ca + 0.02 × (40 − Albumin [g/L])."
+      },
+      {
+        "q": "When is the correction unreliable?",
+        "a": "In severe acid-base disturbances, multiple myeloma (paraprotein-related pseudohypercalcemia), and in critically ill patients. In those cases, ionized calcium should be measured directly."
+      },
+      {
+        "q": "Which normal albumin value is used?",
+        "a": "The formula uses 4.0 g/dL (or 40 g/L) as the reference. At exactly this albumin value, no correction occurs — total and corrected calcium are identical."
+      },
+      {
+        "q": "Does this calculator replace medical diagnosis?",
+        "a": "No. Albumin-corrected calcium is an interpretation aid and must be considered together with clinical context (symptoms, PTH, vitamin D, kidney function)."
+      }
+    ]
+  }
+}

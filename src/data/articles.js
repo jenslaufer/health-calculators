@@ -530,6 +530,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'osteoporosisRisk',
     related: ['vitamin-d-berechnen', 'biologisches-alter-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'korrigiertes-calcium-rechner',
+    title: 'Korrigiertes Calcium berechnen: Albumin-Korrektur (Payne-Formel)',
+    description: 'Albumin-korrigiertes Calcium nach Payne — Formel, Normwerte, Hypoalbuminämie und Grenzen der Korrektur. Mit kostenlosem Online-Rechner.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'correctedCalcium',
+    related: ['anionenluecke-rechner', 'natrium-korrektur-berechnen', 'gfr-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -1,0 +1,69 @@
+{
+  "home": {
+    "calculators": {
+      "correctedCalcium": {
+        "name": "Korrigiertes Calcium Rechner",
+        "description": "Albumin-korrigiertes Serumcalcium berechnen — bei Hypoalbuminämie korrekt einordnen."
+      }
+    }
+  },
+  "correctedCalcium": {
+    "meta": {
+      "title": "Korrigiertes Calcium Rechner — Albumin-Korrektur (Payne-Formel) | Health Calculators",
+      "description": "Korrigiertes Calcium berechnen mit der Payne-Formel. Albumin-Korrektur in mg/dL und mmol/L, mit klinischer Einordnung. Kostenlos online."
+    },
+    "title": "Korrigiertes Calcium Rechner",
+    "description": "Albumin-korrigiertes Serumcalcium berechnen mit Payne-Formel — in konventionellen oder SI-Einheiten, mit klinischer Einordnung.",
+    "totalCaLabel": "Gesamtcalcium",
+    "albuminLabel": "Serum-Albumin",
+    "albuminHint": "Normalwert: 4,0 g/dL bzw. 40 g/L. Ohne Albumin keine Korrektur möglich.",
+    "warningAlbuminMissing": "Albumin fehlt. Für die Korrektur ist der Albuminwert erforderlich.",
+    "warningPlausibility": "Eingabewert außerhalb des physiologischen Bereichs. Bitte Eingabe prüfen.",
+    "resultCorrected": "Korrigiertes Calcium",
+    "resultDelta": "Differenz vs. gemessen",
+    "clinicalHint": "Klinischer Hinweis",
+    "formula": "Formel",
+    "formulaConventional": "Korrigiertes Ca = Total Ca + 0,8 × (4,0 − Albumin [g/dL])",
+    "formulaSi": "Korrigiertes Ca = Total Ca + 0,02 × (40 − Albumin [g/L])",
+    "interpretation": {
+      "hypocalcemia": "Hypokalzämie",
+      "normal": "Normales Calcium",
+      "hypercalcemia": "Hyperkalzämie"
+    },
+    "hint": {
+      "hypocalcemia": "Hypokalzämie nach Albumin-Korrektur. Ursachen: Vitamin-D-Mangel, Hypoparathyreoidismus, chronische Niereninsuffizienz, akute Pankreatitis, schwere Sepsis. Klinischer Kontext und ionisiertes Calcium prüfen.",
+      "normal": "Korrigiertes Calcium im Normbereich (8,5–10,2 mg/dL bzw. 2,12–2,55 mmol/L).",
+      "hypercalcemia": "Hyperkalzämie nach Korrektur. Häufigste Ursachen: primärer Hyperparathyreoidismus und Malignome. Weitere Abklärung: PTH, Vitamin D, Phosphat, Nierenfunktion."
+    },
+    "referenceTitle": "Referenzbereiche (korrigiertes Calcium)",
+    "referenceRanges": [
+      { "range": "< 8,5 mg/dL  ·  < 2,12 mmol/L", "label": "Hypokalzämie", "hint": "Symptome: Tetanie, Parästhesien, Krämpfe" },
+      { "range": "8,5 – 10,2 mg/dL  ·  2,12 – 2,55 mmol/L", "label": "Normal", "hint": "Albumin-korrigierter Normbereich" },
+      { "range": "> 10,2 mg/dL  ·  > 2,55 mmol/L", "label": "Hyperkalzämie", "hint": "DD: HPT, Malignom, Vitamin-D-Intoxikation" }
+    ],
+    "disclaimer": "Die Payne-Korrektur ist bei schweren Säure-Basen-Störungen unzuverlässig. Goldstandard ist das ionisierte Calcium. Dieser Rechner ersetzt keine ärztliche Diagnose.",
+    "blogLink": "Mehr im Artikel zum korrigierten Calcium",
+    "faq": [
+      {
+        "q": "Warum muss Calcium nach Albumin korrigiert werden?",
+        "a": "Etwa 40 % des Serumcalciums sind an Albumin gebunden. Bei Hypoalbuminämie fällt das gemessene Gesamtcalcium falsch niedrig aus, obwohl das physiologisch wirksame ionisierte Calcium normal sein kann. Die Payne-Formel kompensiert diesen Effekt."
+      },
+      {
+        "q": "Was ist die Payne-Formel?",
+        "a": "Korrigiertes Ca [mg/dL] = Gesamt-Ca + 0,8 × (4,0 − Albumin [g/dL]). In SI-Einheiten: Korrigiertes Ca [mmol/L] = Gesamt-Ca + 0,02 × (40 − Albumin [g/L])."
+      },
+      {
+        "q": "Wann ist die Korrektur unzuverlässig?",
+        "a": "Bei schweren Säure-Basen-Störungen, bei Multiplem Myelom (paraproteinbedingte Pseudohypercalcämie) und in der Intensivmedizin. In diesen Fällen sollte das ionisierte Calcium gemessen werden."
+      },
+      {
+        "q": "Welcher Albumin-Normwert wird verwendet?",
+        "a": "Die Formel verwendet 4,0 g/dL (bzw. 40 g/L) als Normalwert. Bei genau diesem Albuminwert ergibt sich keine Korrektur — Gesamtcalcium und korrigiertes Calcium sind identisch."
+      },
+      {
+        "q": "Ersetzt der Rechner ärztliche Diagnose?",
+        "a": "Nein. Die albumin-korrigierte Calcium-Berechnung ist ein Hilfsmittel zur Befundinterpretation und muss immer im klinischen Kontext (Symptome, PTH, Vitamin D, Nierenfunktion) interpretiert werden."
+      }
+    ]
+  }
+}

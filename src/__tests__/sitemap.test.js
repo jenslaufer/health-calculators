@@ -121,7 +121,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
 describe('discoverMetas', () => {
   it('discovers all 60 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(61)
+    expect(metas).toHaveLength(62)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -162,7 +162,7 @@ describe('discoverBlogSlugs', () => {
   it('returns all 58 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(59)
+    expect(de).toHaveLength(60)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
@@ -171,7 +171,7 @@ describe('discoverBlogSlugs', () => {
   it('returns all 58 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(59)
+    expect(en).toHaveLength(60)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -241,7 +241,7 @@ describe('generateSitemap', () => {
 
   it('generates correct total URL count (2 home + 120 calcs + 2 blog index + 116 blog articles = 240)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(244)
+    expect(urlCount).toBe(248)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
