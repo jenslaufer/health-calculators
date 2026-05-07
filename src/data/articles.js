@@ -566,6 +566,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'babyFeedingAmount',
     related: ['apgar-score-bewerten', 'wachstumsperzentile-kinder', 'kinder-dosierung-rechner'],
   },
+  {
+    slug: 'asthma-kontrolle-testen',
+    title: 'Asthma-Kontrolle testen: Der ACT-Score einfach erklärt',
+    description: 'Wie gut ist dein Asthma kontrolliert? Der validierte Asthma Control Test (ACT) gibt in fünf Fragen einen Score von 5–25 mit klarer Einordnung und Handlungsempfehlung.',
+    date: '2026-05-07',
+    readTime: '8 min',
+    calculatorKey: 'asthmaControl',
+    related: ['vo2max-berechnen', 'herzfrequenz-zonen-berechnen', 'vitamin-d-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

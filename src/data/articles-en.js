@@ -566,6 +566,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'babyFeedingAmount',
     related: ['apgar-score-calculator-guide', 'child-growth-percentile-chart', 'child-dosage-calculator'],
   },
+  {
+    slug: 'asthma-control-test-guide',
+    title: 'Asthma Control Test (ACT) Guide: Score, Ranges, and Next Steps',
+    description: 'How well is your asthma controlled? The validated 5-question ACT yields a 5–25 score with clear interpretation and step-up guidance for everyday management.',
+    date: '2026-05-07',
+    readTime: '8 min',
+    calculatorKey: 'asthmaControl',
+    related: ['calculate-vo2max', 'calculate-heart-rate-zones', 'vitamin-d-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

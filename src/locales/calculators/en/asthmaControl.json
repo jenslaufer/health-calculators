@@ -1,0 +1,124 @@
+{
+  "home": {
+    "calculators": {
+      "asthmaControl": {
+        "name": "Asthma Control Test (ACT)",
+        "description": "Calculate your ACT score — assess asthma control over the past 4 weeks."
+      }
+    }
+  },
+  "asthmaControl": {
+    "meta": {
+      "title": "Asthma Control Test (ACT) Calculator — Score 5–25 | Health Calculators",
+      "description": "Take the validated Asthma Control Test online. 5 questions, score 5–25, classification: well / not well / poorly controlled. Free, instant, anonymous."
+    },
+    "title": "Asthma Control Test (ACT)",
+    "description": "Answer five questions about the past four weeks. Your ACT score (5–25) helps you and your doctor judge how well your asthma is controlled.",
+    "introNote": "Reference period: the past 4 weeks. Pick exactly one answer per question.",
+    "questions": {
+      "activityLimitation": {
+        "title": "1. In the past 4 weeks, how much of the time did your asthma keep you from getting as much done at work, school, or home?",
+        "options": [
+          { "value": 1, "label": "All of the time" },
+          { "value": 2, "label": "Most of the time" },
+          { "value": 3, "label": "Some of the time" },
+          { "value": 4, "label": "A little of the time" },
+          { "value": 5, "label": "None of the time" }
+        ]
+      },
+      "shortnessOfBreath": {
+        "title": "2. During the past 4 weeks, how often have you had shortness of breath?",
+        "options": [
+          { "value": 1, "label": "More than once a day" },
+          { "value": 2, "label": "Once a day" },
+          { "value": 3, "label": "3 to 6 times a week" },
+          { "value": 4, "label": "Once or twice a week" },
+          { "value": 5, "label": "Not at all" }
+        ]
+      },
+      "nightSymptoms": {
+        "title": "3. During the past 4 weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness) wake you up at night or earlier than usual?",
+        "options": [
+          { "value": 1, "label": "4 or more nights a week" },
+          { "value": 2, "label": "2 to 3 nights a week" },
+          { "value": 3, "label": "Once a week" },
+          { "value": 4, "label": "Once or twice total" },
+          { "value": 5, "label": "Not at all" }
+        ]
+      },
+      "rescueInhalerUse": {
+        "title": "4. During the past 4 weeks, how often have you used your rescue inhaler or nebulizer (e.g. albuterol/salbutamol)?",
+        "options": [
+          { "value": 1, "label": "3 or more times a day" },
+          { "value": 2, "label": "1 to 2 times a day" },
+          { "value": 3, "label": "2 to 3 times a week" },
+          { "value": 4, "label": "Once a week or less" },
+          { "value": 5, "label": "Not at all" }
+        ]
+      },
+      "selfRating": {
+        "title": "5. How would you rate your asthma control during the past 4 weeks?",
+        "options": [
+          { "value": 1, "label": "Not controlled at all" },
+          { "value": 2, "label": "Poorly controlled" },
+          { "value": 3, "label": "Somewhat controlled" },
+          { "value": 4, "label": "Well controlled" },
+          { "value": 5, "label": "Completely controlled" }
+        ]
+      }
+    },
+    "categories": {
+      "wellControlled": "Well controlled",
+      "notWellControlled": "Not well controlled",
+      "poorlyControlled": "Poorly controlled"
+    },
+    "hints": {
+      "wellControlled": "Score 20–25: Your asthma appears well controlled. Stay on your current treatment and trigger avoidance. Discuss any step-down with your doctor at the next visit.",
+      "notWellControlled": "Score 16–19: Your asthma is not adequately controlled. Schedule a visit with your doctor — a step-up in controller therapy is often appropriate.",
+      "poorlyControlled": "Score 5–15: Your asthma is poorly controlled. Seek medical attention soon. For acute breathlessness use your rescue inhaler and call emergency services if needed."
+    },
+    "reset": "Reset answers",
+    "scoreLabel": "ACT score",
+    "scoreScale": "of 25",
+    "incompleteHint": "Answer all 5 questions to see your ACT score.",
+    "scaleTitle": "Score interpretation",
+    "scaleRows": [
+      { "range": "20 – 25", "label": "Well controlled", "hint": "Maintain therapy and trigger avoidance" },
+      { "range": "16 – 19", "label": "Not well controlled", "hint": "Discuss therapy adjustment with your doctor" },
+      { "range": "5 – 15", "label": "Poorly controlled", "hint": "Seek medical review promptly" }
+    ],
+    "howItWorks": "How it works",
+    "howItWorksText": "The Asthma Control Test (ACT) was validated by Nathan and colleagues in 2004 (J Allergy Clin Immunol). Five questions, scored 1–5 each, sum to 5–25 total. A score ≥ 20 indicates well-controlled asthma; ≤ 19 suggests treatment review. GINA recommends the ACT as a longitudinal monitoring tool.",
+    "disclaimer": "The ACT is a screening and monitoring tool. It does not replace clinical diagnosis. For acute breathlessness, rescue inhaler use exceeding 4× per day, or rapid deterioration, seek medical attention immediately.",
+    "faq": [
+      {
+        "q": "What does the Asthma Control Test (ACT) measure?",
+        "a": "The ACT measures how well your asthma was controlled over the past 4 weeks. It captures activity limitation, shortness of breath, nighttime symptoms, rescue inhaler use, and your subjective control rating."
+      },
+      {
+        "q": "What do the score ranges mean?",
+        "a": "20–25 points: well controlled. 16–19 points: not well controlled. 5–15 points: poorly controlled. A score of 25 indicates complete control."
+      },
+      {
+        "q": "How often should I take the ACT?",
+        "a": "Every 3 months when stable; more often during therapy changes or worsening. Trends across multiple tests carry more weight than a single value."
+      },
+      {
+        "q": "What does a score below 20 mean?",
+        "a": "A score below 20 indicates your asthma was not optimally controlled in the past 4 weeks. That is a reason to discuss therapy adjustments or trigger avoidance with your doctor — not necessarily an emergency."
+      },
+      {
+        "q": "Is the ACT suitable for children?",
+        "a": "The ACT shown here is validated for adults and adolescents 12+ years. For children aged 4–11, use the Childhood Asthma Control Test (cACT) with age-appropriate items."
+      },
+      {
+        "q": "Does the ACT replace lung function testing?",
+        "a": "No. The ACT captures symptoms, not lung function. Spirometry (FEV1) or peak flow measurements complement the ACT — together they give the full picture of asthma control."
+      },
+      {
+        "q": "What if I have acute breathlessness despite a high ACT score?",
+        "a": "An acute attack overrides the ACT. Use your rescue inhaler (2–4 puffs of albuterol/salbutamol), sit upright, breathe calmly. If symptoms do not improve, call emergency services."
+      }
+    ]
+  }
+}
