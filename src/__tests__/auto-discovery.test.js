@@ -23,7 +23,7 @@ const EXPECTED_KEYS = [
   'prostateRisk', 'pcosSymptoms', 'testosteroneLevel', 'erectileDysfunction',
   'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator',
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
-  'apgarScore', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium',
+  'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -86,6 +86,7 @@ const EXPECTED_ROUTE_MAP = {
   anemiaRisk: { de: 'anaemie-risiko-rechner', en: 'anemia-risk-calculator' },
   apgarScore: { de: 'apgar-score-rechner', en: 'apgar-score-calculator' },
   osteoporosisRisk: { de: 'osteoporose-risiko-rechner', en: 'osteoporosis-risk-calculator' },
+  whtrRechner: { de: 'whtr-rechner', en: 'waist-to-height-ratio-calculator' },
   hepatitisRisk: { de: 'hepatitis-risiko-rechner', en: 'hepatitis-risk-calculator' },
   correctedCalcium: { de: 'korrigiertes-calcium-rechner', en: 'corrected-calcium-calculator' },
 }
@@ -138,6 +139,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'anaemie-risiko-berechnen',
   'apgar-score-bewerten',
   'osteoporose-risiko-berechnen',
+  'whtr-berechnen',
   'hepatitis-risiko-berechnen',
   'korrigiertes-calcium-rechner',
 ]
@@ -190,21 +192,22 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'anemia-risk-calculator-guide',
   'apgar-score-calculator-guide',
   'osteoporosis-risk-calculator-guide',
+  'calculate-waist-to-height-ratio',
   'hepatitis-risk-calculator-guide',
   'corrected-calcium-calculator',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 63 calculators', () => {
-    expect(calculatorMetas).toHaveLength(63)
+  it('discovers all 64 calculators', () => {
+    expect(calculatorMetas).toHaveLength(64)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 63 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(63)
+  it('builds calculatorComponents map for all 64 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(64)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -227,15 +230,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 61 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(61)
+  it('discovers all 62 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(62)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 61 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(61)
+  it('discovers all 62 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(62)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -251,10 +254,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 63 calculators with no duplicates', () => {
+  it('groups contain all 64 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(63)
-    expect(new Set(allKeys).size).toBe(63)
+    expect(allKeys).toHaveLength(64)
+    expect(new Set(allKeys).size).toBe(64)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -262,7 +265,7 @@ describe('calculator groups', () => {
 
   it('bodyComposition group has correct calculators in order', () => {
     expect(calculatorGroups[0].calculators).toEqual([
-      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'leanBodyMass', 'bsa', 'bodyType', 'bmiFrauen', 'bmiMaenner',
+      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'whtrRechner', 'leanBodyMass', 'bsa', 'bodyType', 'bmiFrauen', 'bmiMaenner',
     ])
   })
 
@@ -323,8 +326,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 351 routes', () => {
-    expect(routes).toHaveLength(351)
+  it('generates exactly 356 routes', () => {
+    expect(routes).toHaveLength(356)
   })
 
   it('has locale routes for all calculators in both languages', () => {
