@@ -539,6 +539,24 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'whtrRechner',
     related: ['bmi-berechnen', 'taille-hueft-verhaeltnis-berechnen', 'koerperfett-berechnen'],
   },
+  {
+    slug: 'hepatitis-risiko-berechnen',
+    title: 'Hepatitis-Risiko berechnen: Hepatitis B und C aus Expositionsfaktoren erkennen',
+    description: 'Hepatitis-B- und -C-Risiko aus 13 evidenzbasierten Expositionsfaktoren einschätzen. Übertragungswege, Impfschutz, Postexpositionsprophylaxe und Diagnostik — kompakt erklärt.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'hepatitisRisk',
+    related: ['promille-berechnen', 'alkohol-einheiten-berechnen', 'anaemie-risiko-berechnen'],
+  },
+  {
+    slug: 'korrigiertes-calcium-rechner',
+    title: 'Korrigiertes Calcium berechnen: Albumin-Korrektur (Payne-Formel)',
+    description: 'Albumin-korrigiertes Calcium nach Payne — Formel, Normwerte, Hypoalbuminämie und Grenzen der Korrektur. Mit kostenlosem Online-Rechner.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'correctedCalcium',
+    related: ['anionenluecke-rechner', 'natrium-korrektur-berechnen', 'gfr-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

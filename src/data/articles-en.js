@@ -539,6 +539,24 @@ slug: 'calculate-vo2max',
     calculatorKey: 'whtrRechner',
     related: ['calculate-bmi', 'calculate-waist-hip-ratio', 'calculate-body-fat'],
   },
+  {
+    slug: 'hepatitis-risk-calculator-guide',
+    title: 'Hepatitis Risk Calculator: Screen for Hepatitis B and C from Exposure Factors',
+    description: 'Estimate hepatitis B and C risk from 13 evidence-based exposure factors. Transmission routes, vaccination, post-exposure prophylaxis, and diagnostics — clearly explained.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'hepatitisRisk',
+    related: ['blood-alcohol-calculator', 'alcohol-unit-calculator', 'anemia-risk-calculator-guide'],
+  },
+  {
+    slug: 'corrected-calcium-calculator',
+    title: 'Corrected Calcium Calculator: Albumin Correction (Payne Formula)',
+    description: 'Albumin-corrected calcium with the Payne formula — formula, normal ranges, hypoalbuminemia, and the limits of the correction. Free online calculator.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    calculatorKey: 'correctedCalcium',
+    related: ['anion-gap', 'sodium-correction-calculator', 'gfr-calculator-kidney-function'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
