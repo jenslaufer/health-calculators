@@ -575,6 +575,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'asthmaControl',
     related: ['vo2max-berechnen', 'herzfrequenz-zonen-berechnen', 'vitamin-d-berechnen'],
   },
+  {
+    slug: 'copd-assessment-berechnen',
+    title: 'COPD Assessment berechnen: CAT, mMRC und GOLD-Gruppe verstehen',
+    description: 'COPD-Symptome objektiv einordnen: mMRC-Atemnot-Skala, CAT-Score (0–40) und Exazerbationen ergeben die GOLD 2023 ABE-Gruppe — mit klaren Schwellenwerten und Therapie-Hinweisen.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'copdAssessment',
+    related: ['asthma-kontrolle-testen', 'vo2max-berechnen', 'rauchen-kosten-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

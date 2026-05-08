@@ -575,6 +575,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'asthmaControl',
     related: ['calculate-vo2max', 'calculate-heart-rate-zones', 'vitamin-d-calculator'],
   },
+  {
+    slug: 'copd-assessment-guide',
+    title: 'COPD Assessment Guide: CAT, mMRC, and GOLD Group Explained',
+    description: 'Quantify COPD symptom burden and exacerbation risk with mMRC, CAT, and GOLD 2023 ABE classification — score interpretation, thresholds, and treatment cues.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    calculatorKey: 'copdAssessment',
+    related: ['asthma-control-test-guide', 'calculate-vo2max', 'smoking-cost-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

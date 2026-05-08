@@ -1,0 +1,135 @@
+{
+  "home": {
+    "calculators": {
+      "copdAssessment": {
+        "name": "COPD Assessment (CAT, mMRC, GOLD)",
+        "description": "Combine mMRC, CAT and exacerbations to find your GOLD 2023 group (A/B/E)."
+      }
+    }
+  },
+  "copdAssessment": {
+    "meta": {
+      "title": "COPD Assessment Calculator — CAT, mMRC & GOLD Group (A/B/E) | Health Calculators",
+      "description": "Score your COPD symptoms: mMRC dyspnea scale, CAT score (0–40), exacerbation history — automatic GOLD 2023 ABE classification. Free, anonymous, instant."
+    },
+    "title": "COPD Assessment (CAT, mMRC, GOLD)",
+    "description": "Answer ten questions about breathlessness, daily symptoms and flare-ups in the past year. The calculator returns your mMRC grade, CAT score and GOLD group (A/B/E) per GOLD 2023.",
+    "introNote": "Reference period: current state and the past 12 months. Pick exactly one answer per question.",
+    "sections": {
+      "mmrc": "1. mMRC — Dyspnea Scale",
+      "cat": "2. CAT — COPD Assessment Test (8 items)",
+      "exacerbations": "3. Exacerbations (past 12 months)"
+    },
+    "mmrc": {
+      "title": "When does breathlessness occur?",
+      "options": [
+        { "value": 0, "label": "Grade 0 — Only with strenuous exercise" },
+        { "value": 1, "label": "Grade 1 — When hurrying or walking up a slight hill" },
+        { "value": 2, "label": "Grade 2 — Walk slower than peers, or stop on level ground" },
+        { "value": 3, "label": "Grade 3 — Stop after 100 m or after a few minutes on level ground" },
+        { "value": 4, "label": "Grade 4 — Too breathless to leave the house or while dressing" }
+      ]
+    },
+    "cat": {
+      "scaleLow": "0",
+      "scaleHigh": "5",
+      "questions": {
+        "cough": { "low": "I never cough", "high": "I cough all the time" },
+        "phlegm": { "low": "I have no phlegm in my chest at all", "high": "My chest is completely full of phlegm" },
+        "chestTightness": { "low": "My chest does not feel tight at all", "high": "My chest feels very tight" },
+        "breathlessness": { "low": "When I walk up a hill or one flight of stairs I am not breathless", "high": "When I walk up a hill or one flight of stairs I am very breathless" },
+        "activityLimitation": { "low": "I am not limited doing any activities at home", "high": "I am very limited doing activities at home" },
+        "leavingHome": { "low": "I am confident leaving my home despite my lung condition", "high": "I am not at all confident leaving my home because of my lung condition" },
+        "sleep": { "low": "I sleep soundly", "high": "I don't sleep soundly because of my lung condition" },
+        "energy": { "low": "I have lots of energy", "high": "I have no energy at all" }
+      },
+      "labels": {
+        "cough": "Cough",
+        "phlegm": "Phlegm",
+        "chestTightness": "Chest tightness",
+        "breathlessness": "Breathlessness on exertion",
+        "activityLimitation": "Activities at home",
+        "leavingHome": "Leaving home",
+        "sleep": "Sleep",
+        "energy": "Energy"
+      }
+    },
+    "exacerbations": {
+      "moderate": {
+        "title": "How many moderate exacerbations (antibiotics or oral steroids without admission) did you have in the past 12 months?",
+        "options": [
+          { "value": 0, "label": "None" },
+          { "value": 1, "label": "1" },
+          { "value": 2, "label": "2 or more" }
+        ]
+      },
+      "hospitalized": {
+        "title": "Have you been hospitalized at least once because of an exacerbation in the past 12 months?",
+        "options": [
+          { "value": "no", "label": "No" },
+          { "value": "yes", "label": "Yes" }
+        ]
+      }
+    },
+    "results": {
+      "title": "Your COPD assessment",
+      "groupLabel": "GOLD group",
+      "catLabel": "CAT score",
+      "catScale": "of 40",
+      "mmrcLabel": "mMRC grade",
+      "mmrcScale": "of 4",
+      "groupHints": {
+        "A": "Group A — few symptoms, low exacerbation risk. Initial therapy is usually a single bronchodilator. Continue regular review and trigger avoidance.",
+        "B": "Group B — many symptoms, low exacerbation risk. Initial therapy is typically dual bronchodilation (LABA + LAMA). Discuss adjustments with your clinician.",
+        "E": "Group E — high exacerbation risk (≥ 2 moderate or ≥ 1 hospitalization). Often combination therapy (LABA + LAMA, ± ICS if eosinophils elevated). Seek prompt clinical review."
+      },
+      "categoryHints": {
+        "low": "Low impact on everyday life.",
+        "medium": "Medium impact — symptoms noticeable.",
+        "high": "High impact on everyday life.",
+        "veryHigh": "Very high impact — broad daily limitation."
+      }
+    },
+    "incompleteHint": "Answer every question to see your COPD assessment.",
+    "reset": "Reset answers",
+    "scaleTitle": "GOLD 2023 ABE matrix",
+    "scaleRows": [
+      { "group": "A", "criteria": "0–1 moderate, no admission · mMRC ≤ 1 · CAT < 10", "label": "Few symptoms, low risk" },
+      { "group": "B", "criteria": "0–1 moderate, no admission · mMRC ≥ 2 or CAT ≥ 10", "label": "Many symptoms, low risk" },
+      { "group": "E", "criteria": "≥ 2 moderate OR ≥ 1 hospitalization", "label": "High exacerbation risk" }
+    ],
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator combines three validated tools: mMRC (dyspnea scale 0–4 per Bestall, 1999), CAT (8 items × 0–5, total 0–40 per Jones, 2009) and the exacerbation history of the past 12 months. Together they determine your GOLD 2023 ABE group — the basis of initial pharmacotherapy. The spirometric GOLD grade (1–4) requires lung function testing in clinic.",
+    "disclaimer": "This tool does not replace clinical diagnosis. A COPD diagnosis requires post-bronchodilator spirometry (FEV1/FVC < 0.70). For acute breathlessness, fever, or new purulent sputum, seek prompt medical care.",
+    "faq": [
+      {
+        "q": "What does the COPD Assessment calculator measure?",
+        "a": "It quantifies symptom burden (mMRC + CAT) and exacerbation risk (past 12 months) and assigns you to GOLD group A, B or E. These groups guide initial COPD therapy per GOLD 2023."
+      },
+      {
+        "q": "What do the GOLD groups mean?",
+        "a": "GOLD 2023 uses three groups: A (few symptoms, low risk), B (many symptoms, low risk), E (high exacerbation risk). Group drives initial pharmacotherapy."
+      },
+      {
+        "q": "What is the difference between mMRC and CAT?",
+        "a": "mMRC captures dyspnea only via five graded statements (0–4). CAT covers eight symptom and quality-of-life dimensions (cough, phlegm, energy, sleep, etc.) and is more sensitive. GOLD recommends CAT as the preferred tool."
+      },
+      {
+        "q": "What is an exacerbation?",
+        "a": "An acute worsening of respiratory symptoms requiring a change in therapy. Moderate = outpatient antibiotics and/or oral steroids. Severe = hospitalization."
+      },
+      {
+        "q": "Do I need spirometry?",
+        "a": "Yes — a COPD diagnosis requires post-bronchodilator FEV1/FVC < 0.70. This calculator stratifies risk in established COPD or signals when assessment is worth pursuing."
+      },
+      {
+        "q": "How often should I repeat the assessment?",
+        "a": "Every 6–12 months when stable. Sooner with any therapy change, after an exacerbation, or with noticeable worsening. Trends matter more than a single value."
+      },
+      {
+        "q": "What if I'm in Group E?",
+        "a": "Group E means high exacerbation risk. Discuss dual or triple bronchodilation with your pulmonologist, possible inhaled steroids (when eosinophils ≥ 300/µL), smoking cessation, and pneumococcal/influenza vaccination."
+      }
+    ]
+  }
+}

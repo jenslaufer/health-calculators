@@ -1,0 +1,135 @@
+{
+  "home": {
+    "calculators": {
+      "copdAssessment": {
+        "name": "COPD Assessment (CAT, mMRC, GOLD)",
+        "description": "Symptomlast und Risikogruppe nach GOLD 2023 (A/B/E) aus mMRC + CAT + Exazerbationen bestimmen."
+      }
+    }
+  },
+  "copdAssessment": {
+    "meta": {
+      "title": "COPD Assessment Rechner — CAT, mMRC & GOLD-Gruppe (A/B/E) | Health Calculators",
+      "description": "COPD-Symptome bewerten: mMRC-Skala, CAT-Score (0–40), Exazerbationen — automatische GOLD 2023 ABE-Klassifikation. Kostenlos, anonym, sofort."
+    },
+    "title": "COPD Assessment (CAT, mMRC, GOLD)",
+    "description": "Beantworte zehn Fragen zu Atemnot, Symptomen und Verschlechterungen im letzten Jahr. Der Rechner liefert mMRC-Grad, CAT-Score und deine GOLD-Gruppe (A/B/E) nach GOLD 2023.",
+    "introNote": "Bezugszeitraum: aktueller Zustand bzw. letzte 12 Monate. Wähle pro Frage genau eine Antwort.",
+    "sections": {
+      "mmrc": "1. mMRC — Atemnot-Skala",
+      "cat": "2. CAT — COPD Assessment Test (8 Fragen)",
+      "exacerbations": "3. Exazerbationen (letzte 12 Monate)"
+    },
+    "mmrc": {
+      "title": "Wann tritt bei dir Atemnot auf?",
+      "options": [
+        { "value": 0, "label": "Grad 0 — Atemnot nur bei starker körperlicher Anstrengung" },
+        { "value": 1, "label": "Grad 1 — Atemnot beim schnellen Gehen oder leichten Steigungen" },
+        { "value": 2, "label": "Grad 2 — Ich gehe langsamer als Gleichaltrige oder muss stehen bleiben" },
+        { "value": 3, "label": "Grad 3 — Ich muss nach 100 m oder wenigen Minuten stehen bleiben" },
+        { "value": 4, "label": "Grad 4 — Atemnot beim Anziehen oder zu kurzatmig, das Haus zu verlassen" }
+      ]
+    },
+    "cat": {
+      "scaleLow": "0",
+      "scaleHigh": "5",
+      "questions": {
+        "cough": { "low": "Ich huste nie", "high": "Ich huste ständig" },
+        "phlegm": { "low": "Ich habe gar keinen Schleim in der Brust", "high": "Meine Brust ist voll mit Schleim" },
+        "chestTightness": { "low": "Ich spüre keinerlei Engegefühl in der Brust", "high": "Ich spüre ein starkes Engegefühl in der Brust" },
+        "breathlessness": { "low": "Bei einer Treppe oder einem Hügel komme ich nicht außer Atem", "high": "Bei einer Treppe oder einem Hügel komme ich stark außer Atem" },
+        "activityLimitation": { "low": "Ich bin in meinen häuslichen Aktivitäten nicht eingeschränkt", "high": "Ich bin in meinen häuslichen Aktivitäten stark eingeschränkt" },
+        "leavingHome": { "low": "Ich verlasse trotz meiner Lungenerkrankung mein Haus zuversichtlich", "high": "Wegen meiner Lungenerkrankung verlasse ich mein Haus überhaupt nicht zuversichtlich" },
+        "sleep": { "low": "Ich schlafe gut", "high": "Wegen meiner Lungenerkrankung schlafe ich nicht gut" },
+        "energy": { "low": "Ich habe sehr viel Energie", "high": "Ich habe gar keine Energie" }
+      },
+      "labels": {
+        "cough": "Husten",
+        "phlegm": "Schleim",
+        "chestTightness": "Engegefühl",
+        "breathlessness": "Atemnot bei Belastung",
+        "activityLimitation": "Häusliche Aktivität",
+        "leavingHome": "Haus verlassen",
+        "sleep": "Schlaf",
+        "energy": "Energie"
+      }
+    },
+    "exacerbations": {
+      "moderate": {
+        "title": "Wie viele moderate Exazerbationen (Antibiotika-/Steroid-Therapie ohne Klinik) hattest du in den letzten 12 Monaten?",
+        "options": [
+          { "value": 0, "label": "Keine" },
+          { "value": 1, "label": "1" },
+          { "value": 2, "label": "2 oder mehr" }
+        ]
+      },
+      "hospitalized": {
+        "title": "Wurdest du in den letzten 12 Monaten mindestens einmal wegen einer Exazerbation stationär behandelt?",
+        "options": [
+          { "value": "no", "label": "Nein" },
+          { "value": "yes", "label": "Ja" }
+        ]
+      }
+    },
+    "results": {
+      "title": "Dein COPD-Assessment",
+      "groupLabel": "GOLD-Gruppe",
+      "catLabel": "CAT-Score",
+      "catScale": "von 40",
+      "mmrcLabel": "mMRC-Grad",
+      "mmrcScale": "von 4",
+      "groupHints": {
+        "A": "Gruppe A — wenige Symptome, niedriges Exazerbationsrisiko. Initialtherapie meist ein einzelner Bronchodilatator. Trotzdem regelmäßig kontrollieren und Auslöser meiden.",
+        "B": "Gruppe B — viele Symptome, niedriges Exazerbationsrisiko. Initialtherapie üblicherweise duale Bronchodilatation (LABA + LAMA). Sprich mit deinem Arzt über Anpassungen.",
+        "E": "Gruppe E — hohes Exazerbationsrisiko (≥ 2 moderat oder ≥ 1 stationär). Häufig kombinierte Therapie (LABA + LAMA, ggf. + ICS bei Eosinophilie). Frühzeitige ärztliche Abklärung sinnvoll."
+      },
+      "categoryHints": {
+        "low": "Geringer Einfluss auf den Alltag.",
+        "medium": "Mittlerer Einfluss — Symptome bemerkbar.",
+        "high": "Großer Einfluss auf den Alltag.",
+        "veryHigh": "Sehr großer Einfluss — Beeinträchtigung in vielen Bereichen."
+      }
+    },
+    "incompleteHint": "Beantworte alle Fragen, um dein COPD-Assessment zu sehen.",
+    "reset": "Antworten zurücksetzen",
+    "scaleTitle": "GOLD 2023 ABE-Schema",
+    "scaleRows": [
+      { "group": "A", "criteria": "0–1 moderat, keine Klinik · mMRC ≤ 1 · CAT < 10", "label": "Wenige Symptome, niedriges Risiko" },
+      { "group": "B", "criteria": "0–1 moderat, keine Klinik · mMRC ≥ 2 oder CAT ≥ 10", "label": "Viele Symptome, niedriges Risiko" },
+      { "group": "E", "criteria": "≥ 2 moderat ODER ≥ 1 stationär", "label": "Hohes Exazerbationsrisiko" }
+    ],
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner kombiniert drei validierte Werkzeuge: mMRC (Atemnot-Skala 0–4 nach Bestall, 1999), CAT (8 Fragen × 0–5, total 0–40 nach Jones, 2009) und die Exazerbationshistorie der letzten 12 Monate. Daraus ergibt sich die GOLD 2023 ABE-Gruppe — Grundlage für die Initialtherapie. Für die spirometrische GOLD-Gradierung (1–4) ist eine Lungenfunktionsprüfung beim Arzt nötig.",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Diagnose. Eine COPD-Diagnose erfordert eine Spirometrie (FEV1/FVC < 0,70 nach Bronchodilatator). Bei akuter Atemnot, Fieber oder neuen, eitrigen Auswurf-Episoden zeitnah ärztliche Hilfe suchen.",
+    "faq": [
+      {
+        "q": "Was misst der COPD Assessment Rechner?",
+        "a": "Er bewertet Symptomlast (mMRC + CAT) und Exazerbationsrisiko (letzte 12 Monate) und ordnet dich in eine der GOLD-Gruppen A, B oder E ein. Diese Gruppen sind die Grundlage der Initialtherapie nach GOLD 2023."
+      },
+      {
+        "q": "Was bedeutet die GOLD-Gruppe?",
+        "a": "GOLD 2023 unterscheidet drei Gruppen: A (wenige Symptome, niedriges Risiko), B (viele Symptome, niedriges Risiko), E (hohes Exazerbationsrisiko). Die Gruppe steuert die initiale Pharmakotherapie."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen mMRC und CAT?",
+        "a": "mMRC erfasst nur Atemnot in fünf abgestuften Aussagen (0–4). CAT misst acht Symptom- und Lebensqualitäts-Dimensionen (Husten, Schleim, Energie, Schlaf usw.) und ist sensitiver. GOLD empfiehlt CAT als bevorzugtes Tool."
+      },
+      {
+        "q": "Was ist eine Exazerbation?",
+        "a": "Eine akute Verschlechterung der Atemwegssymptome, die eine Therapie-Änderung erfordert. Moderat = ambulante Behandlung mit Antibiotika und/oder oralen Steroiden. Schwer = Krankenhausaufenthalt."
+      },
+      {
+        "q": "Brauche ich eine Spirometrie?",
+        "a": "Ja — die COPD-Diagnose verlangt FEV1/FVC < 0,70 nach Bronchodilatator. Dieser Rechner unterstützt die Risikostratifizierung bei bereits diagnostizierter COPD oder hilft bei der Frage, ob eine Abklärung sinnvoll ist."
+      },
+      {
+        "q": "Wie oft sollte ich das Assessment wiederholen?",
+        "a": "Bei stabiler COPD alle 6–12 Monate. Bei jeder Therapieumstellung, nach Exazerbation oder bei spürbarer Verschlechterung früher. Verlaufstrends sind aussagekräftiger als ein Einzelwert."
+      },
+      {
+        "q": "Was tun bei Gruppe E?",
+        "a": "Gruppe E bedeutet hohes Exazerbationsrisiko. Sprich zeitnah mit deinem Pneumologen über duale oder dreifache Bronchodilatation, ggf. inhalative Steroide (bei Eosinophilen ≥ 300/µl), Rauchstopp und Pneumokokken-/Grippe-Impfung."
+      }
+    ]
+  }
+}
