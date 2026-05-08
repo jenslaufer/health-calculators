@@ -1,0 +1,246 @@
+<script setup>
+import { useHead } from '../../composables/useHead.js'
+import RelatedArticles from '../../components/RelatedArticles.vue'
+import { useLocaleRouter } from '../../composables/useLocaleRouter.js'
+
+const { localePath, localeBlogPath } = useLocaleRouter()
+
+useHead({
+  title: 'Schmerzskala richtig nutzen — NRS, VAS, Wong-Baker erklärt | Health Calculators',
+  description: 'NRS, VAS und Wong-Baker FACES — wie du Schmerzen richtig bewertest, was die Werte bedeuten und wie du Verläufe sinnvoll dokumentierst.',
+  routeKey: 'blogArticle',
+  jsonLd: [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Schmerzskala richtig nutzen — NRS, VAS, Wong-Baker erklärt',
+      description: 'Welche Schmerz-Skala wann sinnvoll ist, wie du Werte korrekt deutest und wann ein Wert behandlungsbedürftig wird.',
+      author: { '@type': 'Organization', name: 'Health Calculators' },
+      publisher: { '@type': 'Organization', name: 'Health Calculators' },
+      datePublished: '2026-05-08',
+      dateModified: '2026-05-08',
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://healthcalculator.app/de/blog/schmerzskala-berechnen',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Was ist die NRS-Schmerzskala?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Die Numerische Rating-Skala (NRS) bewertet Schmerz auf einer 11-stufigen Skala von 0 (kein Schmerz) bis 10 (stärkster vorstellbarer Schmerz). Sie ist der weltweite Standard.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Ab welchem Wert sollte ich einen Arzt aufsuchen?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Werte ab 4/10 sind in den meisten Leitlinien behandlungsbedürftig. Bei Werten ≥ 7/10 oder plötzlich auftretenden Schmerzen umgehend ärztliche Hilfe.' },
+        },
+      ],
+    },
+  ],
+})
+</script>
+
+<template>
+  <article>
+    <div class="mb-10">
+      <router-link :to="localePath('blog')" class="text-sm text-stone-400 hover:text-stone-800 transition-colors mb-4 inline-block">&larr; Blog</router-link>
+      <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Schmerzskala richtig nutzen — NRS, VAS, Wong-Baker erklärt</h1>
+      <div class="flex items-center gap-3">
+        <span class="text-sm text-stone-400 tabular-nums">8. Mai 2026</span>
+        <span class="text-sm text-stone-300">&middot;</span>
+        <span class="text-sm text-stone-400">7 min Lesezeit</span>
+      </div>
+    </div>
+
+    <div class="prose prose-stone max-w-none">
+      <div class="bg-white border border-stone-200 rounded-xl shadow-sm p-8 mb-8">
+        <p class="text-base text-stone-600 leading-relaxed mb-4">
+          „Wie stark sind Ihre Schmerzen, von 0 bis 10?" — diese Frage hörst du in praktisch jeder Notaufnahme und Hausarztpraxis. Dahinter steht die <strong>Numerische Rating-Skala (NRS)</strong>: das einfachste, am häufigsten validierte Werkzeug zur Schmerzbewertung.
+        </p>
+        <p class="text-base text-stone-600 leading-relaxed">
+          Daneben sind <strong>VAS (Visuelle Analog-Skala)</strong> und <strong>Wong-Baker FACES</strong> Standardinstrumente. Welche Skala wann passt, was deine Werte bedeuten und wie du Verläufe sinnvoll dokumentierst — hier kompakt erklärt.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Warum überhaupt eine Schmerzskala?</h2>
+        <p class="text-base text-stone-600 leading-relaxed mb-4">
+          Schmerz ist subjektiv — er lässt sich nicht objektiv messen. Eine standardisierte Skala macht ihn trotzdem <strong>vergleichbar</strong>: über die Zeit, zwischen Patienten, zwischen Behandlungen. Ohne sie würde aus einem „besser" oder „schlimmer" eine reine Bauchgefühl-Diskussion.
+        </p>
+        <p class="text-base text-stone-600 leading-relaxed">
+          Konkret nutzt man Schmerzskalen zur <strong>Therapie-Steuerung</strong> (was wirkt?), zur <strong>Verlaufsdokumentation</strong> (wird es besser?) und zur <strong>Triage</strong> (wer ist akut?).
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Die drei wichtigsten Skalen im Vergleich</h2>
+        <div class="bg-white border border-stone-200 rounded-xl shadow-sm overflow-hidden mb-6">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-stone-50 border-b border-stone-200">
+                <th class="text-left px-6 py-3 font-semibold text-stone-700">Skala</th>
+                <th class="text-left px-6 py-3 font-semibold text-stone-700">Bereich</th>
+                <th class="text-left px-6 py-3 font-semibold text-stone-700">Einsatz</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100">
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium">NRS</td>
+                <td class="px-6 py-3 text-stone-600 tabular-nums">0 – 10 (ganzzahlig)</td>
+                <td class="px-6 py-3 text-stone-600">Routine in Klinik &amp; Praxis</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium">VAS</td>
+                <td class="px-6 py-3 text-stone-600 tabular-nums">0 – 100 mm (kontinuierlich)</td>
+                <td class="px-6 py-3 text-stone-600">Studien, Schmerz-Forschung</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium">Wong-Baker FACES</td>
+                <td class="px-6 py-3 text-stone-600 tabular-nums">0, 2, 4, 6, 8, 10</td>
+                <td class="px-6 py-3 text-stone-600">Kinder ab 3 J., Sprachbarrieren</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-base text-stone-600 leading-relaxed">
+          Alle drei Skalen lassen sich auf einen <strong>0–10-Wert normieren</strong>. Vergleichbarkeit ist also gegeben — das ist auch die Grundlage unseres Schmerzskala-Rechners.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Was bedeuten die Werte?</h2>
+        <p class="text-base text-stone-600 leading-relaxed mb-4">
+          Die heute gültige Einteilung geht auf <strong>Serlin et al. 1995</strong> zurück und wurde von IASP und WHO übernommen:
+        </p>
+        <div class="bg-white border border-stone-200 rounded-xl shadow-sm overflow-hidden mb-6">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-stone-50 border-b border-stone-200">
+                <th class="text-left px-6 py-3 font-semibold text-stone-700">Wert</th>
+                <th class="text-left px-6 py-3 font-semibold text-stone-700">Einordnung</th>
+                <th class="text-left px-6 py-3 font-semibold text-stone-700">Konsequenz</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100">
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium tabular-nums">0</td>
+                <td class="px-6 py-3 text-stone-600">Kein Schmerz</td>
+                <td class="px-6 py-3 text-stone-600">Beobachten</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium tabular-nums">1 – 3</td>
+                <td class="px-6 py-3 text-stone-600">Leichter Schmerz</td>
+                <td class="px-6 py-3 text-stone-600">Selbsthilfe, ggf. einfache Analgetika</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium tabular-nums">4 – 6</td>
+                <td class="px-6 py-3 text-stone-600">Mäßiger Schmerz</td>
+                <td class="px-6 py-3 text-stone-600">Behandlungsbedürftig</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 text-stone-900 font-medium tabular-nums">7 – 10</td>
+                <td class="px-6 py-3 text-stone-600">Starker Schmerz</td>
+                <td class="px-6 py-3 text-stone-600">Ärztliche Vorstellung empfohlen</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-base text-stone-600 leading-relaxed">
+          <strong>4/10</strong> ist die wichtigste Schwelle: Ab hier wird die Lebensqualität spürbar eingeschränkt — und ab hier ist nach den meisten Leitlinien eine aktive Behandlung sinnvoll.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Was ist eine „klinisch bedeutsame" Verbesserung?</h2>
+        <p class="text-base text-stone-600 leading-relaxed">
+          Nicht jede Veränderung ist relevant. Studien zeigen: Eine Reduktion um <strong>mindestens 30 % oder 2 Punkte</strong> auf der NRS gilt als minimal klinisch bedeutsamer Unterschied (MCID). Werte darunter erleben Patienten nicht als Verbesserung — auch wenn sie statistisch signifikant sind.
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Schmerzwerte sinnvoll dokumentieren</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base"><strong>Akut</strong>: vor und 30–60 Minuten nach jeder Intervention.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base"><strong>Chronisch</strong>: täglich zur gleichen Tageszeit; idealerweise drei Werte (Ruhe, Belastung, schlimmster Wert in 24 h).</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base"><strong>Schmerztagebuch</strong> über mindestens 2 Wochen — Auslöser, Begleitumstände, Wirkung von Maßnahmen.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base">Werte allein reichen nicht. Beschreibe auch <strong>Qualität</strong> (stechend, brennend), <strong>Lokalisation</strong> und <strong>Begleitsymptome</strong>.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Verwandte Themen &amp; Rechner</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base"><strong>Asthma-Kontrolle (ACT)</strong> — eine andere validierte Selbst-Bewertung mit fünf Fragen. Zum <router-link :to="localeBlogPath('asthma-kontrolle-testen')" class="text-stone-700 underline underline-offset-2 hover:text-stone-900">ACT-Artikel</router-link>.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base"><strong>COPD-Assessment (CAT)</strong> — Symptom-Bewertung für Atemwegserkrankungen, ähnlich strukturiert. Zum <router-link :to="localeBlogPath('copd-assessment-berechnen')" class="text-stone-700 underline underline-offset-2 hover:text-stone-900">CAT-Artikel</router-link>.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-stone-400 mt-2 shrink-0"></span>
+            <span class="text-stone-600 text-base"><strong>Kreatinin-Clearance</strong> — wichtig bei chronischen Schmerzen unter Langzeit-Analgetika (NSAR, Opioide). Zum <router-link :to="localeBlogPath('kreatinin-clearance-berechnen')" class="text-stone-700 underline underline-offset-2 hover:text-stone-900">CrCl-Artikel</router-link>.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-stone-900 rounded-xl p-8 mb-8 text-center">
+        <h3 class="text-xl font-bold text-white mb-2">Jetzt deinen Schmerz bewerten</h3>
+        <p class="text-stone-300 text-sm mb-5">NRS, VAS, Wong-Baker — eine Skala wählen, Wert eingeben, Einordnung erhalten.</p>
+        <router-link
+          :to="localePath('painScale')"
+          class="inline-block bg-white text-stone-900 font-semibold px-6 py-3 rounded-lg hover:bg-stone-100 transition-colors"
+        >Zum Schmerzskala-Rechner &rarr;</router-link>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">Häufige Fragen</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-semibold text-stone-900 mb-2">Was unterscheidet Schmerz von Leiden?</h3>
+            <p class="text-base text-stone-600 leading-relaxed">
+              Schmerz ist die rein sensorische Komponente. Leiden umfasst die emotionale Belastung, Einschränkungen im Alltag und sozialen Folgen. Die NRS misst nur Intensität — für eine vollständige Bewertung sind multidimensionale Tools wie der Brief Pain Inventory (BPI) sinnvoll.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-stone-900 mb-2">Sind Selbst-Bewertungen verlässlich?</h3>
+            <p class="text-base text-stone-600 leading-relaxed">
+              Ja — Selbst-Bewertung ist der Goldstandard, weil Schmerz definitionsgemäß subjektiv ist. Beobachterskalen kommen nur dann zum Einsatz, wenn der Patient sich nicht äußern kann (z. B. Demenz, Bewusstlosigkeit, Säuglinge).
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-stone-900 mb-2">Warum nutzt man bei Kindern Gesichter?</h3>
+            <p class="text-base text-stone-600 leading-relaxed">
+              Abstrakte Zahlen verstehen kleine Kinder nicht zuverlässig. Die Wong-Baker FACES-Skala wurde 1983 für die Pflege pädiatrischer Patienten entwickelt und ist heute der internationale Standard für die Altersgruppe 3–10 Jahre.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-stone-900 mb-2">Mein Wert ist 7 — was sollte ich tun?</h3>
+            <p class="text-base text-stone-600 leading-relaxed">
+              Werte ≥ 7/10 entsprechen starkem Schmerz. Bei plötzlichem Auftreten, Brustschmerz, Atemnot, Bewusstseinsstörungen oder akutem Bauchschmerz: Notruf 112. In allen anderen Fällen zeitnahe Vorstellung beim Hausarzt oder einer Schmerzambulanz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <RelatedArticles />
+  </article>
+</template>

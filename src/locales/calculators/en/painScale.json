@@ -1,0 +1,81 @@
+{
+  "home": {
+    "calculators": {
+      "painScale": {
+        "name": "Pain Scale Calculator",
+        "description": "NRS, VAS, and Wong-Baker — rate and classify pain intensity."
+      }
+    }
+  },
+  "painScale": {
+    "meta": {
+      "title": "Pain Scale Calculator — NRS, VAS, Wong-Baker | Health Calculators",
+      "description": "Rate pain intensity using the NRS (0–10), VAS (0–100 mm), and Wong-Baker FACES scales. IASP/WHO classification. Free, instant, anonymous."
+    },
+    "title": "Pain Scale Calculator",
+    "description": "Rate your pain intensity with three validated clinical scales — NRS, VAS, and Wong-Baker. Returns a category aligned with IASP/WHO standards.",
+    "scaleLabel": "Pain scale",
+    "scales": {
+      "nrs": "NRS",
+      "vas": "VAS",
+      "wongBaker": "Wong-Baker"
+    },
+    "scaleHints": {
+      "nrs": "Numeric Rating Scale — pick a whole number from 0 to 10.",
+      "vas": "Visual Analog Scale — position on a 100 mm line (0 = no pain, 100 = worst pain).",
+      "wongBaker": "Wong-Baker FACES — six faces, scored 0, 2, 4, 6, 8, 10."
+    },
+    "scoreLabel": "Pain score",
+    "vasLabel": "VAS (mm)",
+    "selectFace": "Select a face",
+    "incompleteHint": "Pick a scale and enter a value to classify your pain intensity.",
+    "categoryLabel": "Category",
+    "categories": {
+      "none": "No pain",
+      "mild": "Mild pain",
+      "moderate": "Moderate pain",
+      "severe": "Severe pain"
+    },
+    "hints": {
+      "none": "0/10: No pain. No treatment needed. Stay alert to changes — chronic pain often goes unnoticed in early stages.",
+      "mild": "1–3/10: Mild pain. Daily activities are barely affected. Self-care (heat, cold, movement) usually suffices; medication is rarely needed.",
+      "moderate": "4–6/10: Moderate pain. Activity is noticeably limited. Medication may be appropriate. If pain persists more than a week, see a clinician.",
+      "severe": "7–10/10: Severe pain. Daily life is clearly impaired. See a clinician — and seek immediate care if pain is sudden or accompanied by other symptoms."
+    },
+    "rangeLabel": "Range",
+    "interpretationLabel": "Meaning",
+    "howItWorks": "How it works",
+    "howItWorksText": "Three clinically validated pain scales are used here: NRS (Numeric Rating Scale, 0–10), VAS (Visual Analog Scale, 0–100 mm) and Wong-Baker FACES (a faces scale for children and people with language barriers). All values are normalised to a 0–10 scale and binned per Serlin et al. 1995 (IASP/WHO): 0 no pain, 1–3 mild, 4–6 moderate, 7–10 severe.",
+    "disclaimer": "This is a self-assessment and does not replace medical diagnosis. For sudden, persistent, or symptom-accompanied pain, seek medical help promptly.",
+    "faq": [
+      {
+        "q": "What is the NRS pain scale?",
+        "a": "The Numeric Rating Scale (NRS) is an 11-point scale from 0 to 10. 0 means no pain, 10 means worst pain imaginable. It is the most widely used pain scale in clinical practice worldwide."
+      },
+      {
+        "q": "How does VAS differ from NRS?",
+        "a": "The Visual Analog Scale (VAS) is an unmarked 100 mm line. Patients mark their pain intensity as a position on the line. VAS offers finer resolution but is more cumbersome to administer."
+      },
+      {
+        "q": "When is Wong-Baker FACES used?",
+        "a": "The FACES scale was developed in 1983 for children aged 3 and older, and is now standard for adults with language barriers or cognitive impairment. Six faces show a 0–10 scale in 2-point steps."
+      },
+      {
+        "q": "Which scores are 'clinically meaningful'?",
+        "a": "Pain ≥ 4/10 is treatment-worthy in most guidelines. A reduction of at least 30 % or 2 points is considered a clinically meaningful improvement."
+      },
+      {
+        "q": "How often should I rate my pain?",
+        "a": "Acute pain: rate before and 30–60 minutes after each intervention. Chronic pain: daily at the same time of day, ideally with a pain diary over at least two weeks."
+      },
+      {
+        "q": "What's the difference between pain and suffering?",
+        "a": "Pain is the sensory component; suffering covers the emotional and functional burden. NRS only measures intensity — for full assessment use multidimensional tools such as the Brief Pain Inventory (BPI)."
+      },
+      {
+        "q": "Are self-ratings reliable?",
+        "a": "Yes — self-ratings are the gold standard because pain is subjective. Observer-rated scales are reserved for patients who cannot communicate (e.g. dementia, unconsciousness)."
+      }
+    ]
+  }
+}
