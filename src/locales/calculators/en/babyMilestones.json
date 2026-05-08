@@ -1,0 +1,179 @@
+{
+  "home": {
+    "calculators": {
+      "babyMilestones": {
+        "name": "Baby Milestones",
+        "description": "What developmental milestones to expect by age. Overview based on the CDC framework."
+      }
+    }
+  },
+  "babyMilestones": {
+    "meta": {
+      "title": "Baby Milestones Calculator — Developmental Steps 0–24 Months | Health Calculators",
+      "description": "What developmental milestones should your baby reach at each age? Overview for 2, 4, 6, 9, 12, 15, 18 and 24 months — based on the CDC framework. Free & instant."
+    },
+    "title": "Baby Milestones",
+    "description": "What milestones should your baby reach at each age? Pick an age or enter a birth date and get an overview by CDC framework — motor, language, social, cognitive.",
+    "introNote": "This overview is not a substitute for routine well-child visits. Every child develops at their own pace — these milestones are markers, not pass/fail tests.",
+    "modeAge": "Enter age directly",
+    "modeBirthDate": "Enter birth date",
+    "ageMonthsLabel": "Age (months)",
+    "ageMonthsPlaceholder": "e.g. 6",
+    "birthDateLabel": "Birth date",
+    "asOfLabel": "As of",
+    "ageDisplay": "Age: {months} months",
+    "computedAge": "Calculated age",
+    "checkpointLabel": "Reference checkpoint",
+    "monthsShort": "mo",
+    "domains": {
+      "motor": "Motor",
+      "language": "Language",
+      "social": "Social / Emotional",
+      "cognitive": "Cognitive / Learning"
+    },
+    "warningsTitle": "Watch out — when to call the pediatrician",
+    "warningsIntro": "Talk to your pediatrician if at this age your baby:",
+    "expectedSizeTitle": "Average size at this age",
+    "expectedSizeNote": "WHO median for healthy babies (averaged across sexes). Variation is normal — the growth curve in your child's chart is more meaningful than a single point.",
+    "weight": "Weight",
+    "length": "Length",
+    "checkpoints": {
+      "2": "2 months",
+      "4": "4 months",
+      "6": "6 months",
+      "9": "9 months",
+      "12": "12 months",
+      "15": "15 months",
+      "18": "18 months",
+      "24": "24 months"
+    },
+    "milestones": {
+      "liftHeadProne": "Lifts head briefly when on tummy",
+      "movesArmsLegs": "Moves arms and legs spontaneously",
+      "cooing": "Makes cooing sounds (vowel sounds)",
+      "reactsToSound": "Reacts to loud sounds",
+      "smilesAtPeople": "Smiles at familiar people",
+      "looksAtFaces": "Looks attentively at faces",
+      "watchesFaces": "Watches faces and follows movement",
+      "followsObject": "Follows moving objects with eyes",
+      "noResponseLoudSounds": "doesn't react to loud sounds",
+      "noEyeFocus": "can't focus eyes or follow faces",
+      "holdsHeadSteady": "Holds head steady upright",
+      "pushesUpProne": "Pushes up on forearms when on tummy",
+      "grasps": "Grasps for toys deliberately",
+      "babbles": "Babbles (consonant-vowel sounds like ba, da)",
+      "laughs": "Laughs out loud",
+      "smilesSpontaneously": "Smiles spontaneously",
+      "mimicsExpressions": "Mimics facial expressions",
+      "reachesForToys": "Reaches for toys you show",
+      "showsBoredom": "Shows boredom (cries) when activity stays the same",
+      "noSmile": "doesn't smile at people",
+      "noBabbling": "doesn't babble",
+      "doesNotPushUp": "doesn't push up when on tummy",
+      "rollsBothWays": "Rolls over in both directions",
+      "beginsSitSupported": "Sits with support",
+      "transfersObjects": "Passes objects from one hand to the other",
+      "respondsToName": "Responds to own name",
+      "stringsVowels": "Strings vowels together when babbling (aaaah, ohhh)",
+      "knowsFamiliarFaces": "Knows familiar faces",
+      "enjoysPlaying": "Enjoys playing with others",
+      "exploresMouth": "Explores things by putting them in mouth",
+      "curiosityForObjects": "Shows curiosity — tries to get out-of-reach things",
+      "noAffectionForCaregivers": "shows no affection for caregivers",
+      "doesNotReachForObjects": "doesn't reach for objects",
+      "cannotSitWithHelp": "can't sit even with help",
+      "standsHolding": "Stands while holding on",
+      "sitsWithoutSupport": "Sits without support",
+      "pincerForming": "Beginning pincer grasp (thumb-index finger)",
+      "mamaDadaNonSpecific": "Says 'mama' and 'dada' — not yet specific",
+      "understandsNo": "Understands the word 'no'",
+      "mayBeAfraidStrangers": "May be afraid of strangers",
+      "hasFavoriteToys": "Has favorite toys",
+      "watchesFallingObject": "Watches a falling object",
+      "looksForHidden": "Looks for hidden objects",
+      "doesNotBearWeight": "can't bear weight on legs",
+      "doesNotBabble": "doesn't babble",
+      "noResponseToName": "doesn't respond to own name",
+      "pullsToStand": "Pulls up to stand on furniture",
+      "cruisesFurniture": "Cruises sideways along furniture",
+      "mayTakeSteps": "May take a few steps unaided",
+      "saysMamaDada": "Says 'mama' / 'dada' specifically",
+      "simpleGestures": "Uses simple gestures (waving, shaking head)",
+      "playsPeekaboo": "Plays peek-a-boo",
+      "hasFavoritePeople": "Has favorite people",
+      "banksObjects": "Bangs objects together",
+      "findsHiddenObjects": "Easily finds hidden objects",
+      "doesNotCrawl": "doesn't crawl or drags one side",
+      "doesNotPointAtThings": "doesn't point at things",
+      "losesSkills": "loses skills they once had",
+      "walksFew": "Walks alone (a few steps)",
+      "scribbles": "Scribbles with crayons",
+      "stoopsToPickup": "Stoops to pick up objects",
+      "saysSeveralWords": "Says several single words",
+      "followsSimpleCommand": "Follows simple commands",
+      "copiesOthers": "Copies adults and older children",
+      "showsAffection": "Shows affection with familiar people",
+      "stacksTwoBlocks": "Stacks 2 blocks",
+      "pointsToShow": "Points with finger to show things",
+      "doesNotPoint": "doesn't point at things to show interest",
+      "cannotWalk": "doesn't walk alone",
+      "noEyeContact": "doesn't make eye contact",
+      "walksAlone": "Walks confidently alone",
+      "climbsFurniture": "Climbs on and off furniture",
+      "usesSpoonCup": "Eats with a spoon, drinks from a cup",
+      "says10Words": "Says at least 6–10 words",
+      "saysNo": "Says 'no' and refuses",
+      "handsObjects": "Hands you objects in play",
+      "temperTantrums": "Has temper tantrums",
+      "knowsCommonObjects": "Recognizes everyday objects (phone, brush, spoon)",
+      "pretendPlayBasic": "Begins pretend play (feeding a doll)",
+      "doesNotPointToShow": "doesn't point to share interest",
+      "doesNotGain3Words": "speaks fewer than 3 words",
+      "doesNotNoticeCaregivers": "doesn't notice when caregivers come or go",
+      "runsSteadily": "Runs steadily",
+      "kicksBall": "Kicks a ball",
+      "walksUpStairs": "Walks up stairs holding on",
+      "twoWordPhrases": "Uses 2-word phrases (mama up)",
+      "pointsToBodyParts": "Points to body parts when named",
+      "parallelPlay": "Plays alongside other children (parallel play)",
+      "increasingIndependence": "Shows increasing independence",
+      "sortsByShape": "Sorts by shape and color",
+      "completesSentencesInBooks": "Completes sentences in familiar books",
+      "doesNotUse2WordPhrases": "doesn't use 2-word phrases",
+      "cannotWalkSteadily": "walks unsteadily or falls often"
+    },
+    "howItWorks": "How this overview works",
+    "howItWorksText": "This overview is based on the CDC's revised 2022 milestones (Learn the Signs. Act Early.) and the AAP/Bright Futures developmental surveillance recommendations. The eight reference ages (2, 4, 6, 9, 12, 15, 18, 24 months) align with US well-child visit checkpoints. For an age between two checkpoints, the nearest lower one is shown. Use corrected age for premature babies.",
+    "disclaimer": "Important: every child develops differently. This list does not replace well-child visits or pediatric assessment. If your baby loses skills they once had (skills loss) or several milestones are clearly missed, talk to your pediatrician.",
+    "faq": [
+      {
+        "q": "What are developmental milestones?",
+        "a": "Milestones are typical developmental skills most children reach by a certain age. The CDC, for example, lists 'sits without support' as a 9-month milestone because ≥ 75 % of children reach it by then."
+      },
+      {
+        "q": "My baby hasn't reached a milestone yet — is that bad?",
+        "a": "Usually not. Babies develop in spurts and at their own pace. A single delayed milestone is rarely a problem, but several missed milestones or a loss of skills already gained should be discussed with the pediatrician."
+      },
+      {
+        "q": "Should I correct age for premature babies?",
+        "a": "Yes. For premature babies (born before 37 weeks of gestation), use corrected age — i.e. age from the original due date instead of the actual birth. The AAP recommends correction up to 2 years of age."
+      },
+      {
+        "q": "What sources are these milestones based on?",
+        "a": "The list follows the CDC's revised 2022 overview (Learn the Signs. Act Early.) and AAP Bright Futures recommendations. The CDC partnered with the AAP and specialists in pediatrics and developmental assessment to produce the revision."
+      },
+      {
+        "q": "When should I see the pediatrician?",
+        "a": "If your baby loses skills, doesn't react to sounds, doesn't make eye contact, doesn't smile or babble, or if your gut tells you something is off. The simplest rule is: when in doubt, ask."
+      },
+      {
+        "q": "What is the right tracking cadence?",
+        "a": "Well-child visits at 2, 4, 6, 9, 12, 15, 18, 24 months align with this framework. They are the standard touchpoint and most insurance plans cover them fully. Between visits, occasional informal tracking is enough — there's no need to test every day."
+      },
+      {
+        "q": "Can exercises speed up development?",
+        "a": "You can support development by talking, reading, floor playtime and safe spaces to explore. Speeding it up beyond a child's biological pace is rarely possible — development follows a genetically guided plan."
+      }
+    ]
+  }
+}

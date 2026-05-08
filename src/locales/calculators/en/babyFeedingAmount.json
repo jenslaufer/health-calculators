@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "babyFeedingAmount": {
+        "name": "Baby Feeding Amount Calculator",
+        "description": "Find out how much milk your baby needs per feeding and per day — by age and weight."
+      }
+    }
+  },
+  "babyFeedingAmount": {
+    "meta": {
+      "title": "Baby Feeding Amount Calculator — How Much Formula Per Day?",
+      "description": "Calculate daily and per-feeding milk amounts for your baby by age and weight. Pediatric guideline (150 ml/kg) for formula and pumped breast milk. Free, instant."
+    },
+    "title": "Baby Feeding Amount Calculator",
+    "description": "How much milk does your baby need per feeding and per day? Calculation by age and weight.",
+    "ageMonths": "Age (months)",
+    "ageMonthsHint": "0–24 months",
+    "weightKg": "Weight (kg)",
+    "weightLb": "Weight (lb)",
+    "ageMonthsPlaceholder": "e.g. 3",
+    "weightPlaceholder": "e.g. 5",
+    "weightPlaceholderLb": "e.g. 11",
+    "implausibleAge": "Please enter an age between 0 and 24 months.",
+    "implausibleWeight": "Please enter a realistic weight between 1 and 18 kg.",
+    "dailyAmount": "Daily amount",
+    "perFeeding": "Per feeding",
+    "feedingsPerDay": "Feedings per day",
+    "feedingsCount": "{count} feedings",
+    "perDay": "per day",
+    "noteCapped": "Daily amount capped at 960 ml — babies self-regulate their intake.",
+    "table": "Reference values by age",
+    "ageRange": "Age",
+    "feedings": "Feedings",
+    "amountPerKg": "ml/kg/day",
+    "row0to1": "0–1 month",
+    "row1to3": "1–3 months",
+    "row3to5": "3–5 months",
+    "row5to6": "5–6 months",
+    "row6to9": "6–9 months",
+    "row9to12": "9–12 months",
+    "howItWorks": "How it works",
+    "howItWorksText": "Pediatric rule of thumb: ~150 ml of infant formula per kg of body weight per day in the first six months, dropping to ~120 ml/kg/day from six months on as solids are introduced. Daily intake is capped at 960 ml (32 oz). These figures apply to formula or pumped breast milk — breastfed babies self-regulate and cannot be overfed.",
+    "disclaimer": "Important: these values are guidelines. Watch your baby's hunger and fullness cues. If you have concerns about growth or feeding, talk to your pediatrician.",
+    "faq": [
+      {
+        "q": "How much should my baby drink per day?",
+        "a": "In the first six months, about 150 ml per kg of body weight. Example: a 5 kg baby needs ~750 ml/day. From six months on, milk drops to ~120 ml/kg/day as complementary foods are added."
+      },
+      {
+        "q": "How often should I feed my baby?",
+        "a": "Newborns need 8 feedings/day, 1–2 months 7, 3–4 months 6, 5 months 5, and from 6 months 3–4 feedings. Always feed on demand if needed."
+      },
+      {
+        "q": "Does this apply to breastfed babies?",
+        "a": "No. Breastfed babies self-regulate intake — this calculator is for formula or pumped breast milk. For breastfeeding, watch hunger cues, wet diapers, and weight gain."
+      },
+      {
+        "q": "Can I overfeed my baby?",
+        "a": "With a bottle, yes. Watch fullness cues: turning the head, slowing the suck, releasing the nipple. Never force the rest of a bottle. Spitting up after feedings can be a sign."
+      },
+      {
+        "q": "What if my baby drinks less?",
+        "a": "Babies don't drink the same amount every day. As long as weight gain, wet diapers, and behavior are normal, that's fine. Check in with your pediatrician if you're worried."
+      },
+      {
+        "q": "How do I read the table?",
+        "a": "Find your baby's age, multiply weight (kg) by the ml/kg/day column, then divide by feedings per day. That gives you the amount per bottle."
+      }
+    ]
+  }
+}
