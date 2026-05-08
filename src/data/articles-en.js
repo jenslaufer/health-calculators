@@ -566,6 +566,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'asthmaControl',
     related: ['calculate-vo2max', 'calculate-heart-rate-zones', 'vitamin-d-calculator'],
   },
+  {
+    slug: 'creatinine-clearance-calculator-guide',
+    title: 'Creatinine Clearance Calculator Guide: Cockcroft-Gault Explained',
+    description: 'How to interpret your Cockcroft-Gault creatinine clearance: formula, normal ranges, CKD stages, drug-dosing role and how it relates to CKD-EPI eGFR.',
+    date: '2026-05-08',
+    readTime: '8 min',
+    calculatorKey: 'creatinineClearance',
+    related: ['gfr-calculator-kidney-function', 'measure-blood-pressure', 'diabetes-risk-score'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

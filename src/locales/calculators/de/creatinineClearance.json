@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "creatinineClearance": {
+        "name": "Kreatinin-Clearance Rechner",
+        "description": "Cockcroft-Gault-Formel — Kreatinin-Clearance und Nierenfunktion einschätzen."
+      }
+    }
+  },
+  "creatinineClearance": {
+    "meta": {
+      "title": "Kreatinin-Clearance Rechner — Cockcroft-Gault-Formel | Health Calculators",
+      "description": "Kreatinin-Clearance mit der Cockcroft-Gault-Formel berechnen. Alter, Gewicht und Serum-Kreatinin in mg/dL oder µmol/L. Klassifikation der Nierenfunktion. Kostenlos, sofort, anonym."
+    },
+    "title": "Kreatinin-Clearance Rechner",
+    "description": "Berechne deine Kreatinin-Clearance mit der Cockcroft-Gault-Formel. Hilft bei der Einschätzung der Nierenfunktion und der Dosis-Anpassung von Medikamenten.",
+    "age": "Alter (Jahre)",
+    "creatinine": "Serum-Kreatinin",
+    "crClLabel": "Kreatinin-Clearance",
+    "crClRange": "Clearance (mL/min)",
+    "classification": "Klassifikation",
+    "incompleteHint": "Gib Alter, Gewicht und Serum-Kreatinin ein, um deine Kreatinin-Clearance zu berechnen.",
+    "categories": {
+      "normal": "Normal",
+      "mild": "Leicht eingeschränkt",
+      "moderate": "Mäßig eingeschränkt",
+      "severe": "Stark eingeschränkt",
+      "kidneyFailure": "Nierenversagen"
+    },
+    "hints": {
+      "normal": "Clearance ≥ 90 mL/min: Deine Nierenfunktion liegt im Normalbereich. Trinke ausreichend, vermeide nephrotoxische Medikamente und kontrolliere Blutdruck und Blutzucker regelmäßig.",
+      "mild": "Clearance 60–89 mL/min: leichte Einschränkung. Bei Risikofaktoren (Diabetes, Bluthochdruck) jährliche Kontrolle. Medikamenten-Dosierung beim Hausarzt prüfen lassen.",
+      "moderate": "Clearance 30–59 mL/min: mäßige Einschränkung (CKD-Stadium G3). Nephrologische Mitbetreuung sinnvoll, Medikamenten-Dosierungen anpassen, Folgeerkrankungen kontrollieren.",
+      "severe": "Clearance 15–29 mL/min: starke Einschränkung (CKD-Stadium G4). Nephrologische Betreuung erforderlich. Vorbereitung auf eventuelle Nierenersatztherapie sollte besprochen werden.",
+      "kidneyFailure": "Clearance < 15 mL/min: Nierenversagen (CKD-Stadium G5). Sofortige nephrologische Anbindung, Dialyse oder Transplantation werden meist erforderlich."
+    },
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Cockcroft-Gault-Formel (Cockcroft & Gault, Nephron 1976): CrCl = ((140 − Alter) × Gewicht in kg) / (72 × Serum-Kreatinin in mg/dL), für Frauen × 0,85. SI-Einheiten werden automatisch umgerechnet (88,4 µmol/L = 1 mg/dL). Diese Formel wird häufig zur Dosis-Anpassung von Medikamenten genutzt — moderne Schätzungen nutzen zusätzlich CKD-EPI 2021 (eGFR).",
+    "disclaimer": "Diese Berechnung dient der Einschätzung — nicht der Diagnose. Cockcroft-Gault überschätzt die Clearance bei adipösen Patienten und kann bei extremen Körperformen ungenau sein. Therapie- und Dosis-Entscheidungen ausschließlich durch Arzt oder Apotheker.",
+    "faq": [
+      {
+        "q": "Was ist die Kreatinin-Clearance?",
+        "a": "Die Kreatinin-Clearance ist ein Maß für die Filtrationsleistung der Nieren. Sie gibt an, wie viel Milliliter Blut pro Minute von Kreatinin gereinigt werden — und ist somit ein Surrogat-Marker für die glomeruläre Filtrationsrate (GFR)."
+      },
+      {
+        "q": "Wie funktioniert die Cockcroft-Gault-Formel?",
+        "a": "((140 − Alter) × Gewicht in kg) / (72 × Serum-Kreatinin in mg/dL). Bei Frauen wird das Ergebnis mit 0,85 multipliziert. Ergebnis: Clearance in mL/min. Die Formel ist seit 1976 etabliert und wird vor allem für die Dosis-Anpassung von Medikamenten genutzt."
+      },
+      {
+        "q": "Welche Werte sind normal?",
+        "a": "Bei jungen, gesunden Erwachsenen liegt die Clearance bei 90–140 mL/min. Mit zunehmendem Alter nimmt sie physiologisch um etwa 1 mL/min pro Jahr ab. Werte unter 60 mL/min über mehr als 3 Monate gelten als chronische Nierenerkrankung (CKD)."
+      },
+      {
+        "q": "Cockcroft-Gault oder CKD-EPI: was ist besser?",
+        "a": "CKD-EPI 2021 ist die heute empfohlene Schätzung der eGFR (z. B. KDIGO). Cockcroft-Gault liefert die Kreatinin-Clearance — wichtig für viele Beipackzettel und ältere Studien. Beide Werte ergänzen sich; viele Kliniker berechnen beide."
+      },
+      {
+        "q": "Warum die 0,85-Korrektur für Frauen?",
+        "a": "Frauen haben durchschnittlich weniger Muskelmasse und damit eine geringere Kreatinin-Produktion. Ohne Korrektur würde die Formel die Clearance bei Frauen systematisch überschätzen."
+      },
+      {
+        "q": "Was bedeutet ein Wert unter 60 mL/min?",
+        "a": "Über 3 Monate persistent < 60 mL/min entspricht CKD-Stadium G3 oder schlechter. Das ist Anlass für eine nephrologische Abklärung — Ursachen können Diabetes, Bluthochdruck, Medikamente oder Erkrankungen der Niere selbst sein."
+      },
+      {
+        "q": "Welche Faktoren verfälschen das Ergebnis?",
+        "a": "Adipositas (Überschätzung), starke Untergewichtigkeit, Schwangerschaft, Amputationen, Muskelschwund, vegane Ernährung mit niedrigem Kreatinin und akute Nierenversagen können die Schätzung verzerren. Im Zweifel 24h-Sammelurin oder eGFR ergänzen."
+      }
+    ]
+  }
+}

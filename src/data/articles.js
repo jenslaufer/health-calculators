@@ -566,6 +566,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'asthmaControl',
     related: ['vo2max-berechnen', 'herzfrequenz-zonen-berechnen', 'vitamin-d-berechnen'],
   },
+  {
+    slug: 'kreatinin-clearance-berechnen',
+    title: 'Kreatinin-Clearance berechnen: Cockcroft-Gault einfach erklärt',
+    description: 'Kreatinin-Clearance mit der Cockcroft-Gault-Formel berechnen. Bedeutung, Normalwerte, CKD-Stadien und Bezug zur GFR — verständlich und präzise erklärt.',
+    date: '2026-05-08',
+    readTime: '8 min',
+    calculatorKey: 'creatinineClearance',
+    related: ['gfr-rechner', 'blutdruck-richtig-messen', 'diabetes-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
