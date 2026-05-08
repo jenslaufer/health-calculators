@@ -611,6 +611,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'painScale',
     related: ['asthma-control-test-guide', 'copd-assessment-guide', 'creatinine-clearance-calculator-guide'],
   },
+  {
+    slug: 'newborn-jaundice-calculator-guide',
+    title: 'Newborn Jaundice: Bilirubin Risk Made Simple with the Bhutani Nomogram',
+    description: 'How the Bhutani nomogram stratifies newborn bilirubin into risk zones. Hour-specific percentiles, risk factors, phototherapy thresholds — clearly explained.',
+    date: '2026-05-08',
+    readTime: '8 min',
+    calculatorKey: 'newbornBilirubin',
+    related: ['apgar-score-calculator-guide', 'baby-feeding-amount-calculator', 'baby-milestone-tracker-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

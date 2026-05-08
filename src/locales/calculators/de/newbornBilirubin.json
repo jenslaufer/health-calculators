@@ -1,0 +1,73 @@
+{
+  "home": {
+    "calculators": {
+      "newbornBilirubin": {
+        "name": "Neugeborenen-Bilirubin Rechner",
+        "description": "Bhutani-Nomogramm — Risiko für Neugeborenen-Gelbsucht (Hyperbilirubinämie) einschätzen."
+      }
+    }
+  },
+  "newbornBilirubin": {
+    "meta": {
+      "title": "Neugeborenen-Bilirubin Rechner — Bhutani-Nomogramm | Health Calculators",
+      "description": "Bilirubin-Risiko bei Neugeborenen einschätzen. Bhutani-Nomogramm mit altersabhängigen Perzentilen, mg/dL ⇄ µmol/L. Für reife Neugeborene ≥ 35 Schwangerschaftswochen."
+    },
+    "title": "Neugeborenen-Bilirubin Rechner",
+    "description": "Bewerte das Risiko für Neugeborenen-Gelbsucht anhand des Bhutani-Nomogramms — abhängig vom Lebensalter in Stunden und der Gesamt-Bilirubin-Konzentration.",
+    "ageHours": "Lebensalter (Stunden)",
+    "ageHoursHint": "12 – 168 Stunden (0,5 – 7 Tage)",
+    "tsb": "Gesamt-Bilirubin (TSB)",
+    "tsbHint": "Serum-Bilirubin oder transkutaner Wert",
+    "zoneLabel": "Risikozone",
+    "thresholds": "Schwellenwerte für dieses Lebensalter",
+    "p40": "40. Perzentil",
+    "p75": "75. Perzentil",
+    "p95": "95. Perzentil",
+    "incompleteHint": "Gib Lebensalter (12 – 168 Stunden) und Gesamt-Bilirubin ein, um die Risikozone zu sehen.",
+    "zones": {
+      "lowRisk": "Niedriges Risiko",
+      "lowIntermediate": "Niedrig-mittleres Risiko",
+      "highIntermediate": "Hoch-mittleres Risiko",
+      "highRisk": "Hohes Risiko"
+    },
+    "hints": {
+      "lowRisk": "TSB unter dem 40. Perzentil. Eine signifikante Hyperbilirubinämie ist sehr unwahrscheinlich. Routine-Verlaufskontrolle nach Empfehlung der Hebamme oder Kinderärztin.",
+      "lowIntermediate": "TSB zwischen 40. und 75. Perzentil. Geringes, aber nicht vernachlässigbares Risiko — eine Verlaufskontrolle innerhalb der nächsten 24–48 h ist sinnvoll.",
+      "highIntermediate": "TSB zwischen 75. und 95. Perzentil. Erhöhtes Risiko für eine signifikante Hyperbilirubinämie. Engmaschige Kontrolle, Risikofaktoren prüfen, AAP-Behandlungsschwellen mit Kinderarzt besprechen.",
+      "highRisk": "TSB ≥ 95. Perzentil. Hohes Risiko. Sofortige ärztliche Bewertung. Phototherapie kann je nach Risikofaktoren und AAP-Schwellen indiziert sein."
+    },
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Das Bhutani-Nomogramm (Pediatrics 1999) ordnet die Gesamt-Bilirubin-Konzentration eines Neugeborenen einer altersspezifischen Perzentile zu. Vier Risikozonen ergeben sich aus dem 40., 75. und 95. Perzentil der TSB-Werte gesunder reifer Neugeborener. Gilt für Säuglinge ≥ 35 SSW und ≥ 2000 g — nicht für Frühgeborene oder kranke Neugeborene. Die Behandlungsschwellen folgen den AAP-Leitlinien (2022).",
+    "disclaimer": "Diese Schätzung dient nicht der Diagnose. Therapieentscheidungen (z. B. Phototherapie) gehören in die Hand der Kinderärztin oder Neonatologin. Risikofaktoren wie Hämolyse, Frühgeburtlichkeit oder Sepsis senken die Schwellen.",
+    "faq": [
+      {
+        "q": "Was ist Neugeborenen-Gelbsucht?",
+        "a": "Neugeborenen-Gelbsucht (Icterus neonatorum) entsteht durch erhöhtes Bilirubin im Blut. In den ersten Lebenstagen ist eine leichte Gelbfärbung der Haut häufig und meist harmlos — doch sehr hohe Werte können das Gehirn schädigen (Kernikterus). Daher ist die rechtzeitige Einordnung wichtig."
+      },
+      {
+        "q": "Wie funktioniert das Bhutani-Nomogramm?",
+        "a": "Es vergleicht das Gesamt-Bilirubin (TSB) deines Neugeborenen mit alters-abhängigen Perzentilen aus einer großen Kohorte gesunder reifer Säuglinge. Liegt der Wert über dem 95. Perzentil, ist das Risiko für eine signifikante Hyperbilirubinämie hoch."
+      },
+      {
+        "q": "Für welche Babys ist der Rechner gedacht?",
+        "a": "Für reife und nahezu reife Neugeborene mit ≥ 35 Schwangerschaftswochen und ≥ 2000 g, im Lebensalter zwischen 12 und 168 Stunden (0,5 – 7 Tage). Nicht für Frühgeborene oder kranke Säuglinge geeignet — diese benötigen individuell festgelegte Schwellenwerte."
+      },
+      {
+        "q": "Was sind Risikofaktoren für eine schwere Gelbsucht?",
+        "a": "Wichtige Risikofaktoren: Hämolyse (z. B. Blutgruppen-Inkompatibilität, G6PD-Mangel), niedrigeres Gestationsalter (35–36 SSW), Stillschwierigkeiten mit Gewichtsverlust, Hämatome, Geschwister mit Phototherapie, ostasiatische Abstammung. Diese senken die Behandlungsschwellen."
+      },
+      {
+        "q": "Wann ist Phototherapie nötig?",
+        "a": "Die Indikation richtet sich nach den AAP-Leitlinien (2022): Schwellenwerte abhängig von Lebensalter, Gestationsalter und Risikofaktoren. Erst der Kinderarzt entscheidet — der Rechner gibt nur eine grobe Orientierung."
+      },
+      {
+        "q": "Wie wird Bilirubin gemessen?",
+        "a": "Goldstandard ist die Serum-Messung (TSB) aus venösem oder kapillärem Blut. Daneben gibt es transkutane Bilirubinometer (TcB), die auf der Haut messen — bei TcB ≥ 14 mg/dL oder Werten nahe der Behandlungsschwelle wird mit TSB verifiziert."
+      },
+      {
+        "q": "Was bedeutet mg/dL ⇄ µmol/L?",
+        "a": "Beide Einheiten beschreiben dieselbe Konzentration. Faktor: 1 mg/dL ≈ 17,1 µmol/L. Dieser Rechner rechnet automatisch um — du kannst die in deinem Befund verwendete Einheit direkt eingeben."
+      }
+    ]
+  }
+}
