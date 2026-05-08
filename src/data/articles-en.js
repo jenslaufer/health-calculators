@@ -602,6 +602,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'creatinineClearance',
     related: ['gfr-calculator-kidney-function', 'measure-blood-pressure', 'diabetes-risk-score'],
   },
+  {
+    slug: 'pain-scale-calculator-guide',
+    title: 'Pain Scale Guide — NRS, VAS, Wong-Baker Explained',
+    description: 'How to use the NRS, VAS, and Wong-Baker FACES pain scales: when each is appropriate, what scores mean, and how to track pain over time.',
+    date: '2026-05-08',
+    readTime: '7 min',
+    calculatorKey: 'painScale',
+    related: ['asthma-control-test-guide', 'copd-assessment-guide', 'creatinine-clearance-calculator-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

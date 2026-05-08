@@ -602,6 +602,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'creatinineClearance',
     related: ['gfr-rechner', 'blutdruck-richtig-messen', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'schmerzskala-berechnen',
+    title: 'Schmerzskala richtig nutzen — NRS, VAS, Wong-Baker erklärt',
+    description: 'NRS, VAS und Wong-Baker FACES — wie du Schmerzen richtig bewertest, was die Werte bedeuten und wie du Verläufe sinnvoll dokumentierst.',
+    date: '2026-05-08',
+    readTime: '7 min',
+    calculatorKey: 'painScale',
+    related: ['asthma-kontrolle-testen', 'copd-assessment-berechnen', 'kreatinin-clearance-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
