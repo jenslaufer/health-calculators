@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "creatinineClearance": {
+        "name": "Creatinine Clearance Calculator",
+        "description": "Cockcroft-Gault formula — estimate creatinine clearance and kidney function."
+      }
+    }
+  },
+  "creatinineClearance": {
+    "meta": {
+      "title": "Creatinine Clearance Calculator — Cockcroft-Gault Formula | Health Calculators",
+      "description": "Calculate creatinine clearance with the Cockcroft-Gault formula. Age, weight, and serum creatinine in mg/dL or µmol/L. Kidney function classification. Free, instant, anonymous."
+    },
+    "title": "Creatinine Clearance Calculator",
+    "description": "Estimate your creatinine clearance with the Cockcroft-Gault formula. Used to assess kidney function and adjust medication dosing.",
+    "age": "Age (years)",
+    "creatinine": "Serum creatinine",
+    "crClLabel": "Creatinine clearance",
+    "crClRange": "Clearance (mL/min)",
+    "classification": "Classification",
+    "incompleteHint": "Enter age, weight, and serum creatinine to calculate your creatinine clearance.",
+    "categories": {
+      "normal": "Normal",
+      "mild": "Mildly decreased",
+      "moderate": "Moderately decreased",
+      "severe": "Severely decreased",
+      "kidneyFailure": "Kidney failure"
+    },
+    "hints": {
+      "normal": "Clearance ≥ 90 mL/min: kidney function is in the normal range. Stay well hydrated, avoid nephrotoxic drugs, and keep blood pressure and blood sugar under regular control.",
+      "mild": "Clearance 60–89 mL/min: mildly decreased. With risk factors (diabetes, hypertension), an annual check is reasonable. Ask your doctor whether any medication doses need adjustment.",
+      "moderate": "Clearance 30–59 mL/min: moderately decreased (CKD stage G3). Co-management with a nephrologist is helpful; medication doses should be reviewed and complications monitored.",
+      "severe": "Clearance 15–29 mL/min: severely decreased (CKD stage G4). Specialist nephrology care is needed. Discuss preparation for possible kidney replacement therapy.",
+      "kidneyFailure": "Clearance < 15 mL/min: kidney failure (CKD stage G5). Immediate nephrology referral; dialysis or transplantation usually become necessary."
+    },
+    "howItWorks": "How it works",
+    "howItWorksText": "Cockcroft-Gault formula (Cockcroft & Gault, Nephron 1976): CrCl = ((140 − age) × weight in kg) / (72 × serum creatinine in mg/dL), multiplied by 0.85 for women. SI units are converted automatically (88.4 µmol/L = 1 mg/dL). The formula remains widely used for medication dose adjustment — modern estimates also use CKD-EPI 2021 (eGFR).",
+    "disclaimer": "This calculation is an estimate, not a diagnosis. Cockcroft-Gault overestimates clearance in obesity and may be inaccurate at body composition extremes. Therapy and dosing decisions belong to your doctor or pharmacist.",
+    "faq": [
+      {
+        "q": "What is creatinine clearance?",
+        "a": "Creatinine clearance is a measure of how much blood the kidneys filter free of creatinine each minute. It serves as a surrogate marker for the glomerular filtration rate (GFR) and reflects kidney function."
+      },
+      {
+        "q": "How does the Cockcroft-Gault formula work?",
+        "a": "((140 − age) × weight in kg) / (72 × serum creatinine in mg/dL). For women, multiply the result by 0.85. Output is in mL/min. The formula has been in clinical use since 1976 and still drives many drug-dosing recommendations."
+      },
+      {
+        "q": "What values are considered normal?",
+        "a": "In healthy young adults, clearance is roughly 90–140 mL/min. It drops by about 1 mL/min per year with age. Sustained values below 60 mL/min for more than 3 months meet criteria for chronic kidney disease (CKD)."
+      },
+      {
+        "q": "Cockcroft-Gault or CKD-EPI — which should I use?",
+        "a": "CKD-EPI 2021 is the recommended estimate of eGFR (e.g. KDIGO). Cockcroft-Gault gives the creatinine clearance — still required for many drug labels and older studies. The two complement each other; many clinicians compute both."
+      },
+      {
+        "q": "Why the 0.85 correction for women?",
+        "a": "Women on average have less muscle mass and therefore lower creatinine production. Without the correction, the formula would systematically overestimate clearance in women."
+      },
+      {
+        "q": "What does a value below 60 mL/min mean?",
+        "a": "Sustained < 60 mL/min for more than 3 months meets CKD stage G3 or worse. It warrants nephrology evaluation — common drivers are diabetes, hypertension, certain medications, or primary kidney disease."
+      },
+      {
+        "q": "Which factors distort the estimate?",
+        "a": "Obesity (overestimation), severe underweight, pregnancy, amputations, muscle wasting, vegan diets with low creatinine, and acute kidney injury can all skew the result. Confirm with 24-h urine collection or eGFR when in doubt."
+      }
+    ]
+  }
+}
