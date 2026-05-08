@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "babyFeedingAmount": {
+        "name": "Baby-Trinkmenge-Rechner",
+        "description": "Berechne, wie viel Milch dein Baby pro Mahlzeit und Tag braucht — nach Alter und Gewicht."
+      }
+    }
+  },
+  "babyFeedingAmount": {
+    "meta": {
+      "title": "Baby-Trinkmenge-Rechner — Wie viel Milch braucht mein Baby?",
+      "description": "Berechne die tägliche und einzelne Trinkmenge deines Babys nach Alter und Gewicht. Pädiatrische Richtwerte (150 ml/kg) für Flaschen- und abgepumpte Muttermilch. Kostenlos."
+    },
+    "title": "Baby-Trinkmenge-Rechner",
+    "description": "Wie viel Milch braucht dein Baby pro Mahlzeit und Tag? Berechnung nach Alter und Gewicht.",
+    "ageMonths": "Alter (Monate)",
+    "ageMonthsHint": "0–24 Monate",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "ageMonthsPlaceholder": "z. B. 3",
+    "weightPlaceholder": "z. B. 5",
+    "weightPlaceholderLb": "z. B. 11",
+    "implausibleAge": "Bitte ein Alter zwischen 0 und 24 Monaten eingeben.",
+    "implausibleWeight": "Bitte ein realistisches Gewicht zwischen 1 und 18 kg eingeben.",
+    "dailyAmount": "Tägliche Trinkmenge",
+    "perFeeding": "Pro Mahlzeit",
+    "feedingsPerDay": "Mahlzeiten pro Tag",
+    "feedingsCount": "{count} Mahlzeiten",
+    "perDay": "pro Tag",
+    "noteCapped": "Tagesmenge auf 960 ml begrenzt — Babys regulieren ihren Bedarf selbst.",
+    "table": "Richtwerte nach Alter",
+    "ageRange": "Alter",
+    "feedings": "Mahlzeiten",
+    "amountPerKg": "ml/kg/Tag",
+    "row0to1": "0–1 Monat",
+    "row1to3": "1–3 Monate",
+    "row3to5": "3–5 Monate",
+    "row5to6": "5–6 Monate",
+    "row6to9": "6–9 Monate",
+    "row9to12": "9–12 Monate",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Die Faustregel der Pädiatrie: ca. 150 ml Säuglingsnahrung pro kg Körpergewicht und Tag in den ersten sechs Monaten, danach etwa 120 ml/kg/Tag, da Beikost hinzukommt. Die Tagesmenge wird auf 960 ml (32 oz) begrenzt. Diese Werte gelten für Flaschennahrung oder abgepumpte Muttermilch — gestillte Babys regulieren ihren Bedarf selbst und können nicht überfüttert werden.",
+    "disclaimer": "Wichtig: Diese Werte sind Orientierungshilfen. Achte auf Sättigungssignale deines Babys. Bei Bedenken zu Wachstum oder Trinkverhalten sprich mit Kinderärztin oder Hebamme.",
+    "faq": [
+      {
+        "q": "Wie viel sollte mein Baby pro Tag trinken?",
+        "a": "In den ersten sechs Monaten etwa 150 ml pro kg Körpergewicht. Beispiel: Ein 5-kg-Baby braucht ca. 750 ml/Tag. Ab sechs Monaten reduziert sich die Milchmenge auf rund 120 ml/kg/Tag, da Beikost hinzukommt."
+      },
+      {
+        "q": "Wie oft sollte ich mein Baby füttern?",
+        "a": "Neugeborene benötigen 8 Mahlzeiten/Tag, mit 1–2 Monaten sind es 7, mit 3–4 Monaten 6, mit 5 Monaten 5 und ab 6 Monaten 3–4 Mahlzeiten. Bei Bedarf flexibel nachfüttern."
+      },
+      {
+        "q": "Gilt das auch für gestillte Babys?",
+        "a": "Nein. Gestillte Babys regulieren ihren Bedarf selbst — der Rechner ist für Flaschennahrung und abgepumpte Muttermilch gedacht. Beim Stillen orientierst du dich an Hungerzeichen, nassen Windeln und Gewichtszunahme."
+      },
+      {
+        "q": "Kann ich mein Baby überfüttern?",
+        "a": "Mit der Flasche ja. Achte auf Sättigungszeichen: Kopf abdrehen, Saugen verlangsamen, Brustwarze loslassen. Erzwinge keine Restmenge. Spucken nach Mahlzeiten kann ein Hinweis sein."
+      },
+      {
+        "q": "Was, wenn mein Baby weniger trinkt?",
+        "a": "Babys trinken nicht jeden Tag gleich viel. Solange Gewichtszunahme, nasse Windeln und Verhalten passen, ist das normal. Sprich bei Sorge mit Kinderärztin/-arzt."
+      },
+      {
+        "q": "Wie lese ich die Tabelle ab?",
+        "a": "Suche das Alter deines Babys, multipliziere das Gewicht (kg) mit dem Wert in der Spalte ml/kg/Tag und teile durch die Anzahl Mahlzeiten. Das ergibt die Menge pro Flasche."
+      }
+    ]
+  }
+}

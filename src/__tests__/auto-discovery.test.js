@@ -24,7 +24,7 @@ const EXPECTED_KEYS = [
   'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator',
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
-  'asthmaControl', 'babyMilestones',
+  'babyFeedingAmount', 'asthmaControl', 'copdAssessment', 'babyMilestones',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -90,7 +90,9 @@ const EXPECTED_ROUTE_MAP = {
   whtrRechner: { de: 'whtr-rechner', en: 'waist-to-height-ratio-calculator' },
   hepatitisRisk: { de: 'hepatitis-risiko-rechner', en: 'hepatitis-risk-calculator' },
   correctedCalcium: { de: 'korrigiertes-calcium-rechner', en: 'corrected-calcium-calculator' },
+  babyFeedingAmount: { de: 'baby-trinkmenge-rechner', en: 'baby-feeding-amount-calculator' },
   asthmaControl: { de: 'asthma-kontrolle-test', en: 'asthma-control-test' },
+  copdAssessment: { de: 'copd-assessment-rechner', en: 'copd-assessment-calculator' },
   babyMilestones: { de: 'baby-meilensteine-rechner', en: 'baby-milestones-calculator' },
 }
 
@@ -145,7 +147,9 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'whtr-berechnen',
   'hepatitis-risiko-berechnen',
   'korrigiertes-calcium-rechner',
+  'baby-trinkmenge-berechnen',
   'asthma-kontrolle-testen',
+  'copd-assessment-berechnen',
   'baby-meilensteine-tracker',
 ]
 
@@ -200,21 +204,23 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'calculate-waist-to-height-ratio',
   'hepatitis-risk-calculator-guide',
   'corrected-calcium-calculator',
+  'baby-feeding-amount-calculator',
   'asthma-control-test-guide',
+  'copd-assessment-guide',
   'baby-milestone-tracker-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 66 calculators', () => {
-    expect(calculatorMetas).toHaveLength(66)
+  it('discovers all 68 calculators', () => {
+    expect(calculatorMetas).toHaveLength(68)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 66 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(66)
+  it('builds calculatorComponents map for all 68 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(68)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -237,15 +243,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 64 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(64)
+  it('discovers all 66 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(66)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 64 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(64)
+  it('discovers all 66 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(66)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -261,10 +267,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 66 calculators with no duplicates', () => {
+  it('groups contain all 68 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(66)
-    expect(new Set(allKeys).size).toBe(66)
+    expect(allKeys).toHaveLength(68)
+    expect(new Set(allKeys).size).toBe(68)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -285,13 +291,14 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator', 'dehydrationRisk', 'heartFailureRisk', 'thyroidFunction', 'anemiaRisk', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium', 'asthmaControl',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator', 'dehydrationRisk', 'heartFailureRisk', 'thyroidFunction', 'anemiaRisk', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium', 'asthmaControl', 'copdAssessment',
     ])
   })
 
   it('pregnancy group has correct calculators in order', () => {
     expect(calculatorGroups[3].calculators).toEqual([
-      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore', 'babyMilestones',
+      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore',
+      'babyMilestones', 'babyFeedingAmount',
     ])
   })
 })
@@ -333,8 +340,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 366 routes', () => {
-    expect(routes).toHaveLength(366)
+  it('generates exactly 376 routes', () => {
+    expect(routes).toHaveLength(376)
   })
 
   it('has locale routes for all calculators in both languages', () => {
