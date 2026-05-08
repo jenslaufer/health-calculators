@@ -602,6 +602,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'creatinineClearance',
     related: ['gfr-calculator-kidney-function', 'measure-blood-pressure', 'diabetes-risk-score'],
   },
+  {
+    slug: 'newborn-jaundice-calculator-guide',
+    title: 'Newborn Jaundice: Bilirubin Risk Made Simple with the Bhutani Nomogram',
+    description: 'How the Bhutani nomogram stratifies newborn bilirubin into risk zones. Hour-specific percentiles, risk factors, phototherapy thresholds — clearly explained.',
+    date: '2026-05-08',
+    readTime: '8 min',
+    calculatorKey: 'newbornBilirubin',
+    related: ['apgar-score-calculator-guide', 'baby-feeding-amount-calculator', 'baby-milestone-tracker-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

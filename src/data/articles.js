@@ -602,6 +602,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'creatinineClearance',
     related: ['gfr-rechner', 'blutdruck-richtig-messen', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'neugeborenen-gelbsucht-risiko',
+    title: 'Neugeborenen-Gelbsucht: Bilirubin-Risiko mit dem Bhutani-Nomogramm einschätzen',
+    description: 'Bhutani-Nomogramm einfach erklärt: Wie das Bilirubin-Risiko bei Neugeborenen anhand altersabhängiger Perzentilen eingeordnet wird. Symptome, Risikofaktoren, Phototherapie.',
+    date: '2026-05-08',
+    readTime: '8 min',
+    calculatorKey: 'newbornBilirubin',
+    related: ['apgar-score-bewerten', 'baby-trinkmenge-berechnen', 'baby-meilensteine-tracker'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

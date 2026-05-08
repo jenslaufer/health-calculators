@@ -1,0 +1,73 @@
+{
+  "home": {
+    "calculators": {
+      "newbornBilirubin": {
+        "name": "Newborn Bilirubin Calculator",
+        "description": "Bhutani nomogram — estimate the risk of newborn jaundice (hyperbilirubinemia)."
+      }
+    }
+  },
+  "newbornBilirubin": {
+    "meta": {
+      "title": "Newborn Bilirubin Calculator — Bhutani Nomogram | Health Calculators",
+      "description": "Estimate newborn jaundice risk using the Bhutani nomogram. Hour-specific percentiles, mg/dL ⇄ µmol/L. For term and near-term infants ≥ 35 weeks gestation."
+    },
+    "title": "Newborn Bilirubin Calculator",
+    "description": "Assess the risk of newborn jaundice using the Bhutani hour-specific bilirubin nomogram — based on postnatal age in hours and total serum bilirubin.",
+    "ageHours": "Postnatal age (hours)",
+    "ageHoursHint": "12 – 168 hours (0.5 – 7 days)",
+    "tsb": "Total serum bilirubin (TSB)",
+    "tsbHint": "Serum or transcutaneous bilirubin value",
+    "zoneLabel": "Risk zone",
+    "thresholds": "Thresholds at this age",
+    "p40": "40th percentile",
+    "p75": "75th percentile",
+    "p95": "95th percentile",
+    "incompleteHint": "Enter postnatal age (12 – 168 hours) and total bilirubin to see the risk zone.",
+    "zones": {
+      "lowRisk": "Low risk",
+      "lowIntermediate": "Low intermediate",
+      "highIntermediate": "High intermediate",
+      "highRisk": "High risk"
+    },
+    "hints": {
+      "lowRisk": "TSB below the 40th percentile. Significant hyperbilirubinemia is unlikely. Continue routine follow-up as advised by your midwife or pediatrician.",
+      "lowIntermediate": "TSB between the 40th and 75th percentile. Risk is low but not negligible — a follow-up bilirubin check within the next 24–48 hours is reasonable.",
+      "highIntermediate": "TSB between the 75th and 95th percentile. Increased risk of significant hyperbilirubinemia. Close follow-up, evaluate risk factors, and discuss AAP treatment thresholds with your pediatrician.",
+      "highRisk": "TSB ≥ 95th percentile. High risk. Seek prompt medical evaluation. Phototherapy may be indicated depending on risk factors and AAP thresholds."
+    },
+    "howItWorks": "How it works",
+    "howItWorksText": "The Bhutani nomogram (Pediatrics 1999) maps a newborn's total serum bilirubin to an hour-specific percentile. Four risk zones are defined by the 40th, 75th, and 95th percentiles of TSB values from healthy term and near-term infants. Applies to infants ≥ 35 weeks gestation and ≥ 2000 g — not to preterm or sick newborns. Treatment thresholds follow the AAP 2022 guideline.",
+    "disclaimer": "This estimate is not a diagnosis. Treatment decisions (e.g. phototherapy) belong to the pediatrician or neonatologist. Risk factors such as hemolysis, late-preterm birth, or sepsis lower the action thresholds.",
+    "faq": [
+      {
+        "q": "What is newborn jaundice?",
+        "a": "Newborn jaundice (icterus neonatorum) results from elevated bilirubin in the blood. Mild yellowing of the skin in the first days of life is common and usually harmless — but very high values can damage the brain (kernicterus). Timely risk assessment is therefore important."
+      },
+      {
+        "q": "How does the Bhutani nomogram work?",
+        "a": "It compares the infant's total serum bilirubin (TSB) to age-specific percentiles derived from a large cohort of healthy term newborns. A value above the 95th percentile indicates a high risk of significant hyperbilirubinemia."
+      },
+      {
+        "q": "Which babies is this calculator for?",
+        "a": "Term and near-term newborns ≥ 35 weeks gestation and ≥ 2000 g, between 12 and 168 hours of age (0.5 – 7 days). It is not appropriate for preterm or sick infants — they require individualised thresholds."
+      },
+      {
+        "q": "What are risk factors for severe jaundice?",
+        "a": "Major risk factors include hemolysis (e.g. blood-group incompatibility, G6PD deficiency), lower gestational age (35–36 weeks), feeding difficulties with weight loss, cephalohematoma, a sibling who needed phototherapy, and East Asian ancestry. These lower the treatment thresholds."
+      },
+      {
+        "q": "When is phototherapy needed?",
+        "a": "Indications follow the AAP 2022 guideline: thresholds depend on postnatal age, gestational age, and risk factors. Only the pediatrician decides — this calculator provides orientation, not a treatment decision."
+      },
+      {
+        "q": "How is bilirubin measured?",
+        "a": "The gold standard is total serum bilirubin (TSB) from venous or capillary blood. Transcutaneous bilirubinometers (TcB) screen on the skin — values ≥ 14 mg/dL or those close to action thresholds are confirmed by serum measurement."
+      },
+      {
+        "q": "What does mg/dL ⇄ µmol/L mean?",
+        "a": "Both units describe the same concentration. Conversion factor: 1 mg/dL ≈ 17.1 µmol/L. The calculator converts automatically — enter the unit your laboratory report uses."
+      }
+    ]
+  }
+}
