@@ -1,0 +1,179 @@
+{
+  "home": {
+    "calculators": {
+      "babyMilestones": {
+        "name": "Baby-Meilensteine",
+        "description": "Welche Meilensteine erreicht dein Baby in welchem Alter? Übersicht nach CDC-Framework."
+      }
+    }
+  },
+  "babyMilestones": {
+    "meta": {
+      "title": "Baby-Meilensteine Rechner — Entwicklungsschritte 0–24 Monate | Health Calculators",
+      "description": "Welche Entwicklungsmeilensteine sollte dein Baby in welchem Alter erreichen? Übersicht für 2, 4, 6, 9, 12, 15, 18 und 24 Monate. Nach CDC-Framework. Kostenlos & sofort."
+    },
+    "title": "Baby-Meilensteine",
+    "description": "Welche Meilensteine sollte dein Baby in welchem Alter erreichen? Wähle das Alter oder gib das Geburtsdatum ein und erhalte einen Überblick nach CDC-Framework — Motorik, Sprache, Sozial, Kognition.",
+    "introNote": "Diese Übersicht ersetzt keine ärztliche Vorsorge (U-Untersuchungen). Jedes Kind entwickelt sich in seinem eigenen Tempo — die Meilensteine sind Richtwerte, keine Prüfung.",
+    "modeAge": "Alter direkt eingeben",
+    "modeBirthDate": "Geburtsdatum eingeben",
+    "ageMonthsLabel": "Alter (Monate)",
+    "ageMonthsPlaceholder": "z. B. 6",
+    "birthDateLabel": "Geburtsdatum",
+    "asOfLabel": "Stichtag",
+    "ageDisplay": "Alter: {months} Monate",
+    "computedAge": "Berechnetes Alter",
+    "checkpointLabel": "Bezugs-Meilenstein",
+    "monthsShort": "Mo.",
+    "domains": {
+      "motor": "Motorik",
+      "language": "Sprache",
+      "social": "Sozial / Emotional",
+      "cognitive": "Kognition / Lernen"
+    },
+    "warningsTitle": "Hinweise — wann zum Kinderarzt?",
+    "warningsIntro": "Sprich mit deinem Kinderarzt, wenn dein Baby in diesem Alter:",
+    "expectedSizeTitle": "Durchschnittliche Größe in diesem Alter",
+    "expectedSizeNote": "WHO-Median für gesunde Babys (beide Geschlechter gemittelt). Abweichungen sind völlig normal — die Wachstumskurve in den U-Heften ist aussagekräftiger als ein Einzelwert.",
+    "weight": "Gewicht",
+    "length": "Körperlänge",
+    "checkpoints": {
+      "2": "2 Monate",
+      "4": "4 Monate",
+      "6": "6 Monate",
+      "9": "9 Monate",
+      "12": "12 Monate",
+      "15": "15 Monate",
+      "18": "18 Monate",
+      "24": "24 Monate"
+    },
+    "milestones": {
+      "liftHeadProne": "Hebt den Kopf in Bauchlage kurz an",
+      "movesArmsLegs": "Bewegt Arme und Beine spontan",
+      "cooing": "Macht Gurr-Laute (Vokal-Lautierungen)",
+      "reactsToSound": "Reagiert auf laute Geräusche",
+      "smilesAtPeople": "Lächelt soziale Bezugspersonen an",
+      "looksAtFaces": "Schaut Gesichter aufmerksam an",
+      "watchesFaces": "Beobachtet Gesichter und folgt Bewegungen",
+      "followsObject": "Verfolgt bewegte Gegenstände mit den Augen",
+      "noResponseLoudSounds": "nicht auf laute Geräusche reagiert",
+      "noEyeFocus": "Augen nicht fokussieren oder Gesichtern nicht folgen kann",
+      "holdsHeadSteady": "Hält den Kopf stabil aufrecht",
+      "pushesUpProne": "Stützt sich in Bauchlage auf die Unterarme",
+      "grasps": "Greift gezielt nach Spielzeug",
+      "babbles": "Plappert (Konsonant-Vokal-Laute wie ba, da)",
+      "laughs": "Lacht laut",
+      "smilesSpontaneously": "Lächelt von sich aus",
+      "mimicsExpressions": "Ahmt Gesichtsausdrücke nach",
+      "reachesForToys": "Greift nach Spielzeug, das du zeigst",
+      "showsBoredom": "Zeigt Langeweile (weint), wenn die Aktivität gleich bleibt",
+      "noSmile": "nicht zu Menschen lächelt",
+      "noBabbling": "nicht plappert",
+      "doesNotPushUp": "sich in Bauchlage nicht hochstützt",
+      "rollsBothWays": "Rollt sich in beide Richtungen",
+      "beginsSitSupported": "Sitzt mit Unterstützung",
+      "transfersObjects": "Reicht Gegenstände von einer Hand in die andere",
+      "respondsToName": "Reagiert auf seinen Namen",
+      "stringsVowels": "Verbindet Vokale beim Plappern (aaaah, ohhh)",
+      "knowsFamiliarFaces": "Erkennt vertraute Gesichter",
+      "enjoysPlaying": "Hat Freude am Spielen mit anderen",
+      "exploresMouth": "Erkundet Dinge mit dem Mund",
+      "curiosityForObjects": "Zeigt Neugier — versucht Dinge zu erreichen, die außer Reichweite sind",
+      "noAffectionForCaregivers": "keine Zuneigung zu Bezugspersonen zeigt",
+      "doesNotReachForObjects": "nicht nach Gegenständen greift",
+      "cannotSitWithHelp": "auch mit Hilfe nicht sitzen kann",
+      "standsHolding": "Steht mit Festhalten",
+      "sitsWithoutSupport": "Sitzt ohne Unterstützung",
+      "pincerForming": "Beginnt den Pinzettengriff (Daumen-Zeigefinger)",
+      "mamaDadaNonSpecific": "Sagt Mama und Papa — noch nicht gezielt",
+      "understandsNo": "Versteht das Wort Nein",
+      "mayBeAfraidStrangers": "Fremdelt — ist bei Fremden ängstlich",
+      "hasFavoriteToys": "Hat Lieblingsspielzeug",
+      "watchesFallingObject": "Schaut einem fallenden Gegenstand hinterher",
+      "looksForHidden": "Sucht versteckte Gegenstände",
+      "doesNotBearWeight": "kein Gewicht auf den Beinen halten kann",
+      "doesNotBabble": "nicht plappert",
+      "noResponseToName": "nicht auf den eigenen Namen reagiert",
+      "pullsToStand": "Zieht sich an Möbeln hoch zum Stehen",
+      "cruisesFurniture": "Läuft seitlich an Möbeln entlang",
+      "mayTakeSteps": "Macht eventuell erste freie Schritte",
+      "saysMamaDada": "Sagt Mama / Papa gezielt",
+      "simpleGestures": "Nutzt einfache Gesten (Winken, Kopfschütteln)",
+      "playsPeekaboo": "Spielt Guck-Guck",
+      "hasFavoritePeople": "Hat Lieblingsmenschen",
+      "banksObjects": "Schlägt Gegenstände aneinander",
+      "findsHiddenObjects": "Findet versteckte Gegenstände leicht",
+      "doesNotCrawl": "nicht krabbelt oder kein Bein nachzieht",
+      "doesNotPointAtThings": "nicht auf Dinge zeigt",
+      "losesSkills": "Fähigkeiten verliert, die es früher hatte",
+      "walksFew": "Geht alleine (ein paar Schritte)",
+      "scribbles": "Kritzelt mit Stiften",
+      "stoopsToPickup": "Bückt sich, um Gegenstände aufzuheben",
+      "saysSeveralWords": "Sagt mehrere einzelne Wörter",
+      "followsSimpleCommand": "Befolgt einfache Aufforderungen",
+      "copiesOthers": "Ahmt Erwachsene und ältere Kinder nach",
+      "showsAffection": "Zeigt Zuneigung zu vertrauten Personen",
+      "stacksTwoBlocks": "Stapelt 2 Bauklötze",
+      "pointsToShow": "Zeigt mit dem Finger, um etwas zu zeigen",
+      "doesNotPoint": "nicht zeigt, um etwas zu zeigen",
+      "cannotWalk": "nicht alleine läuft",
+      "noEyeContact": "keinen Blickkontakt sucht",
+      "walksAlone": "Läuft sicher alleine",
+      "climbsFurniture": "Klettert auf und von Möbeln",
+      "usesSpoonCup": "Isst mit dem Löffel, trinkt aus der Tasse",
+      "says10Words": "Sagt mindestens 6–10 Wörter",
+      "saysNo": "Sagt Nein und lehnt ab",
+      "handsObjects": "Reicht Erwachsenen Gegenstände beim Spiel",
+      "temperTantrums": "Hat Trotzanfälle",
+      "knowsCommonObjects": "Erkennt Alltagsgegenstände (Telefon, Bürste, Löffel)",
+      "pretendPlayBasic": "Beginnt mit Rollenspielen (Puppe füttern)",
+      "doesNotPointToShow": "nicht auf Dinge zeigt, um Interesse zu teilen",
+      "doesNotGain3Words": "weniger als 3 Wörter spricht",
+      "doesNotNoticeCaregivers": "nicht bemerkt, wenn Bezugspersonen kommen oder gehen",
+      "runsSteadily": "Läuft sicher",
+      "kicksBall": "Tritt einen Ball",
+      "walksUpStairs": "Geht Treppen mit Festhalten",
+      "twoWordPhrases": "Bildet 2-Wort-Sätze (Mama auf)",
+      "pointsToBodyParts": "Zeigt auf Körperteile, wenn benannt",
+      "parallelPlay": "Spielt neben anderen Kindern (Parallelspiel)",
+      "increasingIndependence": "Zeigt zunehmende Selbstständigkeit",
+      "sortsByShape": "Sortiert Formen und Farben",
+      "completesSentencesInBooks": "Ergänzt Sätze in vertrauten Büchern",
+      "doesNotUse2WordPhrases": "keine 2-Wort-Sätze nutzt",
+      "cannotWalkSteadily": "unsicher läuft oder häufig fällt"
+    },
+    "howItWorks": "Wie diese Übersicht funktioniert",
+    "howItWorksText": "Diese Übersicht basiert auf den 2022 überarbeiteten CDC-Meilensteinen (Learn the Signs. Act Early.) und den AAP/Bright-Futures-Empfehlungen. Die acht Bezugsalter (2, 4, 6, 9, 12, 15, 18, 24 Monate) entsprechen den US-Vorsorge-Terminen. Für ein Kind im Alter zwischen zwei Bezugsaltern wird der nächst niedrigere Meilenstein gezeigt. Frühgeborene Kinder werden mit dem korrigierten Alter beurteilt.",
+    "disclaimer": "Wichtig: Jedes Kind entwickelt sich anders. Diese Liste ersetzt keine ärztliche Vorsorge (U-Untersuchungen) und keine pädiatrische Diagnostik. Bei Auffälligkeiten oder einem Verlust bereits erworbener Fähigkeiten (Skills-Loss) immer den Kinderarzt einschalten.",
+    "faq": [
+      {
+        "q": "Was sind Entwicklungsmeilensteine?",
+        "a": "Meilensteine sind typische Entwicklungsschritte, die die meisten Kinder bis zu einem bestimmten Alter erreichen. Die CDC nennt z. B. Sitzen ohne Hilfe als 9-Monats-Meilenstein, weil ihn ≥ 75 % der Kinder bis dahin erreichen."
+      },
+      {
+        "q": "Mein Baby hat einen Meilenstein noch nicht erreicht — ist das schlimm?",
+        "a": "Meist nicht. Kinder entwickeln sich in Schüben und in eigenem Tempo. Ein einzelner verzögerter Meilenstein ist selten ein Problem, mehrere verpasste oder ein Verlust bereits erworbener Fähigkeiten sollten aber mit dem Kinderarzt besprochen werden."
+      },
+      {
+        "q": "Müssen Frühgeborene das Alter korrigieren?",
+        "a": "Ja. Bei Frühgeborenen (vor SSW 37 geboren) wird das korrigierte Alter verwendet — also Geburtstermin minus tatsächlicher Geburtszeitpunkt. Die Korrektur empfiehlt die AAP bis zum Alter von 2 Jahren."
+      },
+      {
+        "q": "Welche Quellen liegen den Meilensteinen zugrunde?",
+        "a": "Die Liste folgt der 2022 überarbeiteten CDC-Übersicht (Learn the Signs. Act Early.) und den AAP-Bright-Futures-Empfehlungen. Die CDC arbeitete für die Revision mit der AAP und Spezialisten in Pädiatrie und Entwicklungsdiagnostik zusammen."
+      },
+      {
+        "q": "Wann sollte ich zum Kinderarzt?",
+        "a": "Bei Verlust bereits erlernter Fähigkeiten, ausbleibender Reaktion auf Geräusche, fehlendem Augenkontakt, ausbleibendem Lächeln oder Plappern, oder wenn dein Bauchgefühl sagt, dass etwas nicht stimmt. Wenn unsicher — fragen, ist die einfachste Regel."
+      },
+      {
+        "q": "Was sind die deutschen U-Untersuchungen?",
+        "a": "Die U2–U7 (zwischen 3.–10. Lebenstag und ca. 24 Monaten) decken das Meilenstein-Alter dieser Übersicht ab. Sie sind kostenlos, von der gesetzlichen Krankenkasse erstattet und dienen genau dieser Verlaufskontrolle."
+      },
+      {
+        "q": "Kann ich mit Übungen die Entwicklung beschleunigen?",
+        "a": "Du kannst die Entwicklung unterstützen — durch viel Sprechen, Vorlesen, Spielzeit auf dem Boden und sichere Erkundungsräume. Beschleunigen lässt sich Entwicklung kaum: Sie folgt einem genetisch vorgegebenen Plan."
+      }
+    ]
+  }
+}

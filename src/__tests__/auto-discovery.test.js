@@ -24,7 +24,7 @@ const EXPECTED_KEYS = [
   'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator',
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
-  'babyFeedingAmount', 'asthmaControl', 'copdAssessment',
+  'babyFeedingAmount', 'asthmaControl', 'copdAssessment', 'babyMilestones',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -93,6 +93,7 @@ const EXPECTED_ROUTE_MAP = {
   babyFeedingAmount: { de: 'baby-trinkmenge-rechner', en: 'baby-feeding-amount-calculator' },
   asthmaControl: { de: 'asthma-kontrolle-test', en: 'asthma-control-test' },
   copdAssessment: { de: 'copd-assessment-rechner', en: 'copd-assessment-calculator' },
+  babyMilestones: { de: 'baby-meilensteine-rechner', en: 'baby-milestones-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -149,6 +150,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'baby-trinkmenge-berechnen',
   'asthma-kontrolle-testen',
   'copd-assessment-berechnen',
+  'baby-meilensteine-tracker',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -205,19 +207,20 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'baby-feeding-amount-calculator',
   'asthma-control-test-guide',
   'copd-assessment-guide',
+  'baby-milestone-tracker-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 67 calculators', () => {
-    expect(calculatorMetas).toHaveLength(67)
+  it('discovers all 68 calculators', () => {
+    expect(calculatorMetas).toHaveLength(68)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 67 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(67)
+  it('builds calculatorComponents map for all 68 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(68)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -240,15 +243,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 65 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(65)
+  it('discovers all 66 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(66)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 65 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(65)
+  it('discovers all 66 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(66)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -264,10 +267,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 67 calculators with no duplicates', () => {
+  it('groups contain all 68 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(67)
-    expect(new Set(allKeys).size).toBe(67)
+    expect(allKeys).toHaveLength(68)
+    expect(new Set(allKeys).size).toBe(68)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -295,7 +298,7 @@ describe('calculator groups', () => {
   it('pregnancy group has correct calculators in order', () => {
     expect(calculatorGroups[3].calculators).toEqual([
       'pregnancy', 'ovulation', 'pregnancyWeightGain', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore',
-      'babyFeedingAmount',
+      'babyMilestones', 'babyFeedingAmount',
     ])
   })
 })
@@ -337,8 +340,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 371 routes', () => {
-    expect(routes).toHaveLength(371)
+  it('generates exactly 376 routes', () => {
+    expect(routes).toHaveLength(376)
   })
 
   it('has locale routes for all calculators in both languages', () => {
