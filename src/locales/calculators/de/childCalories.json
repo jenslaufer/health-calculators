@@ -1,0 +1,83 @@
+{
+  "home": {
+    "calculators": {
+      "childCalories": {
+        "name": "Kinder-Kalorienbedarf-Rechner",
+        "description": "Täglicher Kalorienbedarf für Kinder (1–18 Jahre) nach Alter, Geschlecht, Größe, Gewicht und Aktivität — IOM-Formel."
+      }
+    }
+  },
+  "childCalories": {
+    "meta": {
+      "title": "Kinder-Kalorienbedarf-Rechner — Tägliche Kalorien für Kinder",
+      "description": "Berechne den täglichen Kalorienbedarf deines Kindes (1–18 Jahre) nach Alter, Geschlecht, Größe, Gewicht und Aktivität. IOM-Referenzwerte. Kostenlos."
+    },
+    "title": "Kinder-Kalorienbedarf-Rechner",
+    "description": "Wie viele Kalorien braucht dein Kind pro Tag? Berechnung nach Alter, Geschlecht, Größe, Gewicht und Aktivität.",
+    "age": "Alter (Jahre)",
+    "ageHint": "1–18 Jahre",
+    "agePlaceholder": "z. B. 8",
+    "sex": "Geschlecht",
+    "sexBoy": "Junge",
+    "sexGirl": "Mädchen",
+    "weight": "Gewicht",
+    "height": "Größe",
+    "weightKg": "Gewicht (kg)",
+    "weightLb": "Gewicht (lb)",
+    "heightCm": "Größe (cm)",
+    "heightIn": "Größe (in)",
+    "weightPlaceholder": "z. B. 25",
+    "weightPlaceholderLb": "z. B. 55",
+    "heightPlaceholder": "z. B. 130",
+    "heightPlaceholderIn": "z. B. 51",
+    "activity": "Aktivitätsniveau",
+    "activitySedentary": "Wenig aktiv (kaum Sport)",
+    "activityLowActive": "Leicht aktiv (Schulweg + Spielen)",
+    "activityActive": "Aktiv (regelmäßig Sport)",
+    "activityVeryActive": "Sehr aktiv (Leistungssport)",
+    "implausibleAge": "Bitte ein Alter zwischen 1 und 18 Jahren eingeben.",
+    "implausibleWeight": "Bitte ein realistisches Gewicht zwischen 5 und 150 kg eingeben.",
+    "implausibleHeight": "Bitte eine realistische Größe zwischen 60 und 220 cm eingeben.",
+    "toddlerNote": "Für Kleinkinder (1–2 Jahre) verwendet der Rechner die festen IOM-Referenzwerte — Größe und Gewicht spielen keine Rolle.",
+    "result": "Täglicher Kalorienbedarf",
+    "kcalPerDay": "kcal/Tag",
+    "table": "Richtwerte nach Alter (kcal/Tag)",
+    "tableNote": "Werte für moderates Aktivitätsniveau, IOM-Referenz.",
+    "ageRange": "Alter",
+    "boy": "Junge",
+    "girl": "Mädchen",
+    "row1to3": "1–3 Jahre",
+    "row4to8": "4–8 Jahre",
+    "row9to13": "9–13 Jahre",
+    "row14to18": "14–18 Jahre",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner nutzt die EER-Formel (Estimated Energy Requirement) des Institute of Medicine (IOM). Sie berücksichtigt Alter, Geschlecht, Größe, Gewicht und einen altersspezifischen Aktivitätsfaktor (PA). Für Kinder unter drei Jahren werden feste Referenzwerte verwendet (1-jähriger Junge: 948 kcal, 2-jähriges Mädchen: 992 kcal usw.). Ab 3 Jahren gilt: kcal/Tag = Konstanten + Alter + PA·(Gewicht + Größe). Wachstumsschübe, Pubertät und sportliche Aktivität verändern den Bedarf erheblich.",
+    "disclaimer": "Wichtig: Diese Werte sind Richtwerte. Wachstum, Krankheit und Aktivität schwanken stark. Bei Unter- oder Überernährung sprich mit Kinderärztin oder Ernährungsberaterin.",
+    "faq": [
+      {
+        "q": "Wie viele Kalorien braucht ein Kind pro Tag?",
+        "a": "Das hängt stark vom Alter ab. Ein 4-jähriges Mädchen mit moderater Aktivität benötigt rund 1300 kcal, ein 14-jähriger Junge im Sport rund 2800 kcal. Genaue Werte berechnet der Rechner nach IOM-Formel."
+      },
+      {
+        "q": "Welche Formel wird verwendet?",
+        "a": "Die Estimated Energy Requirement (EER) des U.S. Institute of Medicine (DRI 2002/2005). Sie ist Standard in Pädiatrie und Ernährungswissenschaft und berücksichtigt das Wachstum."
+      },
+      {
+        "q": "Was bedeuten die Aktivitätsstufen?",
+        "a": "Sedentary = Schule + Hausaufgaben, kaum Sport. Low active = Schulweg + Spielen draußen. Active = Vereinssport mehrmals pro Woche. Very active = Leistungssport oder mehrere Stunden Bewegung täglich."
+      },
+      {
+        "q": "Warum braucht mein Kind mehr Kalorien als ich?",
+        "a": "Kinder wachsen — Wachstum, Aufbau von Muskel- und Knochenmasse sowie ein höherer Grundumsatz pro kg Körpergewicht erhöhen den Energiebedarf. In der Pubertät steigt der Bedarf nochmals deutlich."
+      },
+      {
+        "q": "Soll ich die Kalorien zählen?",
+        "a": "Nein. Bei gesunden Kindern lieber auf ausgewogene Mahlzeiten und Sättigungsgefühl achten. Der Rechner hilft, den Größenordnungsbereich einzuschätzen — etwa bei Gewichtssorgen oder besonderem Aktivitätsniveau."
+      },
+      {
+        "q": "Gilt das auch für Säuglinge?",
+        "a": "Nein. Für Babys unter 1 Jahr gelten andere Empfehlungen — siehe unseren Baby-Trinkmenge-Rechner. Ab 1 Jahr greift dieser Kinder-Kalorienbedarf-Rechner."
+      }
+    ]
+  }
+}
