@@ -1,0 +1,81 @@
+{
+  "home": {
+    "calculators": {
+      "painScale": {
+        "name": "Schmerzskala-Rechner",
+        "description": "NRS, VAS und Wong-Baker — Schmerzintensität bewerten und einordnen."
+      }
+    }
+  },
+  "painScale": {
+    "meta": {
+      "title": "Schmerzskala-Rechner — NRS, VAS, Wong-Baker | Health Calculators",
+      "description": "Schmerzintensität mit NRS (0–10), VAS (0–100 mm) und Wong-Baker-FACES bewerten. Klassifikation nach IASP/WHO. Kostenlos, sofort, anonym."
+    },
+    "title": "Schmerzskala-Rechner",
+    "description": "Bewerte deine Schmerzintensität mit drei etablierten klinischen Skalen — NRS, VAS und Wong-Baker. Ergebnis mit Einordnung nach IASP/WHO.",
+    "scaleLabel": "Schmerz-Skala",
+    "scales": {
+      "nrs": "NRS",
+      "vas": "VAS",
+      "wongBaker": "Wong-Baker"
+    },
+    "scaleHints": {
+      "nrs": "Numerische Rating-Skala — wähle eine ganze Zahl von 0 bis 10.",
+      "vas": "Visuelle Analog-Skala — Position auf einer 100 mm langen Linie (0 = kein Schmerz, 100 = stärkster Schmerz).",
+      "wongBaker": "Wong-Baker FACES — sechs Gesichter, jeweils 0, 2, 4, 6, 8, 10."
+    },
+    "scoreLabel": "Schmerz-Wert",
+    "vasLabel": "VAS (mm)",
+    "selectFace": "Gesicht wählen",
+    "incompleteHint": "Wähle eine Skala und gib einen Wert ein, um deine Schmerzintensität zu klassifizieren.",
+    "categoryLabel": "Einordnung",
+    "categories": {
+      "none": "Kein Schmerz",
+      "mild": "Leichter Schmerz",
+      "moderate": "Mäßiger Schmerz",
+      "severe": "Starker Schmerz"
+    },
+    "hints": {
+      "none": "0/10: Kein Schmerz. Keine Behandlung erforderlich. Achte trotzdem auf Veränderungen — chronische Schmerzen bleiben oft unbemerkt.",
+      "mild": "1–3/10: Leichter Schmerz. Tägliche Aktivitäten sind kaum beeinträchtigt. Selbsthilfe (Wärme, Kälte, Bewegung) ist meist ausreichend; Schmerzmittel selten nötig.",
+      "moderate": "4–6/10: Mäßiger Schmerz. Aktivität wird spürbar eingeschränkt. Medikamentöse Behandlung kann sinnvoll sein. Bei Persistenz > 1 Woche ärztlich abklären.",
+      "severe": "7–10/10: Starker Schmerz. Eindeutige Beeinträchtigung des Alltags. Ärztliche Vorstellung empfohlen — bei plötzlichem Auftreten oder begleitenden Symptomen sofort."
+    },
+    "rangeLabel": "Wertebereich",
+    "interpretationLabel": "Bedeutung",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Drei klinisch validierte Schmerz-Skalen werden hier verwendet: NRS (Numerische Rating-Skala, 0–10), VAS (Visuelle Analog-Skala, 0–100 mm) und Wong-Baker FACES (Gesichter-Skala für Kinder und Personen mit Sprachbarriere). Alle Werte werden auf eine 0–10-Skala normiert und nach Serlin et al. 1995 (IASP/WHO) in Kategorien eingeteilt: 0 kein Schmerz, 1–3 leicht, 4–6 mäßig, 7–10 stark.",
+    "disclaimer": "Diese Bewertung ist eine Selbsteinschätzung und ersetzt keine ärztliche Diagnose. Bei plötzlich auftretenden, persistenten oder mit Begleitsymptomen einhergehenden Schmerzen umgehend medizinische Hilfe suchen.",
+    "faq": [
+      {
+        "q": "Was ist die NRS-Schmerzskala?",
+        "a": "Die Numerische Rating-Skala (NRS) ist eine 11-stufige Skala von 0 bis 10. 0 bedeutet kein Schmerz, 10 stärkster vorstellbarer Schmerz. Sie ist weltweit die häufigste Schmerz-Skala in Klinik und Praxis."
+      },
+      {
+        "q": "Wie unterscheidet sich VAS von NRS?",
+        "a": "Die Visuelle Analog-Skala (VAS) ist eine 100 mm lange Linie ohne Beschriftung. Patienten markieren ihre Schmerzintensität als Position auf der Linie. Die VAS ist feiner aufgelöst, dafür aufwändiger zu erheben."
+      },
+      {
+        "q": "Wann wird Wong-Baker FACES eingesetzt?",
+        "a": "Die FACES-Skala wurde 1983 für Kinder ab 3 Jahren entwickelt, ist heute aber auch bei Erwachsenen mit Sprachbarrieren oder kognitiven Einschränkungen Standard. Sechs Gesichter zeigen eine Skala von 0 bis 10 in 2-er Schritten."
+      },
+      {
+        "q": "Welche Werte gelten als 'klinisch relevant'?",
+        "a": "Schmerzwerte ab 4/10 gelten in den meisten Leitlinien als behandlungsbedürftig. Eine Reduktion um mindestens 30 % bzw. 2 Punkte gilt als klinisch bedeutsame Verbesserung."
+      },
+      {
+        "q": "Wie oft sollte ich meine Schmerzen messen?",
+        "a": "Bei akutem Schmerz: vor und 30–60 Minuten nach jeder Behandlung. Bei chronischem Schmerz: täglich zur gleichen Tageszeit, idealerweise mit Schmerztagebuch über mindestens zwei Wochen."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Schmerz und Leiden?",
+        "a": "Schmerz ist die sensorische Komponente, Leiden umfasst die emotionale und funktionale Belastung. Die NRS misst nur die Intensität — für eine vollständige Beurteilung sind Skalen wie der Brief Pain Inventory (BPI) sinnvoll."
+      },
+      {
+        "q": "Sind Selbst-Bewertungen verlässlich?",
+        "a": "Ja — Selbst-Bewertungen sind der Goldstandard, weil Schmerz subjektiv ist. Beobachterskalen kommen nur bei Patienten zum Einsatz, die ihre Schmerzen nicht kommunizieren können (z. B. Demenz, Bewusstlosigkeit)."
+      }
+    ]
+  }
+}
