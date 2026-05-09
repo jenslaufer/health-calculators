@@ -620,6 +620,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'newbornBilirubin',
     related: ['apgar-score-calculator-guide', 'baby-feeding-amount-calculator', 'baby-milestone-tracker-guide'],
   },
+  {
+    slug: 'pediatric-blood-pressure-guide',
+    title: 'Pediatric Blood Pressure: Understanding the AAP 2017 Percentiles',
+    description: 'How the AAP 2017 guideline classifies blood pressure in children — why age, sex, and height matter. Normal, elevated, stage 1 or stage 2 hypertension explained.',
+    date: '2026-05-09',
+    readTime: '8 min',
+    calculatorKey: 'pediatricBloodPressure',
+    related: ['measure-blood-pressure', 'child-growth-percentile-chart', 'child-dosage-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

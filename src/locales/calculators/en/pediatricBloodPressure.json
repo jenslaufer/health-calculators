@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "pediatricBloodPressure": {
+        "name": "Pediatric Blood Pressure Calculator",
+        "description": "Blood pressure percentile for children and adolescents — AAP 2017 screening table."
+      }
+    }
+  },
+  "pediatricBloodPressure": {
+    "meta": {
+      "title": "Pediatric Blood Pressure Calculator — AAP 2017 Percentiles | Health Calculators",
+      "description": "Classify blood pressure in children and adolescents (ages 1–17) using the AAP 2017 simplified screening table. Normal, elevated, stage 1 or stage 2 — free, instant, no sign-up."
+    },
+    "title": "Pediatric Blood Pressure Calculator",
+    "description": "Classify your child's blood pressure using the AAP 2017 simplified screening table. Returns a risk category based on age, sex, and measured values.",
+    "ageYears": "Age (years)",
+    "ageHint": "1 – 17 years",
+    "sex": "Sex",
+    "boy": "Boy",
+    "girl": "Girl",
+    "sbp": "Systolic blood pressure (mmHg)",
+    "dbp": "Diastolic blood pressure (mmHg)",
+    "sbpHint": "e.g. 110",
+    "dbpHint": "e.g. 70",
+    "result": "Category",
+    "thresholds": "Thresholds at this age",
+    "p90Label": "90th percentile",
+    "p95Label": "95th percentile",
+    "stage2Label": "Stage 2",
+    "incompleteHint": "Enter age, sex, and both systolic and diastolic blood pressure to see the category.",
+    "categories": {
+      "normal": "Normal",
+      "elevated": "Elevated",
+      "stage1": "Stage 1 hypertension",
+      "stage2": "Stage 2 hypertension"
+    },
+    "hints": {
+      "normal": "Both values are below the 90th percentile. Continue routine well-child checks per pediatric guidelines.",
+      "elevated": "Values are between the 90th and 95th percentiles. Repeat measurement in a few weeks and review lifestyle — most children normalise.",
+      "stage1": "Values are at or above the 95th percentile but below the 95th + 12 mmHg. Repeat at two further visits — if confirmed, refer to pediatric cardiology.",
+      "stage2": "Values exceed the 95th percentile + 12 mmHg. Seek medical evaluation within one week. With symptoms, attend the emergency department immediately."
+    },
+    "howItWorks": "How it works",
+    "howItWorksText": "The AAP 2017 guideline (Flynn et al., Pediatrics 2017) defines pediatric BP percentiles by age, sex, and height. This calculator uses the simplified screening table at the 5th height percentile — the most conservative, sensitive threshold. If your child's BP is below it, hypertension is very unlikely. From age 13 the AHA adult thresholds apply (120/80, 130/80, 140/90).",
+    "disclaimer": "This estimate is not a diagnosis. Accurate classification requires multiple measurements on different days, the correct cuff size, and clinical evaluation. Symptoms such as headache, vision changes, or chest pain warrant immediate medical attention.",
+    "faq": [
+      {
+        "q": "What ages does this calculator cover?",
+        "a": "Children and adolescents from 1 to 17 years. Infants under 1 year use different reference values — please consult your pediatrician. For adults, use our standard blood pressure calculator."
+      },
+      {
+        "q": "Why do pediatric BP thresholds depend on age and sex?",
+        "a": "Blood pressure rises with growth and maturation. Boys and girls diverge especially after puberty. That is why pediatric BP percentiles are sex- and age-specific — a reading of 120/80 is pathologic for a 5-year-old but normal for a 16-year-old."
+      },
+      {
+        "q": "Why does cuff size matter?",
+        "a": "The cuff bladder must encircle 80 % of the arm circumference and cover ~40 % of arm length. A cuff that is too small falsely elevates the reading — one of the most common errors in pediatric BP."
+      },
+      {
+        "q": "How often should children have their BP checked?",
+        "a": "Per AAP, BP should be measured at every well-child visit from age 3. Children with risk factors (obesity, prematurity, kidney disease, congenital heart disease) need earlier and more frequent measurement."
+      },
+      {
+        "q": "When is high BP a pediatric emergency?",
+        "a": "Very high readings (well above the 95th + 12 mmHg) combined with symptoms — severe headache, visual changes, vomiting, chest pain, altered mental status — are emergencies and require 911 / pediatric ED. Without symptoms, prompt evaluation in 1 week is usually sufficient."
+      },
+      {
+        "q": "What causes high BP in children?",
+        "a": "Younger children mostly have secondary hypertension (renal disease, coarctation of the aorta, endocrine causes). Adolescents more often have primary hypertension, frequently associated with obesity, low activity, and a positive family history."
+      },
+      {
+        "q": "What can parents do?",
+        "a": "Encourage 60 minutes of daily activity, a low-salt vegetable-rich diet, adequate sleep, manage overweight, and limit screen time. Confirmed hypertension warrants a pediatrician visit and possibly a pediatric hypertension clinic."
+      }
+    ]
+  }
+}
