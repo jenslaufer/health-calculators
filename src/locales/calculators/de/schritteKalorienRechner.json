@@ -1,0 +1,86 @@
+{
+  "home": {
+    "calculators": {
+      "schritteKalorienRechner": {
+        "name": "Schritte-Kalorien-Rechner",
+        "description": "10000 Schritte: Wie viele Kalorien? Schritte in km umrechnen — kostenlos & sofort."
+      }
+    }
+  },
+  "schritteKalorienRechner": {
+    "meta": {
+      "title": "Schritte-Kalorien-Rechner — 10000 Schritte Kalorien & Schritte in km",
+      "description": "Wie viele Kalorien verbrennen 10000 Schritte? Wie weit sind 10000 Schritte in km? Berechne Kalorienverbrauch, zurückgelegte Strecke und dein Aktivitätslevel — kostenlos und ohne Anmeldung."
+    },
+    "title": "Schritte-Kalorien-Rechner",
+    "description": "Berechne Kalorienverbrauch, zurückgelegte Strecke und Aktivitätslevel aus deinen täglichen Schritten.",
+    "stepsLabel": "Schritte pro Tag",
+    "weightLabel": "Gewicht (kg)",
+    "strideLabel": "Schrittlänge (cm)",
+    "strideHint": "Optional. Aus Größe schätzen oder 75 cm als Standard.",
+    "heightLabel": "Größe (cm, optional)",
+    "stepsPlaceholder": "10000",
+    "weightPlaceholder": "70",
+    "stridePlaceholder": "75",
+    "heightPlaceholder": "175",
+    "results": "Ergebnis",
+    "kcalLabel": "Kalorienverbrauch",
+    "kmLabel": "Strecke",
+    "activityLabel": "Aktivitätslevel",
+    "activity": {
+      "sedentary": "Sedentär",
+      "low": "Niedrig aktiv",
+      "moderate": "Moderat aktiv",
+      "active": "Aktiv",
+      "veryActive": "Sehr aktiv"
+    },
+    "activityHints": {
+      "sedentary": "< 5000 Schritte/Tag — vorwiegend sitzender Lebensstil. Anstreben: schrittweise auf 7500+ steigern.",
+      "low": "5000–7499 Schritte/Tag — niedrig aktiv. Mit kurzen Spaziergängen lässt sich der Wert leicht heben.",
+      "moderate": "7500–9999 Schritte/Tag — moderat aktiv. Du bist auf einem guten Weg in Richtung 10000.",
+      "active": "10000–12499 Schritte/Tag — aktiv. Forschungsempfehlung der WHO erfüllt.",
+      "veryActive": "≥ 12500 Schritte/Tag — sehr aktiv. Vergleichbar mit körperlich anspruchsvollen Berufen oder Sport."
+    },
+    "incompleteHint": "Gib Schritte und Gewicht ein, um Kalorien und Strecke zu berechnen.",
+    "referenceTable": "Referenztabelle (bei 70 kg, 75 cm Schrittlänge)",
+    "stepsHeader": "Schritte",
+    "kmHeader": "Strecke",
+    "kcalHeader": "Kalorien",
+    "exampleTitle": "Beispiel — 10000 Schritte bei 80 kg",
+    "exampleText": "10000 × 0,04 × (80 / 70) ≈ 457 kcal. Bei 75 cm Schrittlänge sind das 7,5 km. Aktivitätslevel: aktiv.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Die Faustformel kcal ≈ Schritte × 0,04 × (Gewicht / 70) basiert auf dem Compendium of Physical Activities und Studien von Tudor-Locke et al. (2008). 0,04 kcal/Schritt ist der mittlere Energieverbrauch beim moderaten Gehen (~5 km/h) bei 70 kg Körpergewicht. Der Wert skaliert linear mit dem Gewicht — schwerere Personen verbrennen pro Schritt mehr. Die Schrittlänge ergibt sich aus etwa 41 % der Körpergröße; 75 cm ist eine gute Standard-Annahme für Erwachsene.",
+    "disclaimer": "Schätzwerte. Tatsächlicher Verbrauch hängt von Gehgeschwindigkeit, Steigung, Untergrund und individueller Effizienz ab. Abweichungen von ±15 % sind normal.",
+    "relatedTitle": "Verwandte Rechner",
+    "faq": [
+      {
+        "q": "Wie viele Kalorien verbrennen 10000 Schritte?",
+        "a": "Bei 70 kg etwa 400 kcal, bei 80 kg etwa 457 kcal, bei 90 kg etwa 514 kcal. Die Faustformel kcal ≈ Schritte × 0,04 × (Gewicht / 70) gilt für moderates Gehen mit ~5 km/h."
+      },
+      {
+        "q": "Wie weit sind 10000 Schritte in km?",
+        "a": "Bei einer durchschnittlichen Schrittlänge von 75 cm sind 10000 Schritte 7,5 km. Bei 70 cm: 7,0 km. Bei 80 cm: 8,0 km. Die Schrittlänge entspricht etwa 41 % der Körpergröße."
+      },
+      {
+        "q": "Sind 10000 Schritte täglich wirklich nötig?",
+        "a": "Die Zahl stammt aus einer japanischen Werbekampagne (1965) — wissenschaftlich belegt sind gesundheitliche Vorteile aber bereits ab 7000–8000 Schritten täglich. Mehr ist besser, der Grenzwert von 10000 ist kein Muss."
+      },
+      {
+        "q": "Wie genau ist die Berechnung?",
+        "a": "Die Faustformel hat eine typische Abweichung von ±15 %. Genauer wird es nur mit individueller Messung (z. B. indirekte Kalorimetrie) — für den Alltag ist die Schätzung mehr als ausreichend."
+      },
+      {
+        "q": "Macht Bergaufgehen einen Unterschied?",
+        "a": "Ja, deutlich. Bergauf kann der Kalorienverbrauch um 50–100 % steigen. Diese Faustformel gilt für ebenes Gelände — auf Steigungen den Wert höher ansetzen."
+      },
+      {
+        "q": "Was ist mit langsamem oder schnellem Gehen?",
+        "a": "Bei sehr langsamem Schlendern (< 3 km/h) liegt der Verbrauch etwa 20 % niedriger, bei schnellem Gehen oder Walking (> 6 km/h) bis zu 30 % höher als die Faustformel."
+      },
+      {
+        "q": "Welche Schrittlänge ist normal?",
+        "a": "Erwachsene haben eine Schrittlänge von 65–85 cm. Frauen: ~67 cm, Männer: ~75 cm. Eine grobe Schätzung: Körpergröße × 0,41."
+      }
+    ]
+  }
+}

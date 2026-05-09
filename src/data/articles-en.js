@@ -620,6 +620,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'newbornBilirubin',
     related: ['apgar-score-calculator-guide', 'baby-feeding-amount-calculator', 'baby-milestone-tracker-guide'],
   },
+  {
+    slug: 'steps-to-calories-guide',
+    title: 'Steps to Calories: What 10000 Steps Really Means',
+    description: 'How many calories does 10000 steps burn? How far is 10000 steps in km? Formula, stride length, activity bands and the truth behind the magic 10000 number.',
+    date: '2026-05-09',
+    readTime: '7 min',
+    calculatorKey: 'schritteKalorienRechner',
+    related: ['calculate-running-pace', 'calculate-calories-burned', 'calculate-tdee'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

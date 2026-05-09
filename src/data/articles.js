@@ -620,6 +620,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'newbornBilirubin',
     related: ['apgar-score-bewerten', 'baby-trinkmenge-berechnen', 'baby-meilensteine-tracker'],
   },
+  {
+    slug: 'schritte-kalorien-berechnen',
+    title: 'Schritte in Kalorien & km umrechnen — was 10000 Schritte wirklich bedeuten',
+    description: '10000 Schritte sind wie viele Kalorien und wie viele km? Faustformel, Schrittlänge, Aktivitätslevel und der Mythos der „magischen" Zahl 10000.',
+    date: '2026-05-09',
+    readTime: '7 min',
+    calculatorKey: 'schritteKalorienRechner',
+    related: ['lauftempo-berechnen', 'kalorienverbrauch-berechnen', 'tdee-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
