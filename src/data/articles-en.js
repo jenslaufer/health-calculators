@@ -620,6 +620,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'newbornBilirubin',
     related: ['apgar-score-calculator-guide', 'baby-feeding-amount-calculator', 'baby-milestone-tracker-guide'],
   },
+  {
+    slug: 'vitamin-d-deficiency',
+    title: 'Vitamin D Deficiency: Symptoms, Testing, How Much IU You Need',
+    description: 'Vitamin D deficiency explained: symptoms, 25-OH-D blood test ranges in ng/mL, IU per kg dosing, D3 vs D2, food sources and the safety upper limit.',
+    date: '2026-05-09',
+    readTime: '11 min',
+    calculatorKey: 'vitaminDDeficiency',
+    related: ['vitamin-d-calculator', 'osteoporosis-risk-calculator-guide', 'corrected-calcium-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -13,6 +13,8 @@ function parseMeta(source) {
   const slugsMatch = source.match(/slugs:\s*\{\s*de:\s*'([^']+)',\s*en:\s*'([^']+)'\s*\}/)
   const slugs = slugsMatch ? { de: slugsMatch[1], en: slugsMatch[2] } : null
 
+  const blogOnly = /blogOnly:\s*true/.test(source)
+
   const blogBlock = source.match(/blog:\s*\{([\s\S]*)\},?\s*\}[\s]*$/)?.[1] ?? ''
   const blogDeSlug = blogBlock.match(/de:\s*\{[^}]*slug:\s*'([^']+)'/)?.[1]
   const blogEnSlug = blogBlock.match(/en:\s*\{[^}]*slug:\s*'([^']+)'/)?.[1]
@@ -25,6 +27,7 @@ function parseMeta(source) {
     en: { slug: blogEnSlug, file: blogEnFile },
   } : null
 
+  if (blogOnly && key && blog) return { key, blogOnly: true, blog }
   return key && slugs ? { key, slugs, blog } : null
 }
 
@@ -75,7 +78,7 @@ export function generateLlmsTxt(metas, baseUrl = BASE_URL, metaDir = META_DIR) {
   txt += '> Free, science-backed health calculators for BMI, BMR, body fat, calories, macros, and more. Available in English and German.\n\n'
 
   txt += '## Calculators\n\n'
-  for (const meta of metas) {
+  for (const meta of metas.filter(m => !m.blogOnly)) {
     const en = loadLocale(meta.key, 'en', metaDir)
     const de = loadLocale(meta.key, 'de', metaDir)
     txt += `- [${en.title}](${baseUrl}/en/${meta.slugs.en}): ${en.description}\n`

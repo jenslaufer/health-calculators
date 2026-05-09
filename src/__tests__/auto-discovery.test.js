@@ -28,6 +28,8 @@ const EXPECTED_KEYS = [
   'painScale', 'newbornBilirubin',
 ]
 
+const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency']
+
 const EXPECTED_ROUTE_MAP = {
   bmi: { de: 'bmi-rechner', en: 'bmi-calculator' },
   water: { de: 'wasser-rechner', en: 'water-intake-calculator' },
@@ -158,6 +160,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'kreatinin-clearance-berechnen',
   'schmerzskala-berechnen',
   'neugeborenen-gelbsucht-risiko',
+  'vitamin-d-mangel',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -218,6 +221,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'creatinine-clearance-calculator-guide',
   'pain-scale-calculator-guide',
   'newborn-jaundice-calculator-guide',
+  'vitamin-d-deficiency',
 ]
 
 describe('calculator discovery', () => {
@@ -253,17 +257,26 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 69 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(69)
+  it('discovers all 70 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(70)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 69 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(69)
+  it('discovers all 70 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(70)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
+    }
+  })
+
+  it('blog-only metas register their blog without polluting calculator counts', () => {
+    expect(blogComponentsDe['vitamin-d-mangel']).toBeDefined()
+    expect(blogComponentsEn['vitamin-d-deficiency']).toBeDefined()
+    const calcKeys = calculatorMetas.map(m => m.key)
+    for (const k of EXPECTED_BLOG_ONLY_KEYS) {
+      expect(calcKeys).not.toContain(k)
     }
   })
 })
@@ -350,8 +363,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 391 routes', () => {
-    expect(routes).toHaveLength(391)
+  it('generates exactly 394 routes', () => {
+    expect(routes).toHaveLength(394)
   })
 
   it('has locale routes for all calculators in both languages', () => {

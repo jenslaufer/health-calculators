@@ -31,13 +31,13 @@ describe('generateLlmsTxt', () => {
   })
 
   it('includes EN calculator URLs for all calculators', () => {
-    for (const meta of metas) {
+    for (const meta of metas.filter(m => !m.blogOnly)) {
       expect(txt, `missing EN URL for ${meta.key}`).toContain(`${BASE_URL}/en/${meta.slugs.en}`)
     }
   })
 
   it('includes DE calculator URLs for all calculators', () => {
-    for (const meta of metas) {
+    for (const meta of metas.filter(m => !m.blogOnly)) {
       expect(txt, `missing DE URL for ${meta.key}`).toContain(`${BASE_URL}/de/${meta.slugs.de}`)
     }
   })
@@ -65,9 +65,9 @@ describe('generateLlmsTxt', () => {
     }
   })
 
-  it('generates 280 links (71 calcs × 2 locales + 69 blogs × 2 locales)', () => {
+  it('generates 282 links (71 calcs × 2 locales + 70 blogs × 2 locales)', () => {
     const links = txt.split('\n').filter(l => l.startsWith('- ['))
-    expect(links).toHaveLength(280)
+    expect(links).toHaveLength(282)
   })
 
   it('blog titles do not contain "| Health Calculators" suffix', () => {
