@@ -259,15 +259,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 72 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(72)
+  it('discovers all 71 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(71)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 72 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(72)
+  it('discovers all 71 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(71)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -356,8 +356,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 396 routes', () => {
-    expect(routes).toHaveLength(396)
+  it('generates exactly 401 routes', () => {
+    expect(routes).toHaveLength(401)
   })
 
   it('has locale routes for all calculators in both languages', () => {
