@@ -5,8 +5,11 @@ const metaModules = import.meta.glob('./pages/*.meta.js', { eager: true })
 
 const allMetas = Object.values(metaModules).map(m => m.default)
 
+// Blog-only metas (no calculator) participate only in blog discovery.
+const calculatorOnlyMetas = allMetas.filter(m => !m.blogOnly)
+
 // Sort by groupOrder, then by order within group
-export const calculatorMetas = allMetas.sort((a, b) =>
+export const calculatorMetas = calculatorOnlyMetas.sort((a, b) =>
   a.groupOrder !== b.groupOrder ? a.groupOrder - b.groupOrder : a.order - b.order
 )
 
@@ -22,15 +25,15 @@ export const routeMap = {
   blog: { de: 'blog', en: 'blog' },
 }
 
-// { slug: component } maps for blog routes (calculators without blog are skipped)
+// { slug: component } maps for blog routes (includes blog-only metas)
 export const blogComponentsDe = Object.fromEntries(
-  calculatorMetas
+  allMetas
     .filter(m => m.blog?.de)
     .map(m => [m.blog.de.slug, m.blog.de.component])
 )
 
 export const blogComponentsEn = Object.fromEntries(
-  calculatorMetas
+  allMetas
     .filter(m => m.blog?.en)
     .map(m => [m.blog.en.slug, m.blog.en.component])
 )

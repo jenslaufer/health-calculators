@@ -81,6 +81,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'schritte-kalorien-berechnen',
   'kinder-kalorienbedarf-berechnen',
   'kinder-blutdruck-perzentile',
+  'vitamin-d-mangel',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -143,12 +144,13 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'steps-to-calories-guide',
   'child-calorie-needs-guide',
   'pediatric-blood-pressure-guide',
+  'vitamin-d-deficiency',
 ]
 
 describe('discoverMetas', () => {
   it('discovers all 74 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas).toHaveLength(74)
+    expect(metas.filter(m => !m.blogOnly)).toHaveLength(74)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -161,7 +163,7 @@ describe('discoverMetas', () => {
 
   it('each meta has de and en slugs', () => {
     const metas = discoverMetas(META_DIR)
-    for (const meta of metas.filter(m => m.blog)) {
+    for (const meta of metas.filter(m => m.blog && !m.blogOnly)) {
       expect(meta.slugs.de, `missing de slug for ${meta.key}`).toBeTruthy()
       expect(meta.slugs.en, `missing en slug for ${meta.key}`).toBeTruthy()
     }
@@ -186,19 +188,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 72 DE blog slugs', () => {
+  it('returns all 73 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(72)
+    expect(de).toHaveLength(73)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 72 EN blog slugs', () => {
+  it('returns all 73 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(72)
+    expect(en).toHaveLength(73)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -226,7 +228,7 @@ describe('generateSitemap', () => {
 
   it('includes all calculator URLs for both locales', () => {
     const metas = discoverMetas(META_DIR)
-    for (const meta of metas.filter(m => m.blog)) {
+    for (const meta of metas.filter(m => m.blog && !m.blogOnly)) {
       expect(xml, `missing de URL for ${meta.key}`).toContain(`<loc>${BASE_URL}/de/${meta.slugs.de}/</loc>`)
       expect(xml, `missing en URL for ${meta.key}`).toContain(`<loc>${BASE_URL}/en/${meta.slugs.en}/</loc>`)
     }
@@ -266,9 +268,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 148 calcs + 2 blog index + 144 blog articles = 296)', () => {
+  it('generates correct total URL count (2 home + 148 calcs + 2 blog index + 146 blog articles = 298)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(296)
+    expect(urlCount).toBe(298)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {

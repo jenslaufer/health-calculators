@@ -27,6 +27,8 @@ const EXPECTED_KEYS = [
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
 ]
 
+const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency']
+
 const EXPECTED_ROUTE_MAP = {
   bmi: { de: 'bmi-rechner', en: 'bmi-calculator' },
   water: { de: 'wasser-rechner', en: 'water-intake-calculator' },
@@ -163,6 +165,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'schritte-kalorien-berechnen',
   'kinder-kalorienbedarf-berechnen',
   'kinder-blutdruck-perzentile',
+  'vitamin-d-mangel',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -226,6 +229,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'steps-to-calories-guide',
   'child-calorie-needs-guide',
   'pediatric-blood-pressure-guide',
+  'vitamin-d-deficiency',
 ]
 
 describe('calculator discovery', () => {
@@ -261,17 +265,26 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 72 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(72)
+  it('discovers all 73 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(73)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 72 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(72)
+  it('discovers all 73 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(73)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
+    }
+  })
+
+  it('blog-only metas register their blog without polluting calculator counts', () => {
+    expect(blogComponentsDe['vitamin-d-mangel']).toBeDefined()
+    expect(blogComponentsEn['vitamin-d-deficiency']).toBeDefined()
+    const calcKeys = calculatorMetas.map(m => m.key)
+    for (const k of EXPECTED_BLOG_ONLY_KEYS) {
+      expect(calcKeys).not.toContain(k)
     }
   })
 })
@@ -358,8 +371,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 406 routes', () => {
-    expect(routes).toHaveLength(406)
+  it('generates exactly 409 routes', () => {
+    expect(routes).toHaveLength(409)
   })
 
   it('has locale routes for all calculators in both languages', () => {

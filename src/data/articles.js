@@ -647,6 +647,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pediatricBloodPressure',
     related: ['blutdruck-richtig-messen', 'wachstumsperzentile-kinder', 'kinder-dosierung-rechner'],
   },
+  {
+    slug: 'vitamin-d-mangel',
+    title: 'Vitamin-D-Mangel: Symptome, Test, IE pro Tag richtig dosieren',
+    description: 'Vitamin-D-Mangel erkennen: Symptome, 25-OH-D-Bluttest, ng/ml-Bereiche, IE pro kg Körpergewicht, D3 vs. D2, Lebensmittel und Sicherheitsobergrenze.',
+    date: '2026-05-09',
+    readTime: '11 min',
+    calculatorKey: 'vitaminDDeficiency',
+    related: ['vitamin-d-berechnen', 'osteoporose-risiko-berechnen', 'korrigiertes-calcium-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
