@@ -316,13 +316,13 @@ describe('calculator groups', () => {
   it('nutritionEnergy group has correct calculators in order', () => {
     expect(calculatorGroups[1].calculators).toEqual([
       'bmr', 'tdee', 'macro', 'water', 'calorieDeficit',
-      'protein', 'caloriesBurned', 'proteinNeed', 'caffeine', 'intermittentFasting', 'keto', 'schritteKalorienRechner', 'childCalories',
+      'protein', 'caloriesBurned', 'proteinNeed', 'caffeine', 'intermittentFasting', 'keto', 'childCalories',
     ])
   })
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator', 'dehydrationRisk', 'heartFailureRisk', 'thyroidFunction', 'anemiaRisk', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium', 'asthmaControl', 'copdAssessment', 'creatinineClearance', 'painScale', 'pediatricBloodPressure',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator', 'dehydrationRisk', 'heartFailureRisk', 'thyroidFunction', 'anemiaRisk', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium', 'asthmaControl', 'copdAssessment', 'creatinineClearance', 'painScale', 'pediatricBloodPressure', 'schritteKalorienRechner',
     ])
   })
 

@@ -6,9 +6,9 @@ export default {
   key: 'schritteKalorienRechner',
   component: Component,
   slugs: { de: 'schritte-kalorien-rechner', en: 'steps-to-calories-calculator' },
-  group: 'nutritionEnergy',
-  groupOrder: 1,
-  order: 9,
+  group: 'fitnessRecovery',
+  groupOrder: 2,
+  order: 103,
   blog: {
     de: { slug: 'schritte-kalorien-berechnen', component: BlogDe },
     en: { slug: 'steps-to-calories-guide', component: BlogEn },
