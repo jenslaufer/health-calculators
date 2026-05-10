@@ -1,0 +1,83 @@
+{
+  "home": {
+    "calculators": {
+      "childCalories": {
+        "name": "Child Calorie Needs Calculator",
+        "description": "Daily calorie needs for children (ages 1–18) by age, sex, height, weight and activity level — IOM formula."
+      }
+    }
+  },
+  "childCalories": {
+    "meta": {
+      "title": "Child Calorie Needs Calculator — Daily Calories for Kids",
+      "description": "Calculate your child's daily calorie needs (ages 1–18) by age, sex, height, weight and activity level. IOM reference values. Free, instant."
+    },
+    "title": "Child Calorie Needs Calculator",
+    "description": "How many calories does your child need per day? Calculation by age, sex, height, weight and activity level.",
+    "age": "Age (years)",
+    "ageHint": "1–18 years",
+    "agePlaceholder": "e.g. 8",
+    "sex": "Sex",
+    "sexBoy": "Boy",
+    "sexGirl": "Girl",
+    "weight": "Weight",
+    "height": "Height",
+    "weightKg": "Weight (kg)",
+    "weightLb": "Weight (lb)",
+    "heightCm": "Height (cm)",
+    "heightIn": "Height (in)",
+    "weightPlaceholder": "e.g. 25",
+    "weightPlaceholderLb": "e.g. 55",
+    "heightPlaceholder": "e.g. 130",
+    "heightPlaceholderIn": "e.g. 51",
+    "activity": "Activity level",
+    "activitySedentary": "Sedentary (little exercise)",
+    "activityLowActive": "Low active (walking + play)",
+    "activityActive": "Active (regular sports)",
+    "activityVeryActive": "Very active (competitive sport)",
+    "implausibleAge": "Please enter an age between 1 and 18 years.",
+    "implausibleWeight": "Please enter a realistic weight between 5 and 150 kg.",
+    "implausibleHeight": "Please enter a realistic height between 60 and 220 cm.",
+    "toddlerNote": "For toddlers (ages 1–2), the calculator uses the fixed IOM reference values — height and weight are not used.",
+    "result": "Daily calorie needs",
+    "kcalPerDay": "kcal/day",
+    "table": "Reference values by age (kcal/day)",
+    "tableNote": "Values for moderate activity, IOM reference.",
+    "ageRange": "Age",
+    "boy": "Boy",
+    "girl": "Girl",
+    "row1to3": "1–3 years",
+    "row4to8": "4–8 years",
+    "row9to13": "9–13 years",
+    "row14to18": "14–18 years",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator uses the Estimated Energy Requirement (EER) formula from the U.S. Institute of Medicine (IOM). It accounts for age, sex, height, weight and an age-specific physical activity coefficient (PA). For children under three, fixed reference values apply (1-year-old boy: 948 kcal, 2-year-old girl: 992 kcal etc.). From age 3: kcal/day = constants − age + PA·(weight + height). Growth spurts, puberty and exercise change needs significantly.",
+    "disclaimer": "Important: these are guideline values. Growth, illness and activity vary widely. If you are concerned about under- or overeating, talk to your pediatrician or a registered dietitian.",
+    "faq": [
+      {
+        "q": "How many calories does a child need per day?",
+        "a": "It depends heavily on age. A 4-year-old girl with moderate activity needs around 1300 kcal, a 14-year-old active boy around 2800 kcal. The calculator uses the IOM EER formula for precise values."
+      },
+      {
+        "q": "Which formula is used?",
+        "a": "The Estimated Energy Requirement (EER) from the U.S. Institute of Medicine (DRI 2002/2005). It is the standard in pediatrics and nutrition science and accounts for growth."
+      },
+      {
+        "q": "What do the activity levels mean?",
+        "a": "Sedentary = school plus homework, little sport. Low active = walking to school plus outdoor play. Active = club sports several times a week. Very active = competitive sport or several hours of movement daily."
+      },
+      {
+        "q": "Why does my child need more calories than me?",
+        "a": "Children grow — building muscle and bone, plus a higher resting metabolic rate per kg of body weight, raises energy needs. During puberty, requirements rise again significantly."
+      },
+      {
+        "q": "Should I count calories for my child?",
+        "a": "No. For healthy children, focus on balanced meals and hunger cues. The calculator helps you estimate the order of magnitude — useful when there are concerns about weight or unusual activity levels."
+      },
+      {
+        "q": "Does this apply to babies?",
+        "a": "No. Babies under 1 year follow different recommendations — see our Baby Feeding Amount Calculator. From age 1, this Child Calorie Needs Calculator applies."
+      }
+    ]
+  }
+}

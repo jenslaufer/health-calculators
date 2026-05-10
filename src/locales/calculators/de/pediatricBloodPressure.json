@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "pediatricBloodPressure": {
+        "name": "Kinder-Blutdruck Rechner",
+        "description": "Blutdruck-Perzentile bei Kindern und Jugendlichen — AAP 2017 Screening-Tabelle."
+      }
+    }
+  },
+  "pediatricBloodPressure": {
+    "meta": {
+      "title": "Kinder-Blutdruck Rechner — Perzentile (AAP 2017) | Health Calculators",
+      "description": "Bewerte den Blutdruck bei Kindern und Jugendlichen (1–17 J.) anhand der AAP-2017-Perzentile. Normal, hochnormal, Hypertonie Stadium 1 oder 2 — kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Kinder-Blutdruck Rechner",
+    "description": "Beurteile den Blutdruck deines Kindes anhand der vereinfachten AAP-2017-Screening-Tabelle. Ergibt eine Risikozone abhängig von Alter, Geschlecht und gemessenen Werten.",
+    "ageYears": "Alter (Jahre)",
+    "ageHint": "1 – 17 Jahre",
+    "sex": "Geschlecht",
+    "boy": "Junge",
+    "girl": "Mädchen",
+    "sbp": "Systolischer Blutdruck (mmHg)",
+    "dbp": "Diastolischer Blutdruck (mmHg)",
+    "sbpHint": "z. B. 110",
+    "dbpHint": "z. B. 70",
+    "result": "Einordnung",
+    "thresholds": "Schwellenwerte für dieses Alter",
+    "p90Label": "90. Perzentil",
+    "p95Label": "95. Perzentil",
+    "stage2Label": "Stadium 2",
+    "incompleteHint": "Gib Alter, Geschlecht sowie systolischen und diastolischen Blutdruck ein, um die Einordnung zu sehen.",
+    "categories": {
+      "normal": "Normal",
+      "elevated": "Hochnormal",
+      "stage1": "Hypertonie Stadium 1",
+      "stage2": "Hypertonie Stadium 2"
+    },
+    "hints": {
+      "normal": "Beide Werte unter dem 90. Perzentil. Routine-Verlaufskontrolle laut Vorsorgeuntersuchungen (U-Untersuchungen, J1).",
+      "elevated": "Werte zwischen 90. und 95. Perzentil. Wiederholte Messung in einigen Wochen, dazu Lebensstilberatung — die meisten Kinder normalisieren sich.",
+      "stage1": "Werte ab dem 95. Perzentil bis 95. + 12 mmHg. Wiederholungsmessungen bei zwei weiteren Terminen empfohlen — bei Bestätigung kinderkardiologische Abklärung.",
+      "stage2": "Werte über dem 95. Perzentil + 12 mmHg. Zeitnahe ärztliche Abklärung (innerhalb 1 Woche). Bei deutlicher Symptomatik sofortige Vorstellung."
+    },
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Die AAP-2017-Leitlinie definiert Kinderblutdruck-Perzentile abhängig von Alter, Geschlecht und Körpergröße. Dieser Rechner verwendet die vereinfachte Screening-Tabelle (5. Perzentile der Größe — die konservativste, sensitive Schwelle): Liegt der Blutdruck darunter, ist eine Hypertonie sehr unwahrscheinlich. Ab Alter 13 gelten die AHA-Erwachsenen-Schwellenwerte (120/80, 130/80, 140/90).",
+    "disclaimer": "Diese Schätzung dient nicht der Diagnose. Eine korrekte Einordnung erfordert mehrere Messungen an verschiedenen Tagen, die richtige Manschettengröße und ärztliche Bewertung. Symptome wie Kopfschmerzen, Sehstörungen oder Brustschmerz erfordern sofortige Abklärung.",
+    "faq": [
+      {
+        "q": "Ab welchem Alter kann der Rechner angewendet werden?",
+        "a": "Für Kinder und Jugendliche zwischen 1 und 17 Jahren. Im 1. Lebensjahr (Säuglinge) gelten andere Referenzwerte — bitte den Kinderarzt fragen. Für Erwachsene nutze unseren regulären Blutdruck-Rechner."
+      },
+      {
+        "q": "Warum hängt der Blutdruck bei Kindern vom Alter und Geschlecht ab?",
+        "a": "Mit Wachstum und Reifung steigen Blutdruckwerte. Jungen und Mädchen unterscheiden sich vor allem ab der Pubertät. Deshalb gibt es alters- und geschlechts-spezifische Perzentilen — ein „120/80“ ist bei einem 5-Jährigen pathologisch, beim 16-Jährigen normal."
+      },
+      {
+        "q": "Welche Manschettengröße ist wichtig?",
+        "a": "Die Manschette muss zur Oberarm-Größe passen. Die Blase sollte 80 % des Armumfangs umfassen, die Breite 40 % der Armlänge. Eine zu kleine Manschette täuscht zu hohe Werte vor — eine sehr häufige Fehlerquelle bei Kindern."
+      },
+      {
+        "q": "Wie oft sollte der Blutdruck bei Kindern gemessen werden?",
+        "a": "Laut AAP ab dem 3. Lebensjahr bei jeder Vorsorgeuntersuchung. Bei Risikokindern (Adipositas, Frühgeburt, Nierenerkrankung, Herzfehler) auch früher und häufiger."
+      },
+      {
+        "q": "Wann ist eine Hypertonie ein Notfall?",
+        "a": "Sehr hohe Werte (>>95. + 12 mmHg) mit Symptomen wie starken Kopfschmerzen, Sehstörungen, Erbrechen, Brustschmerz oder Bewusstseinsstörung sind ein Notfall — sofort 112 oder Kindernotaufnahme. Ohne Symptome reicht meistens eine zeitnahe ärztliche Abklärung."
+      },
+      {
+        "q": "Was sind häufige Ursachen für Bluthochdruck bei Kindern?",
+        "a": "Bei jüngeren Kindern überwiegen sekundäre Ursachen (Nierenerkrankungen, Aortenisthmusstenose, endokrin). Bei Jugendlichen ist häufiger primäre Hypertonie — oft assoziiert mit Adipositas, Bewegungsmangel und positiver Familienanamnese."
+      },
+      {
+        "q": "Was kann ich als Eltern tun?",
+        "a": "Regelmäßige Bewegung (60 Min. täglich), salzarme und gemüsereiche Ernährung, ausreichend Schlaf, Übergewicht behandeln und auf Bildschirmzeit achten. Bei bestätigter Hypertonie folgt eine Diagnostik beim Kinderarzt oder in einer Kinder-Hypertonie-Sprechstunde."
+      }
+    ]
+  }
+}
