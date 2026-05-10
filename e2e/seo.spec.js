@@ -1,5 +1,14 @@
 import { test, expect } from '@playwright/test'
 
+test.describe('robots.txt', () => {
+  test('contains llms.txt reference', async ({ request }) => {
+    const response = await request.get('/robots.txt')
+    expect(response.status()).toBe(200)
+    const text = await response.text()
+    expect(text).toContain('https://healthcalculator.app/llms.txt')
+  })
+})
+
 test.describe('SEO fallback files', () => {
   test('404.html serves the app shell with rendered content', async ({ page }) => {
     const response = await page.goto('404.html')
