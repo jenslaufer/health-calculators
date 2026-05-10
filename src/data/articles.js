@@ -638,6 +638,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'childCalories',
     related: ['tdee-berechnen', 'wachstumsperzentile-kinder', 'baby-trinkmenge-berechnen'],
   },
+  {
+    slug: 'kinder-blutdruck-perzentile',
+    title: 'Blutdruck bei Kindern: Perzentile verstehen und richtig einordnen',
+    description: 'Kinder-Blutdruck nach AAP-2017-Perzentile bewerten — warum Alter, Geschlecht und Größe entscheidend sind. Normal, hochnormal, Hypertonie Stadium 1 oder 2 erklärt.',
+    date: '2026-05-09',
+    readTime: '8 min',
+    calculatorKey: 'pediatricBloodPressure',
+    related: ['blutdruck-richtig-messen', 'wachstumsperzentile-kinder', 'kinder-dosierung-rechner'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
