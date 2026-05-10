@@ -620,6 +620,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'newbornBilirubin',
     related: ['apgar-score-calculator-guide', 'baby-feeding-amount-calculator', 'baby-milestone-tracker-guide'],
   },
+  {
+    slug: 'child-calorie-needs-guide',
+    title: 'Child Calorie Needs: How Many Calories Does My Child Need?',
+    description: 'How many calories does a child need per day? IOM EER formula, table by age and activity, growth, puberty — everything parents need to know.',
+    date: '2026-05-08',
+    readTime: '7 min',
+    calculatorKey: 'childCalories',
+    related: ['calculate-tdee', 'child-growth-percentile-chart', 'baby-feeding-amount-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
