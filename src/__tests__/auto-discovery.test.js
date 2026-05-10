@@ -25,7 +25,7 @@ const EXPECTED_KEYS = [
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
   'babyFeedingAmount', 'asthmaControl', 'copdAssessment', 'babyMilestones', 'creatinineClearance',
-  'painScale', 'newbornBilirubin', 'childCalories',
+  'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories',
 ]
 
 const EXPECTED_ROUTE_MAP = {
@@ -98,6 +98,7 @@ const EXPECTED_ROUTE_MAP = {
   creatinineClearance: { de: 'kreatinin-clearance-rechner', en: 'creatinine-clearance-calculator' },
   painScale: { de: 'schmerzskala-rechner', en: 'pain-scale-calculator' },
   newbornBilirubin: { de: 'neugeborenen-bilirubin-rechner', en: 'newborn-bilirubin-calculator' },
+  schritteKalorienRechner: { de: 'schritte-kalorien-rechner', en: 'steps-to-calories-calculator' },
   childCalories: { de: 'kinder-kalorienbedarf-rechner', en: 'child-calorie-needs-calculator' },
 }
 
@@ -159,6 +160,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'kreatinin-clearance-berechnen',
   'schmerzskala-berechnen',
   'neugeborenen-gelbsucht-risiko',
+  'schritte-kalorien-berechnen',
   'kinder-kalorienbedarf-berechnen',
 ]
 
@@ -220,20 +222,21 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'creatinine-clearance-calculator-guide',
   'pain-scale-calculator-guide',
   'newborn-jaundice-calculator-guide',
+  'steps-to-calories-guide',
   'child-calorie-needs-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 72 calculators', () => {
-    expect(calculatorMetas).toHaveLength(72)
+  it('discovers all 73 calculators', () => {
+    expect(calculatorMetas).toHaveLength(73)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 72 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(72)
+  it('builds calculatorComponents map for all 73 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(73)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -256,15 +259,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 70 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(70)
+  it('discovers all 71 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(71)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 70 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(70)
+  it('discovers all 71 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(71)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -280,10 +283,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 72 calculators with no duplicates', () => {
+  it('groups contain all 73 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(72)
-    expect(new Set(allKeys).size).toBe(72)
+    expect(allKeys).toHaveLength(73)
+    expect(new Set(allKeys).size).toBe(73)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -298,7 +301,7 @@ describe('calculator groups', () => {
   it('nutritionEnergy group has correct calculators in order', () => {
     expect(calculatorGroups[1].calculators).toEqual([
       'bmr', 'tdee', 'macro', 'water', 'calorieDeficit',
-      'protein', 'caloriesBurned', 'proteinNeed', 'caffeine', 'intermittentFasting', 'keto', 'childCalories',
+      'protein', 'caloriesBurned', 'proteinNeed', 'caffeine', 'intermittentFasting', 'keto', 'schritteKalorienRechner', 'childCalories',
     ])
   })
 
@@ -353,8 +356,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 396 routes', () => {
-    expect(routes).toHaveLength(396)
+  it('generates exactly 401 routes', () => {
+    expect(routes).toHaveLength(401)
   })
 
   it('has locale routes for all calculators in both languages', () => {
