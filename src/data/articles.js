@@ -665,6 +665,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pregnancyBMI',
     related: ['gewichtszunahme-schwangerschaft-berechnen', 'bmi-berechnen', 'geburtstermin-berechnen'],
   },
+  {
+    slug: 'fruchtbares-fenster-berechnen',
+    title: 'Fruchtbares Fenster berechnen: 10 Tage, LH-Anstieg & Spitzentage',
+    description: 'Fruchtbares Fenster berechnen — 10-Tage-Fenster, LH-Anstieg, tägliche Empfängniswahrscheinlichkeit nach Wilcox 1995. Tipps für den Kinderwunsch.',
+    date: '2026-05-10',
+    readTime: '8 min',
+    calculatorKey: 'fertilityWindow',
+    related: ['eisprung-berechnen', 'zyklusrechner-guide', 'geburtstermin-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -1,0 +1,75 @@
+{
+  "home": {
+    "calculators": {
+      "fertilityWindow": {
+        "name": "Fertility Window Calculator",
+        "description": "Calculate your expanded fertility window with LH surge and daily conception probability."
+      }
+    }
+  },
+  "fertilityWindow": {
+    "meta": {
+      "title": "Fertility Window Calculator — Expanded Window with LH Surge",
+      "description": "Calculate your fertility window with LH surge and daily conception probabilities. 10-day expanded window, peak days, and tips for trying to conceive. Free, no signup."
+    },
+    "title": "Fertility Window Calculator",
+    "description": "Find your expanded 10-day fertility window with LH surge, peak days, and conception probability.",
+    "lmp": "First day of last period",
+    "cycleLength": "Cycle length (days)",
+    "ovulationDay": "Ovulation",
+    "expandedWindow": "Expanded window (10 days)",
+    "coreWindow": "Classic window (7 days)",
+    "peakFertility": "Peak fertility (3 days)",
+    "lhSurge": "LH surge",
+    "nextPeriod": "Next period",
+    "eggViable": "Egg viable",
+    "dailyForecast": "Daily conception probability",
+    "day": "Day",
+    "date": "Date",
+    "phase": "Phase",
+    "probability": "Probability",
+    "phaseOvulation": "Ovulation",
+    "phaseLhSurge": "LH surge",
+    "phasePeak": "Peak fertility",
+    "phaseCore": "Fertile",
+    "phaseExpanded": "Extended fertile",
+    "phaseNone": "Not fertile",
+    "highest": "Highest",
+    "high": "High",
+    "moderate": "Moderate",
+    "low": "Low",
+    "veryLow": "Very low",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator estimates ovulation as LMP + cycle length − 14. Because sperm survive up to 5 days and the egg stays viable 12–24 hours, the expanded fertility window covers 10 days (7 days before to 2 days after ovulation). The LH surge starts 24–36 hours before ovulation. Daily conception probabilities are based on Wilcox et al. 1995.",
+    "linkOvulation": "Ovulation calculator",
+    "linkPeriod": "Period calculator",
+    "linkPregnancy": "Due date calculator",
+    "source": "Source: Wilcox AJ et al., NEJM 1995 — Timing of Sexual Intercourse in Relation to Ovulation",
+    "faq": [
+      {
+        "q": "What is the expanded fertility window?",
+        "a": "The classic window covers 6 days (5 before ovulation + the ovulation day). This calculator extends it to 10 days. Sperm occasionally survive 6–7 days, and ovulation timing varies. The expanded window gives more confidence when trying to conceive."
+      },
+      {
+        "q": "What does the LH surge mean?",
+        "a": "Luteinizing hormone (LH) spikes 24–36 hours before ovulation. Over-the-counter LH urine tests detect this surge and are the most reliable predictor of imminent ovulation."
+      },
+      {
+        "q": "Which day has the highest conception probability?",
+        "a": "Ovulation day (~33 %) and the day before (~31 %). Intercourse every 1–2 days during the peak window (day −2 to ovulation day) maximizes your chance."
+      },
+      {
+        "q": "How accurate is the prediction?",
+        "a": "For regular cycles (variation ≤ 2 days) the estimate hits in roughly 80 % of cases. For irregular cycles, PCOS, or breastfeeding, accuracy drops — combine with LH tests and basal body temperature."
+      },
+      {
+        "q": "What if my cycle is longer or shorter than 28 days?",
+        "a": "The luteal phase (post-ovulation) is almost always 14 days. In a 35-day cycle ovulation is on day 21; in a 24-day cycle it is on day 10. The calculator adjusts automatically."
+      },
+      {
+        "q": "Can I use this for contraception?",
+        "a": "No. Sympto-thermal methods (NFP) require basal body temperature and cervical mucus on top of calendar tracking. Calendar-only predictions have a Pearl Index of 9–40 and are not safe contraception."
+      }
+    ]
+  }
+}
