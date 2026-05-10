@@ -17,6 +17,8 @@ function parseMeta(source) {
   const slugsMatch = source.match(/slugs:\s*\{\s*de:\s*'([^']+)',\s*en:\s*'([^']+)'\s*\}/)
   const slugs = slugsMatch ? { de: slugsMatch[1], en: slugsMatch[2] } : null
 
+  const blogOnly = /blogOnly:\s*true/.test(source)
+
   // blog block: find blog: { ... } section, then extract de and en slug within it
   const blogBlock = source.match(/blog:\s*\{([\s\S]*)\},?\s*\}[\s]*$/)?.[1] ?? ''
   const blogDeSlug = blogBlock.match(/de:\s*\{[^}]*slug:\s*'([^']+)'/)?.[1]
@@ -25,6 +27,7 @@ function parseMeta(source) {
     ? { de: { slug: blogDeSlug }, en: { slug: blogEnSlug } }
     : null
 
+  if (blogOnly && key && blog) return { key, blogOnly: true, blog }
   return key && slugs ? { key, slugs, blog } : null
 }
 
@@ -67,8 +70,8 @@ export function generateSitemap(metas, baseUrl = BASE_URL) {
   xml += urlEntry(`${baseUrl}/de/`, homeAlts, '1.0')
   xml += urlEntry(`${baseUrl}/en/`, homeAlts, '1.0')
 
-  // Calculator pages
-  for (const meta of metas) {
+  // Calculator pages (skip blog-only metas)
+  for (const meta of metas.filter(m => !m.blogOnly)) {
     const alts = {
       de: `${baseUrl}/de/${meta.slugs.de}/`,
       en: `${baseUrl}/en/${meta.slugs.en}/`,
