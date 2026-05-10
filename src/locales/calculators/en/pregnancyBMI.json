@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancyBMI": {
+        "name": "Pregnancy BMI Calculator",
+        "description": "Calculate your pre-pregnancy BMI and classify it per IOM 2009."
+      }
+    }
+  },
+  "pregnancyBMI": {
+    "meta": {
+      "title": "Pregnancy BMI Calculator — Pre-Pregnancy BMI by IOM 2009",
+      "description": "Calculate your pre-pregnancy BMI and classify it into IOM 2009 categories. Includes recommended weight gain for singletons and twins. Free, no sign-up."
+    },
+    "title": "Pregnancy BMI Calculator",
+    "description": "Calculate your pre-pregnancy BMI by WHO classification and see recommended weight gain per IOM 2009.",
+    "weight": "Pre-pregnancy weight",
+    "height": "Height",
+    "pregnancyType": "Pregnancy type",
+    "singleton": "Singleton",
+    "twins": "Twins",
+    "yourBmi": "Your pre-pregnancy BMI",
+    "category": "Category",
+    "underweight": "Underweight",
+    "normal": "Normal weight",
+    "overweight": "Overweight",
+    "obese": "Obese",
+    "recommendedGain": "Recommended weight gain",
+    "totalGain": "Total gain (40 weeks)",
+    "rangeTitle": "BMI classification (WHO)",
+    "rangeBmi": "BMI",
+    "rangeCategory": "Category",
+    "rangeGain": "Rec. gain (singleton)",
+    "underweightDesc": "Low pre-pregnancy weight. Higher gain recommended to support birth weight.",
+    "normalDesc": "Healthy starting BMI. Moderate gain reduces risks for mother and baby.",
+    "overweightDesc": "Elevated starting BMI. Lower gain recommended to limit complications.",
+    "obeseDesc": "High starting BMI. Lower gain reduces risk of gestational diabetes and preeclampsia.",
+    "howItWorks": "How it works",
+    "howItWorksText": "BMI uses the standard formula: weight (kg) ÷ height² (m). Use your weight BEFORE pregnancy. Weight-gain ranges follow the Institute of Medicine (IOM 2009) guidelines, the global standard. Conditions like gestational diabetes may shift individual targets.",
+    "linkPregnancyWeightGain": "Weekly weight gain progression",
+    "linkBmi": "General BMI calculator",
+    "linkPregnancy": "Current pregnancy week",
+    "source": "Source: Institute of Medicine (IOM, 2009) — Weight Gain During Pregnancy",
+    "faq": [
+      {
+        "q": "Which weight should I use for pregnancy BMI?",
+        "a": "Your weight BEFORE pregnancy. That number sets the recommended total gain per IOM 2009. Current pregnancy weight is not used here."
+      },
+      {
+        "q": "Why does pre-pregnancy BMI matter?",
+        "a": "It drives the recommended gain. Underweight women should gain more, women with obesity less — both reduce risks of preterm birth, gestational diabetes, and preeclampsia."
+      },
+      {
+        "q": "What if my BMI sits on a boundary?",
+        "a": "If your BMI is close to a category cutoff (e.g. 24.8 or 25.2), talk to your OB/GYN. Muscle mass, history, and individual risks can move the target."
+      },
+      {
+        "q": "Is the IOM 2009 guideline used worldwide?",
+        "a": "Yes. IOM 2009 is the global reference and uses WHO BMI categories. National guidelines (NICE, ACOG, DGGG) align with these ranges."
+      },
+      {
+        "q": "How does it differ for twins?",
+        "a": "BMI categories are the same. Total recommended gain is higher: 17–25 kg (normal), 14–23 kg (overweight), 11–19 kg (obese). Underweight twins use the singleton range."
+      },
+      {
+        "q": "My BMI is over 30 — what does that mean?",
+        "a": "Pregnancy with obesity carries higher risks (gestational diabetes, preeclampsia, cesarean). A modest gain of 5–9 kg reduces those risks. Closer prenatal monitoring is advised."
+      }
+    ]
+  }
+}

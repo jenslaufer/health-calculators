@@ -656,6 +656,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'vitaminDDeficiency',
     related: ['vitamin-d-berechnen', 'osteoporose-risiko-berechnen', 'korrigiertes-calcium-rechner'],
   },
+  {
+    slug: 'bmi-schwangerschaft-berechnen',
+    title: 'BMI in der Schwangerschaft berechnen — Vor-Schwangerschafts-BMI & IOM 2009',
+    description: 'Vor-Schwangerschafts-BMI berechnen und nach WHO-Klassifikation einordnen. Empfohlene Gewichtszunahme nach IOM 2009 für Einlinge und Zwillinge — verständlich erklärt.',
+    date: '2026-05-10',
+    readTime: '7 min',
+    calculatorKey: 'pregnancyBMI',
+    related: ['gewichtszunahme-schwangerschaft-berechnen', 'bmi-berechnen', 'geburtstermin-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

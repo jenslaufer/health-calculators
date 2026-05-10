@@ -1,0 +1,71 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancyBMI": {
+        "name": "BMI-Rechner Schwangerschaft",
+        "description": "Vor-Schwangerschafts-BMI berechnen und nach IOM-Kategorie einordnen."
+      }
+    }
+  },
+  "pregnancyBMI": {
+    "meta": {
+      "title": "BMI-Rechner Schwangerschaft — Vor-Schwangerschafts-BMI berechnen",
+      "description": "Berechne deinen Vor-Schwangerschafts-BMI und ordne ihn in die IOM-2009-Kategorien ein. Mit empfohlener Gewichtszunahme für Einlinge und Zwillinge. Kostenlos, ohne Anmeldung."
+    },
+    "title": "BMI-Rechner Schwangerschaft",
+    "description": "Berechne deinen Vor-Schwangerschafts-BMI nach WHO-Klassifikation und sieh die empfohlene Gewichtszunahme nach IOM 2009.",
+    "weight": "Gewicht vor Schwangerschaft",
+    "height": "Körpergröße",
+    "pregnancyType": "Schwangerschaftstyp",
+    "singleton": "Einling",
+    "twins": "Zwillinge",
+    "yourBmi": "Dein Vor-Schwangerschafts-BMI",
+    "category": "Kategorie",
+    "underweight": "Untergewicht",
+    "normal": "Normalgewicht",
+    "overweight": "Übergewicht",
+    "obese": "Adipositas",
+    "recommendedGain": "Empfohlene Gewichtszunahme",
+    "totalGain": "Gesamtzunahme (40 Wochen)",
+    "rangeTitle": "BMI-Klassifikation (WHO)",
+    "rangeBmi": "BMI",
+    "rangeCategory": "Kategorie",
+    "rangeGain": "Empf. Zunahme (Einling)",
+    "underweightDesc": "Niedriges Vor-Gewicht. Höhere Zunahme empfohlen, um das Geburtsgewicht zu sichern.",
+    "normalDesc": "Gesunder Ausgangs-BMI. Moderate Zunahme reduziert Risiken für Mutter und Kind.",
+    "overweightDesc": "Erhöhter Ausgangs-BMI. Geringere Zunahme empfohlen, um Komplikationen vorzubeugen.",
+    "obeseDesc": "Stark erhöhter Ausgangs-BMI. Geringe Zunahme reduziert Risiko für Schwangerschaftsdiabetes und Präeklampsie.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der BMI wird mit der Standard-Formel berechnet: Gewicht (kg) ÷ Körpergröße² (m). Verwende dein Gewicht VOR der Schwangerschaft. Die Empfehlungen für die Gewichtszunahme stammen vom Institute of Medicine (IOM 2009) und sind weltweiter Standard. Bei Erkrankungen wie Schwangerschaftsdiabetes können individuelle Empfehlungen abweichen.",
+    "linkPregnancyWeightGain": "Wochenverlauf der Gewichtszunahme",
+    "linkBmi": "Allgemeiner BMI-Rechner",
+    "linkPregnancy": "Schwangerschaftswoche",
+    "source": "Quelle: Institute of Medicine (IOM, 2009) — Weight Gain During Pregnancy",
+    "faq": [
+      {
+        "q": "Welches Gewicht zählt für den BMI in der Schwangerschaft?",
+        "a": "Dein Gewicht VOR der Schwangerschaft. Es bestimmt die empfohlene Gesamtzunahme nach IOM 2009. Aktuelles Schwangerschaftsgewicht ist hier nicht aussagekräftig."
+      },
+      {
+        "q": "Warum ist der Vor-Schwangerschafts-BMI wichtig?",
+        "a": "Er steuert die empfohlene Gewichtszunahme. Untergewichtige Frauen sollten mehr zunehmen, adipöse weniger — beides reduziert Risiken für Frühgeburt, Schwangerschaftsdiabetes und Präeklampsie."
+      },
+      {
+        "q": "Was, wenn mein BMI in der Grauzone liegt?",
+        "a": "Bei BMI nahe einer Grenze (z. B. 24,8 oder 25,2) sprich mit deiner Gynäkologin. Individuelle Faktoren wie Muskelmasse, Vorgeschichte und Risiken können die Empfehlung verschieben."
+      },
+      {
+        "q": "Gilt die IOM-Empfehlung weltweit?",
+        "a": "Ja, die IOM-2009-Leitlinien sind weltweit anerkannt. Auch deutsche Leitlinien (DGGG) orientieren sich daran. Die Klassifikation nutzt WHO-BMI-Kategorien."
+      },
+      {
+        "q": "Wie unterscheidet sich der BMI bei Zwillingen?",
+        "a": "Die BMI-Klassifikation ist gleich. Aber die empfohlene Gesamtzunahme ist deutlich höher: 17–25 kg bei Normalgewicht, 14–23 kg bei Übergewicht, 11–19 kg bei Adipositas."
+      },
+      {
+        "q": "Mein BMI ist über 30 — was bedeutet das?",
+        "a": "Adipositas in der Schwangerschaft bringt erhöhte Risiken (Schwangerschaftsdiabetes, Präeklampsie, Kaiserschnitt). Eine geringere Gewichtszunahme von 5–9 kg reduziert diese Risiken. Engmaschige Betreuung wird empfohlen."
+      }
+    ]
+  }
+}

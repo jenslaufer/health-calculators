@@ -656,6 +656,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'vitaminDDeficiency',
     related: ['vitamin-d-calculator', 'osteoporosis-risk-calculator-guide', 'corrected-calcium-calculator'],
   },
+  {
+    slug: 'pregnancy-bmi-guide',
+    title: 'Pregnancy BMI Calculator — Pre-Pregnancy BMI & IOM 2009',
+    description: 'Calculate your pre-pregnancy BMI by WHO classification and see recommended weight gain by IOM 2009 — for singletons and twins. Why pre-pregnancy BMI matters most.',
+    date: '2026-05-10',
+    readTime: '7 min',
+    calculatorKey: 'pregnancyBMI',
+    related: ['pregnancy-weight-gain-guide', 'calculate-bmi', 'calculate-due-date'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
