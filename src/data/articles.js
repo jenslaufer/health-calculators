@@ -629,6 +629,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'schritteKalorienRechner',
     related: ['kalorienverbrauch-berechnen', 'lauftempo-berechnen', 'tdee-berechnen'],
   },
+  {
+    slug: 'kinder-kalorienbedarf-berechnen',
+    title: 'Kinder-Kalorienbedarf berechnen: Wie viele Kalorien braucht mein Kind?',
+    description: 'Wie viele Kalorien braucht ein Kind pro Tag? IOM-Formel, Tabelle nach Alter und Aktivität, Wachstum, Pubertät — alles, was Eltern wissen müssen.',
+    date: '2026-05-08',
+    readTime: '7 min',
+    calculatorKey: 'childCalories',
+    related: ['tdee-berechnen', 'wachstumsperzentile-kinder', 'baby-trinkmenge-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
