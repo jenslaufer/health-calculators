@@ -1,0 +1,86 @@
+{
+  "home": {
+    "calculators": {
+      "menopauseSymptom": {
+        "name": "Menopause-Symptome-Rechner",
+        "description": "Schweregrad deiner Wechseljahresbeschwerden mit dem Menopause Rating Scale (MRS) bestimmen."
+      }
+    }
+  },
+  "menopauseSymptom": {
+    "meta": {
+      "title": "Menopause-Symptome-Rechner — MRS-Score online berechnen",
+      "description": "Wechseljahresbeschwerden mit dem Menopause Rating Scale (MRS) bewerten: Hitzewallungen, Schlafprobleme, Stimmung, urogenitale Symptome. Schnell, kostenlos, ohne Anmeldung."
+    },
+    "title": "Menopause-Symptome-Rechner",
+    "description": "Bewerte deine Wechseljahresbeschwerden mit dem klinisch validierten Menopause Rating Scale (MRS) — 11 Symptome, 3 Bereiche, klare Empfehlung.",
+    "intro": "Bitte bewerte für jedes der folgenden Symptome, wie stark du es aktuell empfindest:",
+    "somaticSection": "Somatisch-vegetativ",
+    "psychologicalSection": "Psychisch",
+    "urogenitalSection": "Urogenital",
+    "hotFlushes": "Hitzewallungen, Schwitzen",
+    "heartDiscomfort": "Herzbeschwerden (Herzklopfen, Stolpern, Beklemmung)",
+    "sleepProblems": "Schlafstörungen (Einschlafen, Durchschlafen, früh wach)",
+    "jointMuscleDiscomfort": "Gelenk- und Muskelbeschwerden",
+    "depressiveMood": "Depressive Verstimmung (Traurigkeit, Antriebslosigkeit, Weinen)",
+    "irritability": "Reizbarkeit (nervös, innere Anspannung, aggressiv)",
+    "anxiety": "Ängstlichkeit (innere Unruhe, Panik)",
+    "exhaustion": "Körperliche und geistige Erschöpfung (Leistungsknick, Vergesslichkeit)",
+    "sexualProblems": "Sexuelle Probleme (Lust, sexuelle Aktivität, Befriedigung)",
+    "bladderProblems": "Harnwegsbeschwerden (Drang, häufiges Wasserlassen, Inkontinenz)",
+    "vaginalDryness": "Trockenheit der Scheide (Brennen, Probleme beim Verkehr)",
+    "severity_0": "keine",
+    "severity_1": "leicht",
+    "severity_2": "mittel",
+    "severity_3": "stark",
+    "severity_4": "sehr stark",
+    "results": "MRS-Auswertung",
+    "totalScore": "Gesamtscore",
+    "subscaleScores": "Bereiche",
+    "category_none": "keine / sehr leicht",
+    "category_mild": "leicht",
+    "category_moderate": "moderat",
+    "category_severe": "schwer",
+    "interpretation_none": "Aktuell zeigen sich keine relevanten Wechseljahresbeschwerden. Beobachte deine Symptome und prüfe bei Veränderungen erneut.",
+    "interpretation_mild": "Leichte Wechseljahresbeschwerden. Lebensstilmaßnahmen (Schlafhygiene, Bewegung, Ernährung, Stressabbau) helfen oft schon spürbar.",
+    "interpretation_moderate": "Moderate Beschwerden, die deinen Alltag beeinträchtigen können. Ein Gespräch mit der Gynäkologin über Therapieoptionen ist sinnvoll.",
+    "interpretation_severe": "Schwere Beschwerden mit deutlicher Beeinträchtigung der Lebensqualität. Eine fachärztliche Abklärung mit Therapieplan (z. B. Hormonersatz, lokale Östrogene, Phytotherapie) ist klar empfohlen.",
+    "evaluationRecommended": "Fachärztliche Abklärung empfohlen — vereinbare einen Termin in der Gynäkologie.",
+    "evaluationNotRecommended": "Aktuell keine fachärztliche Abklärung dringend nötig. Bei Verschlechterung erneut prüfen.",
+    "mrsTitle": "Was ist das Menopause Rating Scale?",
+    "mrsText": "Das MRS ist der international meistgenutzte Fragebogen zur Erfassung von Wechseljahresbeschwerden (Heinemann et al. 2003). Es erfasst 11 typische Symptome in 3 Dimensionen — somatisch-vegetativ, psychisch und urogenital — und liefert einen Gesamtscore von 0 bis 44 sowie Subscores je Bereich.",
+    "subscalesTitle": "Die drei MRS-Dimensionen",
+    "somaticDescription": "Hitzewallungen, Herzbeschwerden, Schlafstörungen, Gelenk-/Muskelbeschwerden",
+    "psychologicalDescription": "Depressive Verstimmung, Reizbarkeit, Ängstlichkeit, Erschöpfung",
+    "urogenitalDescription": "Sexuelle Probleme, Harnwegsbeschwerden, vaginale Trockenheit",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Bewerte jedes der 11 Symptome auf einer Skala von 0 (keine) bis 4 (sehr stark). Der Rechner addiert deine Antworten zu einem Gesamtscore (0–44) und gibt einen Schweregrad je Dimension zurück. Die Cutoff-Werte entsprechen der Originalvalidierung (Heinemann 2003, Schneider 2000) und werden weltweit in Forschung und Praxis verwendet.",
+    "disclaimer": "Dieser Rechner ist ein Selbst-Screening, kein Diagnoseinstrument. Therapieentscheidungen (z. B. Hormonersatz) gehören immer in die Hand einer Gynäkologin oder eines Gynäkologen.",
+    "faq": [
+      {
+        "q": "Was ist die Menopause Rating Scale (MRS)?",
+        "a": "Die MRS ist ein 1996 entwickelter, klinisch validierter Fragebogen mit 11 Items zur Bewertung von Wechseljahresbeschwerden. Sie wird weltweit eingesetzt und ist in über 25 Sprachen übersetzt. Heinemann et al. 2003 haben die heutigen Cutoff-Werte etabliert."
+      },
+      {
+        "q": "Welche Symptome erfasst die MRS?",
+        "a": "11 typische Symptome in 3 Bereichen: somatisch (Hitzewallungen, Herzbeschwerden, Schlaf, Gelenke), psychisch (Stimmung, Reizbarkeit, Ängste, Erschöpfung) und urogenital (Sexualität, Blase, Scheidentrockenheit)."
+      },
+      {
+        "q": "Was bedeutet mein Gesamtscore?",
+        "a": "0–4: keine bis sehr leichte Beschwerden. 5–8: leichte Beschwerden. 9–16: moderate Beschwerden — Beratung sinnvoll. 17+: schwere Beschwerden — Therapie meist klar indiziert."
+      },
+      {
+        "q": "Wann sollte ich zur Gynäkologin?",
+        "a": "Ab moderaten Beschwerden (Score 9+) oder wenn ein einzelner Bereich (z. B. urogenital) auffällig ist. Bei schweren Symptomen (17+) oder Blutungsstörungen ist eine Abklärung dringend empfohlen — auch um andere Ursachen auszuschließen."
+      },
+      {
+        "q": "Welche Therapien gibt es bei Wechseljahresbeschwerden?",
+        "a": "Lebensstil (Bewegung, Schlafhygiene, kühle Räume, Gewicht), Hormonersatztherapie (HRT) systemisch oder lokal, nicht-hormonelle Optionen (SSRI/SNRI, Gabapentin, Clonidin), pflanzliche Mittel (Traubensilberkerze, Soja-Isoflavone) und Kognitive Verhaltenstherapie gegen Hitzewallungen."
+      },
+      {
+        "q": "Wie lange dauern die Wechseljahre?",
+        "a": "Im Mittel beginnt die Perimenopause Mitte 40 und dauert 4–8 Jahre. Vasomotorische Symptome (Hitzewallungen) bestehen median 7,4 Jahre — bei einigen Frauen mehr als 14 Jahre. Urogenitale Symptome bleiben oft lebenslang ohne lokale Therapie."
+      }
+    ]
+  }
+}

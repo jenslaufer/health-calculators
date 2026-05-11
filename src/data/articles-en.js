@@ -674,6 +674,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'fertilityWindow',
     related: ['calculate-ovulation', 'period-calculator-guide', 'calculate-due-date'],
   },
+  {
+    slug: 'menopause-symptom-calculator-guide',
+    title: 'Menopause Symptom Calculator: MRS Score, Severity Bands and Treatment',
+    description: 'Score menopause symptoms with the Menopause Rating Scale (MRS) — 11 items, 3 domains, Heinemann 2003 cutoffs. With calculator, severity bands and treatment overview.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'menopauseSymptom',
+    related: ['osteoporosis-risk-calculator-guide', 'pcos-symptom-checker', 'biological-age-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
