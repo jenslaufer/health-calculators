@@ -1,0 +1,75 @@
+{
+  "home": {
+    "calculators": {
+      "fertilityWindow": {
+        "name": "Fruchtbares Fenster Rechner",
+        "description": "Berechne dein erweitertes fruchtbares Fenster mit LH-Anstieg und Spitzentagen."
+      }
+    }
+  },
+  "fertilityWindow": {
+    "meta": {
+      "title": "Fruchtbares Fenster Rechner — Erweitertes Fenster mit LH-Anstieg",
+      "description": "Berechne dein fruchtbares Fenster mit LH-Anstieg und Empfängniswahrscheinlichkeit pro Tag. 10-Tage-Fenster, Spitzenfruchtbarkeit und Tipps für den Kinderwunsch. Kostenlos, ohne Anmeldung."
+    },
+    "title": "Fruchtbares Fenster Rechner",
+    "description": "Ermittle dein erweitertes 10-Tage-Fenster mit LH-Anstieg, Spitzentagen und Empfängniswahrscheinlichkeit.",
+    "lmp": "Erster Tag deiner letzten Periode",
+    "cycleLength": "Zykluslänge (Tage)",
+    "ovulationDay": "Eisprung",
+    "expandedWindow": "Erweitertes Fenster (10 Tage)",
+    "coreWindow": "Klassisches Fenster (7 Tage)",
+    "peakFertility": "Spitzenfruchtbarkeit (3 Tage)",
+    "lhSurge": "LH-Anstieg",
+    "nextPeriod": "Nächste Periode",
+    "eggViable": "Eizelle befruchtungsfähig",
+    "dailyForecast": "Tägliche Empfängniswahrscheinlichkeit",
+    "day": "Tag",
+    "date": "Datum",
+    "phase": "Phase",
+    "probability": "Wahrscheinlichkeit",
+    "phaseOvulation": "Eisprung",
+    "phaseLhSurge": "LH-Anstieg",
+    "phasePeak": "Spitzenfruchtbarkeit",
+    "phaseCore": "Fruchtbar",
+    "phaseExpanded": "Erweitert fruchtbar",
+    "phaseNone": "Nicht fruchtbar",
+    "highest": "Höchste",
+    "high": "Hoch",
+    "moderate": "Moderat",
+    "low": "Niedrig",
+    "veryLow": "Sehr niedrig",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner schätzt deinen Eisprung mit der Formel LMP + Zykluslänge − 14. Da Spermien bis zu 5 Tage überleben und die Eizelle 12–24 Stunden befruchtungsfähig bleibt, ergibt sich ein erweitertes fruchtbares Fenster von 10 Tagen (7 Tage vor bis 2 Tage nach Eisprung). Die LH-Welle steigt 24–36 Stunden vor dem Eisprung an. Tägliche Empfängniswahrscheinlichkeiten basieren auf Wilcox et al. 1995.",
+    "linkOvulation": "Eisprungrechner",
+    "linkPeriod": "Zyklusrechner",
+    "linkPregnancy": "Geburtstermin-Rechner",
+    "source": "Quelle: Wilcox AJ et al., NEJM 1995 — Timing of Sexual Intercourse in Relation to Ovulation",
+    "faq": [
+      {
+        "q": "Was ist das erweiterte fruchtbare Fenster?",
+        "a": "Während das klassische Fenster 6 Tage umfasst (5 vor Eisprung + Eisprungtag), erweitert dieser Rechner es auf 10 Tage. Spermien können selten 6–7 Tage überleben, und der Eisprungzeitpunkt schwankt. Das erweiterte Fenster gibt mehr Sicherheit beim Kinderwunsch."
+      },
+      {
+        "q": "Was bedeutet der LH-Anstieg?",
+        "a": "Das luteinisierende Hormon (LH) steigt 24–36 Stunden vor dem Eisprung sprunghaft an. LH-Tests aus der Apotheke erkennen diesen Anstieg im Urin und sind die zuverlässigste Methode zur Vorhersage."
+      },
+      {
+        "q": "An welchem Tag ist die Empfängniswahrscheinlichkeit am höchsten?",
+        "a": "Am Eisprungtag selbst (~33 %) und am Tag davor (~31 %). Geschlechtsverkehr alle 1–2 Tage während der Spitzenfruchtbarkeit (Tag −2 bis Eisprungtag) maximiert die Chance."
+      },
+      {
+        "q": "Wie genau ist die Berechnung?",
+        "a": "Bei regelmäßigem Zyklus (Schwankung ≤ 2 Tage) trifft die Schätzung in ~80 % der Fälle. Bei unregelmäßigem Zyklus, PCOS oder Stillzeit ist die Genauigkeit niedriger — kombiniere dann mit LH-Tests und Basaltemperatur."
+      },
+      {
+        "q": "Was, wenn mein Zyklus länger oder kürzer als 28 Tage ist?",
+        "a": "Die Lutealphase (nach Eisprung) bleibt fast immer 14 Tage konstant. Bei einem 35-Tage-Zyklus erfolgt der Eisprung an Tag 21, bei einem 24-Tage-Zyklus an Tag 10. Der Rechner berücksichtigt das automatisch."
+      },
+      {
+        "q": "Kann ich das fruchtbare Fenster zur Verhütung nutzen?",
+        "a": "Nein. Symptothermale Methoden (NFP) brauchen zusätzlich Basaltemperatur und Zervixschleim. Kalenderbasierte Berechnungen alleine haben einen Pearl-Index von 9–40 und sind nicht zur Verhütung geeignet."
+      }
+    ]
+  }
+}

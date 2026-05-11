@@ -665,6 +665,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'pregnancyBMI',
     related: ['pregnancy-weight-gain-guide', 'calculate-bmi', 'calculate-due-date'],
   },
+  {
+    slug: 'fertility-window-guide',
+    title: 'Fertility Window Calculator: 10 Days, LH Surge & Peak Days',
+    description: 'Calculate your fertility window — 10-day expanded window, LH surge, daily conception probability from Wilcox 1995. Practical tips for trying to conceive.',
+    date: '2026-05-10',
+    readTime: '8 min',
+    calculatorKey: 'fertilityWindow',
+    related: ['calculate-ovulation', 'period-calculator-guide', 'calculate-due-date'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
