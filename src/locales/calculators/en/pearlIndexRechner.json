@@ -1,0 +1,99 @@
+{
+  "home": {
+    "calculators": {
+      "pearlIndexRechner": {
+        "name": "Pearl Index Calculator",
+        "description": "Calculate the Pearl Index from study data and compare contraceptive methods."
+      }
+    }
+  },
+  "pearlIndexRechner": {
+    "meta": {
+      "title": "Pearl Index Calculator — Contraceptive Method Effectiveness",
+      "description": "Calculate the Pearl Index from study data: PI = (pregnancies × 1200) / (women × months). Reference table for the pill, condoms, IUDs, NFP and more. Sources: BZgA, Trussell."
+    },
+    "title": "Pearl Index Calculator",
+    "description": "Calculate the Pearl Index from study data and compare contraceptive methods using validated reference values.",
+    "disclaimer": "Note: This calculator is for information and education only. It does not replace medical contraceptive counseling. Talk to your gynaecologist before choosing a contraceptive method.",
+    "inputsTitle": "Enter study data",
+    "women": "Number of women",
+    "womenHint": "e.g. 100",
+    "months": "Observation period (months)",
+    "monthsHint": "e.g. 12 for one year",
+    "pregnancies": "Number of unintended pregnancies",
+    "pregnanciesHint": "Pregnancies that occurred during the observation period",
+    "result": "Pearl Index",
+    "resultUnit": "pregnancies per 100 woman-years",
+    "resultExplain": "With {women} women over {months} months the Pearl Index is {pi} pregnancies per 100 woman-years.",
+    "verySafe": "Very safe",
+    "safe": "Safe",
+    "moderate": "Moderately safe",
+    "lowSafety": "Low safety",
+    "unsafe": "Unsafe",
+    "categoryHelp": "Classification per WHO/BZgA: < 1 very safe, 1–4 safe, 5–9 moderate, 10–24 low, ≥ 25 unsafe.",
+    "exampleTitle": "Worked example",
+    "exampleText": "100 women use a method for 12 months. During that time 3 unintended pregnancies occur. Pearl Index = (3 × 1200) / (100 × 12) = 3.0. Meaning: 3 of 100 women become pregnant after one year of use.",
+    "referenceTitle": "Pearl Index by contraceptive method",
+    "referenceIntro": "Typical Pearl Indices for established methods, both perfect and typical use. Sources: BZgA, German Society for Gynaecology and Obstetrics (DGGG), Trussell 2011.",
+    "method": "Method",
+    "perfectUse": "Perfect use",
+    "typicalUse": "Typical use",
+    "methods": {
+      "pillCombined": "Combined pill",
+      "pillMini": "Progestin-only pill",
+      "iudHormonal": "Hormonal IUD (LNG-IUS)",
+      "iudCopper": "Copper IUD",
+      "implant": "Hormonal implant",
+      "depot": "Depot injection (3-month)",
+      "patch": "Contraceptive patch",
+      "ring": "Vaginal ring",
+      "condomMale": "Male condom",
+      "condomFemale": "Female condom",
+      "diaphragm": "Diaphragm + spermicide",
+      "nfpSymptothermal": "NFP sympto-thermal (correct)",
+      "nfpCalendar": "Calendar method only",
+      "withdrawal": "Withdrawal",
+      "sterilizationFemale": "Tubal ligation (female)",
+      "sterilizationMale": "Vasectomy (male)",
+      "noMethod": "No contraception"
+    },
+    "contentTitle": "What does the Pearl Index tell you?",
+    "contentP1": "The Pearl Index is the standard measure of contraceptive effectiveness. It expresses how many out of 100 women become pregnant after one year of using the method exclusively. A Pearl Index of 1 means: one in a hundred women becomes pregnant per year despite correct use.",
+    "contentP2": "The crucial distinction is between perfect and typical use. The pill scores 0.1–0.9 with perfect use. Real-world use — missed pills, drug interactions, vomiting — pushes that to 6–9. Hormonal IUDs, implants, and sterilisation are largely independent of user error and stay below 1 even in everyday use.",
+    "contentP3": "Methodological limits: the Pearl Index is not perfect. Longer studies push the value down because highly fertile couples drop out early. Age, life stage, intercourse frequency, and concomitant factors such as antibiotics also affect individual risk. Life-table analysis is more accurate and increasingly complements the Pearl Index in research.",
+    "contentP4": "Practical takeaway: compare methods by typical, not perfect use. To rule out user error, choose long-acting reversible contraceptives (LARCs) such as the hormonal IUD or implant. Hormone-free options with a low Pearl Index are the copper IUD and correctly performed sympto-thermal NFP. Which method fits you depends on health, life stage, and preference — and belongs in the hands of a gynaecologist.",
+    "internalLinksTitle": "Related cycle and pregnancy calculators",
+    "linkOvulation": "Ovulation calculator",
+    "linkPeriod": "Period calculator",
+    "linkPregnancy": "Pregnancy calculator",
+    "linkFertility": "Fertility window calculator",
+    "sourcesTitle": "Sources",
+    "sourcesText": "German Federal Centre for Health Education (BZgA): Sichergehen.de — Comparison of contraceptive methods. German Society for Gynaecology and Obstetrics (DGGG): S3 Guideline on Hormonal Contraception. Trussell J. Contraceptive failure in the United States. Contraception 2011;83(5):397–404. Frank-Herrmann P et al. The effectiveness of a fertility awareness based method to avoid pregnancy. Hum Reprod 2007.",
+    "faq": [
+      {
+        "q": "How is the Pearl Index calculated?",
+        "a": "Pearl Index = (pregnancies × 1200) / (women × months). The factor 1200 = 100 women × 12 months scales the result to 100 woman-years. The value tells you how many of 100 women become pregnant after one year of use."
+      },
+      {
+        "q": "What is the difference between perfect and typical use?",
+        "a": "Perfect = the method is always used correctly (pill on time, condom applied properly). Typical = real-world use with mistakes. Condoms differ by a factor of 7 (PI 2 vs 15), the pill by 10 (0.9 vs 9). Hormonal IUDs and implants barely differ between perfect and typical use."
+      },
+      {
+        "q": "Which contraceptive method has the lowest Pearl Index?",
+        "a": "Hormonal implant (PI ~0.05), hormonal IUD (PI ~0.2), and sterilisation (PI 0.15–0.5). These long-acting reversible contraceptives (LARCs) are independent of user error and the safest in typical use."
+      },
+      {
+        "q": "Is NFP a safe contraceptive method?",
+        "a": "Sympto-thermal NFP per Sensiplan, correctly learned and consistently used, achieves a Pearl Index of 0.4 according to Frank-Herrmann et al. 2007. Calendar-only methods without basal body temperature and cervical mucus score 9–40 and are not safe enough."
+      },
+      {
+        "q": "Why is the Pearl Index imperfect as a metric?",
+        "a": "Longer studies bias the value downward because highly fertile couples drop out early. The PI also ignores intercourse frequency. Life-table analysis is methodologically more precise, but the Pearl Index is well established and easy to compare."
+      },
+      {
+        "q": "Does this calculator replace medical advice?",
+        "a": "No. The right contraceptive method depends on age, health, pre-existing conditions, life stage, and personal preference. Discuss your choice with a gynaecologist."
+      }
+    ]
+  }
+}
