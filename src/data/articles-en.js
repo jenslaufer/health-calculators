@@ -674,6 +674,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'fertilityWindow',
     related: ['calculate-ovulation', 'period-calculator-guide', 'calculate-due-date'],
   },
+  {
+    slug: 'breast-milk-alcohol-guide',
+    title: 'Breast Milk Alcohol: When Can I Breastfeed After Drinking?',
+    description: 'How long alcohol stays in breast milk — Widmark formula, AAP guidance, per-drink clearance times, and a free calculator for nursing mothers.',
+    date: '2026-05-11',
+    readTime: '7 min',
+    calculatorKey: 'breastMilkAlcohol',
+    related: ['blood-alcohol-calculator', 'alcohol-unit-calculator', 'pregnancy-weight-gain-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

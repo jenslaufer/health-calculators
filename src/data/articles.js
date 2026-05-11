@@ -674,6 +674,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'fertilityWindow',
     related: ['eisprung-berechnen', 'zyklusrechner-guide', 'geburtstermin-berechnen'],
   },
+  {
+    slug: 'alkohol-stillen-berechnen',
+    title: 'Alkohol in der Stillzeit: Wann ist die Muttermilch wieder alkoholfrei?',
+    description: 'Alkohol & Stillen: Abbauzeit, BZgA-Empfehlung, Faustregeln und ein kostenloser Rechner für stillende Mütter.',
+    date: '2026-05-11',
+    readTime: '7 min',
+    calculatorKey: 'breastMilkAlcohol',
+    related: ['promille-berechnen', 'alkohol-einheiten-berechnen', 'gewichtszunahme-schwangerschaft-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
