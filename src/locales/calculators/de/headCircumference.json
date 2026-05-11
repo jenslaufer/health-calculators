@@ -1,0 +1,69 @@
+{
+  "home": {
+    "calculators": {
+      "headCircumference": {
+        "name": "Kopfumfang Perzentile",
+        "description": "Kopfumfang-Perzentile für Babys und Kleinkinder (0–3 Jahre) nach WHO-Standard."
+      }
+    }
+  },
+  "headCircumference": {
+    "meta": {
+      "title": "Kopfumfang Rechner — Perzentile für Babys 0–3 Jahre (WHO)",
+      "description": "Kopfumfang-Perzentile für Baby und Kleinkind (0–36 Monate) nach WHO-Wachstumsstandard berechnen. Sofortige Auswertung, Normalbereich erklärt."
+    },
+    "title": "Kopfumfang Rechner (0–3 Jahre)",
+    "description": "Berechne die Kopfumfang-Perzentile deines Kindes nach WHO-Standard.",
+    "inputsLabel": "Angaben",
+    "resultsLabel": "Ergebnis",
+    "sex": "Geschlecht",
+    "male": "Junge",
+    "female": "Mädchen",
+    "ageYears": "Alter (Jahre)",
+    "ageMonths": "Alter (Monate)",
+    "months": "Monate",
+    "headCirc": "Kopfumfang",
+    "result": "Perzentile",
+    "rangeNote": "Gilt für Kinder von 0 bis 36 Monaten (WHO-Standard).",
+    "outOfRange": "Außerhalb des Altersbereichs. Der Rechner gilt für 0 bis 36 Monate.",
+    "legend": "Legende",
+    "cat": {
+      "veryLow": "Sehr niedrig",
+      "low": "Niedrig",
+      "normal": "Normal",
+      "high": "Hoch",
+      "veryHigh": "Sehr hoch"
+    },
+    "interpretation": "Einordnung",
+    "interpretationText": "Der Normalbereich liegt zwischen der 3. und 97. Perzentile. Werte außerhalb können auf Mikrocephalie (unter 3. Perzentile) oder Makrocephalie (über 97. Perzentile) hinweisen und sollten kinderärztlich abgeklärt werden.",
+    "disclaimer": "Dieser Rechner ersetzt keine ärztliche Beurteilung. Wichtig ist nicht nur der Einzelwert, sondern der Verlauf der Wachstumskurve über mehrere Untersuchungen.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Die Berechnung basiert auf der LMS-Methode der WHO-Wachstumsstandards 2006. Aus Geschlecht, Alter (Monate) und gemessenem Kopfumfang wird ein Z-Score errechnet und in eine Perzentile (1–99) umgerechnet.",
+    "faq": [
+      {
+        "q": "Wie wird der Kopfumfang gemessen?",
+        "a": "Mit einem flexiblen Maßband horizontal um den Kopf — über den Augenbrauen vorne und über dem stärksten Hinterkopfpunkt hinten. Der größte Umfang zählt. Idealerweise dreimal messen und den Mittelwert nehmen."
+      },
+      {
+        "q": "Was bedeutet meine Perzentile?",
+        "a": "Eine Perzentile von 50 bedeutet, dass 50 % aller gleichaltrigen Kinder einen kleineren Kopfumfang haben. 3.–97. Perzentile ist der Normalbereich. Werte außerhalb sind nicht automatisch krankhaft, sollten aber kinderärztlich überprüft werden."
+      },
+      {
+        "q": "Warum nur bis 3 Jahre?",
+        "a": "Bis zum dritten Lebensjahr findet das schnellste Hirnwachstum statt — der Kopfumfang ist hier der wichtigste Indikator. Danach ist das Wachstum so langsam, dass die Messung wenig zusätzliche Information liefert."
+      },
+      {
+        "q": "Was ist Mikrocephalie?",
+        "a": "Ein Kopfumfang dauerhaft unter der 3. Perzentile (oder -2 Standardabweichungen). Mögliche Ursachen: genetisch, infektiös (z.B. CMV, Zika), metabolisch. Eine einmalige Messung reicht für eine Diagnose nicht aus."
+      },
+      {
+        "q": "Was ist Makrocephalie?",
+        "a": "Ein Kopfumfang dauerhaft über der 97. Perzentile. Häufig familiär (sog. familiäre Makrocephalie) und harmlos. Selten kann ein Hydrocephalus oder eine Stoffwechselerkrankung dahinterstecken."
+      },
+      {
+        "q": "Welche Datenbasis nutzt der Rechner?",
+        "a": "WHO Child Growth Standards 2006. Diese Tabellen basieren auf gesunden, gestillten Kindern aus sechs Ländern (Brasilien, Ghana, Indien, Norwegen, Oman, USA) und sind weltweit der Referenzstandard für die ersten Lebensjahre."
+      }
+    ]
+  }
+}

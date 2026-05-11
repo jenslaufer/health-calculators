@@ -674,6 +674,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'fertilityWindow',
     related: ['eisprung-berechnen', 'zyklusrechner-guide', 'geburtstermin-berechnen'],
   },
+  {
+    slug: 'kopfumfang-baby-perzentile',
+    title: 'Kopfumfang Baby: Perzentile, Normalwerte und wann zum Kinderarzt',
+    description: 'Kopfumfang beim Baby richtig messen und einordnen. WHO-Perzentilen, Normalwerte 0–36 Monate, Mikro- und Makrocephalie verständlich erklärt.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'headCircumference',
+    related: ['wachstumsperzentile-kinder', 'baby-meilensteine-tracker', 'apgar-score-bewerten'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

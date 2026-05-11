@@ -674,6 +674,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'fertilityWindow',
     related: ['calculate-ovulation', 'period-calculator-guide', 'calculate-due-date'],
   },
+  {
+    slug: 'head-circumference-baby-guide',
+    title: 'Baby Head Circumference: Percentile Chart, Normal Range and When to See a Doctor',
+    description: 'How to measure and interpret your baby’s head circumference. WHO percentile charts 0–36 months, normal range, microcephaly and macrocephaly explained.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'headCircumference',
+    related: ['child-growth-percentile-chart', 'baby-milestone-tracker-guide', 'apgar-score-calculator-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
