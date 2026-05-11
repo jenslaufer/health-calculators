@@ -85,6 +85,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'vitamin-d-mangel',
   'bmi-schwangerschaft-berechnen',
   'fruchtbares-fenster-berechnen',
+  'diabetes-typ-2-vorbeugen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -150,6 +151,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'vitamin-d-deficiency',
   'pregnancy-bmi-guide',
   'fertility-window-guide',
+  'prevent-type-2-diabetes',
 ]
 
 describe('discoverMetas', () => {
@@ -193,19 +195,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 75 DE blog slugs', () => {
+  it('returns all 76 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(75)
+    expect(de).toHaveLength(76)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 75 EN blog slugs', () => {
+  it('returns all 76 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(75)
+    expect(en).toHaveLength(76)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -273,9 +275,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 152 calcs + 2 blog index + 150 blog articles = 306)', () => {
+  it('generates correct total URL count (2 home + 152 calcs + 2 blog index + 152 blog articles = 308)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(306)
+    expect(urlCount).toBe(308)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {

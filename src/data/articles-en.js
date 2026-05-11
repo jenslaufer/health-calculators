@@ -674,6 +674,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'fertilityWindow',
     related: ['calculate-ovulation', 'period-calculator-guide', 'calculate-due-date'],
   },
+  {
+    slug: 'prevent-type-2-diabetes',
+    title: 'Prevent Type 2 Diabetes: 5 Evidence-Based Strategies',
+    description: 'Prevent type 2 diabetes with 5 proven strategies: weight loss, exercise, low-GI diet, sleep, stress. Plus HbA1c, BMI and diabetes risk calculators.',
+    date: '2026-05-11',
+    readTime: '14 min',
+    calculatorKey: 'diabetesPrevention',
+    related: ['diabetes-risk-score', 'hba1c-converter-guide', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

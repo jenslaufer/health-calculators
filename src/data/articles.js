@@ -674,6 +674,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'fertilityWindow',
     related: ['eisprung-berechnen', 'zyklusrechner-guide', 'geburtstermin-berechnen'],
   },
+  {
+    slug: 'diabetes-typ-2-vorbeugen',
+    title: 'Typ-2-Diabetes vorbeugen: 5 evidenzbasierte Strategien',
+    description: 'Typ-2-Diabetes vorbeugen mit 5 belegten Strategien: Gewichtsverlust, Bewegung, Ernährung, Schlaf, Stress. Mit HbA1c, BMI- und Risiko-Rechner.',
+    date: '2026-05-11',
+    readTime: '14 min',
+    calculatorKey: 'diabetesPrevention',
+    related: ['diabetes-risiko-berechnen', 'hba1c-umrechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
