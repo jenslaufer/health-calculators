@@ -1,0 +1,95 @@
+{
+  "home": {
+    "calculators": {
+      "ironDeficiency": {
+        "name": "Iron Deficiency Calculator",
+        "description": "Screen for iron deficiency from ferritin, transferrin saturation, hemoglobin and symptoms."
+      }
+    }
+  },
+  "ironDeficiency": {
+    "meta": {
+      "title": "Iron Deficiency Calculator — Ferritin, TSAT & Symptoms",
+      "description": "Estimate your iron deficiency risk from ferritin, transferrin saturation, hemoglobin and 10 typical symptoms. Cutoffs, severity grading, clinical guidance. Free, instant."
+    },
+    "title": "Iron Deficiency Calculator",
+    "description": "Grade your iron deficiency risk from lab values and symptoms — using ferritin and TSAT cutoffs, WHO hemoglobin thresholds and a weighted symptom score.",
+    "unitMetric": "ng/mL · g/dL",
+    "unitSi": "µg/L · g/L",
+    "sexLabel": "Sex",
+    "sexFemale": "Female",
+    "sexMale": "Male",
+    "ferritinLabel": "Ferritin ({unit})",
+    "tsatLabel": "Transferrin saturation (%)",
+    "hbLabel": "Hemoglobin ({unit})",
+    "symptomsLabel": "Symptoms (check all that apply)",
+    "symptom_fatigue": "Fatigue / low energy",
+    "symptom_fatigue_desc": "Persistent tiredness despite adequate sleep",
+    "symptom_pallor": "Pale skin / mucous membranes",
+    "symptom_pallor_desc": "Pale face, nail beds or inner eyelids",
+    "symptom_shortnessOfBreath": "Shortness of breath on exertion",
+    "symptom_shortnessOfBreath_desc": "Breathlessness climbing stairs or with light effort",
+    "symptom_hairLoss": "Hair loss",
+    "symptom_hairLoss_desc": "Increased shedding, thinning hair",
+    "symptom_brittleNails": "Brittle nails",
+    "symptom_brittleNails_desc": "Ridges, spoon-shaped nails or splitting tips",
+    "symptom_restlessLegs": "Restless legs / leg tingling",
+    "symptom_restlessLegs_desc": "Urge to move legs in the evening — highly specific iron-deficiency sign",
+    "symptom_pica": "Pica / unusual cravings",
+    "symptom_pica_desc": "Craving ice, dirt or starch — red-flag for iron deficiency",
+    "symptom_coldHandsFeet": "Cold hands and feet",
+    "symptom_coldHandsFeet_desc": "Reduced peripheral perfusion in a warm room",
+    "symptom_headache": "Headache",
+    "symptom_headache_desc": "Frequent dull headaches, often in the morning",
+    "symptom_poorConcentration": "Poor concentration",
+    "symptom_poorConcentration_desc": "Brain fog, forgetfulness, reduced performance",
+    "resultsLabel": "Your iron deficiency risk",
+    "ferritinCategoryLabel": "Ferritin",
+    "tsatCategoryLabel": "TSAT",
+    "hbCategoryLabel": "Hemoglobin",
+    "symptomScoreLabel": "Symptom score",
+    "category_none": "No risk",
+    "category_mild": "Mild",
+    "category_moderate": "Moderate",
+    "category_severe": "Severe",
+    "advice_none": "Your iron parameters and symptoms do not currently suggest iron deficiency. If fatigue persists, ask your GP for a ferritin test and a complete blood count anyway.",
+    "advice_mild": "Signs of latent iron deficiency (depleted stores, hemoglobin still normal). Book a GP visit for a full iron panel (ferritin, TSAT, CRP) and consider oral iron supplementation.",
+    "advice_moderate": "Clear iron deficiency likely. See a clinician to identify the cause (menstruation, diet, gastrointestinal blood loss) and start targeted oral or IV iron replacement.",
+    "advice_severe": "Severe iron deficiency with a high probability of iron-deficiency anemia. Seek timely medical care — full blood count, iron panel and cause workup are required. With breathlessness at rest, chest pain or fainting, call emergency services immediately.",
+    "refTitle": "Cutoffs (general adults)",
+    "refMarker": "Marker",
+    "refFerritin": "Ferritin (ng/mL)",
+    "refTsat": "TSAT (%)",
+    "refHbWomen": "Hb women (g/dL)",
+    "refHbMen": "Hb men (g/dL)",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator combines four signals: (1) Ferritin reflects iron stores — values below 30 ng/mL indicate iron deficiency, below 15 ng/mL signal depleted stores. (2) Transferrin saturation (TSAT) reflects circulating iron — < 20 % is suspicious, < 16 % suggests iron-restricted erythropoiesis. (3) Hemoglobin is compared with WHO cutoffs — low values already indicate iron-deficiency anemia. (4) A weighted symptom score (max. 13 points) covers typical complaints like fatigue, restless legs and pica. The final severity equals the highest of the four estimates.",
+    "disclaimer": "This calculator is intended for self-assessment in healthy adults and does not replace clinical evaluation. In pregnancy, chronic inflammation, kidney disease or cancer different ferritin cutoffs apply (acute-phase reactant). With breathlessness at rest, chest pain, syncope or black stools seek medical care immediately.",
+    "faq": [
+      {
+        "q": "What ferritin value counts as iron deficiency?",
+        "a": "Ferritin below 30 ng/mL is generally considered iron deficiency, below 15 ng/mL signals depleted iron stores. In chronic inflammation or liver disease ferritin can be falsely elevated — a value up to 100 ng/mL may then still indicate deficiency."
+      },
+      {
+        "q": "What is transferrin saturation (TSAT)?",
+        "a": "TSAT shows how much iron is currently bound to the transport protein transferrin. Values below 20 % indicate restricted iron supply to iron-using tissues, below 16 % is considered clearly pathological."
+      },
+      {
+        "q": "Can iron deficiency exist without anemia?",
+        "a": "Yes, called latent iron deficiency: ferritin is low but hemoglobin still normal. This stage can last months to years — symptoms like fatigue, restless legs and hair loss often appear long before anemia."
+      },
+      {
+        "q": "Who is most at risk?",
+        "a": "Women of reproductive age (menstruation, pregnancy), vegans and vegetarians, endurance athletes, growing children, patients with chronic gastrointestinal disease or blood loss, and frequent blood donors."
+      },
+      {
+        "q": "How is iron deficiency treated?",
+        "a": "Mild to moderate cases: oral iron supplements (60–120 mg elemental iron per day, ideally fasting with vitamin C, away from coffee or tea) for at least 3 months. With intolerance, severe deficiency or concurrent chronic inflammation: intravenous iron."
+      },
+      {
+        "q": "Which foods cover iron requirements?",
+        "a": "Heme iron from red meat, fish and poultry is absorbed best. Plant-based non-heme iron from legumes, whole grains, nuts and dark leafy greens benefits from vitamin C for uptake. Coffee, black tea, dairy products and calcium inhibit iron absorption — space them apart."
+      }
+    ]
+  }
+}

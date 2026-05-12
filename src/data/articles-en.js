@@ -719,6 +719,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'pearlIndexRechner',
     related: ['calculate-ovulation', 'period-calculator-guide', 'fertility-window-guide'],
   },
+  {
+    slug: 'iron-deficiency-calculator-guide',
+    title: 'Iron Deficiency Calculator: Read Ferritin, TSAT and Symptoms Correctly',
+    description: 'Screen for iron deficiency from ferritin, transferrin saturation, hemoglobin and 10 clinical signs. Cutoffs, latent deficiency, treatment, and diet — explained.',
+    date: '2026-05-12',
+    readTime: '9 min',
+    calculatorKey: 'ironDeficiency',
+    related: ['anemia-risk-calculator-guide', 'thyroid-function-calculator', 'calculate-bmr'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
