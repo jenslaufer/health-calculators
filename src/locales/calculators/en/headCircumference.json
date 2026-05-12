@@ -1,0 +1,69 @@
+{
+  "home": {
+    "calculators": {
+      "headCircumference": {
+        "name": "Head Circumference Percentile",
+        "description": "Head circumference percentile for babies and toddlers (0–3 years) by WHO standard."
+      }
+    }
+  },
+  "headCircumference": {
+    "meta": {
+      "title": "Head Circumference Calculator — Percentile for 0–3 Years (WHO)",
+      "description": "Head circumference percentile for babies and toddlers (0–36 months) based on WHO growth standards. Instant result, normal range explained."
+    },
+    "title": "Head Circumference Calculator (0–3 years)",
+    "description": "Calculate your child's head circumference percentile using WHO standards.",
+    "inputsLabel": "Inputs",
+    "resultsLabel": "Result",
+    "sex": "Sex",
+    "male": "Boy",
+    "female": "Girl",
+    "ageYears": "Age (years)",
+    "ageMonths": "Age (months)",
+    "months": "months",
+    "headCirc": "Head circumference",
+    "result": "Percentile",
+    "rangeNote": "Valid for children aged 0 to 36 months (WHO standard).",
+    "outOfRange": "Out of age range. This calculator applies to 0–36 months.",
+    "legend": "Legend",
+    "cat": {
+      "veryLow": "Very low",
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "veryHigh": "Very high"
+    },
+    "interpretation": "Interpretation",
+    "interpretationText": "The normal range falls between the 3rd and 97th percentile. Values outside this range may indicate microcephaly (below 3rd) or macrocephaly (above 97th) and should be evaluated by a paediatrician.",
+    "disclaimer": "This calculator does not replace medical evaluation. What matters is not a single value, but the trajectory of the growth curve across multiple measurements.",
+    "howItWorks": "How it works",
+    "howItWorksText": "Calculation uses the LMS method from the WHO Child Growth Standards 2006. Sex, age in months and the measured head circumference are converted into a Z-score and then into a percentile (1–99).",
+    "faq": [
+      {
+        "q": "How do you measure head circumference?",
+        "a": "With a flexible tape measure horizontally around the head — above the eyebrows at the front and over the most prominent point of the back of the head. The largest circumference counts. Ideally measure three times and average."
+      },
+      {
+        "q": "What does my percentile mean?",
+        "a": "A percentile of 50 means 50% of same-age peers have a smaller head circumference. The 3rd–97th percentile is the normal range. Values outside are not automatically abnormal but should be checked by a paediatrician."
+      },
+      {
+        "q": "Why only up to age 3?",
+        "a": "The fastest brain growth happens in the first three years — head circumference is the most important indicator here. After that, growth slows so much that the measurement adds little information."
+      },
+      {
+        "q": "What is microcephaly?",
+        "a": "A head circumference persistently below the 3rd percentile (or –2 standard deviations). Possible causes include genetic, infectious (e.g. CMV, Zika) and metabolic conditions. A single measurement is not enough for a diagnosis."
+      },
+      {
+        "q": "What is macrocephaly?",
+        "a": "A head circumference persistently above the 97th percentile. Often familial (so-called benign familial macrocephaly) and harmless. In rare cases, hydrocephalus or a metabolic condition is the cause."
+      },
+      {
+        "q": "Which data does the calculator use?",
+        "a": "WHO Child Growth Standards 2006. These tables are based on healthy, breastfed children from six countries (Brazil, Ghana, India, Norway, Oman, USA) and are the global reference for the early years."
+      }
+    ]
+  }
+}

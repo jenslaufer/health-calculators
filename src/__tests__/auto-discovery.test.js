@@ -25,7 +25,7 @@ const EXPECTED_KEYS = [
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
-  'pregnancyBMI', 'fertilityWindow', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
+  'pregnancyBMI', 'fertilityWindow', 'headCircumference', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
 ]
 
 const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency', 'diabetesPrevention']
@@ -105,6 +105,7 @@ const EXPECTED_ROUTE_MAP = {
   pediatricBloodPressure: { de: 'kinder-blutdruck-rechner', en: 'pediatric-blood-pressure-calculator' },
   pregnancyBMI: { de: 'bmi-schwangerschaft-rechner', en: 'pregnancy-bmi-calculator' },
   fertilityWindow: { de: 'fruchtbares-fenster-rechner', en: 'fertility-window-calculator' },
+  headCircumference: { de: 'kopfumfang-rechner', en: 'head-circumference-calculator' },
   breastMilkAlcohol: { de: 'alkohol-stillen-rechner', en: 'breast-milk-alcohol-calculator' },
   menopauseSymptom: { de: 'menopause-symptome-rechner', en: 'menopause-symptom-calculator' },
   pearlIndexRechner: { de: 'pearl-index-rechner', en: 'pearl-index-calculator' },
@@ -174,6 +175,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'vitamin-d-mangel',
   'bmi-schwangerschaft-berechnen',
   'fruchtbares-fenster-berechnen',
+  'kopfumfang-baby-perzentile',
   'alkohol-stillen-berechnen',
   'menopause-symptome-bewerten',
   'diabetes-typ-2-vorbeugen',
@@ -244,6 +246,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'vitamin-d-deficiency',
   'pregnancy-bmi-guide',
   'fertility-window-guide',
+  'head-circumference-baby-guide',
   'breast-milk-alcohol-guide',
   'menopause-symptom-calculator-guide',
   'prevent-type-2-diabetes',
@@ -251,16 +254,16 @@ const EXPECTED_BLOG_SLUGS_EN = [
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 79 calculators', () => {
-    expect(calculatorMetas).toHaveLength(79)
+  it('discovers all 80 calculators', () => {
+    expect(calculatorMetas).toHaveLength(80)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 79 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(79)
+  it('builds calculatorComponents map for all 80 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(80)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -283,15 +286,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 79 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(79)
+  it('discovers all 80 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(80)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 79 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(79)
+  it('discovers all 80 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(80)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -316,10 +319,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 79 calculators with no duplicates', () => {
+  it('groups contain all 80 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(79)
-    expect(new Set(allKeys).size).toBe(79)
+    expect(allKeys).toHaveLength(80)
+    expect(new Set(allKeys).size).toBe(80)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -340,7 +343,7 @@ describe('calculator groups', () => {
 
   it('fitnessRecovery group has correct calculators in order', () => {
     expect(calculatorGroups[2].calculators).toEqual([
-      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator', 'dehydrationRisk', 'heartFailureRisk', 'thyroidFunction', 'anemiaRisk', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium', 'asthmaControl', 'copdAssessment', 'creatinineClearance', 'painScale', 'pediatricBloodPressure', 'schritteKalorienRechner',
+      'heartRate', 'sleep', 'bloodPressure', 'vo2Max', 'oneRepMax', 'runningPace', 'bac', 'hba1c', 'bloodSugar', 'gfr', 'smokingCost', 'childGrowth', 'headCircumference', 'lifeExpectancy', 'diabetesRisk', 'biologicalAge', 'vitaminD', 'alcoholUnits', 'bodyTemperature', 'anionGap', 'sodiumCorrection', 'childDosage', 'cholesterolRatio', 'prostateRisk', 'testosteroneLevel', 'erectileDysfunction', 'malePattern', 'cardiovascularRisk', 'strokeRisk', 'bloodAlcoholEstimator', 'dehydrationRisk', 'heartFailureRisk', 'thyroidFunction', 'anemiaRisk', 'osteoporosisRisk', 'hepatitisRisk', 'correctedCalcium', 'asthmaControl', 'copdAssessment', 'creatinineClearance', 'painScale', 'pediatricBloodPressure', 'schritteKalorienRechner',
     ])
   })
 
@@ -389,8 +392,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 437 routes', () => {
-    expect(routes).toHaveLength(437)
+  it('generates exactly 442 routes', () => {
+    expect(routes).toHaveLength(442)
   })
 
   it('has locale routes for all calculators in both languages', () => {

@@ -19,7 +19,7 @@ const EXPECTED_KEYS = [
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
-  'pregnancyBMI', 'fertilityWindow', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
+  'pregnancyBMI', 'fertilityWindow', 'headCircumference', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
 ]
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -85,6 +85,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'vitamin-d-mangel',
   'bmi-schwangerschaft-berechnen',
   'fruchtbares-fenster-berechnen',
+  'kopfumfang-baby-perzentile',
   'alkohol-stillen-berechnen',
   'menopause-symptome-bewerten',
   'diabetes-typ-2-vorbeugen',
@@ -154,6 +155,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'vitamin-d-deficiency',
   'pregnancy-bmi-guide',
   'fertility-window-guide',
+  'head-circumference-baby-guide',
   'breast-milk-alcohol-guide',
   'menopause-symptom-calculator-guide',
   'prevent-type-2-diabetes',
@@ -161,9 +163,9 @@ const EXPECTED_BLOG_SLUGS_EN = [
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 79 calculator meta files', () => {
+  it('discovers all 80 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas.filter(m => !m.blogOnly)).toHaveLength(79)
+    expect(metas.filter(m => !m.blogOnly)).toHaveLength(80)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -201,19 +203,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 79 DE blog slugs', () => {
+  it('returns all 80 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(79)
+    expect(de).toHaveLength(80)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 79 EN blog slugs', () => {
+  it('returns all 80 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(79)
+    expect(en).toHaveLength(80)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -281,9 +283,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 158 calcs + 2 blog index + 158 blog articles = 320)', () => {
+  it('generates correct total URL count (2 home + 160 calcs + 2 blog index + 160 blog articles = 324)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(320)
+    expect(urlCount).toBe(324)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
