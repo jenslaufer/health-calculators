@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "breastMilkAlcohol": {
+        "name": "Alkohol & Stillen Rechner",
+        "description": "Berechne, wann der Alkohol aus deiner Muttermilch verschwunden ist."
+      }
+    }
+  },
+  "breastMilkAlcohol": {
+    "meta": {
+      "title": "Alkohol & Stillen Rechner — Wann ist die Muttermilch wieder alkoholfrei?",
+      "description": "Berechne, wann deine Muttermilch nach Alkoholkonsum wieder alkoholfrei ist. Mit Widmark-Formel, individueller Abbauzeit und Stillzeit-Hinweisen. Kostenlos und ohne Anmeldung."
+    },
+    "title": "Alkohol & Stillen Rechner",
+    "description": "Berechne die Zeit, bis dein Körper den Alkohol abgebaut hat und die Muttermilch wieder alkoholfrei ist.",
+    "quickAdd": "Schnell hinzufügen",
+    "presetBeer": "Bier (0,33 l)",
+    "presetWine": "Wein (0,15 l)",
+    "presetSpirits": "Schnaps (4 cl)",
+    "presetSekt": "Sekt (0,1 l)",
+    "drinks": "Getränke",
+    "volume": "Volumen (ml)",
+    "alcoholPct": "Alkohol (%)",
+    "addDrink": "Getränk hinzufügen",
+    "weight": "Körpergewicht",
+    "hoursSinceFirst": "Stunden seit dem ersten Getränk",
+    "currentMilkBac": "Alkohol in Muttermilch",
+    "milkSafe": "Muttermilch ist alkoholfrei",
+    "milkNotSafe": "Muttermilch enthält Alkohol — nicht stillen",
+    "timeUntilSafe": "Zeit bis alkoholfrei",
+    "alreadySafe": "Bereits alkoholfrei",
+    "hoursMinutes": "{hours} Std. {minutes} Min.",
+    "totalAlcohol": "Reiner Alkohol",
+    "peakBac": "Spitzenwert (ohne Abbau)",
+    "guidance": "Empfehlung",
+    "guidanceText": "Die deutsche Bundeszentrale für gesundheitliche Aufklärung (BZgA) empfiehlt während der Stillzeit grundsätzlich keinen Alkohol. Falls doch konsumiert, vor dem Stillen den Abbau abwarten — Abpumpen beschleunigt den Abbau NICHT.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Alkohol gelangt frei zwischen Blut und Muttermilch — die Alkoholkonzentration in der Milch entspricht etwa der im Blut. Der Abbau erfolgt mit ca. 0,15 ‰ pro Stunde. Berechnung mit Widmark-Formel: Alkohol (g) / (Körpergewicht × 0,55).",
+    "referenceTable": "Faustregel pro Standardgetränk (12 g Alkohol)",
+    "drinkColumn": "Getränk",
+    "clearanceColumn": "Abbauzeit (60 kg)",
+    "refBeer": "1 Bier (0,33 l)",
+    "refBeerClearance": "~2,0 Std.",
+    "refWine": "1 Glas Wein (0,15 l)",
+    "refWineClearance": "~2,2 Std.",
+    "refSpirits": "1 Schnaps (4 cl)",
+    "refSpiritsClearance": "~1,9 Std.",
+    "refSekt": "1 Glas Sekt (0,1 l)",
+    "refSektClearance": "~1,4 Std.",
+    "faq": [
+      {
+        "q": "Gelangt Alkohol in die Muttermilch?",
+        "a": "Ja. Alkohol passiert frei in die Muttermilch — die Konzentration entspricht ungefähr der im Blut. Maximalwert nach etwa 30–60 Minuten."
+      },
+      {
+        "q": "Hilft Abpumpen, den Alkohol schneller loszuwerden?",
+        "a": "Nein. Der Alkohol bleibt im Blut, solange er nicht abgebaut ist — die frische Milch enthält wieder Alkohol. Nur Zeit hilft. Auch Kaffee, Wasser oder Sport beschleunigen den Abbau nicht."
+      },
+      {
+        "q": "Wie schnell baut der Körper Alkohol ab?",
+        "a": "Etwa 0,15 ‰ pro Stunde. Für ein typisches Getränk (12 g Alkohol) braucht eine 60 kg schwere Frau ca. 2 Stunden. Größere Mengen entsprechend länger."
+      },
+      {
+        "q": "Wann darf ich nach einem Glas Wein stillen?",
+        "a": "Bei einem 0,15 l Wein (12 %) und 60 kg Körpergewicht etwa 2 Stunden nach dem Trinken. Im Zweifel länger warten oder vorher abgepumpte Milch verwenden."
+      },
+      {
+        "q": "Sind kleine Mengen Alkohol für das Baby unbedenklich?",
+        "a": "Die AAP und WHO empfehlen Stillzeit alkoholfrei. Studien deuten auf negative Auswirkungen auf den Schlaf des Babys hin. Gelegentlicher, mäßiger Konsum mit ausreichender Abbauzeit gilt als vertretbar."
+      },
+      {
+        "q": "Ist die Berechnung genau?",
+        "a": "Die Widmark-Formel liefert eine medizinisch anerkannte Schätzung. Individuelle Faktoren wie Magenfüllung, Leberfunktion, Medikamente und Körperzusammensetzung können um ±20–30 % abweichen."
+      }
+    ]
+  }
+}

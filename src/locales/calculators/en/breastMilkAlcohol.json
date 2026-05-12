@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "breastMilkAlcohol": {
+        "name": "Breast Milk Alcohol Calculator",
+        "description": "Calculate when alcohol clears from breast milk after drinking."
+      }
+    }
+  },
+  "breastMilkAlcohol": {
+    "meta": {
+      "title": "Breast Milk Alcohol Calculator — When Is Milk Alcohol-Free?",
+      "description": "Calculate when your breast milk is alcohol-free after drinking. Uses Widmark formula, body weight, and personalized clearance time. Free, instant, no sign-up."
+    },
+    "title": "Breast Milk Alcohol Calculator",
+    "description": "Estimate the time it takes for alcohol to clear from your bloodstream — and therefore your breast milk.",
+    "quickAdd": "Quick add",
+    "presetBeer": "Beer (12 oz / 355 ml)",
+    "presetWine": "Wine (5 oz / 150 ml)",
+    "presetSpirits": "Spirits (1.5 oz / 44 ml)",
+    "presetSekt": "Sparkling wine (100 ml)",
+    "drinks": "Drinks",
+    "volume": "Volume (ml)",
+    "alcoholPct": "Alcohol (%)",
+    "addDrink": "Add drink",
+    "weight": "Body weight",
+    "hoursSinceFirst": "Hours since first drink",
+    "currentMilkBac": "Alcohol in breast milk",
+    "milkSafe": "Milk is alcohol-free",
+    "milkNotSafe": "Milk contains alcohol — do not breastfeed",
+    "timeUntilSafe": "Time until alcohol-free",
+    "alreadySafe": "Already alcohol-free",
+    "hoursMinutes": "{hours} hrs {minutes} min",
+    "totalAlcohol": "Pure alcohol",
+    "peakBac": "Peak BAC (no elimination)",
+    "guidance": "Recommendation",
+    "guidanceText": "The American Academy of Pediatrics (AAP) and CDC recommend avoiding alcohol while breastfeeding. If you do drink, wait until the alcohol has cleared before nursing — pumping does NOT speed up elimination.",
+    "howItWorks": "How it works",
+    "howItWorksText": "Alcohol passes freely between blood and breast milk — milk alcohol level mirrors blood alcohol level (BAC). The body eliminates alcohol at roughly 0.015% per hour. Calculation uses the Widmark formula: alcohol (g) / (body weight × 0.55).",
+    "referenceTable": "Rule of thumb per standard drink (≈14 g alcohol)",
+    "drinkColumn": "Drink",
+    "clearanceColumn": "Clearance (60 kg / 130 lbs)",
+    "refBeer": "1 beer (12 oz, 5%)",
+    "refBeerClearance": "~2 hrs",
+    "refWine": "1 glass wine (5 oz, 12%)",
+    "refWineClearance": "~2 hrs 15 min",
+    "refSpirits": "1 shot spirits (1.5 oz, 40%)",
+    "refSpiritsClearance": "~2 hrs",
+    "refSekt": "1 glass sparkling wine (100 ml)",
+    "refSektClearance": "~1 hr 25 min",
+    "faq": [
+      {
+        "q": "Does alcohol pass into breast milk?",
+        "a": "Yes. Alcohol passes freely into breast milk — the concentration mirrors blood alcohol concentration (BAC). Peak milk alcohol occurs 30–60 minutes after drinking."
+      },
+      {
+        "q": "Does pumping and dumping speed up alcohol clearance?",
+        "a": "No. Alcohol stays in the bloodstream until metabolized — fresh milk will still contain alcohol. Only time clears alcohol. Coffee, water, and exercise do not help."
+      },
+      {
+        "q": "How fast does the body eliminate alcohol?",
+        "a": "Roughly 0.015% BAC per hour. For one standard drink (14 g alcohol), a 60 kg / 130 lb woman needs about 2 hours. Larger amounts take proportionally longer."
+      },
+      {
+        "q": "Can I breastfeed after one glass of wine?",
+        "a": "After a 5 oz glass of wine (12%) for a 60 kg / 130 lb woman, wait roughly 2 hours. When in doubt, wait longer or feed previously pumped milk."
+      },
+      {
+        "q": "Is occasional alcohol safe for the baby?",
+        "a": "AAP and WHO recommend avoiding alcohol while breastfeeding. Some studies show negative effects on infant sleep. Occasional moderate drinking with adequate clearance time is generally considered acceptable."
+      },
+      {
+        "q": "How accurate is the calculation?",
+        "a": "The Widmark formula is medically established but estimates can vary ±20–30% based on individual factors — stomach contents, liver function, medications, body composition."
+      }
+    ]
+  }
+}
