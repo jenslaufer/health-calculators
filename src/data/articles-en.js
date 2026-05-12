@@ -683,6 +683,33 @@ slug: 'calculate-vo2max',
     calculatorKey: 'headCircumference',
     related: ['child-growth-percentile-chart', 'baby-milestone-tracker-guide', 'apgar-score-calculator-guide'],
   },
+  {
+    slug: 'menopause-symptom-calculator-guide',
+    title: 'Menopause Symptom Calculator: MRS Score, Severity Bands and Treatment',
+    description: 'Score menopause symptoms with the Menopause Rating Scale (MRS) — 11 items, 3 domains, Heinemann 2003 cutoffs. With calculator, severity bands and treatment overview.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'menopauseSymptom',
+    related: ['osteoporosis-risk-calculator-guide', 'pcos-symptom-checker', 'biological-age-calculator'],
+  },
+  {
+    slug: 'prevent-type-2-diabetes',
+    title: 'Prevent Type 2 Diabetes: 5 Evidence-Based Strategies',
+    description: 'Prevent type 2 diabetes with 5 proven strategies: weight loss, exercise, low-GI diet, sleep, stress. Plus HbA1c, BMI and diabetes risk calculators.',
+    date: '2026-05-11',
+    readTime: '14 min',
+    calculatorKey: 'diabetesPrevention',
+    related: ['diabetes-risk-score', 'hba1c-converter-guide', 'calculate-bmi'],
+  },
+  {
+    slug: 'pearl-index-calculator-guide',
+    title: 'Pearl Index Calculator: Contraceptive Method Effectiveness',
+    description: 'Pearl Index explained — formula, perfect vs typical use, reference values for the pill, condoms, IUDs, NFP. Sources: BZgA, Trussell.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'pearlIndexRechner',
+    related: ['calculate-ovulation', 'period-calculator-guide', 'fertility-window-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

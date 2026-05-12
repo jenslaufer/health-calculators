@@ -9,10 +9,10 @@
   },
   "protein": {
     "meta": {
-      "title": "Protein-Rechner — Täglichen Proteinbedarf berechnen",
-      "description": "Berechne deinen täglichen Proteinbedarf basierend auf Gewicht, Aktivität, Ziel und Ernährungsform. Individuelle Empfehlungen mit Lebensmittelquellen."
+      "title": "Protein-Rechner — Tagesbedarf nach Diet & Mahlzeiten verteilen",
+      "description": "Berechne deinen Proteinbedarf inkl. veganer/vegetarischer Lebensmittelquellen und optimaler Verteilung über 3-6 Mahlzeiten."
     },
-    "title": "Protein-Rechner",
+    "title": "Protein-Rechner — Verteilung pro Mahlzeit",
     "description": "Berechne dein tägliches Proteinziel basierend auf Gewicht, Aktivität, Ziel und Ernährung.",
     "sedentary": "Sitzend",
     "light": "Leicht aktiv",

@@ -683,6 +683,33 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'headCircumference',
     related: ['wachstumsperzentile-kinder', 'baby-meilensteine-tracker', 'apgar-score-bewerten'],
   },
+  {
+    slug: 'menopause-symptome-bewerten',
+    title: 'Menopause-Symptome bewerten: MRS-Score, Schweregrade und Therapie',
+    description: 'Wechseljahresbeschwerden mit dem Menopause Rating Scale (MRS) bewerten — 11 Symptome, 3 Bereiche, Schweregradgrenzen nach Heinemann 2003. Mit Rechner und Therapie-Übersicht.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'menopauseSymptom',
+    related: ['osteoporose-risiko-berechnen', 'pcos-symptome-erkennen', 'biologisches-alter-berechnen'],
+  },
+  {
+    slug: 'diabetes-typ-2-vorbeugen',
+    title: 'Typ-2-Diabetes vorbeugen: 5 evidenzbasierte Strategien',
+    description: 'Typ-2-Diabetes vorbeugen mit 5 belegten Strategien: Gewichtsverlust, Bewegung, Ernährung, Schlaf, Stress. Mit HbA1c, BMI- und Risiko-Rechner.',
+    date: '2026-05-11',
+    readTime: '14 min',
+    calculatorKey: 'diabetesPrevention',
+    related: ['diabetes-risiko-berechnen', 'hba1c-umrechnen', 'bmi-berechnen'],
+  },
+  {
+    slug: 'pearl-index-berechnen',
+    title: 'Pearl-Index berechnen: Verhütungsmethoden im Vergleich',
+    description: 'Pearl-Index verstehen und berechnen — Formel, perfekte vs. typische Anwendung, Referenzwerte für Pille, Kondom, Spirale, NFP. Quellen: BZgA, Trussell.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'pearlIndexRechner',
+    related: ['eisprung-berechnen', 'zyklusrechner-guide', 'fruchtbares-fenster-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
