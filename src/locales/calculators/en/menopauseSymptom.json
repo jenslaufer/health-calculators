@@ -1,0 +1,86 @@
+{
+  "home": {
+    "calculators": {
+      "menopauseSymptom": {
+        "name": "Menopause Symptom Calculator",
+        "description": "Score your menopause symptoms with the Menopause Rating Scale (MRS) — hot flushes, mood, urogenital signs."
+      }
+    }
+  },
+  "menopauseSymptom": {
+    "meta": {
+      "title": "Menopause Symptom Calculator — MRS Score Online",
+      "description": "Score your menopause symptoms with the validated Menopause Rating Scale (MRS): hot flushes, sleep, mood, urogenital signs. Fast, free, no sign-up."
+    },
+    "title": "Menopause Symptom Calculator",
+    "description": "Score your menopause symptoms using the clinically validated Menopause Rating Scale (MRS) — 11 symptoms, 3 domains, clear next steps.",
+    "intro": "Rate how strongly you currently experience each of the following symptoms:",
+    "somaticSection": "Somato-vegetative",
+    "psychologicalSection": "Psychological",
+    "urogenitalSection": "Urogenital",
+    "hotFlushes": "Hot flushes, sweating",
+    "heartDiscomfort": "Heart discomfort (palpitations, racing, tightness)",
+    "sleepProblems": "Sleep problems (falling asleep, staying asleep, early waking)",
+    "jointMuscleDiscomfort": "Joint and muscle discomfort",
+    "depressiveMood": "Depressive mood (sadness, low drive, tearfulness)",
+    "irritability": "Irritability (nervous, tense, aggressive)",
+    "anxiety": "Anxiety (inner restlessness, panic)",
+    "exhaustion": "Physical and mental exhaustion (performance drop, forgetfulness)",
+    "sexualProblems": "Sexual problems (desire, activity, satisfaction)",
+    "bladderProblems": "Bladder problems (urgency, frequency, incontinence)",
+    "vaginalDryness": "Vaginal dryness (burning, discomfort during sex)",
+    "severity_0": "none",
+    "severity_1": "mild",
+    "severity_2": "moderate",
+    "severity_3": "severe",
+    "severity_4": "very severe",
+    "results": "MRS assessment",
+    "totalScore": "Total score",
+    "subscaleScores": "Subscales",
+    "category_none": "none / very mild",
+    "category_mild": "mild",
+    "category_moderate": "moderate",
+    "category_severe": "severe",
+    "interpretation_none": "No relevant menopause symptoms right now. Track changes and re-check if your experience shifts.",
+    "interpretation_mild": "Mild menopause symptoms. Lifestyle measures (sleep hygiene, exercise, nutrition, stress reduction) often help noticeably.",
+    "interpretation_moderate": "Moderate symptoms that may affect daily life. A focused gynecology consultation about treatment options is reasonable.",
+    "interpretation_severe": "Severe symptoms with clear quality-of-life impact. A specialist work-up with a structured treatment plan (e.g. hormone therapy, local estrogen, phytotherapy) is clearly recommended.",
+    "evaluationRecommended": "Specialist evaluation recommended — book a gynecology appointment.",
+    "evaluationNotRecommended": "No urgent specialist evaluation indicated. Re-check if symptoms worsen.",
+    "mrsTitle": "What is the Menopause Rating Scale?",
+    "mrsText": "The MRS is the most widely used international questionnaire for assessing menopause symptoms (Heinemann et al. 2003). It captures 11 typical symptoms across 3 dimensions — somato-vegetative, psychological and urogenital — yielding a total score 0–44 plus subscale scores.",
+    "subscalesTitle": "The three MRS dimensions",
+    "somaticDescription": "Hot flushes, heart discomfort, sleep problems, joint/muscle complaints",
+    "psychologicalDescription": "Depressive mood, irritability, anxiety, exhaustion",
+    "urogenitalDescription": "Sexual problems, bladder symptoms, vaginal dryness",
+    "howItWorks": "How it works",
+    "howItWorksText": "Rate each of the 11 symptoms on a 0 (none) to 4 (very severe) scale. The calculator sums your answers into a total score (0–44) and reports a severity band per dimension. Cutoffs follow the original validation (Heinemann 2003, Schneider 2000) and are used worldwide in research and practice.",
+    "disclaimer": "This calculator is a self-screening tool, not a diagnostic instrument. Treatment decisions (e.g. hormone therapy) always belong with your gynecologist.",
+    "faq": [
+      {
+        "q": "What is the Menopause Rating Scale (MRS)?",
+        "a": "The MRS is an internationally validated 11-item questionnaire developed in 1996 to score menopause symptoms. It is translated into 25+ languages. Heinemann et al. 2003 established the severity cutoffs in use today."
+      },
+      {
+        "q": "Which symptoms does the MRS capture?",
+        "a": "11 typical symptoms across 3 domains: somato-vegetative (hot flushes, heart, sleep, joints), psychological (mood, irritability, anxiety, exhaustion) and urogenital (sexuality, bladder, vaginal dryness)."
+      },
+      {
+        "q": "What does my total score mean?",
+        "a": "0–4: none to very mild. 5–8: mild. 9–16: moderate — consult your gynecologist. 17+: severe — therapy is usually clearly indicated."
+      },
+      {
+        "q": "When should I see a gynecologist?",
+        "a": "Once symptoms are moderate (score 9+) or if a single domain (e.g. urogenital) stands out. With severe symptoms (17+) or bleeding changes a work-up is clearly indicated — also to rule out other causes."
+      },
+      {
+        "q": "What treatments exist for menopause symptoms?",
+        "a": "Lifestyle (exercise, sleep hygiene, cool rooms, weight), hormone therapy (HT) systemic or local, non-hormonal options (SSRI/SNRI, gabapentin, clonidine), phytotherapy (black cohosh, soy isoflavones) and cognitive behavioral therapy for hot flushes."
+      },
+      {
+        "q": "How long do menopause symptoms last?",
+        "a": "Perimenopause typically begins in the mid-40s and lasts 4–8 years. Vasomotor symptoms (hot flushes) persist a median of 7.4 years — for some women more than 14 years. Urogenital symptoms often remain lifelong without local treatment."
+      }
+    ]
+  }
+}
