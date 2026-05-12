@@ -719,6 +719,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pearlIndexRechner',
     related: ['eisprung-berechnen', 'zyklusrechner-guide', 'fruchtbares-fenster-berechnen'],
   },
+  {
+    slug: 'eisenmangel-berechnen',
+    title: 'Eisenmangel berechnen: Ferritin, TSAT und Symptome richtig einordnen',
+    description: 'Eisenmangel mit Ferritin, Transferrin-Sättigung, Hämoglobin und 10 klinischen Zeichen einschätzen. Grenzwerte, latenter Eisenmangel, Therapie und Ernährung — kompakt erklärt.',
+    date: '2026-05-12',
+    readTime: '9 min',
+    calculatorKey: 'ironDeficiency',
+    related: ['anaemie-risiko-berechnen', 'schilddruesenfunktion-berechnen', 'grundumsatz-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

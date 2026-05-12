@@ -1,0 +1,95 @@
+{
+  "home": {
+    "calculators": {
+      "ironDeficiency": {
+        "name": "Eisenmangel-Rechner",
+        "description": "Eisenmangel-Risiko aus Ferritin, Transferrin-Sättigung, Hämoglobin und Symptomen einschätzen."
+      }
+    }
+  },
+  "ironDeficiency": {
+    "meta": {
+      "title": "Eisenmangel-Rechner — Ferritin, TSAT & Symptome bewerten",
+      "description": "Schätze dein Eisenmangel-Risiko aus Ferritin, Transferrin-Sättigung, Hämoglobin und 10 typischen Symptomen. Mit Grenzwerten, Schweregrad und ärztlichen Hinweisen. Kostenlos, sofort."
+    },
+    "title": "Eisenmangel-Rechner",
+    "description": "Bestimme dein Eisenmangel-Risiko aus Laborwerten und Symptomen — mit Ferritin- und TSAT-Grenzwerten, WHO-Hb-Cutoffs und gewichtetem Symptom-Score.",
+    "unitMetric": "ng/mL · g/dL",
+    "unitSi": "µg/L · g/L",
+    "sexLabel": "Geschlecht",
+    "sexFemale": "Weiblich",
+    "sexMale": "Männlich",
+    "ferritinLabel": "Ferritin ({unit})",
+    "tsatLabel": "Transferrin-Sättigung (%)",
+    "hbLabel": "Hämoglobin ({unit})",
+    "symptomsLabel": "Symptome (alle zutreffenden ankreuzen)",
+    "symptom_fatigue": "Müdigkeit / Erschöpfung",
+    "symptom_fatigue_desc": "Anhaltende Schwäche trotz ausreichend Schlaf",
+    "symptom_pallor": "Blasse Haut / Schleimhäute",
+    "symptom_pallor_desc": "Blasses Gesicht, blasse Nagelbetten oder Augenlider innen",
+    "symptom_shortnessOfBreath": "Atemnot bei Belastung",
+    "symptom_shortnessOfBreath_desc": "Kurzatmigkeit beim Treppensteigen oder leichter Anstrengung",
+    "symptom_hairLoss": "Haarausfall",
+    "symptom_hairLoss_desc": "Vermehrter Haarverlust, dünner werdendes Haar",
+    "symptom_brittleNails": "Brüchige Nägel",
+    "symptom_brittleNails_desc": "Längsrillen, Löffelnägel oder splitternde Nägel",
+    "symptom_restlessLegs": "Restless-Legs / Kribbeln",
+    "symptom_restlessLegs_desc": "Unruhige Beine abends — hochspezifisches Eisenmangel-Zeichen",
+    "symptom_pica": "Pica / ungewöhnliches Verlangen",
+    "symptom_pica_desc": "Drang Eis zu kauen, Erde oder Stärke zu essen — Alarmzeichen",
+    "symptom_coldHandsFeet": "Kalte Hände und Füße",
+    "symptom_coldHandsFeet_desc": "Reduzierte periphere Durchblutung trotz warmer Umgebung",
+    "symptom_headache": "Kopfschmerzen",
+    "symptom_headache_desc": "Häufige dumpfe Kopfschmerzen, oft morgens",
+    "symptom_poorConcentration": "Konzentrationsstörungen",
+    "symptom_poorConcentration_desc": "Brain-Fog, Vergesslichkeit, reduzierte Leistungsfähigkeit",
+    "resultsLabel": "Dein Eisenmangel-Risiko",
+    "ferritinCategoryLabel": "Ferritin",
+    "tsatCategoryLabel": "TSAT",
+    "hbCategoryLabel": "Hämoglobin",
+    "symptomScoreLabel": "Symptom-Score",
+    "category_none": "Kein Risiko",
+    "category_mild": "Leicht",
+    "category_moderate": "Moderat",
+    "category_severe": "Schwer",
+    "advice_none": "Deine Eisenparameter und Symptome sprechen aktuell nicht für einen Eisenmangel. Bei anhaltender Müdigkeit dennoch Ferritin und Blutbild kontrollieren lassen.",
+    "advice_mild": "Hinweise auf einen latenten Eisenmangel (entleerte Speicher, noch normales Hämoglobin). Hausarzt-Termin für vollständigen Eisenstatus (Ferritin, TSAT, CRP) und ggf. orale Eisensubstitution.",
+    "advice_moderate": "Deutlicher Eisenmangel wahrscheinlich. Ärztliche Abklärung der Ursache (Menstruation, Ernährung, gastrointestinaler Blutverlust) und gezielte Eisensubstitution oral oder intravenös empfohlen.",
+    "advice_severe": "Schwerer Eisenmangel mit hoher Wahrscheinlichkeit für Eisenmangelanämie. Zeitnahe ärztliche Vorstellung — Blutbild, Eisenstatus und Ursachensuche notwendig. Bei Atemnot in Ruhe, Brustschmerz oder Synkope sofort Notarzt rufen.",
+    "refTitle": "Grenzwerte (allgemeine Erwachsene)",
+    "refMarker": "Marker",
+    "refFerritin": "Ferritin (ng/mL)",
+    "refTsat": "TSAT (%)",
+    "refHbWomen": "Hb Frauen (g/dL)",
+    "refHbMen": "Hb Männer (g/dL)",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner kombiniert vier Signale: (1) Ferritin spiegelt den Eisenspeicher wider — Werte unter 30 ng/mL gelten als Eisenmangel, unter 15 ng/mL als entleerte Speicher. (2) Die Transferrin-Sättigung (TSAT) zeigt das zirkulierende Eisen — < 20 % ist auffällig, < 16 % deutet auf eingeschränkte Erythropoese. (3) Hämoglobin wird mit den WHO-Grenzwerten verglichen — niedrige Werte zeigen bereits eine Eisenmangelanämie. (4) Ein gewichteter Symptom-Score (max. 13 Punkte) berücksichtigt typische Beschwerden wie Müdigkeit, Restless-Legs und Pica. Maßgeblich ist der höchste der vier Schweregrade.",
+    "disclaimer": "Dieser Rechner dient zur Selbsteinschätzung gesunder Erwachsener und ersetzt keine ärztliche Untersuchung. Bei Schwangerschaft, chronischen Entzündungen, Niereninsuffizienz oder Tumorerkrankungen gelten abweichende Ferritin-Grenzwerte (Akute-Phase-Reaktion). Bei Atemnot in Ruhe, Brustschmerz, Synkope oder schwarzem Stuhl sofort medizinische Hilfe in Anspruch nehmen.",
+    "faq": [
+      {
+        "q": "Ab welchem Ferritinwert spricht man von Eisenmangel?",
+        "a": "Ein Ferritin unter 30 ng/mL gilt allgemein als Eisenmangel, Werte unter 15 ng/mL bedeuten entleerte Eisenspeicher. Bei chronischen Entzündungen oder Lebererkrankungen kann Ferritin falsch hoch sein — dann wird auch ein Wert bis 100 ng/mL als Mangel gewertet."
+      },
+      {
+        "q": "Was ist Transferrin-Sättigung (TSAT)?",
+        "a": "Die TSAT zeigt an, wie viel Eisen aktuell auf dem Transportprotein Transferrin gebunden ist. Werte unter 20 % deuten auf eine eingeschränkte Eisenzufuhr zu den eisenverbrauchenden Geweben hin, unter 16 % gelten als klar pathologisch."
+      },
+      {
+        "q": "Eisenmangel ohne Anämie — gibt es das?",
+        "a": "Ja, der sogenannte latente Eisenmangel: Ferritin ist erniedrigt, aber das Hämoglobin liegt noch im Normbereich. Diese Phase kann monate- bis jahrelang bestehen — Symptome wie Müdigkeit, Restless-Legs und Haarausfall treten oft schon dann auf."
+      },
+      {
+        "q": "Wer ist besonders gefährdet?",
+        "a": "Frauen im gebärfähigen Alter (Menstruation, Schwangerschaft), Veganer und Vegetarier, Spitzensportler, Kinder im Wachstum, Patienten mit chronischen Magen-Darm-Erkrankungen oder Blutverlust, häufige Blutspender."
+      },
+      {
+        "q": "Wie wird Eisenmangel behandelt?",
+        "a": "Bei mildem bis mittlerem Mangel: orale Eisenpräparate (60–120 mg elementares Eisen pro Tag, idealerweise nüchtern mit Vitamin C, ohne Kaffee/Tee) über mindestens 3 Monate. Bei Unverträglichkeit, schwerem Mangel oder gleichzeitiger chronischer Entzündung: intravenöse Eisengabe."
+      },
+      {
+        "q": "Welche Ernährung deckt den Eisenbedarf?",
+        "a": "Hämeisen aus rotem Fleisch, Fisch und Geflügel wird am besten resorbiert. Pflanzliches Nicht-Hämeisen aus Hülsenfrüchten, Vollkorn, Nüssen und dunklem Blattgemüse profitiert von Vitamin C zur Aufnahme. Kaffee, schwarzer Tee, Milchprodukte und Calcium hemmen die Eisenresorption — am besten Abstand halten."
+      }
+    ]
+  }
+}
