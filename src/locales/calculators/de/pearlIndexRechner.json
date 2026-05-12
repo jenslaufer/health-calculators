@@ -1,0 +1,99 @@
+{
+  "home": {
+    "calculators": {
+      "pearlIndexRechner": {
+        "name": "Pearl-Index Rechner",
+        "description": "Berechne den Pearl-Index aus Studiendaten und vergleiche Verhütungsmethoden."
+      }
+    }
+  },
+  "pearlIndexRechner": {
+    "meta": {
+      "title": "Pearl-Index Rechner — Verhütungssicherheit berechnen & vergleichen",
+      "description": "Pearl-Index berechnen aus Studiendaten: PI = (Schwangerschaften × 1200) / (Frauen × Monate). Referenztabelle mit Pille, Kondom, Spirale, NFP & mehr. Quellen: BZgA, Trussell."
+    },
+    "title": "Pearl-Index Rechner",
+    "description": "Berechne den Pearl-Index aus Studiendaten und vergleiche Verhütungsmethoden anhand validierter Referenzwerte.",
+    "disclaimer": "Hinweis: Dieser Rechner dient ausschließlich der Information und Bildung. Er ist kein Ersatz für eine ärztliche Verhütungsberatung. Sprich für die Wahl der passenden Verhütungsmethode mit deiner Frauenärztin oder deinem Frauenarzt.",
+    "inputsTitle": "Studiendaten eingeben",
+    "women": "Anzahl der Frauen",
+    "womenHint": "z.B. 100",
+    "months": "Beobachtungszeit (Monate)",
+    "monthsHint": "z.B. 12 für ein Jahr",
+    "pregnancies": "Anzahl ungewollter Schwangerschaften",
+    "pregnanciesHint": "Im Beobachtungszeitraum aufgetretene Schwangerschaften",
+    "result": "Pearl-Index",
+    "resultUnit": "Schwangerschaften pro 100 Frauenjahre",
+    "resultExplain": "Bei {women} Frauen über {months} Monate entspricht der Pearl-Index {pi} Schwangerschaften pro 100 Frauenjahre.",
+    "verySafe": "Sehr sicher",
+    "safe": "Sicher",
+    "moderate": "Mäßig sicher",
+    "lowSafety": "Geringe Sicherheit",
+    "unsafe": "Unsicher",
+    "categoryHelp": "Klassifikation orientiert an WHO/BZgA: < 1 sehr sicher, 1–4 sicher, 5–9 mäßig, 10–24 gering, ≥ 25 unsicher.",
+    "exampleTitle": "Rechenbeispiel",
+    "exampleText": "100 Frauen verhüten 12 Monate lang mit einer Methode. In dieser Zeit treten 3 ungewollte Schwangerschaften auf. Pearl-Index = (3 × 1200) / (100 × 12) = 3,0. Das heißt: 3 von 100 Frauen werden bei einjähriger Anwendung schwanger.",
+    "referenceTitle": "Pearl-Index nach Verhütungsmethode",
+    "referenceIntro": "Typische Pearl-Indices etablierter Methoden bei perfekter und durchschnittlicher Anwendung. Quellen: BZgA, Deutsche Gesellschaft für Gynäkologie und Geburtshilfe (DGGG), Trussell 2011.",
+    "method": "Methode",
+    "perfectUse": "Perfekte Anwendung",
+    "typicalUse": "Typische Anwendung",
+    "methods": {
+      "pillCombined": "Kombinationspille",
+      "pillMini": "Minipille (Gestagen)",
+      "iudHormonal": "Hormonspirale (LNG-IUS)",
+      "iudCopper": "Kupferspirale",
+      "implant": "Hormonimplantat (Stäbchen)",
+      "depot": "Drei-Monats-Spritze",
+      "patch": "Verhütungspflaster",
+      "ring": "Vaginalring",
+      "condomMale": "Kondom (männlich)",
+      "condomFemale": "Femidom (Frauenkondom)",
+      "diaphragm": "Diaphragma + Spermizid",
+      "nfpSymptothermal": "NFP symptothermal (korrekt)",
+      "nfpCalendar": "Kalendermethode allein",
+      "withdrawal": "Coitus interruptus",
+      "sterilizationFemale": "Tubenligatur (Sterilisation Frau)",
+      "sterilizationMale": "Vasektomie (Sterilisation Mann)",
+      "noMethod": "Keine Verhütung"
+    },
+    "contentTitle": "Was sagt der Pearl-Index aus?",
+    "contentP1": "Der Pearl-Index ist das Standardmaß für die Sicherheit einer Verhütungsmethode. Er gibt an, wie viele von 100 Frauen schwanger werden, wenn sie ein Jahr lang ausschließlich diese Methode anwenden. Ein Pearl-Index von 1 bedeutet: eine von hundert Frauen wird trotz korrekter Anwendung pro Jahr schwanger.",
+    "contentP2": "Wichtig ist die Unterscheidung zwischen perfekter und typischer Anwendung. Die Pille hat bei korrekter Einnahme einen Pearl-Index von 0,1–0,9. Bei realer Anwendung — vergessene Tabletten, Wechselwirkungen, Erbrechen — steigt er auf 6–9. Hormonspirale, Implantat und Sterilisation sind nahezu anwendungsfehlerunabhängig und schneiden deshalb auch im Alltag konstant unter 1 ab.",
+    "contentP3": "Methodische Grenzen: Der Pearl-Index ist kein perfektes Maß. Längere Studiendauern senken den Wert künstlich, da besonders fertile Paare früh ausscheiden. Lebensphase, Alter, Häufigkeit des Geschlechtsverkehrs und Begleitfaktoren wie Antibiotika beeinflussen das individuelle Risiko zusätzlich. Genauer ist die Lebenstabellenanalyse, die den Pearl-Index in der Forschung zunehmend ergänzt.",
+    "contentP4": "Für die Praxis heißt das: Vergleiche Methoden anhand der typischen, nicht der perfekten Anwendung. Wer Anwendungsfehler ausschließen will, profitiert von Long-Acting Reversible Contraceptives (LARC) wie Hormonspirale oder Implantat. Hormonfreie Alternativen mit niedrigem Pearl-Index sind die Kupferspirale und korrekt durchgeführte symptothermale NFP. Welche Methode persönlich am besten passt, hängt von Gesundheit, Lebensphase und Vorlieben ab — und gehört in die Hand einer Frauenärztin oder eines Frauenarztes.",
+    "internalLinksTitle": "Passende Rechner für Zyklus und Schwangerschaft",
+    "linkOvulation": "Eisprungrechner",
+    "linkPeriod": "Zyklusrechner",
+    "linkPregnancy": "Schwangerschafts-Rechner",
+    "linkFertility": "Fruchtbares Fenster Rechner",
+    "sourcesTitle": "Quellen",
+    "sourcesText": "Bundeszentrale für gesundheitliche Aufklärung (BZgA): Sichergehen.de — Verhütungsmethoden im Vergleich. Deutsche Gesellschaft für Gynäkologie und Geburtshilfe (DGGG): S3-Leitlinie Hormonelle Empfängnisverhütung. Trussell J. Contraceptive failure in the United States. Contraception 2011;83(5):397–404. Frank-Herrmann P et al. The effectiveness of a fertility awareness based method to avoid pregnancy. Hum Reprod 2007.",
+    "faq": [
+      {
+        "q": "Wie wird der Pearl-Index berechnet?",
+        "a": "Pearl-Index = (Schwangerschaften × 1200) / (Frauen × Monate). Der Faktor 1200 = 100 Frauen × 12 Monate stellt den Bezug auf 100 Frauenjahre her. Der Wert sagt: so viele von 100 Frauen werden bei einjähriger Anwendung schwanger."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen perfekter und typischer Anwendung?",
+        "a": "Perfekt = Methode wird immer korrekt angewendet (Pille pünktlich, Kondom richtig). Typisch = reale Anwendung mit Fehlern. Beim Kondom liegt die Differenz bei Faktor 7 (PI 2 vs. 15), bei der Pille bei Faktor 10 (0,9 vs. 9). Bei Hormonspirale und Implantat gibt es kaum Unterschied."
+      },
+      {
+        "q": "Welche Verhütungsmethode hat den niedrigsten Pearl-Index?",
+        "a": "Hormonimplantat (PI ~0,05), Hormonspirale (PI ~0,2) und Sterilisation (PI 0,15–0,5). Diese Long-Acting Reversible Contraceptives (LARC) sind anwendungsfehlerunabhängig und in der typischen Anwendung am sichersten."
+      },
+      {
+        "q": "Ist NFP eine sichere Verhütungsmethode?",
+        "a": "Symptothermale NFP nach Sensiplan, korrekt erlernt und konsequent angewendet, erreicht laut Frank-Herrmann et al. 2007 einen Pearl-Index von 0,4. Reine Kalendermethoden ohne Temperatur und Zervixschleim haben dagegen 9–40 und sind nicht sicher genug."
+      },
+      {
+        "q": "Warum ist der Pearl-Index nicht perfekt als Maß?",
+        "a": "Längere Studien verzerren den Wert nach unten, weil besonders fertile Paare früh ausscheiden. Der PI berücksichtigt zudem nicht die individuelle Häufigkeit des Geschlechtsverkehrs. Die Lebenstabellenanalyse ist methodisch genauer, der Pearl-Index aber etabliert und gut vergleichbar."
+      },
+      {
+        "q": "Ersetzt dieser Rechner eine ärztliche Beratung?",
+        "a": "Nein. Die Wahl der Verhütungsmethode hängt von Alter, Gesundheit, Vorerkrankungen, Lebensphase und persönlichen Vorlieben ab. Sprich für eine fundierte Entscheidung mit deiner Frauenärztin oder deinem Frauenarzt."
+      }
+    ]
+  }
+}
