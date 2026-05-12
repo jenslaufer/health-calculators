@@ -383,8 +383,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 426 routes', () => {
-    expect(routes).toHaveLength(426)
+  it('generates exactly 427 routes', () => {
+    expect(routes).toHaveLength(427)
   })
 
   it('has locale routes for all calculators in both languages', () => {
