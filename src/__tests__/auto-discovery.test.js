@@ -25,10 +25,10 @@ const EXPECTED_KEYS = [
   'heartFailureRisk', 'dehydrationRisk', 'thyroidFunction', 'anemiaRisk',
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
-  'pregnancyBMI', 'fertilityWindow', 'menopauseSymptom',
+  'pregnancyBMI', 'fertilityWindow', 'menopauseSymptom', 'pearlIndexRechner',
 ]
 
-const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency']
+const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency', 'diabetesPrevention']
 
 const EXPECTED_ROUTE_MAP = {
   bmi: { de: 'bmi-rechner', en: 'bmi-calculator' },
@@ -106,6 +106,7 @@ const EXPECTED_ROUTE_MAP = {
   pregnancyBMI: { de: 'bmi-schwangerschaft-rechner', en: 'pregnancy-bmi-calculator' },
   fertilityWindow: { de: 'fruchtbares-fenster-rechner', en: 'fertility-window-calculator' },
   menopauseSymptom: { de: 'menopause-symptome-rechner', en: 'menopause-symptom-calculator' },
+  pearlIndexRechner: { de: 'pearl-index-rechner', en: 'pearl-index-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -173,6 +174,8 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'bmi-schwangerschaft-berechnen',
   'fruchtbares-fenster-berechnen',
   'menopause-symptome-bewerten',
+  'diabetes-typ-2-vorbeugen',
+  'pearl-index-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -240,19 +243,21 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'pregnancy-bmi-guide',
   'fertility-window-guide',
   'menopause-symptom-calculator-guide',
+  'prevent-type-2-diabetes',
+  'pearl-index-calculator-guide',
 ]
 
 describe('calculator discovery', () => {
-  it('discovers all 77 calculators', () => {
-    expect(calculatorMetas).toHaveLength(77)
+  it('discovers all 78 calculators', () => {
+    expect(calculatorMetas).toHaveLength(78)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
     }
   })
 
-  it('builds calculatorComponents map for all 77 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(77)
+  it('builds calculatorComponents map for all 78 keys', () => {
+    expect(Object.keys(calculatorComponents)).toHaveLength(78)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -275,15 +280,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 76 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(76)
+  it('discovers all 78 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(78)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 76 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(76)
+  it('discovers all 78 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(78)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -308,10 +313,10 @@ describe('calculator groups', () => {
     expect(calculatorGroups[3].key).toBe('pregnancy')
   })
 
-  it('groups contain all 77 calculators with no duplicates', () => {
+  it('groups contain all 78 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(77)
-    expect(new Set(allKeys).size).toBe(77)
+    expect(allKeys).toHaveLength(78)
+    expect(new Set(allKeys).size).toBe(78)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -338,7 +343,7 @@ describe('calculator groups', () => {
 
   it('pregnancy group has correct calculators in order', () => {
     expect(calculatorGroups[3].calculators).toEqual([
-      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'fertilityWindow', 'pregnancyBMI', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore',
+      'pregnancy', 'ovulation', 'pregnancyWeightGain', 'fertilityWindow', 'pregnancyBMI', 'pearlIndexRechner', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore',
       'babyMilestones', 'babyFeedingAmount', 'newbornBilirubin', 'menopauseSymptom',
     ])
   })
@@ -381,8 +386,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 424 routes', () => {
-    expect(routes).toHaveLength(424)
+  it('generates exactly 432 routes', () => {
+    expect(routes).toHaveLength(432)
   })
 
   it('has locale routes for all calculators in both languages', () => {
