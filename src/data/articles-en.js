@@ -683,6 +683,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'diabetesPrevention',
     related: ['diabetes-risk-score', 'hba1c-converter-guide', 'calculate-bmi'],
   },
+  {
+    slug: 'pearl-index-calculator-guide',
+    title: 'Pearl Index Calculator: Contraceptive Method Effectiveness',
+    description: 'Pearl Index explained — formula, perfect vs typical use, reference values for the pill, condoms, IUDs, NFP. Sources: BZgA, Trussell.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'pearlIndexRechner',
+    related: ['calculate-ovulation', 'period-calculator-guide', 'fertility-window-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -9,8 +9,8 @@
   },
   "proteinNeed": {
     "meta": {
-      "title": "Protein Need Calculator — Daily Protein Requirement",
-      "description": "Calculate your daily protein requirement based on activity level, goal, age, and gender. With per-meal breakdown and food examples."
+      "title": "Protein Need Calculator — Daily Requirements by Age & Activity",
+      "description": "Determine your daily protein requirement based on activity level, age, and goal. Range-based recommendations with meal breakdown."
     },
     "title": "Protein Need Calculator",
     "description": "Calculate your individual daily protein requirement — adjusted for activity, goal, and age.",

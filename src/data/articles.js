@@ -683,6 +683,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'diabetesPrevention',
     related: ['diabetes-risiko-berechnen', 'hba1c-umrechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'pearl-index-berechnen',
+    title: 'Pearl-Index berechnen: Verhütungsmethoden im Vergleich',
+    description: 'Pearl-Index verstehen und berechnen — Formel, perfekte vs. typische Anwendung, Referenzwerte für Pille, Kondom, Spirale, NFP. Quellen: BZgA, Trussell.',
+    date: '2026-05-11',
+    readTime: '8 min',
+    calculatorKey: 'pearlIndexRechner',
+    related: ['eisprung-berechnen', 'zyklusrechner-guide', 'fruchtbares-fenster-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
