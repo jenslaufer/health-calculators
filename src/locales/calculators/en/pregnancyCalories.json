@@ -1,0 +1,83 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancyCalories": {
+        "name": "Pregnancy Calorie Needs",
+        "description": "Calculate your daily calorie needs by trimester."
+      }
+    }
+  },
+  "pregnancyCalories": {
+    "meta": {
+      "title": "Pregnancy Calorie Needs Calculator — kcal by Trimester",
+      "description": "Calculate your pregnancy calorie needs by trimester using the IOM EER formula. Pre-pregnancy weight, height, age and activity. Twin pregnancy supported. Free, instant."
+    },
+    "title": "Pregnancy Calorie Needs",
+    "description": "Estimate your daily calorie requirements during each trimester — based on IOM recommendations.",
+    "age": "Age (years)",
+    "agePlaceholder": "30",
+    "ageHint": "18–50 years",
+    "weightKg": "Pre-pregnancy weight (kg)",
+    "weightLb": "Pre-pregnancy weight (lb)",
+    "weightPlaceholder": "65",
+    "weightPlaceholderLb": "143",
+    "weightHint": "Weight before pregnancy",
+    "heightCm": "Height (cm)",
+    "heightIn": "Height (in)",
+    "heightPlaceholder": "168",
+    "heightPlaceholderIn": "66",
+    "activity": "Activity level",
+    "activitySedentary": "Sedentary (little activity)",
+    "activityLowActive": "Low active (some daily movement)",
+    "activityActive": "Active (regular exercise)",
+    "activityVeryActive": "Very active (competitive sport)",
+    "trimester": "Trimester",
+    "trimester1": "1st trimester (weeks 1–13)",
+    "trimester2": "2nd trimester (weeks 14–27)",
+    "trimester3": "3rd trimester (weeks 28–40)",
+    "twins": "Twin pregnancy",
+    "twinsHint": "Adds +300 kcal/day in T2 and T3",
+    "implausibleAge": "Please enter an age between 18 and 50 years.",
+    "implausibleWeight": "Please enter a pre-pregnancy weight between 35 and 200 kg (77 and 440 lb).",
+    "implausibleHeight": "Please enter a height between 130 and 210 cm (51 and 83 in).",
+    "result": "Daily need",
+    "kcalPerDay": "kcal/day",
+    "breakdown": "Breakdown",
+    "prePregnancy": "Pre-pregnancy need",
+    "addition": "Pregnancy supplement",
+    "table": "Recommended extra calories by trimester",
+    "tableNote": "Values for singleton pregnancy (IOM 2002/2005).",
+    "trimesterCol": "Trimester",
+    "extraCol": "Additional kcal/day",
+    "noExtra": "+0",
+    "howItWorks": "How it works",
+    "howItWorksText": "The calculator first estimates your pre-pregnancy need with the IOM EER formula: EER = 354 − 6.91·age + PA·(9.36·weight + 726·height). It then adds the pregnancy supplement: 0 kcal in T1, +340 kcal in T2, +452 kcal in T3. For twin pregnancies, an additional +300 kcal/day is added in T2 and T3.",
+    "disclaimer": "This is a population-based estimate. Individual needs vary with weight gain, metabolism, multiples or comorbidities. Always consult your midwife or doctor.",
+    "faq": [
+      {
+        "q": "How many extra calories do I need during pregnancy?",
+        "a": "Per IOM: 0 kcal in the 1st trimester, +340 kcal/day in the 2nd, and +452 kcal/day in the 3rd. Twin pregnancies add another +300 kcal/day starting in T2."
+      },
+      {
+        "q": "Do I really need no extra calories in T1?",
+        "a": "Energetically, the increase in the first trimester is essentially zero. What matters more is nutrient density — folate, iodine, iron and overall food quality."
+      },
+      {
+        "q": "What does 'eating for two' really mean?",
+        "a": "It's a myth. The extra need maxes out at about one snack (300–450 kcal). Food quality matters more than quantity."
+      },
+      {
+        "q": "Which formula does the calculator use?",
+        "a": "The IOM EER formula for adult women (DRI 2002/2005), combined with the trimester-specific energy supplement."
+      },
+      {
+        "q": "What counts as 'active'?",
+        "a": "Active means 3–5 sessions per week of moderate activity (brisk walking, swimming, yoga). 'Very active' covers competitive sport — rarely recommended during pregnancy."
+      },
+      {
+        "q": "Should I lose weight if I start pregnancy overweight?",
+        "a": "Active weight loss is not recommended. Aim for the lower end of the IOM weight-gain ranges (5–9 kg in obesity). Always coordinate with your doctor or midwife."
+      }
+    ]
+  }
+}

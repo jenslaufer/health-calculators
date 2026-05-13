@@ -737,6 +737,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'ffmiRechner',
     related: ['magermasse-berechnen', 'koerperfett-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'kalorienbedarf-schwangerschaft-berechnen',
+    title: 'Kalorienbedarf in der Schwangerschaft: So viel brauchst du pro Trimester',
+    description: 'Wie viele Kalorien brauchst du in der Schwangerschaft? Trimester-Tabelle, IOM-Formel, Mythos „für zwei essen" und Tipps für werdende Mütter.',
+    date: '2026-05-13',
+    readTime: '8 min',
+    calculatorKey: 'pregnancyCalories',
+    related: ['gewichtszunahme-schwangerschaft-berechnen', 'bmi-schwangerschaft-berechnen', 'geburtstermin-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

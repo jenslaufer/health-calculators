@@ -737,6 +737,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'ffmiRechner',
     related: ['calculate-lean-body-mass', 'calculate-body-fat', 'calculate-bmi'],
   },
+  {
+    slug: 'pregnancy-calorie-needs-guide',
+    title: 'Pregnancy Calorie Needs: How Many Calories per Trimester?',
+    description: 'How many calories do you really need during pregnancy? Trimester table, IOM formula, the "eating for two" myth and practical tips for expecting mothers.',
+    date: '2026-05-13',
+    readTime: '8 min',
+    calculatorKey: 'pregnancyCalories',
+    related: ['pregnancy-weight-gain-guide', 'pregnancy-bmi-guide', 'calculate-due-date'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

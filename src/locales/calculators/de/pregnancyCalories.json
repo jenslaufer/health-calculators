@@ -1,0 +1,83 @@
+{
+  "home": {
+    "calculators": {
+      "pregnancyCalories": {
+        "name": "Kalorienbedarf Schwangerschaft",
+        "description": "Berechne deinen täglichen Kalorienbedarf pro Trimester."
+      }
+    }
+  },
+  "pregnancyCalories": {
+    "meta": {
+      "title": "Kalorienbedarf Schwangerschaft — Rechner pro Trimester",
+      "description": "Berechne deinen Kalorienbedarf in der Schwangerschaft pro Trimester. IOM-Formel mit Vorgewicht, Größe, Alter und Aktivität. Mehrlinge unterstützt. Kostenlos & sofort."
+    },
+    "title": "Kalorienbedarf in der Schwangerschaft",
+    "description": "Ermittle deinen täglichen Kalorienbedarf in jedem Trimester — basierend auf IOM-Empfehlungen.",
+    "age": "Alter (Jahre)",
+    "agePlaceholder": "30",
+    "ageHint": "18–50 Jahre",
+    "weightKg": "Vorgewicht (kg)",
+    "weightLb": "Vorgewicht (lb)",
+    "weightPlaceholder": "65",
+    "weightPlaceholderLb": "143",
+    "weightHint": "Gewicht vor der Schwangerschaft",
+    "heightCm": "Größe (cm)",
+    "heightIn": "Größe (in)",
+    "heightPlaceholder": "168",
+    "heightPlaceholderIn": "66",
+    "activity": "Aktivitätslevel",
+    "activitySedentary": "Sitzend (kaum Bewegung)",
+    "activityLowActive": "Wenig aktiv (etwas Alltagsbewegung)",
+    "activityActive": "Aktiv (regelmäßiger Sport)",
+    "activityVeryActive": "Sehr aktiv (Leistungssport)",
+    "trimester": "Trimester",
+    "trimester1": "1. Trimester (Wochen 1–13)",
+    "trimester2": "2. Trimester (Wochen 14–27)",
+    "trimester3": "3. Trimester (Wochen 28–40)",
+    "twins": "Zwillingsschwangerschaft",
+    "twinsHint": "Fügt +300 kcal/Tag in T2 und T3 hinzu",
+    "implausibleAge": "Bitte ein Alter zwischen 18 und 50 Jahren eingeben.",
+    "implausibleWeight": "Bitte ein Vorgewicht zwischen 35 und 200 kg (bzw. 77 und 440 lb) eingeben.",
+    "implausibleHeight": "Bitte eine Größe zwischen 130 und 210 cm (bzw. 51 und 83 in) eingeben.",
+    "result": "Täglicher Bedarf",
+    "kcalPerDay": "kcal/Tag",
+    "breakdown": "Aufschlüsselung",
+    "prePregnancy": "Vorschwangerschafts-Bedarf",
+    "addition": "Zusatz in der Schwangerschaft",
+    "table": "Empfohlener Mehrbedarf nach Trimester",
+    "tableNote": "Werte gelten für Einlingsschwangerschaft (IOM 2002/2005).",
+    "trimesterCol": "Trimester",
+    "extraCol": "Zusätzliche kcal/Tag",
+    "noExtra": "+0",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner berechnet zuerst deinen Grund-Kalorienbedarf vor der Schwangerschaft mit der IOM-EER-Formel: EER = 354 − 6,91·Alter + PA·(9,36·Gewicht + 726·Größe). Anschließend addiert er den schwangerschafts-spezifischen Zuschlag: 0 kcal im 1. Trimester, +340 kcal im 2., +452 kcal im 3. Bei Zwillingen kommen ab T2 zusätzlich +300 kcal/Tag dazu.",
+    "disclaimer": "Diese Berechnung ist eine Schätzung nach Bevölkerungswerten. Individuelle Faktoren wie Gewichtsentwicklung, Stoffwechsel, Mehrlinge oder Begleiterkrankungen können den Bedarf verändern. Sprich mit deiner Hebamme oder deinem Arzt.",
+    "faq": [
+      {
+        "q": "Wie viele Kalorien brauche ich in der Schwangerschaft zusätzlich?",
+        "a": "Nach IOM-Empfehlung: 0 kcal im 1. Trimester, +340 kcal/Tag im 2. und +452 kcal/Tag im 3. Trimester. Bei Zwillingen jeweils +300 kcal zusätzlich ab T2."
+      },
+      {
+        "q": "Muss ich im 1. Trimester wirklich nichts extra essen?",
+        "a": "Energetisch nein — der Mehrbedarf liegt im ersten Trimester praktisch bei null. Wichtiger sind Folsäure, Jod, Eisen und eine gute Nährstoffdichte."
+      },
+      {
+        "q": "Was bedeutet 'für zwei essen'?",
+        "a": "Ein Mythos. Der Mehrbedarf entspricht maximal einer Zwischenmahlzeit (300–450 kcal). Die Qualität der Lebensmittel ist wichtiger als die Menge."
+      },
+      {
+        "q": "Welche Formel nutzt der Rechner?",
+        "a": "Die IOM-EER-Formel für erwachsene Frauen (DRI 2002/2005), kombiniert mit den schwangerschafts-spezifischen Zuschlägen pro Trimester."
+      },
+      {
+        "q": "Was zählt als 'aktiv'?",
+        "a": "Aktiv heißt 3–5×/Woche moderater Sport (z. B. zügiges Gehen, Schwimmen, Yoga). 'Sehr aktiv' deckt Leistungssport ab — selten in der Schwangerschaft empfohlen."
+      },
+      {
+        "q": "Soll ich abnehmen, wenn ich übergewichtig in die Schwangerschaft gehe?",
+        "a": "Aktives Abnehmen wird nicht empfohlen. Stattdessen: moderate Gewichtszunahme nach BMI-Klasse anstreben (5–9 kg bei Adipositas). Mit Arzt oder Hebamme abstimmen."
+      }
+    ]
+  }
+}
