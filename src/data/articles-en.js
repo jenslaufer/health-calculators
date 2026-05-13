@@ -737,6 +737,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'ffmiRechner',
     related: ['calculate-lean-body-mass', 'calculate-body-fat', 'calculate-bmi'],
   },
+  {
+    slug: 'menopause-natural-relief',
+    title: 'Menopause — Natural Symptom Relief and When to See a Doctor',
+    description: 'Menopause explained — perimenopause vs menopause, common symptoms, natural relief through diet, exercise, phytoestrogens, sleep and stress. Plus red flags, HRT overview and long-term bone and heart risks.',
+    date: '2026-05-13',
+    readTime: '14 min',
+    calculatorKey: 'menopauseNatural',
+    related: ['menopause-symptom-calculator-guide', 'osteoporosis-risk-calculator-guide', 'cardiovascular-risk-framingham'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -29,7 +29,7 @@ const EXPECTED_KEYS = [
   'ironDeficiency', 'ffmiRechner',
 ]
 
-const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency', 'diabetesPrevention']
+const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency', 'diabetesPrevention', 'menopauseNatural']
 
 const EXPECTED_ROUTE_MAP = {
   bmi: { de: 'bmi-rechner', en: 'bmi-calculator' },
@@ -185,6 +185,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'pearl-index-berechnen',
   'eisenmangel-berechnen',
   'ffmi-berechnen',
+  'menopause-natuerlich-begleiten',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -258,6 +259,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'pearl-index-calculator-guide',
   'iron-deficiency-calculator-guide',
   'ffmi-calculator-guide',
+  'menopause-natural-relief',
 ]
 
 describe('calculator discovery', () => {
@@ -294,14 +296,14 @@ describe('calculator discovery', () => {
 
 describe('blog component discovery', () => {
   it('discovers all 81 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(82)
+    expect(Object.keys(blogComponentsDe)).toHaveLength(83)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
   it('discovers all 81 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(82)
+    expect(Object.keys(blogComponentsEn)).toHaveLength(83)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -400,7 +402,7 @@ describe('i18n completeness', () => {
 
 describe('SSG routes', () => {
   it('generates exactly 447 routes', () => {
-    expect(routes).toHaveLength(452)
+    expect(routes).toHaveLength(455)
   })
 
   it('has locale routes for all calculators in both languages', () => {
