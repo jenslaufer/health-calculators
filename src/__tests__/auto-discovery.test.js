@@ -26,7 +26,7 @@ const EXPECTED_KEYS = [
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
   'pregnancyBMI', 'fertilityWindow', 'headCircumference', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
-  'ironDeficiency',
+  'ironDeficiency', 'ffmiRechner',
 ]
 
 const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency', 'diabetesPrevention']
@@ -111,6 +111,7 @@ const EXPECTED_ROUTE_MAP = {
   menopauseSymptom: { de: 'menopause-symptome-rechner', en: 'menopause-symptom-calculator' },
   pearlIndexRechner: { de: 'pearl-index-rechner', en: 'pearl-index-calculator' },
   ironDeficiency: { de: 'eisenmangel-rechner', en: 'iron-deficiency-calculator' },
+  ffmiRechner: { de: 'ffmi-rechner', en: 'ffmi-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -183,6 +184,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'diabetes-typ-2-vorbeugen',
   'pearl-index-berechnen',
   'eisenmangel-berechnen',
+  'ffmi-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -255,11 +257,12 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'prevent-type-2-diabetes',
   'pearl-index-calculator-guide',
   'iron-deficiency-calculator-guide',
+  'ffmi-calculator-guide',
 ]
 
 describe('calculator discovery', () => {
   it('discovers all 81 calculators', () => {
-    expect(calculatorMetas).toHaveLength(81)
+    expect(calculatorMetas).toHaveLength(82)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
@@ -267,7 +270,7 @@ describe('calculator discovery', () => {
   })
 
   it('builds calculatorComponents map for all 81 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(81)
+    expect(Object.keys(calculatorComponents)).toHaveLength(82)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -291,14 +294,14 @@ describe('calculator discovery', () => {
 
 describe('blog component discovery', () => {
   it('discovers all 81 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(81)
+    expect(Object.keys(blogComponentsDe)).toHaveLength(82)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
   it('discovers all 81 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(81)
+    expect(Object.keys(blogComponentsEn)).toHaveLength(82)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -325,8 +328,8 @@ describe('calculator groups', () => {
 
   it('groups contain all 81 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(81)
-    expect(new Set(allKeys).size).toBe(81)
+    expect(allKeys).toHaveLength(82)
+    expect(new Set(allKeys).size).toBe(82)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -334,7 +337,7 @@ describe('calculator groups', () => {
 
   it('bodyComposition group has correct calculators in order', () => {
     expect(calculatorGroups[0].calculators).toEqual([
-      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'whtrRechner', 'leanBodyMass', 'bsa', 'bodyType', 'bmiFrauen', 'bmiMaenner',
+      'bmi', 'bodyFat', 'idealWeight', 'waistHipRatio', 'whtrRechner', 'leanBodyMass', 'ffmiRechner', 'bsa', 'bodyType', 'bmiFrauen', 'bmiMaenner',
     ])
   })
 
@@ -397,7 +400,7 @@ describe('i18n completeness', () => {
 
 describe('SSG routes', () => {
   it('generates exactly 447 routes', () => {
-    expect(routes).toHaveLength(447)
+    expect(routes).toHaveLength(452)
   })
 
   it('has locale routes for all calculators in both languages', () => {

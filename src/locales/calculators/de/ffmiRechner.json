@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "ffmiRechner": {
+        "name": "FFMI-Rechner",
+        "description": "Fettfreie-Masse-Index berechnen — Muskelmasse relativ zur Körpergröße einordnen."
+      }
+    }
+  },
+  "ffmiRechner": {
+    "meta": {
+      "title": "FFMI-Rechner — Fettfreie-Masse-Index berechnen",
+      "description": "Berechne deinen FFMI (Fettfreie-Masse-Index) aus Gewicht, Größe und Körperfett. Mit normalisiertem FFMI nach Kouri und Klassifikation für natürliche Athleten. Kostenlos, sofort."
+    },
+    "title": "FFMI-Rechner",
+    "description": "Bestimme deinen Fettfreie-Masse-Index — die aussagekräftigste Kennzahl für Muskelmasse relativ zur Körpergröße. Mit normalisierter Variante und Einordnung für natürliche Athleten.",
+    "sexLabel": "Geschlecht",
+    "sexMale": "Männlich",
+    "sexFemale": "Weiblich",
+    "weightLabel": "Gewicht (kg)",
+    "heightLabel": "Größe (cm)",
+    "bodyFatLabel": "Körperfett (%)",
+    "bodyFatHint": "Körperfettanteil aus Caliper, Bioimpedanz oder DEXA-Messung",
+    "resultsLabel": "Dein FFMI",
+    "ffmLabel": "Fettfreie Masse",
+    "ffmiLabel": "FFMI",
+    "normalizedFFMILabel": "Normalisierter FFMI",
+    "normalizedFFMIHint": "auf 1,80 m Körpergröße angepasst (Kouri 1995)",
+    "categoryLabel": "Einordnung",
+    "category_belowAverage": "Unterdurchschnittlich",
+    "category_average": "Durchschnittlich",
+    "category_aboveAverage": "Überdurchschnittlich",
+    "category_top1": "Top 1 % (natürliches Limit)",
+    "category_unlikelyNatural": "Physiologisch unwahrscheinlich",
+    "advice_belowAverage": "Dein FFMI liegt unter dem Durchschnitt. Mit gezieltem Krafttraining (3–4× pro Woche, progressive Überlastung) und ausreichend Protein (1,6–2,2 g/kg Körpergewicht) lässt sich der Wert deutlich steigern.",
+    "advice_average": "Dein FFMI liegt im Normalbereich für Untrainierte. Wer Muskelmasse aufbauen will, profitiert von strukturiertem Hypertrophie-Training und einem leichten Kalorienüberschuss.",
+    "advice_aboveAverage": "Sehr guter FFMI — typisch für Hobbysportler mit konsequentem Krafttraining. Weiter so. Mit gezielter Periodisierung lässt sich die Marke 23 (M) bzw. 17 (F) erreichen.",
+    "advice_top1": "Außergewöhnlicher FFMI im Bereich natürlicher Spitzenathleten. Dieses Niveau ist nur mit jahrelangem, optimiertem Training und genetischer Veranlagung erreichbar.",
+    "advice_unlikelyNatural": "Dieser FFMI gilt als physiologisch unwahrscheinlich für natürliches Training. Kouri et al. (1995) fanden bei über 200 Natural-Bodybuildern keinen Wert > 25 (M) bzw. > 22 (F).",
+    "refTitle": "FFMI-Klassifikation (normalisiert)",
+    "refMale": "Männer",
+    "refFemale": "Frauen",
+    "refRange": "Bereich",
+    "exampleTitle": "Rechenbeispiel",
+    "exampleText": "Ein Mann mit 80 kg Gewicht, 180 cm Größe und 15 % Körperfett: FFM = 80 × (1 − 0,15) = 68 kg. FFMI = 68 / 1,80² = 68 / 3,24 = 20,99. Da Größe exakt 1,80 m ist, bleibt der normalisierte FFMI bei 20,99 — überdurchschnittlich, typisch für ambitionierte Hobbyathleten.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der FFMI wurde 1995 von Kouri et al. an der Harvard Medical School entwickelt, um Muskelmasse zwischen verschiedenen Körpergrößen vergleichbar zu machen. Die fettfreie Masse (Knochen, Organe, Muskeln, Wasser) wird ins Verhältnis zum Quadrat der Körpergröße gesetzt — analog zum BMI, aber ohne Verfälschung durch Fettmasse. Der normalisierte FFMI addiert 6,1 × (1,80 m − tatsächliche Größe), damit kleine und große Athleten dieselbe Skala teilen. Werte > 25 (Männer) oder > 22 (Frauen) gelten als unerreichbar ohne anabole Substanzen.",
+    "uniqueContent": "Warum der FFMI dem BMI überlegen ist — und wo seine Grenzen liegen",
+    "uniqueContentText": "Der Body Mass Index behandelt einen kräftigen Bodybuilder mit 100 kg bei 185 cm rechnerisch identisch mit einem übergewichtigen Bürohocker derselben Maße: BMI 29,2 — beide formal „Übergewicht\". Das ist offensichtlich Unsinn. Der FFMI löst dieses Problem, indem er nur die fettfreie Masse (Muskeln, Knochen, Organe, Wasser) zählt. Voraussetzung ist eine möglichst exakte Körperfettmessung. Caliper-Messungen taugen für Trends, sind aber abhängig vom Tester. Bioimpedanz-Waagen schwanken je nach Hydratationszustand um 2–5 Prozentpunkte. Die zuverlässigsten Methoden sind DEXA und Hydrostatic Weighing — beide in deutschen Sportkliniken verfügbar. Der zweite Trick ist die Normalisierung auf 1,80 m Körpergröße. Ohne sie wären kleine Athleten systematisch im Nachteil: Bei gleicher Muskelmasse-zu-Skelett-Ratio ergibt sich rechnerisch ein niedrigerer FFMI. Kouri et al. korrigierten das empirisch mit dem Faktor 6,1. Was der FFMI nicht kann: Er sagt nichts über Kraft oder Funktion. Ein FFMI von 23 mit reinem Volumentraining ist nicht dasselbe wie ein FFMI von 23 mit Olympic-Lifting-Hintergrund. Und der „natürliche Cutoff\" bei 25 (Männer) ist eine statistische Aussage — Einzelfälle mit besonders günstiger Genetik (lange Muskelbäuche, geringer Knochenanteil) können auch ohne Doping höhere Werte erreichen. Trotzdem bleibt der FFMI das beste Werkzeug für realistische Selbsteinschätzung: Wer in fünf Jahren von 18 auf 21 kommt, hat respektable 12 kg Muskelmasse aufgebaut. Wer von 21 auf 24 will, sollte sich auf weitere drei Jahre Geduld einstellen.",
+    "disclaimer": "Der FFMI hängt entscheidend von der Genauigkeit der Körperfettmessung ab. Caliper-Werte sind nur so zuverlässig wie der Tester, Bioimpedanz schwankt mit der Tageshydratation. Für medizinisch relevante Aussagen sind DEXA oder Hydrostatic Weighing der Goldstandard. Der Rechner ersetzt keine sportmedizinische Beratung.",
+    "faq": [
+      {
+        "q": "Was sagt der FFMI aus, was der BMI nicht kann?",
+        "a": "Der BMI behandelt einen muskulösen Athleten und einen übergewichtigen Untrainierten gleich, wenn Gewicht und Größe identisch sind. Der FFMI ignoriert die Fettmasse und misst nur die fettfreie Masse — er ist deshalb die bessere Kennzahl für Trainierte und Bodybuilder."
+      },
+      {
+        "q": "Was ist der normalisierte FFMI?",
+        "a": "Eine Korrektur, die kleine und große Athleten vergleichbar macht. Kouri et al. addieren 6,1 × (1,80 m − tatsächliche Größe) zum FFMI. Bei 1,80 m bleibt der Wert unverändert; ein 1,65 m großer Athlet bekommt etwa +0,92 dazu, ein 1,90 m großer −0,61."
+      },
+      {
+        "q": "Ab welchem FFMI gilt man als „muskulös\"?",
+        "a": "Bei Männern liegt der Durchschnitt Untrainierter bei 18–20. Hobbysportler erreichen 20–22, fortgeschrittene Athleten 22–24, natürliche Spitzenathleten 24–25. Frauen liegen jeweils 5 Punkte tiefer."
+      },
+      {
+        "q": "Stimmt es, dass FFMI > 25 nur mit Doping erreichbar ist?",
+        "a": "Kouri et al. (1995) untersuchten 157 Natural-Bodybuilder und 83 Steroidnutzer. Bei den Naturals lag der Maximalwert bei 25,0; bei den Steroidnutzern reichte er bis 32,2. Einzelfälle mit extremer Genetik können über 25 kommen, aber die statistische Regel gilt: > 25 normalisiert ist physiologisch unwahrscheinlich ohne anabole Substanzen."
+      },
+      {
+        "q": "Wie genau muss die Körperfettmessung sein?",
+        "a": "Sehr genau — ein Fehler von 3 % Körperfett verändert den FFMI um etwa 0,6 Punkte. DEXA gilt als Goldstandard (±1–2 %). Caliper-Messungen schwanken stärker (±3–5 %), Bioimpedanz-Waagen je nach Modell und Hydratation ±3–8 %."
+      },
+      {
+        "q": "Wie kann ich meinen FFMI verbessern?",
+        "a": "Progressives Krafttraining (3–4× pro Woche), 1,6–2,2 g Protein pro kg Körpergewicht, leichter Kalorienüberschuss (200–500 kcal), Schlaf 7–9 Stunden. Realistisch sind 4–8 kg Muskelaufbau im ersten Jahr — danach 1–3 kg pro Jahr."
+      }
+    ]
+  }
+}
