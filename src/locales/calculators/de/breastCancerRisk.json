@@ -1,0 +1,88 @@
+{
+  "home": {
+    "calculators": {
+      "breastCancerRisk": {
+        "name": "Brustkrebs-Risiko-Rechner",
+        "description": "Schätze dein 5-Jahres-Brustkrebsrisiko mit dem Gail-Modell."
+      }
+    }
+  },
+  "breastCancerRisk": {
+    "meta": {
+      "title": "Brustkrebs-Risiko-Rechner — Gail-Modell für 5-Jahres-Risiko",
+      "description": "Schätze dein 5-Jahres- und Lebenszeit-Brustkrebsrisiko mit dem Gail-Modell. Berücksichtigt Alter, Familiengeschichte, Menarche, Biopsien. Kostenlos, sofort, ohne Anmeldung."
+    },
+    "title": "Brustkrebs-Risiko-Rechner",
+    "description": "Schätze dein 5-Jahres-Brustkrebsrisiko mit einem vereinfachten Gail-Modell.",
+    "age": "Aktuelles Alter",
+    "ageHelp": "35–85 Jahre",
+    "ageAtMenarche": "Alter bei der ersten Regelblutung",
+    "menarcheUnder12": "Unter 12",
+    "menarche1213": "12–13",
+    "menarche14plus": "14 oder älter",
+    "firstBirth": "Erste Lebendgeburt",
+    "nulliparous": "Keine Kinder",
+    "firstBirthUnder20": "Unter 20",
+    "firstBirth2024": "20–24",
+    "firstBirth2529": "25–29",
+    "firstBirth30plus": "30 oder älter",
+    "firstDegreeRelatives": "Verwandte 1. Grades mit Brustkrebs",
+    "relatives0": "Keine",
+    "relatives1": "Eine",
+    "relatives2": "Zwei oder mehr",
+    "biopsies": "Anzahl Brustbiopsien",
+    "biopsies0": "Keine",
+    "biopsies1": "Eine",
+    "biopsies2": "Zwei oder mehr",
+    "atypicalHyperplasia": "Atypische Hyperplasie bei Biopsie",
+    "ahYes": "Ja",
+    "ahNo": "Nein / Unbekannt",
+    "calculate": "Risiko berechnen",
+    "fiveYearRisk": "5-Jahres-Risiko",
+    "averageRisk": "Durchschnitt deines Alters",
+    "relativeRisk": "Relatives Risiko",
+    "category": "Kategorie",
+    "categoryLow": "Niedrig",
+    "categoryAverage": "Durchschnittlich",
+    "categoryElevated": "Erhöht",
+    "categoryHigh": "Hoch",
+    "elevatedHint": "Über der Gail-Schwelle von 1,66 % — bitte mit einem Arzt besprechen.",
+    "disclaimer": "Diese Schätzung ersetzt keine ärztliche Beratung. Sprich bei erhöhtem Risiko mit deinem Frauenarzt oder Brustzentrum.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der Rechner verwendet eine vereinfachte Variante des Gail-Modells (NCI Breast Cancer Risk Assessment Tool). Aus den eingegebenen Risikofaktoren wird ein relatives Risiko berechnet und mit der altersabhängigen Brustkrebs-Inzidenz multipliziert. Eine 5-Jahres-Wahrscheinlichkeit ≥ 1,66 % gilt als erhöht.",
+    "factorsTitle": "Risikofaktoren auf einen Blick",
+    "factor": "Faktor",
+    "effect": "Effekt auf das Risiko",
+    "effectMenarcheEarly": "Frühe Menarche (< 12) erhöht das Risiko um ca. 20 %",
+    "effectFamily": "Eine Verwandte 1. Grades verdoppelt das Risiko in etwa",
+    "effectAH": "Atypische Hyperplasie nahezu verdoppelt das Risiko",
+    "effectFirstBirth": "Erste Geburt ≥ 30 oder Nulliparität erhöht das Risiko",
+    "effectAge": "Mit dem Alter steigt das Risiko fast linear bis ~75 Jahre",
+    "faq": [
+      {
+        "q": "Was ist das Gail-Modell?",
+        "a": "Das Gail-Modell (Gail et al. 1989) schätzt das individuelle 5-Jahres- und Lebenszeitrisiko für Brustkrebs anhand mehrerer Risikofaktoren — Alter, Menarche, erste Geburt, Familienanamnese und Biopsien. Es ist die Basis des NCI Breast Cancer Risk Assessment Tools."
+      },
+      {
+        "q": "Ab welchem Wert gilt mein Risiko als erhöht?",
+        "a": "Bei einem 5-Jahres-Risiko ≥ 1,66 % sprechen Leitlinien (NCI, ASCO) von erhöhtem Risiko. In diesem Fall kann eine engmaschigere Vorsorge oder eine medikamentöse Prävention sinnvoll sein."
+      },
+      {
+        "q": "Welche Risikofaktoren werden berücksichtigt?",
+        "a": "Aktuelles Alter, Alter bei der ersten Regelblutung, Alter bei der ersten Lebendgeburt oder Nulliparität, Brustbiopsien (mit/ohne atypische Hyperplasie) sowie Brustkrebs bei Verwandten 1. Grades (Mutter, Schwester, Tochter)."
+      },
+      {
+        "q": "Welche Faktoren fehlen?",
+        "a": "Das Gail-Modell unterschätzt das Risiko bei BRCA1/BRCA2-Mutationen, Brustkrebs bei männlichen Verwandten oder Verwandten 2. Grades. Auch Brustdichte, Lebensstil und Hormontherapie sind nicht enthalten."
+      },
+      {
+        "q": "Wie genau ist die Schätzung?",
+        "a": "Auf Populationsebene gut kalibriert (Costantino 1999, AUC ≈ 0,58–0,65). Für die individuelle Vorhersage bleibt die Aussagekraft begrenzt — nutze den Wert als Ausgangspunkt für ein ärztliches Gespräch, nicht als Diagnose."
+      },
+      {
+        "q": "Was kann ich bei erhöhtem Risiko tun?",
+        "a": "Bei einem 5-Jahres-Risiko ≥ 1,66 % bieten Brustzentren intensivere Vorsorge an (jährliche Mammographie und/oder MRT). Bei Hochrisiko (z. B. ≥ 3 % über 5 Jahre) kann eine Chemoprävention mit Tamoxifen oder Raloxifen besprochen werden."
+      }
+    ]
+  }
+}
