@@ -755,6 +755,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'menopauseNatural',
     related: ['menopause-symptom-calculator-guide', 'osteoporosis-risk-calculator-guide', 'cardiovascular-risk-framingham'],
   },
+  {
+    slug: 'breast-cancer-risk-calculator-guide',
+    title: 'Breast Cancer Risk Calculator: How the Gail Model Works',
+    description: 'Calculate your breast cancer risk with the Gail model — 5-year and lifetime risk, key risk factors, screening thresholds and prevention options explained.',
+    date: '2026-05-13',
+    readTime: '9 min',
+    calculatorKey: 'breastCancerRisk',
+    related: ['menopause-symptom-calculator-guide', 'osteoporosis-risk-calculator-guide', 'biological-age-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
