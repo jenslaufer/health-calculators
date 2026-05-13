@@ -1,0 +1,78 @@
+{
+  "home": {
+    "calculators": {
+      "ffmiRechner": {
+        "name": "FFMI Calculator",
+        "description": "Calculate Fat-Free Mass Index — gauge your muscle mass relative to height."
+      }
+    }
+  },
+  "ffmiRechner": {
+    "meta": {
+      "title": "FFMI Calculator — Fat-Free Mass Index",
+      "description": "Calculate your FFMI (Fat-Free Mass Index) from weight, height and body fat. With normalized FFMI by Kouri and natural-athlete classification. Free and instant."
+    },
+    "title": "FFMI Calculator",
+    "description": "Determine your Fat-Free Mass Index — the most meaningful number for muscle mass relative to height. With normalized variant and natural-athlete benchmarks.",
+    "sexLabel": "Sex",
+    "sexMale": "Male",
+    "sexFemale": "Female",
+    "weightLabel": "Weight (kg)",
+    "heightLabel": "Height (cm)",
+    "bodyFatLabel": "Body fat (%)",
+    "bodyFatHint": "Body fat percentage from caliper, bioimpedance or DEXA",
+    "resultsLabel": "Your FFMI",
+    "ffmLabel": "Fat-free mass",
+    "ffmiLabel": "FFMI",
+    "normalizedFFMILabel": "Normalized FFMI",
+    "normalizedFFMIHint": "adjusted to 1.80 m height (Kouri 1995)",
+    "categoryLabel": "Classification",
+    "category_belowAverage": "Below average",
+    "category_average": "Average",
+    "category_aboveAverage": "Above average",
+    "category_top1": "Top 1 % (natural limit)",
+    "category_unlikelyNatural": "Physiologically unlikely",
+    "advice_belowAverage": "Your FFMI is below average. Targeted strength training (3–4× per week, progressive overload) and adequate protein (1.6–2.2 g/kg bodyweight) will move this number significantly.",
+    "advice_average": "Your FFMI sits in the normal range for untrained adults. To add muscle, follow a structured hypertrophy program with a small caloric surplus.",
+    "advice_aboveAverage": "Strong FFMI — typical for recreational lifters with consistent training. Keep going. With smart periodization you can push toward 23 (M) or 17 (F).",
+    "advice_top1": "Exceptional FFMI in the range of elite natural athletes. This level requires years of optimized training and favorable genetics.",
+    "advice_unlikelyNatural": "This FFMI is considered physiologically unlikely to reach naturally. Kouri et al. (1995) found no natural bodybuilder exceeding 25 (M) or 22 (F) in their landmark study.",
+    "refTitle": "FFMI classification (normalized)",
+    "refMale": "Male",
+    "refFemale": "Female",
+    "refRange": "Range",
+    "exampleTitle": "Worked example",
+    "exampleText": "A man weighing 80 kg, height 180 cm, 15 % body fat: FFM = 80 × (1 − 0.15) = 68 kg. FFMI = 68 / 1.80² = 68 / 3.24 = 20.99. Since height is exactly 1.80 m, normalized FFMI stays at 20.99 — above average, typical for committed recreational athletes.",
+    "howItWorks": "How it works",
+    "howItWorksText": "FFMI was developed in 1995 by Kouri et al. at Harvard Medical School to make muscle mass comparable across heights. Fat-free mass (bone, organs, muscle, water) is divided by height squared — analogous to BMI, but unaffected by fat. Normalized FFMI adds 6.1 × (1.80 m − actual height) so that short and tall athletes share the same scale. Values > 25 (men) or > 22 (women) are considered unreachable without anabolic substances.",
+    "uniqueContent": "Why FFMI beats BMI — and where it falls short",
+    "uniqueContentText": "Body Mass Index treats a 100 kg muscular bodybuilder at 185 cm identically to an overweight office worker of the same proportions: BMI 29.2 — both flagged as „overweight\". That makes no sense. FFMI fixes this by counting only fat-free mass (muscle, bone, organs, water). It depends on an accurate body fat measurement. Calipers track trends but vary with the operator. Bioimpedance scales drift by 2–5 percentage points with hydration. The gold-standard methods are DEXA and hydrostatic weighing — both available at most sports clinics. The second trick is normalization to 1.80 m height. Without it, short athletes would be systematically penalized: with the same muscle-to-frame ratio, their raw FFMI comes out lower. Kouri et al. corrected this empirically with the 6.1 factor. What FFMI cannot do: it says nothing about strength or function. An FFMI of 23 from pure bodybuilding work is not the same as 23 backed by Olympic lifting. And the „natural cutoff\" at 25 is a statistical statement — outliers with favorable genetics (long muscle bellies, light bones) can edge above it without drugs. Still, FFMI remains the best tool for honest self-assessment. Going from 18 to 21 in five years means roughly 12 kg of real muscle. Moving from 21 to 24 is a three-to-five year project for most lifters, and the closer you get to 25, the harder every kilogram becomes.",
+    "disclaimer": "FFMI accuracy depends heavily on body fat measurement quality. Calipers are only as good as the operator; bioimpedance varies with daily hydration. For clinically relevant numbers, use DEXA or hydrostatic weighing. This calculator does not replace sports medicine advice.",
+    "faq": [
+      {
+        "q": "What does FFMI tell you that BMI doesn't?",
+        "a": "BMI treats a muscular athlete and an overweight untrained person the same when weight and height match. FFMI ignores fat mass and counts only fat-free mass, making it the better number for trained adults and bodybuilders."
+      },
+      {
+        "q": "What is normalized FFMI?",
+        "a": "A correction that makes short and tall athletes comparable. Kouri et al. add 6.1 × (1.80 m − actual height) to FFMI. At 1.80 m, the number is unchanged; a 1.65 m athlete gains about +0.92, a 1.90 m athlete loses 0.61."
+      },
+      {
+        "q": "At what FFMI do you count as „muscular\"?",
+        "a": "For men, untrained adults average 18–20. Recreational lifters reach 20–22, advanced athletes 22–24, natural elite 24–25. Women sit roughly 5 points lower across all bands."
+      },
+      {
+        "q": "Is it true that FFMI > 25 requires steroids?",
+        "a": "Kouri et al. (1995) examined 157 natural bodybuilders and 83 steroid users. The natural cohort topped out at 25.0; steroid users reached 32.2. Rare outliers may cross 25 with elite genetics, but the statistical rule holds: > 25 normalized is unlikely without anabolic drugs."
+      },
+      {
+        "q": "How accurate must my body fat measurement be?",
+        "a": "Very accurate — a 3 % body fat error shifts FFMI by about 0.6 points. DEXA is the gold standard (±1–2 %). Calipers vary more (±3–5 %), bioimpedance scales by ±3–8 % depending on model and hydration."
+      },
+      {
+        "q": "How do I improve my FFMI?",
+        "a": "Progressive strength training (3–4× per week), 1.6–2.2 g protein per kg bodyweight, a small caloric surplus (200–500 kcal), 7–9 hours of sleep. Realistic gains are 4–8 kg of muscle in year one, then 1–3 kg per year."
+      }
+    ]
+  }
+}

@@ -728,6 +728,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'ironDeficiency',
     related: ['anemia-risk-calculator-guide', 'thyroid-function-calculator', 'calculate-bmr'],
   },
+  {
+    slug: 'ffmi-calculator-guide',
+    title: 'FFMI Calculator: How to Read Your Fat-Free Mass Index',
+    description: 'Calculate FFMI from weight, height and body fat. Normalized FFMI by Kouri, natural-athlete cutoffs, BMI comparison and training recommendations.',
+    date: '2026-05-13',
+    readTime: '8 min',
+    calculatorKey: 'ffmiRechner',
+    related: ['calculate-lean-body-mass', 'calculate-body-fat', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

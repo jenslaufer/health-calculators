@@ -728,6 +728,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'ironDeficiency',
     related: ['anaemie-risiko-berechnen', 'schilddruesenfunktion-berechnen', 'grundumsatz-berechnen'],
   },
+  {
+    slug: 'ffmi-berechnen',
+    title: 'FFMI berechnen: Fettfreie-Masse-Index richtig deuten',
+    description: 'FFMI berechnen mit Gewicht, Größe und Körperfett. Normalisierter FFMI nach Kouri, Grenzwerte für natürliche Athleten, BMI-Vergleich und Trainingsempfehlungen.',
+    date: '2026-05-13',
+    readTime: '8 min',
+    calculatorKey: 'ffmiRechner',
+    related: ['magermasse-berechnen', 'koerperfett-berechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
