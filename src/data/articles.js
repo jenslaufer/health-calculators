@@ -746,6 +746,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pregnancyCalories',
     related: ['gewichtszunahme-schwangerschaft-berechnen', 'bmi-schwangerschaft-berechnen', 'geburtstermin-berechnen'],
   },
+  {
+    slug: 'menopause-natuerlich-begleiten',
+    title: 'Menopause natürlich begleiten: Symptomlinderung und wann zum Arzt',
+    description: 'Wechseljahre verstehen — Perimenopause vs. Menopause, häufige Symptome, natürliche Linderung über Ernährung, Bewegung, Phytoöstrogene, Schlaf und Stress. Plus Warnzeichen, HRT-Überblick und Langzeitrisiken.',
+    date: '2026-05-13',
+    readTime: '14 min',
+    calculatorKey: 'menopauseNatural',
+    related: ['menopause-symptome-bewerten', 'osteoporose-risiko-berechnen', 'herz-kreislauf-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -94,6 +94,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'eisenmangel-berechnen',
   'ffmi-berechnen',
   'kalorienbedarf-schwangerschaft-berechnen',
+  'menopause-natuerlich-begleiten',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -167,6 +168,7 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'iron-deficiency-calculator-guide',
   'ffmi-calculator-guide',
   'pregnancy-calorie-needs-guide',
+  'menopause-natural-relief',
 ]
 
 describe('discoverMetas', () => {
@@ -210,19 +212,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 82 DE blog slugs', () => {
+  it('returns all 84 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(83)
+    expect(de).toHaveLength(84)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 82 EN blog slugs', () => {
+  it('returns all 84 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(83)
+    expect(en).toHaveLength(84)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -290,9 +292,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 166 calcs + 2 blog index + 166 blog articles = 336)', () => {
+  it('generates correct total URL count (2 home + 166 calcs + 2 blog index + 168 blog articles = 338)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(336)
+    expect(urlCount).toBe(338)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
