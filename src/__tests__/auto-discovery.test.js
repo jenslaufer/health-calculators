@@ -26,7 +26,7 @@ const EXPECTED_KEYS = [
   'apgarScore', 'osteoporosisRisk', 'whtrRechner', 'hepatitisRisk', 'correctedCalcium',
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
   'pregnancyBMI', 'fertilityWindow', 'headCircumference', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
-  'ironDeficiency', 'ffmiRechner',
+  'ironDeficiency', 'ffmiRechner', 'pmsSymptom',
 ]
 
 const EXPECTED_BLOG_ONLY_KEYS = ['vitaminDDeficiency', 'diabetesPrevention']
@@ -112,6 +112,7 @@ const EXPECTED_ROUTE_MAP = {
   pearlIndexRechner: { de: 'pearl-index-rechner', en: 'pearl-index-calculator' },
   ironDeficiency: { de: 'eisenmangel-rechner', en: 'iron-deficiency-calculator' },
   ffmiRechner: { de: 'ffmi-rechner', en: 'ffmi-calculator' },
+  pmsSymptom: { de: 'pms-symptome-rechner', en: 'pms-symptom-calculator' },
 }
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -185,6 +186,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'pearl-index-berechnen',
   'eisenmangel-berechnen',
   'ffmi-berechnen',
+  'pms-symptome-bewerten',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -258,11 +260,12 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'pearl-index-calculator-guide',
   'iron-deficiency-calculator-guide',
   'ffmi-calculator-guide',
+  'pms-symptom-calculator-guide',
 ]
 
 describe('calculator discovery', () => {
   it('discovers all 81 calculators', () => {
-    expect(calculatorMetas).toHaveLength(82)
+    expect(calculatorMetas).toHaveLength(83)
     const keys = calculatorMetas.map(m => m.key)
     for (const key of EXPECTED_KEYS) {
       expect(keys).toContain(key)
@@ -270,7 +273,7 @@ describe('calculator discovery', () => {
   })
 
   it('builds calculatorComponents map for all 81 keys', () => {
-    expect(Object.keys(calculatorComponents)).toHaveLength(82)
+    expect(Object.keys(calculatorComponents)).toHaveLength(83)
     for (const key of EXPECTED_KEYS) {
       expect(calculatorComponents[key]).toBeDefined()
     }
@@ -294,14 +297,14 @@ describe('calculator discovery', () => {
 
 describe('blog component discovery', () => {
   it('discovers all 81 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(82)
+    expect(Object.keys(blogComponentsDe)).toHaveLength(83)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
   it('discovers all 81 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(82)
+    expect(Object.keys(blogComponentsEn)).toHaveLength(83)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -328,8 +331,8 @@ describe('calculator groups', () => {
 
   it('groups contain all 81 calculators with no duplicates', () => {
     const allKeys = calculatorGroups.flatMap(g => g.calculators)
-    expect(allKeys).toHaveLength(82)
-    expect(new Set(allKeys).size).toBe(82)
+    expect(allKeys).toHaveLength(83)
+    expect(new Set(allKeys).size).toBe(83)
     for (const key of EXPECTED_KEYS) {
       expect(allKeys).toContain(key)
     }
@@ -357,7 +360,7 @@ describe('calculator groups', () => {
   it('pregnancy group has correct calculators in order', () => {
     expect(calculatorGroups[3].calculators).toEqual([
       'pregnancy', 'ovulation', 'pregnancyWeightGain', 'fertilityWindow', 'pregnancyBMI', 'pearlIndexRechner', 'period', 'dueDate', 'pcosSymptoms', 'apgarScore',
-      'babyMilestones', 'breastMilkAlcohol', 'babyFeedingAmount', 'newbornBilirubin', 'menopauseSymptom',
+      'babyMilestones', 'breastMilkAlcohol', 'babyFeedingAmount', 'newbornBilirubin', 'menopauseSymptom', 'pmsSymptom',
     ])
   })
 })
@@ -400,7 +403,7 @@ describe('i18n completeness', () => {
 
 describe('SSG routes', () => {
   it('generates exactly 447 routes', () => {
-    expect(routes).toHaveLength(452)
+    expect(routes).toHaveLength(457)
   })
 
   it('has locale routes for all calculators in both languages', () => {

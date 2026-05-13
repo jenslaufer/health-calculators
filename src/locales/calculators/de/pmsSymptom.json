@@ -1,0 +1,96 @@
+{
+  "home": {
+    "calculators": {
+      "pmsSymptom": {
+        "name": "PMS-Symptome-Rechner",
+        "description": "Bewerte deine prämenstruellen Beschwerden mit dem klinisch validierten PSST-Fragebogen (PMS/PMDD)."
+      }
+    }
+  },
+  "pmsSymptom": {
+    "meta": {
+      "title": "PMS-Symptome-Rechner — PSST-Score für PMS und PMDD online",
+      "description": "Prämenstruelles Syndrom (PMS) und prämenstruelle dysphorische Störung (PMDD) bewerten mit dem PSST-Fragebogen nach Steiner. 14 Symptome, 5 Beeinträchtigungen. Kostenlos."
+    },
+    "title": "PMS-Symptome-Rechner",
+    "description": "Bewerte deine PMS- und PMDD-Symptome mit dem klinisch validierten Premenstrual Symptoms Screening Tool (PSST) — 14 Symptome, 5 Beeinträchtigungen, klare Empfehlung.",
+    "intro": "Bewerte für jedes Symptom, wie stark du es vor der Periode in den letzten Monaten empfunden hast:",
+    "coreSection": "Kernsymptome (Stimmung)",
+    "otherSection": "Weitere Symptome",
+    "impairmentSection": "Beeinträchtigung im Alltag",
+    "coreIntro": "Während der Tage vor deiner Periode hattest du:",
+    "otherIntro": "Während der Tage vor deiner Periode hattest du außerdem:",
+    "impairmentIntro": "Diese Symptome haben sich auf folgende Lebensbereiche ausgewirkt:",
+    "anger": "Wut oder Reizbarkeit",
+    "anxiety": "Angst oder innere Anspannung",
+    "tearful": "Weinerlichkeit oder erhöhte Empfindlichkeit",
+    "depressed": "Depressive Verstimmung oder Hoffnungslosigkeit",
+    "lessInterestWork": "Weniger Interesse an der Arbeit",
+    "lessInterestHome": "Weniger Interesse an Aktivitäten zu Hause",
+    "lessInterestSocial": "Weniger Interesse an sozialen Aktivitäten",
+    "concentration": "Konzentrationsprobleme",
+    "fatigue": "Müdigkeit, Energielosigkeit",
+    "overeating": "Übermäßiges Essen oder Heißhunger",
+    "insomnia": "Schlafstörungen (Einschlafprobleme)",
+    "hypersomnia": "Erhöhtes Schlafbedürfnis",
+    "overwhelmed": "Gefühl, überwältigt oder außer Kontrolle zu sein",
+    "physical": "Körperliche Symptome (Brustspannen, Blähungen, Kopfschmerzen, Muskel-/Gelenkschmerzen)",
+    "workEfficiency": "Arbeitsleistung oder Produktivität",
+    "relationshipsCoworkers": "Beziehungen zu Kolleg:innen",
+    "relationshipsFamily": "Beziehungen zur Familie",
+    "socialLife": "Soziales Leben",
+    "homeResponsibilities": "Aufgaben im Haushalt",
+    "severity_0": "gar nicht",
+    "severity_1": "leicht",
+    "severity_2": "mittel",
+    "severity_3": "stark",
+    "results": "PSST-Auswertung",
+    "category_none": "keine Symptome",
+    "category_mild": "kein/leichtes PMS",
+    "category_moderateSevere": "mittelschweres bis schweres PMS",
+    "category_pmdd": "Verdacht auf PMDD",
+    "interpretation_none": "Aktuell zeigen sich keine prämenstruellen Beschwerden.",
+    "interpretation_mild": "Leichte prämenstruelle Beschwerden. Lebensstilmaßnahmen (Bewegung, Schlaf, Stressabbau, ausgewogene Ernährung) reichen meist aus.",
+    "interpretation_moderateSevere": "Mittelschweres bis schweres PMS. Die Beschwerden beeinträchtigen deinen Alltag deutlich — ein Gespräch mit der Gynäkologin über Therapieoptionen ist sinnvoll.",
+    "interpretation_pmdd": "Verdacht auf prämenstruelle dysphorische Störung (PMDD). Die Beschwerden sind schwer und beeinträchtigen wichtige Lebensbereiche massiv. Eine fachärztliche Abklärung wird klar empfohlen — PMDD ist gut behandelbar.",
+    "evaluationRecommended": "Fachärztliche Abklärung empfohlen — vereinbare einen Termin in der Gynäkologie.",
+    "evaluationNotRecommended": "Aktuell keine fachärztliche Abklärung dringend nötig. Bei Verschlechterung erneut prüfen.",
+    "symptomScore": "Symptomscore",
+    "impairmentScore": "Beeinträchtigung",
+    "moderateSevereCount": "Symptome ≥ mittel",
+    "psstTitle": "Was ist das PSST?",
+    "psstText": "Das Premenstrual Symptoms Screening Tool (PSST) ist ein 2003 von Steiner und Kollegen validierter Fragebogen zur Erfassung von PMS und PMDD. Es bildet die DSM-5-Kriterien ab und wird in Forschung und Praxis weltweit eingesetzt.",
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Du bewertest 14 Symptome (Stimmung, Verhalten, körperlich) und 5 Bereiche der Beeinträchtigung auf einer 4-stufigen Skala (0 = gar nicht, 3 = stark). Der Rechner prüft dann, ob deine Antworten die PSST-Kriterien für PMDD oder mittelschweres bis schweres PMS erfüllen.",
+    "criteriaTitle": "PSST-Kriterien",
+    "criteriaPmdd": "PMDD: mindestens 1 Kernsymptom stark + mindestens 4 weitere Symptome mittel/stark + mindestens 1 Beeinträchtigung stark.",
+    "criteriaModerate": "Mittelschweres bis schweres PMS: mindestens 1 Kernsymptom mittel/stark + mindestens 4 weitere Symptome mittel/stark + mindestens 1 Beeinträchtigung mittel/stark.",
+    "disclaimer": "Dieser Rechner ist ein Selbst-Screening, kein Diagnoseinstrument. Für eine PMDD-Diagnose sind prospektive Tagebücher über mindestens 2 Zyklen und der Ausschluss anderer Ursachen (Depression, Angststörung, Schilddrüse) nötig.",
+    "faq": [
+      {
+        "q": "Was ist der Unterschied zwischen PMS und PMDD?",
+        "a": "PMS ist sehr häufig (bis 75 % der Frauen). PMDD ist eine schwere Form mit massiver Beeinträchtigung der Lebensqualität (3–8 % der Frauen). Bei PMDD dominieren Stimmungssymptome (Wut, Reizbarkeit, Depression, Angst) und die Beschwerden machen normale Aktivitäten unmöglich."
+      },
+      {
+        "q": "Wann sind PMS-Symptome typisch?",
+        "a": "PMS-Symptome treten in den 1–2 Wochen vor der Periode auf (Lutealphase) und klingen mit Beginn der Blutung ab. Bestehen Symptome dauerhaft, ist eine andere Diagnose wahrscheinlich (z. B. Depression, Angststörung)."
+      },
+      {
+        "q": "Welche Therapien helfen bei PMS?",
+        "a": "Leicht: Bewegung, Schlafhygiene, Kalzium 1.000–1.200 mg, Vitamin B6 50–100 mg, Magnesium 200–400 mg. Mittel: Pflanzliche Mittel (Mönchspfeffer), kombinierte hormonelle Kontrazeption mit Drospirenon. Schwer/PMDD: SSRI (Fluoxetin, Sertralin) — wirksam, auch nur in Lutealphase einnehmbar."
+      },
+      {
+        "q": "Wie wird PMDD diagnostiziert?",
+        "a": "Klinisch durch DSM-5-Kriterien: ≥ 5 Symptome in der letzten Zykluswoche, davon ≥ 1 affektiv (Stimmung), Bestätigung durch prospektives Tagebuch über mindestens 2 Zyklen, deutliche Funktionsbeeinträchtigung, keine andere Erklärung. Der PSST ist ein Screening, keine Diagnose."
+      },
+      {
+        "q": "Ist PMS hormonell oder psychisch?",
+        "a": "Beides. PMS und PMDD entstehen durch eine erhöhte Sensitivität gegenüber normalen Hormonschwankungen — nicht durch abnorme Hormonspiegel. Stimmung, Stress, Schlaf und Lebensstil verstärken die Symptomatik. Behandlung wirkt auf hormoneller und psychischer Ebene."
+      },
+      {
+        "q": "Hilft die Pille bei PMS?",
+        "a": "Kombinierte Pillen mit Drospirenon (z. B. 24/4-Schema) sind bei PMDD von der FDA zugelassen und reduzieren Symptome bei vielen Frauen deutlich. Klassische 21/7-Pillen helfen oft weniger. Bei reinen Gestagenpräparaten ist die Wirkung uneinheitlich."
+      }
+    ]
+  }
+}

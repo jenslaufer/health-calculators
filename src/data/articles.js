@@ -737,6 +737,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'ffmiRechner',
     related: ['magermasse-berechnen', 'koerperfett-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'pms-symptome-bewerten',
+    title: 'PMS-Symptome bewerten: PSST-Score, PMDD-Diagnose und Therapie',
+    description: 'Prämenstruelles Syndrom (PMS) und PMDD mit dem PSST-Fragebogen nach Steiner bewerten. 14 Symptome, 5 Beeinträchtigungen, Therapieoptionen — kompakt erklärt.',
+    date: '2026-05-13',
+    readTime: '8 min',
+    calculatorKey: 'pmsSymptom',
+    related: ['menopause-symptome-bewerten', 'pcos-symptome-erkennen', 'eisprung-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

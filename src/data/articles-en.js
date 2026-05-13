@@ -737,6 +737,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'ffmiRechner',
     related: ['calculate-lean-body-mass', 'calculate-body-fat', 'calculate-bmi'],
   },
+  {
+    slug: 'pms-symptom-calculator-guide',
+    title: 'PMS Symptom Calculator: PSST Score, PMDD Diagnosis and Treatment',
+    description: 'Score PMS and PMDD with the Steiner PSST questionnaire. 14 symptoms, 5 functional impairment areas, evidence-based treatment guidance.',
+    date: '2026-05-13',
+    readTime: '8 min',
+    calculatorKey: 'pmsSymptom',
+    related: ['menopause-symptom-calculator-guide', 'pcos-symptom-checker', 'calculate-ovulation'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
