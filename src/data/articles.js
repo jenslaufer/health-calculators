@@ -755,6 +755,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'menopauseNatural',
     related: ['menopause-symptome-bewerten', 'osteoporose-risiko-berechnen', 'herz-kreislauf-risiko-berechnen'],
   },
+  {
+    slug: 'brustkrebs-risiko-berechnen',
+    title: 'Brustkrebs-Risiko berechnen: Was das Gail-Modell wirklich aussagt',
+    description: 'Brustkrebs-Risiko mit dem Gail-Modell berechnen — 5-Jahres- und Lebenszeitrisiko, Risikofaktoren, Schwellenwerte und Vorsorgeempfehlungen verständlich erklärt.',
+    date: '2026-05-13',
+    readTime: '9 min',
+    calculatorKey: 'breastCancerRisk',
+    related: ['menopause-symptome-bewerten', 'osteoporose-risiko-berechnen', 'biologisches-alter-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -1,0 +1,88 @@
+{
+  "home": {
+    "calculators": {
+      "breastCancerRisk": {
+        "name": "Breast Cancer Risk Calculator",
+        "description": "Estimate your 5-year breast cancer risk using the Gail model."
+      }
+    }
+  },
+  "breastCancerRisk": {
+    "meta": {
+      "title": "Breast Cancer Risk Calculator — Gail Model 5-Year Risk",
+      "description": "Estimate your 5-year and lifetime breast cancer risk with the Gail model. Considers age, family history, menarche, biopsies. Free, instant, no sign-up."
+    },
+    "title": "Breast Cancer Risk Calculator",
+    "description": "Estimate your 5-year breast cancer risk with a simplified Gail model.",
+    "age": "Current age",
+    "ageHelp": "35–85 years",
+    "ageAtMenarche": "Age at first menstrual period",
+    "menarcheUnder12": "Under 12",
+    "menarche1213": "12–13",
+    "menarche14plus": "14 or older",
+    "firstBirth": "First live birth",
+    "nulliparous": "No children",
+    "firstBirthUnder20": "Under 20",
+    "firstBirth2024": "20–24",
+    "firstBirth2529": "25–29",
+    "firstBirth30plus": "30 or older",
+    "firstDegreeRelatives": "First-degree relatives with breast cancer",
+    "relatives0": "None",
+    "relatives1": "One",
+    "relatives2": "Two or more",
+    "biopsies": "Number of breast biopsies",
+    "biopsies0": "None",
+    "biopsies1": "One",
+    "biopsies2": "Two or more",
+    "atypicalHyperplasia": "Atypical hyperplasia on biopsy",
+    "ahYes": "Yes",
+    "ahNo": "No / unknown",
+    "calculate": "Calculate risk",
+    "fiveYearRisk": "5-year risk",
+    "averageRisk": "Average for your age",
+    "relativeRisk": "Relative risk",
+    "category": "Category",
+    "categoryLow": "Low",
+    "categoryAverage": "Average",
+    "categoryElevated": "Elevated",
+    "categoryHigh": "High",
+    "elevatedHint": "Above the Gail threshold of 1.66 % — discuss with a clinician.",
+    "disclaimer": "This estimate is not a substitute for medical advice. If your risk is elevated, talk to a gynecologist or breast clinic.",
+    "howItWorks": "How it works",
+    "howItWorksText": "This calculator uses a simplified version of the Gail model (NCI Breast Cancer Risk Assessment Tool). It combines your risk factors into a relative risk and multiplies it by age-specific breast cancer incidence. A 5-year probability ≥ 1.66 % is considered elevated.",
+    "factorsTitle": "Risk factors at a glance",
+    "factor": "Factor",
+    "effect": "Effect on risk",
+    "effectMenarcheEarly": "Early menarche (< 12) raises risk by ~20 %",
+    "effectFamily": "One first-degree relative roughly doubles risk",
+    "effectAH": "Atypical hyperplasia nearly doubles risk",
+    "effectFirstBirth": "First birth ≥ 30 or nulliparity raises risk",
+    "effectAge": "Risk rises nearly linearly with age up to ~75 years",
+    "faq": [
+      {
+        "q": "What is the Gail model?",
+        "a": "The Gail model (Gail et al. 1989) estimates individual 5-year and lifetime breast cancer risk from several risk factors — age, menarche, first birth, family history, and prior biopsies. It is the basis of the NCI Breast Cancer Risk Assessment Tool."
+      },
+      {
+        "q": "When is my risk considered elevated?",
+        "a": "Guidelines (NCI, ASCO) define a 5-year risk ≥ 1.66 % as elevated. At that level you may be eligible for enhanced screening or risk-reducing medication."
+      },
+      {
+        "q": "Which risk factors are included?",
+        "a": "Current age, age at menarche, age at first live birth or nulliparity, number of breast biopsies (with or without atypical hyperplasia), and breast cancer in first-degree relatives (mother, sister, daughter)."
+      },
+      {
+        "q": "Which factors are not included?",
+        "a": "The Gail model underestimates risk for BRCA1/BRCA2 carriers and women with male relatives or second-degree relatives affected. Breast density, lifestyle, and hormone therapy are not included either."
+      },
+      {
+        "q": "How accurate is this estimate?",
+        "a": "At a population level, the Gail model is well calibrated (Costantino 1999, AUC ≈ 0.58–0.65). Individual prediction accuracy remains modest — treat the result as a conversation starter, not a diagnosis."
+      },
+      {
+        "q": "What if my risk is elevated?",
+        "a": "If your 5-year risk is ≥ 1.66 %, ask your physician about enhanced screening (annual mammography ± MRI). At very high risk (e.g. ≥ 3 % over 5 years), preventive medication with tamoxifen or raloxifene may be discussed."
+      }
+    ]
+  }
+}
