@@ -1,10 +1,12 @@
 <script setup>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@unhead/vue'
 import { useLocaleRouter } from './composables/useLocaleRouter.js'
+import { switchLocalePath } from './composables/useLocaleRouter.js'
 
+const route = useRoute()
 const router = useRouter()
 const menuOpen = ref(false)
 const { t } = useI18n()
@@ -45,33 +47,41 @@ router.afterEach(() => { menuOpen.value = false })
               class="text-sm font-medium text-stone-400 hover:text-stone-800 transition-colors duration-150"
             >{{ t('nav.blog') }}</router-link>
             <div class="flex items-center gap-1 text-sm">
-              <button
-                @click="switchLocale('de')"
+              <a
+                :href="switchLocalePath(route, 'de')"
+                @click.prevent="switchLocale('de')"
                 :class="locale === 'de' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
-              >DE</button>
+                aria-label="Zu Deutsch wechseln"
+              >DE</a>
               <span class="text-stone-300">|</span>
-              <button
-                @click="switchLocale('en')"
+              <a
+                :href="switchLocalePath(route, 'en')"
+                @click.prevent="switchLocale('en')"
                 :class="locale === 'en' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
-              >EN</button>
+                aria-label="Switch to English"
+              >EN</a>
             </div>
           </div>
 
           <div class="md:hidden flex items-center gap-3">
             <div class="flex items-center gap-1 text-sm">
-              <button
-                @click="switchLocale('de')"
+              <a
+                :href="switchLocalePath(route, 'de')"
+                @click.prevent="switchLocale('de')"
                 :class="locale === 'de' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
-              >DE</button>
+                aria-label="Zu Deutsch wechseln"
+              >DE</a>
               <span class="text-stone-300">|</span>
-              <button
-                @click="switchLocale('en')"
+              <a
+                :href="switchLocalePath(route, 'en')"
+                @click.prevent="switchLocale('en')"
                 :class="locale === 'en' ? 'font-bold text-stone-900' : 'font-medium text-stone-400 hover:text-stone-600'"
                 class="transition-colors duration-150"
-              >EN</button>
+                aria-label="Switch to English"
+              >EN</a>
             </div>
             <button
               @click="menuOpen = !menuOpen"
