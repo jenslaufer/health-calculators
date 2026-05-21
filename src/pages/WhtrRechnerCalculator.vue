@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { calcWhtr, getWhtrRiskZone } from '../utils/whtrRechner.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -172,5 +173,7 @@ const halfHeight = computed(() => (height.value ? (height.value / 2).toFixed(1) 
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="whtrRechner" class="mt-8" />
+
   <BlogArticleLink calculator-key="whtrRechner" />
 </template>

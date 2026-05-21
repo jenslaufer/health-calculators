@@ -5,6 +5,7 @@ import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -177,6 +178,9 @@ const percentageChart = computed(() => {
     <h2 class="text-base font-semibold text-stone-900 mb-2">{{ t('oneRepMax.howItWorks') }}</h2>
     <p class="text-sm text-stone-500 leading-relaxed">{{ t('oneRepMax.howItWorksText') }}</p>
   </div>
+
+  <RelatedCalculators calc-key="oneRepMax" class="mt-8" />
+
 
   <BlogArticleLink calculator-key="oneRepMax" />
   <AffiliateBanner />

@@ -7,6 +7,7 @@ import AffiliateBanner from '../components/AffiliateBanner.vue'
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -252,6 +253,9 @@ const plausibilityWarning = computed(() => {
     </div>
 
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+
+    <RelatedCalculators calc-key="sodiumCorrection" class="mt-8" />
+
 
     <BlogArticleLink calculator-key="sodiumCorrection" />
     <AdSlot class="mt-8" />

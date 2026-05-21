@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { computeStepsResult } from '../utils/schritteKalorienRechner.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -194,6 +195,8 @@ const referenceRows = [
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="schritteKalorienRechner" class="mt-8" />
+
     <BlogArticleLink calculator-key="schritteKalorienRechner" />
   </div>
 </template>

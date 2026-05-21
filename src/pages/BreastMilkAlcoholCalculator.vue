@@ -14,6 +14,7 @@ import {
   calcHoursUntilClear,
   getTotalAlcoholGrams,
 } from '../utils/breastMilkAlcohol.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -242,5 +243,7 @@ const timeUntilSafeFormatted = computed(() => {
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="breastMilkAlcohol" class="mt-8" />
+
   <BlogArticleLink calculator-key="breastMilkAlcohol" />
 </template>

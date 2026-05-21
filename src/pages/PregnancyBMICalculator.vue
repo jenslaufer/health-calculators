@@ -14,6 +14,7 @@ import {
   lbsToKg,
   inchesToCm,
 } from '../utils/pregnancyBMI.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -224,5 +225,7 @@ const categoryColor = computed(() => {
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="pregnancyBMI" class="mt-8" />
+
   <BlogArticleLink calculator-key="pregnancyBMI" />
 </template>

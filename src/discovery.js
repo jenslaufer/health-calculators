@@ -63,3 +63,13 @@ export const calculatorGroups = [...groupMap.entries()].map(([key, calculators])
 export const keyToGroup = Object.fromEntries(
   calculatorMetas.map(m => [m.key, m.group])
 )
+
+// Returns up to 4 calculators from the same group as calcKey, excluding self, sorted alphabetically by key
+export function getRelatedCalculators(calcKey) {
+  const current = calculatorMetas.find(m => m.key === calcKey)
+  if (!current) return []
+  return calculatorMetas
+    .filter(m => m.group === current.group && m.key !== calcKey)
+    .sort((a, b) => a.key.localeCompare(b.key))
+    .slice(0, 4)
+}

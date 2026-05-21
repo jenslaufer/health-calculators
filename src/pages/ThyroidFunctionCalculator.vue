@@ -12,6 +12,7 @@ import {
   convertT4,
   convertT3,
 } from '../utils/thyroidFunction.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -219,5 +220,7 @@ function reset() {
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="thyroidFunction" class="mt-8" />
+
   <BlogArticleLink calculator-key="thyroidFunction" />
 </template>

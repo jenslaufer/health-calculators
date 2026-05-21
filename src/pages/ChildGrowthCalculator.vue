@@ -13,6 +13,7 @@ import {
   BOYS_HC, GIRLS_HC,
   calcPercentile, percentileCategory,
 } from '../data/whoGrowth.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -386,5 +387,7 @@ function barWidth(p) {
   </div>
 
   <AdSlot class="mt-8" />
+  <RelatedCalculators calc-key="childGrowth" class="mt-8" />
+
   <BlogArticleLink calculator-key="childGrowth" />
 </template>

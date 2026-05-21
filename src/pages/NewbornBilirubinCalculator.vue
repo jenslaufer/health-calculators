@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { evaluateBilirubin, BILIRUBIN_AGE_RANGE } from '../utils/newbornBilirubin.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -161,6 +162,8 @@ function formatThreshold(value) {
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="newbornBilirubin" class="mt-8" />
+
     <BlogArticleLink calculator-key="newbornBilirubin" />
   </div>
 </template>

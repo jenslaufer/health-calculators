@@ -15,6 +15,7 @@ import {
   lbToKg,
   inToCm,
 } from '../utils/pregnancyCalories.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -289,6 +290,8 @@ const trimesterRows = [
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="pregnancyCalories" class="mt-8" />
+
     <BlogArticleLink calculator-key="pregnancyCalories" />
   </div>
 </template>

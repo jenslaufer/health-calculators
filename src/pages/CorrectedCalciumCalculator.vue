@@ -14,6 +14,7 @@ import {
   getInterpretationMmol,
   isPlausibleMgDl,
 } from '../utils/correctedCalcium.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -237,6 +238,9 @@ function fmtSigned(v) {
     </div>
 
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+
+    <RelatedCalculators calc-key="correctedCalcium" class="mt-8" />
+
 
     <BlogArticleLink calculator-key="correctedCalcium" />
     <AdSlot class="mt-8" />

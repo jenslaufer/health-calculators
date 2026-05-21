@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { calcIronDeficiency, TOTAL_SYMPTOM_POINTS } from '../utils/ironDeficiency.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -309,5 +310,7 @@ const ferritinUnit = computed(() => unit.value === 'si' ? 'µg/L' : 'ng/mL')
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="ironDeficiency" class="mt-8" />
+
   <BlogArticleLink calculator-key="ironDeficiency" />
 </template>

@@ -5,6 +5,7 @@ import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -201,6 +202,9 @@ const sessionOptions = [1, 2, 3, 4, 5, 6, 7]
       </div>
     </div>
   </div>
+
+  <RelatedCalculators calc-key="caloriesBurned" class="mt-8" />
+
 
   <BlogArticleLink calculator-key="caloriesBurned" />
   <AffiliateBanner />

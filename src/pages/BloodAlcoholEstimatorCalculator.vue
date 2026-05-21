@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { estimateBac, timeUntilSober, classifyImpairment } from '../utils/bloodAlcoholEstimator.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm, locale } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -267,5 +268,7 @@ const effectsRows = [
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="bloodAlcoholEstimator" class="mt-8" />
+
   <BlogArticleLink calculator-key="bloodAlcoholEstimator" />
 </template>

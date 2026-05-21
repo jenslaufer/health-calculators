@@ -13,6 +13,7 @@ import {
   PSST_OTHER_ITEMS,
   PSST_IMPAIRMENT_ITEMS,
 } from '../utils/pmsSymptom.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -210,5 +211,7 @@ const progressPct = computed(() => {
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="pmsSymptom" class="mt-8" />
+
   <BlogArticleLink calculator-key="pmsSymptom" />
 </template>

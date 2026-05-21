@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { evaluatePainScore } from '../utils/painScale.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -221,6 +222,8 @@ const categoryRows = [
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="painScale" class="mt-8" />
+
     <BlogArticleLink calculator-key="painScale" />
   </div>
 </template>

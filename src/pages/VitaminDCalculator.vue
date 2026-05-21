@@ -6,6 +6,7 @@ import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, locale } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -418,6 +419,9 @@ const statusColors = {
         {{ t('vitaminD.disclaimer') }}
       </p>
     </div>
+
+    <RelatedCalculators calc-key="vitaminD" class="mt-8" />
+
 
     <BlogArticleLink calculator-key="vitaminD" />
     <AdSlot class="mt-8" />

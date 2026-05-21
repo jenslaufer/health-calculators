@@ -7,6 +7,7 @@ import AffiliateBanner from '../components/AffiliateBanner.vue'
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, locale, tm } = useI18n()
 
@@ -195,5 +196,7 @@ const hasResults = computed(() => !!lmpDate.value)
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="period" class="mt-8" />
+
   <BlogArticleLink calculator-key="period" />
 </template>

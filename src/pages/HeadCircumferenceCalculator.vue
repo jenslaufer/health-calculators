@@ -14,6 +14,7 @@ import {
   isAgeInRange,
   HC_MAX_MONTHS,
 } from '../utils/headCircumference.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -244,5 +245,7 @@ function barWidth(p) {
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="headCircumference" class="mt-8" />
+
   <BlogArticleLink calculator-key="headCircumference" />
 </template>

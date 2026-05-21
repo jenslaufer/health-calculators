@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { calcOsteoporosisRisk } from '../utils/osteoporosisRisk.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -276,5 +277,7 @@ const heightUnit = computed(() => unit.value === 'imperial' ? 'in' : 'cm')
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="osteoporosisRisk" class="mt-8" />
+
   <BlogArticleLink calculator-key="osteoporosisRisk" />
 </template>

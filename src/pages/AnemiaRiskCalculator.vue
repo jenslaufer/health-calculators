@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { calcAnemiaRisk } from '../utils/anemiaRisk.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -236,5 +237,7 @@ const hbUnit = computed(() => unit.value === 'imperial' ? 'g/L' : 'g/dL')
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="anemiaRisk" class="mt-8" />
+
   <BlogArticleLink calculator-key="anemiaRisk" />
 </template>

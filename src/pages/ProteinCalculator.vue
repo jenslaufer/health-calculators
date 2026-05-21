@@ -6,6 +6,7 @@ import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t } = useI18n()
 const { localePath, locale } = useLocaleRouter()
@@ -287,5 +288,7 @@ const foodSources = computed(() => {
 
 
     <AdSlot class="mt-8" />
+  <RelatedCalculators calc-key="protein" class="mt-8" />
+
   <BlogArticleLink calculator-key="protein" />
 </template>

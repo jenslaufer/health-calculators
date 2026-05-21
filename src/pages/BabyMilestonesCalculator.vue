@@ -14,6 +14,7 @@ import {
   getExpectedSize,
   ageFromBirthDate,
 } from '../utils/babyMilestones.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -260,6 +261,8 @@ function selectBracket(b) {
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="babyMilestones" class="mt-8" />
+
     <BlogArticleLink calculator-key="babyMilestones" />
   </div>
 </template>

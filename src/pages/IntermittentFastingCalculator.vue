@@ -6,6 +6,7 @@ import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 
@@ -215,6 +216,9 @@ const timelineSegments = computed(() => {
   </div>
 
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+
+  <RelatedCalculators calc-key="intermittentFasting" class="mt-8" />
+
 
   <BlogArticleLink calculator-key="intermittentFasting" />
   <AffiliateBanner />

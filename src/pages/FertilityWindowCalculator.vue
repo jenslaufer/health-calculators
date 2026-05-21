@@ -13,6 +13,7 @@ import {
   getDayLabel,
   conceptionProbability,
 } from '../utils/fertilityWindow.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, locale, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -194,5 +195,7 @@ const hasResults = computed(() => !!window.value)
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="fertilityWindow" class="mt-8" />
+
   <BlogArticleLink calculator-key="fertilityWindow" />
 </template>

@@ -7,6 +7,7 @@ import AffiliateBanner from '../components/AffiliateBanner.vue'
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 
@@ -275,6 +276,9 @@ const outputUnit = computed(() => (unit.value === 'mg' ? 'mmol/L' : 'mg/dL'))
     </div>
 
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+
+    <RelatedCalculators calc-key="bloodSugar" class="mt-8" />
+
 
     <BlogArticleLink calculator-key="bloodSugar" />
     <AdSlot class="mt-8" />

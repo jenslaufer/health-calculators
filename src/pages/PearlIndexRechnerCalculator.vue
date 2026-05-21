@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { calcPearlIndex, classifyPearlIndex, referenceMethods } from '../utils/pearlIndexRechner.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm, locale } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -180,5 +181,7 @@ function formatPi(value) {
 
   <AdSlot class="mt-8" />
   <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+  <RelatedCalculators calc-key="pearlIndexRechner" class="mt-8" />
+
   <BlogArticleLink calculator-key="pearlIndexRechner" />
 </template>

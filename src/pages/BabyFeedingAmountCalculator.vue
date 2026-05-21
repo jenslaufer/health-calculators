@@ -15,6 +15,7 @@ import {
   mlToOz,
   DAILY_CAP_ML,
 } from '../utils/babyFeedingAmount.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -242,6 +243,8 @@ function fmt(v, decimals = 0) {
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="babyFeedingAmount" class="mt-8" />
+
     <BlogArticleLink calculator-key="babyFeedingAmount" />
   </div>
 </template>

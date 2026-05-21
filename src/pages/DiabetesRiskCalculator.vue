@@ -5,6 +5,7 @@ import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -214,6 +215,9 @@ function switchUnit(u) {
       <h1 class="text-3xl font-bold tracking-tight text-stone-900 mb-2">{{ t('diabetesRisk.title') }}</h1>
       <p class="text-stone-500 text-base">{{ t('diabetesRisk.description') }}</p>
     </div>
+
+    <RelatedCalculators calc-key="diabetesRisk" class="mt-8" />
+
 
     <BlogArticleLink calculatorKey="diabetesRisk" />
 

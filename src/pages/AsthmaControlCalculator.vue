@@ -8,6 +8,7 @@ import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 import { ACT_QUESTIONS, evaluateAct } from '../utils/asthmaControl.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -183,6 +184,8 @@ function reset() {
     </div>
 
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="asthmaControl" class="mt-8" />
+
     <BlogArticleLink calculator-key="asthmaControl" />
     <AdSlot class="mt-8" />
   </div>

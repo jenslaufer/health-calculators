@@ -16,6 +16,7 @@ import {
   inToCm,
   ACTIVITY_LEVELS,
 } from '../utils/childCalories.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -273,6 +274,8 @@ const refRows = [
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="childCalories" class="mt-8" />
+
     <BlogArticleLink calculator-key="childCalories" />
   </div>
 </template>
