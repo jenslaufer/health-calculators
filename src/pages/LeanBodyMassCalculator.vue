@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
@@ -171,5 +172,6 @@ const heightLabel = computed(() => t('common.' + (unit.value === 'metric' ? 'cm'
   </div>
 
   <AdSlot class="mt-8" />
+  <RelatedCalculators calc-key="leanBodyMass" class="mt-8" />
   <BlogArticleLink calculator-key="leanBodyMass" />
 </template>

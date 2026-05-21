@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
@@ -221,6 +222,7 @@ const categoryRows = [
 
     <AdSlot class="mt-8" />
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
+    <RelatedCalculators calc-key="painScale" class="mt-8" />
     <BlogArticleLink calculator-key="painScale" />
   </div>
 </template>

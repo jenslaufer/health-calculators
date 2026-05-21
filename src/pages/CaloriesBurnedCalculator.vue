@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
@@ -202,6 +203,7 @@ const sessionOptions = [1, 2, 3, 4, 5, 6, 7]
     </div>
   </div>
 
+  <RelatedCalculators calc-key="caloriesBurned" class="mt-8" />
   <BlogArticleLink calculator-key="caloriesBurned" />
   <AffiliateBanner />
 </template>

@@ -6,6 +6,7 @@ import { calcBmi, getBmiCategory, getBmiBarPosition } from '../composables/useBm
 import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import AdSlot from '../components/AdSlot.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 
 const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
@@ -156,6 +157,7 @@ const barPosition = computed(() => getBmiBarPosition(bmi.value))
 
     <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
+    <RelatedCalculators calc-key="bmiMaenner" class="mt-8" />
     <AdSlot class="mt-8" />
   </div>
 </template>
