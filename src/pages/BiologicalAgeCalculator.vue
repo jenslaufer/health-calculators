@@ -5,6 +5,7 @@ import { useHead } from '../composables/useHead.js'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
+import RelatedCalculators from '../components/RelatedCalculators.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
 const { t } = useI18n()
@@ -539,6 +540,7 @@ const blogSlug = computed(() => locale.value === 'de' ? 'biologisches-alter-bere
     </div>
   </div>
 
+  <RelatedCalculators calc-key="biologicalAge" class="mt-8" />
   <BlogArticleLink calculator-key="biologicalAge" />
 
   <AdSlot class="mt-8" />
