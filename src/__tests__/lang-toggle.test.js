@@ -28,8 +28,8 @@ function makeRouter(calc) {
       { path: '/', redirect: '/de/' },
       { path: '/de/', component: DummyView, meta: { routeKey: 'home', locale: 'de' } },
       { path: '/en/', component: DummyView, meta: { routeKey: 'home', locale: 'en' } },
-      { path: `/de/${calc.slugs.de}`, component: DummyView, meta: { routeKey: calc.key, locale: 'de' } },
-      { path: `/en/${calc.slugs.en}`, component: DummyView, meta: { routeKey: calc.key, locale: 'en' } },
+      { path: `/de/${calc.slugs.de}/`, component: DummyView, meta: { routeKey: calc.key, locale: 'de' } },
+      { path: `/en/${calc.slugs.en}/`, component: DummyView, meta: { routeKey: calc.key, locale: 'en' } },
       { path: '/:pathMatch(.*)*', component: DummyView },
     ],
   })
@@ -37,7 +37,9 @@ function makeRouter(calc) {
 
 async function mountApp(calc, path, locale = 'de') {
   const router = makeRouter(calc)
-  router.push(path)
+  // Ensure path has trailing slash for consistency with router config
+  const normalizedPath = path.endsWith('/') ? path : `${path}/`
+  router.push(normalizedPath)
   await router.isReady()
   const i18n = makeI18n(locale)
   const wrapper = mount(App, { global: { plugins: [router, i18n] } })
@@ -48,14 +50,14 @@ describe('lang toggle — crawlable <a href> (issue #258)', () => {
   it('DE /de/<bmi-de-slug> renders <a href> pointing to EN counterpart', async () => {
     const first = calculatorMetas[0]
     const { wrapper } = await mountApp(first, `/de/${first.slugs.de}`, 'de')
-    const anchors = wrapper.findAll(`a[href="/en/${first.slugs.en}"]`)
+    const anchors = wrapper.findAll(`a[href="/en/${first.slugs.en}/"]`)
     expect(anchors.length).toBeGreaterThanOrEqual(1)
   })
 
   it('EN counterpart renders <a href> pointing to DE counterpart', async () => {
     const first = calculatorMetas[0]
     const { wrapper } = await mountApp(first, `/en/${first.slugs.en}`, 'en')
-    const anchors = wrapper.findAll(`a[href="/de/${first.slugs.de}"]`)
+    const anchors = wrapper.findAll(`a[href="/de/${first.slugs.de}/"]`)
     expect(anchors.length).toBeGreaterThanOrEqual(1)
   })
 
@@ -72,16 +74,16 @@ describe('lang toggle — crawlable <a href> (issue #258)', () => {
     const toggle = wrapper.find('a[aria-label="Switch to English"]')
     await toggle.trigger('click')
     await flushPromises()
-    expect(router.currentRoute.value.path).toBe(`/en/${first.slugs.en}`)
+    expect(router.currentRoute.value.path).toBe(`/en/${first.slugs.en}/`)
   })
 
   it('samples 5 DE calc slugs — all render <a href> pointing to EN counterpart', async () => {
     const samples = calculatorMetas.slice(0, 5)
     for (const calc of samples) {
       const { wrapper } = await mountApp(calc, `/de/${calc.slugs.de}`, 'de')
-      const expectedHref = `/en/${calc.slugs.en}`
+      const expectedHref = `/en/${calc.slugs.en}/`
       const anchors = wrapper.findAll(`a[href="${expectedHref}"]`)
-      expect(anchors.length, `Expected <a href="${expectedHref}"> for /de/${calc.slugs.de}`).toBeGreaterThanOrEqual(1)
+      expect(anchors.length, `Expected <a href="${expectedHref}"> for /de/${calc.slugs.de}/`).toBeGreaterThanOrEqual(1)
     }
   })
 })

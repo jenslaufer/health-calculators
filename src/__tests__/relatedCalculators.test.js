@@ -55,9 +55,9 @@ describe('RelatedCalculators', () => {
     expect(links).toHaveLength(4)
     const hrefs = links.map(a => a.attributes('href'))
     // Alphabetically first 4 in bodyComposition excluding bmi: bmiFrauen, bmiMaenner, bodyFat, bodyType
-    expect(hrefs[0]).toContain('/de/bmi-rechner-frauen')
-    expect(hrefs[1]).toContain('/de/bmi-rechner-maenner')
-    expect(hrefs[2]).toContain('/de/koerperfett-rechner')
+    expect(hrefs[0]).toBe('/de/bmi-rechner-frauen/')
+    expect(hrefs[1]).toBe('/de/bmi-rechner-maenner/')
+    expect(hrefs[2]).toBe('/de/koerperfett-rechner/')
   })
 
   it('renders nothing when calcKey does not exist', async () => {

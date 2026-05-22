@@ -43,7 +43,7 @@ export const oldRedirects = calculatorMetas
   .filter(m => m.oldRedirect)
   .map(m => ({
     path: m.oldRedirect,
-    redirect: `/de/${m.slugs.de}`,
+    redirect: `/de/${m.slugs.de}/`,
   }))
 
 // Calculator groups for Home page, derived from meta ordering

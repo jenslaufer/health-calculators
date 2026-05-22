@@ -416,8 +416,8 @@ describe('SSG routes', () => {
 
   it('has locale routes for all calculators in both languages', () => {
     for (const key of EXPECTED_KEYS) {
-      const dePath = `/de/${EXPECTED_ROUTE_MAP[key].de}`
-      const enPath = `/en/${EXPECTED_ROUTE_MAP[key].en}`
+      const dePath = `/de/${EXPECTED_ROUTE_MAP[key].de}/`
+      const enPath = `/en/${EXPECTED_ROUTE_MAP[key].en}/`
       expect(routes.find(r => r.path === dePath), `missing route ${dePath}`).toBeDefined()
       expect(routes.find(r => r.path === enPath), `missing route ${enPath}`).toBeDefined()
     }
@@ -425,22 +425,22 @@ describe('SSG routes', () => {
 
   it('has blog routes for all articles in both languages', () => {
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
-      expect(routes.find(r => r.path === `/de/blog/${slug}`), `missing de blog ${slug}`).toBeDefined()
+      expect(routes.find(r => r.path === `/de/blog/${slug}/`), `missing de blog ${slug}`).toBeDefined()
     }
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
-      expect(routes.find(r => r.path === `/en/blog/${slug}`), `missing en blog ${slug}`).toBeDefined()
+      expect(routes.find(r => r.path === `/en/blog/${slug}/`), `missing en blog ${slug}`).toBeDefined()
     }
   })
 
   it('has redirect routes for old paths', () => {
     expect(routes.find(r => r.path === '/')?.redirect).toBe('/en/')
-    expect(routes.find(r => r.path === '/bmi')?.redirect).toBe('/de/bmi-rechner')
-    expect(routes.find(r => r.path === '/blog')?.redirect).toBe('/de/blog')
+    expect(routes.find(r => r.path === '/bmi')?.redirect).toBe('/de/bmi-rechner/')
+    expect(routes.find(r => r.path === '/blog')?.redirect).toBe('/de/blog/')
   })
 
   it('has old blog redirects', () => {
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
-      expect(routes.find(r => r.path === `/blog/${slug}`)?.redirect).toBe(`/de/blog/${slug}`)
+      expect(routes.find(r => r.path === `/blog/${slug}`)?.redirect).toBe(`/de/blog/${slug}/`)
     }
   })
 })

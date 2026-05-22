@@ -116,8 +116,8 @@ describe('Menopause natural relief blog — registration', () => {
   })
 
   it('exposes blog routes for both locales and a DE old-blog redirect', () => {
-    expect(routes.find(r => r.path === '/de/blog/menopause-natuerlich-begleiten')).toBeDefined()
-    expect(routes.find(r => r.path === '/en/blog/menopause-natural-relief')).toBeDefined()
-    expect(routes.find(r => r.path === '/blog/menopause-natuerlich-begleiten')?.redirect).toBe('/de/blog/menopause-natuerlich-begleiten')
+    expect(routes.find(r => r.path === '/de/blog/menopause-natuerlich-begleiten/')).toBeDefined()
+    expect(routes.find(r => r.path === '/en/blog/menopause-natural-relief/')).toBeDefined()
+    expect(routes.find(r => r.path === '/blog/menopause-natuerlich-begleiten')?.redirect).toBe('/de/blog/menopause-natuerlich-begleiten/')
   })
 })

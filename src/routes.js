@@ -32,21 +32,21 @@ function createLocaleRoutes(locale) {
 
   for (const [key, component] of Object.entries(calculatorComponents)) {
     routes.push({
-      path: `${prefix}/${routeMap[key][locale]}`,
+      path: `${prefix}/${routeMap[key][locale]}/`,
       component,
       meta: { routeKey: key, locale },
     })
   }
 
   routes.push({
-    path: `${prefix}/blog`,
+    path: `${prefix}/blog/`,
     component: blogHomeByLocale[locale],
     meta: { routeKey: 'blog', locale },
   })
 
   for (const [slug, component] of Object.entries(blogComponentsByLocale[locale])) {
     routes.push({
-      path: `${prefix}/blog/${slug}`,
+      path: `${prefix}/blog/${slug}/`,
       component,
       meta: { routeKey: 'blogArticle', locale, slug },
     })
@@ -58,7 +58,7 @@ function createLocaleRoutes(locale) {
 const blogSlugs = Object.keys(blogComponentsDe)
 const oldBlogRedirects = blogSlugs.map(slug => ({
   path: `/blog/${slug}`,
-  redirect: `/de/blog/${slug}`,
+  redirect: `/de/blog/${slug}/`,
 }))
 
 const routes = [
@@ -66,7 +66,7 @@ const routes = [
   ...createLocaleRoutes('de'),
   ...createLocaleRoutes('en'),
   ...oldRedirects,
-  { path: '/blog', redirect: '/de/blog' },
+  { path: '/blog', redirect: '/de/blog/' },
   ...oldBlogRedirects,
   { path: '/:pathMatch(.*)*', component: NotFound },
 ]

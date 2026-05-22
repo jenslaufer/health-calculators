@@ -120,8 +120,8 @@ describe('Diabetes prevention blog — registration', () => {
   })
 
   it('exposes blog routes for both locales and a DE old-blog redirect', () => {
-    expect(routes.find(r => r.path === '/de/blog/diabetes-typ-2-vorbeugen')).toBeDefined()
-    expect(routes.find(r => r.path === '/en/blog/prevent-type-2-diabetes')).toBeDefined()
-    expect(routes.find(r => r.path === '/blog/diabetes-typ-2-vorbeugen')?.redirect).toBe('/de/blog/diabetes-typ-2-vorbeugen')
+    expect(routes.find(r => r.path === '/de/blog/diabetes-typ-2-vorbeugen/')).toBeDefined()
+    expect(routes.find(r => r.path === '/en/blog/prevent-type-2-diabetes/')).toBeDefined()
+    expect(routes.find(r => r.path === '/blog/diabetes-typ-2-vorbeugen')?.redirect).toBe('/de/blog/diabetes-typ-2-vorbeugen/')
   })
 })

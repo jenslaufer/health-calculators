@@ -118,8 +118,8 @@ describe('Vitamin D deficiency blog — registration', () => {
   })
 
   it('exposes blog routes for both locales and a DE old-blog redirect', () => {
-    expect(routes.find(r => r.path === '/de/blog/vitamin-d-mangel')).toBeDefined()
-    expect(routes.find(r => r.path === '/en/blog/vitamin-d-deficiency')).toBeDefined()
-    expect(routes.find(r => r.path === '/blog/vitamin-d-mangel')?.redirect).toBe('/de/blog/vitamin-d-mangel')
+    expect(routes.find(r => r.path === '/de/blog/vitamin-d-mangel/')).toBeDefined()
+    expect(routes.find(r => r.path === '/en/blog/vitamin-d-deficiency/')).toBeDefined()
+    expect(routes.find(r => r.path === '/blog/vitamin-d-mangel')?.redirect).toBe('/de/blog/vitamin-d-mangel/')
   })
 })
