@@ -19,7 +19,7 @@ export { routeMap, keyToGroup }
 export function localePath(routeKey, locale) {
   const slug = routeMap[routeKey]?.[locale]
   if (slug === undefined) return `/${locale}/`
-  return slug ? `/${locale}/${slug}` : `/${locale}/`
+  return slug ? `/${locale}/${slug}/` : `/${locale}/`
 }
 
 export function localeBlogPath(slug, locale) {
