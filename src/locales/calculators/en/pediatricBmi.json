@@ -1,0 +1,52 @@
+{
+  "home": {
+    "calculators": {
+      "pediatricBmi": {
+        "name": "Pediatric BMI Calculator",
+        "description": "BMI for children (ages 2–20) by CDC growth-chart percentile — age- and sex-specific."
+      }
+    }
+  },
+  "pediatricBmi": {
+    "meta": {
+      "title": "Pediatric BMI Calculator — CDC Percentile Ages 2–20 | Health Calculators",
+      "description": "Pediatric BMI calculator using CDC growth-chart percentiles. Age- and sex-specific assessment: underweight, healthy, overweight, or obesity."
+    },
+    "title": "Pediatric BMI Calculator",
+    "description": "Assess BMI for children and teens ages 2 to 20 using CDC growth-chart percentiles.",
+    "inputsLabel": "Child details",
+    "sex": "Sex",
+    "male": "Boy",
+    "female": "Girl",
+    "age": "Age (years)",
+    "weight": "Weight",
+    "height": "Height",
+    "metric": "Metric (kg/cm)",
+    "imperial": "Imperial (lbs/in)",
+    "resultsLabel": "Result",
+    "bmiLabel": "BMI",
+    "percentileLabel": "CDC percentile",
+    "categories": "CDC categories",
+    "cat": {
+      "underweight": "Underweight",
+      "healthy": "Healthy weight",
+      "overweight": "Overweight",
+      "obesity": "Obesity"
+    },
+    "catRange": {
+      "underweight": "< 5th percentile",
+      "healthy": "5th–84th percentile",
+      "overweight": "85th–94th percentile",
+      "obesity": "≥ 95th percentile"
+    },
+    "disclaimer": "This calculator uses a simplified CDC LMS reference table (ages 2–20). Results are for guidance and don't replace a pediatric evaluation. If anything looks off, consult a pediatrician.",
+    "faq": [
+      { "q": "Why do children use different BMI ranges than adults?", "a": "Children are growing: body fat, muscle mass, and body composition change with age and sex. Fixed BMI cutoffs like 25 or 30 don't work. Instead, a child's BMI is compared to thousands of children of the same age and sex — that comparison is the CDC percentile." },
+      { "q": "What does the CDC percentile mean?", "a": "The percentile shows how many children of the same age and sex have a lower BMI. A value at the 75th percentile means 75% of children of the same age have a lower BMI. The 5th to 84th percentile range is considered healthy weight." },
+      { "q": "At what percentile is a child considered overweight?", "a": "By CDC criteria: 85th to below 95th percentile is overweight, 95th percentile or higher is obesity. Below the 5th percentile is underweight." },
+      { "q": "What data do I need?", "a": "Age (2–20 years), sex, height and weight. You can switch between metric (kg, cm) and imperial (lbs, in) units. BMI is calculated instantly and classified into the correct percentile category." },
+      { "q": "How accurate is this calculator?", "a": "The calculator uses a simplified CDC LMS reference table and the Z-score method by Cole & Green (1992). Results are typically within ±1 percentile of the official CDC table — adequate for a first assessment. For medical decisions, always consult a pediatrician." },
+      { "q": "What should I do if the result is outside the healthy range?", "a": "A single BMI reading is not a diagnosis — what matters is the trend over multiple measurements. If a child stays below the 5th or above the 95th percentile, parents should consult a pediatrician to review nutrition, activity, and possible medical causes." }
+    ]
+  }
+}

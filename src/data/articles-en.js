@@ -773,6 +773,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'pmsSymptom',
     related: ['menopause-symptom-calculator-guide', 'pcos-symptom-checker', 'calculate-ovulation'],
   },
+  {
+    slug: 'pediatric-bmi-guide',
+    title: 'Pediatric BMI Calculator: Understanding CDC Growth Percentiles',
+    description: 'Pediatric BMI explained: why adult BMI cutoffs fail for children, how CDC growth-chart percentiles work, and when to see a pediatrician.',
+    date: '2026-05-26',
+    readTime: '7 min',
+    calculatorKey: 'pediatricBmi',
+    related: ['calculate-bmi', 'child-growth-percentile-chart', 'child-calorie-needs-guide'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -1,0 +1,52 @@
+{
+  "home": {
+    "calculators": {
+      "pediatricBmi": {
+        "name": "Kinder-BMI-Rechner",
+        "description": "BMI für Kinder (2–20 Jahre) nach CDC-Perzentilen — alters- und geschlechtsspezifisch."
+      }
+    }
+  },
+  "pediatricBmi": {
+    "meta": {
+      "title": "Kinder-BMI-Rechner — CDC-Perzentile 2–20 Jahre | Health Calculators",
+      "description": "Kinder-BMI nach CDC-Perzentile berechnen. Alters- und geschlechtsspezifische Bewertung: Untergewicht, Normalgewicht, Übergewicht oder Adipositas."
+    },
+    "title": "Kinder-BMI-Rechner",
+    "description": "BMI für Kinder und Jugendliche von 2 bis 20 Jahren nach CDC-Perzentile bewerten.",
+    "inputsLabel": "Angaben zum Kind",
+    "sex": "Geschlecht",
+    "male": "Junge",
+    "female": "Mädchen",
+    "age": "Alter (Jahre)",
+    "weight": "Gewicht",
+    "height": "Größe",
+    "metric": "Metrisch (kg/cm)",
+    "imperial": "Imperial (lbs/in)",
+    "resultsLabel": "Ergebnis",
+    "bmiLabel": "BMI",
+    "percentileLabel": "CDC-Perzentile",
+    "categories": "CDC-Kategorien",
+    "cat": {
+      "underweight": "Untergewicht",
+      "healthy": "Normalgewicht",
+      "overweight": "Übergewicht",
+      "obesity": "Adipositas"
+    },
+    "catRange": {
+      "underweight": "< 5. Perzentile",
+      "healthy": "5.–84. Perzentile",
+      "overweight": "85.–94. Perzentile",
+      "obesity": "≥ 95. Perzentile"
+    },
+    "disclaimer": "Dieser Rechner nutzt eine vereinfachte CDC-LMS-Referenztabelle (2–20 Jahre). Die Ergebnisse dienen zur Orientierung und ersetzen keine kinderärztliche Beurteilung. Bei Auffälligkeiten bitte den Kinderarzt aufsuchen.",
+    "faq": [
+      { "q": "Warum gelten für Kinder andere BMI-Werte als für Erwachsene?", "a": "Kinder befinden sich im Wachstum: Körperfett, Muskelmasse und Körperbau verändern sich mit Alter und Geschlecht. Fixe BMI-Grenzen wie 25 oder 30 funktionieren nicht. Stattdessen vergleicht man den BMI eines Kindes mit Tausenden gleichaltriger Kinder gleichen Geschlechts — das ergibt die CDC-Perzentile." },
+      { "q": "Was bedeutet die CDC-Perzentile?", "a": "Die Perzentile zeigt, wie viel Prozent gleichaltriger Kinder gleichen Geschlechts einen niedrigeren BMI haben. Ein Wert auf der 75. Perzentile bedeutet: 75 % aller gleichaltrigen Kinder haben einen niedrigeren BMI. Der Bereich von der 5. bis 84. Perzentile gilt als Normalgewicht." },
+      { "q": "Ab welcher Perzentile spricht man von Übergewicht?", "a": "Nach den CDC-Kriterien gilt: ab der 85. bis unter der 95. Perzentile Übergewicht, ab der 95. Perzentile Adipositas. Unter der 5. Perzentile spricht man von Untergewicht." },
+      { "q": "Welche Daten brauche ich für den Rechner?", "a": "Alter (2–20 Jahre), Geschlecht, Größe und Gewicht. Du kannst zwischen metrischen (kg, cm) und imperialen (lbs, in) Einheiten wechseln. Der BMI wird sofort berechnet und in die richtige Perzentile-Kategorie eingeordnet." },
+      { "q": "Wie genau ist diese Berechnung?", "a": "Der Rechner nutzt eine vereinfachte CDC-LMS-Referenztabelle und die Z-Score-Berechnung nach Cole & Green (1992). Die Werte liegen typisch im Bereich ±1 Perzentile gegenüber der offiziellen CDC-Tabelle und reichen für eine erste Einschätzung. Für eine medizinische Diagnose immer den Kinderarzt aufsuchen." },
+      { "q": "Was tun bei einem Ergebnis außerhalb des Normalbereichs?", "a": "Ein einzelner BMI-Wert ist kein Diagnoseinstrument — entscheidend ist der Verlauf über mehrere Messungen. Liegt das Kind dauerhaft unter der 5. oder über der 95. Perzentile, sollten Eltern den Kinderarzt aufsuchen, um Ernährung, Bewegung und mögliche medizinische Ursachen zu prüfen." }
+    ]
+  }
+}

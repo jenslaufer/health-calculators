@@ -21,6 +21,7 @@ const EXPECTED_KEYS = [
   'painScale', 'newbornBilirubin', 'schritteKalorienRechner', 'childCalories', 'pediatricBloodPressure',
   'pregnancyBMI', 'fertilityWindow', 'headCircumference', 'breastMilkAlcohol', 'menopauseSymptom', 'pearlIndexRechner',
   'ironDeficiency', 'ffmiRechner', 'pregnancyCalories', 'pmsSymptom', 'breastCancerRisk',
+  'pediatricBmi',
 ]
 
 const EXPECTED_BLOG_SLUGS_DE = [
@@ -97,6 +98,7 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'menopause-natuerlich-begleiten',
   'pms-symptome-bewerten',
   'brustkrebs-risiko-berechnen',
+  'kinder-bmi-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -173,12 +175,13 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'menopause-natural-relief',
   'pms-symptom-calculator-guide',
   'breast-cancer-risk-calculator-guide',
+  'pediatric-bmi-guide',
 ]
 
 describe('discoverMetas', () => {
-  it('discovers all 85 calculator meta files', () => {
+  it('discovers all 86 calculator meta files', () => {
     const metas = discoverMetas(META_DIR)
-    expect(metas.filter(m => !m.blogOnly)).toHaveLength(85)
+    expect(metas.filter(m => !m.blogOnly)).toHaveLength(86)
   })
 
   it('discovers all expected calculator keys', () => {
@@ -216,19 +219,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 86 DE blog slugs', () => {
+  it('returns all 87 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(86)
+    expect(de).toHaveLength(87)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 86 EN blog slugs', () => {
+  it('returns all 87 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(86)
+    expect(en).toHaveLength(87)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -296,9 +299,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 170 calcs + 2 blog index + 172 blog articles = 346)', () => {
+  it('generates correct total URL count (2 home + 172 calcs + 2 blog index + 174 blog articles = 350)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(346)
+    expect(urlCount).toBe(350)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {

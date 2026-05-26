@@ -773,6 +773,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pmsSymptom',
     related: ['menopause-symptome-bewerten', 'pcos-symptome-erkennen', 'eisprung-berechnen'],
   },
+  {
+    slug: 'kinder-bmi-berechnen',
+    title: 'Kinder-BMI berechnen: CDC-Perzentile richtig verstehen',
+    description: 'Kinder-BMI nach CDC-Perzentile berechnen und richtig einordnen. Warum Erwachsenen-Grenzen nicht passen, was 5./85./95. Perzentile bedeutet und wann der Kinderarzt schauen sollte.',
+    date: '2026-05-26',
+    readTime: '7 min',
+    calculatorKey: 'pediatricBmi',
+    related: ['bmi-berechnen', 'wachstumsperzentile-kinder', 'kinder-kalorienbedarf-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
