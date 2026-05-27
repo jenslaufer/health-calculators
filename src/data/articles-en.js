@@ -782,6 +782,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'pediatricBmi',
     related: ['calculate-bmi', 'child-growth-percentile-chart', 'child-calorie-needs-guide'],
   },
+  {
+    slug: 'mean-arterial-pressure-guide',
+    title: 'Mean Arterial Pressure (MAP): Formula, Normal Range, Why It Matters',
+    description: 'MAP explained: the (SBP + 2 × DBP) / 3 formula, normal ranges, why 65 mmHg is the critical floor, and what the target should be in older adults.',
+    date: '2026-05-27',
+    readTime: '7 min',
+    calculatorKey: 'meanArterialPressure',
+    related: ['measure-blood-pressure', 'cardiovascular-risk-framingham', 'stroke-risk-calculator-cha2ds2-vasc'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

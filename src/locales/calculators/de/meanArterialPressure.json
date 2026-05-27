@@ -1,0 +1,53 @@
+{
+  "home": {
+    "calculators": {
+      "meanArterialPressure": {
+        "name": "MAP-Rechner",
+        "description": "Mittleren arteriellen Druck (MAP) aus systolischem und diastolischem Blutdruck berechnen."
+      }
+    }
+  },
+  "meanArterialPressure": {
+    "meta": {
+      "title": "MAP-Rechner — Mittlerer arterieller Druck | Health Calculators",
+      "description": "Mittleren arteriellen Druck (MAP) aus Blutdruckwerten berechnen. Formel: (SBP + 2 × DBP) / 3. Klinische Einordnung in niedrig, normal oder hoch."
+    },
+    "title": "Mittlerer arterieller Druck (MAP)",
+    "description": "Geben Sie systolischen und diastolischen Blutdruck ein. Der Rechner ermittelt den mittleren arteriellen Druck (MAP) und ordnet ihn klinisch ein.",
+    "systolic": "Systolisch SBP (mmHg)",
+    "diastolic": "Diastolisch DBP (mmHg)",
+    "resultsLabel": "Ergebnis",
+    "mapLabel": "MAP",
+    "mapUnit": "mmHg",
+    "categoryLabel": "Klinische Einordnung",
+    "categoriesTitle": "MAP-Kategorien",
+    "olderAdultsNote": "Bei älteren Erwachsenen (≥ 65 Jahre) und in der Intensivmedizin gilt ein MAP von mindestens 65 mmHg als Mindestziel für eine ausreichende Organperfusion. Werte zwischen 70 und 90 mmHg gelten meist als sicher.",
+    "formulaTitle": "Formel",
+    "formulaText": "MAP ≈ (SBP + 2 × DBP) / 3",
+    "formulaWhy": "Der diastolische Druck wird doppelt gewichtet, weil das Herz im Herzzyklus etwa zwei Drittel der Zeit in der Diastole verbringt.",
+    "cat": {
+      "low": "Niedrig",
+      "normal": "Normal",
+      "high": "Hoch"
+    },
+    "catRange": {
+      "low": "< 70 mmHg",
+      "normal": "70 – 100 mmHg",
+      "high": "> 100 mmHg"
+    },
+    "catDescription": {
+      "low": "Mögliche Minderdurchblutung der Organe — bei Symptomen wie Schwindel oder Schwäche ärztlich abklären.",
+      "normal": "Ausreichende Organperfusion — ein guter Wert für gesunde Erwachsene.",
+      "high": "Anhaltend erhöhter Wert — kann auf Hypertonie und erhöhtes kardiovaskuläres Risiko hinweisen."
+    },
+    "disclaimer": "Die MAP-Formel (SBP + 2 × DBP) / 3 ist eine klinische Schätzung und ersetzt keine invasive Blutdruckmessung oder ärztliche Beurteilung. Konsultieren Sie bei anhaltenden Auffälligkeiten einen Arzt.",
+    "faq": [
+      { "q": "Was ist der mittlere arterielle Druck (MAP)?", "a": "Der mittlere arterielle Druck ist der durchschnittliche Druck in den Arterien während eines Herzzyklus. Er bestimmt, wie gut Organe wie Gehirn, Nieren und Herzmuskel durchblutet werden. Ein MAP von mindestens 65 mmHg gilt als Mindestziel für eine ausreichende Perfusion." },
+      { "q": "Wie wird MAP berechnet?", "a": "Die übliche klinische Formel lautet: MAP ≈ (SBP + 2 × DBP) / 3. Beispiel: Bei 120/80 mmHg ergibt sich (120 + 160) / 3 = 93,3 mmHg. Der diastolische Druck wird doppelt gewichtet, weil das Herz etwa zwei Drittel der Zeit im Herzzyklus in der Diastole verbringt." },
+      { "q": "Welche MAP-Werte gelten als normal?", "a": "70 bis 100 mmHg gelten als normaler Bereich für gesunde Erwachsene. Werte unter 65 mmHg können auf eine Minderdurchblutung lebenswichtiger Organe hinweisen, Werte dauerhaft über 100 mmHg auf Bluthochdruck und ein erhöhtes kardiovaskuläres Risiko." },
+      { "q": "Was bedeutet ein zu niedriger MAP?", "a": "Ein MAP unter 65 mmHg gilt als kritisch, besonders auf der Intensivstation. Bei wachen Patienten kann er Schwindel, Schwäche oder Bewusstseinstrübung verursachen. Häufige Ursachen sind Volumenmangel, Sepsis, Herzversagen oder Medikamentennebenwirkungen." },
+      { "q": "Gilt der MAP-Zielwert auch für ältere Menschen?", "a": "Bei älteren Erwachsenen (≥ 65 Jahre) ist die zerebrale Autoregulation oft eingeschränkt. Hier wird häufig ein etwas höherer MAP von 70–90 mmHg angestrebt, um eine ausreichende Hirnperfusion zu sichern. Die individuelle Zielsetzung legt der behandelnde Arzt fest." },
+      { "q": "Ersetzt diese Berechnung eine ärztliche Beurteilung?", "a": "Nein. Die Formel (SBP + 2 × DBP) / 3 ist eine vereinfachte Schätzung. Sie reicht für die häusliche Orientierung, ersetzt aber keine direkte arterielle Messung und keine ärztliche Diagnose. Konsultieren Sie bei wiederholt auffälligen Werten Ihren Arzt." }
+    ]
+  }
+}

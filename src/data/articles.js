@@ -782,6 +782,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pediatricBmi',
     related: ['bmi-berechnen', 'wachstumsperzentile-kinder', 'kinder-kalorienbedarf-berechnen'],
   },
+  {
+    slug: 'mittlerer-arterieller-druck-berechnen',
+    title: 'Mittlerer arterieller Druck (MAP) berechnen: Formel, Normalwerte, Bedeutung',
+    description: 'MAP einfach erklärt: Formel (SBP + 2 × DBP) / 3, Normalbereiche, warum 65 mmHg die kritische Grenze ist und wie ältere Erwachsene den Wert einordnen sollten.',
+    date: '2026-05-27',
+    readTime: '7 min',
+    calculatorKey: 'meanArterialPressure',
+    related: ['blutdruck-richtig-messen', 'herz-kreislauf-risiko-berechnen', 'schlaganfall-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

@@ -1,0 +1,53 @@
+{
+  "home": {
+    "calculators": {
+      "meanArterialPressure": {
+        "name": "MAP Calculator",
+        "description": "Compute mean arterial pressure (MAP) from systolic and diastolic blood pressure."
+      }
+    }
+  },
+  "meanArterialPressure": {
+    "meta": {
+      "title": "MAP Calculator — Mean Arterial Pressure | Health Calculators",
+      "description": "Calculate mean arterial pressure (MAP) from blood pressure readings. Formula: (SBP + 2 × DBP) / 3. Clinical bands: low, normal, high."
+    },
+    "title": "Mean Arterial Pressure (MAP)",
+    "description": "Enter your systolic and diastolic blood pressure. The calculator returns the mean arterial pressure (MAP) and a clinical band.",
+    "systolic": "Systolic SBP (mmHg)",
+    "diastolic": "Diastolic DBP (mmHg)",
+    "resultsLabel": "Result",
+    "mapLabel": "MAP",
+    "mapUnit": "mmHg",
+    "categoryLabel": "Clinical band",
+    "categoriesTitle": "MAP categories",
+    "olderAdultsNote": "In older adults (≥ 65 years) and in critical care, a MAP of at least 65 mmHg is the usual minimum target to keep organs adequately perfused. Values between 70 and 90 mmHg are typically considered safe.",
+    "formulaTitle": "Formula",
+    "formulaText": "MAP ≈ (SBP + 2 × DBP) / 3",
+    "formulaWhy": "Diastolic pressure is weighted twice because the heart spends roughly two-thirds of the cardiac cycle in diastole.",
+    "cat": {
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High"
+    },
+    "catRange": {
+      "low": "< 70 mmHg",
+      "normal": "70 – 100 mmHg",
+      "high": "> 100 mmHg"
+    },
+    "catDescription": {
+      "low": "Possible organ hypoperfusion — if you have symptoms like dizziness or weakness, see a doctor.",
+      "normal": "Adequate organ perfusion — a healthy value for most adults.",
+      "high": "Persistently elevated — may indicate hypertension and higher cardiovascular risk."
+    },
+    "disclaimer": "The MAP formula (SBP + 2 × DBP) / 3 is a clinical estimate. It does not replace invasive arterial measurement or medical assessment. See a doctor for persistent abnormal readings.",
+    "faq": [
+      { "q": "What is mean arterial pressure (MAP)?", "a": "Mean arterial pressure is the average pressure in your arteries during one cardiac cycle. It determines how well organs like the brain, kidneys and heart muscle are perfused. A MAP of at least 65 mmHg is generally considered the minimum needed for adequate perfusion." },
+      { "q": "How is MAP calculated?", "a": "The standard clinical formula is MAP ≈ (SBP + 2 × DBP) / 3. For example, at 120/80 mmHg, MAP = (120 + 160) / 3 = 93.3 mmHg. Diastolic pressure is weighted twice because the heart spends roughly two-thirds of the cardiac cycle in diastole." },
+      { "q": "What is a normal MAP range?", "a": "70 to 100 mmHg is considered the normal range for healthy adults. Values below 65 mmHg can signal hypoperfusion of vital organs. Values persistently above 100 mmHg point toward hypertension and increased cardiovascular risk." },
+      { "q": "What does a low MAP mean?", "a": "A MAP below 65 mmHg is considered critical, especially in intensive care. In conscious patients it may cause dizziness, weakness or confusion. Common causes include hypovolemia, sepsis, heart failure or medication side effects." },
+      { "q": "Does the MAP target change for older adults?", "a": "In older adults (≥ 65 years) cerebral autoregulation is often impaired. A slightly higher MAP — typically 70–90 mmHg — is often targeted to maintain brain perfusion. The individual target should be set by the treating physician." },
+      { "q": "Does this calculator replace a medical assessment?", "a": "No. The formula (SBP + 2 × DBP) / 3 is a simplified estimate. It is useful for home orientation but does not replace direct arterial measurement or medical diagnosis. See a doctor for persistent abnormal readings." }
+    ]
+  }
+}
