@@ -1,0 +1,64 @@
+{
+  "home": {
+    "calculators": {
+      "homaIr": {
+        "name": "HOMA-IR Calculator",
+        "description": "Estimate insulin resistance from fasting glucose and fasting insulin."
+      }
+    }
+  },
+  "homaIr": {
+    "meta": {
+      "title": "HOMA-IR Calculator — Insulin Resistance | Health Calculators",
+      "description": "Calculate HOMA-IR from fasting glucose and fasting insulin. Formula, risk bands (normal, mild, insulin resistance, severe) and clinical context."
+    },
+    "title": "HOMA-IR — Insulin Resistance Calculator",
+    "description": "Enter fasting blood glucose and fasting insulin. The calculator returns the HOMA-IR index and classifies it into four clinical risk bands.",
+    "glucoseLabel": "Fasting glucose",
+    "insulinLabel": "Fasting insulin",
+    "glucosePlaceholderMg": "e.g. 90",
+    "glucosePlaceholderMmol": "e.g. 5.0",
+    "insulinPlaceholderMicroU": "e.g. 8",
+    "insulinPlaceholderPmol": "e.g. 55",
+    "unitsLabel": "Units",
+    "unitMetric": "SI (mmol/L · pmol/L)",
+    "unitImperial": "Conventional (mg/dL · µU/mL)",
+    "resultsLabel": "Result",
+    "homaIrLabel": "HOMA-IR",
+    "homaIrUnit": "index",
+    "bandLabel": "Risk band",
+    "categoriesTitle": "Risk bands",
+    "formulaTitle": "Formula",
+    "formulaTextMg": "HOMA-IR = (insulin µU/mL × glucose mg/dL) / 405",
+    "formulaTextMmol": "HOMA-IR = (insulin µU/mL × glucose mmol/L) / 22.5",
+    "formulaWhy": "The formula multiplies fasting insulin and fasting glucose. Higher products mean more insulin is needed to keep glucose in range — the signature of insulin resistance.",
+    "clinicalNote": "HOMA-IR is an estimate and does not replace an oral glucose tolerance test or a medical diagnosis. Values from 2.0 upward suggest meaningful insulin resistance and warrant clinical review.",
+    "disclaimer": "This calculator is for information only. If your values look elevated, talk to a clinician. Pregnancy, acute illness and some medications can distort glucose and insulin readings.",
+    "band": {
+      "normal": "Normal",
+      "mild": "Mild insulin resistance",
+      "resistance": "Insulin resistance",
+      "severe": "Severe insulin resistance"
+    },
+    "bandRange": {
+      "normal": "< 1.5",
+      "mild": "1.5 – 1.99",
+      "resistance": "2.0 – 2.89",
+      "severe": "≥ 2.9"
+    },
+    "bandDescription": {
+      "normal": "Insulin sensitivity in the healthy range.",
+      "mild": "Early signs of reduced insulin sensitivity — review lifestyle.",
+      "resistance": "Meaningful insulin resistance — clinical review recommended.",
+      "severe": "Markedly elevated — high risk for type 2 diabetes."
+    },
+    "faq": [
+      { "q": "What is HOMA-IR?", "a": "HOMA-IR (Homeostatic Model Assessment for Insulin Resistance) is a simple marker of insulin resistance based on fasting plasma glucose and fasting insulin. It was introduced by Matthews et al. in 1985 and is now in worldwide clinical use." },
+      { "q": "How is HOMA-IR calculated?", "a": "The classic formula is HOMA-IR = (fasting insulin in µU/mL × fasting glucose in mg/dL) / 405. In SI units it is HOMA-IR = (insulin µU/mL × glucose mmol/L) / 22.5." },
+      { "q": "What HOMA-IR values are considered normal?", "a": "Values below 1.5 are considered normal. 1.5 to 1.99 suggests mild insulin resistance, 2.0 to 2.89 indicates insulin resistance and ≥ 2.9 is severe. Exact cut-offs vary by lab and population." },
+      { "q": "When is the test useful?", "a": "HOMA-IR is helpful when there is suspicion of insulin resistance — for example in PCOS, non-alcoholic fatty liver disease, obesity or prediabetes. It supports an early estimate of diabetes risk." },
+      { "q": "What can distort HOMA-IR?", "a": "Acute illness, stress, glucocorticoids, recent meals, pregnancy and some medications can shift insulin or glucose. The test requires an 8–12 hour fast." },
+      { "q": "What should I do about a high HOMA-IR?", "a": "An elevated value is a warning sign, not a diagnosis. Weight loss, regular physical activity and a carbohydrate-aware diet measurably improve insulin sensitivity. Discuss next steps such as HbA1c or an oral glucose tolerance test with your physician." }
+    ]
+  }
+}
