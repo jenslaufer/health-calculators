@@ -800,6 +800,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'homaIr',
     related: ['diabetes-risk-score', 'hba1c-converter-guide', 'calculate-bmi'],
   },
+  {
+    slug: 'ldl-cholesterol-friedewald-guide',
+    title: 'LDL Cholesterol (Friedewald) Calculator Guide: Formula, Limits, Values',
+    description: 'Estimate LDL cholesterol from total cholesterol, HDL and triglycerides using the Friedewald formula. ATP III bands, the 400 mg/dL limit and what helps high LDL.',
+    date: '2026-05-29',
+    readTime: '8 min',
+    calculatorKey: 'ldlFriedewald',
+    related: ['cholesterol-ratio', 'cardiovascular-risk-framingham', 'stroke-risk-calculator-cha2ds2-vasc'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

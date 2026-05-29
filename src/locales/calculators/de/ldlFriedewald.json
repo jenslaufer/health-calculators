@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "ldlFriedewald": {
+        "name": "LDL-Friedewald-Rechner",
+        "description": "LDL-Cholesterin aus Gesamt, HDL und Triglyceriden nach Friedewald schätzen."
+      }
+    }
+  },
+  "ldlFriedewald": {
+    "meta": {
+      "title": "LDL-Cholesterin (Friedewald) berechnen — Formel & ATP-III-Einordnung",
+      "description": "LDL-Cholesterin aus Gesamtcholesterin, HDL und Triglyceriden mit der Friedewald-Formel berechnen. ATP-III-Klassifikation (optimal bis sehr hoch) und Warnung bei TG ≥ 400 mg/dL. Kostenlos und sofort."
+    },
+    "title": "LDL-Friedewald-Rechner",
+    "description": "LDL aus Gesamtcholesterin, HDL und Triglyceriden mit der Friedewald-Formel berechnen — mit ATP-III-Risikobändern.",
+    "unitsLabel": "Einheiten",
+    "unitMg": "mg/dL",
+    "unitMmol": "mmol/L",
+    "totalLabel": "Gesamtcholesterin",
+    "hdlLabel": "HDL",
+    "trigLabel": "Triglyceride",
+    "totalPlaceholderMg": "z. B. 200",
+    "totalPlaceholderMmol": "z. B. 5,17",
+    "hdlPlaceholderMg": "z. B. 50",
+    "hdlPlaceholderMmol": "z. B. 1,30",
+    "trigPlaceholderMg": "z. B. 150",
+    "trigPlaceholderMmol": "z. B. 1,70",
+    "resultsLabel": "Ergebnis",
+    "ldlLabel": "Geschätztes LDL",
+    "ldlUnitMg": "mg/dL",
+    "ldlUnitMmol": "mmol/L",
+    "bandLabel": "ATP-III-Einordnung",
+    "warningInvalid": "Friedewald-Schätzung unzuverlässig: Triglyceride ≥ 400 mg/dL (4,5 mmol/L). Bitte direkte LDL-Messung anfordern.",
+    "formulaTitle": "Formel",
+    "formulaTextMg": "LDL = Gesamtcholesterin − HDL − Triglyceride / 5  (mg/dL)",
+    "formulaTextMmol": "LDL = Gesamtcholesterin − HDL − Triglyceride / 2,2  (mmol/L)",
+    "formulaWhy": "Die Friedewald-Formel (1972) schätzt LDL aus Gesamt, HDL und Triglyceriden. Sie ist die international gebräuchliche Methode in Lipidprofilen — vorausgesetzt, die Triglyceride liegen unter 400 mg/dL (4,5 mmol/L).",
+    "categoriesTitle": "ATP-III-Risikobänder (NCEP)",
+    "clinicalNote": "Die ATP-III-Schwellen sind in mg/dL definiert. Bei Eingabe in mmol/L erfolgt die Bandeinordnung nach interner Umrechnung. Die Schätzung ersetzt keine ärztliche Beurteilung.",
+    "disclaimer": "Dieser Rechner dient der Information. Bei auffälligen Werten — oder Triglyceriden ≥ 400 mg/dL — ist eine direkte LDL-Bestimmung im Labor empfohlen.",
+    "band": {
+      "optimal": "Optimal",
+      "nearOptimal": "Fast optimal",
+      "borderline": "Grenzwertig",
+      "high": "Hoch",
+      "veryHigh": "Sehr hoch"
+    },
+    "bandRange": {
+      "optimal": "< 100 mg/dL",
+      "nearOptimal": "100 – 129 mg/dL",
+      "borderline": "130 – 159 mg/dL",
+      "high": "160 – 189 mg/dL",
+      "veryHigh": "≥ 190 mg/dL"
+    },
+    "bandDescription": {
+      "optimal": "Wunschwert nach ATP III — kardiovaskuläres Risiko gering.",
+      "nearOptimal": "Akzeptabel — Lebensstil im Blick behalten.",
+      "borderline": "Grenzwertig erhöht — Lifestyle-Maßnahmen empfohlen.",
+      "high": "Erhöht — ärztliche Abklärung empfohlen.",
+      "veryHigh": "Sehr hoch — therapeutische Maßnahmen meist erforderlich."
+    },
+    "faq": [
+      { "q": "Was ist die Friedewald-Formel?", "a": "Die Friedewald-Formel (William T. Friedewald, 1972) schätzt LDL-Cholesterin aus Gesamtcholesterin, HDL und Triglyceriden — ohne dass LDL direkt gemessen werden muss. Die Schätzung gilt als robust, wenn Triglyceride unter 400 mg/dL (4,5 mmol/L) liegen." },
+      { "q": "Wann ist die Schätzung unzuverlässig?", "a": "Ab Triglyceriden von 400 mg/dL (4,5 mmol/L) unterschätzt Friedewald das LDL systematisch. In diesem Fall sollte LDL direkt gemessen werden (z. B. mit der Sampson- oder Martin-Hopkins-Formel oder per Ultrazentrifugation)." },
+      { "q": "Welche LDL-Werte gelten als optimal?", "a": "Nach NCEP ATP III gilt LDL unter 100 mg/dL als optimal, 100–129 als fast optimal, 130–159 als grenzwertig hoch, 160–189 als hoch und ab 190 als sehr hoch." },
+      { "q": "Muss ich nüchtern sein?", "a": "Ja — Triglyceride werden durch die letzte Mahlzeit stark beeinflusst. Für eine valide Friedewald-Schätzung sollten 9–12 Stunden Nüchternheit eingehalten werden." },
+      { "q": "Was tun bei erhöhtem LDL?", "a": "Lebensstilmaßnahmen sind zentral: ballaststoffreiche Ernährung, weniger gesättigte Fette und Transfette, regelmäßige Bewegung, Gewichtsreduktion bei Übergewicht. Ab LDL ≥ 190 mg/dL — oder bei zusätzlichen Risikofaktoren — kann eine medikamentöse Therapie (Statine) sinnvoll sein." },
+      { "q": "Warum sind die ATP-III-Bänder in mg/dL definiert?", "a": "Die NCEP ATP-III-Leitlinie stammt aus den USA, wo Cholesterin in mg/dL gemessen wird. International (Europa, Australien) wird oft mmol/L verwendet — der Rechner rechnet für die Bandeinordnung automatisch um (Faktor 38,67)." }
+    ]
+  }
+}
