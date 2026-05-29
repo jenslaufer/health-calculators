@@ -791,6 +791,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'meanArterialPressure',
     related: ['measure-blood-pressure', 'cardiovascular-risk-framingham', 'stroke-risk-calculator-cha2ds2-vasc'],
   },
+  {
+    slug: 'homa-ir-insulin-resistance-guide',
+    title: 'HOMA-IR Calculator Guide: Spot Insulin Resistance Early',
+    description: 'Calculate HOMA-IR from fasting glucose and fasting insulin. Formula, risk bands, what the index means and what to do about an elevated value.',
+    date: '2026-05-28',
+    readTime: '7 min',
+    calculatorKey: 'homaIr',
+    related: ['diabetes-risk-score', 'hba1c-converter-guide', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

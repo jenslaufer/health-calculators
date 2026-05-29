@@ -1,0 +1,64 @@
+{
+  "home": {
+    "calculators": {
+      "homaIr": {
+        "name": "HOMA-IR-Rechner",
+        "description": "Insulinresistenz aus Nüchternblutzucker und Nüchterninsulin berechnen."
+      }
+    }
+  },
+  "homaIr": {
+    "meta": {
+      "title": "HOMA-IR-Rechner — Insulinresistenz berechnen | Health Calculators",
+      "description": "HOMA-IR aus Nüchternglukose und Nüchterninsulin berechnen. Formel, Risikobänder (normal, mild, Insulinresistenz, schwer) und klinische Einordnung."
+    },
+    "title": "HOMA-IR berechnen — Insulinresistenz einschätzen",
+    "description": "Geben Sie Nüchternblutzucker und Nüchterninsulin ein. Der Rechner ermittelt den HOMA-IR-Index und ordnet ihn in vier klinische Risikostufen ein.",
+    "glucoseLabel": "Nüchternblutzucker",
+    "insulinLabel": "Nüchterninsulin",
+    "glucosePlaceholderMg": "z. B. 90",
+    "glucosePlaceholderMmol": "z. B. 5,0",
+    "insulinPlaceholderMicroU": "z. B. 8",
+    "insulinPlaceholderPmol": "z. B. 55",
+    "unitsLabel": "Einheiten",
+    "unitMetric": "SI (mmol/L · pmol/L)",
+    "unitImperial": "Konventionell (mg/dL · µU/mL)",
+    "resultsLabel": "Ergebnis",
+    "homaIrLabel": "HOMA-IR",
+    "homaIrUnit": "Index",
+    "bandLabel": "Risikoeinordnung",
+    "categoriesTitle": "Risikobänder",
+    "formulaTitle": "Formel",
+    "formulaTextMg": "HOMA-IR = (Insulin µU/mL × Glukose mg/dL) / 405",
+    "formulaTextMmol": "HOMA-IR = (Insulin µU/mL × Glukose mmol/L) / 22,5",
+    "formulaWhy": "Die Formel multipliziert Nüchterninsulin und Nüchternblutzucker. Höhere Werte bedeuten, dass mehr Insulin nötig ist, um den Blutzucker zu kontrollieren — ein Hinweis auf Insulinresistenz.",
+    "clinicalNote": "HOMA-IR ist eine Schätzung und ersetzt keinen oralen Glukosetoleranztest oder eine ärztliche Diagnose. Werte ab 2,0 deuten auf eine relevante Insulinresistenz hin und sollten ärztlich abgeklärt werden.",
+    "disclaimer": "Diese Berechnung dient der Information. Bei auffälligen Werten konsultieren Sie bitte Ihren Arzt oder eine Diabetologin. Schwangerschaft, akute Infekte und einige Medikamente können Glukose- und Insulinwerte verzerren.",
+    "band": {
+      "normal": "Normal",
+      "mild": "Leichte Insulinresistenz",
+      "resistance": "Insulinresistenz",
+      "severe": "Schwere Insulinresistenz"
+    },
+    "bandRange": {
+      "normal": "< 1,5",
+      "mild": "1,5 – 1,99",
+      "resistance": "2,0 – 2,89",
+      "severe": "≥ 2,9"
+    },
+    "bandDescription": {
+      "normal": "Insulinsensitivität im gesunden Bereich.",
+      "mild": "Erste Hinweise auf reduzierte Insulinsensitivität — Lebensstil prüfen.",
+      "resistance": "Deutliche Insulinresistenz — ärztliche Abklärung empfohlen.",
+      "severe": "Stark erhöhte Insulinresistenz — hohes Risiko für Typ-2-Diabetes."
+    },
+    "faq": [
+      { "q": "Was ist HOMA-IR?", "a": "HOMA-IR (Homeostatic Model Assessment for Insulin Resistance) ist ein einfacher Marker für Insulinresistenz aus nüchtern gemessenem Blutzucker und Nüchterninsulin. Er wurde 1985 von Matthews und Kollegen eingeführt und ist heute weltweit gebräuchlich." },
+      { "q": "Wie wird der HOMA-IR berechnet?", "a": "Die klassische Formel lautet: HOMA-IR = (Nüchterninsulin in µU/mL × Nüchternglukose in mg/dL) / 405. In SI-Einheiten: HOMA-IR = (Insulin µU/mL × Glukose mmol/L) / 22,5." },
+      { "q": "Welche HOMA-IR-Werte gelten als normal?", "a": "Werte unter 1,5 gelten als normal. 1,5 bis 1,99 sind ein Hinweis auf leichte Insulinresistenz, 2,0 bis 2,89 auf relevante Insulinresistenz und ab 2,9 spricht man von schwerer Insulinresistenz. Die genauen Grenzen variieren je nach Labor und Population." },
+      { "q": "Wann ist der Test sinnvoll?", "a": "HOMA-IR ist nützlich bei Verdacht auf Insulinresistenz, polyzystischem Ovarsyndrom (PCOS), nicht-alkoholischer Fettleber, Übergewicht oder Prädiabetes. Er hilft, das individuelle Diabetesrisiko früh einzuschätzen." },
+      { "q": "Was kann den HOMA-IR verfälschen?", "a": "Akute Infekte, Stress, Steroide, kürzliche Mahlzeiten, Schwangerschaft und einige Medikamente können Insulin- oder Glukosewerte verändern. Der Test setzt eine Nüchternperiode von 8–12 Stunden voraus." },
+      { "q": "Was tun bei erhöhtem HOMA-IR?", "a": "Erhöhte Werte sind ein Warnsignal, aber keine Diagnose. Lebensstilmaßnahmen wie Gewichtsreduktion, regelmäßige Bewegung und kohlenhydratbewusste Ernährung verbessern die Insulinsensitivität messbar. Sprechen Sie mit Ihrem Arzt über weitere Schritte wie HbA1c oder einen oralen Glukosetoleranztest." }
+    ]
+  }
+}

@@ -791,6 +791,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'meanArterialPressure',
     related: ['blutdruck-richtig-messen', 'herz-kreislauf-risiko-berechnen', 'schlaganfall-risiko-berechnen'],
   },
+  {
+    slug: 'homa-ir-berechnen',
+    title: 'HOMA-IR berechnen: Insulinresistenz früh erkennen',
+    description: 'HOMA-IR aus Nüchternblutzucker und Nüchterninsulin berechnen. Formel, Risikobänder, klinische Bedeutung und was bei erhöhten Werten zu tun ist.',
+    date: '2026-05-28',
+    readTime: '7 min',
+    calculatorKey: 'homaIr',
+    related: ['diabetes-risiko-berechnen', 'hba1c-umrechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
