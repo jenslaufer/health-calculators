@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "ldlFriedewald": {
+        "name": "LDL Cholesterol (Friedewald) Calculator",
+        "description": "Estimate LDL from total cholesterol, HDL and triglycerides via the Friedewald formula."
+      }
+    }
+  },
+  "ldlFriedewald": {
+    "meta": {
+      "title": "LDL Cholesterol Calculator (Friedewald) — Formula & ATP III Bands",
+      "description": "Calculate LDL cholesterol from total cholesterol, HDL and triglycerides using the Friedewald formula. ATP III classification (optimal to very high) and warning when TG ≥ 400 mg/dL. Free, instant, no sign-up."
+    },
+    "title": "LDL Cholesterol — Friedewald Calculator",
+    "description": "Estimate LDL cholesterol from total cholesterol, HDL and triglycerides using the Friedewald formula — with ATP III risk bands.",
+    "unitsLabel": "Units",
+    "unitMg": "mg/dL",
+    "unitMmol": "mmol/L",
+    "totalLabel": "Total cholesterol",
+    "hdlLabel": "HDL",
+    "trigLabel": "Triglycerides",
+    "totalPlaceholderMg": "e.g. 200",
+    "totalPlaceholderMmol": "e.g. 5.17",
+    "hdlPlaceholderMg": "e.g. 50",
+    "hdlPlaceholderMmol": "e.g. 1.30",
+    "trigPlaceholderMg": "e.g. 150",
+    "trigPlaceholderMmol": "e.g. 1.70",
+    "resultsLabel": "Result",
+    "ldlLabel": "Estimated LDL",
+    "ldlUnitMg": "mg/dL",
+    "ldlUnitMmol": "mmol/L",
+    "bandLabel": "ATP III band",
+    "warningInvalid": "Friedewald estimate is inaccurate when triglycerides ≥ 400 mg/dL (4.5 mmol/L). Request a direct LDL measurement.",
+    "formulaTitle": "Formula",
+    "formulaTextMg": "LDL = Total − HDL − Triglycerides / 5  (mg/dL)",
+    "formulaTextMmol": "LDL = Total − HDL − Triglycerides / 2.2  (mmol/L)",
+    "formulaWhy": "The Friedewald formula (1972) estimates LDL from total cholesterol, HDL and triglycerides. It is the most widely used method in routine lipid panels — as long as triglycerides remain below 400 mg/dL (4.5 mmol/L).",
+    "categoriesTitle": "ATP III risk bands (NCEP)",
+    "clinicalNote": "ATP III thresholds are defined in mg/dL. When you enter mmol/L, the calculator converts internally for the band classification. This estimate does not replace a clinician's assessment.",
+    "disclaimer": "This calculator is for information only. For elevated values — or triglycerides ≥ 400 mg/dL — ask your lab for a direct LDL measurement.",
+    "band": {
+      "optimal": "Optimal",
+      "nearOptimal": "Near optimal",
+      "borderline": "Borderline high",
+      "high": "High",
+      "veryHigh": "Very high"
+    },
+    "bandRange": {
+      "optimal": "< 100 mg/dL",
+      "nearOptimal": "100 – 129 mg/dL",
+      "borderline": "130 – 159 mg/dL",
+      "high": "160 – 189 mg/dL",
+      "veryHigh": "≥ 190 mg/dL"
+    },
+    "bandDescription": {
+      "optimal": "Goal per ATP III — cardiovascular risk is low.",
+      "nearOptimal": "Acceptable — keep lifestyle on track.",
+      "borderline": "Borderline elevated — lifestyle measures advised.",
+      "high": "High — clinical review recommended.",
+      "veryHigh": "Very high — therapy is usually warranted."
+    },
+    "faq": [
+      { "q": "What is the Friedewald formula?", "a": "Introduced by William T. Friedewald in 1972, this formula estimates LDL cholesterol from total cholesterol, HDL and triglycerides — without needing a direct LDL assay. The estimate is robust when triglycerides are below 400 mg/dL (4.5 mmol/L)." },
+      { "q": "When is the estimate unreliable?", "a": "Once triglycerides reach 400 mg/dL (4.5 mmol/L) Friedewald systematically underestimates LDL. In that case request a direct LDL measurement, or use the Sampson or Martin-Hopkins equations." },
+      { "q": "What LDL values are considered optimal?", "a": "Per NCEP ATP III, LDL below 100 mg/dL is optimal, 100–129 near optimal, 130–159 borderline high, 160–189 high, and 190 or above very high." },
+      { "q": "Do I need to fast?", "a": "Yes — triglycerides are strongly affected by recent meals. For a valid Friedewald estimate, fast for 9–12 hours before the blood draw." },
+      { "q": "What can I do about high LDL?", "a": "Lifestyle measures come first: a fibre-rich diet, fewer saturated and trans fats, regular exercise, and weight loss when needed. For LDL ≥ 190 mg/dL — or additional risk factors — pharmacotherapy (statins) may be indicated." },
+      { "q": "Why are ATP III bands defined in mg/dL?", "a": "The NCEP ATP III guideline comes from the US, where cholesterol is reported in mg/dL. Other regions use mmol/L — the calculator converts automatically for band classification (factor 38.67)." }
+    ]
+  }
+}

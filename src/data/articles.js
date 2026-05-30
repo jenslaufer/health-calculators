@@ -800,6 +800,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'homaIr',
     related: ['diabetes-risiko-berechnen', 'hba1c-umrechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'ldl-friedewald-berechnen',
+    title: 'LDL-Cholesterin (Friedewald) berechnen: Formel, Grenzen, Werte',
+    description: 'LDL-Cholesterin per Friedewald-Formel aus Gesamtcholesterin, HDL und Triglyceriden schätzen. ATP-III-Bänder, Grenzen ab 400 mg/dL und was bei erhöhtem LDL hilft.',
+    date: '2026-05-29',
+    readTime: '8 min',
+    calculatorKey: 'ldlFriedewald',
+    related: ['cholesterol-verhaeltnis-rechner', 'herz-kreislauf-risiko-berechnen', 'schlaganfall-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
