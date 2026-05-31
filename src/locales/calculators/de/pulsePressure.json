@@ -1,0 +1,63 @@
+{
+  "home": {
+    "calculators": {
+      "pulsePressure": {
+        "name": "Pulsdruck-Rechner",
+        "description": "Pulsdruck berechnen (PP = SBP − DBP) und klinische Einordnung prüfen — eng, normal oder weit."
+      }
+    }
+  },
+  "pulsePressure": {
+    "meta": {
+      "title": "Pulsdruck-Rechner — Eng, Normal, Weit (PP = SBP − DBP)",
+      "description": "Pulsdruck aus systolischem und diastolischem Blutdruck berechnen. Klinische Einordnung (eng < 40, normal 40–60, weit > 60 mmHg) mit Hinweisen auf Herzinsuffizienz und Gefäßsteifigkeit. Kostenlos und sofort."
+    },
+    "title": "Pulsdruck-Rechner",
+    "description": "Diastolischen vom systolischen Blutdruck abziehen — Pulsdruck plus klinische Einordnung (eng, normal, weit) und altersabhängiger Kontext.",
+    "inputsTitle": "Blutdruck (mmHg)",
+    "systolicLabel": "Systolisch (SBP)",
+    "diastolicLabel": "Diastolisch (DBP)",
+    "ageLabel": "Alter (Jahre, optional)",
+    "systolicPlaceholder": "z. B. 120",
+    "diastolicPlaceholder": "z. B. 80",
+    "agePlaceholder": "z. B. 55",
+    "unit": "mmHg",
+    "resultsLabel": "Ergebnis",
+    "ppLabel": "Pulsdruck",
+    "formulaTitle": "Formel",
+    "formulaText": "PP = SBP − DBP",
+    "formulaWhy": "Der Pulsdruck spiegelt das Schlagvolumen und die Steifigkeit der großen Arterien wider. Ein enger Wert kann auf reduziertes Herzzeitvolumen hinweisen (Herzinsuffizienz, Aortenstenose, Schock); ein weiter Wert auf arterielle Versteifung, Aorteninsuffizienz oder Hyperthyreose.",
+    "categoriesTitle": "Klinische Einordnung",
+    "clinicalNote": "Der Pulsdruck ist ein Signal — er ist immer im Kontext von Systole, Diastole, Herzfrequenz und Symptomatik zu interpretieren. Ein Einzelwert in Ruhe diagnostiziert keine Erkrankung.",
+    "disclaimer": "Dieser Rechner dient der Information und ersetzt keine ärztliche Bewertung. Bei dauerhaft auffälligen Werten außerhalb von 40–60 mmHg oder bei Symptomen ärztlich abklären.",
+    "ageContextTitle": "Altersabhängiger Kontext",
+    "ageContext": {
+      "young": "Unter 40 Jahren — der Pulsdruck liegt typischerweise im unteren Normalbereich (30–45 mmHg). Ein weiter PP ist in diesem Alter ungewöhnlich und sollte abgeklärt werden.",
+      "middle": "40–59 Jahre — leichte Zunahmen des PP durch beginnende arterielle Versteifung sind normal. Ein dauerhaftes PP > 60 mmHg verdient besondere Aufmerksamkeit für kardiovaskuläre Risikofaktoren.",
+      "older": "Ab 60 Jahren — der Pulsdruck steigt natürlicherweise mit der Gefäßsteifigkeit. PP > 60 mmHg ist in dieser Gruppe ein unabhängiger Marker für kardiovaskuläre Ereignisse."
+    },
+    "band": {
+      "narrow": "Eng",
+      "normal": "Normal",
+      "wide": "Weit"
+    },
+    "bandRange": {
+      "narrow": "< 40 mmHg",
+      "normal": "40 – 60 mmHg",
+      "wide": "> 60 mmHg"
+    },
+    "bandDescription": {
+      "narrow": "Enger Pulsdruck — möglicherweise reduziertes Schlagvolumen. An Herzinsuffizienz, schwere Aortenstenose, Perikardtamponade oder hypovolämischen Schock denken.",
+      "normal": "Normaler Pulsdruck — passend zu gesundem Schlagvolumen und arterieller Compliance.",
+      "wide": "Weiter Pulsdruck — Hinweis auf erhöhte arterielle Steifigkeit, Aorteninsuffizienz, schwere Anämie oder Hyperthyreose; bei älteren Erwachsenen unabhängiger kardiovaskulärer Risikomarker."
+    },
+    "faq": [
+      { "q": "Was ist der Pulsdruck?", "a": "Der Pulsdruck (PP) ist die Differenz zwischen systolischem und diastolischem Blutdruck: PP = SBP − DBP. Er spiegelt die Kraft pro Herzschlag und die Dehnbarkeit der großen Arterien wider." },
+      { "q": "Welcher Pulsdruck ist normal?", "a": "40 bis 60 mmHg in Ruhe gelten bei Erwachsenen als normal. Werte unter 40 sind eng, Werte über 60 sind weit." },
+      { "q": "Warum ist ein enger Pulsdruck relevant?", "a": "Ein enger PP (< 40 mmHg) kann auf ein reduziertes Schlagvolumen hindeuten — z. B. Herzinsuffizienz, Aortenstenose, Perikardtamponade oder Hypovolämie. Dauerhaft enger PP mit Symptomen erfordert kardiologische Abklärung." },
+      { "q": "Warum ist ein weiter Pulsdruck relevant?", "a": "Ein weiter PP (> 60 mmHg) spiegelt meist eine altersbedingte arterielle Versteifung wider, kann aber auch Aorteninsuffizienz, schwere Anämie oder Hyperthyreose anzeigen. Bei älteren Erwachsenen ist er ein unabhängiger kardiovaskulärer Risikomarker." },
+      { "q": "Wie beeinflusst das Alter den Pulsdruck?", "a": "Nach dem 50. Lebensjahr steigt der Pulsdruck oft, weil die großen Arterien an Elastizität verlieren. Ein PP von 50–60 bei einem 70-Jährigen ist deutlich weniger besorgniserregend als der gleiche Wert bei einem 25-Jährigen." },
+      { "q": "Ersetzt das eine klinische Bewertung?", "a": "Nein. Der Pulsdruck ist eine Zahl im größeren klinischen Bild aus SBP, DBP, Herzfrequenz, Symptomen und Vorgeschichte. Dieser Rechner eignet sich für Eigenmonitoring oder Wissensvermittlung, nicht zur Diagnose." }
+    ]
+  }
+}

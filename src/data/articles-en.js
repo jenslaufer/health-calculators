@@ -818,6 +818,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'ankleBrachialIndex',
     related: ['measure-blood-pressure', 'cardiovascular-risk-framingham', 'diabetes-risk-score'],
   },
+  {
+    slug: 'pulse-pressure-guide',
+    title: 'Pulse Pressure Calculator Guide: Formula, Normal Values, Narrow vs. Wide',
+    description: 'Calculate pulse pressure (SBP − DBP). Narrow < 40 (heart failure, aortic stenosis), normal 40–60, wide > 60 mmHg (arterial stiffness, aortic regurgitation) — with age context.',
+    date: '2026-05-31',
+    readTime: '7 min',
+    calculatorKey: 'pulsePressure',
+    related: ['measure-blood-pressure', 'mean-arterial-pressure-guide', 'cardiovascular-risk-framingham'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
