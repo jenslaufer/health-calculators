@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "ankleBrachialIndex": {
+        "name": "Ankle-Brachial Index (ABI) Calculator",
+        "description": "Calculate left, right and overall ABI from four cuff pressures. Screen for peripheral artery disease (PAD)."
+      }
+    }
+  },
+  "ankleBrachialIndex": {
+    "meta": {
+      "title": "Ankle-Brachial Index (ABI) Calculator — Screen for PAD",
+      "description": "Calculate the Ankle-Brachial Index from arm and ankle systolic blood pressures. Per-leg and overall ABI with ACC/AHA clinical bands (Normal, Borderline, Mild, Moderate, Severe, Non-Compressible). Free, instant, no sign-up."
+    },
+    "title": "Ankle-Brachial Index (ABI) Calculator",
+    "description": "Screen for peripheral artery disease (PAD) — enter four systolic cuff pressures and get per-leg and overall ABI with ACC/AHA classification.",
+    "inputsTitle": "Systolic blood pressures (mmHg)",
+    "armsLegend": "Arm pressures",
+    "anklesLegend": "Ankle pressures",
+    "leftArmLabel": "Left arm SBP",
+    "rightArmLabel": "Right arm SBP",
+    "leftAnkleLabel": "Left ankle SBP",
+    "rightAnkleLabel": "Right ankle SBP",
+    "leftArmPlaceholder": "e.g. 130",
+    "rightArmPlaceholder": "e.g. 135",
+    "leftAnklePlaceholder": "e.g. 140",
+    "rightAnklePlaceholder": "e.g. 138",
+    "unit": "mmHg",
+    "resultsLabel": "Result",
+    "overallLabel": "Overall ABI (lower side)",
+    "leftLabel": "Left leg ABI",
+    "rightLabel": "Right leg ABI",
+    "formulaTitle": "Formula",
+    "formulaText": "ABI(side) = ankle SBP(side) ÷ max(left arm SBP, right arm SBP). Overall ABI = lower of left and right.",
+    "formulaWhy": "Per ACC/AHA, the higher of the two brachial pressures is the denominator. The lower per-leg ABI defines the clinical category, since PAD often presents asymmetrically.",
+    "categoriesTitle": "ACC/AHA clinical bands",
+    "clinicalNote": "ABI is a screening test, not a diagnosis. Non-compressible values (> 1.4) are common in diabetes and chronic kidney disease — refer for toe-brachial index (TBI) when ABI is unreliable.",
+    "disclaimer": "This calculator is for information only. ABI should be measured by trained personnel using a Doppler probe. Abnormal results warrant vascular assessment.",
+    "band": {
+      "severe": "Severely Reduced",
+      "moderate": "Moderate",
+      "mild": "Mild",
+      "borderline": "Borderline",
+      "normal": "Normal",
+      "nonCompressible": "Non-Compressible"
+    },
+    "bandRange": {
+      "severe": "≤ 0.50",
+      "moderate": "0.50 – 0.79",
+      "mild": "0.80 – 0.89",
+      "borderline": "0.90 – 0.99",
+      "normal": "1.00 – 1.40",
+      "nonCompressible": "> 1.40"
+    },
+    "bandDescription": {
+      "severe": "Severe PAD — vascular referral indicated; critical limb ischemia risk.",
+      "moderate": "Moderate PAD — likely intermittent claudication; clinical assessment advised.",
+      "mild": "Mild PAD — early disease; address risk factors aggressively.",
+      "borderline": "Borderline — repeat measurement or refer for follow-up.",
+      "normal": "Normal — no evidence of PAD by ABI screening.",
+      "nonCompressible": "Non-compressible vessels (calcified) — ABI unreliable; consider toe-brachial index (TBI)."
+    },
+    "faq": [
+      { "q": "What is the Ankle-Brachial Index?", "a": "The ABI is the ratio of systolic blood pressure at the ankle to the higher arm SBP. It is the standard non-invasive screen for peripheral artery disease (PAD). An ABI ≤ 0.90 confirms PAD with high specificity." },
+      { "q": "How is ABI calculated?", "a": "Take four systolic pressures (left arm, right arm, left ankle, right ankle). For each leg, divide that ankle's pressure by the higher of the two arm pressures. The overall ABI is the lower of the two per-leg ratios." },
+      { "q": "What is a normal ABI?", "a": "1.00 to 1.40 is considered normal per ACC/AHA. 0.90–0.99 is borderline, 0.80–0.89 mild PAD, 0.50–0.79 moderate PAD, and ≤ 0.50 severe PAD." },
+      { "q": "Why can ABI be greater than 1.4?", "a": "Calcified, non-compressible arteries — common in diabetes and chronic kidney disease — resist cuff occlusion. ABI > 1.4 is unreliable; toe-brachial index (TBI) or duplex ultrasound is the next step." },
+      { "q": "Who should be screened with ABI?", "a": "Adults aged 65+, smokers aged 50+, people with diabetes, and anyone with symptoms of claudication (calf pain on walking that resolves with rest) or non-healing foot ulcers." },
+      { "q": "Does this replace a clinical ABI test?", "a": "No. A clinical ABI uses a Doppler probe with manual cuff inflation by a trained vascular technologist. This calculator computes the ratio once you have those measurements — useful for documentation, education or rough self-screening with a validated automated cuff." }
+    ]
+  }
+}

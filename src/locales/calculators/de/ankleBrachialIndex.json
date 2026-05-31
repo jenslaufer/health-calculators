@@ -1,0 +1,72 @@
+{
+  "home": {
+    "calculators": {
+      "ankleBrachialIndex": {
+        "name": "Knöchel-Arm-Index (ABI) Rechner",
+        "description": "Linker, rechter und Gesamt-ABI aus vier Manschettendrücken berechnen. Screening auf periphere arterielle Verschlusskrankheit (pAVK)."
+      }
+    }
+  },
+  "ankleBrachialIndex": {
+    "meta": {
+      "title": "Knöchel-Arm-Index (ABI) berechnen — pAVK-Screening",
+      "description": "Knöchel-Arm-Index aus systolischen Blutdrücken an Arm und Knöchel berechnen. Seitengetrennter und Gesamt-ABI mit ACC/AHA-Klassifikation (Normal, Grenzwertig, Leicht, Mittel, Schwer, Nicht-Komprimierbar). Kostenlos und sofort."
+    },
+    "title": "Knöchel-Arm-Index (ABI) Rechner",
+    "description": "Screening auf periphere arterielle Verschlusskrankheit (pAVK) — vier systolische Manschettendrücke eingeben und seitengetrennten sowie Gesamt-ABI nach ACC/AHA erhalten.",
+    "inputsTitle": "Systolische Blutdrücke (mmHg)",
+    "armsLegend": "Arm-Drücke",
+    "anklesLegend": "Knöchel-Drücke",
+    "leftArmLabel": "Linker Arm SBP",
+    "rightArmLabel": "Rechter Arm SBP",
+    "leftAnkleLabel": "Linker Knöchel SBP",
+    "rightAnkleLabel": "Rechter Knöchel SBP",
+    "leftArmPlaceholder": "z. B. 130",
+    "rightArmPlaceholder": "z. B. 135",
+    "leftAnklePlaceholder": "z. B. 140",
+    "rightAnklePlaceholder": "z. B. 138",
+    "unit": "mmHg",
+    "resultsLabel": "Ergebnis",
+    "overallLabel": "Gesamt-ABI (niedrigere Seite)",
+    "leftLabel": "ABI linkes Bein",
+    "rightLabel": "ABI rechtes Bein",
+    "formulaTitle": "Formel",
+    "formulaText": "ABI(Seite) = Knöchel-SBP(Seite) ÷ max(linker Arm-SBP, rechter Arm-SBP). Gesamt-ABI = niedrigerer Wert von links und rechts.",
+    "formulaWhy": "Nach ACC/AHA wird der höhere der beiden Arm-Drücke als Nenner verwendet. Der niedrigere seitige ABI bestimmt die klinische Einordnung, da pAVK oft asymmetrisch auftritt.",
+    "categoriesTitle": "ACC/AHA-Klassifikation",
+    "clinicalNote": "Der ABI ist ein Screening, keine Diagnose. Werte > 1,4 (nicht komprimierbar) sind bei Diabetes und chronischer Niereninsuffizienz häufig — bei unzuverlässigem ABI ist der Zehen-Arm-Index (TBI) indiziert.",
+    "disclaimer": "Dieser Rechner dient der Information. Der ABI sollte von geschultem Personal mit Doppler-Sonde gemessen werden. Auffällige Werte erfordern eine gefäßmedizinische Abklärung.",
+    "band": {
+      "severe": "Schwer reduziert",
+      "moderate": "Mittel",
+      "mild": "Leicht",
+      "borderline": "Grenzwertig",
+      "normal": "Normal",
+      "nonCompressible": "Nicht komprimierbar"
+    },
+    "bandRange": {
+      "severe": "≤ 0,50",
+      "moderate": "0,50 – 0,79",
+      "mild": "0,80 – 0,89",
+      "borderline": "0,90 – 0,99",
+      "normal": "1,00 – 1,40",
+      "nonCompressible": "> 1,40"
+    },
+    "bandDescription": {
+      "severe": "Schwere pAVK — gefäßmedizinische Vorstellung; Risiko einer kritischen Extremitätenischämie.",
+      "moderate": "Mittelschwere pAVK — meist Claudicatio intermittens; klinische Abklärung empfohlen.",
+      "mild": "Leichte pAVK — frühes Stadium; Risikofaktoren konsequent behandeln.",
+      "borderline": "Grenzwertig — Messung wiederholen oder Verlaufskontrolle.",
+      "normal": "Normalwert — kein Hinweis auf pAVK im ABI-Screening.",
+      "nonCompressible": "Nicht komprimierbare Gefäße (Mediasklerose) — ABI unzuverlässig; Zehen-Arm-Index (TBI) erwägen."
+    },
+    "faq": [
+      { "q": "Was ist der Knöchel-Arm-Index?", "a": "Der ABI ist das Verhältnis des systolischen Blutdrucks am Knöchel zum höheren Arm-SBP. Er ist der nicht-invasive Standard zur Erkennung einer peripheren arteriellen Verschlusskrankheit (pAVK). Ein ABI ≤ 0,90 bestätigt eine pAVK mit hoher Spezifität." },
+      { "q": "Wie wird der ABI berechnet?", "a": "Vier systolische Drücke messen (linker Arm, rechter Arm, linker Knöchel, rechter Knöchel). Pro Bein wird der Knöchel-Druck durch den höheren der beiden Arm-Drücke geteilt. Der Gesamt-ABI ist der niedrigere der beiden seitigen Werte." },
+      { "q": "Welcher ABI-Wert ist normal?", "a": "1,00 bis 1,40 gilt nach ACC/AHA als normal. 0,90–0,99 ist grenzwertig, 0,80–0,89 leichte pAVK, 0,50–0,79 mittelschwere pAVK, ≤ 0,50 schwere pAVK." },
+      { "q": "Warum kann der ABI über 1,4 liegen?", "a": "Verkalkte, nicht komprimierbare Arterien — typisch bei Diabetes und chronischer Niereninsuffizienz (Mönckeberg-Mediasklerose) — lassen sich nicht abdrücken. ABI > 1,4 ist unzuverlässig; nächster Schritt sind Zehen-Arm-Index (TBI) oder Duplex-Sonografie." },
+      { "q": "Wer sollte mit ABI gescreent werden?", "a": "Erwachsene ab 65 Jahren, Raucher ab 50, Menschen mit Diabetes sowie alle mit Claudicatio-Symptomen (Wadenschmerz beim Gehen, der in Ruhe abklingt) oder nicht heilenden Fußwunden." },
+      { "q": "Ersetzt das eine klinische ABI-Messung?", "a": "Nein. Eine klinische ABI-Bestimmung erfolgt mit Doppler-Sonde durch geschultes Personal. Dieser Rechner berechnet das Verhältnis, sobald die Werte vorliegen — geeignet zur Dokumentation, Ausbildung oder als grobes Selbst-Screening mit validierten Automatik-Manschetten." }
+    ]
+  }
+}

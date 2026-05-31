@@ -809,6 +809,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'ldlFriedewald',
     related: ['cholesterol-ratio', 'cardiovascular-risk-framingham', 'stroke-risk-calculator-cha2ds2-vasc'],
   },
+  {
+    slug: 'ankle-brachial-index-guide',
+    title: 'Ankle-Brachial Index (ABI) Calculator Guide: Formula, Values, PAD Screening',
+    description: 'Calculate the ABI from four systolic blood pressures. ACC/AHA bands from normal to severe PAD, the calcified-vessel pitfall at ABI > 1.4 and what helps abnormal values.',
+    date: '2026-05-30',
+    readTime: '8 min',
+    calculatorKey: 'ankleBrachialIndex',
+    related: ['measure-blood-pressure', 'cardiovascular-risk-framingham', 'diabetes-risk-score'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
