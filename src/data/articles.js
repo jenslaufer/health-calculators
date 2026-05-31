@@ -809,6 +809,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'ldlFriedewald',
     related: ['cholesterol-verhaeltnis-rechner', 'herz-kreislauf-risiko-berechnen', 'schlaganfall-risiko-berechnen'],
   },
+  {
+    slug: 'knoechel-arm-index-berechnen',
+    title: 'Knöchel-Arm-Index (ABI) berechnen: Formel, Werte, pAVK-Screening',
+    description: 'ABI per Formel aus vier systolischen Blutdrücken berechnen. ACC/AHA-Bänder von normal bis schwerer pAVK, Mediasklerose-Falle ab 1,4 und was bei auffälligem Wert hilft.',
+    date: '2026-05-30',
+    readTime: '8 min',
+    calculatorKey: 'ankleBrachialIndex',
+    related: ['blutdruck-richtig-messen', 'herz-kreislauf-risiko-berechnen', 'diabetes-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
