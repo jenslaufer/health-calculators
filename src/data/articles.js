@@ -818,6 +818,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'ankleBrachialIndex',
     related: ['blutdruck-richtig-messen', 'herz-kreislauf-risiko-berechnen', 'diabetes-risiko-berechnen'],
   },
+  {
+    slug: 'pulsdruck-berechnen',
+    title: 'Pulsdruck berechnen: Formel, Normalwerte, Eng vs. Weit',
+    description: 'Pulsdruck (SBP − DBP) berechnen und einordnen. Eng < 40 (Herzinsuffizienz, Aortenstenose), normal 40–60, weit > 60 mmHg (Gefäßsteifigkeit, Aorteninsuffizienz) — plus Alterskontext.',
+    date: '2026-05-31',
+    readTime: '7 min',
+    calculatorKey: 'pulsePressure',
+    related: ['blutdruck-richtig-messen', 'mittlerer-arterieller-druck-berechnen', 'herz-kreislauf-risiko-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

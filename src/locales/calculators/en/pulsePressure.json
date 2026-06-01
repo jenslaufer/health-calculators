@@ -1,0 +1,63 @@
+{
+  "home": {
+    "calculators": {
+      "pulsePressure": {
+        "name": "Pulse Pressure Calculator",
+        "description": "Calculate pulse pressure (PP = SBP − DBP) and check the clinical band — narrow, normal or wide."
+      }
+    }
+  },
+  "pulsePressure": {
+    "meta": {
+      "title": "Pulse Pressure Calculator — Narrow, Normal, Wide (PP = SBP − DBP)",
+      "description": "Calculate pulse pressure from systolic and diastolic blood pressure. Get the clinical band (narrow < 40, normal 40–60, wide > 60 mmHg) with heart-failure and arterial-stiffness flags. Free, instant, no sign-up."
+    },
+    "title": "Pulse Pressure Calculator",
+    "description": "Subtract diastolic from systolic blood pressure — get the pulse pressure plus clinical interpretation (narrow, normal, wide) and an age context note.",
+    "inputsTitle": "Blood pressure (mmHg)",
+    "systolicLabel": "Systolic (SBP)",
+    "diastolicLabel": "Diastolic (DBP)",
+    "ageLabel": "Age (years, optional)",
+    "systolicPlaceholder": "e.g. 120",
+    "diastolicPlaceholder": "e.g. 80",
+    "agePlaceholder": "e.g. 55",
+    "unit": "mmHg",
+    "resultsLabel": "Result",
+    "ppLabel": "Pulse pressure",
+    "formulaTitle": "Formula",
+    "formulaText": "PP = SBP − DBP",
+    "formulaWhy": "Pulse pressure reflects stroke volume and large-artery stiffness. A narrow value can signal low cardiac output (heart failure, aortic stenosis, shock); a wide value flags arterial stiffening, aortic regurgitation or hyperthyroidism.",
+    "categoriesTitle": "Clinical bands",
+    "clinicalNote": "Pulse pressure is one signal — interpret with systolic, diastolic, heart rate, and clinical context. A single resting value does not diagnose disease.",
+    "disclaimer": "This calculator is for information only. It does not replace medical assessment. If your pulse pressure is consistently outside 40–60 mmHg or symptomatic, consult a clinician.",
+    "ageContextTitle": "Age context",
+    "ageContext": {
+      "young": "Under 40 years — pulse pressure typically sits in the lower half of the normal range (30–45 mmHg). A wide PP at this age is unusual and warrants follow-up.",
+      "middle": "40–59 years — small increases in PP are common as large arteries stiffen. Persistent PP > 60 mmHg deserves attention to cardiovascular risk factors.",
+      "older": "60 years and older — pulse pressure naturally rises with arterial stiffness. PP > 60 mmHg is an independent marker for cardiovascular events in this group."
+    },
+    "band": {
+      "narrow": "Narrow",
+      "normal": "Normal",
+      "wide": "Wide"
+    },
+    "bandRange": {
+      "narrow": "< 40 mmHg",
+      "normal": "40 – 60 mmHg",
+      "wide": "> 60 mmHg"
+    },
+    "bandDescription": {
+      "narrow": "Narrow pulse pressure — possible reduced stroke volume. Consider heart failure, severe aortic stenosis, cardiac tamponade or hypovolemic shock.",
+      "normal": "Normal pulse pressure — consistent with healthy stroke volume and arterial compliance.",
+      "wide": "Wide pulse pressure — flags increased large-artery stiffness, aortic regurgitation, severe anemia or hyperthyroidism; independent cardiovascular risk marker in older adults."
+    },
+    "faq": [
+      { "q": "What is pulse pressure?", "a": "Pulse pressure (PP) is the difference between systolic and diastolic blood pressure: PP = SBP − DBP. It reflects the force the heart generates with each contraction and the compliance of the large arteries." },
+      { "q": "What is a normal pulse pressure?", "a": "40 to 60 mmHg at rest is generally considered normal in adults. Values below 40 are narrow; values above 60 are wide." },
+      { "q": "Why does a narrow pulse pressure matter?", "a": "A narrow PP (< 40 mmHg) can indicate reduced stroke volume — e.g. heart failure, aortic stenosis, cardiac tamponade, or hypovolemia. Persistent narrow PP with symptoms warrants cardiac evaluation." },
+      { "q": "Why does a wide pulse pressure matter?", "a": "Wide PP (> 60 mmHg) usually reflects arterial stiffening with age but can also indicate aortic regurgitation, severe anemia or hyperthyroidism. In older adults a wide PP is an independent cardiovascular risk marker." },
+      { "q": "How does age affect pulse pressure?", "a": "Pulse pressure tends to rise after age 50 as large arteries lose elasticity. A PP of 50–60 in a 70-year-old is far less concerning than the same value in a 25-year-old." },
+      { "q": "Does this replace a clinical assessment?", "a": "No. Pulse pressure is one number in a wider clinical picture that includes SBP, DBP, heart rate, symptoms and history. Use this calculator for self-tracking or education, not diagnosis." }
+    ]
+  }
+}
