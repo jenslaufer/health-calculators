@@ -827,6 +827,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'pulsePressure',
     related: ['measure-blood-pressure', 'mean-arterial-pressure-guide', 'cardiovascular-risk-framingham'],
   },
+  {
+    slug: 'wilks-coefficient-guide',
+    title: 'Wilks Coefficient Calculator Guide: IPF 2020 Formula, Strength Bands',
+    description: 'Calculate your Wilks score from powerlifting total, bodyweight and sex with the IPF 2020 polynomial. Five strength bands, Wilks 1994 vs 2020, Wilks vs DOTS vs GL points.',
+    date: '2026-06-07',
+    readTime: '8 min',
+    calculatorKey: 'wilksCoefficient',
+    related: ['calculate-one-rep-max', 'calculate-lean-body-mass', 'calculate-bmi'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
