@@ -210,6 +210,8 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'ldl-friedewald-berechnen',
   'knoechel-arm-index-berechnen',
   'pulsdruck-berechnen',
+  'bmi-frauen-berechnen',
+  'bmi-maenner-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -293,6 +295,8 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'ldl-cholesterol-friedewald-guide',
   'ankle-brachial-index-guide',
   'pulse-pressure-guide',
+  'calculate-bmi-female',
+  'calculate-bmi-male',
 ]
 
 describe('calculator discovery', () => {
@@ -328,15 +332,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 92 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(92)
+  it('discovers all 94 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(94)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 92 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(92)
+  it('discovers all 94 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(94)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -434,8 +438,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 500 routes', () => {
-    expect(routes).toHaveLength(500)
+  it('generates exactly 506 routes', () => {
+    expect(routes).toHaveLength(506)
   })
 
   it('has locale routes for all calculators in both languages', () => {

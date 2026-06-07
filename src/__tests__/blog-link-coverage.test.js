@@ -10,9 +10,19 @@ const metaFiles = fs.readdirSync(pagesDir).filter((f) => f.endsWith('.meta.js'))
 describe('blog article coverage', () => {
   for (const f of metaFiles) {
     const src = fs.readFileSync(path.join(pagesDir, f), 'utf8')
-    if (!/\bblog\s*:\s*\{/.test(src)) continue
     const keyMatch = src.match(/key\s*:\s*['"]([^'"]+)['"]/)
     const calculatorKey = keyMatch && keyMatch[1]
+    const hasBlogBlock = /\bblog\s*:\s*\{/.test(src)
+    const hasComponent = /import Component from/.test(src)
+
+    if (!hasComponent) continue
+
+    it(`${calculatorKey}: has blog block in meta.js`, () => {
+      expect(hasBlogBlock, `${f} has a component but no blog block — add a blog: {} entry`).toBe(true)
+    })
+
+    if (!hasBlogBlock) continue
+
     it(`${calculatorKey}: has DE article in articles.js`, () => {
       expect(articles.find((a) => a.calculatorKey === calculatorKey)).toBeTruthy()
     })
