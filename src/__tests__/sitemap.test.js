@@ -109,6 +109,8 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'ldl-friedewald-berechnen',
   'knoechel-arm-index-berechnen',
   'pulsdruck-berechnen',
+  'bmi-frauen-berechnen',
+  'bmi-maenner-berechnen',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -191,6 +193,8 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'ldl-cholesterol-friedewald-guide',
   'ankle-brachial-index-guide',
   'pulse-pressure-guide',
+  'calculate-bmi-female',
+  'calculate-bmi-male',
 ]
 
 describe('discoverMetas', () => {
@@ -234,19 +238,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 92 DE blog slugs', () => {
+  it('returns all 94 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(92)
+    expect(de).toHaveLength(94)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 92 EN blog slugs', () => {
+  it('returns all 94 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(92)
+    expect(en).toHaveLength(94)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -314,9 +318,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 182 calcs + 2 blog index + 184 blog articles = 370)', () => {
+  it('generates correct total URL count (2 home + 182 calcs + 2 blog index + 188 blog articles = 374)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(370)
+    expect(urlCount).toBe(374)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
