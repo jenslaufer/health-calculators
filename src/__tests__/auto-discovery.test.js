@@ -213,6 +213,8 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'knoechel-arm-index-berechnen',
   'pulsdruck-berechnen',
   'wilks-koeffizient-berechnen',
+  'bmi-bei-frauen',
+  'bmi-bei-maennern',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -297,6 +299,8 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'ankle-brachial-index-guide',
   'pulse-pressure-guide',
   'wilks-coefficient-guide',
+  'bmi-for-women',
+  'bmi-for-men',
 ]
 
 describe('calculator discovery', () => {
@@ -332,15 +336,15 @@ describe('calculator discovery', () => {
 })
 
 describe('blog component discovery', () => {
-  it('discovers all 93 German blog components', () => {
-    expect(Object.keys(blogComponentsDe)).toHaveLength(93)
+  it('discovers all 95 German blog components', () => {
+    expect(Object.keys(blogComponentsDe)).toHaveLength(95)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(blogComponentsDe[slug]).toBeDefined()
     }
   })
 
-  it('discovers all 93 English blog components', () => {
-    expect(Object.keys(blogComponentsEn)).toHaveLength(93)
+  it('discovers all 95 English blog components', () => {
+    expect(Object.keys(blogComponentsEn)).toHaveLength(95)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(blogComponentsEn[slug]).toBeDefined()
     }
@@ -438,8 +442,8 @@ describe('i18n completeness', () => {
 })
 
 describe('SSG routes', () => {
-  it('generates exactly 505 routes', () => {
-    expect(routes).toHaveLength(505)
+  it('generates exactly 511 routes', () => {
+    expect(routes).toHaveLength(511)
   })
 
   it('has locale routes for all calculators in both languages', () => {

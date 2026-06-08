@@ -836,6 +836,24 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'wilksCoefficient',
     related: ['one-rep-max-berechnen', 'magermasse-berechnen', 'bmi-berechnen'],
   },
+  {
+    slug: 'bmi-bei-frauen',
+    title: 'BMI bei Frauen: Wie aussagekräftig ist der Body Mass Index?',
+    description: 'BMI bei Frauen verstehen: Körperfettverteilung, Hormonphasen, Wechseljahre und warum der BMI nicht nach Geschlecht unterscheidet. Mit Rechenbeispiel.',
+    date: '2026-06-08',
+    readTime: '8 min',
+    calculatorKey: 'bmiFrauen',
+    related: ['bmi-berechnen', 'idealgewicht-berechnen', 'koerperfett-berechnen'],
+  },
+  {
+    slug: 'bmi-bei-maennern',
+    title: 'BMI bei Männern: Muskelmasse, Bauchfett und die Grenzen des Index',
+    description: 'BMI bei Männern verstehen: warum Muskelmasse den Wert aufbläht, weshalb Bauchfett zählt, BMI-Grenzen für Sportler und der Taillenumfang als Ergänzung. Mit Rechenbeispiel.',
+    date: '2026-06-08',
+    readTime: '8 min',
+    calculatorKey: 'bmiMaenner',
+    related: ['bmi-berechnen', 'koerperfett-berechnen', 'idealgewicht-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

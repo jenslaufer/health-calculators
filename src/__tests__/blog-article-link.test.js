@@ -46,7 +46,7 @@ describe('BlogArticleLink', () => {
     router.push('/de/')
     await router.isReady()
     const wrapper = mount(BlogArticleLink, {
-      props: { calculatorKey: 'bmiFrauen' },
+      props: { calculatorKey: '__no_such_calculator__' },
       global: { plugins: [i18n, router] },
     })
     expect(wrapper.find('a').exists()).toBe(false)

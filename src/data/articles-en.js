@@ -836,6 +836,24 @@ slug: 'calculate-vo2max',
     calculatorKey: 'wilksCoefficient',
     related: ['calculate-one-rep-max', 'calculate-lean-body-mass', 'calculate-bmi'],
   },
+  {
+    slug: 'bmi-for-women',
+    title: 'BMI for Women: How Meaningful Is the Body Mass Index?',
+    description: 'Understand BMI for women: body-fat distribution vs men, hormonal phases, menopause weight shift, the pregnancy caveat and realistic healthy ranges. With a worked example.',
+    date: '2026-06-08',
+    readTime: '8 min',
+    calculatorKey: 'bmiFrauen',
+    related: ['calculate-bmi', 'calculate-ideal-weight', 'calculate-body-fat'],
+  },
+  {
+    slug: 'bmi-for-men',
+    title: 'BMI for Men: Muscle Mass, Belly Fat and the Limits of the Index',
+    description: 'Understand BMI for men: why muscle mass inflates it, why belly fat drives risk, BMI limits for athletes and waist circumference as a complement. With a worked example.',
+    date: '2026-06-08',
+    readTime: '8 min',
+    calculatorKey: 'bmiMaenner',
+    related: ['calculate-bmi', 'calculate-body-fat', 'calculate-ideal-weight'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -111,6 +111,8 @@ const EXPECTED_BLOG_SLUGS_DE = [
   'knoechel-arm-index-berechnen',
   'pulsdruck-berechnen',
   'wilks-koeffizient-berechnen',
+  'bmi-bei-frauen',
+  'bmi-bei-maennern',
 ]
 
 const EXPECTED_BLOG_SLUGS_EN = [
@@ -194,6 +196,8 @@ const EXPECTED_BLOG_SLUGS_EN = [
   'ankle-brachial-index-guide',
   'pulse-pressure-guide',
   'wilks-coefficient-guide',
+  'bmi-for-women',
+  'bmi-for-men',
 ]
 
 describe('discoverMetas', () => {
@@ -237,19 +241,19 @@ describe('discoverMetas', () => {
 })
 
 describe('discoverBlogSlugs', () => {
-  it('returns all 94 DE blog slugs', () => {
+  it('returns all 95 DE blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { de } = discoverBlogSlugs(metas)
-    expect(de).toHaveLength(93)
+    expect(de).toHaveLength(95)
     for (const slug of EXPECTED_BLOG_SLUGS_DE) {
       expect(de, `missing de blog slug: ${slug}`).toContain(slug)
     }
   })
 
-  it('returns all 94 EN blog slugs', () => {
+  it('returns all 95 EN blog slugs', () => {
     const metas = discoverMetas(META_DIR)
     const { en } = discoverBlogSlugs(metas)
-    expect(en).toHaveLength(93)
+    expect(en).toHaveLength(95)
     for (const slug of EXPECTED_BLOG_SLUGS_EN) {
       expect(en, `missing en blog slug: ${slug}`).toContain(slug)
     }
@@ -317,9 +321,9 @@ describe('generateSitemap', () => {
     expect(xml).toContain(`hreflang="en" href="${BASE_URL}/en/"`)
   })
 
-  it('generates correct total URL count (2 home + 184 calcs + 2 blog index + 186 blog articles = 374)', () => {
+  it('generates correct total URL count (2 home + 184 calcs + 2 blog index + 190 blog articles = 378)', () => {
     const urlCount = (xml.match(/<url>/g) || []).length
-    expect(urlCount).toBe(374)
+    expect(urlCount).toBe(378)
   })
 
   it('every <loc> URL ends with a trailing slash', () => {
