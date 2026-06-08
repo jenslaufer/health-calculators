@@ -1,0 +1,65 @@
+{
+  "home": {
+    "calculators": {
+      "wilksCoefficient": {
+        "name": "Wilks-Koeffizient Rechner",
+        "description": "Powerlifting-Total in einen Wilks-Score (IPF 2020) umrechnen und mit fünf Stärke-Bändern vergleichen — für jedes Körpergewicht und Geschlecht."
+      }
+    }
+  },
+  "wilksCoefficient": {
+    "meta": {
+      "title": "Wilks-Koeffizient berechnen (IPF 2020) — Powerlifting-Score",
+      "description": "Wilks-Score aus Kniebeuge-Bankdrücken-Kreuzheben-Total, Körpergewicht und Geschlecht nach IPF 2020 berechnen. Bänder: Untrainiert, Anfänger, Fortgeschritten, Erfahren, Elite. Metrisch und imperial."
+    },
+    "title": "Wilks-Koeffizient Rechner",
+    "description": "Powerlifting-Totals fair vergleichen — über Körpergewicht und Geschlecht hinweg. IPF 2020-Polynom mit fünf Stärke-Bändern.",
+    "inputsTitle": "Deine Daten",
+    "bodyweightLabel": "Körpergewicht",
+    "totalLabel": "Total (Kniebeuge + Bankdrücken + Kreuzheben)",
+    "bodyweightPlaceholder": "z. B. 83",
+    "totalPlaceholder": "z. B. 500",
+    "sexLabel": "Geschlecht",
+    "sexMale": "Männlich",
+    "sexFemale": "Weiblich",
+    "unitLabel": "Einheit",
+    "unitKg": "Metrisch (kg)",
+    "unitLb": "Imperial (lb)",
+    "resultsLabel": "Wilks-Score",
+    "bandLabel": "Stärke-Band",
+    "formulaTitle": "Formel",
+    "formulaText": "Score = 600 × Total ÷ (A + B·KG + C·KG² + D·KG³ + E·KG⁴) — IPF 2020-Polynom, getrennte Koeffizienten für Männer und Frauen.",
+    "formulaWhy": "Das Wilks-Polynom gewichtet schwerere Heber niedriger, damit Totals über Gewichtsklassen vergleichbar werden. Das IPF 2020-Update passt die Koeffizienten an aktuelle Weltrekord-Daten an.",
+    "categoriesTitle": "Stärke-Bänder",
+    "disclaimer": "Wilks ist eine Vergleichsmetrik für Wettkampf-Lifts. Sie sagt nichts über Trainingsalter, Technik oder sportspezifische Kraft. Für gesundheitliche Einordnung siehe die Körperzusammensetzungs-Rechner.",
+    "band": {
+      "untrained": "Untrainiert",
+      "novice": "Anfänger",
+      "intermediate": "Fortgeschritten",
+      "advanced": "Erfahren",
+      "elite": "Elite"
+    },
+    "bandRange": {
+      "untrained": "< 100",
+      "novice": "100 – 199",
+      "intermediate": "200 – 299",
+      "advanced": "300 – 399",
+      "elite": "≥ 400"
+    },
+    "bandDescription": {
+      "untrained": "Unter Anfängerniveau — Fokus auf konstantes Training, Technik und progressive Überlastung.",
+      "novice": "Erste 1–2 Jahre strukturiertes Training. Newbie-Gains treiben den Großteil des Fortschritts.",
+      "intermediate": "Mehrere Jahre Training. Programmgestaltung wird wichtiger; lineare Progression stockt.",
+      "advanced": "Auf Landesmeisterschaftsniveau. Spezialisierung und Regeneration sind entscheidend.",
+      "elite": "National und international stark. Mini-Gains brauchen Periodisierung, Peak-Wochen und perfekte Ausführung."
+    },
+    "faq": [
+      { "q": "Was ist der Wilks-Koeffizient?", "a": "Der Wilks-Koeffizient ist ein Multiplikator auf das Powerlifting-Total (Kniebeuge + Bankdrücken + Kreuzheben), der Athleten unterschiedlicher Körpergewichte und Geschlechter vergleichbar macht. Der entstehende Wilks-Score entscheidet im Wettkampf gewichtsklassenübergreifend über die Platzierung." },
+      { "q": "Was ist Wilks 2020 (IPF) versus klassischer Wilks?", "a": "Der originale Wilks (1994) wurde 2020 mit aktuellen Weltrekorden neu angepasst. Die IPF nutzt seitdem die neuen Koeffizienten, die schwerere Heber etwas stärker belohnen. Dieser Rechner verwendet das IPF 2020-Polynom." },
+      { "q": "Wie wird der Wilks-Score berechnet?", "a": "Score = Total_kg × 600 / (A + B·KG + C·KG² + D·KG³ + E·KG⁴). Die Konstanten A–E unterscheiden sich für Männer und Frauen. Das Polynom wird beim Körpergewicht in kg ausgewertet und dann mit dem Total multipliziert." },
+      { "q": "Was ist ein guter Wilks-Score?", "a": "Übliche Bänder: < 100 untrainiert, 100–199 Anfänger, 200–299 fortgeschritten, 300–399 erfahren, ≥ 400 Elite. Wettkampfheber auf Landesniveau erreichen 350–450; Weltklasse-Männer 500+. Die Bänder gelten für beide Geschlechter, da Wilks bereits korrigiert." },
+      { "q": "Kann ich Pfund (lb) statt Kilogramm eingeben?", "a": "Ja. Mit dem Einheiten-Schalter auf Imperial (lb) wechseln. Der Rechner rechnet intern mit 1 lb = 0,45359237 kg um und wertet dann das IPF 2020-Polynom aus. Der Wilks-Score ist identisch." },
+      { "q": "Wilks, DOTS oder GL-Points?", "a": "Alle drei normalisieren über das Körpergewicht. Wilks 2020 ist das aktuelle offizielle Scoring der IPF für raw classic. DOTS und GL-Points sind Alternativen in anderen Verbänden. Für die meisten Heber ändert sich die Reihenfolge nur geringfügig." }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "home": {
+    "calculators": {
+      "wilksCoefficient": {
+        "name": "Wilks Coefficient Calculator",
+        "description": "Convert your powerlifting total to a Wilks score (IPF 2020) and benchmark against five strength bands — for any bodyweight and sex."
+      }
+    }
+  },
+  "wilksCoefficient": {
+    "meta": {
+      "title": "Wilks Coefficient Calculator (IPF 2020) — Powerlifting Strength Score",
+      "description": "Calculate your Wilks score from squat-bench-deadlift total, bodyweight and sex with the IPF 2020 coefficients. Bands: Untrained, Novice, Intermediate, Advanced, Elite. Metric and imperial."
+    },
+    "title": "Wilks Coefficient Calculator",
+    "description": "Compare powerlifting totals fairly — across bodyweight and sex. IPF 2020 polynomial with five strength bands.",
+    "inputsTitle": "Your stats",
+    "bodyweightLabel": "Bodyweight",
+    "totalLabel": "Total lifted (squat + bench + deadlift)",
+    "bodyweightPlaceholder": "e.g. 83",
+    "totalPlaceholder": "e.g. 500",
+    "sexLabel": "Sex",
+    "sexMale": "Male",
+    "sexFemale": "Female",
+    "unitLabel": "Units",
+    "unitKg": "Metric (kg)",
+    "unitLb": "Imperial (lb)",
+    "resultsLabel": "Wilks score",
+    "bandLabel": "Strength band",
+    "formulaTitle": "Formula",
+    "formulaText": "Score = 600 × total ÷ (A + B·bw + C·bw² + D·bw³ + E·bw⁴) — IPF 2020 polynomial, separate male and female coefficients.",
+    "formulaWhy": "The Wilks polynomial down-weights heavier lifters so totals can be compared across weight classes. The IPF 2020 update refit the coefficients to current world-record data.",
+    "categoriesTitle": "Strength bands",
+    "disclaimer": "Wilks is a comparison metric for competition lifts. It does not reflect training age, technique, or sport-specific strength. For health screening, see the related body-composition calculators.",
+    "band": {
+      "untrained": "Untrained",
+      "novice": "Novice",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "elite": "Elite"
+    },
+    "bandRange": {
+      "untrained": "< 100",
+      "novice": "100 – 199",
+      "intermediate": "200 – 299",
+      "advanced": "300 – 399",
+      "elite": "≥ 400"
+    },
+    "bandDescription": {
+      "untrained": "Below novice — focus on consistent training, technique and progressive overload.",
+      "novice": "First 1–2 years of structured lifting. Newbie gains drive most of the progress.",
+      "intermediate": "Several years of training. Programming matters more; linear progression stalls.",
+      "advanced": "Approaching regional-level competitive numbers. Specialization and recovery are critical.",
+      "elite": "National and world-class. Tiny gains require periodization, peak weeks and impeccable execution."
+    },
+    "faq": [
+      { "q": "What is the Wilks coefficient?", "a": "The Wilks coefficient is a multiplier applied to a powerlifter's squat-bench-deadlift total to compare lifters of different bodyweights and sex. The resulting Wilks score is what places lifters across weight classes in a meet." },
+      { "q": "What is Wilks 2020 (IPF) versus the original Wilks?", "a": "The original Wilks (1994) was refit in 2020 using current world records. The IPF adopted the new coefficients to better reward heavier lifters, who were previously slightly under-rewarded. This calculator uses the IPF 2020 polynomial." },
+      { "q": "How is the Wilks score calculated?", "a": "Score = total_kg × 600 / (A + B·bw + C·bw² + D·bw³ + E·bw⁴). The constants A–E differ between male and female lifters. The polynomial is evaluated at the lifter's bodyweight in kg, then multiplied by the total." },
+      { "q": "What is a good Wilks score?", "a": "Common bands: < 100 untrained, 100–199 novice, 200–299 intermediate, 300–399 advanced, ≥ 400 elite. Competitive powerlifters at national level usually score 350–450; world-class men hit 500+. Bands apply to both sexes since Wilks already adjusts for sex." },
+      { "q": "Can I enter pounds instead of kilograms?", "a": "Yes. Switch the units toggle to imperial (lb). The calculator converts to kg internally using 1 lb = 0.45359237 kg, then evaluates the IPF 2020 polynomial. The Wilks score is identical either way." },
+      { "q": "Should I use Wilks or DOTS or GL points?", "a": "All three normalize across bodyweight. Wilks 2020 is the IPF's current official scoring system for raw classic. DOTS and GL points are alternatives used in some federations. For most lifters the rankings move only slightly between systems." }
+    ]
+  }
+}

@@ -827,6 +827,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'pulsePressure',
     related: ['blutdruck-richtig-messen', 'mittlerer-arterieller-druck-berechnen', 'herz-kreislauf-risiko-berechnen'],
   },
+  {
+    slug: 'wilks-koeffizient-berechnen',
+    title: 'Wilks-Koeffizient berechnen: Formel, IPF 2020, Stärke-Bänder',
+    description: 'Wilks-Score aus Powerlifting-Total, Körpergewicht und Geschlecht nach IPF 2020 berechnen. Polynom-Formel, Bänder von Untrainiert bis Elite, Wilks vs. DOTS vs. GL-Points.',
+    date: '2026-06-07',
+    readTime: '8 min',
+    calculatorKey: 'wilksCoefficient',
+    related: ['one-rep-max-berechnen', 'magermasse-berechnen', 'bmi-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {
