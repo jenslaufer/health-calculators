@@ -854,6 +854,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'bmiMaenner',
     related: ['calculate-bmi', 'calculate-body-fat', 'calculate-ideal-weight'],
   },
+  {
+    slug: 'gad-7-anxiety-test-calculator',
+    title: 'GAD-7 Anxiety Test: Generalized Anxiety Screening — Score & Bands',
+    description: 'Understand the GAD-7 anxiety screening: 7 questions, score 0–21, severity bands minimal/mild/moderate/severe. Cutoff 10, Spitzer 2006 — screening tool, not a diagnosis.',
+    date: '2026-06-08',
+    readTime: '8 min',
+    calculatorKey: 'gad7',
+    related: ['pms-symptom-calculator-guide', 'menopause-symptom-calculator-guide', 'calculate-sleep-cycles'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {

@@ -1,0 +1,91 @@
+{
+  "home": {
+    "calculators": {
+      "gad7": {
+        "name": "GAD-7 Angst-Screening",
+        "description": "Validierter 7-Fragen-Test für generalisierte Angst — Score 0–21 mit Schweregrad."
+      }
+    }
+  },
+  "gad7": {
+    "meta": {
+      "title": "GAD-7 Angst-Test (generalisierte Angststörung) — Online Screening | Health Calculators",
+      "description": "GAD-7 Screening für generalisierte Angststörung online. 7 Fragen, Score 0–21, Schweregrade minimal/mild/moderat/schwer. Kostenlos, anonym, sofort. Screening-Werkzeug — keine Diagnose."
+    },
+    "title": "GAD-7 Angst-Screening",
+    "description": "Wie oft haben dich in den letzten 2 Wochen die folgenden Beschwerden belastet? Wähle pro Frage genau eine Antwort. Dein Gesamtscore (0–21) und der Schweregrad erscheinen automatisch.",
+    "introNote": "Bezugszeitraum: die letzten 2 Wochen. Der GAD-7 ist ein Screening-Werkzeug — keine medizinische Diagnose.",
+    "questions": {
+      "feelingNervous": { "title": "1. Nervosität, Ängstlichkeit oder Anspannung" },
+      "cantStopWorrying": { "title": "2. Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren" },
+      "worryingTooMuch": { "title": "3. Übermäßige Sorgen um verschiedene Dinge" },
+      "troubleRelaxing": { "title": "4. Schwierigkeiten, zu entspannen" },
+      "restless": { "title": "5. So unruhig sein, dass Stillsitzen schwerfällt" },
+      "irritable": { "title": "6. Leicht verärgert oder reizbar sein" },
+      "afraidSomethingAwful": { "title": "7. Gefühl der Angst, als würde etwas Schlimmes passieren" }
+    },
+    "options": [
+      { "value": 0, "label": "Überhaupt nicht" },
+      { "value": 1, "label": "An einzelnen Tagen" },
+      { "value": 2, "label": "An mehr als der Hälfte der Tage" },
+      { "value": 3, "label": "Beinahe jeden Tag" }
+    ],
+    "categories": {
+      "Minimal": "Minimal",
+      "Mild": "Mild",
+      "Moderate": "Moderat",
+      "Severe": "Schwer"
+    },
+    "hints": {
+      "Minimal": "Score 0–4: minimale Angstsymptome. In der Regel keine spezielle Maßnahme nötig — beobachte weiter, wie du dich fühlst.",
+      "Mild": "Score 5–9: leichte Angstsymptome. Selbstfürsorge, Stressmanagement und abwartende Beobachtung sind angemessen. Wiederhole den Test in 2–4 Wochen.",
+      "Moderate": "Score 10–14: moderate Angstsymptome. Bitte hole ärztlichen Rat ein — weitere Abklärung und ggf. ein Behandlungsplan werden empfohlen.",
+      "Severe": "Score 15–21: starke Angstsymptome. Bitte zeitnah ärztliche oder psychotherapeutische Hilfe in Anspruch nehmen. Eine aktive Behandlung wird in der Regel empfohlen."
+    },
+    "reset": "Antworten zurücksetzen",
+    "scoreLabel": "GAD-7-Score",
+    "scoreScale": "von 21",
+    "incompleteHint": "Beantworte alle 7 Fragen, um deinen GAD-7-Score zu sehen.",
+    "scaleTitle": "Schweregrade",
+    "scaleRows": [
+      { "range": "0 – 4", "label": "Minimal", "hint": "Symptome minimal — weiter beobachten" },
+      { "range": "5 – 9", "label": "Mild", "hint": "Symptome leicht — Selbstfürsorge, Test in 2–4 Wochen wiederholen" },
+      { "range": "10 – 14", "label": "Moderat", "hint": "Ärztlichen Rat einholen" },
+      { "range": "15 – 21", "label": "Schwer", "hint": "Zeitnah professionelle Hilfe suchen" }
+    ],
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der GAD-7 wurde 2006 von Spitzer, Kroenke, Williams und Löwe entwickelt und validiert (Arch Intern Med). Sieben Items, je 0 (Überhaupt nicht) bis 3 (Beinahe jeden Tag), ergeben einen Gesamtscore von 0–21. Ein Cutoff von 10 zeigt das beste Verhältnis von Sensitivität (89 %) und Spezifität (82 %) für generalisierte Angststörungen und wird breit als Überweisungs-Schwelle verwendet.",
+    "needsEvaluationLabel": "Dein Wert legt nahe, dass eine weitere Abklärung sinnvoll sein kann",
+    "disclaimer": "Dies ist ein Screening-Werkzeug, keine medizinische Diagnose. Bei einem Wert ab 10 oder bei Beschwerden bitte ärztlichen Rat einholen.",
+    "faq": [
+      {
+        "q": "Was misst der GAD-7?",
+        "a": "Der GAD-7 screent auf eine generalisierte Angststörung, indem er fragt, wie oft du in den letzten 2 Wochen von sieben Kernsymptomen belastet warst. Er wird breit in der Hausarztpraxis und in psychiatrisch-psychotherapeutischen Settings eingesetzt."
+      },
+      {
+        "q": "Was bedeuten die Score-Bereiche?",
+        "a": "0–4 minimal, 5–9 mild, 10–14 moderat, 15–21 schwer ausgeprägte Angstsymptome. Ein Score von 10 oder mehr ist der übliche Cutoff für eine weitere klinische Abklärung."
+      },
+      {
+        "q": "Ist der GAD-7 eine Diagnose?",
+        "a": "Nein. Der GAD-7 ist ein Screening- und Verlaufsinstrument — keine Diagnose. Eine Angststörung wird durch eine ärztliche oder psychotherapeutische Untersuchung, deine Anamnese und klinische Einschätzung bestätigt oder ausgeschlossen."
+      },
+      {
+        "q": "Wie oft sollte ich den GAD-7 machen?",
+        "a": "Sinnvoll ist ein Ausgangswert und dann alle 2–4 Wochen während einer Behandlung oder bei Symptomveränderungen. Trends über mehrere Tests sind aussagekräftiger als ein Einzelwert."
+      },
+      {
+        "q": "Erkennt der GAD-7 auch Panikstörung, soziale Phobie oder PTBS?",
+        "a": "Der GAD-7 ist primär für generalisierte Angst entwickelt, hat aber auch moderate Genauigkeit für Panikstörung, soziale Phobie und PTBS. Bei konkretem Verdacht nutzen Fachpersonen ergänzend andere Werkzeuge (PHQ-9, PCL-5 u. a.)."
+      },
+      {
+        "q": "Was, wenn ich an Selbstverletzung denke?",
+        "a": "Der GAD-7 fragt suizidale Gedanken nicht ab. Wenn du Gedanken hast, dich oder andere zu verletzen, kontaktiere bitte sofort den Notruf oder eine Krisen-Hotline (Deutschland: 0800 1110111 Telefonseelsorge, Notruf 112)."
+      },
+      {
+        "q": "Ist der GAD-7 auch für Jugendliche geeignet?",
+        "a": "Der GAD-7 ist für Erwachsene validiert und wird auch ab ca. 13 Jahren eingesetzt. Für jüngere Kinder gibt es altersgerechtere Werkzeuge."
+      }
+    ]
+  }
+}
