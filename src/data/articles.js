@@ -854,6 +854,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'bmiMaenner',
     related: ['bmi-berechnen', 'koerperfett-berechnen', 'idealgewicht-berechnen'],
   },
+  {
+    slug: 'gad-7-angst-test-rechner',
+    title: 'GAD-7 Angst-Test: Generalisierte Angst erkennen — Rechner & Score',
+    description: 'GAD-7 Angst-Screening verstehen: 7 Fragen, Score 0–21, Schweregrade minimal/mild/moderat/schwer. Cutoff 10, Spitzer 2006 — Screening-Werkzeug, keine Diagnose.',
+    date: '2026-06-08',
+    readTime: '8 min',
+    calculatorKey: 'gad7',
+    related: ['pms-symptome-bewerten', 'menopause-symptome-bewerten', 'schlafzyklen-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

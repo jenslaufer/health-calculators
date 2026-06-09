@@ -1,0 +1,91 @@
+{
+  "home": {
+    "calculators": {
+      "gad7": {
+        "name": "GAD-7 Anxiety Screening",
+        "description": "Validated 7-question screening tool for generalized anxiety — score 0–21 with severity band."
+      }
+    }
+  },
+  "gad7": {
+    "meta": {
+      "title": "GAD-7 Anxiety Test (Generalized Anxiety) — Online Screening | Health Calculators",
+      "description": "Take the validated GAD-7 anxiety screening online. 7 questions, score 0–21, severity bands minimal/mild/moderate/severe. Free, anonymous, instant. Screening tool — not a diagnosis."
+    },
+    "title": "GAD-7 Anxiety Screening",
+    "description": "Over the last 2 weeks, how often have you been bothered by the following problems? Pick exactly one answer per question. Your total score (0–21) and severity band will appear automatically.",
+    "introNote": "Reference period: the past 2 weeks. The GAD-7 is a screening tool — not a medical diagnosis.",
+    "questions": {
+      "feelingNervous": { "title": "1. Feeling nervous, anxious, or on edge" },
+      "cantStopWorrying": { "title": "2. Not being able to stop or control worrying" },
+      "worryingTooMuch": { "title": "3. Worrying too much about different things" },
+      "troubleRelaxing": { "title": "4. Trouble relaxing" },
+      "restless": { "title": "5. Being so restless that it is hard to sit still" },
+      "irritable": { "title": "6. Becoming easily annoyed or irritable" },
+      "afraidSomethingAwful": { "title": "7. Feeling afraid as if something awful might happen" }
+    },
+    "options": [
+      { "value": 0, "label": "Not at all" },
+      { "value": 1, "label": "Several days" },
+      { "value": 2, "label": "More than half the days" },
+      { "value": 3, "label": "Nearly every day" }
+    ],
+    "categories": {
+      "Minimal": "Minimal",
+      "Mild": "Mild",
+      "Moderate": "Moderate",
+      "Severe": "Severe"
+    },
+    "hints": {
+      "Minimal": "Score 0–4 suggests minimal anxiety symptoms. No specific action is usually needed — keep monitoring how you feel.",
+      "Mild": "Score 5–9 suggests mild anxiety symptoms. Self-care, stress management and watchful waiting are appropriate. Re-test in 2–4 weeks.",
+      "Moderate": "Score 10–14 suggests moderate anxiety symptoms. Please consult a healthcare professional — further evaluation and a possible treatment plan are recommended.",
+      "Severe": "Score 15–21 suggests severe anxiety symptoms. Please consult a healthcare professional promptly. Active treatment is typically recommended."
+    },
+    "reset": "Reset answers",
+    "scoreLabel": "GAD-7 score",
+    "scoreScale": "of 21",
+    "incompleteHint": "Answer all 7 questions to see your GAD-7 score.",
+    "scaleTitle": "Severity bands",
+    "scaleRows": [
+      { "range": "0 – 4", "label": "Minimal", "hint": "Symptoms minimal — keep monitoring" },
+      { "range": "5 – 9", "label": "Mild", "hint": "Symptoms mild — self-care, re-test in 2–4 weeks" },
+      { "range": "10 – 14", "label": "Moderate", "hint": "Consult a healthcare professional" },
+      { "range": "15 – 21", "label": "Severe", "hint": "Seek professional help promptly" }
+    ],
+    "howItWorks": "How it works",
+    "howItWorksText": "The GAD-7 was developed and validated by Spitzer, Kroenke, Williams and Löwe (Arch Intern Med, 2006). Seven items, each scored 0 (Not at all) to 3 (Nearly every day), sum to 0–21. A cutoff of 10 has the best balance of sensitivity (89 %) and specificity (82 %) for generalized anxiety disorder and is widely used as a referral threshold.",
+    "needsEvaluationLabel": "Your score suggests further evaluation may be helpful",
+    "disclaimer": "This is a screening tool, not a medical diagnosis. If your score is 10 or above, or you have concerns, please consult a healthcare professional.",
+    "faq": [
+      {
+        "q": "What does the GAD-7 measure?",
+        "a": "The GAD-7 screens for generalized anxiety disorder by asking how often you have been bothered by seven core symptoms over the last 2 weeks. It is widely used in primary care and mental-health settings."
+      },
+      {
+        "q": "What do the score bands mean?",
+        "a": "0–4 minimal, 5–9 mild, 10–14 moderate, 15–21 severe anxiety symptoms. A score of 10 or more is the commonly used cutoff that warrants further clinical evaluation."
+      },
+      {
+        "q": "Is the GAD-7 a diagnosis?",
+        "a": "No. The GAD-7 is a screening and severity tool — not a diagnosis. A clinician confirms or rules out an anxiety disorder using a full evaluation, your history and clinical judgement."
+      },
+      {
+        "q": "How often should I take the GAD-7?",
+        "a": "It works well as a baseline and then every 2–4 weeks during treatment or when symptoms change. Trends across multiple tests are more meaningful than a single value."
+      },
+      {
+        "q": "Can the GAD-7 also detect panic disorder, social anxiety or PTSD?",
+        "a": "It performs best for generalized anxiety, but has moderate accuracy for panic disorder, social anxiety disorder and PTSD. A specialist will use additional tools (PHQ-9, PCL-5, etc.) when those are suspected."
+      },
+      {
+        "q": "What if I have thoughts of self-harm?",
+        "a": "The GAD-7 does not screen for suicidal thoughts. If you have thoughts of hurting yourself or others, contact emergency services or a crisis line immediately (in the US: 988; in Germany: 0800 1110111)."
+      },
+      {
+        "q": "Is the GAD-7 suitable for teenagers?",
+        "a": "The GAD-7 is validated for adults and is also used in adolescents from about age 13. For younger children, age-specific tools are preferred."
+      }
+    ]
+  }
+}
