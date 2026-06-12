@@ -17,10 +17,12 @@ const affiliate = computed(() => {
   const config = localeConfig[ctx] || localeConfig.default
   return config.affiliate
 })
+
+const hasLiveUrl = computed(() => /^https?:\/\//.test(affiliate.value.url))
 </script>
 
 <template>
-  <div class="mt-6 bg-stone-50 border border-stone-200 rounded-xl p-6" data-testid="affiliate-banner">
+  <div v-if="hasLiveUrl" class="mt-6 bg-stone-50 border border-stone-200 rounded-xl p-6" data-testid="affiliate-banner">
     <p class="text-xs font-semibold text-stone-400 uppercase tracking-widest mb-2">
       {{ locale === 'de' ? 'Anzeige' : 'Ad' }}
     </p>
