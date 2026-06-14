@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      run_tests:
+        description: Run tests before deploy
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -24,6 +29,12 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm test
+        if: ${{ inputs.run_tests }}
+      - run: npx playwright install --with-deps chromium
+        if: ${{ inputs.run_tests }}
+      - run: npx playwright test
+        if: ${{ inputs.run_tests }}
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
