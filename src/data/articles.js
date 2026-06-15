@@ -863,6 +863,15 @@ slug: 'vo2max-berechnen',
     calculatorKey: 'gad7',
     related: ['pms-symptome-bewerten', 'menopause-symptome-bewerten', 'schlafzyklen-berechnen'],
   },
+  {
+    slug: 'phq-9-depressionstest-rechner',
+    title: 'PHQ-9 Depressionstest: Depression erkennen — Rechner & Score',
+    description: 'PHQ-9 Depressions-Screening verstehen: 9 Fragen, Score 0–27, fünf Schweregrade von minimal bis schwer. Cutoff 10, Item 9 zur Selbstgefährdung, Kroenke 2001 — Screening-Werkzeug, keine Diagnose.',
+    date: '2026-06-16',
+    readTime: '9 min',
+    calculatorKey: 'phq9',
+    related: ['gad-7-angst-test-rechner', 'schlafzyklen-berechnen', 'biologisches-alter-berechnen'],
+  },
 ]
 
 export function getArticleBySlug(slug) {

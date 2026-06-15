@@ -1,0 +1,105 @@
+{
+  "home": {
+    "calculators": {
+      "phq9": {
+        "name": "PHQ-9 Depressions-Screening",
+        "description": "Validierter 9-Fragen-Test für Depression — Score 0–27 mit Schweregrad und Selbstgefährdungs-Hinweis."
+      }
+    }
+  },
+  "phq9": {
+    "meta": {
+      "title": "PHQ-9 Depressionstest (Gesundheitsfragebogen für Patienten) — Online Screening | Health Calculators",
+      "description": "PHQ-9 Depressions-Screening online. 9 Fragen, Score 0–27, Schweregrade minimal bis schwer. Kostenlos, anonym, sofort. Screening-Werkzeug — keine Diagnose."
+    },
+    "title": "PHQ-9 Depressions-Screening",
+    "description": "Wie oft haben dich in den letzten 2 Wochen die folgenden Beschwerden belastet? Wähle pro Frage genau eine Antwort. Dein Gesamtscore (0–27) und der Schweregrad erscheinen automatisch.",
+    "introNote": "Bezugszeitraum: die letzten 2 Wochen. Der PHQ-9 ist ein Screening-Werkzeug — keine medizinische Diagnose.",
+    "questions": {
+      "littleInterest": { "title": "1. Wenig Interesse oder Freude an Ihren Tätigkeiten" },
+      "feelingDown": { "title": "2. Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit" },
+      "sleepTrouble": { "title": "3. Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf" },
+      "tiredLowEnergy": { "title": "4. Müdigkeit oder Gefühl, keine Energie zu haben" },
+      "appetiteProblems": { "title": "5. Verminderter Appetit oder übermäßiges Bedürfnis zu essen" },
+      "feelingBadAboutSelf": { "title": "6. Schlechte Meinung von sich selbst; Gefühl, ein Versager zu sein oder die Familie enttäuscht zu haben" },
+      "troubleConcentrating": { "title": "7. Schwierigkeiten, sich auf etwas zu konzentrieren, z. B. beim Zeitunglesen oder Fernsehen" },
+      "movingSlowlyOrRestless": { "title": "8. Verlangsamte Bewegungen/Sprache, die auch anderen auffallen würde — oder im Gegenteil ungewohnte Unruhe/Zappeligkeit" },
+      "selfHarmThoughts": { "title": "9. Gedanken, dass Sie lieber tot wären oder sich Leid zufügen möchten" }
+    },
+    "options": [
+      { "value": 0, "label": "Überhaupt nicht" },
+      { "value": 1, "label": "An einzelnen Tagen" },
+      { "value": 2, "label": "An mehr als der Hälfte der Tage" },
+      { "value": 3, "label": "Beinahe jeden Tag" }
+    ],
+    "categories": {
+      "Minimal": "Minimal",
+      "Mild": "Mild",
+      "Moderate": "Moderat",
+      "ModeratelySevere": "Mittelschwer",
+      "Severe": "Schwer"
+    },
+    "hints": {
+      "Minimal": "Score 0–4: minimale depressive Symptome. In der Regel keine spezielle Maßnahme nötig — beobachte weiter, wie du dich fühlst.",
+      "Mild": "Score 5–9: leichte depressive Symptome. Selbstfürsorge, abwartende Beobachtung und Unterstützung sind angemessen. Wiederhole den Test in 2–4 Wochen.",
+      "Moderate": "Score 10–14: moderate depressive Symptome. Bitte hole ärztlichen Rat ein — weitere Abklärung und ein Behandlungsplan werden empfohlen.",
+      "ModeratelySevere": "Score 15–19: mittelschwere depressive Symptome. Bitte zeitnah ärztliche oder psychotherapeutische Hilfe in Anspruch nehmen. Eine aktive Behandlung wird in der Regel empfohlen.",
+      "Severe": "Score 20–27: schwere depressive Symptome. Bitte zeitnah professionelle Hilfe suchen. Eine aktive Behandlung wird dringend empfohlen."
+    },
+    "crisis": {
+      "label": "Sofortige Hilfe",
+      "title": "Du hast Gedanken an Selbstgefährdung angegeben — bitte hole dir jetzt Hilfe",
+      "text": "Wenn du Gedanken hast, dass du lieber tot wärst oder dir Leid zufügen möchtest, hast du jetzt Unterstützung verdient. Bitte kontaktiere sofort professionelle Hilfe — du musst das nicht allein durchstehen. Telefonseelsorge: 0800 111 0 111 oder 0800 111 0 222 (kostenlos, rund um die Uhr). In akuten Notfällen wähle den Notruf 112."
+    },
+    "reset": "Antworten zurücksetzen",
+    "scoreLabel": "PHQ-9-Score",
+    "scoreScale": "von 27",
+    "incompleteHint": "Beantworte alle 9 Fragen, um deinen PHQ-9-Score zu sehen.",
+    "scaleTitle": "Schweregrade",
+    "scaleRows": [
+      { "range": "0 – 4", "label": "Minimal", "hint": "Symptome minimal — weiter beobachten" },
+      { "range": "5 – 9", "label": "Mild", "hint": "Symptome leicht — Selbstfürsorge, Test in 2–4 Wochen wiederholen" },
+      { "range": "10 – 14", "label": "Moderat", "hint": "Ärztlichen Rat einholen" },
+      { "range": "15 – 19", "label": "Mittelschwer", "hint": "Zeitnah professionelle Hilfe suchen" },
+      { "range": "20 – 27", "label": "Schwer", "hint": "Aktive Behandlung dringend empfohlen" }
+    ],
+    "howItWorks": "So funktioniert's",
+    "howItWorksText": "Der PHQ-9 wurde 2001 von Kroenke, Spitzer und Williams entwickelt und validiert (J Gen Intern Med). Neun Items, je 0 (Überhaupt nicht) bis 3 (Beinahe jeden Tag), ergeben einen Gesamtscore von 0–27. Ein Cutoff von 10 zeigt das beste Verhältnis von Sensitivität (88 %) und Spezifität (88 %) für eine Major Depression und wird breit als Überweisungs-Schwelle verwendet. Item 9 fragt direkt nach Gedanken an Selbstgefährdung — jede positive Antwort erfordert sofortige Aufmerksamkeit, unabhängig vom Gesamtscore.",
+    "needsEvaluationLabel": "Dein Wert legt nahe, dass eine weitere Abklärung sinnvoll sein kann",
+    "disclaimer": "Dies ist ein Screening-Werkzeug, keine medizinische Diagnose. Bei einem Wert ab 10, wenn du die Frage zu Selbstgefährdung mit mehr als „Überhaupt nicht“ beantwortet hast, oder bei Beschwerden bitte ärztlichen Rat einholen.",
+    "section": {
+      "blogLink": {
+        "label": "Zum Ratgeber",
+        "title": "PHQ-9 Depressionstest: Was dein Score bedeutet",
+        "url": "/blog/phq-9-depressionstest-rechner",
+        "readingTime": "9 min Lesezeit"
+      }
+    },
+    "faq": [
+      {
+        "q": "Was misst der PHQ-9?",
+        "a": "Der PHQ-9 screent auf eine Depression, indem er fragt, wie oft du in den letzten 2 Wochen von neun Kernsymptomen belastet warst. Er ist eines der am häufigsten genutzten Depressions-Instrumente in der Hausarztpraxis und in psychiatrisch-psychotherapeutischen Settings."
+      },
+      {
+        "q": "Was bedeuten die Score-Bereiche?",
+        "a": "0–4 minimal, 5–9 mild, 10–14 moderat, 15–19 mittelschwer, 20–27 schwer ausgeprägte depressive Symptome. Ein Score von 10 oder mehr ist der übliche Cutoff für eine weitere klinische Abklärung."
+      },
+      {
+        "q": "Ist der PHQ-9 eine Diagnose?",
+        "a": "Nein. Der PHQ-9 ist ein Screening- und Verlaufsinstrument — keine Diagnose. Eine Depression wird durch eine ärztliche oder psychotherapeutische Untersuchung, deine Anamnese und klinische Einschätzung bestätigt oder ausgeschlossen."
+      },
+      {
+        "q": "Was bedeutet Frage 9 zur Selbstgefährdung?",
+        "a": "Item 9 fragt nach Gedanken, dass du lieber tot wärst oder dir Leid zufügen möchtest. Jede Antwort außer „Überhaupt nicht“ bedeutet, dass du dir sofort Hilfe holen solltest — kontaktiere unabhängig vom Gesamtscore sofort die Telefonseelsorge (0800 111 0 111 / 0800 111 0 222, kostenlos, 24/7) oder in akuten Notfällen den Notruf 112."
+      },
+      {
+        "q": "Wie oft sollte ich den PHQ-9 machen?",
+        "a": "Sinnvoll ist ein Ausgangswert und dann alle 2–4 Wochen während einer Behandlung oder bei Symptomveränderungen. Trends über mehrere Tests sind aussagekräftiger als ein Einzelwert."
+      },
+      {
+        "q": "Sollte ich den PHQ-9 zusammen mit dem GAD-7 machen?",
+        "a": "Oft ja. Depression und Angst treten häufig gemeinsam auf, daher setzen Fachpersonen den PHQ-9 für Depression und den GAD-7 für Angst regelmäßig nebeneinander ein, um ein vollständigeres Bild zu erhalten."
+      }
+    ]
+  }
+}

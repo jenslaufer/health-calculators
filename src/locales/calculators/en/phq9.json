@@ -1,0 +1,105 @@
+{
+  "home": {
+    "calculators": {
+      "phq9": {
+        "name": "PHQ-9 Depression Screening",
+        "description": "Validated 9-question screening tool for depression — score 0–27 with severity band and self-harm safety check."
+      }
+    }
+  },
+  "phq9": {
+    "meta": {
+      "title": "PHQ-9 Depression Test (Patient Health Questionnaire) — Online Screening | Health Calculators",
+      "description": "Take the validated PHQ-9 depression screening online. 9 questions, score 0–27, severity bands minimal to severe. Free, anonymous, instant. Screening tool — not a diagnosis."
+    },
+    "title": "PHQ-9 Depression Screening",
+    "description": "Over the last 2 weeks, how often have you been bothered by the following problems? Pick exactly one answer per question. Your total score (0–27) and severity band will appear automatically.",
+    "introNote": "Reference period: the past 2 weeks. The PHQ-9 is a screening tool — not a medical diagnosis.",
+    "questions": {
+      "littleInterest": { "title": "1. Little interest or pleasure in doing things" },
+      "feelingDown": { "title": "2. Feeling down, depressed, or hopeless" },
+      "sleepTrouble": { "title": "3. Trouble falling or staying asleep, or sleeping too much" },
+      "tiredLowEnergy": { "title": "4. Feeling tired or having little energy" },
+      "appetiteProblems": { "title": "5. Poor appetite or overeating" },
+      "feelingBadAboutSelf": { "title": "6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down" },
+      "troubleConcentrating": { "title": "7. Trouble concentrating on things, such as reading the newspaper or watching television" },
+      "movingSlowlyOrRestless": { "title": "8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual" },
+      "selfHarmThoughts": { "title": "9. Thoughts that you would be better off dead, or of hurting yourself in some way" }
+    },
+    "options": [
+      { "value": 0, "label": "Not at all" },
+      { "value": 1, "label": "Several days" },
+      { "value": 2, "label": "More than half the days" },
+      { "value": 3, "label": "Nearly every day" }
+    ],
+    "categories": {
+      "Minimal": "Minimal",
+      "Mild": "Mild",
+      "Moderate": "Moderate",
+      "ModeratelySevere": "Moderately severe",
+      "Severe": "Severe"
+    },
+    "hints": {
+      "Minimal": "Score 0–4 suggests minimal depression symptoms. No specific action is usually needed — keep monitoring how you feel.",
+      "Mild": "Score 5–9 suggests mild depression symptoms. Self-care, watchful waiting and support are appropriate. Re-test in 2–4 weeks.",
+      "Moderate": "Score 10–14 suggests moderate depression symptoms. Please consult a healthcare professional — further evaluation and a treatment plan are recommended.",
+      "ModeratelySevere": "Score 15–19 suggests moderately severe depression symptoms. Please consult a healthcare professional promptly. Active treatment is typically recommended.",
+      "Severe": "Score 20–27 suggests severe depression symptoms. Please seek professional help promptly. Active treatment is strongly recommended."
+    },
+    "crisis": {
+      "label": "Immediate support",
+      "title": "You indicated thoughts of self-harm — please reach out now",
+      "text": "If you are having thoughts of being better off dead or of hurting yourself, you deserve support right now. Please contact your local emergency services or a crisis line immediately — you do not have to face this alone. In the US call or text 988 (Suicide & Crisis Lifeline); in the UK call 116 123 (Samaritans); elsewhere contact your local emergency number or a crisis hotline."
+    },
+    "reset": "Reset answers",
+    "scoreLabel": "PHQ-9 score",
+    "scoreScale": "of 27",
+    "incompleteHint": "Answer all 9 questions to see your PHQ-9 score.",
+    "scaleTitle": "Severity bands",
+    "scaleRows": [
+      { "range": "0 – 4", "label": "Minimal", "hint": "Symptoms minimal — keep monitoring" },
+      { "range": "5 – 9", "label": "Mild", "hint": "Symptoms mild — self-care, re-test in 2–4 weeks" },
+      { "range": "10 – 14", "label": "Moderate", "hint": "Consult a healthcare professional" },
+      { "range": "15 – 19", "label": "Moderately severe", "hint": "Seek professional help promptly" },
+      { "range": "20 – 27", "label": "Severe", "hint": "Active treatment strongly recommended" }
+    ],
+    "howItWorks": "How it works",
+    "howItWorksText": "The PHQ-9 was developed and validated by Kroenke, Spitzer and Williams (J Gen Intern Med, 2001). Nine items, each scored 0 (Not at all) to 3 (Nearly every day), sum to 0–27. A cutoff of 10 has the best balance of sensitivity (88 %) and specificity (88 %) for major depression and is widely used as a referral threshold. Item 9 asks directly about thoughts of self-harm — any positive answer warrants immediate attention, regardless of the total score.",
+    "needsEvaluationLabel": "Your score suggests further evaluation may be helpful",
+    "disclaimer": "This is a screening tool, not a medical diagnosis. If your score is 10 or above, you answered the self-harm question with anything other than “Not at all”, or you have concerns, please consult a healthcare professional.",
+    "section": {
+      "blogLink": {
+        "label": "Read the guide",
+        "title": "PHQ-9 Depression Test: What Your Score Means",
+        "url": "/blog/en/phq-9-depression-test-calculator",
+        "readingTime": "9 min read"
+      }
+    },
+    "faq": [
+      {
+        "q": "What does the PHQ-9 measure?",
+        "a": "The PHQ-9 screens for depression by asking how often you have been bothered by nine core symptoms over the last 2 weeks. It is one of the most widely used depression tools in primary care and mental-health settings."
+      },
+      {
+        "q": "What do the score bands mean?",
+        "a": "0–4 minimal, 5–9 mild, 10–14 moderate, 15–19 moderately severe, 20–27 severe depression symptoms. A score of 10 or more is the commonly used cutoff that warrants further clinical evaluation."
+      },
+      {
+        "q": "Is the PHQ-9 a diagnosis?",
+        "a": "No. The PHQ-9 is a screening and severity tool — not a diagnosis. A clinician confirms or rules out depression using a full evaluation, your history and clinical judgement."
+      },
+      {
+        "q": "What does question 9 about self-harm mean?",
+        "a": "Item 9 asks about thoughts that you would be better off dead or of hurting yourself. Any answer other than “Not at all” means you should seek help immediately — contact your local emergency services or a crisis line right now, regardless of your total score."
+      },
+      {
+        "q": "How often should I take the PHQ-9?",
+        "a": "It works well as a baseline and then every 2–4 weeks during treatment or when symptoms change. Trends across multiple tests are more meaningful than a single value."
+      },
+      {
+        "q": "Should I take the PHQ-9 together with the GAD-7?",
+        "a": "Often, yes. Depression and anxiety frequently occur together, so clinicians regularly use the PHQ-9 for depression and the GAD-7 for anxiety side by side to get a fuller picture."
+      }
+    ]
+  }
+}
