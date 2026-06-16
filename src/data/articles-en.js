@@ -863,6 +863,15 @@ slug: 'calculate-vo2max',
     calculatorKey: 'gad7',
     related: ['pms-symptom-calculator-guide', 'menopause-symptom-calculator-guide', 'calculate-sleep-cycles'],
   },
+  {
+    slug: 'phq-9-depression-test-calculator',
+    title: 'PHQ-9 Depression Test: Screening for Depression — Score & Bands',
+    description: 'Understand the PHQ-9 depression screening: 9 questions, score 0–27, five severity bands from minimal to severe. Cutoff 10, item 9 on self-harm, Kroenke 2001 — screening tool, not a diagnosis.',
+    date: '2026-06-16',
+    readTime: '9 min',
+    calculatorKey: 'phq9',
+    related: ['gad-7-anxiety-test-calculator', 'calculate-sleep-cycles', 'biological-age-calculator'],
+  },
 ]
 
 export function getEnArticleBySlug(slug) {
