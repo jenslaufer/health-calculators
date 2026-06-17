@@ -76,6 +76,7 @@ export function useHead(getConfig) {
         { rel: 'canonical', href: url },
         { rel: 'alternate', hreflang: currentLocale, href: `${BASE_URL}${currentPath}` },
         { rel: 'alternate', hreflang: otherLocale, href: `${BASE_URL}${otherPath}` },
+        { rel: 'alternate', hreflang: 'x-default', href: `${BASE_URL}${currentLocale === 'de' ? currentPath : otherPath}` },
       ],
     }
 

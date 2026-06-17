@@ -49,7 +49,43 @@ describe('useHead', () => {
       { rel: 'canonical', href: 'https://healthcalculator.app/de/bmi-rechner/' },
       { rel: 'alternate', hreflang: 'de', href: 'https://healthcalculator.app/de/bmi-rechner/' },
       { rel: 'alternate', hreflang: 'en', href: 'https://healthcalculator.app/en/bmi-calculator/' },
+      { rel: 'alternate', hreflang: 'x-default', href: 'https://healthcalculator.app/de/bmi-rechner/' },
     ]))
+  })
+
+  it('emits an x-default hreflang pointing to the de URL on a de page', () => {
+    mockLocale.value = 'de'
+    useHead(() => ({
+      title: 'BMI Rechner',
+      description: 'Berechne deinen BMI',
+      routeKey: 'bmi',
+    }))
+
+    const head = useUnhead.mock.calls[0][0].value
+    const xDefault = head.link.find(l => l.hreflang === 'x-default')
+    expect(xDefault, 'x-default hreflang missing').toBeDefined()
+    expect(xDefault.rel).toBe('alternate')
+    expect(xDefault.href).toMatch(/^https:\/\/healthcalculator\.app\/de\//)
+    expect(xDefault.href, 'x-default URL missing trailing slash').toMatch(/\/$/)
+    expect(xDefault.href).toBe('https://healthcalculator.app/de/bmi-rechner/')
+  })
+
+  it('keeps x-default pointing to the de URL on an en page', () => {
+    mockLocale.value = 'en'
+    mockRoute.path = '/en/bmi-calculator'
+    useHead(() => ({
+      title: 'BMI Calculator',
+      description: 'Calculate your BMI',
+      routeKey: 'bmi',
+    }))
+
+    const head = useUnhead.mock.calls[0][0].value
+    const xDefault = head.link.find(l => l.hreflang === 'x-default')
+    expect(xDefault, 'x-default hreflang missing').toBeDefined()
+    expect(xDefault.rel).toBe('alternate')
+    expect(xDefault.href).toMatch(/^https:\/\/healthcalculator\.app\/de\//)
+    expect(xDefault.href, 'x-default URL missing trailing slash').toMatch(/\/$/)
+    expect(xDefault.href).toBe('https://healthcalculator.app/de/bmi-rechner/')
   })
 
   it('accepts a plain object instead of a function', () => {
