@@ -49,7 +49,28 @@ describe('useHead', () => {
       { rel: 'canonical', href: 'https://healthcalculator.app/de/bmi-rechner/' },
       { rel: 'alternate', hreflang: 'de', href: 'https://healthcalculator.app/de/bmi-rechner/' },
       { rel: 'alternate', hreflang: 'en', href: 'https://healthcalculator.app/en/bmi-calculator/' },
+      { rel: 'alternate', hreflang: 'x-default', href: 'https://healthcalculator.app/de/bmi-rechner/' },
     ]))
+  })
+
+  it('x-default hreflang points to German version even when viewing English', () => {
+    mockLocale.value = 'en'
+    mockRoute.path = '/en/bmi-calculator'
+    useHead(() => ({
+      title: 'BMI Calculator',
+      description: 'Calculate your BMI',
+      routeKey: 'bmi',
+    }))
+
+    expect(useUnhead).toHaveBeenCalledTimes(1)
+    const head = useUnhead.mock.calls[0][0].value
+
+    const xDefaultLink = head.link.find(l => l.hreflang === 'x-default')
+    expect(xDefaultLink).toEqual({
+      rel: 'alternate',
+      hreflang: 'x-default',
+      href: 'https://healthcalculator.app/de/bmi-rechner/',
+    })
   })
 
   it('accepts a plain object instead of a function', () => {

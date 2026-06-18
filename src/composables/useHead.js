@@ -41,17 +41,20 @@ export function useHead(getConfig) {
     const currentLocale = locale.value
     const otherLocale = currentLocale === 'de' ? 'en' : 'de'
 
-    let currentPath, otherPath
+    let currentPath, otherPath, defaultPath
     if (configRouteKey === 'blogArticle') {
       const slug = route.meta.slug
       currentPath = `/${currentLocale}/blog/${slug}/`
       otherPath = `/${otherLocale}/blog/${slug}/`
+      defaultPath = `/de/blog/${slug}/`
     } else if (configRouteKey && routeMap[configRouteKey]) {
       currentPath = ensureSlash(resolveLocalePath(configRouteKey, currentLocale))
       otherPath = ensureSlash(resolveLocalePath(configRouteKey, otherLocale))
+      defaultPath = ensureSlash(resolveLocalePath(configRouteKey, 'de'))
     } else {
       currentPath = ensureSlash(route.path)
       otherPath = ensureSlash(route.path)
+      defaultPath = ensureSlash(route.path.replace(/\/en\//, '/de/'))
     }
 
     const url = `${BASE_URL}${currentPath}`
@@ -76,6 +79,7 @@ export function useHead(getConfig) {
         { rel: 'canonical', href: url },
         { rel: 'alternate', hreflang: currentLocale, href: `${BASE_URL}${currentPath}` },
         { rel: 'alternate', hreflang: otherLocale, href: `${BASE_URL}${otherPath}` },
+        { rel: 'alternate', hreflang: 'x-default', href: `${BASE_URL}${defaultPath}` },
       ],
     }
 
