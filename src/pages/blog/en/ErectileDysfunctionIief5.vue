@@ -1,6 +1,6 @@
 <script setup>
 import { useHead } from '../../../composables/useHead.js'
-import RelatedArticles from '../../../components/RelatedArticles.vue'
+import RelatedArticlesEn from '../../../components/RelatedArticlesEn.vue'
 import { useLocaleRouter } from '../../../composables/useLocaleRouter.js'
 
 const { localePath, localeBlogPath } = useLocaleRouter()
@@ -181,7 +181,7 @@ useHead({
         </p>
       </div>
 
-      <RelatedArticles slug="erectile-dysfunction-iief-5" />
+      <RelatedArticlesEn slug="erectile-dysfunction-iief-5" />
     </div>
   </article>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import { useHead } from '../../../composables/useHead.js'
-import RelatedArticles from '../../../components/RelatedArticles.vue'
+import RelatedArticlesEn from '../../../components/RelatedArticlesEn.vue'
 import { useLocaleRouter } from '../../../composables/useLocaleRouter.js'
 
 const { localePath } = useLocaleRouter()
@@ -256,6 +256,6 @@ useHead({
 
     </div>
 
-    <RelatedArticles slug="child-growth-percentile-chart" />
+    <RelatedArticlesEn slug="child-growth-percentile-chart" />
   </article>
 </template>

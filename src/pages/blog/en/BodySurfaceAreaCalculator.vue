@@ -1,6 +1,6 @@
 <script setup>
 import { useHead } from '../../../composables/useHead.js'
-import RelatedArticles from '../../../components/RelatedArticles.vue'
+import RelatedArticlesEn from '../../../components/RelatedArticlesEn.vue'
 import { useLocaleRouter } from '../../../composables/useLocaleRouter.js'
 
 const { localePath } = useLocaleRouter()
@@ -188,6 +188,6 @@ useHead({
 
     </div>
 
-    <RelatedArticles slug="body-surface-area-calculator" />
+    <RelatedArticlesEn slug="body-surface-area-calculator" />
   </article>
 </template>
