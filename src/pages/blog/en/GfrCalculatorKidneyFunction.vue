@@ -1,6 +1,6 @@
 <script setup>
 import { useHead } from '../../../composables/useHead.js'
-import RelatedArticles from '../../../components/RelatedArticles.vue'
+import RelatedArticlesEn from '../../../components/RelatedArticlesEn.vue'
 import { useLocaleRouter } from '../../../composables/useLocaleRouter.js'
 
 const { localePath } = useLocaleRouter()
@@ -209,7 +209,7 @@ useHead({
         </ul>
       </div>
 
-      <RelatedArticles />
+      <RelatedArticlesEn />
     </div>
   </article>
 </template>
