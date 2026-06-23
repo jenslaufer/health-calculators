@@ -31,6 +31,11 @@ const SAMPLE_PAGES = [
   'de/schlafzyklen-rechner',
   'de/herzfrequenz-zonen',
   'de/kalorienverbrauch',
+  'de/one-rep-max-rechner',
+  'de/magermasse-rechner',
+  'de/koerperoberflaeche-rechner',
+  'de/rauchen-kosten-rechner',
+  'de/alkohol-einheiten-rechner',
 ]
 
 const distExists = existsSync(DIST)

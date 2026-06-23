@@ -85,6 +85,28 @@
       "sleepDesc": "Alkohol verschlechtert die Schlafqualität, unterdrückt den REM-Schlaf und erhöht Müdigkeit am Folgetag."
     },
     "disclaimerTitle": "Hinweis",
-    "disclaimer": "Dieser Rechner dient zur Information und ersetzt keine ärztliche Beratung. Kein Alkohol ist sicherer als jeder Konsum. Bei Fragen zu deinem Trinkverhalten wende dich an einen Arzt oder die Suchtberatung (z. B. BZgA: 0800 111 0 111)."
+    "disclaimer": "Dieser Rechner dient zur Information und ersetzt keine ärztliche Beratung. Kein Alkohol ist sicherer als jeder Konsum. Bei Fragen zu deinem Trinkverhalten wende dich an einen Arzt oder die Suchtberatung (z. B. BZgA: 0800 111 0 111).",
+    "faq": [
+      {
+        "q": "Was ist eine Alkoholeinheit?",
+        "a": "Eine Alkoholeinheit (auch Standardglas) ist eine festgelegte Menge reinen Alkohols (Ethanol), gemessen in Gramm. Sie macht unterschiedliche Getränke vergleichbar, da Bier, Wein und Spirituosen sehr verschiedene Alkoholgehalte haben. International liegt eine Einheit häufig bei rund 10 Gramm reinem Ethanol."
+      },
+      {
+        "q": "Wie wird die Alkoholmenge berechnet?",
+        "a": "Die Gramm reinen Alkohols ergeben sich aus Volumen × Alkoholgehalt (ABV) × Dichte von Ethanol. Ethanol hat eine Dichte von etwa 0,789 g/ml. Beispiel: 500 ml Bier mit 5 % ABV enthalten rund 0,5 l × 0,05 × 0,789 g/ml ≈ 20 Gramm reinen Alkohol. Diese Menge teilt der Rechner durch den Wert einer Einheit."
+      },
+      {
+        "q": "Warum schwankt der Wert einer Einheit je nach Land?",
+        "a": "Es gibt keine weltweit einheitliche Definition. Verschiedene Länder legen ein Standardglas auf unterschiedliche Grammwerte fest. Deshalb kann dasselbe Getränk je nach verwendeter Definition unterschiedlich viele Einheiten ergeben. Der Rechner macht die zugrunde liegende Menge an reinem Alkohol transparent."
+      },
+      {
+        "q": "Wie viel Alkohol ist unbedenklich?",
+        "a": "Nach Einschätzung der Weltgesundheitsorganisation (WHO) gibt es keine Menge Alkohol, die völlig ohne Risiko ist. Weniger ist grundsätzlich besser als mehr. Eine individuelle Einordnung deines Konsums kann nur eine Ärztin oder ein Arzt geben."
+      },
+      {
+        "q": "Wofür ist das Zählen von Einheiten nützlich?",
+        "a": "Einheiten helfen, den eigenen Konsum über verschiedene Getränke hinweg im Blick zu behalten und besser einzuschätzen. Sie ersetzen keine medizinische Beurteilung, machen die getrunkene Alkoholmenge aber greifbar und vergleichbar."
+      }
+    ]
   }
 }

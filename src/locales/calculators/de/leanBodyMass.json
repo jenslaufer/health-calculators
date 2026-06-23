@@ -20,6 +20,32 @@
     "boer": "Boer",
     "james": "James",
     "hume": "Hume",
-    "average": "Durchschnitt"
+    "average": "Durchschnitt",
+    "faq": [
+      {
+        "q": "Was ist die Magermasse (Lean Body Mass)?",
+        "a": "Die Magermasse, auch fettfreie Masse, ist dein gesamtes Körpergewicht abzüglich der Fettmasse. Dazu zählen Muskeln, Knochen, Organe, Bindegewebe und Körperwasser. Sie wird in diesem Rechner geschätzt, nicht direkt gemessen."
+      },
+      {
+        "q": "Wie wird die Magermasse berechnet?",
+        "a": "Der Rechner verwendet etablierte Schätzformeln. Die Boer-Formel und die Hume-Formel leiten die fettfreie Masse aus Größe, Gewicht und Geschlecht ab. Grundprinzip: Magermasse = Gesamtgewicht − Fettmasse. Da die Formeln auf Bevölkerungsdaten beruhen, liefern sie eine Näherung für die jeweilige Gruppe."
+      },
+      {
+        "q": "Warum unterscheiden sich Boer- und Hume-Formel?",
+        "a": "Beide Formeln wurden anhand unterschiedlicher Stichproben entwickelt und gewichten Größe und Gewicht etwas anders. Deshalb können ihre Ergebnisse leicht voneinander abweichen. Der Vergleich mehrerer Formeln zeigt dir eine plausible Bandbreite statt eines einzelnen Werts."
+      },
+      {
+        "q": "Wie genau ist die Schätzung?",
+        "a": "Es handelt sich um eine Schätzung auf Basis von Körpermaßen, nicht um eine Messung. Genauere Verfahren wie DEXA, hydrostatisches Wiegen oder Bioimpedanzanalyse messen die Körperzusammensetzung direkt. Bei sehr muskulösen oder sehr untergewichtigen Personen können Formelwerte stärker abweichen."
+      },
+      {
+        "q": "Wofür ist die Magermasse nützlich?",
+        "a": "Die fettfreie Masse wird unter anderem genutzt, um den Grundumsatz einzuschätzen, Trainingsfortschritte zu beobachten oder Ernährungsziele zu planen. Sie ergänzt den BMI, der nicht zwischen Muskel und Fett unterscheidet."
+      },
+      {
+        "q": "Ersetzt der Rechner eine medizinische Untersuchung?",
+        "a": "Nein. Die Werte dienen der allgemeinen Information und Orientierung. Für eine genaue Bestimmung der Körperzusammensetzung oder bei gesundheitlichen Fragen wende dich an eine Ärztin oder einen Arzt."
+      }
+    ]
   }
 }
