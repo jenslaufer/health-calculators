@@ -36,6 +36,32 @@
     "foodSources": "Top-Proteinquellen",
     "food": "Lebensmittel",
     "proteinPer100g": "Protein / 100 g",
-    "goalComparison": "Protein nach Ziel"
+    "goalComparison": "Protein nach Ziel",
+    "faq": [
+      {
+        "q": "Wie viel Protein brauche ich pro Tag?",
+        "a": "Die Deutsche Gesellschaft für Ernährung (DGE) nennt für gesunde Erwachsene einen Richtwert von etwa 0,8 g Protein pro Kilogramm Körpergewicht und Tag. Sportlich aktive Menschen haben einen höheren Bedarf."
+      },
+      {
+        "q": "Wie viel Protein ist für den Muskelaufbau sinnvoll?",
+        "a": "Die International Society of Sports Nutrition (ISSN) gibt für aktive und kraftsportlich trainierende Personen einen Bereich von rund 1,4 bis 2,0 g pro Kilogramm Körpergewicht an. Dieser Rechner berücksichtigt Aktivität und Ziel."
+      },
+      {
+        "q": "Kann man zu viel Protein essen?",
+        "a": "Für gesunde Nieren gilt eine erhöhte Proteinzufuhr allgemein als unproblematisch. Bei einer bestehenden Nierenerkrankung sollte die Menge ärztlich abgestimmt werden. Eine insgesamt ausgewogene Ernährung bleibt wichtig."
+      },
+      {
+        "q": "Decken pflanzliche Quellen den Proteinbedarf?",
+        "a": "Ja. Hülsenfrüchte, Tofu, Tempeh, Nüsse und Getreide liefern reichlich Protein. Da pflanzliche Proteine teils eine geringere Verdaulichkeit haben, können eine etwas höhere Gesamtmenge und die Kombination verschiedener Quellen sinnvoll sein."
+      },
+      {
+        "q": "Wann sollte ich Protein essen?",
+        "a": "Wichtiger als der genaue Zeitpunkt ist laut ISSN die über den Tag verteilte Gesamtmenge. Eine gleichmäßige Verteilung auf mehrere Mahlzeiten kann die Muskelproteinsynthese unterstützen."
+      },
+      {
+        "q": "Brauche ich Protein-Shakes?",
+        "a": "Nein. Der Bedarf lässt sich in der Regel über normale Lebensmittel decken. Shakes sind lediglich eine praktische Ergänzung, wenn die Zufuhr über die Nahrung schwerfällt."
+      }
+    ]
   }
 }

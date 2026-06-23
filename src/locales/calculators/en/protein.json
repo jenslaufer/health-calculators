@@ -36,6 +36,32 @@
     "foodSources": "Top Protein Sources",
     "food": "Food",
     "proteinPer100g": "Protein / 100 g",
-    "goalComparison": "Protein by Goal"
+    "goalComparison": "Protein by Goal",
+    "faq": [
+      {
+        "q": "How much protein do I need per day?",
+        "a": "The German Nutrition Society (DGE) gives a reference value of about 0.8 g of protein per kilogram of body weight per day for healthy adults. Physically active people have a higher requirement."
+      },
+      {
+        "q": "How much protein is useful for building muscle?",
+        "a": "The International Society of Sports Nutrition (ISSN) recommends roughly 1.4 to 2.0 g per kilogram of body weight for active and strength-training individuals. This calculator factors in your activity level and goal."
+      },
+      {
+        "q": "Can you eat too much protein?",
+        "a": "For healthy kidneys, a higher protein intake is generally considered unproblematic. With an existing kidney condition the amount should be set with a physician. An overall balanced diet remains important."
+      },
+      {
+        "q": "Can plant-based sources cover protein needs?",
+        "a": "Yes. Legumes, tofu, tempeh, nuts and grains provide plenty of protein. Because plant proteins can be somewhat less digestible, a slightly higher total amount and combining different sources can be useful."
+      },
+      {
+        "q": "When should I eat protein?",
+        "a": "According to the ISSN, the total amount spread across the day matters more than precise timing. Distributing protein evenly across several meals can support muscle protein synthesis."
+      },
+      {
+        "q": "Do I need protein shakes?",
+        "a": "No. Requirements can usually be met through normal food. Shakes are simply a convenient supplement when meeting intake through meals is difficult."
+      }
+    ]
   }
 }

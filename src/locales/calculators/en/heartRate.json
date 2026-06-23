@@ -29,6 +29,32 @@
     "fatBurnDesc": "Easy endurance training. Builds aerobic base and burns fat efficiently.",
     "aerobicDesc": "Moderate effort. Improves cardiovascular fitness and endurance.",
     "anaerobicDesc": "Hard effort. Increases speed, power, and lactate threshold.",
-    "vo2maxDesc": "Maximum effort. Develops peak performance and speed."
+    "vo2maxDesc": "Maximum effort. Develops peak performance and speed.",
+    "faq": [
+      {
+        "q": "How do I calculate my maximum heart rate?",
+        "a": "A common rule of thumb is 220 minus your age. It gives a rough estimate; the actual maximum heart rate can vary individually. For precise values an exercise test supervised by a physician is advisable."
+      },
+      {
+        "q": "What is the Karvonen method?",
+        "a": "The Karvonen formula calculates training zones using the heart rate reserve, the difference between maximum and resting heart rate. It is well established and individualizes the zones more than the plain percentage method."
+      },
+      {
+        "q": "What do the heart rate zones mean?",
+        "a": "The American Heart Association (AHA) describes zones from light recovery to high intensity. Lower zones build base endurance, higher zones improve performance. This calculator divides the range into five zones."
+      },
+      {
+        "q": "In which zone do I burn the most fat?",
+        "a": "In moderate zones a larger share of energy comes from fat, but the absolute calorie burn is higher at greater intensity. For health, the total amount of activity matters most."
+      },
+      {
+        "q": "How often should I train?",
+        "a": "The AHA recommends adults get at least 150 minutes of moderate or 75 minutes of vigorous endurance activity per week. With pre-existing conditions, seek medical advice before starting."
+      },
+      {
+        "q": "Are the calculated zones suitable for everyone?",
+        "a": "The values are general estimates for healthy adults. With heart conditions, medication or symptoms, training zones should be set by a physician."
+      }
+    ]
   }
 }

@@ -37,6 +37,32 @@
       "greenTea": "Grüntee (28 mg)",
       "energyDrink": "Energy Drink (80 mg)",
       "cola": "Cola (34 mg / 330 ml)"
-    }
+    },
+    "faq": [
+      {
+        "q": "Wie viel Koffein pro Tag ist für gesunde Erwachsene unbedenklich?",
+        "a": "Die Europäische Behörde für Lebensmittelsicherheit (EFSA) bewertet für gesunde Erwachsene Einzeldosen bis etwa 200 mg sowie eine über den Tag verteilte Gesamtmenge bis 400 mg als unbedenklich. Die individuelle Empfindlichkeit kann abweichen; bei Unsicherheit ärztlichen Rat einholen."
+      },
+      {
+        "q": "Wie lange bleibt Koffein im Körper?",
+        "a": "Koffein hat beim gesunden Erwachsenen eine durchschnittliche Halbwertszeit von etwa 3 bis 5 Stunden. Nach dieser Zeit ist rund die Hälfte abgebaut. Dieser Rechner nutzt den Halbwertszeit-Ansatz, um den geschätzten Koffeinspiegel über den Tag darzustellen."
+      },
+      {
+        "q": "Wie viel Koffein steckt in einer Tasse Kaffee?",
+        "a": "Eine Tasse Filterkaffee (etwa 200 ml) enthält je nach Sorte und Zubereitung typischerweise rund 80 bis 100 mg Koffein, ein Espresso etwa 60 bis 80 mg. Die Werte schwanken stark mit Bohne, Mahlgrad und Brühmethode."
+      },
+      {
+        "q": "Beeinflusst Koffein den Schlaf?",
+        "a": "Ja. Da Koffein nur langsam abgebaut wird, kann Konsum am Nachmittag oder Abend das Einschlafen erschweren. Es wird oft empfohlen, einige Stunden vor dem Schlafengehen auf Koffein zu verzichten."
+      },
+      {
+        "q": "Wie viel Koffein ist in der Schwangerschaft vertretbar?",
+        "a": "Die EFSA nennt für Schwangere eine niedrigere Obergrenze von etwa 200 mg Koffein pro Tag. Schwangere sollten ihren Konsum individuell mit der betreuenden Ärztin oder dem Arzt besprechen."
+      },
+      {
+        "q": "Kann man eine Koffeintoleranz entwickeln?",
+        "a": "Bei regelmäßigem Konsum gewöhnt sich der Körper teilweise an die anregende Wirkung, sodass dieselbe Menge weniger spürbar wirkt. An den von der EFSA genannten Mengen für die gesundheitliche Bewertung ändert das nichts."
+      }
+    ]
   }
 }

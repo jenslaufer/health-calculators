@@ -6,10 +6,13 @@ import BlogArticleLink from '../components/BlogArticleLink.vue'
 import RelatedCalculators from '../components/RelatedCalculators.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
+import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 const { localePath, locale } = useLocaleRouter()
+
+const faqItems = computed(() => tm('protein.faq') || [])
 
 useHead(() => ({
   title: t('protein.meta.title'),
@@ -286,6 +289,8 @@ const foodSources = computed(() => {
     </div>
   </div>
 
+
+  <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
     <AdSlot class="mt-8" />
   <RelatedCalculators calc-key="protein" class="mt-8" />

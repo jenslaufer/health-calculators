@@ -26,6 +26,11 @@ const SAMPLE_PAGES = [
   'de/zyklusrechner',
   'de/blutzucker-umrechner',
   'de/idealgewicht-rechner',
+  'de/koffein-rechner',
+  'de/protein-rechner',
+  'de/schlafzyklen-rechner',
+  'de/herzfrequenz-zonen',
+  'de/kalorienverbrauch',
 ]
 
 const distExists = existsSync(DIST)

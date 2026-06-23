@@ -66,6 +66,32 @@
     "chocolate": "Schokoriegel",
     "weeklyProjection": "Wochenprognose",
     "sessionsPerWeek": "Einheiten / Woche",
-    "kcalPerWeek": "kcal / Woche"
+    "kcalPerWeek": "kcal / Woche",
+    "faq": [
+      {
+        "q": "Wie wird der Kalorienverbrauch berechnet?",
+        "a": "Dieser Rechner nutzt MET-Werte (metabolisches Äquivalent) aus dem Compendium of Physical Activities. Verbrauch = MET × Körpergewicht in kg × Dauer in Stunden. So lässt sich der Energieverbrauch einer Aktivität abschätzen."
+      },
+      {
+        "q": "Was bedeutet MET?",
+        "a": "Ein MET entspricht dem Energieumsatz in Ruhe. Ein Wert von 8 MET bedeutet also etwa den achtfachen Energieverbrauch gegenüber dem Ruhezustand. Die Werte stammen aus dem wissenschaftlichen Compendium of Physical Activities."
+      },
+      {
+        "q": "Wie genau ist die Schätzung?",
+        "a": "Es handelt sich um einen Durchschnittswert. Der tatsächliche Verbrauch hängt von Fitness, Intensität, Technik und Körperzusammensetzung ab und kann abweichen. Die Zahl dient der Orientierung."
+      },
+      {
+        "q": "Wie viel Bewegung pro Woche wird empfohlen?",
+        "a": "Die Weltgesundheitsorganisation (WHO) empfiehlt Erwachsenen mindestens 150 bis 300 Minuten moderate oder 75 bis 150 Minuten intensive körperliche Aktivität pro Woche."
+      },
+      {
+        "q": "Berücksichtigt der Rechner meinen Grundumsatz?",
+        "a": "Nein. Er schätzt nur die zusätzlich durch die Aktivität verbrannten Kalorien. Den täglichen Gesamtumsatz inklusive Grundumsatz ermitteln separate Rechner, etwa auf Basis der DGE-Bezugswerte."
+      },
+      {
+        "q": "Hilft mehr Bewegung beim Abnehmen?",
+        "a": "Bewegung erhöht den Energieverbrauch und unterstützt zusammen mit einer ausgewogenen Ernährung das Gewichtsmanagement. Entscheidend ist die langfristige Energiebilanz."
+      }
+    ]
   }
 }
