@@ -6,10 +6,13 @@ import BlogArticleLink from '../components/BlogArticleLink.vue'
 import RelatedCalculators from '../components/RelatedCalculators.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
 import AdSlot from '../components/AdSlot.vue'
+import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
+
+const faqItems = computed(() => tm('sleep.faq') || [])
 
 useHead(() => ({
   title: t('sleep.meta.title'),
@@ -135,6 +138,8 @@ const options = computed(() => {
     </p>
   </div>
 
+
+  <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
     <AdSlot class="mt-8" />
   <RelatedCalculators calc-key="sleep" class="mt-8" />

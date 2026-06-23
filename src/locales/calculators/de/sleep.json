@@ -22,6 +22,32 @@
     "recommended": "Empfohlen",
     "cycles": "{n} Zyklen",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Ein vollständiger Schlafzyklus dauert ca. 90 Minuten. Das Aufwachen zwischen Zyklen hilft dir, erfrischt aufzustehen. Dieser Rechner berücksichtigt ca. 15 Minuten Einschlafzeit und empfiehlt Zeiten, die auf vollständige Zyklen abgestimmt sind."
+    "howItWorksText": "Ein vollständiger Schlafzyklus dauert ca. 90 Minuten. Das Aufwachen zwischen Zyklen hilft dir, erfrischt aufzustehen. Dieser Rechner berücksichtigt ca. 15 Minuten Einschlafzeit und empfiehlt Zeiten, die auf vollständige Zyklen abgestimmt sind.",
+    "faq": [
+      {
+        "q": "Wie lange dauert ein Schlafzyklus?",
+        "a": "Ein vollständiger Schlafzyklus dauert im Durchschnitt etwa 90 Minuten und durchläuft Leicht-, Tief- und REM-Schlaf. Über die Nacht wiederholen sich vier bis sechs solcher Zyklen. Dieser Rechner geht von 90-Minuten-Zyklen aus."
+      },
+      {
+        "q": "Wie viel Schlaf brauche ich?",
+        "a": "Die National Sleep Foundation (NSF) empfiehlt gesunden Erwachsenen rund 7 bis 9 Stunden Schlaf pro Nacht. Der individuelle Bedarf kann etwas abweichen."
+      },
+      {
+        "q": "Warum wache ich manchmal wie gerädert auf?",
+        "a": "Wer mitten in einer Tiefschlafphase geweckt wird, fühlt sich oft benommen (Schlafträgheit). Ein Aufwachen am Ende eines Zyklus in einer leichteren Schlafphase wird meist als erholsamer empfunden."
+      },
+      {
+        "q": "Warum werden 15 Minuten Einschlafzeit eingerechnet?",
+        "a": "Die meisten Menschen brauchen etwa 10 bis 20 Minuten zum Einschlafen. Der Rechner addiert pauschal rund 15 Minuten, damit die berechneten Zeiten realistischer sind."
+      },
+      {
+        "q": "Was hilft für besseren Schlaf?",
+        "a": "Fachgesellschaften wie die American Academy of Sleep Medicine (AASM) empfehlen regelmäßige Schlafzeiten, ein dunkles, kühles Schlafzimmer sowie den Verzicht auf Koffein und Bildschirme vor dem Zubettgehen. Bei anhaltenden Schlafproblemen ärztlichen Rat suchen."
+      },
+      {
+        "q": "Sind die berechneten Zeiten medizinisch verbindlich?",
+        "a": "Nein. Die Zeiten sind eine Orientierung auf Basis durchschnittlicher Zyklen. Bei anhaltenden Schlafstörungen sollte eine Ärztin oder ein Arzt beziehungsweise ein Schlafmediziner aufgesucht werden."
+      }
+    ]
   }
 }

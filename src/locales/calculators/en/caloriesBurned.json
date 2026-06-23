@@ -66,6 +66,32 @@
     "chocolate": "chocolate bars",
     "weeklyProjection": "Weekly Projection",
     "sessionsPerWeek": "sessions / week",
-    "kcalPerWeek": "kcal / week"
+    "kcalPerWeek": "kcal / week",
+    "faq": [
+      {
+        "q": "How is calorie burn calculated?",
+        "a": "This calculator uses MET values (metabolic equivalent) from the Compendium of Physical Activities. Burn = MET × body weight in kg × duration in hours. This estimates the energy expenditure of an activity."
+      },
+      {
+        "q": "What does MET mean?",
+        "a": "One MET equals your energy expenditure at rest. A value of 8 MET therefore means about eight times the energy use compared with resting. The values come from the scientific Compendium of Physical Activities."
+      },
+      {
+        "q": "How accurate is the estimate?",
+        "a": "It is an average value. Actual burn depends on fitness, intensity, technique and body composition and can vary. The figure is meant as guidance."
+      },
+      {
+        "q": "How much activity per week is recommended?",
+        "a": "The World Health Organization (WHO) recommends adults get at least 150 to 300 minutes of moderate or 75 to 150 minutes of vigorous physical activity per week."
+      },
+      {
+        "q": "Does the calculator include my basal metabolic rate?",
+        "a": "No. It estimates only the calories burned additionally through the activity. Separate calculators determine total daily expenditure including basal metabolism, for example based on DGE reference values."
+      },
+      {
+        "q": "Does more activity help with weight loss?",
+        "a": "Activity raises energy expenditure and, together with a balanced diet, supports weight management. The long-term energy balance is decisive."
+      }
+    ]
   }
 }

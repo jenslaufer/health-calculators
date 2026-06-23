@@ -37,6 +37,32 @@
       "greenTea": "Green Tea (28 mg)",
       "energyDrink": "Energy Drink (80 mg)",
       "cola": "Cola (34 mg / 330 ml)"
-    }
+    },
+    "faq": [
+      {
+        "q": "How much caffeine per day is safe for healthy adults?",
+        "a": "The European Food Safety Authority (EFSA) considers single doses up to about 200 mg and a total of up to 400 mg spread across the day to be safe for healthy adults. Individual sensitivity varies; if unsure, ask a physician."
+      },
+      {
+        "q": "How long does caffeine stay in the body?",
+        "a": "In healthy adults caffeine has an average half-life of roughly 3 to 5 hours, meaning about half is cleared in that time. This calculator uses the half-life approach to estimate your caffeine level across the day."
+      },
+      {
+        "q": "How much caffeine is in a cup of coffee?",
+        "a": "A cup of filter coffee (about 200 ml) typically contains around 80 to 100 mg of caffeine, and an espresso about 60 to 80 mg. Values vary widely with the bean, grind and brewing method."
+      },
+      {
+        "q": "Does caffeine affect sleep?",
+        "a": "Yes. Because caffeine clears slowly, consuming it in the afternoon or evening can make falling asleep harder. It is often recommended to avoid caffeine for several hours before bedtime."
+      },
+      {
+        "q": "How much caffeine is acceptable during pregnancy?",
+        "a": "The EFSA sets a lower limit of about 200 mg of caffeine per day for pregnant women. Pregnant women should discuss their individual intake with their doctor or midwife."
+      },
+      {
+        "q": "Can you build up a caffeine tolerance?",
+        "a": "With regular intake the body partly adapts to the stimulating effect, so the same amount feels less noticeable. This does not change the intake amounts EFSA uses for its safety assessment."
+      }
+    ]
   }
 }

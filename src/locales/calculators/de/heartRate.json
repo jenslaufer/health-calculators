@@ -29,6 +29,32 @@
     "fatBurnDesc": "Leichtes Ausdauertraining. Baut aerobe Grundlage auf und verbrennt Fett effizient.",
     "aerobicDesc": "Mittlere Anstrengung. Verbessert Herz-Kreislauf-Fitness und Ausdauer.",
     "anaerobicDesc": "Hohe Anstrengung. Steigert Geschwindigkeit, Kraft und Laktatschwelle.",
-    "vo2maxDesc": "Maximale Anstrengung. Entwickelt Spitzenleistung und Geschwindigkeit."
+    "vo2maxDesc": "Maximale Anstrengung. Entwickelt Spitzenleistung und Geschwindigkeit.",
+    "faq": [
+      {
+        "q": "Wie berechne ich meine maximale Herzfrequenz?",
+        "a": "Eine verbreitete Faustformel lautet 220 minus Lebensalter. Sie liefert einen groben Schätzwert; die tatsächliche maximale Herzfrequenz kann individuell abweichen. Für genaue Werte ist ein ärztlicher Belastungstest sinnvoll."
+      },
+      {
+        "q": "Was ist die Karvonen-Methode?",
+        "a": "Die Karvonen-Formel berechnet Trainingszonen über die Herzfrequenzreserve, also die Differenz zwischen maximaler und Ruheherzfrequenz. Sie ist gut etabliert und individualisiert die Zonen stärker als die reine Prozentmethode."
+      },
+      {
+        "q": "Was bedeuten die Herzfrequenzzonen?",
+        "a": "Die American Heart Association (AHA) beschreibt Zonen von leichter Erholung bis hoher Intensität. Niedrigere Zonen fördern die Grundlagenausdauer, höhere Zonen die Leistungsfähigkeit. Dieser Rechner teilt den Bereich in fünf Zonen."
+      },
+      {
+        "q": "In welcher Zone verbrenne ich am meisten Fett?",
+        "a": "In moderaten Zonen stammt ein größerer Anteil der Energie aus Fett, doch der absolute Kalorienverbrauch ist bei höherer Intensität größer. Für die Gesundheit zählt vor allem die gesamte Bewegung."
+      },
+      {
+        "q": "Wie oft sollte ich trainieren?",
+        "a": "Die AHA empfiehlt Erwachsenen mindestens 150 Minuten moderate oder 75 Minuten intensive Ausdaueraktivität pro Woche. Bei Vorerkrankungen vor Trainingsbeginn ärztlichen Rat einholen."
+      },
+      {
+        "q": "Sind die berechneten Zonen für jeden geeignet?",
+        "a": "Die Werte sind allgemeine Schätzungen für gesunde Erwachsene. Bei Herzerkrankungen, Medikamenten oder Beschwerden sollten die Trainingszonen ärztlich festgelegt werden."
+      }
+    ]
   }
 }

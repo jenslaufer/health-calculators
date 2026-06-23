@@ -22,6 +22,32 @@
     "recommended": "Recommended",
     "cycles": "{n} cycles",
     "howItWorks": "How it works",
-    "howItWorksText": "A full sleep cycle lasts ~90 minutes. Waking between cycles helps you feel refreshed. This calculator factors in ~15 minutes to fall asleep and recommends times aligned with complete cycles."
+    "howItWorksText": "A full sleep cycle lasts ~90 minutes. Waking between cycles helps you feel refreshed. This calculator factors in ~15 minutes to fall asleep and recommends times aligned with complete cycles.",
+    "faq": [
+      {
+        "q": "How long is a sleep cycle?",
+        "a": "A full sleep cycle lasts about 90 minutes on average and moves through light, deep and REM sleep. Four to six such cycles repeat over the night. This calculator assumes 90-minute cycles."
+      },
+      {
+        "q": "How much sleep do I need?",
+        "a": "The National Sleep Foundation (NSF) recommends roughly 7 to 9 hours of sleep per night for healthy adults. Individual needs can vary somewhat."
+      },
+      {
+        "q": "Why do I sometimes wake up groggy?",
+        "a": "Being woken in the middle of deep sleep often causes grogginess (sleep inertia). Waking at the end of a cycle, during a lighter sleep stage, is usually felt as more refreshing."
+      },
+      {
+        "q": "Why are 15 minutes of falling-asleep time included?",
+        "a": "Most people take about 10 to 20 minutes to fall asleep. The calculator adds roughly 15 minutes so the calculated times are more realistic."
+      },
+      {
+        "q": "What helps for better sleep?",
+        "a": "Professional bodies such as the American Academy of Sleep Medicine (AASM) recommend consistent sleep times, a dark and cool bedroom, and avoiding caffeine and screens before bed. Seek medical advice for persistent sleep problems."
+      },
+      {
+        "q": "Are the calculated times medically binding?",
+        "a": "No. The times are guidance based on average cycles. For persistent sleep disturbances, consult a physician or a sleep specialist."
+      }
+    ]
   }
 }
