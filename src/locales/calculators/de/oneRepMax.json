@@ -29,6 +29,32 @@
     "lombardi": "Lombardi",
     "oconner": "O'Conner",
     "howItWorks": "So funktioniert's",
-    "howItWorksText": "Das One Rep Max (1RM) ist das maximale Gewicht, das du für eine einzelne Wiederholung heben kannst. Diese Formeln schätzen dein 1RM aus einem submaximalen Satz — sicherer als ein echter Maximalversuch. Die Epley-Formel ist die am häufigsten verwendete: 1RM = Gewicht × (1 + Wiederholungen/30)."
+    "howItWorksText": "Das One Rep Max (1RM) ist das maximale Gewicht, das du für eine einzelne Wiederholung heben kannst. Diese Formeln schätzen dein 1RM aus einem submaximalen Satz — sicherer als ein echter Maximalversuch. Die Epley-Formel ist die am häufigsten verwendete: 1RM = Gewicht × (1 + Wiederholungen/30).",
+    "faq": [
+      {
+        "q": "Was ist das One-Rep-Max (1RM)?",
+        "a": "Das One-Rep-Max ist das höchste Gewicht, das du eine einzige Wiederholung einer Übung mit sauberer Technik bewegen kannst. Es dient als Bezugsgröße für die Trainingssteuerung, weil sich Trainingsgewichte häufig als Prozentsatz des 1RM angeben lassen."
+      },
+      {
+        "q": "Wie schätzt dieser Rechner mein 1RM?",
+        "a": "Der Rechner nutzt etablierte Schätzformeln aus einem submaximalen Satz. Die Epley-Formel lautet 1RM = Gewicht × (1 + Wiederholungen/30), die Brzycki-Formel 1RM = Gewicht × 36 / (37 − Wiederholungen). Beide leiten aus Gewicht und Wiederholungszahl einen geschätzten Maximalwert ab — du musst also kein echtes Maximalgewicht heben."
+      },
+      {
+        "q": "Warum liefern die Formeln unterschiedliche Werte?",
+        "a": "Jede Formel beruht auf einem etwas anderen mathematischen Modell des Zusammenhangs zwischen Gewicht und Wiederholungen. Epley und Brzycki stimmen bei niedrigen Wiederholungszahlen meist eng überein und weichen bei vielen Wiederholungen stärker voneinander ab. Der Vergleich mehrerer Formeln gibt dir eine realistische Bandbreite statt einer einzelnen Zahl."
+      },
+      {
+        "q": "Wie genau ist die Schätzung?",
+        "a": "Sie ist eine Näherung. Schätzformeln sind am zuverlässigsten bei etwa zwei bis zehn Wiederholungen; bei sehr hohen Wiederholungszahlen wird die Schätzung ungenauer. Tagesform, Technik und Übung beeinflussen das Ergebnis. Sieh den Wert als Orientierung, nicht als exakte Messung."
+      },
+      {
+        "q": "Muss ich ein echtes Maximalgewicht heben?",
+        "a": "Nein — das ist der Vorteil der Schätzung. Du absolvierst einen submaximalen Satz mit kontrollierter Technik, und die Formel rechnet das 1RM hoch. Das senkt das Verletzungsrisiko gegenüber einem echten Maximalversuch, der nur mit Erfahrung und Hilfestellung erfolgen sollte."
+      },
+      {
+        "q": "Wozu wird das 1RM im Training genutzt?",
+        "a": "Krafttrainingskonzepte, etwa der National Strength and Conditioning Association (NSCA), geben Trainingsintensitäten häufig als Prozentsatz des 1RM an. So lassen sich Belastung und Wiederholungsbereiche für Kraft-, Hypertrophie- oder Ausdauerziele steuern. Bei gesundheitlichen Fragen oder Vorerkrankungen sprich vor intensivem Training mit einer Ärztin oder einem Arzt."
+      }
+    ]
   }
 }

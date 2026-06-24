@@ -40,6 +40,32 @@
     "formulaDuboisDesc": "Älteste und am häufigsten verwendete Formel. Standard in der Chemotherapie.",
     "formulaMostellerDesc": "Einfachste Berechnung, sehr gute Näherung. Empfohlen vom New England Journal of Medicine.",
     "formulaHaycockDesc": "Optimiert für Kinder und Erwachsene. Gilt als besonders präzise.",
-    "formulaBoydDesc": "Berücksichtigt nichtlineare Beziehung zwischen Gewicht und BSA. Weniger verbreitet."
+    "formulaBoydDesc": "Berücksichtigt nichtlineare Beziehung zwischen Gewicht und BSA. Weniger verbreitet.",
+    "faq": [
+      {
+        "q": "Was ist die Körperoberfläche (BSA)?",
+        "a": "Die Körperoberfläche (Body Surface Area, BSA) ist die geschätzte gesamte Außenfläche des Körpers, angegeben in Quadratmetern. Sie wird aus Größe und Gewicht berechnet und in der Medizin häufig genutzt, um Körperfunktionen unabhängig von der reinen Körpergröße zu skalieren."
+      },
+      {
+        "q": "Wie wird die BSA berechnet?",
+        "a": "Der Rechner verwendet etablierte Formeln. Die Mosteller-Formel berechnet die BSA als Wurzel aus (Größe in cm × Gewicht in kg / 3600) und ist wegen ihrer Einfachheit weit verbreitet. Die ältere Du-Bois-Formel verknüpft Größe und Gewicht über feste Exponenten. Beide liefern für die meisten Erwachsenen ähnliche Werte."
+      },
+      {
+        "q": "Warum unterscheiden sich die Formeln?",
+        "a": "Die Formeln wurden anhand unterschiedlicher Stichproben und Annahmen entwickelt, weshalb ihre Ergebnisse leicht voneinander abweichen können. Mosteller und Du Bois stimmen bei durchschnittlichen Körpermaßen meist eng überein; an den Randbereichen können die Differenzen größer ausfallen."
+      },
+      {
+        "q": "Wofür wird die BSA in der Medizin genutzt?",
+        "a": "Die BSA dient als Bezugsgröße, um physiologische Werte zu skalieren, etwa den Herzindex oder die geschätzte Nierenfunktion. Sie wird auch bei der Dosierung mancher Medikamente herangezogen. Dieser Rechner ist rein informativ — über konkrete Dosierungen entscheidet ausschließlich eine Ärztin oder ein Arzt."
+      },
+      {
+        "q": "Welche Formel sollte ich wählen?",
+        "a": "Für die meisten Zwecke liefert die Mosteller-Formel eine einfache und gut anerkannte Näherung; das New England Journal of Medicine hat sie wegen ihrer Praktikabilität hervorgehoben. Im klinischen Umfeld richtet sich die Wahl der Formel nach den jeweiligen Vorgaben der Einrichtung."
+      },
+      {
+        "q": "Ist die BSA dasselbe wie der BMI?",
+        "a": "Nein. Der BMI setzt Gewicht ins Verhältnis zur Größe, um das Gewicht einzuordnen. Die BSA schätzt die Oberfläche des Körpers und dient vor allem der physiologischen Skalierung. Beide Werte verfolgen unterschiedliche Zwecke und ersetzen keine ärztliche Beurteilung."
+      }
+    ]
   }
 }

@@ -39,6 +39,28 @@
       "ebike": { "emoji": "🚲", "label": "E-Bike" },
       "gym": { "emoji": "🏋️", "label": "Fitnessstudio (1 Jahr)" },
       "streaming": { "emoji": "🎬", "label": "Streaming (1 Jahr)" }
-    }
+    },
+    "faq": [
+      {
+        "q": "Was berechnet dieser Rechner?",
+        "a": "Der Rechner schätzt die finanziellen Kosten des Rauchens. Er hochrechnet deine Ausgaben über die Zeit nach dem einfachen Prinzip: Packungen pro Tag × Preis pro Packung × Anzahl der Tage. Es geht ausschließlich um Geld, nicht um gesundheitliche Folgen."
+      },
+      {
+        "q": "Wie werden die Kosten ermittelt?",
+        "a": "Aus deinem täglichen Konsum und dem Packungspreis ergeben sich Tages-, Monats- und Jahreskosten sowie eine Hochrechnung über mehrere Jahre. Das ist eine reine Multiplikation — je genauer deine Angaben zu Menge und Preis, desto realistischer das Ergebnis."
+      },
+      {
+        "q": "Sind die langfristigen Kosten realistisch?",
+        "a": "Sie sind eine Projektion auf Basis gleichbleibender Annahmen. In der Realität verändern sich Tabakpreise, etwa durch Steuererhöhungen, und auch dein Konsum kann schwanken. Die Hochrechnung zeigt eine Größenordnung, keine exakte Vorhersage."
+      },
+      {
+        "q": "Berücksichtigt der Rechner Gesundheitskosten?",
+        "a": "Nein. Der Rechner erfasst nur die direkten Ausgaben für Tabak. Mögliche indirekte Kosten — etwa für Gesundheit oder Versicherungen — sind nicht enthalten. Die Weltgesundheitsorganisation (WHO) weist darauf hin, dass Rauchen erhebliche gesundheitliche Risiken birgt; eine fachliche Einordnung dazu gibt eine Ärztin oder ein Arzt."
+      },
+      {
+        "q": "Kann mir die Zahl beim Aufhören helfen?",
+        "a": "Viele Menschen empfinden die sichtbare Summe als Motivation. Den ersparten Betrag konkret vor Augen zu haben, kann den Anreiz erhöhen. Für Unterstützung beim Rauchstopp bieten Gesundheitsbehörden und ärztliche Beratungsstellen passende Programme an."
+      }
+    ]
   }
 }

@@ -20,6 +20,32 @@
     "boer": "Boer",
     "james": "James",
     "hume": "Hume",
-    "average": "Average"
+    "average": "Average",
+    "faq": [
+      {
+        "q": "What is lean body mass?",
+        "a": "Lean body mass, also called fat-free mass, is your total body weight minus your fat mass. It includes muscle, bone, organs, connective tissue, and body water. This calculator estimates it rather than measuring it directly."
+      },
+      {
+        "q": "How is lean body mass calculated?",
+        "a": "The calculator uses established estimation formulas. The Boer formula and the Hume formula derive fat-free mass from your height, weight, and sex. The underlying principle is: lean body mass = total weight − fat mass. Because the formulas are based on population data, they give an approximation for the relevant group."
+      },
+      {
+        "q": "Why do the Boer and Hume formulas differ?",
+        "a": "Each formula was developed from a different sample and weights height and weight slightly differently, so their results can vary a little. Comparing several formulas gives you a plausible range rather than a single value."
+      },
+      {
+        "q": "How accurate is the estimate?",
+        "a": "It is an estimate based on body measurements, not a direct measurement. More precise methods such as DEXA, hydrostatic weighing, or bioelectrical impedance measure body composition directly. For very muscular or very underweight individuals, formula-based values can deviate more."
+      },
+      {
+        "q": "What is lean body mass useful for?",
+        "a": "Fat-free mass is used, among other things, to estimate resting metabolic rate, track training progress, or plan nutrition goals. It complements BMI, which does not distinguish between muscle and fat."
+      },
+      {
+        "q": "Does this calculator replace a medical assessment?",
+        "a": "No. The values are for general information and orientation. For an accurate measurement of body composition or any health concerns, consult a physician."
+      }
+    ]
   }
 }

@@ -85,6 +85,28 @@
       "sleepDesc": "Alcohol impairs sleep quality, suppresses REM sleep, and increases daytime fatigue even after moderate consumption."
     },
     "disclaimerTitle": "Disclaimer",
-    "disclaimer": "This calculator is for informational purposes only and does not replace medical advice. No alcohol is safer than any consumption. If you have concerns about your drinking, speak to a doctor or a support service (e.g. UK Drinkline: 0300 123 1110)."
+    "disclaimer": "This calculator is for informational purposes only and does not replace medical advice. No alcohol is safer than any consumption. If you have concerns about your drinking, speak to a doctor or a support service (e.g. UK Drinkline: 0300 123 1110).",
+    "faq": [
+      {
+        "q": "What is a unit of alcohol?",
+        "a": "A unit of alcohol (also called a standard drink) is a defined amount of pure alcohol (ethanol), measured in grams. It makes different drinks comparable, because beer, wine, and spirits have very different alcohol contents. Internationally, one unit is often around 10 grams of pure ethanol."
+      },
+      {
+        "q": "How is the amount of alcohol calculated?",
+        "a": "The grams of pure alcohol come from volume × alcohol content (ABV) × the density of ethanol. Ethanol has a density of about 0.789 g/ml. For example, 500 ml of beer at 5% ABV contains roughly 0.5 l × 0.05 × 0.789 g/ml ≈ 20 grams of pure alcohol. The calculator divides that amount by the value of one unit."
+      },
+      {
+        "q": "Why does the value of a unit vary by country?",
+        "a": "There is no single worldwide definition. Different countries set a standard drink at different gram values. As a result, the same drink can amount to a different number of units depending on the definition used. The calculator makes the underlying amount of pure alcohol transparent."
+      },
+      {
+        "q": "How much alcohol is safe?",
+        "a": "According to the World Health Organization (WHO), no level of alcohol consumption is completely free of risk. Less is generally better than more. Only a physician can give an individual assessment of your consumption."
+      },
+      {
+        "q": "What is counting units useful for?",
+        "a": "Units help you keep track of your consumption across different drinks and judge it more easily. They do not replace a medical assessment, but they make the amount of alcohol you drink tangible and comparable."
+      }
+    ]
   }
 }

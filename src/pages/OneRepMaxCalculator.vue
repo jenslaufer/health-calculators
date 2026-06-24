@@ -5,10 +5,12 @@ import { useHead } from '../composables/useHead.js'
 import BlogArticleLink from '../components/BlogArticleLink.vue'
 import RelatedCalculators from '../components/RelatedCalculators.vue'
 import AffiliateBanner from '../components/AffiliateBanner.vue'
+import CalculatorFAQ from '../components/CalculatorFAQ.vue'
 import { useLocaleRouter } from '../composables/useLocaleRouter.js'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 const { localePath } = useLocaleRouter()
+const faqItems = computed(() => tm('oneRepMax.faq') || [])
 
 useHead(() => ({
   title: t('oneRepMax.meta.title'),
@@ -178,6 +180,8 @@ const percentageChart = computed(() => {
     <h2 class="text-base font-semibold text-stone-900 mb-2">{{ t('oneRepMax.howItWorks') }}</h2>
     <p class="text-sm text-stone-500 leading-relaxed">{{ t('oneRepMax.howItWorksText') }}</p>
   </div>
+
+  <CalculatorFAQ :questions="faqItems" :title="t('common.faqTitle')" />
 
   <RelatedCalculators calc-key="oneRepMax" class="mt-8" />
   <BlogArticleLink calculator-key="oneRepMax" />

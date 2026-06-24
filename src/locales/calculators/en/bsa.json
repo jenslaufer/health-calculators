@@ -40,6 +40,32 @@
     "formulaDuboisDesc": "Oldest and most widely used formula. Standard in chemotherapy dosing.",
     "formulaMostellerDesc": "Simplest calculation, very accurate approximation. Recommended by the New England Journal of Medicine.",
     "formulaHaycockDesc": "Optimized for children and adults. Considered highly accurate.",
-    "formulaBoydDesc": "Accounts for non-linear relationship between weight and BSA. Less commonly used."
+    "formulaBoydDesc": "Accounts for non-linear relationship between weight and BSA. Less commonly used.",
+    "faq": [
+      {
+        "q": "What is body surface area (BSA)?",
+        "a": "Body surface area is the estimated total external area of the body, expressed in square metres. It is calculated from height and weight and is widely used in medicine to scale body functions independently of height alone."
+      },
+      {
+        "q": "How is BSA calculated?",
+        "a": "The calculator uses established formulas. The Mosteller formula computes BSA as the square root of (height in cm × weight in kg / 3600) and is popular for its simplicity. The older Du Bois formula combines height and weight using fixed exponents. Both give similar values for most adults."
+      },
+      {
+        "q": "Why do the formulas differ?",
+        "a": "The formulas were developed from different samples and assumptions, so their results can vary slightly. Mosteller and Du Bois usually agree closely at average body measurements; differences can be larger at the extremes."
+      },
+      {
+        "q": "What is BSA used for in medicine?",
+        "a": "BSA serves as a reference for scaling physiologic values such as cardiac index or estimated kidney function, and it is used in dosing some medications. This calculator is informational only — decisions about specific dosing are made solely by a physician."
+      },
+      {
+        "q": "Which formula should I choose?",
+        "a": "For most purposes the Mosteller formula offers a simple and well-recognised approximation; the New England Journal of Medicine has highlighted it for its practicality. In clinical settings, the choice of formula follows the relevant institution's guidance."
+      },
+      {
+        "q": "Is BSA the same as BMI?",
+        "a": "No. BMI relates weight to height to classify body weight. BSA estimates the surface area of the body and is mainly used for physiologic scaling. The two values serve different purposes and do not replace a medical assessment."
+      }
+    ]
   }
 }

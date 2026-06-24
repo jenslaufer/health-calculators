@@ -39,6 +39,28 @@
       "ebike": { "emoji": "🚲", "label": "E-bike" },
       "gym": { "emoji": "🏋️", "label": "Gym membership (1 year)" },
       "streaming": { "emoji": "🎬", "label": "Streaming (1 year)" }
-    }
+    },
+    "faq": [
+      {
+        "q": "What does this calculator work out?",
+        "a": "The calculator estimates the financial cost of smoking. It projects your spending over time using a simple principle: packs per day × price per pack × number of days. It is about money only, not health outcomes."
+      },
+      {
+        "q": "How are the costs calculated?",
+        "a": "Your daily consumption and the price per pack produce daily, monthly, and yearly costs, plus a projection over several years. It is pure multiplication — the more accurate your figures for quantity and price, the more realistic the result."
+      },
+      {
+        "q": "Are the long-term costs realistic?",
+        "a": "They are a projection based on constant assumptions. In reality, tobacco prices change, for example through tax increases, and your consumption may vary too. The projection shows an order of magnitude, not an exact forecast."
+      },
+      {
+        "q": "Does the calculator include health costs?",
+        "a": "No. It captures only the direct spending on tobacco. Possible indirect costs — for health or insurance, for example — are not included. The World Health Organization (WHO) notes that smoking carries substantial health risks; a physician can provide a professional assessment of those."
+      },
+      {
+        "q": "Can the number help me quit?",
+        "a": "Many people find the visible total motivating. Seeing the money you could save laid out concretely can strengthen the incentive. For help with quitting, health authorities and medical advisory services offer suitable programmes."
+      }
+    ]
   }
 }

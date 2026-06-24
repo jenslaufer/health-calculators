@@ -29,6 +29,32 @@
     "lombardi": "Lombardi",
     "oconner": "O'Conner",
     "howItWorks": "How it works",
-    "howItWorksText": "The one-rep max (1RM) is the maximum weight you can lift for a single repetition. These formulas estimate your 1RM from a submaximal lift — safer than actually attempting a true max. The Epley formula is the most widely used: 1RM = weight × (1 + reps/30)."
+    "howItWorksText": "The one-rep max (1RM) is the maximum weight you can lift for a single repetition. These formulas estimate your 1RM from a submaximal lift — safer than actually attempting a true max. The Epley formula is the most widely used: 1RM = weight × (1 + reps/30).",
+    "faq": [
+      {
+        "q": "What is the one-rep max (1RM)?",
+        "a": "The one-rep max is the heaviest weight you can lift for a single repetition of an exercise with good form. It serves as a reference point for programming, because training loads are often prescribed as a percentage of your 1RM."
+      },
+      {
+        "q": "How does this calculator estimate my 1RM?",
+        "a": "It uses established estimation formulas applied to a submaximal set. The Epley formula is 1RM = weight × (1 + reps/30); the Brzycki formula is 1RM = weight × 36 / (37 − reps). Both convert your weight and rep count into an estimated maximum, so you do not need to attempt a true max lift."
+      },
+      {
+        "q": "Why do the formulas give different numbers?",
+        "a": "Each formula uses a slightly different mathematical model of the relationship between weight and repetitions. Epley and Brzycki tend to agree closely at low rep counts and diverge more as reps increase. Comparing several formulas gives you a realistic range rather than a single figure."
+      },
+      {
+        "q": "How accurate is the estimate?",
+        "a": "It is an approximation. Estimation formulas are most reliable in roughly the two-to-ten rep range; at very high rep counts the estimate becomes less precise. Daily readiness, technique, and the exercise itself all affect the result. Treat the number as a guide, not an exact measurement."
+      },
+      {
+        "q": "Do I have to lift an actual maximum weight?",
+        "a": "No — that is the point of the estimate. You perform a submaximal set with controlled form, and the formula projects your 1RM. This reduces injury risk compared with a true max attempt, which should only be done with experience and a spotter."
+      },
+      {
+        "q": "What is the 1RM used for in training?",
+        "a": "Strength-training frameworks, such as those from the National Strength and Conditioning Association (NSCA), often prescribe intensity as a percentage of 1RM. This lets you set loads and rep ranges for strength, hypertrophy, or endurance goals. If you have health concerns or pre-existing conditions, consult a physician before intense training."
+      }
+    ]
   }
 }
