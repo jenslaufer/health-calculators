@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+# LLMs
+# See https://healthcalculator.app/llms.txt
+Sitemap: https://healthcalculator.app/sitemap.xml
